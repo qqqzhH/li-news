@@ -17,7 +17,7 @@ export default function RootLayout({
       <body className="bg-[var(--color-bg)] text-[var(--color-text)] antialiased">
         <div className="flex min-h-screen">
           <Sidebar />
-          <main className="flex-1 min-w-0 p-4 md:p-6 lg:p-8 max-w-4xl mx-auto w-full">
+          <main className="flex-1 min-w-0 w-full p-4 md:p-6 lg:p-8">
             {children}
           </main>
         </div>

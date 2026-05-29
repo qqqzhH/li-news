@@ -3,15 +3,59 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { CATEGORIES, Category, CATEGORY_ICONS } from "@/types";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Sidebar() {
   const pathname = usePathname();
   const [collapsed, setCollapsed] = useState(true);
+  const [activeSection, setActiveSection] = useState<string>("home");
 
-  const isActive = (cat: Category | "home") => {
-    if (cat === "home") return pathname === "/";
-    return pathname === `/${cat}`;
+  // 只在首页使用 IntersectionObserver 跟踪滚动位置
+  useEffect(() => {
+    if (pathname !== "/") return;
+
+    const sections = document.querySelectorAll("[data-section]");
+    if (!sections.length) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        // 找到当前最可见的 section
+        let best: { id: string; ratio: number } = { id: "home", ratio: 0 };
+        entries.forEach((entry) => {
+          const id = entry.target.getAttribute("data-section") || "";
+          if (entry.intersectionRatio > best.ratio) {
+            best = { id, ratio: entry.intersectionRatio };
+          }
+        });
+        if (best.ratio > 0) {
+          setActiveSection(best.id);
+        }
+      },
+      { threshold: [0.3, 0.6, 0.9] }
+    );
+
+    sections.forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
+  }, [pathname]);
+
+  // 非首页时用 pathname 判断
+  const isActive = (id: string) => {
+    if (pathname !== "/") {
+      if (id === "home") return pathname === "/";
+      if (id === "recommended") return false;
+      return pathname === `/${id}`;
+    }
+    return activeSection === id;
+  };
+
+  const scrollTo = (sectionId: string) => {
+    if (pathname !== "/") {
+      // 如果在非首页，先回到首页再滚动
+      window.location.href = "/";
+      return;
+    }
+    const el = document.querySelector(`[data-section="${sectionId}"]`);
+    if (el) el.scrollIntoView({ behavior: "smooth" });
   };
 
   const renderIcon = (name: string) => (
@@ -50,14 +94,14 @@ export default function Sidebar() {
         {/* Header */}
         <div className="flex items-center justify-between px-3 py-3 border-b border-[var(--color-border)] min-h-0">
           {!collapsed ? (
-            <Link href="/" className="flex items-center gap-1.5 ml-1">
+            <button onClick={() => scrollTo("home")} className="flex items-center gap-1.5 ml-1 cursor-pointer">
               <span className="text-lg font-bold text-[var(--color-ocean-600)]">木子</span>
               <span className="text-base font-medium text-[var(--color-text)]">新闻</span>
-            </Link>
+            </button>
           ) : (
-            <Link href="/" className="mx-auto">
+            <button onClick={() => scrollTo("home")} className="mx-auto cursor-pointer">
               <span className="text-base font-bold text-[var(--color-ocean-600)]">木</span>
-            </Link>
+            </button>
           )}
           <button
             onClick={() => setCollapsed(!collapsed)}
@@ -72,9 +116,10 @@ export default function Sidebar() {
 
         {/* Navigation */}
         <nav className="flex-1 py-2 space-y-0.5 px-1.5 overflow-y-auto">
-          <Link
-            href="/"
-            className={`flex items-center justify-center md:justify-start gap-3 px-2 py-2 rounded-lg transition-all ${
+          {/* 首页 — 滚动到 section-home */}
+          <button
+            onClick={() => scrollTo("home")}
+            className={`w-full flex items-center justify-center md:justify-start gap-3 px-2 py-2 rounded-lg transition-all ${
               isActive("home")
                 ? "bg-[var(--color-ocean-100)] text-[var(--color-ocean-700)] font-medium"
                 : "text-[var(--color-text-secondary)] hover:bg-[var(--color-ocean-50)] hover:text-[var(--color-ocean-600)]"
@@ -83,8 +128,30 @@ export default function Sidebar() {
           >
             {renderIcon("home")}
             {!collapsed && <span className="text-sm">首页</span>}
-          </Link>
+          </button>
 
+          {/* 推荐 — 滚动到 section-recommended */}
+          <button
+            onClick={() => scrollTo("recommended")}
+            className={`w-full flex items-center justify-center md:justify-start gap-3 px-2 py-2 rounded-lg transition-all ${
+              isActive("recommended")
+                ? "bg-[var(--color-ocean-100)] text-[var(--color-ocean-700)] font-medium"
+                : "text-[var(--color-text-secondary)] hover:bg-[var(--color-ocean-50)] hover:text-[var(--color-ocean-600)]"
+            }`}
+            title="推荐"
+          >
+            {renderIcon("home")}
+            {!collapsed && (
+              <span className="flex items-center gap-2 text-sm">
+                推荐
+                <span className="px-1.5 py-0.5 text-xs rounded-full bg-red-50 text-red-500">热门</span>
+              </span>
+            )}
+          </button>
+
+          <div className="my-1.5 border-t border-[var(--color-border)]" />
+
+          {/* 分类栏目 — 点击跳转到对应页面 */}
           {CATEGORIES.map((cat) => (
             <Link
               key={cat.key}
@@ -100,27 +167,6 @@ export default function Sidebar() {
               {!collapsed && <span className="text-sm">{cat.label}</span>}
             </Link>
           ))}
-
-          {/* 推荐入口 */}
-          <div className="my-1 border-t border-[var(--color-border)]" />
-
-          <Link
-            href="/"
-            className={`flex items-center justify-center md:justify-start gap-3 px-2 py-2 rounded-lg transition-all ${
-              pathname === "/" && !collapsed
-                ? "bg-[var(--color-ocean-100)] text-[var(--color-ocean-700)] font-medium"
-                : "text-[var(--color-text-secondary)] hover:bg-[var(--color-ocean-50)] hover:text-[var(--color-ocean-600)]"
-            }`}
-            title="推荐"
-          >
-            {renderIcon("home")}
-            {!collapsed && (
-              <span className="flex items-center gap-2 text-sm">
-                推荐
-                <span className="px-1.5 py-0.5 text-xs rounded-full bg-red-50 text-red-500">热门</span>
-              </span>
-            )}
-          </Link>
 
           <div className="my-1.5 border-t border-[var(--color-border)]" />
 
