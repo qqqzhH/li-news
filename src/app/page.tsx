@@ -30,7 +30,7 @@ export default function HomePage() {
       </div>
 
       {/* Category cards */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+      <div className="grid grid-cols-3 md:grid-cols-5 gap-3">
         {CATEGORIES.map((cat) => {
           const count = data.items.filter((i) => i.category === cat.key).length;
           return (
