@@ -7,7 +7,7 @@ const TITLES = [
   { leave: "〔ﾟДﾟ〕 页面不见了！", back: "✧٩(ˊωˋ*)و✧ 还在！" },
   { leave: "Σ(°△°|||) 页面已失踪", back: "ヽ(✿ﾟ▽ﾟ)ノ 找到你啦~" },
   { leave: "(×﹏×) 页面崩溃惹", back: "(◕‿◕✿) 恢复成功~" },
-  { leave: "(°A^)页面崩溃啦", back: "(A>ω<*a)噫又好了~" },
+  { leave: "(°A°) 页面崩溃啦", back: "(>ω<) 噫又好了~" },
 ];
 
 export default function TabTitleTrick() {
