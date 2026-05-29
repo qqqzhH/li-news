@@ -77,6 +77,14 @@ export default function NewsCard({ item }: NewsCardProps) {
         </span>
       </div>
 
+      {/* 发布时间 */}
+      <div className="text-xs text-[var(--color-text-muted)]/60 -mt-2 mb-3">
+        {new Date(item.publishedAt).toLocaleDateString("zh-CN", {
+          year: "numeric", month: "2-digit", day: "2-digit",
+          hour: "2-digit", minute: "2-digit"
+        })}
+      </div>
+
       {/* 标题 */}
       <h2 className="text-xl font-semibold text-[var(--color-text)] mb-3 leading-snug">
         {item.title}
