@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
+import TabTitleTrick from "@/components/TabTitleTrick";
 
 export const metadata: Metadata = {
   title: "\u6728\u5b50\u65b0\u95fb | LI News",
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body className="bg-[var(--color-bg)] text-[var(--color-text)] antialiased">
         <div className="flex min-h-screen">
           <Sidebar />
+          <TabTitleTrick />
           <main className="flex-1 min-w-0 w-full p-4 md:p-6 lg:p-8">
             {children}
           </main>
