@@ -23,18 +23,18 @@ export default function SearchBar({ initialQuery = "", large = false }: SearchBa
   );
 
   return (
-    <form onSubmit={handleSearch} className="relative w-full">
+    <form onSubmit={handleSearch} className="relative w-full group">
       <input
         type="text"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         placeholder="搜索新闻..."
-        className={`w-full rounded-xl border border-[var(--color-border)] bg-white pl-10 pr-4 text-[var(--color-text)] placeholder:text-[var(--color-text-muted)] focus:outline-none focus:ring-2 focus:ring-[var(--color-ocean-400)] focus:border-transparent transition-all ${
-          large ? "py-3 text-base" : "py-2 text-sm"
+        className={`w-full rounded-2xl border border-[var(--color-border)] bg-white pl-12 pr-4 text-[var(--color-text)] placeholder:text-[var(--color-text-muted)] shadow-sm focus:shadow-md focus:border-[var(--color-ocean-400)] focus:ring-2 focus:ring-[var(--color-ocean-100)] outline-none transition-all duration-300 ${
+          large ? "py-3.5 text-base" : "py-2.5 text-sm"
         }`}
       />
       <svg
-        className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[var(--color-text-muted)]"
+        className="absolute left-4 top-1/2 -translate-y-1/2 w-4.5 h-4.5 text-[var(--color-text-muted)] group-focus-within:text-[var(--color-ocean-500)] transition-colors"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
