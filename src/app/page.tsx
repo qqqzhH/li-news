@@ -22,8 +22,6 @@ export default function HomePage() {
 
   useEffect(() => {
     const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
-
-    // Title cascade: clean fade-in, no y movement that feels jumpy
     tl.fromTo(titleRef.current, { opacity: 0, y: -15 }, { opacity: 1, y: 0, duration: 0.6 })
       .fromTo(subtitleRef.current, { opacity: 0, y: 8 }, { opacity: 1, y: 0, duration: 0.4 }, "-=0.2")
       .fromTo(updRef.current, { opacity: 0 }, { opacity: 1, duration: 0.3 }, "-=0.15")
@@ -31,10 +29,8 @@ export default function HomePage() {
       .fromTo(searchRef.current, { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.35 }, "-=0.1")
       .fromTo(".cat-card", { opacity: 0, y: 12, scale: 0.96 }, { opacity: 1, y: 0, scale: 1, duration: 0.35, stagger: 0.06 }, "-=0.15");
 
-    // Floating arrow
     gsap.to(arrowRef.current, { y: -6, duration: 1.8, repeat: -1, yoyo: true, ease: "sine.inOut" });
 
-    // Section 2 decorative
     const s2 = section2Ref.current;
     if (s2) {
       const check = () => {
@@ -53,18 +49,19 @@ export default function HomePage() {
 
   return (
     <div className="snap-container space-y-0">
-      {/* ===== Screen 1 ===== */}
-      <section data-section="home" className="snap-start min-h-screen flex flex-col justify-center px-5 md:px-10 max-w-3xl mx-auto w-full">
-        {/* Title hierarchy */}
+
+      {/* ===== Screen 1: Hero ===== */}
+      <section data-section="home" className="snap-start min-h-screen flex flex-col justify-center px-6 md:px-16 max-w-3xl mx-auto w-full">
+        {/* Title */}
         <div className="text-center">
           <h1 ref={titleRef} className="text-6xl md:text-7xl font-black tracking-wide leading-none">
             <span className="text-[var(--color-ocean-600)]">木子</span>
             <span className="text-[var(--color-text)]">新闻</span>
           </h1>
-          <p ref={subtitleRef} className="mt-3 text-sm md:text-base text-[var(--color-text-muted)] max-w-md mx-auto">
+          <p ref={subtitleRef} className="mt-4 text-sm md:text-base text-[var(--color-text-muted)] max-w-md mx-auto">
             AI 动态 · 机器人 · 地缘政治 · 金融市场
           </p>
-          <div ref={updRef} className="mt-2 text-xs text-[var(--color-text-muted)]/60">
+          <div ref={updRef} className="mt-3 text-xs text-[var(--color-text-muted)]/60">
             <span>每日 9:00 自动更新</span>
             {data.lastUpdated && (
               <>
@@ -76,7 +73,7 @@ export default function HomePage() {
         </div>
 
         {/* Quote */}
-        <div ref={quoteRef} className="mt-8 text-center">
+        <div ref={quoteRef} className="mt-12 text-center">
           <p className="text-sm text-[var(--color-text-muted)]/70 italic font-serif leading-relaxed tracking-wide">
             <span className="text-[var(--color-ocean-400)] text-lg leading-none mr-1">&ldquo;</span>
             信息筛选的能力，比信息获取的能力更重要
@@ -85,30 +82,30 @@ export default function HomePage() {
         </div>
 
         {/* Search */}
-        <div ref={searchRef} className="mt-10 max-w-md mx-auto w-full">
+        <div ref={searchRef} className="mt-14 max-w-sm mx-auto w-full">
           <SearchBar large />
         </div>
 
         {/* Category cards */}
-        <div ref={catsRef} className="mt-12 grid grid-cols-3 md:grid-cols-5 gap-4 max-w-xl mx-auto w-full">
+        <div ref={catsRef} className="mt-16 grid grid-cols-3 md:grid-cols-5 gap-5 max-w-2xl mx-auto w-full">
           {CATEGORIES.map((cat) => {
             const count = data.items.filter((i) => i.category === cat.key).length;
             return (
               <Link key={cat.key} href={`/${cat.key}`}
-                className="cat-card bg-white border border-[var(--color-border)] rounded-xl py-4 px-2 text-center hover:border-[var(--color-ocean-400)] hover:shadow-lg hover:-translate-y-1 transition-all duration-250"
+                className="cat-card bg-white border border-[var(--color-border)] rounded-xl py-5 px-3 text-center hover:border-[var(--color-ocean-400)] hover:shadow-lg hover:-translate-y-1.5 transition-all duration-250"
               >
-                <div className="flex justify-center mb-2 text-[var(--color-ocean-500)]">
+                <div className="flex justify-center mb-2.5 text-[var(--color-ocean-500)]">
                   <span dangerouslySetInnerHTML={{ __html: CATEGORY_ICONS[cat.key] || "" }} />
                 </div>
                 <div className="text-sm font-semibold text-[var(--color-text)]">{cat.label}</div>
-                <div className="text-[11px] text-[var(--color-text-muted)] mt-0.5">{count} 条</div>
+                <div className="text-[11px] text-[var(--color-text-muted)] mt-1">{count} 条</div>
               </Link>
             );
           })}
         </div>
 
-        {/* Arrow guide */}
-        <div ref={arrowRef} className="mt-12 flex flex-col items-center gap-1.5 text-[var(--color-text-muted)]/50 cursor-pointer">
+        {/* Arrow */}
+        <div ref={arrowRef} className="mt-16 flex flex-col items-center gap-1.5 text-[var(--color-text-muted)]/50 cursor-pointer">
           <span className="text-xs tracking-widest">探索</span>
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
@@ -117,18 +114,18 @@ export default function HomePage() {
       </section>
 
       {/* ===== Screen 2: 今日精选 ===== */}
-      <section data-section="recommended" className="snap-start min-h-screen flex flex-col justify-center px-5 md:px-10 max-w-5xl mx-auto w-full" ref={section2Ref}>
+      <section data-section="recommended" className="snap-start min-h-screen flex flex-col justify-center px-6 md:px-16 max-w-5xl mx-auto w-full" ref={section2Ref}>
         <div className="w-full">
-          {/* Section title */}
-          <div className="s2-title-line h-px w-16 bg-[var(--color-ocean-300)] mb-5" />
+          {/* Title */}
+          <div className="s2-title-line h-px w-16 bg-[var(--color-ocean-300)] mb-6" />
           <h2 className="text-2xl md:text-3xl font-bold text-[var(--color-text)] mb-1">今日精选</h2>
-          <p className="text-sm text-[var(--color-text-muted)] mb-8">推荐阅读 · 最新动态</p>
+          <p className="text-sm text-[var(--color-text-muted)] mb-10">推荐阅读 · 最新动态</p>
 
-          {/* Two columns */}
-          <div className="s2-cols grid md:grid-cols-2 gap-6 md:gap-8">
-            {/* Left: Recommended */}
+          {/* Columns */}
+          <div className="s2-cols grid md:grid-cols-2 gap-8 md:gap-14">
+            {/* Left */}
             <div>
-              <h3 className="text-base font-semibold text-[var(--color-text)] mb-3 flex items-center gap-2">
+              <h3 className="text-base font-semibold text-[var(--color-text)] mb-4 flex items-center gap-2">
                 <svg className="w-4 h-4 text-amber-500" fill="currentColor" viewBox="0 0 24 24">
                   <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
                 </svg>
@@ -137,9 +134,9 @@ export default function HomePage() {
               <div className="divide-y divide-[var(--color-border)] border border-[var(--color-border)] rounded-xl overflow-hidden bg-white">
                 {hotNews.slice(0, 5).length > 0 ? hotNews.slice(0, 5).map((item, idx) => (
                   <Link key={item.id} href={`/${item.category}`}
-                    className="flex items-center gap-3 px-4 py-3 hover:bg-[var(--color-ocean-50)] transition-colors"
+                    className="flex items-center gap-3 px-5 py-4 hover:bg-[var(--color-ocean-50)] transition-colors"
                   >
-                    <span className={`flex items-center justify-center w-6 h-6 rounded-lg text-xs font-bold shrink-0 ${idx < 3 ? "bg-red-50 text-red-500" : "bg-gray-50 text-[var(--color-text-muted)]"}`}>
+                    <span className={`flex items-center justify-center w-7 h-7 rounded-xl text-xs font-bold shrink-0 ${idx < 3 ? "bg-red-50 text-red-500" : "bg-gray-50 text-[var(--color-text-muted)]"}`}>
                       {idx + 1}
                     </span>
                     <div className="min-w-0 flex-1">
@@ -148,14 +145,14 @@ export default function HomePage() {
                     </div>
                   </Link>
                 )) : (
-                  <div className="px-4 py-8 text-center text-sm text-[var(--color-text-muted)]">暂无推荐</div>
+                  <div className="px-5 py-12 text-center text-sm text-[var(--color-text-muted)]">暂无推荐</div>
                 )}
               </div>
             </div>
 
-            {/* Right: Latest */}
+            {/* Right */}
             <div>
-              <h3 className="text-base font-semibold text-[var(--color-text)] mb-3 flex items-center gap-2">
+              <h3 className="text-base font-semibold text-[var(--color-text)] mb-4 flex items-center gap-2">
                 <svg className="w-4 h-4 text-[var(--color-ocean-500)]" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
@@ -166,7 +163,7 @@ export default function HomePage() {
                   const cat = CATEGORIES.find(c => c.key === item.category);
                   return (
                     <Link key={item.id} href={`/${item.category}`}
-                      className="flex items-center gap-3 px-4 py-3 hover:bg-[var(--color-ocean-50)] transition-colors"
+                      className="flex items-center gap-3 px-5 py-4 hover:bg-[var(--color-ocean-50)] transition-colors"
                     >
                       <span className="flex items-center justify-center shrink-0 w-4 h-4 text-[var(--color-ocean-500)]"
                         dangerouslySetInnerHTML={{ __html: CATEGORY_ICONS[item.category] || "" }}
@@ -181,13 +178,14 @@ export default function HomePage() {
                     </Link>
                   );
                 }) : (
-                  <div className="px-4 py-8 text-center text-sm text-[var(--color-text-muted)]">暂无新闻</div>
+                  <div className="px-5 py-12 text-center text-sm text-[var(--color-text-muted)]">暂无新闻</div>
                 )}
               </div>
             </div>
           </div>
         </div>
       </section>
+
     </div>
   );
 }
