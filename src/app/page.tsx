@@ -85,7 +85,7 @@ export default function HomePage() {
         } else {
           clearInterval(tw);
         }
-      }, 30);
+      }, 50);
     }, 600);
 
     gsap.to(arrowRef.current, { y: -6, duration: 1.8, repeat: -1, yoyo: true, ease: "sine.inOut" });
@@ -179,7 +179,7 @@ export default function HomePage() {
       </section>
 
       {/* ===== Screen 2: 今日精选 ===== */}
-      <section data-section="recommended" className="snap-start min-h-screen flex flex-col pt-16 pb-8 px-6 md:px-16 max-w-5xl mx-auto w-full" ref={section2Ref}>
+      <section data-section="recommended" className="snap-start min-h-screen flex flex-col justify-center px-6 md:px-16 max-w-5xl mx-auto w-full" ref={section2Ref}>
         <div className="w-full">
           {/* Section header */}
           <div className="flex items-center gap-4 mb-8">
