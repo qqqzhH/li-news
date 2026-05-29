@@ -14,7 +14,7 @@ export default function AiPage() {
         <span
           className="flex items-center justify-center w-7 h-7 text-[var(--color-ocean-600)]"
           dangerouslySetInnerHTML={{
-            __html: '<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l1.5 6.5L20 10l-6.5 1.5L12 18l-1.5-6.5L4 10l6.5-1.5z"/><path d="M2 12h4.5M17.5 12H22M12 2v4.5M12 17.5V22"/></svg>',
+            __html: '<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.5 6.5L21 10l-6.5 2.5L12 19l-2.5-6.5L3 10l6.5-2.5z"/><path d="M3 10l6.5-2.5L12 2l2.5 6.5L21 10"/></svg>',
           }}
         />
         <div>
