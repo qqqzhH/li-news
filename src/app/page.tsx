@@ -180,7 +180,7 @@ export default function HomePage() {
 
       {/* ===== Screen 2: 今日精选 ===== */}
       <section data-section="recommended" className="snap-start min-h-screen flex flex-col items-center justify-center px-6 md:px-16" ref={section2Ref}>
-        <div className="w-full max-w-5xl pt-[10vh]">
+        <div className="w-full max-w-5xl pt-[5vh]">
           {/* Section header */}
           <div className="flex items-center gap-4 mb-8">
             <div className="s2-title-line h-px flex-1 bg-gradient-to-r from-transparent via-[var(--color-ocean-300)] to-transparent max-w-[120px]" />
