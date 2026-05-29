@@ -1,65 +1,102 @@
-import Image from "next/image";
+import Link from "next/link";
+import { getAllNews, getHotNews, formatTime } from "@/lib/news";
+import SearchBar from "@/components/SearchBar";
+import { CATEGORIES } from "@/types";
 
-export default function Home() {
+export default function HomePage() {
+  const data = getAllNews();
+  const hotNews = getHotNews();
+  const totalItems = data.items.length;
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="space-y-8">
+      {/* Hero */}
+      <div className="text-center py-8 md:py-12">
+        <h1 className="text-3xl md:text-4xl font-bold mb-3">
+          <span className="text-[var(--color-ocean-600)]">\u6728\u5b50</span> \u65b0\u95fb
+        </h1>
+        <p className="text-[var(--color-text-secondary)] text-sm md:text-base max-w-lg mx-auto">
+          \u4f60\u7684\u4e2a\u4eba\u667a\u80fd\u65b0\u95fb\u7ad9 \u00b7 \u6bcf\u65e5 9:00 \u81ea\u52a8\u66f4\u65b0
+        </p>
+        <div className="mt-2 text-xs text-[var(--color-text-muted)]">
+          {data.lastUpdated ? `\u6700\u540e\u66f4\u65b0: ${formatTime(data.lastUpdated)}` : ""}
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </div>
+
+      {/* Search */}
+      <div className="max-w-md mx-auto">
+        <SearchBar large />
+      </div>
+
+      {/* Stats */}
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+        {CATEGORIES.map((cat) => {
+          const count = data.items.filter((i) => i.category === cat.key).length;
+          return (
+            <Link
+              key={cat.key}
+              href={`/${cat.key}`}
+              className="bg-[var(--color-bg-alt)] border border-[var(--color-border)] rounded-xl p-4 text-center hover:border-[var(--color-ocean-300)] transition-colors"
+            >
+              <div className="text-2xl mb-1">{cat.icon}</div>
+              <div className="text-sm font-medium text-[var(--color-text)]">{cat.label}</div>
+              <div className="text-xs text-[var(--color-text-muted)] mt-0.5">{count} items</div>
+            </Link>
+          );
+        })}
+      </div>
+
+      {/* Hot News */}
+      {hotNews.length > 0 && (
+        <section>
+          <h2 className="text-lg font-semibold mb-4 flex items-center gap-2">
+            <span className="px-2 py-0.5 rounded bg-red-50 text-[var(--color-red-accent)] text-xs font-medium">HOT</span>
+            Hot News
+          </h2>
+          <div className="space-y-3">
+            {hotNews.map((item) => (
+              <Link
+                key={item.id}
+                href={`/${item.category}`}
+                className="block bg-[var(--color-bg-alt)] border border-[var(--color-border)] rounded-xl p-4 hover:border-[var(--color-ocean-300)] transition-colors"
+              >
+                <div className="flex items-start gap-3">
+                  <span className="text-[var(--color-red-accent)] mt-0.5 shrink-0">\u25b6</span>
+                  <div>
+                    <h3 className="text-sm font-medium text-[var(--color-text)]">{item.title}</h3>
+                    <p className="text-xs text-[var(--color-text-muted)] mt-1">
+                      {item.summary.slice(0, 100)}...
+                    </p>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Recent across all categories */}
+      <section>
+        <h2 className="text-lg font-semibold mb-4">Recent News</h2>
+        <div className="space-y-3">
+          {data.items.slice(0, 10).map((item) => {
+            const catInfo = CATEGORIES.find((c) => c.key === item.category);
+            return (
+              <Link
+                key={item.id}
+                href={`/${item.category}`}
+                className="flex items-center gap-3 bg-[var(--color-bg-alt)] border border-[var(--color-border)] rounded-xl p-3 hover:border-[var(--color-ocean-300)] transition-colors"
+              >
+                <span className="text-lg shrink-0">{catInfo?.icon}</span>
+                <div className="min-w-0">
+                  <h3 className="text-sm font-medium text-[var(--color-text)] truncate">{item.title}</h3>
+                  <p className="text-xs text-[var(--color-text-muted)] mt-0.5">{formatTime(item.publishedAt)}</p>
+                </div>
+              </Link>
+            );
+          })}
         </div>
-      </main>
+      </section>
     </div>
   );
 }

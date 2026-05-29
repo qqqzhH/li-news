@@ -1,0 +1,254 @@
+/**
+ * \u6728\u5b50\u65b0\u95fb - \u6bcf\u65e5\u65b0\u95fb\u91c7\u96c6\u811a\u672c
+ * 
+ * \u8fd0\u884c\u65b9\u5f0f: node scripts/fetch-news.js
+ * \u5de5\u4f5c\u6d41\u7a0b:
+ * 1. \u4ece AIHOT API \u83b7\u53d6 AI \u65b0\u95fb
+ * 2. \u4ece Exa Search \u83b7\u53d6\u5730\u7f18\u653f\u6cbb\u548c\u91d1\u878d\u65b0\u95fb
+ * 3. AI \u6574\u7406\u548c\u5206\u7c7b
+ * 4. \u5199\u5165 news.json
+ * 5. Git \u63d0\u4ea4 + \u63a8\u9001
+ */
+
+const fs = require("fs");
+const path = require("path");
+
+const DATA_PATH = path.join(__dirname, "..", "src", "data", "news.json");
+const EXA_API_KEY = process.env.EXA_API_KEY || "5b73f51e-accc-4879-bf2c-f33ef470f47f";
+
+// ========== Fetch from AIHOT API ==========
+async function fetchAIHOTNews() {
+  console.log("[AIHOT] Fetching AI news...");
+  const res = await fetch("https://aihot.virxact.com/api/public/daily", {
+    headers: { "User-Agent": "Mozilla/5.0 (compatible; LiNews/1.0)" },
+  });
+  if (!res.ok) throw new Error(`AIHOT API error: ${res.status}`);
+  const data = await res.json();
+  
+  const items = [];
+  for (const section of data.sections || []) {
+    for (const item of section.items || []) {
+      items.push({
+        id: `ai-${Date.now()}-${items.length}`,
+        title: item.title,
+        summary: item.summary || item.title,
+        deepDive: `## Source\n\n[Original Article](${item.sourceUrl})\n\n*Auto-collected from ${item.sourceName}*`,
+        category: "ai",
+        source: item.sourceName || "AIHOT",
+        sourceUrl: item.sourceUrl || "#",
+        publishedAt: new Date().toISOString(),
+        importance: "normal",
+      });
+    }
+  }
+  
+  console.log(`[AIHOT] Got ${items.length} items`);
+  return items;
+}
+
+// ========== Fetch from Exa Search ==========
+async function searchExa(query, category, sourceLabel) {
+  console.log(`[Exa] Searching: ${query}`);
+  try {
+    const res = await fetch("https://api.exa.ai/search", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "x-api-key": EXA_API_KEY,
+      },
+      body: JSON.stringify({
+        query: query,
+        type: "keyword",
+        numResults: 10,
+        includeDomains: [],
+        startPublishedDate: getDaysAgo(2),
+      }),
+    });
+    
+    if (!res.ok) {
+      console.log(`[Exa] Error ${res.status}, skipping...`);
+      return [];
+    }
+    
+    const data = await res.json();
+    return (data.results || []).map((r, i) => ({
+      id: `${category}-${Date.now()}-${i}`,
+      title: r.title || "Untitled",
+      summary: r.text ? r.text.slice(0, 300) : "No summary available",
+      deepDive: `## Source\n\n${r.text || "Full content at source."}\n\n[Open Original](${r.url})`,
+      category: category,
+      source: sourceLabel,
+      sourceUrl: r.url || "#",
+      publishedAt: new Date().toISOString(),
+      importance: "normal",
+    }));
+  } catch (err) {
+    console.log(`[Exa] Error: ${err.message}`);
+    return [];
+  }
+}
+
+// ========== Browser-based news scraping ==========
+async function scrapeNewsSource(url, category, label, selector) {
+  console.log(`[Scrape] ${label}: ${url}`);
+  try {
+    const res = await fetch(url, {
+      headers: { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" },
+    });
+    if (!res.ok) return [];
+    const html = await res.text();
+    
+    // Simple extraction - look for headlines in common patterns
+    const headlines = [];
+    const titleRegex = /<h[2-3][^>]*>([^<]+)<\/h[2-3]>/g;
+    let match;
+    while ((match = titleRegex.exec(html)) !== null && headlines.length < 8) {
+      const title = match[1].trim();
+      if (title.length > 10 && title.length < 200) {
+        headlines.push({
+          id: `${category}-${Date.now()}-scrape-${headlines.length}`,
+          title: title,
+          summary: `From ${label}`,
+          deepDive: `## Source\n\nCollected from ${label}.\n\n[Visit Source](${url})`,
+          category: category,
+          source: label,
+          sourceUrl: url,
+          publishedAt: new Date().toISOString(),
+          importance: "normal",
+        });
+      }
+    }
+    return headlines;
+  } catch (err) {
+    console.log(`[Scrape] Error: ${err.message}`);
+    return [];
+  }
+}
+
+// ========== Aggregate "other" news items - low value items ==========
+function aggregateOthers(allItems) {
+  // If an item doesn't have enough content, move to "other"
+  return allItems.map(item => ({
+    ...item,
+    // Already categorized by source
+  }));
+}
+
+// ========== Helpers ==========
+function getDaysAgo(n) {
+  const d = new Date();
+  d.setDate(d.getDate() - n);
+  return d.toISOString().split("T")[0];
+}
+
+function deduplicate(items) {
+  const seen = new Set();
+  return items.filter((item) => {
+    const key = item.title.slice(0, 50).toLowerCase();
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
+function addHotTags(items) {
+  // Mark items with important keywords as "hot"
+  const hotKeywords = ["release", "launch", "breakthrough", "crisis", "crash", "surge",
+    "\u53d1\u5e03", "\u91cd\u5927", "\u7a81\u7834", "\u5371\u673a", "\u6c47\u7387", "\u767e\u4ebf"];
+  return items.map((item) => {
+    const text = (item.title + item.summary).toLowerCase();
+    const isHot = hotKeywords.some((k) => text.includes(k.toLowerCase()));
+    return { ...item, importance: isHot ? "hot" : "normal" };
+  });
+}
+
+// ========== Main ==========
+async function main() {
+  console.log("=".repeat(50));
+  console.log("\u6728\u5b50\u65b0\u95fb - News Fetcher");
+  console.log(new Date().toLocaleString("zh-CN"));
+  console.log("=".repeat(50));
+
+  // 1. Load existing data to preserve history
+  let existingItems = [];
+  try {
+    const raw = fs.readFileSync(DATA_PATH, "utf-8");
+    const existing = JSON.parse(raw);
+    existingItems = existing.items || [];
+    console.log(`Loaded ${existingItems.length} existing items`);
+  } catch {
+    console.log("No existing data, starting fresh");
+  }
+
+  // 2. Fetch AI news from AIHOT
+  const aiItems = await fetchAIHOTNews();
+
+  // 3. Fetch geopolitics news
+  const geoItems = await searchExa(
+    "geopolitics latest news international relations",
+    "geopolitics",
+    "Exa Search"
+  );
+
+  // 4. Fetch finance news
+  const finItems = await searchExa(
+    "financial markets stock market news today",
+    "finance",
+    "Exa Search"
+  );
+
+  // 5. Also scrape some known news sites
+  const [geoScrape, finScrape] = await Promise.all([
+    scrapeNewsSource(
+      "https://www.reuters.com/world/",
+      "geopolitics",
+      "Reuters World"
+    ),
+    scrapeNewsSource(
+      "https://www.bloomberg.com/markets",
+      "finance",
+      "Bloomberg Markets"
+    ),
+  ]);
+
+  // 6. Combine all new items
+  const allNewItems = [...aiItems, ...geoItems, ...finItems, ...geoScrape, ...finScrape];
+
+  // 7. Deduplicate and tag
+  const newItems = addHotTags(deduplicate(allNewItems));
+  console.log(`New items: ${newItems.length}`);
+
+  // 8. Merge with existing (keep 3 months of history)
+  const threeMonthsAgo = new Date();
+  threeMonthsAgo.setMonth(threeMonthsAgo.getMonth() - 3);
+  const cutoff = threeMonthsAgo.getTime();
+
+  const merged = [...newItems, ...existingItems]
+    .filter((item) => new Date(item.publishedAt).getTime() > cutoff)
+    .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+
+  console.log(`Total items after merge + 3-month filter: ${merged.length}`);
+
+  // 9. Write to file
+  const output = {
+    lastUpdated: new Date().toISOString(),
+    items: merged,
+  };
+
+  fs.writeFileSync(DATA_PATH, JSON.stringify(output, null, 2), "utf-8");
+  console.log(`Written to: ${DATA_PATH}`);
+
+  // 10. Count by category
+  const counts = {};
+  merged.forEach((i) => {
+    counts[i.category] = (counts[i.category] || 0) + 1;
+  });
+  console.log("Category counts:", counts);
+
+  console.log("Done!");
+}
+
+main().catch((err) => {
+  console.error("Fatal:", err);
+  process.exit(1);
+});
