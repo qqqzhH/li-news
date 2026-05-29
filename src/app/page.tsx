@@ -7,9 +7,51 @@ import { CATEGORIES, CATEGORY_ICONS } from "@/types";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
+// Daily quotes - cycles based on date
+const QUOTES = [
+  { text: "信息筛选的能力，比信息获取的能力更重要", author: "" },
+  { text: "新闻是历史的初稿", author: "菲利普·格雷厄姆" },
+  { text: "在信息爆炸的时代，安静是一种力量", author: "" },
+  { text: "读新闻的人，看到的是世界", author: "" },
+  { text: "好的问题比好的答案更有价值", author: "" },
+  { text: "每一天都是一张白纸，新闻是今天的笔迹", author: "" },
+  { text: "理解世界，从阅读开始", author: "" },
+  { text: "知天下事，方能立其身", author: "" },
+  { text: "视野决定格局，新闻打开视野", author: "" },
+  { text: "深度比速度更重要", author: "" },
+  { text: "不要只读标题，要读内容", author: "" },
+  { text: "信息自由是思想自由的前提", author: "" },
+  { text: "保持好奇，保持质疑", author: "" },
+  { text: "世界很大，新闻很近", author: "" },
+  { text: "独立思考，从多元信息开始", author: "" },
+  { text: "让信息为你所用，而非被信息淹没", author: "" },
+  { text: "知识就是力量，新闻是知识的入口", author: "" },
+  { text: "听见不同的声音，看见更远的地方", author: "" },
+  { text: "新闻告诉你发生了什么，思考告诉你为什么", author: "" },
+  { text: "阅读新闻，连接世界", author: "" },
+  { text: "在变化中寻找不变", author: "" },
+  { text: "事实是最好的论据", author: "" },
+  { text: "每一个新闻背后，都有一个世界", author: "" },
+  { text: "清醒的头脑，从阅读开始", author: "" },
+  { text: "信息时代，选择看什么比看多少更重要", author: "" },
+  { text: "理解不同，才能理解世界", author: "" },
+  { text: "新闻是通向世界的窗口", author: "" },
+  { text: "用信息武装自己，用思考照亮前路", author: "" },
+  { text: "广度与深度，缺一不可", author: "" },
+  { text: "在喧嚣中寻找真相", author: "" },
+  { text: "阅读新闻，不仅是为了知道，更是为了理解", author: "" },
+];
+
+function getDailyQuote() {
+  const today = new Date().toISOString().slice(0, 10); // "2026-05-30"
+  const hash = today.split("-").reduce((s, n) => s + parseInt(n), 0);
+  return QUOTES[hash % QUOTES.length];
+}
+
 export default function HomePage() {
   const data = getAllNews();
   const hotNews = getHotNews();
+  const quote = getDailyQuote();
 
   const titleRef = useRef<HTMLHeadingElement>(null);
   const subtitleRef = useRef<HTMLParagraphElement>(null);
@@ -51,14 +93,15 @@ export default function HomePage() {
     <div className="snap-container space-y-0">
 
       {/* ===== Screen 1: Hero ===== */}
-      <section data-section="home" className="snap-start min-h-screen flex flex-col justify-center px-6 md:px-16 max-w-3xl mx-auto w-full">
+      <section data-section="home" className="snap-start min-h-screen flex flex-col justify-center px-6 md:px-16 max-w-4xl mx-auto w-full">
+
         {/* Title */}
         <div className="text-center">
-          <h1 ref={titleRef} className="text-6xl md:text-7xl font-black tracking-wide leading-none">
+          <h1 ref={titleRef} className="text-7xl md:text-8xl font-black tracking-wide leading-none">
             <span className="text-[var(--color-ocean-600)]">木子</span>
             <span className="text-[var(--color-text)]">新闻</span>
           </h1>
-          <p ref={subtitleRef} className="mt-4 text-sm md:text-base text-[var(--color-text-muted)] max-w-md mx-auto">
+          <p ref={subtitleRef} className="mt-5 text-sm md:text-base text-[var(--color-text-muted)] max-w-md mx-auto">
             AI 动态 · 机器人 · 地缘政治 · 金融市场
           </p>
           <div ref={updRef} className="mt-3 text-xs text-[var(--color-text-muted)]/60">
@@ -72,13 +115,18 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Quote */}
+        {/* Quote - daily */}
         <div ref={quoteRef} className="mt-12 text-center">
-          <p className="text-sm text-[var(--color-text-muted)]/70 italic font-serif leading-relaxed tracking-wide">
-            <span className="text-[var(--color-ocean-400)] text-lg leading-none mr-1">&ldquo;</span>
-            信息筛选的能力，比信息获取的能力更重要
-            <span className="text-[var(--color-ocean-400)] text-lg leading-none ml-1">&rdquo;</span>
-          </p>
+          <div className="inline-block px-8 py-4 rounded-2xl bg-gradient-to-r from-[var(--color-ocean-50)] to-blue-50 border border-[var(--color-ocean-100)] shadow-sm">
+            <p className="text-base md:text-lg text-[var(--color-ocean-700)] font-serif italic leading-relaxed tracking-wide">
+              <span className="text-2xl text-[var(--color-ocean-400)] leading-none mr-2">&ldquo;</span>
+              {quote.text}
+              <span className="text-2xl text-[var(--color-ocean-400)] leading-none ml-2">&rdquo;</span>
+            </p>
+            {quote.author && (
+              <p className="text-xs text-[var(--color-text-muted)] mt-1.5">&mdash; {quote.author}</p>
+            )}
+          </div>
         </div>
 
         {/* Search */}
@@ -86,15 +134,15 @@ export default function HomePage() {
           <SearchBar large />
         </div>
 
-        {/* Category cards */}
-        <div ref={catsRef} className="mt-16 grid grid-cols-3 md:grid-cols-5 gap-5 max-w-2xl mx-auto w-full">
+        {/* Category cards - bigger */}
+        <div ref={catsRef} className="mt-16 grid grid-cols-3 md:grid-cols-5 gap-5 max-w-3xl mx-auto w-full">
           {CATEGORIES.map((cat) => {
             const count = data.items.filter((i) => i.category === cat.key).length;
             return (
               <Link key={cat.key} href={`/${cat.key}`}
-                className="cat-card bg-white border border-[var(--color-border)] rounded-xl py-5 px-3 text-center hover:border-[var(--color-ocean-400)] hover:shadow-lg hover:-translate-y-1.5 transition-all duration-250"
+                className="cat-card bg-white border border-[var(--color-border)] rounded-xl py-6 px-4 text-center hover:border-[var(--color-ocean-400)] hover:shadow-lg hover:-translate-y-1.5 transition-all duration-250"
               >
-                <div className="flex justify-center mb-2.5 text-[var(--color-ocean-500)]">
+                <div className="flex justify-center mb-3 text-[var(--color-ocean-500)] scale-110">
                   <span dangerouslySetInnerHTML={{ __html: CATEGORY_ICONS[cat.key] || "" }} />
                 </div>
                 <div className="text-sm font-semibold text-[var(--color-text)]">{cat.label}</div>
@@ -116,14 +164,11 @@ export default function HomePage() {
       {/* ===== Screen 2: 今日精选 ===== */}
       <section data-section="recommended" className="snap-start min-h-screen flex flex-col justify-center px-6 md:px-16 max-w-5xl mx-auto w-full" ref={section2Ref}>
         <div className="w-full">
-          {/* Title */}
           <div className="s2-title-line h-px w-16 bg-[var(--color-ocean-300)] mb-6" />
           <h2 className="text-2xl md:text-3xl font-bold text-[var(--color-text)] mb-1">今日精选</h2>
           <p className="text-sm text-[var(--color-text-muted)] mb-10">推荐阅读 · 最新动态</p>
 
-          {/* Columns */}
           <div className="s2-cols grid md:grid-cols-2 gap-8 md:gap-14">
-            {/* Left */}
             <div>
               <h3 className="text-base font-semibold text-[var(--color-text)] mb-4 flex items-center gap-2">
                 <svg className="w-4 h-4 text-amber-500" fill="currentColor" viewBox="0 0 24 24">
@@ -149,8 +194,6 @@ export default function HomePage() {
                 )}
               </div>
             </div>
-
-            {/* Right */}
             <div>
               <h3 className="text-base font-semibold text-[var(--color-text)] mb-4 flex items-center gap-2">
                 <svg className="w-4 h-4 text-[var(--color-ocean-500)]" fill="currentColor" viewBox="0 0 24 24">
