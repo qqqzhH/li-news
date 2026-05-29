@@ -32,34 +32,14 @@ export default function HomePage() {
     // Bounce arrow
     gsap.to(bounceRef.current, { y: -10, duration: 1.8, repeat: -1, yoyo: true, ease: "sine.inOut" });
 
-    // === Screen 2: Content entrance ===
+    // === Screen 2: Decorative entrance (content always visible) ===
     const section2 = section2Ref.current;
     if (section2) {
-      const animateSection2 = () => {
-        gsap.fromTo(".section2-title", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" });
-        gsap.fromTo(".section2-col", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.4, stagger: 0.1, delay: 0.15, ease: "power2.out" });
-        gsap.utils.toArray<HTMLElement>(".item-row").forEach((el, i) => {
-          gsap.fromTo(el, { opacity: 0, x: -15 }, { opacity: 1, x: 0, duration: 0.25, delay: 0.3 + i * 0.03, ease: "power2.out" });
-        });
+      const animateEntrance = () => {
+        gsap.fromTo(".section2-accent", { scaleX: 0 }, { scaleX: 1, duration: 0.4, ease: "power2.out" });
       };
-
-      // Check if already visible
-      const rect = section2.getBoundingClientRect();
-      if (rect.top < window.innerHeight && rect.bottom > 0) {
-        // Already visible - animate immediately
-        setTimeout(animateSection2, 300);
-      } else {
-        // Use IntersectionObserver
-        const obs = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              animateSection2();
-              obs.disconnect();
-            }
-          });
-        }, { threshold: 0.2 });
-        obs.observe(section2);
-      }
+      // Simple delay-based entrance
+      setTimeout(animateEntrance, 200);
     }
 
     // Floating blobs
