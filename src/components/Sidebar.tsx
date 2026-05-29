@@ -140,7 +140,7 @@ export default function Sidebar() {
             }`}
             title="推荐"
           >
-            {renderIcon("home")}
+            {renderIcon("recommended")}
             {!collapsed && (
               <span className="flex items-center gap-2 text-sm">
                 推荐
