@@ -111,7 +111,7 @@ export default function NewsCard({ item }: NewsCardProps) {
         >
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
         </svg>
-        {diveOpen ? "收起" : "🔍 深挖阅读"}
+        {diveOpen ? "收起" : "深挖阅读"}
       </button>
 
       {/* 深挖内容 */}
