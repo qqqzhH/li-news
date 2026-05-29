@@ -162,30 +162,40 @@ export default function HomePage() {
       </section>
 
       {/* ===== Screen 2: 今日精选 ===== */}
-      <section data-section="recommended" className="snap-start min-h-screen flex flex-col justify-center px-6 md:px-16 max-w-5xl mx-auto w-full" ref={section2Ref}>
+      <section data-section="recommended" className="snap-start min-h-screen flex flex-col pt-16 pb-8 px-6 md:px-16 max-w-5xl mx-auto w-full" ref={section2Ref}>
         <div className="w-full">
-          <div className="s2-title-line h-px w-16 bg-[var(--color-ocean-300)] mb-6" />
-          <h2 className="text-2xl md:text-3xl font-bold text-[var(--color-text)] mb-1">今日精选</h2>
-          <p className="text-sm text-[var(--color-text-muted)] mb-10">推荐阅读 · 最新动态</p>
+          {/* Section header */}
+          <div className="flex items-center gap-4 mb-8">
+            <div className="s2-title-line h-px flex-1 bg-gradient-to-r from-transparent via-[var(--color-ocean-300)] to-transparent max-w-[120px]" />
+            <div className="text-center">
+              <h2 className="text-3xl md:text-4xl font-black text-[var(--color-text)] tracking-tight">今日精选</h2>
+              <p className="text-sm text-[var(--color-text-muted)] mt-1">推荐阅读 · 最新动态</p>
+            </div>
+            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[var(--color-ocean-300)] to-transparent max-w-[120px]" />
+          </div>
 
-          <div className="s2-cols grid md:grid-cols-2 gap-8 md:gap-14">
+          {/* Two columns - more spacious */}
+          <div className="s2-cols grid md:grid-cols-2 gap-8 md:gap-16">
+            {/* Left: Recommended */}
             <div>
-              <h3 className="text-base font-semibold text-[var(--color-text)] mb-4 flex items-center gap-2">
-                <svg className="w-4 h-4 text-amber-500" fill="currentColor" viewBox="0 0 24 24">
-                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                </svg>
-                推荐阅读
-              </h3>
-              <div className="divide-y divide-[var(--color-border)] border border-[var(--color-border)] rounded-xl overflow-hidden bg-white">
+              <div className="flex items-center gap-2 mb-5">
+                <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200">
+                  <svg className="w-4 h-4 text-amber-500" fill="currentColor" viewBox="0 0 24 24">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-[var(--color-text)]">推荐阅读</h3>
+              </div>
+              <div className="divide-y divide-[var(--color-border)] border border-[var(--color-border)] rounded-2xl overflow-hidden bg-white shadow-sm">
                 {hotNews.slice(0, 5).length > 0 ? hotNews.slice(0, 5).map((item, idx) => (
                   <Link key={item.id} href={`/${item.category}`}
-                    className="flex items-center gap-3 px-5 py-4 hover:bg-[var(--color-ocean-50)] transition-colors"
+                    className="flex items-center gap-3 px-5 py-4 hover:bg-[var(--color-ocean-50)] transition-colors group"
                   >
                     <span className={`flex items-center justify-center w-7 h-7 rounded-xl text-xs font-bold shrink-0 ${idx < 3 ? "bg-red-50 text-red-500" : "bg-gray-50 text-[var(--color-text-muted)]"}`}>
                       {idx + 1}
                     </span>
                     <div className="min-w-0 flex-1">
-                      <div className="text-sm font-medium text-[var(--color-text)] truncate">{item.title}</div>
+                      <div className="text-sm font-medium text-[var(--color-text)] truncate group-hover:text-[var(--color-ocean-700)] transition-colors">{item.title}</div>
                       <div className="text-xs text-[var(--color-text-muted)] mt-0.5">{formatTime(item.publishedAt)}</div>
                     </div>
                   </Link>
@@ -194,28 +204,32 @@ export default function HomePage() {
                 )}
               </div>
             </div>
+
+            {/* Right: Latest */}
             <div>
-              <h3 className="text-base font-semibold text-[var(--color-text)] mb-4 flex items-center gap-2">
-                <svg className="w-4 h-4 text-[var(--color-ocean-500)]" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-                最新动态
-              </h3>
-              <div className="divide-y divide-[var(--color-border)] border border-[var(--color-border)] rounded-xl overflow-hidden bg-white">
+              <div className="flex items-center gap-2 mb-5">
+                <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-br from-[var(--color-ocean-50)] to-blue-50 border border-[var(--color-ocean-200)]">
+                  <svg className="w-4 h-4 text-[var(--color-ocean-500)]" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-[var(--color-text)]">最新动态</h3>
+              </div>
+              <div className="divide-y divide-[var(--color-border)] border border-[var(--color-border)] rounded-2xl overflow-hidden bg-white shadow-sm">
                 {data.items.slice(0, 5).length > 0 ? data.items.slice(0, 5).map((item) => {
                   const cat = CATEGORIES.find(c => c.key === item.category);
                   return (
                     <Link key={item.id} href={`/${item.category}`}
-                      className="flex items-center gap-3 px-5 py-4 hover:bg-[var(--color-ocean-50)] transition-colors"
+                      className="flex items-center gap-3 px-5 py-4 hover:bg-[var(--color-ocean-50)] transition-colors group"
                     >
-                      <span className="flex items-center justify-center shrink-0 w-4 h-4 text-[var(--color-ocean-500)]"
+                      <span className="flex items-center justify-center shrink-0 w-5 h-5 text-[var(--color-ocean-400)] group-hover:text-[var(--color-ocean-600)] transition-colors"
                         dangerouslySetInnerHTML={{ __html: CATEGORY_ICONS[item.category] || "" }}
                       />
                       <div className="min-w-0 flex-1">
-                        <div className="text-sm text-[var(--color-text)] truncate">{item.title}</div>
+                        <div className="text-sm font-medium text-[var(--color-text)] truncate group-hover:text-[var(--color-ocean-700)] transition-colors">{item.title}</div>
                       </div>
                       <div className="flex items-center gap-2 shrink-0">
-                        <span className="text-xs px-2 py-0.5 rounded-full bg-[var(--color-bg-alt)] text-[var(--color-text-muted)]">{cat?.label}</span>
+                        <span className="text-xs px-2 py-1 rounded-full bg-[var(--color-bg-alt)] text-[var(--color-text-muted)] font-medium">{cat?.label}</span>
                         <span className="text-xs text-[var(--color-text-muted)]">{formatTime(item.publishedAt)}</span>
                       </div>
                     </Link>
