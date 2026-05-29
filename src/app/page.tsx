@@ -179,8 +179,8 @@ export default function HomePage() {
       </section>
 
       {/* ===== Screen 2: 今日精选 ===== */}
-      <section data-section="recommended" className="snap-start min-h-screen relative px-6 md:px-16 max-w-5xl mx-auto w-full" ref={section2Ref}>
-        <div className="absolute top-[72vh] left-6 right-6 md:left-16 md:right-16 max-w-5xl mx-auto">
+      <section data-section="recommended" className="snap-start min-h-screen flex flex-col items-center justify-center px-6 md:px-16" ref={section2Ref}>
+        <div className="w-full max-w-5xl pt-[35vh]">
           {/* Section header */}
           <div className="flex items-center gap-4 mb-8">
             <div className="s2-title-line h-px flex-1 bg-gradient-to-r from-transparent via-[var(--color-ocean-300)] to-transparent max-w-[120px]" />
