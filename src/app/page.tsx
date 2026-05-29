@@ -65,42 +65,36 @@ export default function HomePage() {
             <div className="h-px flex-1 bg-[var(--color-border-light)]" />
           </div>
 
-          <div className="grid gap-4 md:grid-cols-2">
-            {/* 前 2 条突出显示 */}
-            {hotNews.slice(0, 2).map((item) => (
+          <div className="space-y-0 divide-y divide-[var(--color-border-light)] border border-[var(--color-border)] rounded-xl overflow-hidden bg-white">
+            {hotNews.slice(0, 6).map((item, idx) => (
               <Link
                 key={item.id}
                 href={`/${item.category}`}
-                className="block bg-white border border-[var(--color-border)] rounded-xl p-5 hover:border-[var(--color-ocean-300)] hover:shadow-md transition-all"
+                className="flex items-center gap-4 px-5 py-4 hover:bg-[var(--color-ocean-50)] transition-colors"
               >
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="px-2 py-0.5 rounded text-xs font-medium bg-red-50 text-red-500">热门</span>
+                {/* 数字编号 */}
+                <span
+                  className={`flex items-center justify-center w-7 h-7 rounded-lg text-sm font-semibold shrink-0 ${
+                    idx < 3
+                      ? "bg-red-50 text-red-500"
+                      : "bg-gray-50 text-[var(--color-text-muted)]"
+                  }`}
+                >
+                  {idx + 1}
+                </span>
+                <div className="min-w-0 flex-1">
+                  <h3 className="text-sm font-medium text-[var(--color-text)] truncate">{item.title}</h3>
+                  <p className="text-xs text-[var(--color-text-muted)] mt-0.5 truncate">{item.summary}</p>
+                </div>
+                <div className="flex items-center gap-2 shrink-0">
+                  {item.importance === "hot" && idx >= 3 && (
+                    <span className="text-xs px-1.5 py-0.5 rounded bg-red-50 text-red-500">热门</span>
+                  )}
                   <span className="text-xs text-[var(--color-text-muted)]">{formatTime(item.publishedAt)}</span>
                 </div>
-                <h3 className="text-base font-semibold text-[var(--color-text)] mb-2 leading-snug">{item.title}</h3>
-                <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed line-clamp-2">
-                  {item.summary}
-                </p>
               </Link>
             ))}
           </div>
-
-          {/* 后几条纯文字列表 */}
-          {hotNews.length > 2 && (
-            <div className="mt-3 space-y-1">
-              {hotNews.slice(2).map((item) => (
-                <Link
-                  key={item.id}
-                  href={`/${item.category}`}
-                  className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-[var(--color-ocean-50)] transition-colors"
-                >
-                  <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-ocean-300)] shrink-0" />
-                  <span className="text-sm text-[var(--color-text-secondary)] truncate">{item.title}</span>
-                  <span className="text-xs text-[var(--color-text-muted)] ml-auto shrink-0">{formatTime(item.publishedAt)}</span>
-                </Link>
-              ))}
-            </div>
-          )}
         </section>
       )}
 

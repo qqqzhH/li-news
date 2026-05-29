@@ -101,6 +101,27 @@ export default function Sidebar() {
             </Link>
           ))}
 
+          {/* 推荐入口 */}
+          <div className="my-1 border-t border-[var(--color-border)]" />
+
+          <Link
+            href="/"
+            className={`flex items-center justify-center md:justify-start gap-3 px-2 py-2 rounded-lg transition-all ${
+              pathname === "/" && !collapsed
+                ? "bg-[var(--color-ocean-100)] text-[var(--color-ocean-700)] font-medium"
+                : "text-[var(--color-text-secondary)] hover:bg-[var(--color-ocean-50)] hover:text-[var(--color-ocean-600)]"
+            }`}
+            title="推荐"
+          >
+            {renderIcon("home")}
+            {!collapsed && (
+              <span className="flex items-center gap-2 text-sm">
+                推荐
+                <span className="px-1.5 py-0.5 text-xs rounded-full bg-red-50 text-red-500">热门</span>
+              </span>
+            )}
+          </Link>
+
           <div className="my-1.5 border-t border-[var(--color-border)]" />
 
           <Link
