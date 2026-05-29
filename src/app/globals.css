@@ -19,6 +19,7 @@
   --color-text-secondary: #64748b;
   --color-text-muted: #94a3b8;
   --color-border: #e2e8f0;
+  --color-border-light: #f1f5f9;
   --color-sidebar-bg: #f0f7ff;
   --color-card-bg: #ffffff;
 }
@@ -36,14 +37,35 @@
   animation: fadeIn 0.3s ease-out forwards;
 }
 
+/* News card - 增加阴影层次 */
 .news-card {
   transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
 }
 .news-card:hover {
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.08);
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.1);
   border-color: var(--color-ocean-300);
+  transform: translateY(-1px);
 }
 
+/* 分类卡片悬停阴影 */
+.category-card {
+  transition: all 0.2s ease;
+}
+.category-card:hover {
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.08);
+  transform: translateY(-1px);
+}
+
+/* 最新动态列表项 */
+.recent-item {
+  transition: all 0.15s ease;
+}
+.recent-item:hover {
+  background: var(--color-ocean-50);
+}
+
+/* 深挖内容动画 */
 .deep-dive-content {
   max-height: 0;
   overflow: hidden;

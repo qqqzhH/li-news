@@ -8,98 +8,140 @@ export default function HomePage() {
   const hotNews = getHotNews();
 
   return (
-    <div className="space-y-8">
-      {/* Hero */}
-      <div className="text-center py-10 md:py-16 bg-gradient-to-b from-[var(--color-ocean-50)] to-white rounded-2xl">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+    <div className="space-y-14">
+      {/* === 一级：Hero === */}
+      <div className="text-center pt-12 pb-10 md:pt-16 md:pb-12">
+        <h1 className="text-5xl md:text-6xl font-bold mb-5 tracking-tight">
           <span className="text-[var(--color-ocean-600)]">木子</span>
           <span className="text-[var(--color-text)]">新闻</span>
         </h1>
-        <p className="text-[var(--color-text-secondary)] text-sm md:text-base max-w-lg mx-auto leading-relaxed">
-          AI 动态 · 地缘政治 · 金融市场
+        <p className="text-[var(--color-text-secondary)] text-sm md:text-base max-w-md mx-auto leading-relaxed">
+          AI 动态 · 机器人 · 地缘政治 · 金融市场
         </p>
-        <p className="text-xs text-[var(--color-text-muted)] mt-1">
-          每日 9:00 自动更新
-          {data.lastUpdated ? ` · 上次更新 ${formatTime(data.lastUpdated)}` : ""}
-        </p>
+        <div className="mt-2 flex items-center justify-center gap-2 text-xs text-[var(--color-text-muted)]">
+          <span>每日 9:00 自动更新</span>
+          {data.lastUpdated && (
+            <>
+              <span className="w-1 h-1 rounded-full bg-[var(--color-text-muted)]" />
+              <span>上次更新 {formatTime(data.lastUpdated)}</span>
+            </>
+          )}
+        </div>
       </div>
 
-      {/* Search */}
-      <div className="max-w-md mx-auto">
-        <SearchBar large />
+      {/* 搜索 - 缩小视觉权重 */}
+      <div className="max-w-sm mx-auto">
+        <SearchBar />
       </div>
 
-      {/* Category cards */}
-      <div className="grid grid-cols-3 md:grid-cols-5 gap-3">
-        {CATEGORIES.map((cat) => {
-          const count = data.items.filter((i) => i.category === cat.key).length;
-          return (
-            <Link
-              key={cat.key}
-              href={`/${cat.key}`}
-              className="bg-[var(--color-bg-alt)] border border-[var(--color-border)] rounded-xl p-4 text-center hover:border-[var(--color-ocean-300)] transition-colors group"
-            >
-              <div className="flex justify-center mb-2 text-[var(--color-ocean-600)] group-hover:scale-110 transition-transform">
-                <span dangerouslySetInnerHTML={{ __html: CATEGORY_ICONS[cat.key] || "" }} />
-              </div>
-              <div className="text-sm font-medium text-[var(--color-text)]">{cat.label}</div>
-              <div className="text-xs text-[var(--color-text-muted)] mt-0.5">{count} 条</div>
-            </Link>
-          );
-        })}
-      </div>
+      {/* === 二级：分类导览 === */}
+      <section>
+        <div className="grid grid-cols-3 md:grid-cols-5 gap-4">
+          {CATEGORIES.map((cat) => {
+            const count = data.items.filter((i) => i.category === cat.key).length;
+            return (
+              <Link
+                key={cat.key}
+                href={`/${cat.key}`}
+                className="category-card bg-white border border-[var(--color-border)] rounded-xl p-5 text-center hover:border-[var(--color-ocean-300)]"
+              >
+                <div className="flex justify-center mb-3 text-[var(--color-ocean-600)]">
+                  <span dangerouslySetInnerHTML={{ __html: CATEGORY_ICONS[cat.key] || "" }} />
+                </div>
+                <div className="text-sm font-medium text-[var(--color-text)]">{cat.label}</div>
+                <div className="text-xs text-[var(--color-text-muted)] mt-1">{count} 条</div>
+              </Link>
+            );
+          })}
+        </div>
+      </section>
 
-      {/* Hot news */}
+      {/* === 二级：热门推荐 === */}
       {hotNews.length > 0 && (
         <section>
-          <h2 className="text-lg font-semibold mb-4 flex items-center gap-2">
-            <span className="px-2 py-0.5 rounded bg-red-50 text-red-500 text-xs font-medium">热门</span>
-            推荐阅读
-          </h2>
-          <div className="space-y-3">
-            {hotNews.map((item) => (
+          <div className="flex items-center gap-3 mb-6">
+            <div className="h-px flex-1 bg-[var(--color-border-light)]" />
+            <span className="text-xs font-medium text-[var(--color-text-muted)] tracking-wider uppercase">推荐阅读</span>
+            <div className="h-px flex-1 bg-[var(--color-border-light)]" />
+          </div>
+
+          <div className="grid gap-4 md:grid-cols-2">
+            {/* 前 2 条突出显示 */}
+            {hotNews.slice(0, 2).map((item) => (
               <Link
                 key={item.id}
                 href={`/${item.category}`}
-                className="block bg-white border border-[var(--color-border)] rounded-xl p-4 hover:border-[var(--color-ocean-300)] hover:shadow-sm transition-all"
+                className="block bg-white border border-[var(--color-border)] rounded-xl p-5 hover:border-[var(--color-ocean-300)] hover:shadow-md transition-all"
               >
-                <div>
-                  <h3 className="text-sm font-medium text-[var(--color-text)]">{item.title}</h3>
-                  <p className="text-xs text-[var(--color-text-muted)] mt-1">
-                    {item.summary.slice(0, 100)}...
-                  </p>
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="px-2 py-0.5 rounded text-xs font-medium bg-red-50 text-red-500">热门</span>
+                  <span className="text-xs text-[var(--color-text-muted)]">{formatTime(item.publishedAt)}</span>
                 </div>
+                <h3 className="text-base font-semibold text-[var(--color-text)] mb-2 leading-snug">{item.title}</h3>
+                <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed line-clamp-2">
+                  {item.summary}
+                </p>
               </Link>
             ))}
           </div>
+
+          {/* 后几条纯文字列表 */}
+          {hotNews.length > 2 && (
+            <div className="mt-3 space-y-1">
+              {hotNews.slice(2).map((item) => (
+                <Link
+                  key={item.id}
+                  href={`/${item.category}`}
+                  className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-[var(--color-ocean-50)] transition-colors"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-ocean-300)] shrink-0" />
+                  <span className="text-sm text-[var(--color-text-secondary)] truncate">{item.title}</span>
+                  <span className="text-xs text-[var(--color-text-muted)] ml-auto shrink-0">{formatTime(item.publishedAt)}</span>
+                </Link>
+              ))}
+            </div>
+          )}
         </section>
       )}
 
-      {/* Recent */}
+      {/* === 三级：最新动态 === */}
       <section>
-        <h2 className="text-lg font-semibold mb-4">最新动态</h2>
-        <div className="space-y-3">
-          {data.items.slice(0, 10).map((item) => {
+        <div className="flex items-center gap-3 mb-6">
+          <div className="h-px flex-1 bg-[var(--color-border-light)]" />
+          <span className="text-xs font-medium text-[var(--color-text-muted)] tracking-wider uppercase">最新动态</span>
+          <div className="h-px flex-1 bg-[var(--color-border-light)]" />
+        </div>
+
+        <div className="divide-y divide-[var(--color-border-light)] border border-[var(--color-border)] rounded-xl overflow-hidden bg-white">
+          {data.items.slice(0, 8).map((item) => {
             const cat = CATEGORIES.find((c) => c.key === item.category);
             return (
               <Link
                 key={item.id}
                 href={`/${item.category}`}
-                className="flex items-center gap-3 bg-[var(--color-bg-alt)] border border-[var(--color-border)] rounded-xl p-3 hover:border-[var(--color-ocean-300)] transition-colors"
+                className="recent-item flex items-center gap-3 px-5 py-3.5"
               >
                 <span
-                  className="flex items-center justify-center shrink-0 w-5 h-5 text-[var(--color-ocean-600)]"
+                  className="flex items-center justify-center shrink-0 w-4 h-4 text-[var(--color-ocean-500)]"
                   dangerouslySetInnerHTML={{ __html: CATEGORY_ICONS[item.category] || "" }}
                 />
-                <div className="min-w-0">
-                  <h3 className="text-sm font-medium text-[var(--color-text)] truncate">{item.title}</h3>
-                  <p className="text-xs text-[var(--color-text-muted)] mt-0.5">{formatTime(item.publishedAt)}</p>
+                <div className="min-w-0 flex-1">
+                  <h3 className="text-sm text-[var(--color-text)] truncate">{item.title}</h3>
+                </div>
+                <div className="flex items-center gap-3 shrink-0">
+                  <span className="text-xs px-2 py-0.5 rounded-full bg-[var(--color-bg-alt)] text-[var(--color-text-muted)]">
+                    {cat?.label}
+                  </span>
+                  <span className="text-xs text-[var(--color-text-muted)]">{formatTime(item.publishedAt)}</span>
                 </div>
               </Link>
             );
           })}
         </div>
       </section>
+
+      {/* 底部留白 */}
+      <div className="h-8" />
     </div>
   );
 }

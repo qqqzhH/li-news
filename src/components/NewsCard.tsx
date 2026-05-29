@@ -56,11 +56,11 @@ export default function NewsCard({ item }: NewsCardProps) {
   };
 
   return (
-    <article className="news-card bg-[var(--color-card-bg)] border border-[var(--color-border)] rounded-xl p-5 animate-fade-in">
+    <article className="news-card bg-white border border-[var(--color-border)] rounded-xl p-6 animate-fade-in">
       {/* 元信息 */}
-      <div className="flex items-center gap-2 mb-2 flex-wrap">
+      <div className="flex items-center gap-2 mb-3 flex-wrap">
         <span
-          className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium"
+          className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium"
           style={{ backgroundColor: cc.bg, color: cc.text }}
         >
           {catInfo?.label}
@@ -78,18 +78,18 @@ export default function NewsCard({ item }: NewsCardProps) {
       </div>
 
       {/* 标题 */}
-      <h2 className="text-lg font-semibold text-[var(--color-text)] mb-2 leading-snug">
+      <h2 className="text-xl font-semibold text-[var(--color-text)] mb-3 leading-snug">
         {item.title}
       </h2>
 
       {/* 简介 */}
-      <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed mb-3">
+      <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed mb-4">
         {item.summary}
       </p>
 
       {/* 来源 */}
-      <div className="flex items-center gap-2 text-xs text-[var(--color-text-muted)] mb-3">
-        <span>📡 {item.source}</span>
+      <div className="flex items-center gap-2 text-xs text-[var(--color-text-muted)] mb-4">
+        <span>{item.source}</span>
         <a
           href={item.sourceUrl}
           target="_blank"
@@ -103,7 +103,7 @@ export default function NewsCard({ item }: NewsCardProps) {
       {/* 深挖按钮 */}
       <button
         onClick={() => setDiveOpen(!diveOpen)}
-        className="flex items-center gap-1 text-sm text-[var(--color-ocean-600)] hover:text-[var(--color-ocean-700)] font-medium transition-colors"
+        className="flex items-center gap-1.5 text-sm text-[var(--color-ocean-600)] hover:text-[var(--color-ocean-700)] font-medium transition-colors"
       >
         <svg
           className={`w-4 h-4 transition-transform ${diveOpen ? "rotate-90" : ""}`}
