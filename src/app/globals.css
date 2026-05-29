@@ -37,6 +37,46 @@
   animation: fadeIn 0.3s ease-out forwards;
 }
 
+/* 黑客模式 */
+.hacker-mode {
+  --color-bg: #0a0a0a !important;
+  --color-text: #00ff41 !important;
+  --color-text-secondary: #00cc33 !important;
+  --color-text-muted: #008800 !important;
+  --color-border: #003300 !important;
+  --color-border-light: #002200 !important;
+  --color-sidebar-bg: #050505 !important;
+  --color-card-bg: #0d0d0d !important;
+  --color-bg-alt: #0a0a0a !important;
+  --color-ocean-50: #001a00 !important;
+  --color-ocean-100: #002200 !important;
+  --color-ocean-200: #003300 !important;
+  --color-ocean-300: #004400 !important;
+  --color-ocean-400: #00cc33 !important;
+  --color-ocean-500: #00ff41 !important;
+  --color-ocean-600: #00ff41 !important;
+  --color-ocean-700: #00cc33 !important;
+}
+.hacker-mode body,
+.hacker-mode * {
+  font-family: "Courier New", "Consolas", monospace !important;
+}
+/* 扫描线效果 */
+.hacker-mode body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 255, 65, 0.03) 2px,
+    rgba(0, 255, 65, 0.03) 4px
+  );
+  pointer-events: none;
+  z-index: 9999;
+}
+
 /* 滚动吸附 */
 .snap-container {
   scroll-snap-type: y mandatory;
@@ -69,7 +109,7 @@
   }
 }
 
-/* News card - 增加阴影层次 */
+/* News card - 增强阴影层次 */
 .news-card {
   transition: all 0.2s ease;
   box-shadow: 0 1px 3px rgba(0,0,0,0.04);

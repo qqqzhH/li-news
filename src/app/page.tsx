@@ -71,6 +71,23 @@ export default function HomePage() {
       .fromTo(searchRef.current, { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.35 }, "-=0.1")
       .fromTo(".cat-card", { opacity: 0, y: 12, scale: 0.96 }, { opacity: 1, y: 0, scale: 1, duration: 0.35, stagger: 0.06 }, "-=0.15");
 
+    // Typewriter effect for daily quote
+    setTimeout(() => {
+      const qEl = document.querySelector(".quote-text") as HTMLElement | null;
+      if (!qEl) return;
+      const fullText = qEl.getAttribute("data-text") || "";
+      qEl.textContent = "";
+      let i = 0;
+      const tw = setInterval(() => {
+        if (i < fullText.length) {
+          qEl.textContent += fullText[i];
+          i++;
+        } else {
+          clearInterval(tw);
+        }
+      }, 30);
+    }, 600);
+
     gsap.to(arrowRef.current, { y: -6, duration: 1.8, repeat: -1, yoyo: true, ease: "sine.inOut" });
 
     const s2 = section2Ref.current;
@@ -118,7 +135,7 @@ export default function HomePage() {
         {/* Quote - daily */}
         <div ref={quoteRef} className="mt-12 text-center">
           <div className="inline-block px-8 py-4 rounded-2xl bg-gradient-to-r from-[var(--color-ocean-50)] to-blue-50 border border-[var(--color-ocean-100)] shadow-sm">
-            <p className="text-base md:text-lg text-[var(--color-ocean-700)] font-serif italic leading-relaxed tracking-wide">
+            <p className="quote-text text-base md:text-lg text-[var(--color-ocean-700)] font-serif italic leading-relaxed tracking-wide" data-text={quote.text}>
               <span className="text-2xl text-[var(--color-ocean-400)] leading-none mr-2">&ldquo;</span>
               {quote.text}
               <span className="text-2xl text-[var(--color-ocean-400)] leading-none ml-2">&rdquo;</span>
