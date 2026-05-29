@@ -6,21 +6,22 @@ import { CATEGORIES } from "@/types";
 export default function HomePage() {
   const data = getAllNews();
   const hotNews = getHotNews();
-  const totalItems = data.items.length;
 
   return (
     <div className="space-y-8">
-      {/* Hero */}
-      <div className="text-center py-8 md:py-12">
-        <h1 className="text-3xl md:text-4xl font-bold mb-3">
-          <span className="text-[var(--color-ocean-600)]">\u6728\u5b50</span> \u65b0\u95fb
+      {/* Hero - 更突出 */}
+      <div className="text-center py-10 md:py-16 bg-gradient-to-b from-[var(--color-ocean-50)] to-white rounded-2xl">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+          <span className="text-[var(--color-ocean-600)]">木子</span>
+          <span className="text-[var(--color-text)]">新闻</span>
         </h1>
-        <p className="text-[var(--color-text-secondary)] text-sm md:text-base max-w-lg mx-auto">
-          \u4f60\u7684\u4e2a\u4eba\u667a\u80fd\u65b0\u95fb\u7ad9 \u00b7 \u6bcf\u65e5 9:00 \u81ea\u52a8\u66f4\u65b0
+        <p className="text-[var(--color-text-secondary)] text-sm md:text-base max-w-lg mx-auto leading-relaxed">
+          AI 动态 · 地缘政治 · 金融市场
         </p>
-        <div className="mt-2 text-xs text-[var(--color-text-muted)]">
-          {data.lastUpdated ? `\u6700\u540e\u66f4\u65b0: ${formatTime(data.lastUpdated)}` : ""}
-        </div>
+        <p className="text-xs text-[var(--color-text-muted)] mt-1">
+          每日 9:00 自动更新
+          {data.lastUpdated ? ` · 上次更新 ${formatTime(data.lastUpdated)}` : ""}
+        </p>
       </div>
 
       {/* Search */}
@@ -28,7 +29,7 @@ export default function HomePage() {
         <SearchBar large />
       </div>
 
-      {/* Stats */}
+      {/* 分类统计卡片 */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
         {CATEGORIES.map((cat) => {
           const count = data.items.filter((i) => i.category === cat.key).length;
@@ -40,34 +41,31 @@ export default function HomePage() {
             >
               <div className="text-2xl mb-1">{cat.icon}</div>
               <div className="text-sm font-medium text-[var(--color-text)]">{cat.label}</div>
-              <div className="text-xs text-[var(--color-text-muted)] mt-0.5">{count} items</div>
+              <div className="text-xs text-[var(--color-text-muted)] mt-0.5">{count} 条</div>
             </Link>
           );
         })}
       </div>
 
-      {/* Hot News */}
+      {/* 热门推荐 */}
       {hotNews.length > 0 && (
         <section>
           <h2 className="text-lg font-semibold mb-4 flex items-center gap-2">
-            <span className="px-2 py-0.5 rounded bg-red-50 text-[var(--color-red-accent)] text-xs font-medium">HOT</span>
-            Hot News
+            <span className="px-2 py-0.5 rounded bg-red-50 text-[var(--color-red-accent)] text-xs font-medium">🔥 热门</span>
+            推荐阅读
           </h2>
           <div className="space-y-3">
             {hotNews.map((item) => (
               <Link
                 key={item.id}
                 href={`/${item.category}`}
-                className="block bg-[var(--color-bg-alt)] border border-[var(--color-border)] rounded-xl p-4 hover:border-[var(--color-ocean-300)] transition-colors"
+                className="block bg-white border border-[var(--color-border)] rounded-xl p-4 hover:border-[var(--color-ocean-300)] hover:shadow-sm transition-all"
               >
-                <div className="flex items-start gap-3">
-                  <span className="text-[var(--color-red-accent)] mt-0.5 shrink-0">\u25b6</span>
-                  <div>
-                    <h3 className="text-sm font-medium text-[var(--color-text)]">{item.title}</h3>
-                    <p className="text-xs text-[var(--color-text-muted)] mt-1">
-                      {item.summary.slice(0, 100)}...
-                    </p>
-                  </div>
+                <div>
+                  <h3 className="text-sm font-medium text-[var(--color-text)]">{item.title}</h3>
+                  <p className="text-xs text-[var(--color-text-muted)] mt-1">
+                    {item.summary.slice(0, 100)}...
+                  </p>
                 </div>
               </Link>
             ))}
@@ -75,9 +73,9 @@ export default function HomePage() {
         </section>
       )}
 
-      {/* Recent across all categories */}
+      {/* 最新动态 */}
       <section>
-        <h2 className="text-lg font-semibold mb-4">Recent News</h2>
+        <h2 className="text-lg font-semibold mb-4">最新动态</h2>
         <div className="space-y-3">
           {data.items.slice(0, 10).map((item) => {
             const catInfo = CATEGORIES.find((c) => c.key === item.category);

@@ -42,7 +42,7 @@ export default function NewsCard({ item }: NewsCardProps) {
         if (match) {
           return (
             <p key={i} className="mb-1">
-              <strong className="text-[var(--color-text)]">{match[1]}</strong>: {match[2]}
+              <strong className="text-[var(--color-text)]">{match[1]}</strong>：{match[2]}
             </p>
           );
         }
@@ -57,7 +57,7 @@ export default function NewsCard({ item }: NewsCardProps) {
 
   return (
     <article className="news-card bg-[var(--color-card-bg)] border border-[var(--color-border)] rounded-xl p-5 animate-fade-in">
-      {/* Meta info */}
+      {/* 元信息 */}
       <div className="flex items-center gap-2 mb-2 flex-wrap">
         <span
           className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium"
@@ -68,7 +68,7 @@ export default function NewsCard({ item }: NewsCardProps) {
 
         {item.importance === "hot" && (
           <span className="px-2 py-0.5 rounded-full text-xs font-medium bg-red-50 text-[var(--color-red-accent)]">
-            Hot
+            热门
           </span>
         )}
 
@@ -77,30 +77,30 @@ export default function NewsCard({ item }: NewsCardProps) {
         </span>
       </div>
 
-      {/* Title */}
+      {/* 标题 */}
       <h2 className="text-lg font-semibold text-[var(--color-text)] mb-2 leading-snug">
         {item.title}
       </h2>
 
-      {/* Summary */}
+      {/* 简介 */}
       <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed mb-3">
         {item.summary}
       </p>
 
-      {/* Source */}
+      {/* 来源 */}
       <div className="flex items-center gap-2 text-xs text-[var(--color-text-muted)] mb-3">
-        <span>{item.source}</span>
+        <span>📡 {item.source}</span>
         <a
           href={item.sourceUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="text-[var(--color-ocean-600)] hover:underline"
         >
-          Source
+          原文 ↗
         </a>
       </div>
 
-      {/* Deep dive toggle */}
+      {/* 深挖按钮 */}
       <button
         onClick={() => setDiveOpen(!diveOpen)}
         className="flex items-center gap-1 text-sm text-[var(--color-ocean-600)] hover:text-[var(--color-ocean-700)] font-medium transition-colors"
@@ -111,10 +111,10 @@ export default function NewsCard({ item }: NewsCardProps) {
         >
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
         </svg>
-        {diveOpen ? "Collapse" : "Deep Dive"}
+        {diveOpen ? "收起" : "🔍 深挖阅读"}
       </button>
 
-      {/* Deep dive content */}
+      {/* 深挖内容 */}
       <div className={`deep-dive-content ${diveOpen ? "open" : ""}`}>
         <div className="mt-3 pt-3 border-t border-[var(--color-border)]">
           <div className="text-sm text-[var(--color-text-secondary)] leading-relaxed">

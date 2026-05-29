@@ -183,31 +183,31 @@ async function main() {
   // 2. Fetch AI news from AIHOT
   const aiItems = await fetchAIHOTNews();
 
-  // 3. Fetch geopolitics news
+  // 3. Fetch geopolitics news (中文搜索)
   const geoItems = await searchExa(
-    "geopolitics latest news international relations",
+    "地缘政治 国际新闻 外交 冲突 最新动态 中国 美国 欧洲 中东",
     "geopolitics",
-    "Exa Search"
-  );
+    "Exa 搜索"
+  ).then(items => items.filter(i => /[\u4e00-\u9fff]/.test(i.title || i.summary)));
 
-  // 4. Fetch finance news
+  // 4. Fetch finance news (中文搜索)
   const finItems = await searchExa(
-    "financial markets stock market news today",
+    "金融市场 A股 美股 股票 经济 政策 利率 汇率 比特币 最新新闻",
     "finance",
-    "Exa Search"
-  );
+    "Exa 搜索"
+  ).then(items => items.filter(i => /[\u4e00-\u9fff]/.test(i.title || i.summary)));
 
-  // 5. Also scrape some known news sites
+  // 5. Also scrape some Chinese news sites
   const [geoScrape, finScrape] = await Promise.all([
     scrapeNewsSource(
-      "https://www.reuters.com/world/",
+      "https://news.sina.com.cn/world/",
       "geopolitics",
-      "Reuters World"
+      "新浪国际新闻"
     ),
     scrapeNewsSource(
-      "https://www.bloomberg.com/markets",
+      "https://finance.sina.com.cn/",
       "finance",
-      "Bloomberg Markets"
+      "新浪财经"
     ),
   ]);
 

@@ -28,7 +28,7 @@ function SearchContent() {
   return (
     <div className="space-y-6">
       <div className="pb-4 border-b border-[var(--color-border)]">
-        <h1 className="text-2xl font-bold text-[var(--color-text)] mb-3">Search</h1>
+        <h1 className="text-2xl font-bold text-[var(--color-text)] mb-3">搜索新闻</h1>
         <div className="max-w-md">
           <SearchBar initialQuery={query} large />
         </div>
@@ -36,22 +36,22 @@ function SearchContent() {
 
       {loading && (
         <div className="text-center py-16 text-[var(--color-text-muted)]">
-          <p>Searching...</p>
+          <p>搜索中...</p>
         </div>
       )}
 
       {!loading && query && results.length === 0 && (
         <div className="text-center py-16 text-[var(--color-text-muted)]">
-          <div className="text-4xl mb-4">{"\ud83d\udd0d"}</div>
-          <p className="text-lg font-medium mb-1">No results</p>
-          <p className="text-sm">Try a different search term</p>
+          <div className="text-4xl mb-4">🔍</div>
+          <p className="text-lg font-medium mb-1">未找到结果</p>
+          <p className="text-sm">试试其他关键词</p>
         </div>
       )}
 
       {!loading && results.length > 0 && (
         <>
           <p className="text-sm text-[var(--color-text-muted)]">
-            {results.length} results for &quot;{query}&quot;
+            找到 {results.length} 条结果
           </p>
           <div className="space-y-4">
             {results.map((item) => (
@@ -63,9 +63,9 @@ function SearchContent() {
 
       {!query && (
         <div className="text-center py-16 text-[var(--color-text-muted)]">
-          <div className="text-4xl mb-4">{"\ud83d\udd0d"}</div>
-          <p className="text-lg font-medium mb-1">Search the news</p>
-          <p className="text-sm">Type above to search across all categories</p>
+          <div className="text-4xl mb-4">🔍</div>
+          <p className="text-lg font-medium mb-1">搜索新闻</p>
+          <p className="text-sm">输入关键词搜索所有栏目</p>
         </div>
       )}
     </div>
@@ -74,7 +74,7 @@ function SearchContent() {
 
 export default function SearchPage() {
   return (
-    <Suspense fallback={<div className="text-center py-16">Loading...</div>}>
+    <Suspense fallback={<div className="text-center py-16 text-[var(--color-text-muted)]">加载中...</div>}>
       <SearchContent />
     </Suspense>
   );

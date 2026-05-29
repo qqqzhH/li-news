@@ -112,7 +112,7 @@ export default function Sidebar() {
 
         {!collapsed && (
           <div className="p-3 border-t border-[var(--color-border)] text-xs text-[var(--color-text-muted)] text-center">
-            RSS Feed Available
+            RSS 订阅可用
           </div>
         )}
       </aside>
