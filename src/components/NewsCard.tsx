@@ -63,7 +63,7 @@ export default function NewsCard({ item }: NewsCardProps) {
           className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium"
           style={{ backgroundColor: cc.bg, color: cc.text }}
         >
-          {catInfo?.icon} {catInfo?.label}
+          {catInfo?.label}
         </span>
 
         {item.importance === "hot" && (

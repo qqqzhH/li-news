@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { CATEGORIES, Category } from "@/types";
+import { CATEGORIES, Category, CATEGORY_ICONS } from "@/types";
 import { useState } from "react";
 
 export default function Sidebar() {
@@ -13,6 +13,13 @@ export default function Sidebar() {
     if (cat === "home") return pathname === "/";
     return pathname === `/${cat}`;
   };
+
+  const renderIcon = (name: string) => (
+    <span
+      className="flex items-center justify-center shrink-0 w-5 h-5"
+      dangerouslySetInnerHTML={{ __html: CATEGORY_ICONS[name] || "" }}
+    />
+  );
 
   return (
     <>
@@ -28,7 +35,7 @@ export default function Sidebar() {
       <button
         onClick={() => setCollapsed(false)}
         className="fixed top-3 left-3 z-40 md:hidden p-2 rounded-lg bg-white shadow-md border border-[var(--color-border)]"
-        aria-label="Open menu"
+        aria-label="打开菜单"
       >
         <svg className="w-5 h-5 text-[var(--color-text)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -36,83 +43,83 @@ export default function Sidebar() {
       </button>
 
       <aside
-        className={`fixed md:sticky top-0 left-0 h-screen z-30 bg-[var(--color-sidebar-bg)] border-r border-[var(--color-border)] flex flex-col transition-all duration-300 ${
+        className={`fixed md:sticky top-0 left-0 h-screen z-30 bg-[var(--color-sidebar-bg)] border-r border-[var(--color-border)] flex flex-col transition-all duration-300 overflow-hidden ${
           collapsed ? "-translate-x-full md:translate-x-0 md:w-16" : "translate-x-0 w-64"
         }`}
       >
         {/* Header */}
-        <div className="flex items-center justify-between p-4 border-b border-[var(--color-border)]">
+        <div className="flex items-center justify-between px-3 py-3 border-b border-[var(--color-border)] min-h-0">
           {!collapsed ? (
-            <Link href="/" className="flex items-center gap-2">
-              <span className="text-xl font-bold text-[var(--color-ocean-600)]">木子</span>
-              <span className="text-lg font-medium text-[var(--color-text)]">新闻</span>
+            <Link href="/" className="flex items-center gap-1.5 ml-1">
+              <span className="text-lg font-bold text-[var(--color-ocean-600)]">木子</span>
+              <span className="text-base font-medium text-[var(--color-text)]">新闻</span>
             </Link>
           ) : (
             <Link href="/" className="mx-auto">
-              <span className="text-xl font-bold text-[var(--color-ocean-600)]">木</span>
+              <span className="text-base font-bold text-[var(--color-ocean-600)]">木</span>
             </Link>
           )}
           <button
             onClick={() => setCollapsed(!collapsed)}
-            className="p-1.5 rounded-lg hover:bg-[var(--color-ocean-100)] transition-colors text-[var(--color-text-secondary)] md:block hidden"
-            aria-label={collapsed ? "Expand sidebar" : "Collapse sidebar"}
+            className="p-1 rounded-md hover:bg-[var(--color-ocean-100)] transition-colors text-[var(--color-text-secondary)] md:block hidden"
+            aria-label={collapsed ? "展开侧栏" : "折叠侧栏"}
           >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={collapsed ? "M13 5l7 7-7 7M5 5l7 7-7 7" : "M11 19l-7-7 7-7m8 14l-7-7 7-7"} />
             </svg>
           </button>
         </div>
 
         {/* Navigation */}
-        <nav className="flex-1 py-2 space-y-1 px-2 overflow-y-auto">
+        <nav className="flex-1 py-2 space-y-0.5 px-1.5 overflow-y-auto">
           <Link
             href="/"
-            className={`flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all ${
+            className={`flex items-center justify-center md:justify-start gap-3 px-2 py-2 rounded-lg transition-all ${
               isActive("home")
                 ? "bg-[var(--color-ocean-100)] text-[var(--color-ocean-700)] font-medium"
                 : "text-[var(--color-text-secondary)] hover:bg-[var(--color-ocean-50)] hover:text-[var(--color-ocean-600)]"
             }`}
-            title="Home"
+            title="首页"
           >
-            <span className="text-lg">🏠</span>
-            {!collapsed && <span>首页</span>}
+            {renderIcon("home")}
+            {!collapsed && <span className="text-sm">首页</span>}
           </Link>
 
           {CATEGORIES.map((cat) => (
             <Link
               key={cat.key}
               href={`/${cat.key}`}
-              className={`flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all ${
+              className={`flex items-center justify-center md:justify-start gap-3 px-2 py-2 rounded-lg transition-all ${
                 isActive(cat.key)
                   ? "bg-[var(--color-ocean-100)] text-[var(--color-ocean-700)] font-medium"
                   : "text-[var(--color-text-secondary)] hover:bg-[var(--color-ocean-50)] hover:text-[var(--color-ocean-600)]"
               }`}
               title={cat.label}
             >
-              <span className="text-lg">{cat.icon}</span>
-              {!collapsed && <span>{cat.label}</span>}
+              {renderIcon(cat.key)}
+              {!collapsed && <span className="text-sm">{cat.label}</span>}
             </Link>
           ))}
 
-          <div className="my-2 border-t border-[var(--color-border)]" />
+          <div className="my-1.5 border-t border-[var(--color-border)]" />
 
           <Link
             href="/search"
-            className={`flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all ${
+            className={`flex items-center justify-center md:justify-start gap-3 px-2 py-2 rounded-lg transition-all ${
               pathname === "/search"
                 ? "bg-[var(--color-ocean-100)] text-[var(--color-ocean-700)] font-medium"
                 : "text-[var(--color-text-secondary)] hover:bg-[var(--color-ocean-50)] hover:text-[var(--color-ocean-600)]"
             }`}
-            title="Search"
+            title="搜索"
           >
-            <span className="text-lg">🔍</span>
-            {!collapsed && <span>搜索</span>}
+            {renderIcon("search")}
+            {!collapsed && <span className="text-sm">搜索</span>}
           </Link>
         </nav>
 
         {!collapsed && (
-          <div className="p-3 border-t border-[var(--color-border)] text-xs text-[var(--color-text-muted)] text-center">
-            RSS 订阅可用
+          <div className="p-2 border-t border-[var(--color-border)] text-xs text-[var(--color-text-muted)] text-center">
+            RSS 订阅
           </div>
         )}
       </aside>
