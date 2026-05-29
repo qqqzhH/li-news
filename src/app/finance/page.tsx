@@ -11,10 +11,15 @@ export default function FinancePage() {
   return (
     <div className="space-y-6">
       <div className="flex items-center gap-3 pb-4 border-b border-[var(--color-border)]">
-        <span className="text-3xl">{"\ud83d\udcb0"}</span>
+        <span
+          className="flex items-center justify-center w-7 h-7 text-[var(--color-ocean-600)]"
+          dangerouslySetInnerHTML={{
+            __html: '<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>',
+          }}
+        />
         <div>
-          <h1 className="text-2xl font-bold text-[var(--color-text)]">\u91d1\u878d\u5e02\u573a</h1>
-          <p className="text-sm text-[var(--color-text-muted)]">{items.length} articles</p>
+          <h1 className="text-2xl font-bold text-[var(--color-text)]">金融市场</h1>
+          <p className="text-sm text-[var(--color-text-muted)]">{items.length} 条</p>
         </div>
       </div>
 
@@ -30,9 +35,15 @@ export default function FinancePage() {
         </div>
       ) : (
         <div className="text-center py-16 text-[var(--color-text-muted)]">
-          <div className="text-4xl mb-4">{"\ud83d\udcb0"}</div>
-          <p className="text-lg font-medium mb-1">No news yet</p>
-          <p className="text-sm">Check back at 9:00 AM for today&apos;s update</p>
+          <div className="flex justify-center mb-4 text-[var(--color-ocean-300)]">
+            <span
+              dangerouslySetInnerHTML={{
+                __html: '<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>',
+              }}
+            />
+          </div>
+          <p className="text-lg font-medium mb-1">暂无新闻</p>
+          <p className="text-sm">每日 9:00 自动更新，敬请期待</p>
         </div>
       )}
     </div>
