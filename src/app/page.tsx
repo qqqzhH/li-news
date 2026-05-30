@@ -213,7 +213,7 @@ export default function HomePage() {
                       {idx + 1}
                     </span>
                     <div className="min-w-0 flex-1">
-                      <div className="text-sm font-medium text-[var(--color-text)] truncate group-hover:text-[var(--color-ocean-700)] transition-colors">{item.title}</div>
+                      <div className="text-sm font-medium text-[var(--color-text)] leading-snug group-hover:text-[var(--color-ocean-700)] transition-colors">{item.title}</div>
                       <div className="text-xs text-[var(--color-text-muted)] mt-0.5">{formatTime(item.publishedAt)}</div>
                     </div>
                   </Link>
@@ -244,10 +244,10 @@ export default function HomePage() {
                         dangerouslySetInnerHTML={{ __html: CATEGORY_ICONS[item.category] || "" }}
                       />
                       <div className="min-w-0 flex-1">
-                        <div className="text-sm font-medium text-[var(--color-text)] truncate group-hover:text-[var(--color-ocean-700)] transition-colors">{item.title}</div>
+                        <div className="text-sm font-medium text-[var(--color-text)] leading-snug group-hover:text-[var(--color-ocean-700)] transition-colors">{item.title}</div>
                       </div>
                       <div className="flex items-center gap-2 shrink-0">
-                        <span className="text-xs px-2 py-1 rounded-full bg-[var(--color-bg-alt)] text-[var(--color-text-muted)] font-medium">{cat?.label}</span>
+                        <span className="hidden sm:inline text-xs px-2 py-1 rounded-full bg-[var(--color-bg-alt)] text-[var(--color-text-muted)] font-medium">{cat?.label}</span>
                         <span className="text-xs text-[var(--color-text-muted)]">{formatTime(item.publishedAt)}</span>
                       </div>
                     </Link>
