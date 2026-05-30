@@ -26,7 +26,7 @@ function SearchContent() {
   }, [query]);
 
   return (
-    <div className="space-y-6">
+    <div className="px-4 sm:px-0 space-y-6">
       <div className="pb-4 border-b border-[var(--color-border)]">
         <h1 className="text-2xl font-bold text-[var(--color-text)] mb-3">搜索新闻</h1>
         <div className="max-w-md">

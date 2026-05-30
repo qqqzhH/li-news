@@ -9,7 +9,7 @@ export default function FinancePage() {
   const items = getNewsByCategory("finance");
 
   return (
-    <div className="space-y-6">
+    <div className="px-4 sm:px-0 space-y-6">
       <div className="flex items-center gap-3 pb-4 border-b border-[var(--color-border)]">
         <span
           className="flex items-center justify-center w-7 h-7 text-[var(--color-ocean-600)]"

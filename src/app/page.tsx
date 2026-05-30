@@ -119,7 +119,6 @@ export default function HomePage() {
             <span className="text-[var(--color-ocean-600)]">木子</span>
             <span className="text-[var(--color-text)]">新闻</span>
           </h1>
-          <span data-build="2b8fefe" style={{display:"none"}}></span>
           <p ref={subtitleRef} className="mt-5 text-sm md:text-base text-[var(--color-text-muted)] max-w-md mx-auto">
             AI 动态 · 机器人 · 地缘政治 · 金融市场
           </p>
@@ -193,17 +192,17 @@ export default function HomePage() {
             <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[var(--color-ocean-300)] to-transparent max-w-[60px] sm:max-w-[120px]" />
           </div>
 
-          {/* Two columns - more spacious */}
-          <div className="s2-cols grid md:grid-cols-2 gap-6 sm:gap-8 md:gap-16">
-            {/* Left: Recommended */}
+          {/* Single column on mobile, two columns on desktop */}
+          <div className="space-y-6 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 md:gap-16">
+            {/* Top: Recommended */}
             <div>
-              <div className="flex items-center gap-2 mb-5">
-                <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200">
-                  <svg className="w-4 h-4 text-amber-500" fill="currentColor" viewBox="0 0 24 24">
+              <div className="flex items-center gap-2 mb-4">
+                <div className="flex items-center justify-center w-7 h-7 rounded-lg bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200">
+                  <svg className="w-3.5 h-3.5 text-amber-500" fill="currentColor" viewBox="0 0 24 24">
                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
                   </svg>
                 </div>
-                <h3 className="text-lg font-bold text-[var(--color-text)]">推荐阅读</h3>
+                <h3 className="text-base sm:text-lg font-bold text-[var(--color-text)]">推荐阅读</h3>
               </div>
               <div className="divide-y divide-[var(--color-border)] border border-[var(--color-border)] rounded-2xl overflow-hidden bg-white shadow-sm">
                 {hotNews.slice(0, 5).length > 0 ? hotNews.slice(0, 5).map((item, idx) => (
@@ -224,15 +223,15 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Right: Latest */}
+            {/* Bottom: Latest */}
             <div>
-              <div className="flex items-center gap-2 mb-5">
-                <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-br from-[var(--color-ocean-50)] to-blue-50 border border-[var(--color-ocean-200)]">
-                  <svg className="w-4 h-4 text-[var(--color-ocean-500)]" fill="currentColor" viewBox="0 0 24 24">
+              <div className="flex items-center gap-2 mb-4">
+                <div className="flex items-center justify-center w-7 h-7 rounded-lg bg-gradient-to-br from-[var(--color-ocean-50)] to-blue-50 border border-[var(--color-ocean-200)]">
+                  <svg className="w-3.5 h-3.5 text-[var(--color-ocean-500)]" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
-                <h3 className="text-lg font-bold text-[var(--color-text)]">最新动态</h3>
+                <h3 className="text-base sm:text-lg font-bold text-[var(--color-text)]">最新动态</h3>
               </div>
               <div className="divide-y divide-[var(--color-border)] border border-[var(--color-border)] rounded-2xl overflow-hidden bg-white shadow-sm">
                 {data.items.slice(0, 5).length > 0 ? data.items.slice(0, 5).map((item) => {
