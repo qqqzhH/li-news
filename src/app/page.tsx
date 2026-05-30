@@ -111,7 +111,7 @@ export default function HomePage() {
     <div className="snap-container space-y-0">
 
       {/* ===== Screen 1: Hero ===== */}
-      <section data-section="home" className="min-h-screen flex flex-col justify-center px-5 md:px-16 max-w-4xl mx-auto w-full">
+      <section data-section="home" className="flex flex-col items-center px-5 md:px-16 max-w-4xl mx-auto w-full py-12 md:py-20">
 
         {/* Title */}
         <div className="text-center">
@@ -152,13 +152,13 @@ export default function HomePage() {
           <SearchBar large />
         </div>
 
-        {/* Category cards - bigger */}
-        <div ref={catsRef} className="mt-16 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 sm:gap-5 max-w-3xl mx-auto w-full">
+        {/* Category cards */}
+        <div ref={catsRef} className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 sm:gap-4 max-w-3xl mx-auto w-full">
           {CATEGORIES.map((cat) => {
             const count = data.items.filter((i) => i.category === cat.key).length;
             return (
               <Link key={cat.key} href={`/${cat.key}`}
-                className="cat-card bg-white border border-[var(--color-border)] rounded-xl py-6 px-4 text-center hover:border-[var(--color-ocean-400)] hover:shadow-lg hover:-translate-y-1.5 transition-all duration-250"
+                className="cat-card bg-white border border-[var(--color-border)] rounded-xl py-4 px-3 text-center hover:border-[var(--color-ocean-400)] hover:shadow-lg hover:-translate-y-1.5 transition-all duration-250"
               >
                 <div className="flex justify-center mb-3 text-[var(--color-ocean-500)] scale-110">
                   <span dangerouslySetInnerHTML={{ __html: CATEGORY_ICONS[cat.key] || "" }} />
@@ -171,7 +171,7 @@ export default function HomePage() {
         </div>
 
         {/* Arrow */}
-        <div ref={arrowRef} className="mt-16 flex flex-col items-center gap-1.5 text-[var(--color-text-muted)]/50 cursor-pointer">
+        <div ref={arrowRef} className="mt-8 flex flex-col items-center gap-1.5 text-[var(--color-text-muted)]/50 cursor-pointer">
           <span className="text-xs tracking-widest">探索</span>
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
@@ -180,7 +180,7 @@ export default function HomePage() {
       </section>
 
       {/* ===== Screen 2: 今日精选 ===== */}
-      <section data-section="recommended" className="py-10 sm:py-20 px-4 sm:px-6 md:px-16" ref={section2Ref}>
+      <section data-section="recommended" className="min-h-screen flex flex-col justify-center py-10 sm:py-20 px-4 sm:px-6 md:px-16" ref={section2Ref}>
         <div className="max-w-5xl mx-auto">
           {/* Section header */}
           <div className="flex items-center gap-2 sm:gap-4 mb-6 sm:mb-8">
