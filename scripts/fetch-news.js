@@ -133,48 +133,8 @@ async function scrapeNewsSource(url, category, label, selector) {
   }
 }
 
-// ========== AI 解读生成（需设置环境变量 DEEPSEEK_API_KEY） ==========
-
-async function generateAIInterpretations(items) {
-  console.log(`\n[AI] 正在为 ${items.length} 条新闻生成 AI 解读...`);
-  const enhanced = [];
-  for (let i = 0; i < Math.min(items.length, 20); i++) {
-    const item = items[i];
-    const prompt = `请为以下新闻写一段深度分析解读（200-400字中文），包含：1. 核心要点提炼 2. 影响分析。格式要简洁有力，像专业分析师的口吻。\n\n标题：${item.title}\n内容：${item.summary || item.deepDive?.slice(0,200) || ""}\n类别：${item.category}`;
-    try {
-      const res = await fetch("https://api.deepseek.com/v1/chat/completions", {
-        method: "POST",
-        headers: { "Content-Type": "application/json", "Authorization": `Bearer ${process.env.DEEPSEEK_API_KEY || ""}` },
-        body: JSON.stringify({
-          model: "deepseek-chat",
-          messages: [
-            { role: "system", content: "你是木子新闻的AI分析师，用专业、简洁的中文分析新闻。" },
-            { role: "user", content: prompt }
-          ],
-          max_tokens: 800,
-          temperature: 0.7,
-        }),
-      });
-      if (res.ok) {
-        const data = await res.json();
-        const analysis = data.choices?.[0]?.message?.content || "";
-        if (analysis) {
-          item.deepDive = `## 原文\n\n${item.summary || item.title}\n\n## AI 解读\n\n${analysis}`;
-          enhanced.push(item.title.slice(0,30));
-        }
-      }
-      // 限速
-      await new Promise(r => setTimeout(r, 500));
-    } catch (err) {
-      console.log(`[AI] 生成失败: ${err.message}`);
-    }
-    if ((i + 1) % 5 === 0) console.log(`[AI] 已处理 ${i+1}/${Math.min(items.length, 20)}`);
-  }
-  console.log(`[AI] 成功为 ${enhanced.length} 条新闻生成 AI 解读`);
-  return items;
-}
+// ========== Aggregate "other" news items - low value items ==========
 function aggregateOthers(allItems) {
-  // If an item doesn't have enough content, move to "other"
   return allItems.map(item => ({
     ...item,
     // Already categorized by source
@@ -283,19 +243,62 @@ async function main() {
 
   // 8. 生成 AI 解读（仅前 20 条）
   if (process.env.DEEPSEEK_API_KEY) {
-    const withAI = await generateAIInterpretations(newItems);
-    newItems.length = 0;
-    newItems.push(...withAI);
+    console.log(`\n[AI] 正在为 ${newItems.length} 条新闻生成 AI 解读...`);
+    for (let i = 0; i < Math.min(newItems.length, 20); i++) {
+      const item = newItems[i];
+      if (!item.deepDive?.includes('## AI 解读')) continue;
+      console.log(`[AI] 正在分析: ${item.title.slice(0,40)}`);
+      const prompt = `请为以下新闻写一段深度分析解读（200-400字中文），包含：1. 核心要点提炼 2. 影响分析。格式要简洁有力，像专业分析师的口吻。\n\n标题：${item.title}\n内容：${item.summary || item.title}\n类别：${item.category}`;
+      try {
+        const res = await fetch("https://api.deepseek.com/v1/chat/completions", {
+          method: "POST",
+          headers: { "Content-Type": "application/json", "Authorization": `Bearer ${process.env.DEEPSEEK_API_KEY}` },
+          body: JSON.stringify({
+            model: "deepseek-chat",
+            messages: [
+              { role: "system", content: "你是木子新闻的AI分析师，用专业、简洁的中文分析新闻。" },
+              { role: "user", content: prompt }
+            ],
+            max_tokens: 800, temperature: 0.7,
+          }),
+        });
+        if (res.ok) {
+          const data = await res.json();
+          const analysis = data.choices?.[0]?.message?.content || "";
+          if (analysis) {
+            item.deepDive = `## 原文\n\n${item.summary || item.title}\n\n## AI 解读\n\n${analysis}`;
+            console.log(`[AI] ✅ 分析完成: ${item.title.slice(0,30)} (${analysis.length}字)`);
+          } else {
+            console.log(`[AI] ⚠️ 空返回: ${item.title.slice(0,30)}`);
+          }
+        } else {
+          console.log(`[AI] ❌ API错误: ${item.title.slice(0,30)} ${res.status}`);
+        }
+        await new Promise(r => setTimeout(r, 500));
+      } catch (err) {
+        console.log(`[AI] 生成失败: ${err.message}`);
+      }
+      if ((i + 1) % 5 === 0) console.log(`[AI] 已处理 ${i+1}/${Math.min(newItems.length, 20)}`);
+    }
+    console.log(`[AI] AI 解读生成完成`);
   }
 
-  // 8. Merge with existing (keep 3 months of history)
+  // 8. 合并前先去重（保留新版本，丢弃旧版本相同标题）
+  const allTitles = new Set(newItems.map(i => i.title.slice(0, 50).toLowerCase()));
+  const filteredExisting = existingItems.filter(i => !allTitles.has(i.title.slice(0, 50).toLowerCase()));
+
+  // 9. Merge with existing (keep 3 months of history)
   const threeMonthsAgo = new Date();
   threeMonthsAgo.setMonth(threeMonthsAgo.getMonth() - 3);
   const cutoff = threeMonthsAgo.getTime();
 
-  const merged = [...newItems, ...existingItems]
+  const merged = [...newItems, ...filteredExisting]
     .filter((item) => new Date(item.publishedAt).getTime() > cutoff)
     .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+
+  // 验证 AI 解读
+  const aiCheck = merged.filter(i => i.deepDive?.includes('## AI 解读') && !i.deepDive.includes('本条新闻由木子新闻收录'));
+  console.log(`[验证] 合并后共 ${merged.length} 条，其中 ${aiCheck.length} 条含 AI 分析`);
 
   console.log(`Total items after merge + 3-month filter: ${merged.length}`);
 
