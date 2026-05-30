@@ -34,7 +34,7 @@ async function fetchAIHOTNews() {
         id: `ai-${Date.now()}-${items.length}`,
         title: item.title,
         summary: summaryText,
-        deepDive: `## AI 解读\n\n${item.sourceName || "AIHOT"}\n\n## 原文\n\n${summaryText}`,
+        deepDive: `## AI 解读\n\n${item.sourceName || "AIHOT"}\n\n## 原文\n\n${summaryText.slice(0, 200)}`,
         category: "ai",
         source: item.sourceName || "AIHOT",
         sourceUrl: item.sourceUrl || "#",
@@ -81,7 +81,7 @@ async function searchExa(query, category, sourceLabel, days = 2) {
       id: `${category}-${Date.now()}-${i}`,
       title: r.title || "Untitled",
       summary: r.text ? r.text.slice(0, 300) : "No summary available",
-      deepDive: `## AI 解读\n\n${sourceLabel}\n\n## 原文\n\n${r.text ? r.text.slice(0, 500) : r.title || "暂无详细内容"}`,
+      deepDive: `## AI 解读\n\n${sourceLabel}\n\n## 原文\n\n${r.text ? r.text.slice(0, 400).replace(/登录|注册|关闭|广告|分享|微信|扫码|客户端|快速导航|安全退出|邮箱/gi, '').trim() : r.title || "暂无详细内容"}`,
       category: category,
       source: sourceLabel,
       sourceUrl: r.url || "#",
@@ -292,7 +292,7 @@ async function main() {
           const data = await res.json();
           const analysis = data.choices?.[0]?.message?.content || "";
           if (analysis) {
-            item.deepDive = `## AI 解读\n\n${analysis}\n\n## 原文\n\n${item.summary || item.title}`;
+            item.deepDive = `## AI 解读\n\n${analysis}\n\n## 原文\n\n${(item.summary || item.title).slice(0, 200)}`;
             console.log(`[AI] ✅ 分析完成: ${item.title.slice(0,30)} (${analysis.length}字)`);
           } else {
             console.log(`[AI] ⚠️ 空返回: ${item.title.slice(0,30)}`);
