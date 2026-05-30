@@ -108,7 +108,7 @@ export default function HomePage() {
   }, []);
 
   return (
-    <div className="space-y-0">
+    <div className="snap-container space-y-0">
 
       {/* ===== Screen 1: Hero ===== */}
       <section data-section="home" className="min-h-screen flex flex-col justify-center px-5 md:px-16 max-w-4xl mx-auto w-full">

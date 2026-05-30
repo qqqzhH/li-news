@@ -77,7 +77,7 @@
   z-index: 9999;
 }
 
-/* 滚动吸附 - 已废弃 */
+/* 滚动吸附 */
 .snap-container {
   scroll-snap-type: y mandatory;
   overflow-y: auto;
