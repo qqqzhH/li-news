@@ -21,57 +21,31 @@ export default function NewsCard({ item }: NewsCardProps) {
   const cc = catColors[item.category] || catColors.other;
 
   const renderDeepDive = (text: string) => {
-    const renderInline = (text: string) => {
-      // 解析 [text](url) 链接
-      const parts = text.split(/(\[.+?\]\(.+?\))/g);
-      return parts.map((part, i) => {
-        const linkMatch = part.match(/^\[(.+?)\]\((.+?)\)$/);
-        if (linkMatch) {
-          return <a key={i} href={linkMatch[2]} target="_blank" rel="noopener noreferrer"
-            className="text-[var(--color-ocean-600)] hover:underline break-all">{linkMatch[1]}</a>;
-        }
-        // 解析 *italic* 格式
-        const italicParts = part.split(/(\*[^*]+\*)/g);
-        return italicParts.map((ip, j) => {
-          if (ip.startsWith("*") && ip.endsWith("*") && ip.length > 1) {
-            return <em key={`${i}-${j}`} className="text-[var(--color-text-muted)]">{ip.slice(1, -1)}</em>;
+    // 将 Markdown 转为 HTML（用于 innerHTML，用内联样式避免 Tailwind 编译丢失）
+    const mdToHtml = (md: string) => {
+      return md
+        .split("\n")
+        .map((line) => {
+          if (line.startsWith("## ")) return '<h3 style="font-size:1rem;font-weight:600;margin-top:1rem;margin-bottom:0.5rem">' + line.slice(3) + '</h3>';
+          if (line.startsWith("### ")) return '<h4 style="font-size:0.875rem;font-weight:600;margin-top:0.75rem;margin-bottom:0.25rem">' + line.slice(4) + '</h4>';
+          if (line.startsWith("- **")) {
+            return line.replace(/- \*\*(.+?)\*\*[：:] (.+)/, '<p style="margin-bottom:0.25rem"><strong>$1</strong>：$2</p>');
           }
-          return ip;
-        });
-      });
+          if (line.startsWith("- ")) return '<li style="margin-left:1rem;list-style:disc;margin-bottom:0.25rem">' + renderInlineMd(line.slice(2)) + '</li>';
+          if (line.trim() === "") return '<div style="height:0.5rem"></div>';
+          return '<p style="margin-bottom:0.5rem">' + renderInlineMd(line) + '</p>';
+        })
+        .join("\n");
     };
 
-    return text.split("\n").map((line, i) => {
-      if (line.startsWith("## ")) {
-        return (
-          <h3 key={i} className="text-base font-semibold text-[var(--color-text)] mt-4 mb-2">
-            {line.replace("## ", "")}
-          </h3>
-        );
-      }
-      if (line.startsWith("### ")) {
-        return (
-          <h4 key={i} className="text-sm font-semibold text-[var(--color-text)] mt-3 mb-1">
-            {line.replace("### ", "")}
-          </h4>
-        );
-      }
-      if (line.startsWith("- **")) {
-        const match = line.match(/- \*\*(.+?)\*\*[：:] (.+)/);
-        if (match) {
-          return (
-            <p key={i} className="mb-1">
-              <strong className="text-[var(--color-text)]">{match[1]}</strong>：{match[2]}
-            </p>
-          );
-        }
-      }
-      if (line.startsWith("- ")) {
-        return <li key={i} className="ml-4 list-disc mb-1">{renderInline(line.replace("- ", ""))}</li>;
-      }
-      if (line.trim() === "") return <div key={i} className="h-2" />;
-      return <p key={i} className="mb-2">{renderInline(line)}</p>;
-    });
+    const renderInlineMd = (s: string) => {
+      return s
+        .replace(/\[(.+?)\]\((.+?)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" style="color:#2563eb;text-decoration:underline;word-break:break-all">$1</a>')
+        .replace(/\*(.+?)\*/g, '<em style="color:#6b7280">$1</em>');
+    };
+
+    const html = mdToHtml(text);
+    return <div className="text-sm leading-relaxed" dangerouslySetInnerHTML={{ __html: html }} />;
   };
 
   return (
