@@ -111,15 +111,15 @@ export default function HomePage() {
     <div className="snap-container space-y-0">
 
       {/* ===== Screen 1: Hero ===== */}
-      <section data-section="home" className="min-h-screen flex flex-col justify-center items-center px-5 md:px-16 max-w-4xl mx-auto w-full">
+      <section data-section="home" className="min-h-screen flex flex-col justify-center items-center px-4 md:px-16 max-w-4xl mx-auto w-full">
 
         {/* Title */}
         <div className="text-center">
-          <h1 ref={titleRef} className="text-5xl sm:text-7xl md:text-8xl font-black tracking-wide leading-none">
+          <h1 ref={titleRef} className="text-4xl sm:text-7xl md:text-8xl font-black tracking-wide leading-none">
             <span className="text-[var(--color-ocean-600)]">木子</span>
             <span className="text-[var(--color-text)]">新闻</span>
           </h1>
-          <p ref={subtitleRef} className="mt-5 text-sm md:text-base text-[var(--color-text-muted)] max-w-md mx-auto">
+          <p ref={subtitleRef} className="mt-3 sm:mt-5 text-xs sm:text-base text-[var(--color-text-muted)] max-w-md mx-auto">
             AI 动态 · 机器人 · 地缘政治 · 金融市场
           </p>
           <div ref={updRef} className="mt-3 text-xs text-[var(--color-text-muted)]/60">
@@ -134,9 +134,9 @@ export default function HomePage() {
         </div>
 
         {/* Quote - daily */}
-        <div ref={quoteRef} className="mt-8 text-center">
-          <div className="inline-block px-8 py-4 rounded-2xl bg-gradient-to-r from-[var(--color-ocean-50)] to-blue-50 border border-[var(--color-ocean-100)] shadow-sm">
-            <p className="quote-text text-base md:text-lg text-[var(--color-ocean-700)] font-serif italic leading-relaxed tracking-wide" data-text={quote.text}>
+        <div ref={quoteRef} className="mt-6 sm:mt-8 text-center">
+          <div className="inline-block px-4 sm:px-8 py-3 sm:py-4 rounded-2xl bg-gradient-to-r from-[var(--color-ocean-50)] to-blue-50 border border-[var(--color-ocean-100)] shadow-sm">
+            <p className="quote-text text-sm sm:text-lg text-[var(--color-ocean-700)] font-serif italic leading-relaxed tracking-wide" data-text={quote.text}>
               <span className="text-2xl text-[var(--color-ocean-400)] leading-none mr-2">&ldquo;</span>
               {quote.text}
               <span className="text-2xl text-[var(--color-ocean-400)] leading-none ml-2">&rdquo;</span>
@@ -148,22 +148,22 @@ export default function HomePage() {
         </div>
 
         {/* Search */}
-        <div ref={searchRef} className="mt-8 max-w-sm mx-auto w-full">
+        <div ref={searchRef} className="mt-6 sm:mt-8 max-w-sm mx-auto w-full px-4 sm:px-0">
           <SearchBar large />
         </div>
 
         {/* Category cards */}
-        <div ref={catsRef} className="mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 sm:gap-3 max-w-3xl mx-auto w-full">
+        <div ref={catsRef} className="mt-6 sm:mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 sm:gap-3 max-w-3xl mx-auto w-full px-4 sm:px-0">
           {CATEGORIES.map((cat) => {
             const count = data.items.filter((i) => i.category === cat.key).length;
             return (
               <Link key={cat.key} href={`/${cat.key}`}
-                className="cat-card bg-white border border-[var(--color-border)] rounded-xl py-3 px-2 text-center hover:border-[var(--color-ocean-400)] hover:shadow-lg hover:-translate-y-1.5 transition-all duration-250"
+                className="cat-card bg-white border border-[var(--color-border)] rounded-xl py-2 sm:py-3 px-2 text-center hover:border-[var(--color-ocean-400)] hover:shadow-lg hover:-translate-y-1.5 transition-all duration-250"
               >
-                <div className="flex justify-center mb-2 text-[var(--color-ocean-500)]">
-                  <span dangerouslySetInnerHTML={{ __html: CATEGORY_ICONS[cat.key] || "" }} />
+                <div className="flex justify-center mb-1 sm:mb-2 text-[var(--color-ocean-500)]">
+                  <span className="scale-75 sm:scale-100" dangerouslySetInnerHTML={{ __html: CATEGORY_ICONS[cat.key] || "" }} />
                 </div>
-                <div className="text-sm font-semibold text-[var(--color-text)]">{cat.label}</div>
+                <div className="text-xs sm:text-sm font-semibold text-[var(--color-text)]">{cat.label}</div>
                 <div className="text-[11px] text-[var(--color-text-muted)] mt-1">{count} 条</div>
               </Link>
             );
@@ -180,10 +180,10 @@ export default function HomePage() {
       </section>
 
       {/* ===== Screen 2: 今日精选 ===== */}
-      <section data-section="recommended" className="min-h-screen flex flex-col justify-center py-10 sm:py-20 px-4 sm:px-6 md:px-16" ref={section2Ref}>
+      <section data-section="recommended" className="min-h-screen flex flex-col justify-center py-6 sm:py-20 px-3 sm:px-6 md:px-16" ref={section2Ref}>
         <div className="max-w-5xl mx-auto">
           {/* Section header */}
-          <div className="flex items-center gap-2 sm:gap-4 mb-6 sm:mb-8">
+          <div className="flex items-center gap-2 sm:gap-4 mb-4 sm:mb-8">
             <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[var(--color-ocean-300)] to-transparent max-w-[60px] sm:max-w-[120px]" />
             <div className="text-center shrink-0">
               <h2 className="text-xl sm:text-3xl md:text-4xl font-black text-[var(--color-text)] tracking-tight">今日精选</h2>
