@@ -14,6 +14,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.moomoo.com/hans/stock/BTC-CC?chain_id=Name1K9-3FXPhg.1l1hlo0&global_content=%7B%22promote_id%22%3A13764%2C%22sub_promote_id%22%3A61%2C%22f%22%3A%22www.moomoo.com%2Fhans%2Fcommunity%2Ffeed%2Fmarvell-technology-mrvl-us-115723914510341%22%7D",
     publishedAt: "2026-05-30T12:24:50.489Z",
+    updatedAt: "2026-05-30T12:24:50.489Z",
     importance: "normal",
   },
   {
@@ -25,6 +26,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://cn.investing.com/equities/united-states",
     publishedAt: "2026-05-30T12:24:50.489Z",
+    updatedAt: "2026-05-30T12:24:50.489Z",
     importance: "normal",
   },
   {
@@ -36,6 +38,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://hk.finance.yahoo.com/quote/BTC-USD/latest-news/",
     publishedAt: "2026-05-30T12:24:50.489Z",
+    updatedAt: "2026-05-30T12:24:50.489Z",
     importance: "normal",
   },
   {
@@ -47,6 +50,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.aastocks.com/sc/stocks/news/aafn-con/IC4912677/latest-news/INFOCAST",
     publishedAt: "2026-05-30T12:24:50.489Z",
+    updatedAt: "2026-05-30T12:24:50.489Z",
     importance: "normal",
   },
   {
@@ -58,6 +62,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.bitmart.com/zh-CN/price/bitcoin",
     publishedAt: "2026-05-30T12:24:50.489Z",
+    updatedAt: "2026-05-30T12:24:50.489Z",
     importance: "normal",
   },
   {
@@ -69,6 +74,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://cn.investing.com/news/cryptocurrency-news/4",
     publishedAt: "2026-05-30T12:24:50.489Z",
+    updatedAt: "2026-05-30T12:24:50.489Z",
     importance: "normal",
   },
   {
@@ -80,6 +86,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.tradingkey.com/zh-hans/news/forex?page=721",
     publishedAt: "2026-05-30T12:24:50.489Z",
+    updatedAt: "2026-05-30T12:24:50.489Z",
     importance: "hot",
   },
   {
@@ -91,6 +98,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "http://www.aastocks.com/tc/stocks/news/aafn-con/IC4912677/latest-news/INFOCAST",
     publishedAt: "2026-05-30T12:24:50.489Z",
+    updatedAt: "2026-05-30T12:24:50.489Z",
     importance: "normal",
   },
   {
@@ -102,6 +110,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://hk.investing.com/news/forex-news/article-1486545",
     publishedAt: "2026-05-30T12:24:50.489Z",
+    updatedAt: "2026-05-30T12:24:50.489Z",
     importance: "normal",
   },
   {
@@ -113,6 +122,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.monetamarkets.com/hant/category/beginner/",
     publishedAt: "2026-05-30T12:24:50.489Z",
+    updatedAt: "2026-05-30T12:24:50.489Z",
     importance: "normal",
   },
   {
@@ -124,6 +134,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.163.com/dy/article/KU667K6A0556CENL.html",
     publishedAt: "2026-05-30T12:24:49.535Z",
+    updatedAt: "2026-05-30T12:24:49.535Z",
     importance: "normal",
   },
   {
@@ -135,6 +146,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.aboluowang.com/amp/2026/0530/2389644.html",
     publishedAt: "2026-05-30T12:24:49.535Z",
+    updatedAt: "2026-05-30T12:24:49.535Z",
     importance: "normal",
   },
   {
@@ -146,6 +158,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20260529-%E5%8F%B0%E6%B9%BE%EF%BC%8C%E4%BC%9A%E6%88%90%E4%B9%A0%E8%BF%91%E5%B9%B3%E7%9A%84-%E5%8D%A2%E6%AF%94%E5%AD%94%E6%B2%B3-%E5%90%97",
     publishedAt: "2026-05-30T12:24:49.535Z",
+    updatedAt: "2026-05-30T12:24:49.535Z",
     importance: "normal",
   },
   {
@@ -157,6 +170,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.soundofhope.org/post/932977",
     publishedAt: "2026-05-30T12:24:49.535Z",
+    updatedAt: "2026-05-30T12:24:49.535Z",
     importance: "normal",
   },
   {
@@ -168,6 +182,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.guancha.cn/internation/2026_05_28_818686_s.shtml",
     publishedAt: "2026-05-30T12:24:49.535Z",
+    updatedAt: "2026-05-30T12:24:49.535Z",
     importance: "normal",
   },
   {
@@ -179,6 +194,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://finance.sina.com.cn/zmt/2026-05-30/doc-inhzrvnr8913514.shtml",
     publishedAt: "2026-05-30T12:24:49.535Z",
+    updatedAt: "2026-05-30T12:24:49.535Z",
     importance: "normal",
   },
   {
@@ -190,6 +206,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://xinwen.bjd.com.cn/content/s6a18d7ade4b03fa51a7efa7c.html",
     publishedAt: "2026-05-30T12:24:49.535Z",
+    updatedAt: "2026-05-30T12:24:49.535Z",
     importance: "normal",
   },
   {
@@ -201,6 +218,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.163.com/dy/article/KU5SEC610556DN3B.html",
     publishedAt: "2026-05-30T12:24:49.535Z",
+    updatedAt: "2026-05-30T12:24:49.535Z",
     importance: "normal",
   },
   {
@@ -212,6 +230,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E6%9B%BC%E8%B0%B7%E4%B8%93%E6%A0%8F/20260528-%E7%BE%8E%E4%BC%8A%E5%8D%8F%E8%AE%AE%E8%BF%B7%E9%9B%BE%E4%B8%8E%E4%BA%9A%E6%B4%B2%E5%AE%89%E5%85%A8%E5%AF%B9%E8%AF%9D",
     publishedAt: "2026-05-30T12:24:49.535Z",
+    updatedAt: "2026-05-30T12:24:49.535Z",
     importance: "normal",
   },
   {
@@ -223,6 +242,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://today.line.me/tw/v3/article/7N1EE1l",
     publishedAt: "2026-05-30T12:24:49.535Z",
+    updatedAt: "2026-05-30T12:24:49.535Z",
     importance: "normal",
   },
   {
@@ -234,6 +254,7 @@ const hardcodedData: NewsData = {
     source: "OpenAI：官网动态（RSS · 排除企业/客户案例）",
     sourceUrl: "https://openai.com/index/boston-childrens-hospital",
     publishedAt: "2026-05-30T12:24:48.174Z",
+    updatedAt: "2026-05-30T12:24:48.174Z",
     importance: "normal",
   },
   {
@@ -245,6 +266,7 @@ const hardcodedData: NewsData = {
     source: "Google Blog：AI（RSS）",
     sourceUrl: "https://blog.google/innovation-and-ai/technology/ai/university-waterloo-labs",
     publishedAt: "2026-05-30T12:24:48.174Z",
+    updatedAt: "2026-05-30T12:24:48.174Z",
     importance: "normal",
   },
   {
@@ -256,6 +278,7 @@ const hardcodedData: NewsData = {
     source: "X：Fei-Fei Li (@drfeifei, World Labs)",
     sourceUrl: "https://x.com/drfeifei/status/2060404846734512205",
     publishedAt: "2026-05-30T12:24:48.174Z",
+    updatedAt: "2026-05-30T12:24:48.174Z",
     importance: "hot",
   },
   {
@@ -267,6 +290,7 @@ const hardcodedData: NewsData = {
     source: "X：洪明 (@hongming731)",
     sourceUrl: "https://x.com/hongming731/status/2060487110906527820",
     publishedAt: "2026-05-30T12:24:48.174Z",
+    updatedAt: "2026-05-30T12:24:48.174Z",
     importance: "hot",
   },
   {
@@ -278,6 +302,7 @@ const hardcodedData: NewsData = {
     source: "X：Rohan Paul (@rohanpaul_ai)",
     sourceUrl: "https://x.com/rohanpaul_ai/status/2060409504693645440",
     publishedAt: "2026-05-30T12:24:48.174Z",
+    updatedAt: "2026-05-30T12:24:48.174Z",
     importance: "normal",
   },
   {
@@ -289,6 +314,7 @@ const hardcodedData: NewsData = {
     source: "X：Berry Xia (@berryxia)",
     sourceUrl: "https://x.com/berryxia/status/2060212428584202428",
     publishedAt: "2026-05-30T12:24:48.174Z",
+    updatedAt: "2026-05-30T12:24:48.174Z",
     importance: "normal",
   },
   {
@@ -300,6 +326,7 @@ const hardcodedData: NewsData = {
     source: "X：邵猛 (@shao__meng)",
     sourceUrl: "https://x.com/shao__meng/status/2060167182777249886",
     publishedAt: "2026-05-30T12:24:48.174Z",
+    updatedAt: "2026-05-30T12:24:48.174Z",
     importance: "hot",
   },
   {
@@ -311,6 +338,7 @@ const hardcodedData: NewsData = {
     source: "Hacker News 热门（buzzing.cc 中文翻译）",
     sourceUrl: "https://buildingbetter.tech/p/i-read-the-claude-code-source-code",
     publishedAt: "2026-05-30T12:24:48.174Z",
+    updatedAt: "2026-05-30T12:24:48.174Z",
     importance: "normal",
   },
   {
@@ -322,6 +350,7 @@ const hardcodedData: NewsData = {
     source: "TechCrunch：AI（RSS）",
     sourceUrl: "https://techcrunch.com/video/what-happens-when-companies-become-too-ai-pilled",
     publishedAt: "2026-05-30T12:24:48.174Z",
+    updatedAt: "2026-05-30T12:24:48.174Z",
     importance: "normal",
   },
   {
@@ -333,6 +362,7 @@ const hardcodedData: NewsData = {
     source: "IT之家（RSS）",
     sourceUrl: "https://www.ithome.com/0/956/864.htm",
     publishedAt: "2026-05-30T12:24:48.174Z",
+    updatedAt: "2026-05-30T12:24:48.174Z",
     importance: "normal",
   },
   {
@@ -344,6 +374,7 @@ const hardcodedData: NewsData = {
     source: "TechCrunch：AI（RSS）",
     sourceUrl: "https://techcrunch.com/2026/05/29/cognitions-scott-wu-says-ai-coding-agents-shouldnt-replace-humans",
     publishedAt: "2026-05-30T12:24:48.174Z",
+    updatedAt: "2026-05-30T12:24:48.174Z",
     importance: "normal",
   },
   {
@@ -355,6 +386,7 @@ const hardcodedData: NewsData = {
     source: "X：Greg Brockman (@gdb)",
     sourceUrl: "https://x.com/gdb/status/2060452095279415725",
     publishedAt: "2026-05-30T12:24:48.173Z",
+    updatedAt: "2026-05-30T12:24:48.173Z",
     importance: "normal",
   },
   {
@@ -366,6 +398,7 @@ const hardcodedData: NewsData = {
     source: "X：阶跃星辰 StepFun (@StepFun_ai)",
     sourceUrl: "https://x.com/StepFun_ai/status/2060149124117475791",
     publishedAt: "2026-05-30T12:24:48.173Z",
+    updatedAt: "2026-05-30T12:24:48.173Z",
     importance: "hot",
   },
   {
@@ -377,6 +410,7 @@ const hardcodedData: NewsData = {
     source: "IT之家（RSS）",
     sourceUrl: "https://www.ithome.com/0/957/282.htm",
     publishedAt: "2026-05-30T12:24:48.173Z",
+    updatedAt: "2026-05-30T12:24:48.173Z",
     importance: "hot",
   },
   {
@@ -388,6 +422,7 @@ const hardcodedData: NewsData = {
     source: "Qwen：Blog Retrieval（API）",
     sourceUrl: "https://qwen.ai/blog?id=qwenvla",
     publishedAt: "2026-05-30T12:24:48.173Z",
+    updatedAt: "2026-05-30T12:24:48.173Z",
     importance: "normal",
   },
   {
@@ -399,6 +434,7 @@ const hardcodedData: NewsData = {
     source: "X：Greg Brockman (@gdb)",
     sourceUrl: "https://x.com/gdb/status/2060486309886443787",
     publishedAt: "2026-05-30T12:24:48.173Z",
+    updatedAt: "2026-05-30T12:24:48.173Z",
     importance: "normal",
   },
   {
@@ -410,6 +446,7 @@ const hardcodedData: NewsData = {
     source: "X：Gemini (@GeminiApp)",
     sourceUrl: "https://x.com/GeminiApp/status/2060435981946503243",
     publishedAt: "2026-05-30T12:24:48.173Z",
+    updatedAt: "2026-05-30T12:24:48.173Z",
     importance: "normal",
   },
   {
@@ -421,6 +458,7 @@ const hardcodedData: NewsData = {
     source: "X：OpenAI (@OpenAI)",
     sourceUrl: "https://x.com/OpenAI/status/2060428604727771421",
     publishedAt: "2026-05-30T12:24:48.173Z",
+    updatedAt: "2026-05-30T12:24:48.173Z",
     importance: "normal",
   },
   {
@@ -432,6 +470,7 @@ const hardcodedData: NewsData = {
     source: "OpenRouter：Announcements（RSS）",
     sourceUrl: "https://openrouter.ai/announcements/guardrails",
     publishedAt: "2026-05-30T12:24:48.173Z",
+    updatedAt: "2026-05-30T12:24:48.173Z",
     importance: "normal",
   },
   {
@@ -443,6 +482,7 @@ const hardcodedData: NewsData = {
     source: "X：Runway (@runwayml)",
     sourceUrl: "https://x.com/runwayml/status/2060453805519765548",
     publishedAt: "2026-05-30T12:24:48.173Z",
+    updatedAt: "2026-05-30T12:24:48.173Z",
     importance: "normal",
   },
   {
@@ -454,6 +494,7 @@ const hardcodedData: NewsData = {
     source: "X：OpenRouter (@OpenRouter)",
     sourceUrl: "https://x.com/OpenRouter/status/2060395056196936054",
     publishedAt: "2026-05-30T12:24:48.173Z",
+    updatedAt: "2026-05-30T12:24:48.173Z",
     importance: "normal",
   },
   {
@@ -465,6 +506,7 @@ const hardcodedData: NewsData = {
     source: "X：ChatGPT (@ChatGPTapp)",
     sourceUrl: "https://x.com/ChatGPTapp/status/2060467129066070182",
     publishedAt: "2026-05-30T12:24:48.173Z",
+    updatedAt: "2026-05-30T12:24:48.173Z",
     importance: "normal",
   },
   {
@@ -476,6 +518,7 @@ const hardcodedData: NewsData = {
     source: "X：Gemini (@GeminiApp)",
     sourceUrl: "https://x.com/GeminiApp/status/2060389565052096911",
     publishedAt: "2026-05-30T12:24:48.173Z",
+    updatedAt: "2026-05-30T12:24:48.173Z",
     importance: "normal",
   },
   {
@@ -487,6 +530,7 @@ const hardcodedData: NewsData = {
     source: "IT之家（RSS）",
     sourceUrl: "https://www.ithome.com/0/957/319.htm",
     publishedAt: "2026-05-30T12:24:48.173Z",
+    updatedAt: "2026-05-30T12:24:48.173Z",
     importance: "normal",
   },
   {
@@ -498,6 +542,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.163.com/dy/article/KU1ARDQQ05198NMR.html",
     publishedAt: "2026-05-30T10:41:59.014Z",
+    updatedAt: "2026-05-30T10:41:59.014Z",
     importance: "normal",
   },
   {
@@ -509,6 +554,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://news.qq.com/rain/a/20260525A0970C00",
     publishedAt: "2026-05-30T10:41:59.014Z",
+    updatedAt: "2026-05-30T10:41:59.014Z",
     importance: "normal",
   },
   {
@@ -520,6 +566,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://paper.people.com.cn/rmrb/pc/attachement/202605/28/c1a40f2b-b106-497c-8b02-4abaded8aec3.pdf",
     publishedAt: "2026-05-30T10:41:59.014Z",
+    updatedAt: "2026-05-30T10:41:59.014Z",
     importance: "normal",
   },
   {
@@ -531,6 +578,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.maxictech.com/about/news/164",
     publishedAt: "2026-05-30T10:41:59.014Z",
+    updatedAt: "2026-05-30T10:41:59.014Z",
     importance: "normal",
   },
   {
@@ -542,6 +590,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://finance.sina.com.cn/jjxw/2026-05-27/doc-inhzizph8312434.shtml?froms=ggmp",
     publishedAt: "2026-05-30T10:41:59.014Z",
+    updatedAt: "2026-05-30T10:41:59.014Z",
     importance: "normal",
   },
   {
@@ -553,6 +602,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://h5.ifeng.com/c/vivoArticle/v002RYRMHeEeeW8BZg9o1Q7JzoNFbZJAOv9aNeUiCkEpcL0__?isNews=1&showComments=0",
     publishedAt: "2026-05-30T10:41:59.014Z",
+    updatedAt: "2026-05-30T10:41:59.014Z",
     importance: "normal",
   },
   {
@@ -564,6 +614,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://xpert.digital/zh-cn/%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%BF%80%E8%BF%9B%E8%AE%A1%E5%88%92/",
     publishedAt: "2026-05-30T10:41:59.014Z",
+    updatedAt: "2026-05-30T10:41:59.014Z",
     importance: "normal",
   },
   {
@@ -575,6 +626,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.yicai.com/news/103129872.html",
     publishedAt: "2026-05-30T10:41:59.014Z",
+    updatedAt: "2026-05-30T10:41:59.014Z",
     importance: "normal",
   },
   {
@@ -586,6 +638,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.instagram.com/p/DYyoSPUlIFV/",
     publishedAt: "2026-05-30T10:41:59.014Z",
+    updatedAt: "2026-05-30T10:41:59.014Z",
     importance: "normal",
   },
   {
@@ -597,6 +650,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://m.sohu.com/a/1028888240_116132?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
     publishedAt: "2026-05-30T10:41:59.014Z",
+    updatedAt: "2026-05-30T10:41:59.014Z",
     importance: "normal",
   },
   {
@@ -608,6 +662,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.moomoo.com/hans/stock/BTC-CC?chain_id=Name1K9-3FXPhg.1l1hlo0&global_content=%7B%22promote_id%22%3A13764%2C%22sub_promote_id%22%3A61%2C%22f%22%3A%22www.moomoo.com%2Fhans%2Fcommunity%2Ffeed%2Fmarvell-technology-mrvl-us-115723914510341%22%7D",
     publishedAt: "2026-05-30T10:41:58.336Z",
+    updatedAt: "2026-05-30T10:41:58.336Z",
     importance: "normal",
   },
   {
@@ -619,6 +674,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://cn.investing.com/equities/united-states",
     publishedAt: "2026-05-30T10:41:58.336Z",
+    updatedAt: "2026-05-30T10:41:58.336Z",
     importance: "normal",
   },
   {
@@ -630,6 +686,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://hk.finance.yahoo.com/quote/BTC-USD/latest-news/",
     publishedAt: "2026-05-30T10:41:58.336Z",
+    updatedAt: "2026-05-30T10:41:58.336Z",
     importance: "normal",
   },
   {
@@ -641,6 +698,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.aastocks.com/sc/stocks/news/aafn-con/IC4912677/latest-news/INFOCAST",
     publishedAt: "2026-05-30T10:41:58.336Z",
+    updatedAt: "2026-05-30T10:41:58.336Z",
     importance: "normal",
   },
   {
@@ -652,6 +710,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.bitmart.com/zh-CN/price/bitcoin",
     publishedAt: "2026-05-30T10:41:58.336Z",
+    updatedAt: "2026-05-30T10:41:58.336Z",
     importance: "normal",
   },
   {
@@ -663,6 +722,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://hk.investing.com/news/forex-news/article-1486545",
     publishedAt: "2026-05-30T10:41:58.336Z",
+    updatedAt: "2026-05-30T10:41:58.336Z",
     importance: "normal",
   },
   {
@@ -674,6 +734,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.tradingkey.com/zh-hans/news/forex?page=721",
     publishedAt: "2026-05-30T10:41:58.336Z",
+    updatedAt: "2026-05-30T10:41:58.336Z",
     importance: "hot",
   },
   {
@@ -685,6 +746,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "http://www.aastocks.com/tc/stocks/news/aafn-con/IC4912677/latest-news/INFOCAST",
     publishedAt: "2026-05-30T10:41:58.336Z",
+    updatedAt: "2026-05-30T10:41:58.336Z",
     importance: "normal",
   },
   {
@@ -696,6 +758,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://cn.investing.com/news/cryptocurrency-news/4",
     publishedAt: "2026-05-30T10:41:58.336Z",
+    updatedAt: "2026-05-30T10:41:58.336Z",
     importance: "normal",
   },
   {
@@ -707,6 +770,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://hk.investing.com/news/stock-market-news/article-1486509",
     publishedAt: "2026-05-30T10:41:58.336Z",
+    updatedAt: "2026-05-30T10:41:58.336Z",
     importance: "normal",
   },
   {
@@ -718,6 +782,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.163.com/dy/article/KU667K6A0556CENL.html",
     publishedAt: "2026-05-30T10:41:57.613Z",
+    updatedAt: "2026-05-30T10:41:57.613Z",
     importance: "normal",
   },
   {
@@ -729,6 +794,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.aboluowang.com/amp/2026/0530/2389644.html",
     publishedAt: "2026-05-30T10:41:57.613Z",
+    updatedAt: "2026-05-30T10:41:57.613Z",
     importance: "normal",
   },
   {
@@ -740,6 +806,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E6%9B%BC%E8%B0%B7%E4%B8%93%E6%A0%8F/20260528-%E7%BE%8E%E4%BC%8A%E5%8D%8F%E8%AE%AE%E8%BF%B7%E9%9B%BE%E4%B8%8E%E4%BA%9A%E6%B4%B2%E5%AE%89%E5%85%A8%E5%AF%B9%E8%AF%9D",
     publishedAt: "2026-05-30T10:41:57.613Z",
+    updatedAt: "2026-05-30T10:41:57.613Z",
     importance: "normal",
   },
   {
@@ -751,6 +818,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.soundofhope.org/post/932977",
     publishedAt: "2026-05-30T10:41:57.613Z",
+    updatedAt: "2026-05-30T10:41:57.613Z",
     importance: "normal",
   },
   {
@@ -762,6 +830,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.guancha.cn/internation/2026_05_28_818686_s.shtml",
     publishedAt: "2026-05-30T10:41:57.613Z",
+    updatedAt: "2026-05-30T10:41:57.613Z",
     importance: "normal",
   },
   {
@@ -773,6 +842,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://finance.sina.com.cn/zmt/2026-05-30/doc-inhzrvnr8913514.shtml",
     publishedAt: "2026-05-30T10:41:57.613Z",
+    updatedAt: "2026-05-30T10:41:57.613Z",
     importance: "normal",
   },
   {
@@ -784,6 +854,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20260529-%E5%8F%B0%E6%B9%BE%EF%BC%8C%E4%BC%9A%E6%88%90%E4%B9%A0%E8%BF%91%E5%B9%B3%E7%9A%84-%E5%8D%A2%E6%AF%94%E5%AD%94%E6%B2%B3-%E5%90%97",
     publishedAt: "2026-05-30T10:41:57.613Z",
+    updatedAt: "2026-05-30T10:41:57.613Z",
     importance: "normal",
   },
   {
@@ -795,6 +866,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://xinwen.bjd.com.cn/content/s6a18d7ade4b03fa51a7efa7c.html",
     publishedAt: "2026-05-30T10:41:57.613Z",
+    updatedAt: "2026-05-30T10:41:57.613Z",
     importance: "normal",
   },
   {
@@ -806,6 +878,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.163.com/dy/article/KU6DID6K05567N2K.html",
     publishedAt: "2026-05-30T10:41:57.613Z",
+    updatedAt: "2026-05-30T10:41:57.613Z",
     importance: "normal",
   },
   {
@@ -817,6 +890,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://today.line.me/tw/v3/article/7N1EE1l",
     publishedAt: "2026-05-30T10:41:57.613Z",
+    updatedAt: "2026-05-30T10:41:57.613Z",
     importance: "normal",
   },
   {
@@ -828,6 +902,7 @@ const hardcodedData: NewsData = {
     source: "X：Greg Brockman (@gdb)",
     sourceUrl: "https://x.com/gdb/status/2060452095279415725",
     publishedAt: "2026-05-30T10:41:56.249Z",
+    updatedAt: "2026-05-30T10:41:56.249Z",
     importance: "normal",
   },
   {
@@ -839,6 +914,7 @@ const hardcodedData: NewsData = {
     source: "X：阶跃星辰 StepFun (@StepFun_ai)",
     sourceUrl: "https://x.com/StepFun_ai/status/2060149124117475791",
     publishedAt: "2026-05-30T10:41:56.249Z",
+    updatedAt: "2026-05-30T10:41:56.249Z",
     importance: "hot",
   },
   {
@@ -850,6 +926,7 @@ const hardcodedData: NewsData = {
     source: "IT之家（RSS）",
     sourceUrl: "https://www.ithome.com/0/957/282.htm",
     publishedAt: "2026-05-30T10:41:56.249Z",
+    updatedAt: "2026-05-30T10:41:56.249Z",
     importance: "hot",
   },
   {
@@ -861,6 +938,7 @@ const hardcodedData: NewsData = {
     source: "Qwen：Blog Retrieval（API）",
     sourceUrl: "https://qwen.ai/blog?id=qwenvla",
     publishedAt: "2026-05-30T10:41:56.249Z",
+    updatedAt: "2026-05-30T10:41:56.249Z",
     importance: "normal",
   },
   {
@@ -872,6 +950,7 @@ const hardcodedData: NewsData = {
     source: "X：Greg Brockman (@gdb)",
     sourceUrl: "https://x.com/gdb/status/2060486309886443787",
     publishedAt: "2026-05-30T10:41:56.249Z",
+    updatedAt: "2026-05-30T10:41:56.249Z",
     importance: "normal",
   },
   {
@@ -883,6 +962,7 @@ const hardcodedData: NewsData = {
     source: "X：Gemini (@GeminiApp)",
     sourceUrl: "https://x.com/GeminiApp/status/2060435981946503243",
     publishedAt: "2026-05-30T10:41:56.249Z",
+    updatedAt: "2026-05-30T10:41:56.249Z",
     importance: "normal",
   },
   {
@@ -894,6 +974,7 @@ const hardcodedData: NewsData = {
     source: "X：OpenAI (@OpenAI)",
     sourceUrl: "https://x.com/OpenAI/status/2060428604727771421",
     publishedAt: "2026-05-30T10:41:56.249Z",
+    updatedAt: "2026-05-30T10:41:56.249Z",
     importance: "normal",
   },
   {
@@ -905,6 +986,7 @@ const hardcodedData: NewsData = {
     source: "OpenRouter：Announcements（RSS）",
     sourceUrl: "https://openrouter.ai/announcements/guardrails",
     publishedAt: "2026-05-30T10:41:56.249Z",
+    updatedAt: "2026-05-30T10:41:56.249Z",
     importance: "normal",
   },
   {
@@ -916,6 +998,7 @@ const hardcodedData: NewsData = {
     source: "X：Runway (@runwayml)",
     sourceUrl: "https://x.com/runwayml/status/2060453805519765548",
     publishedAt: "2026-05-30T10:41:56.249Z",
+    updatedAt: "2026-05-30T10:41:56.249Z",
     importance: "normal",
   },
   {
@@ -927,6 +1010,7 @@ const hardcodedData: NewsData = {
     source: "X：OpenRouter (@OpenRouter)",
     sourceUrl: "https://x.com/OpenRouter/status/2060395056196936054",
     publishedAt: "2026-05-30T10:41:56.249Z",
+    updatedAt: "2026-05-30T10:41:56.249Z",
     importance: "normal",
   },
   {
@@ -938,6 +1022,7 @@ const hardcodedData: NewsData = {
     source: "X：ChatGPT (@ChatGPTapp)",
     sourceUrl: "https://x.com/ChatGPTapp/status/2060467129066070182",
     publishedAt: "2026-05-30T10:41:56.249Z",
+    updatedAt: "2026-05-30T10:41:56.249Z",
     importance: "normal",
   },
   {
@@ -949,6 +1034,7 @@ const hardcodedData: NewsData = {
     source: "X：Gemini (@GeminiApp)",
     sourceUrl: "https://x.com/GeminiApp/status/2060389565052096911",
     publishedAt: "2026-05-30T10:41:56.249Z",
+    updatedAt: "2026-05-30T10:41:56.249Z",
     importance: "normal",
   },
   {
@@ -960,6 +1046,7 @@ const hardcodedData: NewsData = {
     source: "IT之家（RSS）",
     sourceUrl: "https://www.ithome.com/0/957/319.htm",
     publishedAt: "2026-05-30T10:41:56.249Z",
+    updatedAt: "2026-05-30T10:41:56.249Z",
     importance: "normal",
   },
   {
@@ -971,6 +1058,7 @@ const hardcodedData: NewsData = {
     source: "OpenAI：官网动态（RSS · 排除企业/客户案例）",
     sourceUrl: "https://openai.com/index/boston-childrens-hospital",
     publishedAt: "2026-05-30T10:41:56.249Z",
+    updatedAt: "2026-05-30T10:41:56.249Z",
     importance: "normal",
   },
   {
@@ -982,6 +1070,7 @@ const hardcodedData: NewsData = {
     source: "Google Blog：AI（RSS）",
     sourceUrl: "https://blog.google/innovation-and-ai/technology/ai/university-waterloo-labs",
     publishedAt: "2026-05-30T10:41:56.249Z",
+    updatedAt: "2026-05-30T10:41:56.249Z",
     importance: "normal",
   },
   {
@@ -993,6 +1082,7 @@ const hardcodedData: NewsData = {
     source: "X：Fei-Fei Li (@drfeifei, World Labs)",
     sourceUrl: "https://x.com/drfeifei/status/2060404846734512205",
     publishedAt: "2026-05-30T10:41:56.249Z",
+    updatedAt: "2026-05-30T10:41:56.249Z",
     importance: "hot",
   },
   {
@@ -1004,6 +1094,7 @@ const hardcodedData: NewsData = {
     source: "X：洪明 (@hongming731)",
     sourceUrl: "https://x.com/hongming731/status/2060487110906527820",
     publishedAt: "2026-05-30T10:41:56.249Z",
+    updatedAt: "2026-05-30T10:41:56.249Z",
     importance: "hot",
   },
   {
@@ -1015,6 +1106,7 @@ const hardcodedData: NewsData = {
     source: "X：Rohan Paul (@rohanpaul_ai)",
     sourceUrl: "https://x.com/rohanpaul_ai/status/2060409504693645440",
     publishedAt: "2026-05-30T10:41:56.249Z",
+    updatedAt: "2026-05-30T10:41:56.249Z",
     importance: "normal",
   },
   {
@@ -1026,6 +1118,7 @@ const hardcodedData: NewsData = {
     source: "X：Berry Xia (@berryxia)",
     sourceUrl: "https://x.com/berryxia/status/2060212428584202428",
     publishedAt: "2026-05-30T10:41:56.249Z",
+    updatedAt: "2026-05-30T10:41:56.249Z",
     importance: "normal",
   },
   {
@@ -1037,6 +1130,7 @@ const hardcodedData: NewsData = {
     source: "X：邵猛 (@shao__meng)",
     sourceUrl: "https://x.com/shao__meng/status/2060167182777249886",
     publishedAt: "2026-05-30T10:41:56.249Z",
+    updatedAt: "2026-05-30T10:41:56.249Z",
     importance: "hot",
   },
   {
@@ -1048,6 +1142,7 @@ const hardcodedData: NewsData = {
     source: "Hacker News 热门（buzzing.cc 中文翻译）",
     sourceUrl: "https://buildingbetter.tech/p/i-read-the-claude-code-source-code",
     publishedAt: "2026-05-30T10:41:56.249Z",
+    updatedAt: "2026-05-30T10:41:56.249Z",
     importance: "normal",
   },
   {
@@ -1059,6 +1154,7 @@ const hardcodedData: NewsData = {
     source: "TechCrunch：AI（RSS）",
     sourceUrl: "https://techcrunch.com/video/what-happens-when-companies-become-too-ai-pilled",
     publishedAt: "2026-05-30T10:41:56.249Z",
+    updatedAt: "2026-05-30T10:41:56.249Z",
     importance: "normal",
   },
   {
@@ -1070,6 +1166,7 @@ const hardcodedData: NewsData = {
     source: "IT之家（RSS）",
     sourceUrl: "https://www.ithome.com/0/956/864.htm",
     publishedAt: "2026-05-30T10:41:56.249Z",
+    updatedAt: "2026-05-30T10:41:56.249Z",
     importance: "normal",
   },
   {
@@ -1081,6 +1178,7 @@ const hardcodedData: NewsData = {
     source: "TechCrunch：AI（RSS）",
     sourceUrl: "https://techcrunch.com/2026/05/29/cognitions-scott-wu-says-ai-coding-agents-shouldnt-replace-humans",
     publishedAt: "2026-05-30T10:41:56.249Z",
+    updatedAt: "2026-05-30T10:41:56.249Z",
     importance: "normal",
   },
   {
@@ -1092,6 +1190,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://finance.sina.com.cn/roll/2026-05-26/doc-inhzfmyq1450153.shtml",
     publishedAt: "2026-05-30T09:31:54.782Z",
+    updatedAt: "2026-05-30T09:31:54.782Z",
     importance: "normal",
   },
   {
@@ -1103,6 +1202,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://m.sohu.com/a/1028888240_116132?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
     publishedAt: "2026-05-30T09:31:54.782Z",
+    updatedAt: "2026-05-30T09:31:54.782Z",
     importance: "normal",
   },
   {
@@ -1114,6 +1214,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "http://gd.people.com.cn/n2/2026/0529/c123932-41595091.html",
     publishedAt: "2026-05-30T09:31:54.782Z",
+    updatedAt: "2026-05-30T09:31:54.782Z",
     importance: "normal",
   },
   {
@@ -1125,6 +1226,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://wap.chinanews.com/wap/detail/chs/zw/10629513.shtml",
     publishedAt: "2026-05-30T09:31:54.782Z",
+    updatedAt: "2026-05-30T09:31:54.782Z",
     importance: "normal",
   },
   {
@@ -1136,6 +1238,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.163.com/dy/article/KU1ARDQQ05198NMR.html",
     publishedAt: "2026-05-30T09:31:54.782Z",
+    updatedAt: "2026-05-30T09:31:54.782Z",
     importance: "normal",
   },
   {
@@ -1147,6 +1250,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://h5.ifeng.com/c/vivoArticle/v002bICtrCFo2FA0j--WJAlwFlwcr9MEOZ--7JINNO5yQ3a8Y__?vivoBusiness=hiboardnews",
     publishedAt: "2026-05-30T09:31:54.782Z",
+    updatedAt: "2026-05-30T09:31:54.782Z",
     importance: "normal",
   },
   {
@@ -1158,6 +1262,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://news.qq.com/rain/a/20260525A0970C00",
     publishedAt: "2026-05-30T09:31:54.782Z",
+    updatedAt: "2026-05-30T09:31:54.782Z",
     importance: "normal",
   },
   {
@@ -1169,6 +1274,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.reddit.com/r/technology/comments/1to7p7n/gatsby_makes_us_history_with_first_humanoid_robot/?tl=zh-hans",
     publishedAt: "2026-05-30T09:31:54.782Z",
+    updatedAt: "2026-05-30T09:31:54.782Z",
     importance: "normal",
   },
   {
@@ -1180,6 +1286,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.maxictech.com/about/news/164",
     publishedAt: "2026-05-30T09:31:54.782Z",
+    updatedAt: "2026-05-30T09:31:54.782Z",
     importance: "normal",
   },
   {
@@ -1191,6 +1298,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://xpert.digital/zh-cn/%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%BF%80%E8%BF%9B%E8%AE%A1%E5%88%92/",
     publishedAt: "2026-05-30T09:31:54.782Z",
+    updatedAt: "2026-05-30T09:31:54.782Z",
     importance: "normal",
   },
   {
@@ -1202,6 +1310,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.moomoo.com/hans/stock/BTC-CC?chain_id=Name1K9-3FXPhg.1l1hlo0&global_content=%7B%22promote_id%22%3A13764%2C%22sub_promote_id%22%3A61%2C%22f%22%3A%22www.moomoo.com%2Fhans%2Fcommunity%2Ffeed%2Fmarvell-technology-mrvl-us-115723914510341%22%7D",
     publishedAt: "2026-05-30T09:31:53.800Z",
+    updatedAt: "2026-05-30T09:31:53.800Z",
     importance: "normal",
   },
   {
@@ -1213,6 +1322,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://hk.finance.yahoo.com/quote/BTC-USD/latest-news/",
     publishedAt: "2026-05-30T09:31:53.800Z",
+    updatedAt: "2026-05-30T09:31:53.800Z",
     importance: "normal",
   },
   {
@@ -1224,6 +1334,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://cn.investing.com/news/cryptocurrency-news/4",
     publishedAt: "2026-05-30T09:31:53.800Z",
+    updatedAt: "2026-05-30T09:31:53.800Z",
     importance: "normal",
   },
   {
@@ -1235,6 +1346,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "http://www.aastocks.com/tc/stocks/news/aafn-con/IC4912677/latest-news/INFOCAST",
     publishedAt: "2026-05-30T09:31:53.800Z",
+    updatedAt: "2026-05-30T09:31:53.800Z",
     importance: "normal",
   },
   {
@@ -1246,6 +1358,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.bitmart.com/zh-CN/price/bitcoin",
     publishedAt: "2026-05-30T09:31:53.800Z",
+    updatedAt: "2026-05-30T09:31:53.800Z",
     importance: "normal",
   },
   {
@@ -1257,6 +1370,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.tradingkey.com/zh-hans/news/forex?page=721",
     publishedAt: "2026-05-30T09:31:53.800Z",
+    updatedAt: "2026-05-30T09:31:53.800Z",
     importance: "hot",
   },
   {
@@ -1268,6 +1382,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://hk.investing.com/news/forex-news/article-1486545",
     publishedAt: "2026-05-30T09:31:53.800Z",
+    updatedAt: "2026-05-30T09:31:53.800Z",
     importance: "normal",
   },
   {
@@ -1279,6 +1394,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://hk.investing.com/news/stock-market-news/article-1486509",
     publishedAt: "2026-05-30T09:31:53.800Z",
+    updatedAt: "2026-05-30T09:31:53.800Z",
     importance: "normal",
   },
   {
@@ -1290,6 +1406,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://tw.stock.yahoo.com/news/%E5%8A%A0%E5%AF%86%E8%B2%A8%E5%B9%A3%E5%B8%82%E5%A0%B4%E5%AF%92%E6%B5%81%E7%B1%A0%E7%BD%A9-grayscale-%E5%BB%B6%E5%BE%8C%E4%B8%8A%E5%B8%82-%E8%B2%9D%E8%90%8A%E5%BE%B7%E6%AF%94%E7%89%B9%E5%B9%A3-etf-184627523.html",
     publishedAt: "2026-05-30T09:31:53.800Z",
+    updatedAt: "2026-05-30T09:31:53.800Z",
     importance: "normal",
   },
   {
@@ -1301,6 +1418,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://hk.investing.com/news/stock-market-news/article-1485589",
     publishedAt: "2026-05-30T09:31:53.800Z",
+    updatedAt: "2026-05-30T09:31:53.800Z",
     importance: "normal",
   },
   {
@@ -1312,6 +1430,7 @@ const hardcodedData: NewsData = {
     source: "X：Greg Brockman (@gdb)",
     sourceUrl: "https://x.com/gdb/status/2060452095279415725",
     publishedAt: "2026-05-30T09:31:52.180Z",
+    updatedAt: "2026-05-30T09:31:52.180Z",
     importance: "normal",
   },
   {
@@ -1323,6 +1442,7 @@ const hardcodedData: NewsData = {
     source: "X：阶跃星辰 StepFun (@StepFun_ai)",
     sourceUrl: "https://x.com/StepFun_ai/status/2060149124117475791",
     publishedAt: "2026-05-30T09:31:52.180Z",
+    updatedAt: "2026-05-30T09:31:52.180Z",
     importance: "hot",
   },
   {
@@ -1334,6 +1454,7 @@ const hardcodedData: NewsData = {
     source: "IT之家（RSS）",
     sourceUrl: "https://www.ithome.com/0/957/282.htm",
     publishedAt: "2026-05-30T09:31:52.180Z",
+    updatedAt: "2026-05-30T09:31:52.180Z",
     importance: "hot",
   },
   {
@@ -1345,6 +1466,7 @@ const hardcodedData: NewsData = {
     source: "Qwen：Blog Retrieval（API）",
     sourceUrl: "https://qwen.ai/blog?id=qwenvla",
     publishedAt: "2026-05-30T09:31:52.180Z",
+    updatedAt: "2026-05-30T09:31:52.180Z",
     importance: "normal",
   },
   {
@@ -1356,6 +1478,7 @@ const hardcodedData: NewsData = {
     source: "X：Greg Brockman (@gdb)",
     sourceUrl: "https://x.com/gdb/status/2060486309886443787",
     publishedAt: "2026-05-30T09:31:52.180Z",
+    updatedAt: "2026-05-30T09:31:52.180Z",
     importance: "normal",
   },
   {
@@ -1367,6 +1490,7 @@ const hardcodedData: NewsData = {
     source: "X：Gemini (@GeminiApp)",
     sourceUrl: "https://x.com/GeminiApp/status/2060435981946503243",
     publishedAt: "2026-05-30T09:31:52.180Z",
+    updatedAt: "2026-05-30T09:31:52.180Z",
     importance: "normal",
   },
   {
@@ -1378,6 +1502,7 @@ const hardcodedData: NewsData = {
     source: "X：OpenAI (@OpenAI)",
     sourceUrl: "https://x.com/OpenAI/status/2060428604727771421",
     publishedAt: "2026-05-30T09:31:52.180Z",
+    updatedAt: "2026-05-30T09:31:52.180Z",
     importance: "normal",
   },
   {
@@ -1389,6 +1514,7 @@ const hardcodedData: NewsData = {
     source: "OpenRouter：Announcements（RSS）",
     sourceUrl: "https://openrouter.ai/announcements/guardrails",
     publishedAt: "2026-05-30T09:31:52.180Z",
+    updatedAt: "2026-05-30T09:31:52.180Z",
     importance: "normal",
   },
   {
@@ -1400,6 +1526,7 @@ const hardcodedData: NewsData = {
     source: "X：Runway (@runwayml)",
     sourceUrl: "https://x.com/runwayml/status/2060453805519765548",
     publishedAt: "2026-05-30T09:31:52.180Z",
+    updatedAt: "2026-05-30T09:31:52.180Z",
     importance: "normal",
   },
   {
@@ -1411,6 +1538,7 @@ const hardcodedData: NewsData = {
     source: "X：OpenRouter (@OpenRouter)",
     sourceUrl: "https://x.com/OpenRouter/status/2060395056196936054",
     publishedAt: "2026-05-30T09:31:52.180Z",
+    updatedAt: "2026-05-30T09:31:52.180Z",
     importance: "normal",
   },
   {
@@ -1422,6 +1550,7 @@ const hardcodedData: NewsData = {
     source: "X：ChatGPT (@ChatGPTapp)",
     sourceUrl: "https://x.com/ChatGPTapp/status/2060467129066070182",
     publishedAt: "2026-05-30T09:31:52.180Z",
+    updatedAt: "2026-05-30T09:31:52.180Z",
     importance: "normal",
   },
   {
@@ -1433,6 +1562,7 @@ const hardcodedData: NewsData = {
     source: "X：Gemini (@GeminiApp)",
     sourceUrl: "https://x.com/GeminiApp/status/2060389565052096911",
     publishedAt: "2026-05-30T09:31:52.180Z",
+    updatedAt: "2026-05-30T09:31:52.180Z",
     importance: "normal",
   },
   {
@@ -1444,6 +1574,7 @@ const hardcodedData: NewsData = {
     source: "IT之家（RSS）",
     sourceUrl: "https://www.ithome.com/0/957/319.htm",
     publishedAt: "2026-05-30T09:31:52.180Z",
+    updatedAt: "2026-05-30T09:31:52.180Z",
     importance: "normal",
   },
   {
@@ -1455,6 +1586,7 @@ const hardcodedData: NewsData = {
     source: "OpenAI：官网动态（RSS · 排除企业/客户案例）",
     sourceUrl: "https://openai.com/index/boston-childrens-hospital",
     publishedAt: "2026-05-30T09:31:52.180Z",
+    updatedAt: "2026-05-30T09:31:52.180Z",
     importance: "normal",
   },
   {
@@ -1466,6 +1598,7 @@ const hardcodedData: NewsData = {
     source: "Google Blog：AI（RSS）",
     sourceUrl: "https://blog.google/innovation-and-ai/technology/ai/university-waterloo-labs",
     publishedAt: "2026-05-30T09:31:52.180Z",
+    updatedAt: "2026-05-30T09:31:52.180Z",
     importance: "normal",
   },
   {
@@ -1477,6 +1610,7 @@ const hardcodedData: NewsData = {
     source: "X：Fei-Fei Li (@drfeifei, World Labs)",
     sourceUrl: "https://x.com/drfeifei/status/2060404846734512205",
     publishedAt: "2026-05-30T09:31:52.180Z",
+    updatedAt: "2026-05-30T09:31:52.180Z",
     importance: "hot",
   },
   {
@@ -1488,6 +1622,7 @@ const hardcodedData: NewsData = {
     source: "X：洪明 (@hongming731)",
     sourceUrl: "https://x.com/hongming731/status/2060487110906527820",
     publishedAt: "2026-05-30T09:31:52.180Z",
+    updatedAt: "2026-05-30T09:31:52.180Z",
     importance: "hot",
   },
   {
@@ -1499,6 +1634,7 @@ const hardcodedData: NewsData = {
     source: "X：Rohan Paul (@rohanpaul_ai)",
     sourceUrl: "https://x.com/rohanpaul_ai/status/2060409504693645440",
     publishedAt: "2026-05-30T09:31:52.180Z",
+    updatedAt: "2026-05-30T09:31:52.180Z",
     importance: "normal",
   },
   {
@@ -1510,6 +1646,7 @@ const hardcodedData: NewsData = {
     source: "X：Berry Xia (@berryxia)",
     sourceUrl: "https://x.com/berryxia/status/2060212428584202428",
     publishedAt: "2026-05-30T09:31:52.180Z",
+    updatedAt: "2026-05-30T09:31:52.180Z",
     importance: "normal",
   },
   {
@@ -1521,6 +1658,7 @@ const hardcodedData: NewsData = {
     source: "X：邵猛 (@shao__meng)",
     sourceUrl: "https://x.com/shao__meng/status/2060167182777249886",
     publishedAt: "2026-05-30T09:31:52.180Z",
+    updatedAt: "2026-05-30T09:31:52.180Z",
     importance: "hot",
   },
   {
@@ -1532,6 +1670,7 @@ const hardcodedData: NewsData = {
     source: "Hacker News 热门（buzzing.cc 中文翻译）",
     sourceUrl: "https://buildingbetter.tech/p/i-read-the-claude-code-source-code",
     publishedAt: "2026-05-30T09:31:52.180Z",
+    updatedAt: "2026-05-30T09:31:52.180Z",
     importance: "normal",
   },
   {
@@ -1543,6 +1682,7 @@ const hardcodedData: NewsData = {
     source: "TechCrunch：AI（RSS）",
     sourceUrl: "https://techcrunch.com/video/what-happens-when-companies-become-too-ai-pilled",
     publishedAt: "2026-05-30T09:31:52.180Z",
+    updatedAt: "2026-05-30T09:31:52.180Z",
     importance: "normal",
   },
   {
@@ -1554,6 +1694,7 @@ const hardcodedData: NewsData = {
     source: "IT之家（RSS）",
     sourceUrl: "https://www.ithome.com/0/956/864.htm",
     publishedAt: "2026-05-30T09:31:52.180Z",
+    updatedAt: "2026-05-30T09:31:52.180Z",
     importance: "normal",
   },
   {
@@ -1565,6 +1706,7 @@ const hardcodedData: NewsData = {
     source: "TechCrunch：AI（RSS）",
     sourceUrl: "https://techcrunch.com/2026/05/29/cognitions-scott-wu-says-ai-coding-agents-shouldnt-replace-humans",
     publishedAt: "2026-05-30T09:31:52.180Z",
+    updatedAt: "2026-05-30T09:31:52.180Z",
     importance: "normal",
   },
   {
@@ -1576,6 +1718,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.moomoo.com/hans/stock/BTC-CC?chain_id=Name1K9-3FXPhg.1l1hlo0&global_content=%7B%22promote_id%22%3A13764%2C%22sub_promote_id%22%3A61%2C%22f%22%3A%22www.moomoo.com%2Fhans%2Fcommunity%2Ffeed%2Fmarvell-technology-mrvl-us-115723914510341%22%7D",
     publishedAt: "2026-05-30T09:31:12.817Z",
+    updatedAt: "2026-05-30T09:31:12.817Z",
     importance: "normal",
   },
   {
@@ -1587,6 +1730,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://hk.finance.yahoo.com/quote/BTC-USD/latest-news/",
     publishedAt: "2026-05-30T09:31:12.817Z",
+    updatedAt: "2026-05-30T09:31:12.817Z",
     importance: "normal",
   },
   {
@@ -1598,6 +1742,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://cn.investing.com/news/cryptocurrency-news/4",
     publishedAt: "2026-05-30T09:31:12.817Z",
+    updatedAt: "2026-05-30T09:31:12.817Z",
     importance: "normal",
   },
   {
@@ -1609,6 +1754,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "http://www.aastocks.com/tc/stocks/news/aafn-con/IC4912677/latest-news/INFOCAST",
     publishedAt: "2026-05-30T09:31:12.817Z",
+    updatedAt: "2026-05-30T09:31:12.817Z",
     importance: "normal",
   },
   {
@@ -1620,6 +1766,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.bitmart.com/zh-CN/price/bitcoin",
     publishedAt: "2026-05-30T09:31:12.817Z",
+    updatedAt: "2026-05-30T09:31:12.817Z",
     importance: "normal",
   },
   {
@@ -1631,6 +1778,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.tradingkey.com/zh-hans/news/forex?page=721",
     publishedAt: "2026-05-30T09:31:12.817Z",
+    updatedAt: "2026-05-30T09:31:12.817Z",
     importance: "hot",
   },
   {
@@ -1642,6 +1790,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://hk.investing.com/news/forex-news/article-1486545",
     publishedAt: "2026-05-30T09:31:12.817Z",
+    updatedAt: "2026-05-30T09:31:12.817Z",
     importance: "normal",
   },
   {
@@ -1653,6 +1802,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://hk.investing.com/news/stock-market-news/article-1486509",
     publishedAt: "2026-05-30T09:31:12.817Z",
+    updatedAt: "2026-05-30T09:31:12.817Z",
     importance: "normal",
   },
   {
@@ -1664,6 +1814,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://tw.stock.yahoo.com/news/%E5%8A%A0%E5%AF%86%E8%B2%A8%E5%B9%A3%E5%B8%82%E5%A0%B4%E5%AF%92%E6%B5%81%E7%B1%A0%E7%BD%A9-grayscale-%E5%BB%B6%E5%BE%8C%E4%B8%8A%E5%B8%82-%E8%B2%9D%E8%90%8A%E5%BE%B7%E6%AF%94%E7%89%B9%E5%B9%A3-etf-184627523.html",
     publishedAt: "2026-05-30T09:31:12.817Z",
+    updatedAt: "2026-05-30T09:31:12.817Z",
     importance: "normal",
   },
   {
@@ -1675,6 +1826,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://hk.investing.com/news/stock-market-news/article-1485589",
     publishedAt: "2026-05-30T09:31:12.817Z",
+    updatedAt: "2026-05-30T09:31:12.817Z",
     importance: "normal",
   },
   {
@@ -1686,6 +1838,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E8%A6%81%E9%97%BB%E8%A7%A3%E8%AF%B4/20260529-%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89%E5%AF%B9%E8%AF%9D%E7%99%BB%E5%9C%BA-%E8%91%A3%E5%86%9B%E7%BC%BA%E5%B8%AD-%E8%B5%AB%E6%A0%BC%E5%A1%9E%E6%80%9D%E6%88%90%E8%AE%BA%E5%9D%9B%E7%84%A6%E7%82%B9",
     publishedAt: "2026-05-30T09:31:12.111Z",
+    updatedAt: "2026-05-30T09:31:12.111Z",
     importance: "normal",
   },
   {
@@ -1697,6 +1850,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.163.com/dy/article/KU667K6A0556CENL.html",
     publishedAt: "2026-05-30T09:31:12.111Z",
+    updatedAt: "2026-05-30T09:31:12.111Z",
     importance: "normal",
   },
   {
@@ -1708,6 +1862,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.aboluowang.com/amp/2026/0530/2389644.html",
     publishedAt: "2026-05-30T09:31:12.111Z",
+    updatedAt: "2026-05-30T09:31:12.111Z",
     importance: "normal",
   },
   {
@@ -1719,6 +1874,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://amp.dw.com/zh/%E5%BE%B7%E8%AF%AD%E5%AA%92%E4%BD%93%E6%AC%A7%E6%B4%B2%E5%88%B0%E5%BA%95%E8%A6%81%E4%B8%8D%E8%A6%81%E5%8F%8D%E5%88%B6%E4%B8%AD%E5%9B%BD%E7%9A%84%E8%B4%B8%E6%98%93%E6%94%BF%E7%AD%96/a-77346249",
     publishedAt: "2026-05-30T09:31:12.111Z",
+    updatedAt: "2026-05-30T09:31:12.111Z",
     importance: "normal",
   },
   {
@@ -1730,6 +1886,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.worldjournal.com/wj/story/123308/9534899?zh-cn=",
     publishedAt: "2026-05-30T09:31:12.111Z",
+    updatedAt: "2026-05-30T09:31:12.111Z",
     importance: "normal",
   },
   {
@@ -1741,6 +1898,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://m.thepaper.cn/newsDetail_forward_33254066",
     publishedAt: "2026-05-30T09:31:12.111Z",
+    updatedAt: "2026-05-30T09:31:12.111Z",
     importance: "normal",
   },
   {
@@ -1752,6 +1910,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.guancha.cn/internation/2026_05_28_818686_s.shtml",
     publishedAt: "2026-05-30T09:31:12.111Z",
+    updatedAt: "2026-05-30T09:31:12.111Z",
     importance: "normal",
   },
   {
@@ -1763,6 +1922,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://finance.sina.com.cn/zmt/2026-05-30/doc-inhzrvnr8913514.shtml",
     publishedAt: "2026-05-30T09:31:12.111Z",
+    updatedAt: "2026-05-30T09:31:12.111Z",
     importance: "normal",
   },
   {
@@ -1774,6 +1934,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://today.line.me/tw/v3/article/PGegL3j",
     publishedAt: "2026-05-30T09:31:12.111Z",
+    updatedAt: "2026-05-30T09:31:12.111Z",
     importance: "normal",
   },
   {
@@ -1785,6 +1946,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.soundofhope.org/post/932971",
     publishedAt: "2026-05-30T09:31:12.111Z",
+    updatedAt: "2026-05-30T09:31:12.111Z",
     importance: "normal",
   },
   {
@@ -1796,6 +1958,7 @@ const hardcodedData: NewsData = {
     source: "X：Greg Brockman (@gdb)",
     sourceUrl: "https://x.com/gdb/status/2060452095279415725",
     publishedAt: "2026-05-30T09:31:10.674Z",
+    updatedAt: "2026-05-30T09:31:10.674Z",
     importance: "normal",
   },
   {
@@ -1807,6 +1970,7 @@ const hardcodedData: NewsData = {
     source: "X：阶跃星辰 StepFun (@StepFun_ai)",
     sourceUrl: "https://x.com/StepFun_ai/status/2060149124117475791",
     publishedAt: "2026-05-30T09:31:10.674Z",
+    updatedAt: "2026-05-30T09:31:10.674Z",
     importance: "hot",
   },
   {
@@ -1818,6 +1982,7 @@ const hardcodedData: NewsData = {
     source: "IT之家（RSS）",
     sourceUrl: "https://www.ithome.com/0/957/282.htm",
     publishedAt: "2026-05-30T09:31:10.674Z",
+    updatedAt: "2026-05-30T09:31:10.674Z",
     importance: "hot",
   },
   {
@@ -1829,6 +1994,7 @@ const hardcodedData: NewsData = {
     source: "Qwen：Blog Retrieval（API）",
     sourceUrl: "https://qwen.ai/blog?id=qwenvla",
     publishedAt: "2026-05-30T09:31:10.674Z",
+    updatedAt: "2026-05-30T09:31:10.674Z",
     importance: "normal",
   },
   {
@@ -1840,6 +2006,7 @@ const hardcodedData: NewsData = {
     source: "X：Greg Brockman (@gdb)",
     sourceUrl: "https://x.com/gdb/status/2060486309886443787",
     publishedAt: "2026-05-30T09:31:10.674Z",
+    updatedAt: "2026-05-30T09:31:10.674Z",
     importance: "normal",
   },
   {
@@ -1851,6 +2018,7 @@ const hardcodedData: NewsData = {
     source: "X：Gemini (@GeminiApp)",
     sourceUrl: "https://x.com/GeminiApp/status/2060435981946503243",
     publishedAt: "2026-05-30T09:31:10.674Z",
+    updatedAt: "2026-05-30T09:31:10.674Z",
     importance: "normal",
   },
   {
@@ -1862,6 +2030,7 @@ const hardcodedData: NewsData = {
     source: "X：OpenAI (@OpenAI)",
     sourceUrl: "https://x.com/OpenAI/status/2060428604727771421",
     publishedAt: "2026-05-30T09:31:10.674Z",
+    updatedAt: "2026-05-30T09:31:10.674Z",
     importance: "normal",
   },
   {
@@ -1873,6 +2042,7 @@ const hardcodedData: NewsData = {
     source: "OpenRouter：Announcements（RSS）",
     sourceUrl: "https://openrouter.ai/announcements/guardrails",
     publishedAt: "2026-05-30T09:31:10.674Z",
+    updatedAt: "2026-05-30T09:31:10.674Z",
     importance: "normal",
   },
   {
@@ -1884,6 +2054,7 @@ const hardcodedData: NewsData = {
     source: "X：Runway (@runwayml)",
     sourceUrl: "https://x.com/runwayml/status/2060453805519765548",
     publishedAt: "2026-05-30T09:31:10.674Z",
+    updatedAt: "2026-05-30T09:31:10.674Z",
     importance: "normal",
   },
   {
@@ -1895,6 +2066,7 @@ const hardcodedData: NewsData = {
     source: "X：OpenRouter (@OpenRouter)",
     sourceUrl: "https://x.com/OpenRouter/status/2060395056196936054",
     publishedAt: "2026-05-30T09:31:10.674Z",
+    updatedAt: "2026-05-30T09:31:10.674Z",
     importance: "normal",
   },
   {
@@ -1906,6 +2078,7 @@ const hardcodedData: NewsData = {
     source: "X：ChatGPT (@ChatGPTapp)",
     sourceUrl: "https://x.com/ChatGPTapp/status/2060467129066070182",
     publishedAt: "2026-05-30T09:31:10.674Z",
+    updatedAt: "2026-05-30T09:31:10.674Z",
     importance: "normal",
   },
   {
@@ -1917,6 +2090,7 @@ const hardcodedData: NewsData = {
     source: "X：Gemini (@GeminiApp)",
     sourceUrl: "https://x.com/GeminiApp/status/2060389565052096911",
     publishedAt: "2026-05-30T09:31:10.674Z",
+    updatedAt: "2026-05-30T09:31:10.674Z",
     importance: "normal",
   },
   {
@@ -1928,6 +2102,7 @@ const hardcodedData: NewsData = {
     source: "IT之家（RSS）",
     sourceUrl: "https://www.ithome.com/0/957/319.htm",
     publishedAt: "2026-05-30T09:31:10.674Z",
+    updatedAt: "2026-05-30T09:31:10.674Z",
     importance: "normal",
   },
   {
@@ -1939,6 +2114,7 @@ const hardcodedData: NewsData = {
     source: "OpenAI：官网动态（RSS · 排除企业/客户案例）",
     sourceUrl: "https://openai.com/index/boston-childrens-hospital",
     publishedAt: "2026-05-30T09:31:10.674Z",
+    updatedAt: "2026-05-30T09:31:10.674Z",
     importance: "normal",
   },
   {
@@ -1950,6 +2126,7 @@ const hardcodedData: NewsData = {
     source: "Google Blog：AI（RSS）",
     sourceUrl: "https://blog.google/innovation-and-ai/technology/ai/university-waterloo-labs",
     publishedAt: "2026-05-30T09:31:10.674Z",
+    updatedAt: "2026-05-30T09:31:10.674Z",
     importance: "normal",
   },
   {
@@ -1961,6 +2138,7 @@ const hardcodedData: NewsData = {
     source: "X：Fei-Fei Li (@drfeifei, World Labs)",
     sourceUrl: "https://x.com/drfeifei/status/2060404846734512205",
     publishedAt: "2026-05-30T09:31:10.674Z",
+    updatedAt: "2026-05-30T09:31:10.674Z",
     importance: "hot",
   },
   {
@@ -1972,6 +2150,7 @@ const hardcodedData: NewsData = {
     source: "X：洪明 (@hongming731)",
     sourceUrl: "https://x.com/hongming731/status/2060487110906527820",
     publishedAt: "2026-05-30T09:31:10.674Z",
+    updatedAt: "2026-05-30T09:31:10.674Z",
     importance: "hot",
   },
   {
@@ -1983,6 +2162,7 @@ const hardcodedData: NewsData = {
     source: "X：Rohan Paul (@rohanpaul_ai)",
     sourceUrl: "https://x.com/rohanpaul_ai/status/2060409504693645440",
     publishedAt: "2026-05-30T09:31:10.674Z",
+    updatedAt: "2026-05-30T09:31:10.674Z",
     importance: "normal",
   },
   {
@@ -1994,6 +2174,7 @@ const hardcodedData: NewsData = {
     source: "X：Berry Xia (@berryxia)",
     sourceUrl: "https://x.com/berryxia/status/2060212428584202428",
     publishedAt: "2026-05-30T09:31:10.674Z",
+    updatedAt: "2026-05-30T09:31:10.674Z",
     importance: "normal",
   },
   {
@@ -2005,6 +2186,7 @@ const hardcodedData: NewsData = {
     source: "X：邵猛 (@shao__meng)",
     sourceUrl: "https://x.com/shao__meng/status/2060167182777249886",
     publishedAt: "2026-05-30T09:31:10.674Z",
+    updatedAt: "2026-05-30T09:31:10.674Z",
     importance: "hot",
   },
   {
@@ -2016,6 +2198,7 @@ const hardcodedData: NewsData = {
     source: "Hacker News 热门（buzzing.cc 中文翻译）",
     sourceUrl: "https://buildingbetter.tech/p/i-read-the-claude-code-source-code",
     publishedAt: "2026-05-30T09:31:10.674Z",
+    updatedAt: "2026-05-30T09:31:10.674Z",
     importance: "normal",
   },
   {
@@ -2027,6 +2210,7 @@ const hardcodedData: NewsData = {
     source: "TechCrunch：AI（RSS）",
     sourceUrl: "https://techcrunch.com/video/what-happens-when-companies-become-too-ai-pilled",
     publishedAt: "2026-05-30T09:31:10.674Z",
+    updatedAt: "2026-05-30T09:31:10.674Z",
     importance: "normal",
   },
   {
@@ -2038,6 +2222,7 @@ const hardcodedData: NewsData = {
     source: "IT之家（RSS）",
     sourceUrl: "https://www.ithome.com/0/956/864.htm",
     publishedAt: "2026-05-30T09:31:10.674Z",
+    updatedAt: "2026-05-30T09:31:10.674Z",
     importance: "normal",
   },
   {
@@ -2049,6 +2234,7 @@ const hardcodedData: NewsData = {
     source: "TechCrunch：AI（RSS）",
     sourceUrl: "https://techcrunch.com/2026/05/29/cognitions-scott-wu-says-ai-coding-agents-shouldnt-replace-humans",
     publishedAt: "2026-05-30T09:31:10.674Z",
+    updatedAt: "2026-05-30T09:31:10.674Z",
     importance: "normal",
   },
   {
@@ -2060,6 +2246,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.moomoo.com/hans/stock/BTC-CC?chain_id=Name1K9-3FXPhg.1l1hlo0&global_content=%7B%22promote_id%22%3A13764%2C%22sub_promote_id%22%3A57%2C%22f%22%3A%22www.moomoo.com%2Fhans%2Fstock%2F02269-HK%22%7D",
     publishedAt: "2026-05-30T06:11:45.944Z",
+    updatedAt: "2026-05-30T06:11:45.944Z",
     importance: "normal",
   },
   {
@@ -2071,6 +2258,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://cn.investing.com/equities/united-states",
     publishedAt: "2026-05-30T06:11:45.944Z",
+    updatedAt: "2026-05-30T06:11:45.944Z",
     importance: "normal",
   },
   {
@@ -2082,6 +2270,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://hk.finance.yahoo.com/quote/BTC-USD/latest-news/",
     publishedAt: "2026-05-30T06:11:45.944Z",
+    updatedAt: "2026-05-30T06:11:45.944Z",
     importance: "normal",
   },
   {
@@ -2093,6 +2282,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "http://www.aastocks.com/tc/stocks/news/aafn-con/IC4912677/latest-news/INFOCAST",
     publishedAt: "2026-05-30T06:11:45.944Z",
+    updatedAt: "2026-05-30T06:11:45.944Z",
     importance: "normal",
   },
   {
@@ -2104,6 +2294,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://cn.investing.com/news/cryptocurrency-news/4",
     publishedAt: "2026-05-30T06:11:45.944Z",
+    updatedAt: "2026-05-30T06:11:45.944Z",
     importance: "normal",
   },
   {
@@ -2115,6 +2306,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.tradingkey.com/zh-hans/news/forex?page=721",
     publishedAt: "2026-05-30T06:11:45.944Z",
+    updatedAt: "2026-05-30T06:11:45.944Z",
     importance: "hot",
   },
   {
@@ -2126,6 +2318,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://hk.investing.com/news/forex-news/article-1486545",
     publishedAt: "2026-05-30T06:11:45.944Z",
+    updatedAt: "2026-05-30T06:11:45.944Z",
     importance: "normal",
   },
   {
@@ -2137,6 +2330,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://hk.investing.com/news/stock-market-news/article-1486509",
     publishedAt: "2026-05-30T06:11:45.944Z",
+    updatedAt: "2026-05-30T06:11:45.944Z",
     importance: "normal",
   },
   {
@@ -2148,6 +2342,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.aastocks.com/sc/stocks/news/aafn-con/now.1526795/latest-news",
     publishedAt: "2026-05-30T06:11:45.944Z",
+    updatedAt: "2026-05-30T06:11:45.944Z",
     importance: "normal",
   },
   {
@@ -2159,6 +2354,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://hk.investing.com/news/stock-market-news/article-1485589",
     publishedAt: "2026-05-30T06:11:45.944Z",
+    updatedAt: "2026-05-30T06:11:45.944Z",
     importance: "normal",
   },
   {
@@ -2170,6 +2366,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.aboluowang.com/amp/2026/0530/2389644.html",
     publishedAt: "2026-05-30T06:11:45.150Z",
+    updatedAt: "2026-05-30T06:11:45.150Z",
     importance: "normal",
   },
   {
@@ -2181,6 +2378,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E8%A6%81%E9%97%BB%E8%A7%A3%E8%AF%B4/20260529-%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89%E5%AF%B9%E8%AF%9D%E7%99%BB%E5%9C%BA-%E8%91%A3%E5%86%9B%E7%BC%BA%E5%B8%AD-%E8%B5%AB%E6%A0%BC%E5%A1%9E%E6%80%9D%E6%88%90%E8%AE%BA%E5%9D%9B%E7%84%A6%E7%82%B9",
     publishedAt: "2026-05-30T06:11:45.150Z",
+    updatedAt: "2026-05-30T06:11:45.150Z",
     importance: "normal",
   },
   {
@@ -2192,6 +2390,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.163.com/dy/article/KU5SEC610556DN3B.html",
     publishedAt: "2026-05-30T06:11:45.150Z",
+    updatedAt: "2026-05-30T06:11:45.150Z",
     importance: "normal",
   },
   {
@@ -2203,6 +2402,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://amp.dw.com/zh/%E5%BE%B7%E8%AF%AD%E5%AA%92%E4%BD%93%E6%AC%A7%E6%B4%B2%E5%88%B0%E5%BA%95%E8%A6%81%E4%B8%8D%E8%A6%81%E5%8F%8D%E5%88%B6%E4%B8%AD%E5%9B%BD%E7%9A%84%E8%B4%B8%E6%98%93%E6%94%BF%E7%AD%96/a-77346249",
     publishedAt: "2026-05-30T06:11:45.150Z",
+    updatedAt: "2026-05-30T06:11:45.150Z",
     importance: "normal",
   },
   {
@@ -2214,6 +2414,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://finance.sina.com.cn/zmt/2026-05-30/doc-inhzrvnr8913514.shtml",
     publishedAt: "2026-05-30T06:11:45.150Z",
+    updatedAt: "2026-05-30T06:11:45.150Z",
     importance: "normal",
   },
   {
@@ -2225,6 +2426,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.worldjournal.com/wj/story/123308/9534899",
     publishedAt: "2026-05-30T06:11:45.150Z",
+    updatedAt: "2026-05-30T06:11:45.150Z",
     importance: "normal",
   },
   {
@@ -2236,6 +2438,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://cn.investing.com/news/economy-news/article-3393109",
     publishedAt: "2026-05-30T06:11:45.150Z",
+    updatedAt: "2026-05-30T06:11:45.150Z",
     importance: "normal",
   },
   {
@@ -2247,6 +2450,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.guancha.cn/internation/2026_05_28_818686_s.shtml",
     publishedAt: "2026-05-30T06:11:45.150Z",
+    updatedAt: "2026-05-30T06:11:45.150Z",
     importance: "normal",
   },
   {
@@ -2258,6 +2462,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://m.thepaper.cn/newsDetail_forward_33254066",
     publishedAt: "2026-05-30T06:11:45.150Z",
+    updatedAt: "2026-05-30T06:11:45.150Z",
     importance: "normal",
   },
   {
@@ -2269,6 +2474,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://today.line.me/tw/v3/article/PGegL3j",
     publishedAt: "2026-05-30T06:11:45.150Z",
+    updatedAt: "2026-05-30T06:11:45.150Z",
     importance: "normal",
   },
   {
@@ -2280,6 +2486,7 @@ const hardcodedData: NewsData = {
     source: "X：Greg Brockman (@gdb)",
     sourceUrl: "https://x.com/gdb/status/2060452095279415725",
     publishedAt: "2026-05-30T06:11:43.649Z",
+    updatedAt: "2026-05-30T06:11:43.649Z",
     importance: "normal",
   },
   {
@@ -2291,6 +2498,7 @@ const hardcodedData: NewsData = {
     source: "X：阶跃星辰 StepFun (@StepFun_ai)",
     sourceUrl: "https://x.com/StepFun_ai/status/2060149124117475791",
     publishedAt: "2026-05-30T06:11:43.649Z",
+    updatedAt: "2026-05-30T06:11:43.649Z",
     importance: "hot",
   },
   {
@@ -2302,6 +2510,7 @@ const hardcodedData: NewsData = {
     source: "IT之家（RSS）",
     sourceUrl: "https://www.ithome.com/0/957/282.htm",
     publishedAt: "2026-05-30T06:11:43.649Z",
+    updatedAt: "2026-05-30T06:11:43.649Z",
     importance: "hot",
   },
   {
@@ -2313,6 +2522,7 @@ const hardcodedData: NewsData = {
     source: "Qwen：Blog Retrieval（API）",
     sourceUrl: "https://qwen.ai/blog?id=qwenvla",
     publishedAt: "2026-05-30T06:11:43.649Z",
+    updatedAt: "2026-05-30T06:11:43.649Z",
     importance: "normal",
   },
   {
@@ -2324,6 +2534,7 @@ const hardcodedData: NewsData = {
     source: "X：Greg Brockman (@gdb)",
     sourceUrl: "https://x.com/gdb/status/2060486309886443787",
     publishedAt: "2026-05-30T06:11:43.649Z",
+    updatedAt: "2026-05-30T06:11:43.649Z",
     importance: "normal",
   },
   {
@@ -2335,6 +2546,7 @@ const hardcodedData: NewsData = {
     source: "X：Gemini (@GeminiApp)",
     sourceUrl: "https://x.com/GeminiApp/status/2060435981946503243",
     publishedAt: "2026-05-30T06:11:43.649Z",
+    updatedAt: "2026-05-30T06:11:43.649Z",
     importance: "normal",
   },
   {
@@ -2346,6 +2558,7 @@ const hardcodedData: NewsData = {
     source: "X：OpenAI (@OpenAI)",
     sourceUrl: "https://x.com/OpenAI/status/2060428604727771421",
     publishedAt: "2026-05-30T06:11:43.649Z",
+    updatedAt: "2026-05-30T06:11:43.649Z",
     importance: "normal",
   },
   {
@@ -2357,6 +2570,7 @@ const hardcodedData: NewsData = {
     source: "OpenRouter：Announcements（RSS）",
     sourceUrl: "https://openrouter.ai/announcements/guardrails",
     publishedAt: "2026-05-30T06:11:43.649Z",
+    updatedAt: "2026-05-30T06:11:43.649Z",
     importance: "normal",
   },
   {
@@ -2368,6 +2582,7 @@ const hardcodedData: NewsData = {
     source: "X：Runway (@runwayml)",
     sourceUrl: "https://x.com/runwayml/status/2060453805519765548",
     publishedAt: "2026-05-30T06:11:43.649Z",
+    updatedAt: "2026-05-30T06:11:43.649Z",
     importance: "normal",
   },
   {
@@ -2379,6 +2594,7 @@ const hardcodedData: NewsData = {
     source: "X：OpenRouter (@OpenRouter)",
     sourceUrl: "https://x.com/OpenRouter/status/2060395056196936054",
     publishedAt: "2026-05-30T06:11:43.649Z",
+    updatedAt: "2026-05-30T06:11:43.649Z",
     importance: "normal",
   },
   {
@@ -2390,6 +2606,7 @@ const hardcodedData: NewsData = {
     source: "X：ChatGPT (@ChatGPTapp)",
     sourceUrl: "https://x.com/ChatGPTapp/status/2060467129066070182",
     publishedAt: "2026-05-30T06:11:43.649Z",
+    updatedAt: "2026-05-30T06:11:43.649Z",
     importance: "normal",
   },
   {
@@ -2401,6 +2618,7 @@ const hardcodedData: NewsData = {
     source: "X：Gemini (@GeminiApp)",
     sourceUrl: "https://x.com/GeminiApp/status/2060389565052096911",
     publishedAt: "2026-05-30T06:11:43.649Z",
+    updatedAt: "2026-05-30T06:11:43.649Z",
     importance: "normal",
   },
   {
@@ -2412,6 +2630,7 @@ const hardcodedData: NewsData = {
     source: "IT之家（RSS）",
     sourceUrl: "https://www.ithome.com/0/957/319.htm",
     publishedAt: "2026-05-30T06:11:43.649Z",
+    updatedAt: "2026-05-30T06:11:43.649Z",
     importance: "normal",
   },
   {
@@ -2423,6 +2642,7 @@ const hardcodedData: NewsData = {
     source: "OpenAI：官网动态（RSS · 排除企业/客户案例）",
     sourceUrl: "https://openai.com/index/boston-childrens-hospital",
     publishedAt: "2026-05-30T06:11:43.649Z",
+    updatedAt: "2026-05-30T06:11:43.649Z",
     importance: "normal",
   },
   {
@@ -2434,6 +2654,7 @@ const hardcodedData: NewsData = {
     source: "Google Blog：AI（RSS）",
     sourceUrl: "https://blog.google/innovation-and-ai/technology/ai/university-waterloo-labs",
     publishedAt: "2026-05-30T06:11:43.649Z",
+    updatedAt: "2026-05-30T06:11:43.649Z",
     importance: "normal",
   },
   {
@@ -2445,6 +2666,7 @@ const hardcodedData: NewsData = {
     source: "X：Fei-Fei Li (@drfeifei, World Labs)",
     sourceUrl: "https://x.com/drfeifei/status/2060404846734512205",
     publishedAt: "2026-05-30T06:11:43.649Z",
+    updatedAt: "2026-05-30T06:11:43.649Z",
     importance: "hot",
   },
   {
@@ -2456,6 +2678,7 @@ const hardcodedData: NewsData = {
     source: "X：洪明 (@hongming731)",
     sourceUrl: "https://x.com/hongming731/status/2060487110906527820",
     publishedAt: "2026-05-30T06:11:43.649Z",
+    updatedAt: "2026-05-30T06:11:43.649Z",
     importance: "hot",
   },
   {
@@ -2467,6 +2690,7 @@ const hardcodedData: NewsData = {
     source: "X：Rohan Paul (@rohanpaul_ai)",
     sourceUrl: "https://x.com/rohanpaul_ai/status/2060409504693645440",
     publishedAt: "2026-05-30T06:11:43.649Z",
+    updatedAt: "2026-05-30T06:11:43.649Z",
     importance: "normal",
   },
   {
@@ -2478,6 +2702,7 @@ const hardcodedData: NewsData = {
     source: "X：Berry Xia (@berryxia)",
     sourceUrl: "https://x.com/berryxia/status/2060212428584202428",
     publishedAt: "2026-05-30T06:11:43.649Z",
+    updatedAt: "2026-05-30T06:11:43.649Z",
     importance: "normal",
   },
   {
@@ -2489,6 +2714,7 @@ const hardcodedData: NewsData = {
     source: "X：邵猛 (@shao__meng)",
     sourceUrl: "https://x.com/shao__meng/status/2060167182777249886",
     publishedAt: "2026-05-30T06:11:43.649Z",
+    updatedAt: "2026-05-30T06:11:43.649Z",
     importance: "hot",
   },
   {
@@ -2500,6 +2726,7 @@ const hardcodedData: NewsData = {
     source: "Hacker News 热门（buzzing.cc 中文翻译）",
     sourceUrl: "https://buildingbetter.tech/p/i-read-the-claude-code-source-code",
     publishedAt: "2026-05-30T06:11:43.649Z",
+    updatedAt: "2026-05-30T06:11:43.649Z",
     importance: "normal",
   },
   {
@@ -2511,6 +2738,7 @@ const hardcodedData: NewsData = {
     source: "TechCrunch：AI（RSS）",
     sourceUrl: "https://techcrunch.com/video/what-happens-when-companies-become-too-ai-pilled",
     publishedAt: "2026-05-30T06:11:43.649Z",
+    updatedAt: "2026-05-30T06:11:43.649Z",
     importance: "normal",
   },
   {
@@ -2522,6 +2750,7 @@ const hardcodedData: NewsData = {
     source: "IT之家（RSS）",
     sourceUrl: "https://www.ithome.com/0/956/864.htm",
     publishedAt: "2026-05-30T06:11:43.649Z",
+    updatedAt: "2026-05-30T06:11:43.649Z",
     importance: "normal",
   },
   {
@@ -2533,6 +2762,7 @@ const hardcodedData: NewsData = {
     source: "TechCrunch：AI（RSS）",
     sourceUrl: "https://techcrunch.com/2026/05/29/cognitions-scott-wu-says-ai-coding-agents-shouldnt-replace-humans",
     publishedAt: "2026-05-30T06:11:43.649Z",
+    updatedAt: "2026-05-30T06:11:43.649Z",
     importance: "normal",
   },
   {
@@ -2544,6 +2774,7 @@ const hardcodedData: NewsData = {
     source: "Test",
     sourceUrl: "#",
     publishedAt: "2026-05-29T04:06:58.439Z",
+    updatedAt: "2026-05-29T04:06:58.439Z",
     importance: "normal",
   }
   ],

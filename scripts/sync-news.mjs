@@ -24,6 +24,7 @@ function itemsToJS(items) {
     source: ${JSON.stringify(item.source)},
     sourceUrl: ${JSON.stringify(item.sourceUrl)},
     publishedAt: "${item.publishedAt}",
+    updatedAt: "${item.updatedAt}",
     importance: "${item.importance}",
   }`).join(',\n');
 }
