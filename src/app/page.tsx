@@ -148,7 +148,7 @@ export default function HomePage() {
         </div>
 
         {/* Search */}
-        <div ref={searchRef} className="mt-10 max-w-sm mx-auto w-full">
+        <div ref={searchRef} className="mt-8 max-w-sm mx-auto w-full">
           <SearchBar large />
         </div>
 
