@@ -34,7 +34,7 @@ async function fetchAIHOTNews() {
         id: `ai-${Date.now()}-${items.length}`,
         title: item.title,
         summary: summaryText,
-        deepDive: `## 原文\n\n${summaryText}\n\n## AI 解读\n\n${item.sourceName || "AIHOT"}`,
+        deepDive: `## AI 解读\n\n${item.sourceName || "AIHOT"}\n\n## 原文\n\n${summaryText}`,
         category: "ai",
         source: item.sourceName || "AIHOT",
         sourceUrl: item.sourceUrl || "#",
@@ -81,7 +81,7 @@ async function searchExa(query, category, sourceLabel, days = 2) {
       id: `${category}-${Date.now()}-${i}`,
       title: r.title || "Untitled",
       summary: r.text ? r.text.slice(0, 300) : "No summary available",
-      deepDive: `## 原文\n\n${r.text ? r.text.slice(0, 500) : r.title || "暂无详细内容"}\n\n## AI 解读\n\n${sourceLabel}`,
+      deepDive: `## AI 解读\n\n${sourceLabel}\n\n## 原文\n\n${r.text ? r.text.slice(0, 500) : r.title || "暂无详细内容"}`,
       category: category,
       source: sourceLabel,
       sourceUrl: r.url || "#",
@@ -116,7 +116,7 @@ async function scrapeNewsSource(url, category, label, selector) {
           id: `${category}-${Date.now()}-scrape-${headlines.length}`,
           title: title,
           summary: `From ${label}`,
-          deepDive: `## 原文\n\n来自 ${label} 的新闻：${title}\n\n## AI 解读\n\n${label}`,
+          deepDive: `## AI 解读\n\n${label}\n\n## 原文\n\n来自 ${label} 的新闻：${title}`,
           category: category,
           source: label,
           sourceUrl: url,
@@ -241,14 +241,32 @@ async function main() {
   const newItems = addHotTags(deduplicate(allNewItems));
   console.log(`New items: ${newItems.length}`);
 
-  // 8. 生成 AI 解读（仅前 20 条）
+  // 8. 合并前先去重（保留新版本，丢弃旧版本相同标题）
+  const allTitles = new Set(newItems.map(i => i.title.slice(0, 50).toLowerCase()));
+  const filteredExisting = existingItems.filter(i => !allTitles.has(i.title.slice(0, 50).toLowerCase()));
+
+  // 9. 生成 AI 解读
   if (process.env.DEEPSEEK_API_KEY) {
-    console.log(`\n[AI] 正在为 ${newItems.length} 条新闻生成 AI 解读...`);
-    for (let i = 0; i < Math.min(newItems.length, 20); i++) {
-      const item = newItems[i];
+    // 9a. 为新文章生成 AI 解读
+    const itemsToAnalyze = [];
+    for (const item of newItems) {
       if (!item.deepDive?.includes('## AI 解读')) continue;
-      console.log(`[AI] 正在分析: ${item.title.slice(0,40)}`);
-      const prompt = `请为以下新闻写一段深度分析解读（200-400字中文），包含：1. 核心要点提炼 2. 影响分析。格式要简洁有力，像专业分析师的口吻。\n\n标题：${item.title}\n内容：${item.summary || item.title}\n类别：${item.category}`;
+      const isTemplate = item.deepDive.includes('Exa 搜索') || item.deepDive.includes('AIHOT') || item.deepDive.includes('新浪');
+      if (isTemplate) itemsToAnalyze.push(item);
+    }
+    // 8b. 旧文章中还没有 AI 解读的也补上
+    for (const item of filteredExisting) {
+      if (itemsToAnalyze.length >= 50) break;
+      if (item.deepDive?.includes('## AI 解读') && !item.deepDive.includes('Exa 搜索') && !item.deepDive.includes('AIHOT')) continue;
+      if (item.deepDive?.includes('## AI 解读')) continue;
+      itemsToAnalyze.push(item);
+    }
+    console.log(`\n[AI] 需要生成 AI 解读: ${itemsToAnalyze.length} 条`);
+    for (let i = 0; i < itemsToAnalyze.length; i++) {
+      const item = itemsToAnalyze[i];
+      console.log(`[AI] (${i+1}/${itemsToAnalyze.length}) 正在分析: ${item.title.slice(0,40)}`);
+      const sourceText = item.summary || item.title;
+      const prompt = `请为以下新闻写一段深度分析解读（200-400字中文），包含：1. 核心要点提炼 2. 影响分析。格式要简洁有力，像专业分析师的口吻。\n\n标题：${item.title}\n内容：${sourceText}\n类别：${item.category}`;
       try {
         const res = await fetch("https://api.deepseek.com/v1/chat/completions", {
           method: "POST",
@@ -266,7 +284,7 @@ async function main() {
           const data = await res.json();
           const analysis = data.choices?.[0]?.message?.content || "";
           if (analysis) {
-            item.deepDive = `## 原文\n\n${item.summary || item.title}\n\n## AI 解读\n\n${analysis}`;
+            item.deepDive = `## AI 解读\n\n${analysis}\n\n## 原文\n\n${item.summary || item.title}`;
             console.log(`[AI] ✅ 分析完成: ${item.title.slice(0,30)} (${analysis.length}字)`);
           } else {
             console.log(`[AI] ⚠️ 空返回: ${item.title.slice(0,30)}`);
@@ -278,16 +296,12 @@ async function main() {
       } catch (err) {
         console.log(`[AI] 生成失败: ${err.message}`);
       }
-      if ((i + 1) % 5 === 0) console.log(`[AI] 已处理 ${i+1}/${Math.min(newItems.length, 20)}`);
+      if ((i + 1) % 5 === 0) console.log(`[AI] 已处理 ${i+1}/${itemsToAnalyze.length}`);
     }
     console.log(`[AI] AI 解读生成完成`);
   }
 
-  // 8. 合并前先去重（保留新版本，丢弃旧版本相同标题）
-  const allTitles = new Set(newItems.map(i => i.title.slice(0, 50).toLowerCase()));
-  const filteredExisting = existingItems.filter(i => !allTitles.has(i.title.slice(0, 50).toLowerCase()));
-
-  // 9. Merge with existing (keep 3 months of history)
+  // 10. Merge with existing (keep 3 months of history)
   const threeMonthsAgo = new Date();
   threeMonthsAgo.setMonth(threeMonthsAgo.getMonth() - 3);
   const cutoff = threeMonthsAgo.getTime();
