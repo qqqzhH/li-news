@@ -21,31 +21,23 @@ export default function NewsCard({ item }: NewsCardProps) {
   const cc = catColors[item.category] || catColors.other;
 
   const renderDeepDive = (text: string) => {
-    // 将 Markdown 转为 HTML（用于 innerHTML，用内联样式避免 Tailwind 编译丢失）
-    const mdToHtml = (md: string) => {
-      return md
-        .split("\n")
-        .map((line) => {
-          if (line.startsWith("## ")) return '<h3 style="font-size:1rem;font-weight:600;margin-top:1rem;margin-bottom:0.5rem">' + line.slice(3) + '</h3>';
-          if (line.startsWith("### ")) return '<h4 style="font-size:0.875rem;font-weight:600;margin-top:0.75rem;margin-bottom:0.25rem">' + line.slice(4) + '</h4>';
-          if (line.startsWith("- **")) {
-            return line.replace(/- \*\*(.+?)\*\*[：:] (.+)/, '<p style="margin-bottom:0.25rem"><strong>$1</strong>：$2</p>');
-          }
-          if (line.startsWith("- ")) return '<li style="margin-left:1rem;list-style:disc;margin-bottom:0.25rem">' + renderInlineMd(line.slice(2)) + '</li>';
-          if (line.trim() === "") return '<div style="height:0.5rem"></div>';
-          return '<p style="margin-bottom:0.5rem">' + renderInlineMd(line) + '</p>';
-        })
-        .join("\n");
-    };
-
-    const renderInlineMd = (s: string) => {
-      return s
-        .replace(/\[(.+?)\]\((.+?)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" style="color:#2563eb;text-decoration:underline;word-break:break-all">$1</a>')
-        .replace(/\*(.+?)\*/g, '<em style="color:#6b7280">$1</em>');
-    };
-
-    const html = mdToHtml(text);
-    return <div className="text-sm leading-relaxed" dangerouslySetInnerHTML={{ __html: html }} />;
+    // 直接渲染为纯文本格式（兼容 Cloudflare）
+    const lines = text.split("\n");
+    return lines.map((line, i) => {
+      if (line.startsWith("## ")) return <p key={i} className="text-sm font-semibold text-[var(--color-text)] mt-4 mb-2">{line.replace("## ", "")}</p>;
+      if (line.startsWith("### ")) return <p key={i} className="text-xs font-semibold text-[var(--color-text)] mt-3 mb-1">{line.replace("### ", "")}</p>;
+      if (line.startsWith("- **")) {
+        const m = line.match(/- \*\*(.+?)\*\*[：:] (.+)/);
+        if (m) return <p key={i} className="mb-1"><strong>{m[1]}</strong>：{m[2]}</p>;
+      }
+      if (line.startsWith("- ")) return <li key={i} className="ml-4 list-disc mb-1">{line.replace("- ", "")}</li>;
+      if (line.trim() === "") return <div key={i} className="h-2" />;
+      // 普通行：解析 [文字](链接) 和 *斜体*
+      let html = line
+        .replace(/\[(.+?)\]\((.+?)\)/g, '<a href="$2" target="_blank" class="text-blue-600 hover:underline">$1</a>')
+        .replace(/\*(.+?)\*/g, '<em>$1</em>');
+      return <p key={i} className="mb-2" dangerouslySetInnerHTML={{ __html: html }} />;
+    });
   };
 
   return (
