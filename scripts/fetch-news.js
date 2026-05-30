@@ -34,7 +34,7 @@ async function fetchAIHOTNews() {
         id: `ai-${Date.now()}-${items.length}`,
         title: item.title,
         summary: summaryText,
-        deepDive: `## 精简原文\n\n${summaryText}\n\n## AI解读\n\n本条新闻来自 ${item.sourceName || "AIHOT"}。\n\n新闻类别：${sectionName}。${item.sourceUrl ? `\n\n[查看原文](${item.sourceUrl})` : ""}`,
+        deepDive: `## 精简原文\n\n${summaryText}\n\n## AI解读\n\n本条新闻由木子新闻收录，来源：${item.sourceName || "AIHOT"}。\n\n栏目：${sectionName}。${item.sourceUrl ? `\n\n📎 原文链接：[查看详情](${item.sourceUrl})` : ""}`,
         category: "ai",
         source: item.sourceName || "AIHOT",
         sourceUrl: item.sourceUrl || "#",
@@ -61,9 +61,12 @@ async function searchExa(query, category, sourceLabel, days = 2) {
       },
       body: JSON.stringify({
         query: query,
-        type: "keyword",
+        type: "auto",
         numResults: 10,
         includeDomains: [],
+        contents: {
+          text: { maxLength: 500 }
+        },
         startPublishedDate: getDaysAgo(days),
       }),
     });
@@ -78,7 +81,7 @@ async function searchExa(query, category, sourceLabel, days = 2) {
       id: `${category}-${Date.now()}-${i}`,
       title: r.title || "Untitled",
       summary: r.text ? r.text.slice(0, 300) : "No summary available",
-      deepDive: `## 精简原文\n\n${r.text ? r.text.slice(0, 500) : (r.title || "暂无详细内容。")}\n\n## AI解读\n\n本条采集自 ${sourceLabel || "网络搜索"}，属于"${category}"类别。${r.url ? `\n\n[查看原文](${r.url})` : ""}`,
+      deepDive: `## 精简原文\n\n${r.text ? r.text.slice(0, 500) : `相关报道：${r.title || "暂无详细内容。"}\n\n💡 提示：点击下方"查看原文"获取完整内容。`}\n\n## AI解读\n\n本条新闻由木子新闻自动采集自 ${sourceLabel}，属于「${category}」类别。${r.url ? `\n\n📎 原始链接：[${r.title || "查看原文"}](${r.url})` : ""}`,
       category: category,
       source: sourceLabel,
       sourceUrl: r.url || "#",
