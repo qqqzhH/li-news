@@ -21,6 +21,26 @@ export default function NewsCard({ item }: NewsCardProps) {
   const cc = catColors[item.category] || catColors.other;
 
   const renderDeepDive = (text: string) => {
+    const renderInline = (text: string) => {
+      // 解析 [text](url) 链接
+      const parts = text.split(/(\[.+?\]\(.+?\))/g);
+      return parts.map((part, i) => {
+        const linkMatch = part.match(/^\[(.+?)\]\((.+?)\)$/);
+        if (linkMatch) {
+          return <a key={i} href={linkMatch[2]} target="_blank" rel="noopener noreferrer"
+            className="text-[var(--color-ocean-600)] hover:underline break-all">{linkMatch[1]}</a>;
+        }
+        // 解析 *italic* 格式
+        const italicParts = part.split(/(\*[^*]+\*)/g);
+        return italicParts.map((ip, j) => {
+          if (ip.startsWith("*") && ip.endsWith("*") && ip.length > 1) {
+            return <em key={`${i}-${j}`} className="text-[var(--color-text-muted)]">{ip.slice(1, -1)}</em>;
+          }
+          return ip;
+        });
+      });
+    };
+
     return text.split("\n").map((line, i) => {
       if (line.startsWith("## ")) {
         return (
@@ -47,10 +67,10 @@ export default function NewsCard({ item }: NewsCardProps) {
         }
       }
       if (line.startsWith("- ")) {
-        return <li key={i} className="ml-4 list-disc mb-1">{line.replace("- ", "")}</li>;
+        return <li key={i} className="ml-4 list-disc mb-1">{renderInline(line.replace("- ", ""))}</li>;
       }
       if (line.trim() === "") return <div key={i} className="h-2" />;
-      return <p key={i} className="mb-2">{line}</p>;
+      return <p key={i} className="mb-2">{renderInline(line)}</p>;
     });
   };
 
