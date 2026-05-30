@@ -7,6 +7,7 @@ export interface NewsItem {
   source: string;
   sourceUrl: string;
   publishedAt: string;
+  updatedAt: string;
   importance: "hot" | "normal";
 }
 

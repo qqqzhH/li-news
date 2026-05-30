@@ -3,7 +3,7 @@
 import { NewsData, NewsItem, Category } from "@/types";
 
 const hardcodedData: NewsData = {
-  lastUpdated: "2026-05-30T12:24:51.468Z",
+  lastUpdated: "2026-05-30T12:24:50.489Z",
   items: [
   {
     id: "finance-1780143890489-0",

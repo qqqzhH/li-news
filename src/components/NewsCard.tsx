@@ -57,8 +57,14 @@ export default function NewsCard({ item }: NewsCardProps) {
           </span>
         )}
 
-        <span className="text-xs text-[var(--color-text-secondary)] ml-auto">
-          {new Date(item.publishedAt).toLocaleDateString("zh-CN", {
+        <span className="text-xs text-[var(--color-text)] font-medium">
+          发布 {new Date(item.publishedAt).toLocaleDateString("zh-CN", {
+            year: "numeric", month: "2-digit", day: "2-digit",
+            hour: "2-digit", minute: "2-digit"
+          })}
+        </span>
+        <span className="text-xs text-[var(--color-text-muted)] ml-auto">
+          更新 {new Date(item.updatedAt).toLocaleDateString("zh-CN", {
             year: "numeric", month: "2-digit", day: "2-digit",
             hour: "2-digit", minute: "2-digit"
           })}

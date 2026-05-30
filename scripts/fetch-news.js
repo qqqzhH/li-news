@@ -38,8 +38,9 @@ async function fetchAIHOTNews() {
         category: "ai",
         source: item.sourceName || "AIHOT",
         sourceUrl: item.sourceUrl || "#",
-        publishedAt: new Date().toISOString(),
-        importance: "normal",
+          publishedAt: new Date().toISOString(),
+          updatedAt: new Date().toISOString(),
+          importance: "normal",
       });
     }
   }
@@ -81,8 +82,9 @@ async function searchExa(query, category, sourceLabel, days = 2) {
       category: category,
       source: sourceLabel,
       sourceUrl: r.url || "#",
-      publishedAt: new Date().toISOString(),
-      importance: "normal",
+          publishedAt: new Date().toISOString(),
+          updatedAt: new Date().toISOString(),
+          importance: "normal",
     }));
   } catch (err) {
     console.log(`[Exa] Error: ${err.message}`);
@@ -116,6 +118,7 @@ async function scrapeNewsSource(url, category, label, selector) {
           source: label,
           sourceUrl: url,
           publishedAt: new Date().toISOString(),
+          updatedAt: new Date().toISOString(),
           importance: "normal",
         });
       }
