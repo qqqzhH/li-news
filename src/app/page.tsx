@@ -118,6 +118,7 @@ export default function HomePage() {
           <h1 ref={titleRef} className="text-5xl sm:text-7xl md:text-8xl font-black tracking-wide leading-none">
             <span className="text-[var(--color-ocean-600)]">木子</span>
             <span className="text-[var(--color-text)]">新闻</span>
+            {/* v624d859-deepdive-fix */}
           </h1>
           <p ref={subtitleRef} className="mt-5 text-sm md:text-base text-[var(--color-text-muted)] max-w-md mx-auto">
             AI 动态 · 机器人 · 地缘政治 · 金融市场
