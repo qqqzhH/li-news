@@ -107,14 +107,14 @@ export default function HomePage() {
   }, []);
 
   return (
-    <div className="snap-container space-y-0">
+    <div className="space-y-0">
 
       {/* ===== Screen 1: Hero ===== */}
-      <section data-section="home" className="snap-start min-h-screen flex flex-col justify-center px-6 md:px-16 max-w-4xl mx-auto w-full">
+      <section data-section="home" className="min-h-screen flex flex-col justify-center px-5 md:px-16 max-w-4xl mx-auto w-full">
 
         {/* Title */}
         <div className="text-center">
-          <h1 ref={titleRef} className="text-7xl md:text-8xl font-black tracking-wide leading-none">
+          <h1 ref={titleRef} className="text-5xl sm:text-7xl md:text-8xl font-black tracking-wide leading-none">
             <span className="text-[var(--color-ocean-600)]">木子</span>
             <span className="text-[var(--color-text)]">新闻</span>
           </h1>
@@ -152,7 +152,7 @@ export default function HomePage() {
         </div>
 
         {/* Category cards - bigger */}
-        <div ref={catsRef} className="mt-16 grid grid-cols-3 md:grid-cols-5 gap-5 max-w-3xl mx-auto w-full">
+        <div ref={catsRef} className="mt-16 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 sm:gap-5 max-w-3xl mx-auto w-full">
           {CATEGORIES.map((cat) => {
             const count = data.items.filter((i) => i.category === cat.key).length;
             return (
@@ -179,20 +179,20 @@ export default function HomePage() {
       </section>
 
       {/* ===== Screen 2: 今日精选 ===== */}
-      <section data-section="recommended" className="snap-start min-h-screen flex flex-col items-center justify-center px-6 md:px-16" ref={section2Ref}>
-        <div className="w-full max-w-5xl pt-[5vh]">
+      <section data-section="recommended" className="py-10 sm:py-20 px-4 sm:px-6 md:px-16" ref={section2Ref}>
+        <div className="max-w-5xl mx-auto">
           {/* Section header */}
-          <div className="flex items-center gap-4 mb-8">
-            <div className="s2-title-line h-px flex-1 bg-gradient-to-r from-transparent via-[var(--color-ocean-300)] to-transparent max-w-[120px]" />
-            <div className="text-center">
-              <h2 className="text-3xl md:text-4xl font-black text-[var(--color-text)] tracking-tight">今日精选</h2>
+          <div className="flex items-center gap-2 sm:gap-4 mb-6 sm:mb-8">
+            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[var(--color-ocean-300)] to-transparent max-w-[60px] sm:max-w-[120px]" />
+            <div className="text-center shrink-0">
+              <h2 className="text-xl sm:text-3xl md:text-4xl font-black text-[var(--color-text)] tracking-tight">今日精选</h2>
               <p className="text-sm text-[var(--color-text-muted)] mt-1">推荐阅读 · 最新动态</p>
             </div>
-            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[var(--color-ocean-300)] to-transparent max-w-[120px]" />
+            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[var(--color-ocean-300)] to-transparent max-w-[60px] sm:max-w-[120px]" />
           </div>
 
           {/* Two columns - more spacious */}
-          <div className="s2-cols grid md:grid-cols-2 gap-8 md:gap-16">
+          <div className="s2-cols grid md:grid-cols-2 gap-6 sm:gap-8 md:gap-16">
             {/* Left: Recommended */}
             <div>
               <div className="flex items-center gap-2 mb-5">

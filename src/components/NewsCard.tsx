@@ -1,7 +1,6 @@
 "use client";
 
 import { NewsItem } from "@/types";
-import { formatTime } from "@/lib/utils";
 import { useState } from "react";
 import { CATEGORIES } from "@/types";
 
@@ -56,9 +55,9 @@ export default function NewsCard({ item }: NewsCardProps) {
   };
 
   return (
-    <article className="news-card bg-white border border-[var(--color-border)] rounded-xl p-6 animate-fade-in">
+    <article className="news-card bg-white border border-[var(--color-border)] rounded-xl p-4 sm:p-6 animate-fade-in">
       {/* 元信息 */}
-      <div className="flex items-center gap-2 mb-3 flex-wrap">
+      <div className="flex items-center gap-2 mb-1 flex-wrap">
         <span
           className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium"
           style={{ backgroundColor: cc.bg, color: cc.text }}
@@ -72,17 +71,12 @@ export default function NewsCard({ item }: NewsCardProps) {
           </span>
         )}
 
-        <span className="text-xs text-[var(--color-text-muted)] ml-auto">
-          {formatTime(item.publishedAt)}
+        <span className="text-xs text-[var(--color-text-secondary)] ml-auto">
+          {new Date(item.publishedAt).toLocaleDateString("zh-CN", {
+            year: "numeric", month: "2-digit", day: "2-digit",
+            hour: "2-digit", minute: "2-digit"
+          })}
         </span>
-      </div>
-
-      {/* 发布时间 */}
-      <div className="text-xs text-[var(--color-text-muted)]/60 -mt-2 mb-3">
-        {new Date(item.publishedAt).toLocaleDateString("zh-CN", {
-          year: "numeric", month: "2-digit", day: "2-digit",
-          hour: "2-digit", minute: "2-digit"
-        })}
       </div>
 
       {/* 标题 */}
