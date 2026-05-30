@@ -1,4 +1,4 @@
-// News data module - embedded inline (works in Vercel build)
+// News data module - embedded inline (Cloudflare Pages build)
 // Auto-generated from news.json — do not edit manually
 import { NewsData, NewsItem, Category } from "@/types";
 
