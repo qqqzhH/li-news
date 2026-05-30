@@ -1,4 +1,5 @@
-import { getAllNews, formatTime } from "@/lib/news";
+import { getAllNews } from "@/lib/news";
+import { formatTime } from "@/lib/utils";
 import { CATEGORY_LABEL } from "@/types";
 
 export async function GET() {

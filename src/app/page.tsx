@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { getAllNews, getHotNews, formatTime } from "@/lib/news";
+import { getAllNews, getHotNews } from "@/lib/news";
+import { formatTime } from "@/lib/utils";
 import SearchBar from "@/components/SearchBar";
 import { CATEGORIES, CATEGORY_ICONS } from "@/types";
 import { useEffect, useRef } from "react";
