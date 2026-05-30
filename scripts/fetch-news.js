@@ -50,6 +50,18 @@ async function fetchAIHOTNews() {
 }
 
 // ========== Fetch from Exa Search ==========
+// 检测繁体中文
+function isTraditional(text) {
+  // 繁体特有的常用字
+  const tradChars = '戰東會關國際邊飛發雲臺稱圍從業與當畫時經門開後機來過對頭點將簡稱無應這個進見只萬數匯盡麵確龍雙歸歷樂書廣寫義貨賣讀聽輕轉輪連選遠還隨爾語際風飯飲飽養驚讓護顧爾區曆準麼裏麵爲當檔鏈儘匯瀏擊導猶薩雙餘監領標協選錄優購餘積護環優擠響鍾驅繞';
+  let count = 0;
+  for (const ch of text) {
+    if (tradChars.includes(ch)) count++;
+    if (count >= 3) return true;
+  }
+  return false;
+}
+
 async function searchExa(query, category, sourceLabel, days = 2) {
   console.log(`[Exa] Searching: ${query}`);
   try {
@@ -195,14 +207,14 @@ async function main() {
     "地缘政治 国际新闻 外交 冲突 最新动态 中国 美国 欧洲 中东",
     "geopolitics",
     "Exa 搜索"
-  ).then(items => items.filter(i => /[\u4e00-\u9fff]/.test(i.title || i.summary)));
+  ).then(items => items.filter(i => /[\u4e00-\u9fff]/.test(i.title || i.summary) && !isTraditional(i.title + ' ' + (i.summary||''))));
 
   // 4. Fetch finance news (中文搜索)
   const finItems = await searchExa(
     "金融市场 A股 美股 股票 经济 政策 利率 汇率 比特币 最新新闻",
     "finance",
     "Exa 搜索"
-  ).then(items => items.filter(i => /[\u4e00-\u9fff]/.test(i.title || i.summary)));
+  ).then(items => items.filter(i => /[\u4e00-\u9fff]/.test(i.title || i.summary) && !isTraditional(i.title + ' ' + (i.summary||''))));
 
   // 5. Fetch robotics news (7-day window - less frequent)
   const robItems = await searchExa(
@@ -210,7 +222,7 @@ async function main() {
     "robotics",
     "Exa 搜索",
     7
-  ).then(items => items.filter(i => /[\u4e00-\u9fff]/.test(i.title || i.summary)));
+  ).then(items => items.filter(i => /[\u4e00-\u9fff]/.test(i.title || i.summary) && !isTraditional(i.title + ' ' + (i.summary||''))));
 
   // 5. Also scrape some Chinese news sites
   const [geoScrape, finScrape, robScrape] = await Promise.allSettled([
