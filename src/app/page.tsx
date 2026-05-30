@@ -111,7 +111,7 @@ export default function HomePage() {
     <div className="snap-container space-y-0">
 
       {/* ===== Screen 1: Hero ===== */}
-      <section data-section="home" className="flex flex-col items-center px-5 md:px-16 max-w-4xl mx-auto w-full py-12 md:py-20">
+      <section data-section="home" className="min-h-screen flex flex-col justify-start items-center px-5 md:px-16 max-w-4xl mx-auto w-full pt-16 md:pt-24">
 
         {/* Title */}
         <div className="text-center">
