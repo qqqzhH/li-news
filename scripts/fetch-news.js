@@ -28,11 +28,13 @@ async function fetchAIHOTNews() {
   const items = [];
   for (const section of data.sections || []) {
     for (const item of section.items || []) {
+      const summaryText = item.summary || item.title;
+      const sectionName = section.name || "AI动态";
       items.push({
         id: `ai-${Date.now()}-${items.length}`,
         title: item.title,
-        summary: item.summary || item.title,
-        deepDive: `## 精简原文\n\n${item.summary || item.title}\n\n## AI解读\n\n本条新闻来自 ${item.sourceName || "AIHOT"}。${item.sourceUrl ? `\n\n[查看原文](${item.sourceUrl})` : ""}`,
+        summary: summaryText,
+        deepDive: `## 精简原文\n\n${summaryText}\n\n## AI解读\n\n本条新闻来自 ${item.sourceName || "AIHOT"}。\n\n新闻类别：${sectionName}。${item.sourceUrl ? `\n\n[查看原文](${item.sourceUrl})` : ""}`,
         category: "ai",
         source: item.sourceName || "AIHOT",
         sourceUrl: item.sourceUrl || "#",
@@ -75,7 +77,7 @@ async function searchExa(query, category, sourceLabel, days = 2) {
       id: `${category}-${Date.now()}-${i}`,
       title: r.title || "Untitled",
       summary: r.text ? r.text.slice(0, 300) : "No summary available",
-      deepDive: `## 精简原文\n\n${r.text ? r.text.slice(0, 500) : "暂无详细内容。"}\n\n## AI解读\n\n本条新闻来自 Exa 搜索${r.url ? `。\n\n[查看原文](${r.url})` : ""}`,
+      deepDive: `## 精简原文\n\n${r.text ? r.text.slice(0, 500) : (r.title || "暂无详细内容。")}\n\n## AI解读\n\n本条采集自 ${sourceLabel || "网络搜索"}，属于"${category}"类别。${r.url ? `\n\n[查看原文](${r.url})` : ""}`,
       category: category,
       source: sourceLabel,
       sourceUrl: r.url || "#",
@@ -109,7 +111,7 @@ async function scrapeNewsSource(url, category, label, selector) {
           id: `${category}-${Date.now()}-scrape-${headlines.length}`,
           title: title,
           summary: `From ${label}`,
-          deepDive: `## 精简原文\n\n来自 ${label} 的新闻：${title}\n\n## AI解读\n\n本条新闻来源于 ${label}。\n\n[查看原文](${url})`,
+          deepDive: `## 精简原文\n\n来自 ${label} 的新闻快讯。\n\n${title}\n\n## AI解读\n\n本条快讯采集自 ${label}。\n\n[查看原文](${url})`,
           category: category,
           source: label,
           sourceUrl: url,
