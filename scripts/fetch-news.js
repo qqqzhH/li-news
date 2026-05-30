@@ -251,14 +251,22 @@ async function main() {
     const itemsToAnalyze = [];
     for (const item of newItems) {
       if (!item.deepDive?.includes('## AI 解读')) continue;
-      const isTemplate = item.deepDive.includes('Exa 搜索') || item.deepDive.includes('AIHOT') || item.deepDive.includes('新浪');
+      // 检查 AI 解读是否为模板（内容很短即为模板）
+      const aiIdx = item.deepDive.indexOf('## AI 解读');
+      const after = item.deepDive.slice(aiIdx + 10).trim();
+      const isTemplate = after.includes('\n## 原文') && after.indexOf('\n##') < 80;
       if (isTemplate) itemsToAnalyze.push(item);
     }
-    // 8b. 旧文章中还没有 AI 解读的也补上
+    // 9b. 旧文章中还没有 AI 解读的也补上
     for (const item of filteredExisting) {
       if (itemsToAnalyze.length >= 50) break;
-      if (item.deepDive?.includes('## AI 解读') && !item.deepDive.includes('Exa 搜索') && !item.deepDive.includes('AIHOT')) continue;
-      if (item.deepDive?.includes('## AI 解读')) continue;
+      // 已经有 AI 分析的跳过（AI分析通常有几百字）
+      if (item.deepDive?.includes('## AI 解读')) {
+        const aiIdx = item.deepDive.indexOf('## AI 解读');
+        const after = item.deepDive.slice(aiIdx + 10).trim();
+        const hasAnalysis = after.length > 100 && after.includes('\n## 原文');
+        if (hasAnalysis) continue;
+      }
       itemsToAnalyze.push(item);
     }
     console.log(`\n[AI] 需要生成 AI 解读: ${itemsToAnalyze.length} 条`);
