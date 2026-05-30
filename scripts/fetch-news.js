@@ -47,7 +47,7 @@ async function fetchAIHOTNews() {
 }
 
 // ========== Fetch from Exa Search ==========
-async function searchExa(query, category, sourceLabel) {
+async function searchExa(query, category, sourceLabel, days = 2) {
   console.log(`[Exa] Searching: ${query}`);
   try {
     const res = await fetch("https://api.exa.ai/search", {
@@ -61,7 +61,7 @@ async function searchExa(query, category, sourceLabel) {
         type: "keyword",
         numResults: 10,
         includeDomains: [],
-        startPublishedDate: getDaysAgo(2),
+        startPublishedDate: getDaysAgo(days),
       }),
     });
     
@@ -197,8 +197,16 @@ async function main() {
     "Exa 搜索"
   ).then(items => items.filter(i => /[\u4e00-\u9fff]/.test(i.title || i.summary)));
 
+  // 5. Fetch robotics news (7-day window - less frequent)
+  const robItems = await searchExa(
+    "机器人 人形机器人 人工智能 自动化 最新进展",
+    "robotics",
+    "Exa 搜索",
+    7
+  ).then(items => items.filter(i => /[\u4e00-\u9fff]/.test(i.title || i.summary)));
+
   // 5. Also scrape some Chinese news sites
-  const [geoScrape, finScrape] = await Promise.all([
+  const [geoScrape, finScrape, robScrape] = await Promise.allSettled([
     scrapeNewsSource(
       "https://news.sina.com.cn/world/",
       "geopolitics",
@@ -209,10 +217,18 @@ async function main() {
       "finance",
       "新浪财经"
     ),
+    scrapeNewsSource(
+      "https://www.leiphone.com/category/robot",
+      "robotics",
+      "雷锋网机器人"
+    ),
   ]);
+  const geoScrapeVal = geoScrape.status === "fulfilled" ? geoScrape.value : [];
+  const finScrapeVal = finScrape.status === "fulfilled" ? finScrape.value : [];
+  const robScrapeVal = robScrape.status === "fulfilled" ? robScrape.value : [];
 
   // 6. Combine all new items
-  const allNewItems = [...aiItems, ...geoItems, ...finItems, ...geoScrape, ...finScrape];
+  const allNewItems = [...aiItems, ...geoItems, ...finItems, ...robItems, ...geoScrapeVal, ...finScrapeVal, ...robScrapeVal];
 
   // 7. Deduplicate and tag
   const newItems = addHotTags(deduplicate(allNewItems));
