@@ -111,7 +111,7 @@ export default function HomePage() {
     <div className="snap-container space-y-0">
 
       {/* ===== Screen 1: Hero ===== */}
-      <section data-section="home" className="min-h-screen flex flex-col justify-start items-center px-5 md:px-16 max-w-4xl mx-auto w-full pt-16 md:pt-24">
+      <section data-section="home" className="min-h-screen flex flex-col justify-center items-center px-5 md:px-16 max-w-4xl mx-auto w-full">
 
         {/* Title */}
         <div className="text-center">
@@ -134,7 +134,7 @@ export default function HomePage() {
         </div>
 
         {/* Quote - daily */}
-        <div ref={quoteRef} className="mt-12 text-center">
+        <div ref={quoteRef} className="mt-8 text-center">
           <div className="inline-block px-8 py-4 rounded-2xl bg-gradient-to-r from-[var(--color-ocean-50)] to-blue-50 border border-[var(--color-ocean-100)] shadow-sm">
             <p className="quote-text text-base md:text-lg text-[var(--color-ocean-700)] font-serif italic leading-relaxed tracking-wide" data-text={quote.text}>
               <span className="text-2xl text-[var(--color-ocean-400)] leading-none mr-2">&ldquo;</span>
@@ -148,19 +148,19 @@ export default function HomePage() {
         </div>
 
         {/* Search */}
-        <div ref={searchRef} className="mt-14 max-w-sm mx-auto w-full">
+        <div ref={searchRef} className="mt-10 max-w-sm mx-auto w-full">
           <SearchBar large />
         </div>
 
         {/* Category cards */}
-        <div ref={catsRef} className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 sm:gap-4 max-w-3xl mx-auto w-full">
+        <div ref={catsRef} className="mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 sm:gap-3 max-w-3xl mx-auto w-full">
           {CATEGORIES.map((cat) => {
             const count = data.items.filter((i) => i.category === cat.key).length;
             return (
               <Link key={cat.key} href={`/${cat.key}`}
-                className="cat-card bg-white border border-[var(--color-border)] rounded-xl py-4 px-3 text-center hover:border-[var(--color-ocean-400)] hover:shadow-lg hover:-translate-y-1.5 transition-all duration-250"
+                className="cat-card bg-white border border-[var(--color-border)] rounded-xl py-3 px-2 text-center hover:border-[var(--color-ocean-400)] hover:shadow-lg hover:-translate-y-1.5 transition-all duration-250"
               >
-                <div className="flex justify-center mb-3 text-[var(--color-ocean-500)] scale-110">
+                <div className="flex justify-center mb-2 text-[var(--color-ocean-500)]">
                   <span dangerouslySetInnerHTML={{ __html: CATEGORY_ICONS[cat.key] || "" }} />
                 </div>
                 <div className="text-sm font-semibold text-[var(--color-text)]">{cat.label}</div>
@@ -171,7 +171,7 @@ export default function HomePage() {
         </div>
 
         {/* Arrow */}
-        <div ref={arrowRef} className="mt-8 flex flex-col items-center gap-1.5 text-[var(--color-text-muted)]/50 cursor-pointer">
+        <div ref={arrowRef} className="mt-6 flex flex-col items-center gap-1 text-[var(--color-text-muted)]/50 cursor-pointer">
           <span className="text-xs tracking-widest">探索</span>
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
