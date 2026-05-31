@@ -304,7 +304,7 @@
     {
       "id": "ai-1780193262287-0",
       "title": "Nano Banana Pro与Nano Banana 2正式发布",
-      "summary": "Google通过Gemini API正式推出两款新模型：性能旗舰Nano Banana Pro（基于Gemini 3 Pro）与轻量高效模型Nano Banana 2（基于Gemini 3.1 Flash），两者均已达到生产就绪状态，开发者可直接调用。这标志着Google在AI模型部署上采取“双轨策略”：Nano Banana Pro面向复杂推理与高精度任务，与GPT-4、Claude 3等直接竞争高端场景，如代码生成、多模态分析；Nano Banana 2则主打低成本、低延迟的规模化应用，瞄准边缘计算与实时场景，如客服、内容审核，通过Flash架构的性价比优势，可能挤压中小型开源模型的市场空…",
+      "summary": "Google通过Gemini API正式推出两款新模型：性能旗舰Nano Banana Pro（基于Gemini 3 Pro）与轻量高效模型Nano Banana 2（基于Gemini 3.1 Flash），两者均已达到生产就绪状态，开发者可直接调用。这标志着Google在AI模型部署上采取“双轨策略”：Nano Banana Pro面向复杂推理与高精度任务，与GPT-4、Claude 3等直接竞争高端场景，如代码生成、多模态分析；Nano Banana 2则主打低成本、低延迟的规模化应用，瞄准边缘计算与实时场景，如客服、内容审核，通过Flash架构的性价比优势，可能挤压中小型开源模型的市场空间。",
       "deepDive": "## AI 解读\n\n好的，以下是针对该新闻的深度分析：\n\n核心要点提炼：\nGoogle通过Gemini API正式推出两款新模型：性能旗舰Nano Banana Pro（基于Gemini 3 Pro）与轻量高效模型Nano Banana 2（基于Gemini 3.1 Flash）。这标志着Google在AI模型部署上采取“双轨策略”：一款面向复杂推理与高精度任务，另一款主打低成本、低延迟的规模化应用。两者均已达到生产就绪状态，意味着开发者可直接调用。\n\n影响分析：\n1.  技术分层加剧：Nano Banana Pro将与GPT-4、Claude 3等直接竞争高端场景（如代码生成、多模态分析）；而Nano Banana 2则瞄准边缘计算与实时应用（如客服、内容审核），通过Flash架构的性价比优势，可能挤压中小型开源模型的市场空间。\n2.  开发者生态催化：Google同步展示社区案例，意在降低上手门槛，加速企业级应用落地。此举将巩固Gemini API在B端服务中的竞争力，但需警惕模型切换成本——若Pro与2的API接口不兼容，可能导致开发者面临迁移难题。\n3.  行业格局警示：双模型策略暗示AI厂商正从“参数竞赛”转向“场景化部署”。对于依赖单一模型的初创公司，需评估自身业务是否会被这种“性能-成本”组合拳覆盖，避免陷入被动同质化竞争。\n",
       "category": "ai",
       "source": "X：Google AI for Developers (@googleaidevs)",

@@ -34,7 +34,7 @@ async function fetchAIHOTNews() {
       items.push({
         id: `ai-${Date.now()}-${items.length}`,
         title: item.title,
-        summary: smartTruncate(cleanText(summaryText), 400),
+        summary: smartTruncate(cleanText(summaryText), 2000),
         deepDive: `## AI 解读\n\n${item.sourceName || "AIHOT"}`,
         category: "ai",
         source: item.sourceName || "AIHOT",
@@ -191,7 +191,7 @@ async function searchExa(query, category, sourceLabel, days = 2) {
     return (data.results || []).map((r, i) => ({
       id: `${category}-${Date.now()}-${i}`,
       title: r.title || "Untitled",
-      summary: r.text ? smartTruncate(cleanText(r.text), 400) : (r.title || "No summary available"),
+      summary: r.text ? smartTruncate(cleanText(r.text), 2000) : (r.title || "No summary available"),
       deepDive: `## AI 解读\n\n${sourceLabel}`,
       category: category,
       source: sourceLabel,
