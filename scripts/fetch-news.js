@@ -34,7 +34,7 @@ async function fetchAIHOTNews() {
         id: `ai-${Date.now()}-${items.length}`,
         title: item.title,
         summary: summaryText,
-        deepDive: `## AI 解读\n\n${item.sourceName || "AIHOT"}\n\n## 精简文章\n\n${summaryText.slice(0, 200)}`,
+        deepDive: `## AI 解读\n\n${item.sourceName || "AIHOT"}`,
         category: "ai",
         source: item.sourceName || "AIHOT",
         sourceUrl: item.sourceUrl || "#",
@@ -102,7 +102,7 @@ async function searchExa(query, category, sourceLabel, days = 2) {
       id: `${category}-${Date.now()}-${i}`,
       title: r.title || "Untitled",
       summary: r.text ? r.text.slice(0, 300) : "No summary available",
-      deepDive: `## AI 解读\n\n${sourceLabel}\n\n## 精简文章\n\n${r.text ? cleanText(r.text.slice(0, 300)) : r.title || "暂无详细内容"}`,
+      deepDive: `## AI 解读\n\n${sourceLabel}`,
       category: category,
       source: sourceLabel,
       sourceUrl: r.url || "#",
@@ -137,7 +137,7 @@ async function scrapeNewsSource(url, category, label, selector) {
           id: `${category}-${Date.now()}-scrape-${headlines.length}`,
           title: title,
           summary: `From ${label}`,
-          deepDive: `## AI 解读\n\n${label}\n\n## 精简文章\n\n来自 ${label} 的新闻：${title}`,
+          deepDive: `## AI 解读\n\n${label}`,
           category: category,
           source: label,
           sourceUrl: url,
@@ -317,7 +317,7 @@ async function main() {
           const data = await res.json();
           const analysis = data.choices?.[0]?.message?.content || "";
           if (analysis) {
-            item.deepDive = `## AI 解读\n\n${analysis.replace(/\*\*/g, '').replace(/\*/g, '')}\n\n## 精简文章\n\n${(item.summary || item.title).slice(0, 200)}`;
+            item.deepDive = `## AI 解读\n\n${analysis.replace(/\*\*/g, '').replace(/\*/g, '')}`;
             console.log(`[AI] ✅ 分析完成: ${item.title.slice(0,30)} (${analysis.length}字)`);
           } else {
             console.log(`[AI] ⚠️ 空返回: ${item.title.slice(0,30)}`);
