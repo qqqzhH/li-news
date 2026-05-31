@@ -171,11 +171,11 @@ export default function HomePage() {
           })}
         </div>
 
-        {/* Arrow — pushed to bottom, click to scroll */}
+        {/* Arrow — push down with more margin, click to scroll */}
         <div
           ref={arrowRef}
           onClick={() => section2Ref.current?.scrollIntoView({ behavior: "smooth" })}
-          className="mt-auto pb-4 sm:pb-8 flex flex-col items-center gap-1 text-[var(--color-text-muted)]/50 cursor-pointer"
+          className="mt-10 sm:mt-16 flex flex-col items-center gap-1 text-[var(--color-text-muted)]/50 cursor-pointer pb-4 sm:pb-8"
         >
           <span className="text-xs tracking-widest">探索</span>
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
