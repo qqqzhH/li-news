@@ -91,21 +91,46 @@ export default function HomePage() {
 
     gsap.to(arrowRef.current, { y: -6, duration: 1.8, repeat: -1, yoyo: true, ease: "sine.inOut" });
 
+    let cleanupScroll: (() => void) | undefined;
     const s2 = section2Ref.current;
     if (s2) {
       const check = () => {
         const r = s2.getBoundingClientRect();
-        // 更早触发动画 — section2 刚进入视野就开始
         if (r.top < window.innerHeight * 0.85) {
           gsap.fromTo(".s2-title-line", { scaleX: 0 }, { scaleX: 1, duration: 0.4, ease: "power2.out", transformOrigin: "left center" });
           gsap.fromTo(".s2-cols", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.35, ease: "power2.out" });
-          window.removeEventListener("scroll", check);
+          cleanupScroll?.();
         }
       };
-      check();
       window.addEventListener("scroll", check, { passive: true });
-      return () => window.removeEventListener("scroll", check);
+      cleanupScroll = () => window.removeEventListener("scroll", check);
+      check();
     }
+
+    // 接管滚轮：一滚即切屏，不等待 snap
+    let cleanupWheel: (() => void) | undefined;
+    const container = document.querySelector(".snap-container") as HTMLElement | null;
+    if (container) {
+      let busy = false;
+      const sections = container.querySelectorAll("section");
+      const onWheel = (e: WheelEvent) => {
+        if (busy) return;
+        const current = Math.round(container.scrollTop / window.innerHeight);
+        const next = e.deltaY > 0 ? current + 1 : current - 1;
+        if (next < 0 || next >= sections.length) return;
+        e.preventDefault();
+        busy = true;
+        sections[next].scrollIntoView({ behavior: "smooth" });
+        setTimeout(() => { busy = false; }, 600);
+      };
+      container.addEventListener("wheel", onWheel, { passive: false });
+      cleanupWheel = () => container.removeEventListener("wheel", onWheel);
+    }
+
+    return () => {
+      cleanupScroll?.();
+      cleanupWheel?.();
+    };
   }, []);
 
   return (

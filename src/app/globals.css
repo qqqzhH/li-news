@@ -81,9 +81,8 @@ body { overflow-x: hidden; width: 100%; max-width: 100vw; }
   z-index: 9999;
 }
 
-/* 滚动吸附 — 一次滚动一个区域 */
+/* 全屏滚动 — 由 JS 接管，CSS 不 snap */
 .snap-container {
-  scroll-snap-type: y mandatory;
   overflow-y: auto;
   overflow-x: hidden;
   height: 100vh;
@@ -105,8 +104,6 @@ body { overflow-x: hidden; width: 100%; max-width: 100vw; }
   }
 }
 .snap-container > section {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
   padding: 1rem 0.75rem;
 }
 @media (min-width: 768px) {
