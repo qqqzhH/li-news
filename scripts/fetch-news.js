@@ -33,7 +33,7 @@ async function fetchAIHOTNews() {
       items.push({
         id: `ai-${Date.now()}-${items.length}`,
         title: item.title,
-        summary: summaryText,
+        summary: cleanText(summaryText).slice(0, 300),
         deepDive: `## AI 解读\n\n${item.sourceName || "AIHOT"}`,
         category: "ai",
         source: item.sourceName || "AIHOT",
@@ -63,12 +63,71 @@ function isTraditional(text) {
 }
 
 function cleanText(text) {
-  return text
-    .replace(/登录|注册|关闭|广告|分享至|微信|扫码|客户端|快速导航|安全退出|邮箱|来源：|免责声明|版权|请联系|转载|投稿|业务合作|滚动新闻|正文|推荐阅读|相关新闻|热点新闻/g, '')
-    .replace(/\|+/g, '|')
-    .replace(/\|( |$)/g, ' ')
-    .replace(/\n{3,}/g, '\n\n')
-    .trim();
+  if (!text) return "";
+  
+  // 1. 切行，逐行清洗
+  let lines = text.split("\n");
+  
+  // 2. 删除明显的导航/广告/元数据行
+  const noisePatterns = [
+    /^登录$/, /^注册$/, /^搜索$/, /^关闭$/, /^广告$/,
+    /^媒体品牌$/, /^企业服务$/, /^政府服务$/, /^投资人服务$/,
+    /^创业者服务$/, /^创投平台$/, /^AI测评网$/, /^我要入驻$/,
+    /^快速导航$/, /^安全退出$/, /^邮箱$/,
+    /^移动客户端$/, /^客户端$/,
+    /^分享至$/, /^微信$/, /^扫码$/, /^用微信扫码/, /^微信扫一扫$/,
+    /^手机/, /^掌上/, /^APP/, /^扫码下载/,
+    /^服务时间/, /^资讯公告/,
+    /^今日有色$/,
+    /^全球数字财富/,
+    /^字体：/, /^分享到：/,
+    /^\d{4}\s+\d{2}\/\d{2}\s+\d{2}:\d{2}/,  // "2026 05/30 11:56:13"
+    /^\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2}/,     // "2026-05-30 11:56:13"
+    /^来源[：:]\s*\S/,                         // "来源：新华网"
+    /^[>\s]*(正文|资讯)[>\s]*$/,                // "正文" "> 正文"
+    /^[>\s]*\S+[>\s]+正文/,                     // "新华网> > 正文"
+    /FX168|英为财情|新浪|网易|腾讯|搜狐/,
+    /^免责声明/, /^版权/, /^请联系/, /^转载/, /^投稿/,
+    /^业务合作/, /^滚动新闻/, /^推荐阅读/, /^相关新闻/, /^热点新闻/,
+    /^文章$/, /^来源$/, /^作者$/,
+    /^#\d+$/,  // "#1" style markers
+  ];
+  
+  lines = lines.filter(line => {
+    const trimmed = line.trim();
+    if (!trimmed) return true; // keep empty lines for structure
+    for (const p of noisePatterns) {
+      if (p.test(trimmed)) return false;
+    }
+    return true;
+  });
+  
+  // 3. 找 # 标题行——从这里开始才是正文
+  let contentStart = 0;
+  for (let i = 0; i < lines.length; i++) {
+    if (/^#\s/.test(lines[i].trim())) {
+      contentStart = i + 1; // 从标题下一行开始
+      break;
+    }
+  }
+  
+  // 4. 提取正文：跳过开头的空行，取实质性内容
+  let content = lines.slice(contentStart).join("\n");
+  
+  // 5. 去重重标题（第二行常常是重复的标题文本）
+  content = content.replace(/^.{10,80}\n\1/, '');  // 连续两行相同=重复标题
+  
+  // 6. 压缩多余空行
+  content = content.replace(/\n{3,}/g, '\n\n').trim();
+  
+  // 7. 如果清洗后太短，回退用原标题
+  if (content.length < 30) {
+    content = text.replace(/\n+/g, ' ').replace(/\s+/g, ' ').trim();
+    // 再次尝试去除导航文本
+    content = content.replace(/^.*?[#]\s*/, '').trim();
+  }
+  
+  return content;
 }
 
 async function searchExa(query, category, sourceLabel, days = 2) {
@@ -101,7 +160,7 @@ async function searchExa(query, category, sourceLabel, days = 2) {
     return (data.results || []).map((r, i) => ({
       id: `${category}-${Date.now()}-${i}`,
       title: r.title || "Untitled",
-      summary: r.text ? r.text.slice(0, 300) : "No summary available",
+      summary: r.text ? cleanText(r.text).slice(0, 300) : (r.title || "No summary available"),
       deepDive: `## AI 解读\n\n${sourceLabel}`,
       category: category,
       source: sourceLabel,
@@ -136,7 +195,7 @@ async function scrapeNewsSource(url, category, label, selector) {
         headlines.push({
           id: `${category}-${Date.now()}-scrape-${headlines.length}`,
           title: title,
-          summary: `From ${label}`,
+          summary: cleanText(title).slice(0, 200) || title.slice(0, 200),
           deepDive: `## AI 解读\n\n${label}`,
           category: category,
           source: label,
