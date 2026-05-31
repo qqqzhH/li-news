@@ -95,7 +95,8 @@ export default function HomePage() {
     if (s2) {
       const check = () => {
         const r = s2.getBoundingClientRect();
-        if (r.top < window.innerHeight + 100) {
+        // 更早触发动画 — section2 刚进入视野就开始
+        if (r.top < window.innerHeight * 0.85) {
           gsap.fromTo(".s2-title-line", { scaleX: 0 }, { scaleX: 1, duration: 0.4, ease: "power2.out", transformOrigin: "left center" });
           gsap.fromTo(".s2-cols", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.35, ease: "power2.out" });
           window.removeEventListener("scroll", check);
@@ -170,8 +171,12 @@ export default function HomePage() {
           })}
         </div>
 
-        {/* Arrow */}
-        <div ref={arrowRef} className="mt-6 flex flex-col items-center gap-1 text-[var(--color-text-muted)]/50 cursor-pointer pb-8">
+        {/* Arrow — pushed to bottom, click to scroll */}
+        <div
+          ref={arrowRef}
+          onClick={() => section2Ref.current?.scrollIntoView({ behavior: "smooth" })}
+          className="mt-auto pb-4 sm:pb-8 flex flex-col items-center gap-1 text-[var(--color-text-muted)]/50 cursor-pointer"
+        >
           <span className="text-xs tracking-widest">探索</span>
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 14l-7 7m0 0l-7-7m7 7V3" />

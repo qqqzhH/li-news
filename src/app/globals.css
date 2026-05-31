@@ -83,7 +83,7 @@ body { overflow-x: hidden; width: 100%; max-width: 100vw; }
 
 /* 滚动吸附 */
 .snap-container {
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   overflow-y: auto;
   overflow-x: hidden;
   height: 100vh;
