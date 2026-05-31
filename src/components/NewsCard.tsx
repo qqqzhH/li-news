@@ -23,22 +23,16 @@ export default function NewsCard({ item }: NewsCardProps) {
   };
   const cc = catColors[item.category] || catColors.other;
 
-  // 检测简介是否超过 2 行
+  // 检测简介是否超过 2 行 — 用 inline style 测量，不与 React className 冲突
   useEffect(() => {
     const el = summaryRef.current;
     if (!el) return;
-    const check = () => {
-      // 先确保没有 clamp 才能测真实高度
-      el.classList.remove("line-clamp-2");
-      const fullHeight = el.scrollHeight;
-      el.classList.add("line-clamp-2");
-      const clampedHeight = el.clientHeight;
-      setSummaryOverflows(fullHeight > clampedHeight + 2);
-    };
-    check();
-    const ro = new ResizeObserver(check);
-    ro.observe(el);
-    return () => ro.disconnect();
+    // 临时取消 clamp 测满高，再用 inline style 恢复
+    el.style.webkitLineClamp = "unset";
+    const fullHeight = el.scrollHeight;
+    el.style.webkitLineClamp = "2";
+    const lineHeight = parseFloat(getComputedStyle(el).lineHeight) || 20;
+    setSummaryOverflows(fullHeight > lineHeight * 2.1);
   }, [item.summary]);
 
   const renderDeepDive = (text: string) => {
