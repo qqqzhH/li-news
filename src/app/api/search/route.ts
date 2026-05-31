@@ -9,8 +9,7 @@ export async function GET(request: NextRequest) {
   const results = data.items.filter(
     (item) =>
       item.title.toLowerCase().includes(query) ||
-      item.summary.toLowerCase().includes(query) ||
-      item.deepDive.toLowerCase().includes(query)
+      item.summary.toLowerCase().includes(query)
   ).sort(
     (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
   );

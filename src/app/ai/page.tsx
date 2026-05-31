@@ -1,4 +1,4 @@
-import { getNewsByCategory } from "@/lib/news";
+import { getAiNews } from "@/lib/news-ai";
 import NewsCard from "@/components/NewsCard";
 import SearchBar from "@/components/SearchBar";
 
@@ -6,7 +6,7 @@ export const dynamic = "force-static";
 export const revalidate = 3600;
 
 export default function AiPage() {
-  const items = getNewsByCategory("ai");
+  const items = getAiNews();
 
   return (
     <div className="px-4 sm:px-0 space-y-6">

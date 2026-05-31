@@ -1,4 +1,4 @@
-import { getNewsByCategory } from "@/lib/news";
+import { getRoboticsNews } from "@/lib/news-robotics";
 import NewsCard from "@/components/NewsCard";
 import SearchBar from "@/components/SearchBar";
 
@@ -6,7 +6,7 @@ export const dynamic = "force-static";
 export const revalidate = 3600;
 
 export default function RoboticsPage() {
-  const items = getNewsByCategory("robotics");
+  const items = getRoboticsNews();
 
   return (
     <div className="px-4 sm:px-0 space-y-6">

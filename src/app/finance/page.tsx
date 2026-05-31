@@ -1,4 +1,4 @@
-import { getNewsByCategory } from "@/lib/news";
+import { getFinanceNews } from "@/lib/news-finance";
 import NewsCard from "@/components/NewsCard";
 import SearchBar from "@/components/SearchBar";
 
@@ -6,7 +6,7 @@ export const dynamic = "force-static";
 export const revalidate = 3600;
 
 export default function FinancePage() {
-  const items = getNewsByCategory("finance");
+  const items = getFinanceNews();
 
   return (
     <div className="px-4 sm:px-0 space-y-6">
