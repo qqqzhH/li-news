@@ -33,7 +33,7 @@ async function fetchAIHOTNews() {
       items.push({
         id: `ai-${Date.now()}-${items.length}`,
         title: item.title,
-        summary: cleanText(summaryText).slice(0, 300),
+        summary: smartTruncate(cleanText(summaryText), 400),
         deepDive: `## AI 解读\n\n${item.sourceName || "AIHOT"}`,
         category: "ai",
         source: item.sourceName || "AIHOT",
@@ -60,6 +60,28 @@ function isTraditional(text) {
     if (count >= 3) return true;
   }
   return false;
+}
+
+// 智能截断：在句子边界切断，不腰斩
+function smartTruncate(text, maxLen) {
+  if (!text || text.length <= maxLen) return text;
+  const cut = text.slice(0, maxLen);
+  // 从后往前找最近的句号、问号、感叹号
+  const lastPeriod = Math.max(
+    cut.lastIndexOf("。"),
+    cut.lastIndexOf("！"),
+    cut.lastIndexOf("？"),
+    cut.lastIndexOf("\n")
+  );
+  if (lastPeriod > maxLen * 0.35) {
+    return cut.slice(0, lastPeriod + 1).trim();
+  }
+  // 没有合适断点，找最后一个空格或逗号
+  const lastBreak = Math.max(cut.lastIndexOf("，"), cut.lastIndexOf(" "), cut.lastIndexOf("\n"));
+  if (lastBreak > maxLen * 0.5) {
+    return cut.slice(0, lastBreak).trim() + "…";
+  }
+  return cut.trim() + "…";
 }
 
 function cleanText(text) {
@@ -120,10 +142,18 @@ function cleanText(text) {
   // 6. 压缩多余空行
   content = content.replace(/\n{3,}/g, '\n\n').trim();
   
-  // 7. 如果清洗后太短，回退用原标题
+  // 7. 删新闻电头：新华社xx月xx日电（记者xxx）、据xxx报道
+  content = content.replace(/^(新华社|中新社|央视|人民日报).*?电[（(][^)）]*[)）]/g, '');
+  content = content.replace(/^据\S{2,8}报道[：:]?\s*/g, '');
+  content = content.replace(/^\S{2,8}讯\s*/g, '');
+  content = content.trim();
+  
+  // 8. 删开头残留的记者署名、来源标注
+  content = content.replace(/^[（(]记者[^)）]+[)）]\s*/g, '');
+  
+  // 9. 如果清洗后太短，回退用原标题
   if (content.length < 30) {
     content = text.replace(/\n+/g, ' ').replace(/\s+/g, ' ').trim();
-    // 再次尝试去除导航文本
     content = content.replace(/^.*?[#]\s*/, '').trim();
   }
   
@@ -145,7 +175,7 @@ async function searchExa(query, category, sourceLabel, days = 2) {
         numResults: 10,
         includeDomains: [],
         contents: {
-          text: { maxLength: 500 }
+          text: { maxLength: 600 }
         },
         startPublishedDate: getDaysAgo(days),
       }),
@@ -160,7 +190,7 @@ async function searchExa(query, category, sourceLabel, days = 2) {
     return (data.results || []).map((r, i) => ({
       id: `${category}-${Date.now()}-${i}`,
       title: r.title || "Untitled",
-      summary: r.text ? cleanText(r.text).slice(0, 300) : (r.title || "No summary available"),
+      summary: r.text ? smartTruncate(cleanText(r.text), 400) : (r.title || "No summary available"),
       deepDive: `## AI 解读\n\n${sourceLabel}`,
       category: category,
       source: sourceLabel,
