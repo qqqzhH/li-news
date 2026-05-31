@@ -1,7 +1,7 @@
 "use client";
 
 import { NewsItem } from "@/types";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { CATEGORIES } from "@/types";
 
 interface NewsCardProps {
@@ -10,6 +10,9 @@ interface NewsCardProps {
 
 export default function NewsCard({ item }: NewsCardProps) {
   const [diveOpen, setDiveOpen] = useState(false);
+  const [summaryExpanded, setSummaryExpanded] = useState(false);
+  const [summaryOverflows, setSummaryOverflows] = useState(false);
+  const summaryRef = useRef<HTMLParagraphElement>(null);
   const catInfo = CATEGORIES.find((c) => c.key === item.category);
 
   const catColors: Record<string, { bg: string; text: string }> = {
@@ -19,6 +22,24 @@ export default function NewsCard({ item }: NewsCardProps) {
     other: { bg: "#f3f4f6", text: "#6b7280" },
   };
   const cc = catColors[item.category] || catColors.other;
+
+  // 检测简介是否超过 2 行
+  useEffect(() => {
+    const el = summaryRef.current;
+    if (!el) return;
+    const check = () => {
+      // 先确保没有 clamp 才能测真实高度
+      el.classList.remove("line-clamp-2");
+      const fullHeight = el.scrollHeight;
+      el.classList.add("line-clamp-2");
+      const clampedHeight = el.clientHeight;
+      setSummaryOverflows(fullHeight > clampedHeight + 2);
+    };
+    check();
+    const ro = new ResizeObserver(check);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, [item.summary]);
 
   const renderDeepDive = (text: string) => {
     // 先拆分段落（双换行）
@@ -141,10 +162,28 @@ export default function NewsCard({ item }: NewsCardProps) {
         {item.title}
       </h2>
 
-      {/* 简介 */}
-      <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed mb-4">
+      {/* 简介 — 默认2行折叠 */}
+      <p
+        ref={summaryRef}
+        className={`text-sm text-[var(--color-text-secondary)] leading-relaxed mb-2 ${!summaryExpanded ? "line-clamp-2" : ""}`}
+      >
         {item.summary}
       </p>
+      {summaryOverflows && (
+        <button
+          onClick={() => setSummaryExpanded(!summaryExpanded)}
+          className="flex items-center gap-1 text-xs text-[var(--color-ocean-600)] hover:text-[var(--color-ocean-700)] font-medium transition-colors mb-4"
+        >
+          <svg
+            className={`w-3 h-3 transition-transform ${summaryExpanded ? "rotate-180" : ""}`}
+            fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+          </svg>
+          {summaryExpanded ? "收起" : "更多内容"}
+        </button>
+      )}
+      {!summaryOverflows && <div className="mb-4" />}
 
       {/* 来源 */}
       <div className="flex items-center gap-2 text-xs text-[var(--color-text-muted)] mb-4">
