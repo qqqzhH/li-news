@@ -176,7 +176,7 @@ async function searchExa(query, category, sourceLabel, days = 2) {
         numResults: 10,
         includeDomains: [],
         contents: {
-          text: { maxLength: 600 }
+          text: { maxLength: 3000 }
         },
         startPublishedDate: getDaysAgo(days),
       }),
