@@ -362,7 +362,7 @@ async function main() {
     // 新文章：摘要太短或含噪声的重新生成
     for (const item of newItems) {
       const s = item.summary || "";
-      const needsSummarize = s.length < 100 || /^#\s|新华社|快速导航|登录/.test(s);
+      const needsSummarize = s.length < 100 || /^#\s|新华社|快速导航|登录|No summary/.test(s);
       if (needsSummarize) itemsToSummarize.push(item);
     }
     // 旧文章：批量补摘要（每次最多20条）

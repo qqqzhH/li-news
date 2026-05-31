@@ -18,7 +18,7 @@ async function main() {
     const s = items[i].summary || "";
     const needs =
       s.length < 120 ||
-      /^#\s|新华社|快速导航|登录|From |Exa 搜索|移动客户端|安全退出|媒体品牌/.test(s);
+      /^#\s|新华社|快速导航|登录|From |Exa 搜索|移动客户端|安全退出|媒体品牌|No summary/.test(s);
     if (needs) {
       // Score: worst first
       let score = s.length > 30 ? s.length : 0;
@@ -35,13 +35,22 @@ async function main() {
     const { idx, item } = needSummary[i];
     const dd = item.deepDive || "";
     
-    // Extract source text from AI解读 or summary
-    const aiMatch = dd.match(/## AI 解读\n+([\s\S]*?)$/);
-    let source = aiMatch ? aiMatch[1].trim() : (item.summary || item.title);
-    source = source.slice(0, 2000);
+    // Extract best available source text
+    let source = "";
+    const aiMatch = (item.deepDive || "").match(/## AI 解读\n+([\s\S]*?)$/);
+    
+    if (aiMatch && aiMatch[1].trim().length > 50) {
+      source = aiMatch[1].trim();
+    } else if (item.summary && item.summary.length > 30 && item.summary !== "No summary available") {
+      source = item.summary;
+    } else {
+      // Fallback: use title + any available text
+      source = `${item.title}\n\n${item.summary || ""}`;
+    }
+    source = source.replace(/^No summary available\n*/, '').trim().slice(0, 2000);
 
-    if (source.length < 30) {
-      console.log(`[${i+1}/${needSummary.length}] ⏭️ 无源文本: ${item.title.slice(0,40)}`);
+    if (source.length < 20) {
+      console.log(`[${i+1}/${needSummary.length}] ⏭️ 无源: ${item.title.slice(0,40)}`);
       continue;
     }
 
