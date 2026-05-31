@@ -12,6 +12,7 @@
 
 const fs = require("fs");
 const path = require("path");
+const { summarize } = require("./summarize");
 
 const DATA_PATH = path.join(__dirname, "..", "src", "data", "news.json");
 const EXA_API_KEY = process.env.EXA_API_KEY || "5b73f51e-accc-4879-bf2c-f33ef470f47f";
@@ -351,9 +352,46 @@ async function main() {
   const newItems = addHotTags(deduplicate(allNewItems));
   console.log(`New items: ${newItems.length}`);
 
-  // 8. 合并前先去重（保留新版本，丢弃旧版本相同标题）
+  // 8. 合并前先去重
   const allTitles = new Set(newItems.map(i => i.title.slice(0, 50).toLowerCase()));
   const filteredExisting = existingItems.filter(i => !allTitles.has(i.title.slice(0, 50).toLowerCase()));
+
+  // 8b. Summarize 生成文章摘要 --length long
+  if (process.env.DEEPSEEK_API_KEY) {
+    const itemsToSummarize = [];
+    // 新文章：摘要太短或含噪声的重新生成
+    for (const item of newItems) {
+      const s = item.summary || "";
+      const needsSummarize = s.length < 100 || /^#\s|新华社|快速导航|登录/.test(s);
+      if (needsSummarize) itemsToSummarize.push(item);
+    }
+    // 旧文章：批量补摘要（每次最多20条）
+    for (const item of filteredExisting) {
+      if (itemsToSummarize.length >= newItems.length + 20) break;
+      const s = item.summary || "";
+      const needsSummarize = s.length < 100 || /^#\s|新华社|快速导航|登录|From /.test(s);
+      if (needsSummarize) itemsToSummarize.push(item);
+    }
+    console.log(`\n[Summarize] 需要生成摘要: ${itemsToSummarize.length} 条`);
+    for (let i = 0; i < itemsToSummarize.length; i++) {
+      const item = itemsToSummarize[i];
+      const sourceText = item.deepDive?.replace(/## AI 解读\n?/, '').replace(/\n##.*/s, '').trim() 
+        || item.summary || item.title;
+      console.log(`[Summarize] (${i+1}/${itemsToSummarize.length}) ${item.title.slice(0,40)}`);
+      try {
+        const result = await summarize(sourceText, { length: "long" });
+        if (result && result.length > 50) {
+          item.summary = result;
+          console.log(`[Summarize] ✅ ${result.length}字`);
+        }
+      } catch (err) {
+        console.log(`[Summarize] ⚠️ ${err.message}`);
+      }
+      await new Promise(r => setTimeout(r, 300));
+      if ((i + 1) % 10 === 0) console.log(`[Summarize] 已处理 ${i+1}/${itemsToSummarize.length}`);
+    }
+    console.log(`[Summarize] 摘要生成完成`);
+  }
 
   // 9. 生成 AI 解读
   if (process.env.DEEPSEEK_API_KEY) {
