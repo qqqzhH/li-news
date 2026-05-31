@@ -275,17 +275,21 @@ async function main() {
       // 检查 AI 解读是否为模板（内容很短即为模板）
       const aiIdx = item.deepDive.indexOf('## AI 解读');
       const after = item.deepDive.slice(aiIdx + 10).trim();
-      const isTemplate = after.includes('\n## 原文') && after.indexOf('\n##') < 80;
+      // 模板判断：AI解读内容很短（源名称）或直接就是占位符
+      const aiContent = after.includes('\n## ') ? after.slice(0, after.indexOf('\n## ')).trim() : after.trim();
+      const isTemplate = aiContent.length < 50;
       if (isTemplate) itemsToAnalyze.push(item);
     }
     // 9b. 旧文章中还没有 AI 解读的也补上
     for (const item of filteredExisting) {
       if (itemsToAnalyze.length >= 50) break;
-      // 已经有 AI 分析的跳过（AI分析通常有几百字）
+      // 已经有真实 AI 分析的跳过（AI分析通常有几百字）
       if (item.deepDive?.includes('## AI 解读')) {
         const aiIdx = item.deepDive.indexOf('## AI 解读');
         const after = item.deepDive.slice(aiIdx + 10).trim();
-        const hasAnalysis = after.length > 100 && after.includes('\n## 原文');
+        const nextHeading = after.indexOf('\n## ');
+        const aiContent = nextHeading > 0 ? after.slice(0, nextHeading).trim() : after.trim();
+        const hasAnalysis = aiContent.length > 100;
         if (hasAnalysis) continue;
       }
       itemsToAnalyze.push(item);

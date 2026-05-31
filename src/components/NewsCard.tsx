@@ -21,23 +21,88 @@ export default function NewsCard({ item }: NewsCardProps) {
   const cc = catColors[item.category] || catColors.other;
 
   const renderDeepDive = (text: string) => {
-    // 直接渲染为纯文本格式（兼容 Cloudflare）
-    const lines = text.split("\n");
-    return lines.map((line, i) => {
-      if (line.startsWith("## ")) return <p key={i} className="text-sm font-semibold text-[var(--color-text)] mt-4 mb-2">{line.replace("## ", "")}</p>;
-      if (line.startsWith("### ")) return <p key={i} className="text-xs font-semibold text-[var(--color-text)] mt-3 mb-1">{line.replace("### ", "")}</p>;
-      if (line.startsWith("- **")) {
-        const m = line.match(/- \*\*(.+?)\*\*[：:] (.+)/);
-        if (m) return <p key={i} className="mb-1"><strong>{m[1]}</strong>：{m[2]}</p>;
+    // 先拆分段落（双换行）
+    const paragraphs = text.split(/\n{2,}/);
+    const elements: React.ReactNode[] = [];
+    
+    paragraphs.forEach((para, pi) => {
+      const lines = para.split("\n");
+      lines.forEach((line, li) => {
+        const key = `${pi}-${li}`;
+        
+        // 标题
+        if (line.startsWith("## ")) {
+          elements.push(<p key={key} className="text-sm font-semibold text-[var(--color-text)] mt-4 mb-2">{line.replace("## ", "")}</p>);
+          return;
+        }
+        if (line.startsWith("### ")) {
+          elements.push(<p key={key} className="text-xs font-semibold text-[var(--color-text)] mt-3 mb-1">{line.replace("### ", "")}</p>);
+          return;
+        }
+        
+        // 数字列表项：1. 2. 3.
+        if (/^\d+[\.\、]/.test(line.trimStart())) {
+          elements.push(<p key={key} className="ml-2 mb-1">{renderInlineFormat(line.trimStart())}</p>);
+          return;
+        }
+        
+        // 破折号列表项
+        if (line.trimStart().startsWith("- ")) {
+          elements.push(<li key={key} className="ml-4 list-disc mb-1">{renderInlineFormat(line.replace(/^\s*-\s*/, ""))}</li>);
+          return;
+        }
+        
+        // 星号列表项
+        if (/^\s*\*\s/.test(line) && !/^\s*\*\*/.test(line)) {
+          elements.push(<li key={key} className="ml-4 list-disc mb-1">{renderInlineFormat(line.replace(/^\s*\*\s*/, ""))}</li>);
+          return;
+        }
+        
+        // 空行
+        if (line.trim() === "") {
+          elements.push(<div key={key} className="h-2" />);
+          return;
+        }
+        
+        // 普通行
+        elements.push(<p key={key} className="mb-2">{renderInlineFormat(line)}</p>);
+      });
+      
+      // 段落间加间距
+      if (pi < paragraphs.length - 1) {
+        elements.push(<div key={`spacer-${pi}`} className="h-3" />);
       }
-      if (line.startsWith("- ")) return <li key={i} className="ml-4 list-disc mb-1">{line.replace("- ", "")}</li>;
-      if (line.trim() === "") return <div key={i} className="h-2" />;
-      // 普通行：解析 [文字](链接) 和 *斜体*
-      let html = line
-        .replace(/\[(.+?)\]\((.+?)\)/g, '<a href="$2" target="_blank" class="text-blue-600 hover:underline">$1</a>')
-        .replace(/\*(.+?)\*/g, '<em>$1</em>');
-      return <p key={i} className="mb-2" dangerouslySetInnerHTML={{ __html: html }} />;
     });
+    
+    return elements;
+  };
+  
+  // 行内格式渲染：**粗体** *斜体* [链接](url)
+  const renderInlineFormat = (text: string): React.ReactNode => {
+    // 先处理 **粗体**，再处理 *斜体*，再处理链接
+    const parts: React.ReactNode[] = [];
+    // 正则：匹配 **text** 或 [text](url) 或普通文本
+    const regex = /(\*\*(.+?)\*\*)|(\*(.+?)\*)|(\[(.+?)\]\((.+?)\))|([^*[\n]+)/g;
+    let match;
+    let lastIndex = 0;
+    
+    while ((match = regex.exec(text)) !== null) {
+      if (match[1]) {
+        // **粗体**
+        parts.push(<strong key={match.index}>{match[2]}</strong>);
+      } else if (match[3]) {
+        // *斜体*
+        parts.push(<em key={match.index}>{match[4]}</em>);
+      } else if (match[5]) {
+        // [文字](链接)
+        parts.push(<a key={match.index} href={match[7]} target="_blank" rel="noopener noreferrer" className="text-[var(--color-ocean-600)] hover:underline">{match[6]}</a>);
+      } else if (match[8]) {
+        // 普通文本
+        parts.push(<span key={match.index}>{match[8]}</span>);
+      }
+    }
+    
+    return parts.length > 0 ? <>{parts}</> : text;
   };
 
   return (
