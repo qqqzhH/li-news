@@ -10,7 +10,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：Google AI for Developers (@googleaidevs)",
     sourceUrl: "https://x.com/googleaidevs/status/2060685345738375640",
-    publishedAt: "2026-02-27T14:08:10.000Z",
+    publishedAt: "2026-05-30T11:30:46.763Z",
     updatedAt: "2026-05-31T02:07:42.288Z",
     importance: "hot"
   },
@@ -22,7 +22,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：阶跃星辰 StepFun (@StepFun_ai)",
     sourceUrl: "https://x.com/StepFun_ai/status/2060678753030947226",
-    publishedAt: "2026-04-02T00:00:00.000Z",
+    publishedAt: "2026-05-30T11:04:34.939Z",
     updatedAt: "2026-05-31T02:07:42.288Z",
     importance: "hot"
   },
@@ -34,7 +34,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "Hacker News 热门（buzzing.cc 中文翻译）",
     sourceUrl: "https://github.com/jmaczan/tiny-vllm",
-    publishedAt: "2026-05-29T10:08:43.506Z",
+    publishedAt: "2026-05-29T10:10:32.190Z",
     updatedAt: "2026-05-31T02:07:42.288Z",
     importance: "normal"
   },
@@ -46,7 +46,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：SemiAnalysis (@SemiAnalysis_)",
     sourceUrl: "https://x.com/SemiAnalysis_/status/2060571944575963482",
-    publishedAt: "2026-05-31T10:08:43.184Z",
+    publishedAt: "2026-05-30T04:00:09.819Z",
     updatedAt: "2026-05-31T02:07:42.288Z",
     importance: "normal"
   },
@@ -70,7 +70,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "Bloomberg：Technology（RSS）",
     sourceUrl: "https://www.bloomberg.com/news/articles/2026-05-30/ai-dangers-eclipse-nuclear-weapons-at-singapore-defense-forum",
-    publishedAt: "2026-05-30T08:00:00.000Z",
+    publishedAt: "2026-05-30T10:10:34.852Z",
     updatedAt: "2026-05-31T02:07:42.288Z",
     importance: "normal"
   },
@@ -82,7 +82,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "Bloomberg：Technology（RSS）",
     sourceUrl: "https://www.bloomberg.com/news/articles/2026-05-30/softbank-to-invest-some-75-billion-in-ai-in-france-reports-say",
-    publishedAt: "2026-05-30T08:00:00.000Z",
+    publishedAt: "2026-06-01T00:35:56.000Z",
     updatedAt: "2026-05-31T02:07:42.288Z",
     importance: "normal"
   },
@@ -106,7 +106,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
     sourceUrl: "https://x.com/alibaba_cloud/status/2060520586489770167",
-    publishedAt: "2026-05-30T13:48:12.000Z",
+    publishedAt: "2026-05-30T00:36:05.097Z",
     updatedAt: "2026-05-31T02:07:42.288Z",
     importance: "normal"
   },
@@ -118,7 +118,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：阿易 AI Notes (@AYi_AInotes)",
     sourceUrl: "https://x.com/AYi_AInotes/status/2060779431648547016",
-    publishedAt: "2026-05-31T17:59:00.000Z",
+    publishedAt: "2026-05-30T17:44:38.592Z",
     updatedAt: "2026-05-31T02:07:42.288Z",
     importance: "hot"
   },
@@ -130,7 +130,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：阿易 AI Notes (@AYi_AInotes)",
     sourceUrl: "https://x.com/AYi_AInotes/status/2060740414273941874",
-    publishedAt: "2026-05-31T01:46:32.000Z",
+    publishedAt: "2026-05-30T15:09:36.125Z",
     updatedAt: "2026-05-31T02:07:42.288Z",
     importance: "normal"
   },
@@ -178,7 +178,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：Sam Altman (@sama)",
     sourceUrl: "https://x.com/sama/status/2061101875303530871",
-    publishedAt: "2026-05-31T00:00:00.000Z",
+    publishedAt: "2026-05-31T15:05:55.150Z",
     updatedAt: "2026-06-01T06:38:48.024Z",
     importance: "hot"
   },
@@ -190,7 +190,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：opencode (@opencode)",
     sourceUrl: "https://x.com/opencode/status/2061153857321775209",
-    publishedAt: "2026-05-31T00:00:00.000Z",
+    publishedAt: "2026-05-31T18:32:28.629Z",
     updatedAt: "2026-06-01T06:38:48.025Z",
     importance: "normal"
   },
@@ -202,7 +202,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "Claude Code：GitHub Releases（RSS）",
     sourceUrl: "https://github.com/anthropics/claude-code/releases/tag/v2.1.159",
-    publishedAt: "2026-05-31T00:00:00.000Z",
+    publishedAt: "2026-02-26T00:59:24.000Z",
     updatedAt: "2026-06-01T06:38:48.025Z",
     importance: "normal"
   },
@@ -214,7 +214,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：Sam Altman (@sama)",
     sourceUrl: "https://x.com/sama/status/2061117302528188712",
-    publishedAt: "2026-05-31T00:00:00.000Z",
+    publishedAt: "2026-05-31T16:07:13.287Z",
     updatedAt: "2026-06-01T06:38:48.025Z",
     importance: "normal"
   },
@@ -226,7 +226,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：Kim (@kimmonismus)",
     sourceUrl: "https://x.com/kimmonismus/status/2061058117304262999",
-    publishedAt: "2026-05-31T00:00:00.000Z",
+    publishedAt: "2026-05-31T12:12:02.430Z",
     updatedAt: "2026-06-01T06:38:48.025Z",
     importance: "normal"
   },
@@ -238,7 +238,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "IT之家（RSS）",
     sourceUrl: "https://www.ithome.com/0/957/718.htm",
-    publishedAt: "2026-05-31T00:00:00.000Z",
+    publishedAt: "2026-05-31T10:10:42.866Z",
     updatedAt: "2026-06-01T06:38:48.025Z",
     importance: "normal"
   },
@@ -250,7 +250,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "Hacker News 热门（buzzing.cc 中文翻译）",
     sourceUrl: "https://blog.tymscar.com/posts/v100localllm",
-    publishedAt: "2026-05-31T00:00:00.000Z",
+    publishedAt: "2026-05-31T16:39:01.000Z",
     updatedAt: "2026-06-01T06:38:48.025Z",
     importance: "normal"
   },
@@ -262,7 +262,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "Gary Marcus：The Road to AI We Can Trust（RSS）",
     sourceUrl: "https://garymarcus.substack.com/p/the-pope-appears-to-understand-ai",
-    publishedAt: "2026-05-31T00:00:00.000Z",
+    publishedAt: "2026-05-31T16:38:20.000Z",
     updatedAt: "2026-06-01T06:38:48.025Z",
     importance: "normal"
   },
@@ -274,7 +274,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：Greg Brockman (@gdb)",
     sourceUrl: "https://x.com/gdb/status/2060452095279415725",
-    publishedAt: "2026-05-08T09:55:00.000Z",
+    publishedAt: "2026-05-29T20:03:55.520Z",
     updatedAt: "2026-05-30T14:47:19.664Z",
     importance: "normal"
   },
@@ -286,7 +286,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：阶跃星辰 StepFun (@StepFun_ai)",
     sourceUrl: "https://x.com/StepFun_ai/status/2060149124117475791",
-    publishedAt: "2026-05-29T11:36:13.000Z",
+    publishedAt: "2026-05-29T00:00:01.566Z",
     updatedAt: "2026-05-30T14:47:19.664Z",
     importance: "hot"
   },
@@ -322,7 +322,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：Greg Brockman (@gdb)",
     sourceUrl: "https://x.com/gdb/status/2060486309886443787",
-    publishedAt: "2026-05-30T14:47:19.664Z",
+    publishedAt: "2026-05-29T22:19:52.918Z",
     updatedAt: "2026-05-30T14:47:19.664Z",
     importance: "normal"
   },
@@ -334,7 +334,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：Gemini (@GeminiApp)",
     sourceUrl: "https://x.com/GeminiApp/status/2060435981946503243",
-    publishedAt: "2026-05-20T02:00:00.000Z",
+    publishedAt: "2026-05-29T18:59:53.802Z",
     updatedAt: "2026-05-30T14:47:19.664Z",
     importance: "normal"
   },
@@ -346,7 +346,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：OpenAI (@OpenAI)",
     sourceUrl: "https://x.com/OpenAI/status/2060428604727771421",
-    publishedAt: "2026-04-16T00:00:00.000Z",
+    publishedAt: "2026-05-29T18:30:34.936Z",
     updatedAt: "2026-05-30T14:47:19.664Z",
     importance: "normal"
   },
@@ -370,7 +370,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：Runway (@runwayml)",
     sourceUrl: "https://x.com/runwayml/status/2060453805519765548",
-    publishedAt: "2026-03-31T00:00:00.000Z",
+    publishedAt: "2026-05-29T20:10:43.273Z",
     updatedAt: "2026-05-30T14:47:19.664Z",
     importance: "normal"
   },
@@ -382,7 +382,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：OpenRouter (@OpenRouter)",
     sourceUrl: "https://x.com/OpenRouter/status/2060395056196936054",
-    publishedAt: "2026-04-10T00:00:00.000Z",
+    publishedAt: "2026-05-29T16:17:16.343Z",
     updatedAt: "2026-05-30T14:47:19.664Z",
     importance: "normal"
   },
@@ -394,7 +394,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：ChatGPT (@ChatGPTapp)",
     sourceUrl: "https://x.com/ChatGPTapp/status/2060467129066070182",
-    publishedAt: "2026-05-30T04:04:54.000Z",
+    publishedAt: "2026-05-29T21:03:39.854Z",
     updatedAt: "2026-05-30T14:47:19.664Z",
     importance: "normal"
   },
@@ -406,7 +406,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：Gemini (@GeminiApp)",
     sourceUrl: "https://x.com/GeminiApp/status/2060389565052096911",
-    publishedAt: "2026-05-20T01:45:00.000Z",
+    publishedAt: "2026-05-29T15:55:27.152Z",
     updatedAt: "2026-05-30T14:47:19.664Z",
     importance: "normal"
   },
@@ -418,7 +418,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "IT之家（RSS）",
     sourceUrl: "https://www.ithome.com/0/957/319.htm",
-    publishedAt: "2026-05-29T10:08:54.033Z",
+    publishedAt: "2026-05-29T00:00:00.000Z",
     updatedAt: "2026-05-30T14:47:19.664Z",
     importance: "normal"
   },
@@ -454,7 +454,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：Fei-Fei Li (@drfeifei, World Labs)",
     sourceUrl: "https://x.com/drfeifei/status/2060404846734512205",
-    publishedAt: "2026-05-29T10:08:57.452Z",
+    publishedAt: "2026-05-29T16:56:10.589Z",
     updatedAt: "2026-05-30T14:47:19.664Z",
     importance: "hot"
   },
@@ -466,7 +466,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：洪明 (@hongming731)",
     sourceUrl: "https://x.com/hongming731/status/2060487110906527820",
-    publishedAt: "2026-05-27T12:05:05.000Z",
+    publishedAt: "2026-05-29T22:23:03.896Z",
     updatedAt: "2026-05-30T14:47:19.664Z",
     importance: "hot"
   },
@@ -478,7 +478,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：Rohan Paul (@rohanpaul_ai)",
     sourceUrl: "https://x.com/rohanpaul_ai/status/2060409504693645440",
-    publishedAt: "2026-05-23T12:08:33.000Z",
+    publishedAt: "2026-05-29T17:14:41.133Z",
     updatedAt: "2026-05-30T14:47:19.664Z",
     importance: "normal"
   },
@@ -490,7 +490,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：Berry Xia (@berryxia)",
     sourceUrl: "https://x.com/berryxia/status/2060212428584202428",
-    publishedAt: "2026-05-30T14:47:19.664Z",
+    publishedAt: "2026-05-29T04:11:34.527Z",
     updatedAt: "2026-05-30T14:47:19.664Z",
     importance: "normal"
   },
@@ -502,7 +502,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：邵猛 (@shao__meng)",
     sourceUrl: "https://x.com/shao__meng/status/2060167182777249886",
-    publishedAt: "2026-05-13T10:10:50.000Z",
+    publishedAt: "2026-05-29T01:11:47.086Z",
     updatedAt: "2026-05-30T14:47:19.664Z",
     importance: "hot"
   },
@@ -538,7 +538,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "IT之家（RSS）",
     sourceUrl: "https://www.ithome.com/0/956/864.htm",
-    publishedAt: "2026-05-29T00:00:00.000Z",
+    publishedAt: "2026-05-29T00:58:31.000Z",
     updatedAt: "2026-05-30T14:47:19.664Z",
     importance: "normal"
   },
