@@ -196,7 +196,7 @@ async function searchExa(query, category, sourceLabel, days = 2) {
       category: category,
       source: sourceLabel,
       sourceUrl: r.url || "#",
-          publishedAt: new Date().toISOString(),
+          publishedAt: r.publishedDate || r.published_at || new Date().toISOString(),
           updatedAt: new Date().toISOString(),
           importance: "normal",
     }));
