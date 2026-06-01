@@ -17,6 +17,15 @@ const { summarize } = require("./summarize");
 const DATA_PATH = path.join(__dirname, "..", "src", "data", "news.json");
 const EXA_API_KEY = process.env.EXA_API_KEY || "5b73f51e-accc-4879-bf2c-f33ef470f47f";
 
+// 从 Twitter/X snowflake ID 提取发布时间
+function getTweetTime(url) {
+  const m = url?.match(/\/status\/(\d+)/);
+  if (!m) return null;
+  const snowflakeId = BigInt(m[1]);
+  const timestamp = Number((snowflakeId >> 22n) + 1288834974657n);
+  return new Date(timestamp).toISOString();
+}
+
 // ========== Fetch from AIHOT API ==========
 async function fetchAIHOTNews() {
   console.log("[AIHOT] Fetching AI news...");
@@ -26,15 +35,14 @@ async function fetchAIHOTNews() {
   if (!res.ok) throw new Error(`AIHOT API error: ${res.status}`);
   const data = await res.json();
   
-  // 使用 API 返回的日期作为发布时间
-  const newsDate = data.date || new Date().toISOString().split("T")[0];
-  const publishTime = data.windowStart || `${newsDate}T08:00:00.000Z`;
-  
   const items = [];
   for (const section of data.sections || []) {
     for (const item of section.items || []) {
       const summaryText = item.summary || item.title;
       const sectionName = section.name || "AI动态";
+      // 优先从 Twitter snowflake ID 提取时间，否则用 windowStart
+      const tweetTime = getTweetTime(item.sourceUrl);
+      const publishTime = tweetTime || data.windowStart || `${data.date}T08:00:00.000Z`;
       items.push({
         id: `ai-${Date.now()}-${items.length}`,
         title: item.title,
