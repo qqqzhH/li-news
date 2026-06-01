@@ -7,7 +7,10 @@ import { useState, useEffect } from "react";
 
 export default function Sidebar() {
   const pathname = usePathname();
-  const [collapsed, setCollapsed] = useState(true);
+  const [collapsed, setCollapsed] = useState(() => {
+    if (typeof window !== "undefined") return window.innerWidth < 768;
+    return true;
+  });
   const [activeSection, setActiveSection] = useState<string>("home");
 
   // 只在首页使用 IntersectionObserver 跟踪滚动位置
