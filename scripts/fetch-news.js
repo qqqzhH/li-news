@@ -26,6 +26,10 @@ async function fetchAIHOTNews() {
   if (!res.ok) throw new Error(`AIHOT API error: ${res.status}`);
   const data = await res.json();
   
+  // 使用 API 返回的日期作为发布时间
+  const newsDate = data.date || new Date().toISOString().split("T")[0];
+  const publishTime = data.windowStart || `${newsDate}T08:00:00.000Z`;
+  
   const items = [];
   for (const section of data.sections || []) {
     for (const item of section.items || []) {
@@ -39,7 +43,7 @@ async function fetchAIHOTNews() {
         category: "ai",
         source: item.sourceName || "AIHOT",
         sourceUrl: item.sourceUrl || "#",
-          publishedAt: new Date().toISOString(),
+          publishedAt: publishTime,
           updatedAt: new Date().toISOString(),
           importance: "normal",
       });

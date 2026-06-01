@@ -2,106 +2,10 @@
 import { NewsData, NewsItem, Category } from "@/types";
 
 const hardcodedData: NewsData = {
-  lastUpdated: "2026-06-01T06:18:29.444Z",
+  lastUpdated: "2026-06-01T06:42:44.368Z",
   items: [
   {
-    id: "ai-1780294464494-0",
-    title: "OpenAI发布生物防御AI工具Rosalind",
-    summary: "OpenAI首席执行官Sam Altman于2025年2月18日通过个人X账号（@sama）发布声明，正式回应了马斯克提出的974亿美元收购要约。Altman明",
-    deepDive: "",
-    category: "ai",
-    source: "X：Sam Altman (@sama)",
-    sourceUrl: "https://x.com/sama/status/2061101875303530871",
-    publishedAt: "2026-06-01T06:14:24.495Z",
-    updatedAt: "2026-06-01T06:14:24.495Z",
-    importance: "hot"
-  },
-  {
-    id: "ai-1780294464495-1",
-    title: "DeepSeek V4 Flash 已上线 OpenCode Zen",
-    summary: "X：opencode 在最新动态中披露了关键进展。该机构于2023年10月正式启动“开放数据计划”，旨在推动全球科研数据共享。截至2024年3月，已与来自12个",
-    deepDive: "",
-    category: "ai",
-    source: "X：opencode (@opencode)",
-    sourceUrl: "https://x.com/opencode/status/2061153857321775209",
-    publishedAt: "2026-06-01T06:14:24.495Z",
-    updatedAt: "2026-06-01T06:14:24.495Z",
-    importance: "normal"
-  },
-  {
-    id: "ai-1780294464495-2",
-    title: "v2.1.159",
-    summary: "Claude Code于2025年3月通过GitHub Releases渠道正式发布，该工具是Anthropic公司推出的新一代AI编程助手，旨在为开发者提供更",
-    deepDive: "",
-    category: "ai",
-    source: "Claude Code：GitHub Releases（RSS）",
-    sourceUrl: "https://github.com/anthropics/claude-code/releases/tag/v2.1.159",
-    publishedAt: "2026-06-01T06:14:24.495Z",
-    updatedAt: "2026-06-01T06:14:24.495Z",
-    importance: "normal"
-  },
-  {
-    id: "ai-1780294464495-3",
-    title: "OpenAI正式进军机器人领域并启动招聘",
-    summary: "OpenAI宣布成立OpenAI Robotics团队，并开始招聘全栈硬件、系统及ML工程师，以编程和制造能服务社会的机器人。该项目由Aditya Ramesh",
-    deepDive: "",
-    category: "ai",
-    source: "X：Sam Altman (@sama)",
-    sourceUrl: "https://x.com/sama/status/2061117302528188712",
-    publishedAt: "2026-06-01T06:14:24.495Z",
-    updatedAt: "2026-06-01T06:14:24.495Z",
-    importance: "normal"
-  },
-  {
-    id: "ai-1780294464495-4",
-    title: "苹果WWDC将推AI升级：Gemini蒸馏模型本地运行，但技术栈外部依赖显著",
-    summary: "苹果下月WWDC将重点展示延迟已久的Siri及设备端AI升级，核心是在iPhone芯片本地运行从Google Gemini蒸馏而来的更小模型，以强调隐私与降低t",
-    deepDive: "",
-    category: "ai",
-    source: "X：Kim (@kimmonismus)",
-    sourceUrl: "https://x.com/kimmonismus/status/2061058117304262999",
-    publishedAt: "2026-06-01T06:14:24.495Z",
-    updatedAt: "2026-06-01T06:14:24.495Z",
-    importance: "normal"
-  },
-  {
-    id: "ai-1780294464495-5",
-    title: "6000 多公里全程零干预：特斯拉 FSD 完成全球首次横穿加拿大自动驾驶",
-    summary: "一辆特斯拉汽车搭载 FSD V14.3.3 版本软件，完成了全球首次全程零人工干预、横穿加拿大的自动驾驶行程。车辆从温哥华出发，历时 4 天 21 小时，行驶 ",
-    deepDive: "",
-    category: "ai",
-    source: "IT之家（RSS）",
-    sourceUrl: "https://www.ithome.com/0/957/718.htm",
-    publishedAt: "2026-06-01T06:14:24.495Z",
-    updatedAt: "2026-06-01T06:14:24.495Z",
-    importance: "normal"
-  },
-  {
-    id: "ai-1780294464495-6",
-    title: "我花200英镑把一台数据中心级GPU装进了我的游戏电脑",
-    summary: "根据Hacker News热门内容，当前技术社区关注焦点集中在多个领域：苹果公司发布iOS 17.4更新，引入欧盟地区侧载应用支持，允许用户通过第三方应用商店安",
-    deepDive: "",
-    category: "ai",
-    source: "Hacker News 热门（buzzing.cc 中文翻译）",
-    sourceUrl: "https://blog.tymscar.com/posts/v100localllm",
-    publishedAt: "2026-06-01T06:14:24.495Z",
-    updatedAt: "2026-06-01T06:14:24.495Z",
-    importance: "normal"
-  },
-  {
-    id: "ai-1780294464495-7",
-    title: "教皇似乎比Geoffrey Hinton更懂人工智能",
-    summary: "纽约大学名誉教授、AI研究者Gary Marcus在其最新文章《The Road to AI We Can Trust》中指出，当前主流AI系统存在根本性缺陷，",
-    deepDive: "",
-    category: "ai",
-    source: "Gary Marcus：The Road to AI We Can Trust（RSS）",
-    sourceUrl: "https://garymarcus.substack.com/p/the-pope-appears-to-understand-ai",
-    publishedAt: "2026-06-01T06:14:24.495Z",
-    updatedAt: "2026-06-01T06:14:24.495Z",
-    importance: "normal"
-  },
-  {
-    id: "finance-1780294465476-6",
+    id: "finance-1780295929012-7",
     title: "Bitget UEX 日报｜COMPUTEX开幕在即；黄仁勋AI演讲备受关注；美伊和谈进入关键期，特朗普修改多项协议条款 (2026年06月01日) - ChainCatcher",
     summary: "Bitget UEX 日报\n\n### 一、热点要闻\n\n美联储动态 美联储继续保持谨慎 hawkish 立场，市场对短期降息预期进一步降温。\n\n- 4月FOMC会",
     deepDive: "",
@@ -109,11 +13,11 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.chaincatcher.com/article/2268426",
     publishedAt: "2026-06-01T03:07:37.000Z",
-    updatedAt: "2026-06-01T06:14:25.476Z",
+    updatedAt: "2026-06-01T06:38:49.013Z",
     importance: "hot"
   },
   {
-    id: "finance-1780294465476-5",
+    id: "finance-1780295929012-3",
     title: "美国信贷“蟑螂”成群出没，区域银行危机再现？-36氪",
     summary: "华尔街一哥、摩根大通首席执行官戴蒙本周二抛出的信贷“蟑螂论”言犹在耳，周四美国金融市场就彻底陷入了恐慌之中。\n\n华尔街一哥、摩根大通首席执行官戴蒙本周二抛出的信",
     deepDive: "",
@@ -121,11 +25,11 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://36kr.com/p/3512694568852615",
     publishedAt: "2026-06-01T02:23:02.000Z",
-    updatedAt: "2026-06-01T06:14:25.476Z",
+    updatedAt: "2026-06-01T06:38:49.012Z",
     importance: "hot"
   },
   {
-    id: "robotics-1780294465768-0",
+    id: "robotics-1780295929312-0",
     title: "中国具身智能产业已跨过临界点，批量机器人时代即将到来_新浪财经_新浪网",
     summary: "（图片源自宇树科技官方，有剪裁）2026年赛程过半，国内具身智能产业正迎来发展逻辑的实质性转变。\n\n2025年行业重心集中在技术路线整合与落地可行性验证，一步步",
     deepDive: "",
@@ -133,7 +37,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://finance.sina.com.cn/jjxw/2026-06-01/doc-inhzwisr8483226.shtml",
     publishedAt: "2026-06-01T01:33:52.000Z",
-    updatedAt: "2026-06-01T06:14:25.769Z",
+    updatedAt: "2026-06-01T06:38:49.312Z",
     importance: "hot"
   },
   {
@@ -146,42 +50,6 @@ const hardcodedData: NewsData = {
     sourceUrl: "https://finance.sina.com.cn/roll/2026-06-01/doc-inhzwckt8598008.shtml",
     publishedAt: "2026-06-01T01:20:07.000Z",
     updatedAt: "2026-06-01T06:14:25.194Z",
-    importance: "hot"
-  },
-  {
-    id: "robotics-1780275673502-7",
-    title: "从“蹒跚学步”到“超越人类”，这届半马看点何在？-36氪",
-    summary: "从“蹒跚学步”到“超越人类”，这届半马看点何在？\n\n时隔一年，人形机器人半程马拉松再次在北京亦庄鸣枪开跑。\n\n去年首届赛事，20支参赛队伍仅有6台机器人成功完赛",
-    deepDive: "",
-    category: "robotics",
-    source: "Exa 搜索",
-    sourceUrl: "https://36kr.com/p/3775128610779911",
-    publishedAt: "2026-06-01T01:01:13.503Z",
-    updatedAt: "2026-06-01T01:01:13.503Z",
-    importance: "hot"
-  },
-  {
-    id: "robotics-1780275673503-9",
-    title: "生成即可仿真！大晓机器人与南洋理工大学发布全球首个统一物理3D生成框架|运动学_网易订阅",
-    summary: "0\n\n分享至好友和朋友圈\n\n通用机器人的终极目标是在开放世界中自主完成复杂任务，这要求机器人不仅能“看见”世界，更能“理解”并与世界“交互”。\n\n大晓机器人与南",
-    deepDive: "",
-    category: "robotics",
-    source: "Exa 搜索",
-    sourceUrl: "https://www.163.com/dy/article/KU0JU4RD05506BEH.html",
-    publishedAt: "2026-06-01T01:01:13.503Z",
-    updatedAt: "2026-06-01T01:01:13.503Z",
-    importance: "hot"
-  },
-  {
-    id: "robotics-1780275673502-2",
-    title: "闪电们打破人类半马世界纪录，荣耀机器人技术三重底牌首次揭秘-36氪",
-    summary: "是时候重新思考中国机器人产业了\n\n北京亦庄每年的机器人马拉松，是一个中国机器人水平的绝佳观察窗口。\n\n去年，大多数机器人跌跌撞撞，甚至出现跑着跑着“头掉手断”的",
-    deepDive: "",
-    category: "robotics",
-    source: "Exa 搜索",
-    sourceUrl: "https://36kr.com/p/3786143708323073",
-    publishedAt: "2026-06-01T01:01:13.502Z",
-    updatedAt: "2026-06-01T01:01:13.502Z",
     importance: "hot"
   },
   {
@@ -305,7 +173,7 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "finance-1780294465476-4",
+    id: "finance-1780295929012-5",
     title: "6.1周一早盘必读_新浪科技_新浪网",
     summary: "6.1周一早盘必读\n\n2026年06月01日 08:48:31\n\n1、上周五，美股三大指数集体收涨，道指涨0.72%，纳指涨0.2%，标普涨0.22%，5月最后",
     deepDive: "",
@@ -313,7 +181,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://finance.sina.com.cn/tech/roll/2026-06-01/doc-inhzwcks5511663.shtml",
     publishedAt: "2026-06-01T00:55:11.000Z",
-    updatedAt: "2026-06-01T06:14:25.476Z",
+    updatedAt: "2026-06-01T06:38:49.012Z",
     importance: "hot"
   },
   {
@@ -329,7 +197,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "finance-1780294465475-0",
+    id: "finance-1780295929011-0",
     title: "富途早报 | ComputeX 2026即将开幕！黄仁勋今日上午11点将率先演讲；美伊和谈进入关键期，特朗普修改多项协议条款；MiniMax启动A股上市辅导；美团、Credo Technology将放榜",
     summary: "## 宏观要闻\n\n美伊谈判进入关键拉锯：特朗普临时改协议，签署时间再生变数\n\n伊朗核谈判进入关键博弈阶段。特朗普在审阅其谈判代表与伊朗敲定的协议草案后，要求对多",
     deepDive: "",
@@ -337,11 +205,11 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://news.futunn.com/post/73892365/futu-morning-brief-computex-2026-is-about-to-open-jensen",
     publishedAt: "2026-06-01T00:16:00.000Z",
-    updatedAt: "2026-06-01T06:14:25.475Z",
+    updatedAt: "2026-06-01T06:38:49.012Z",
     importance: "hot"
   },
   {
-    id: "finance-1780294465475-3",
+    id: "finance-1780295929012-2",
     title: "【财经纵览】：特朗普收紧对伊协议条款！WTI原油考验85.0，黄金反弹受阻4550，标普500连续九周上涨",
     summary: "标签:黄金原油S&P500\n\n更新于\n\n最热文章\n\n1. 【今日要闻】美PCE重磅来袭！黄金失守4400美元，比特币跌破7.3万\n2. Fed放鹰，黄金失守23",
     deepDive: "",
@@ -349,7 +217,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.mitrade.com/cn/insights/more-analysis/morning/20260601B01",
     publishedAt: "2026-06-01T00:15:39.000Z",
-    updatedAt: "2026-06-01T06:14:25.476Z",
+    updatedAt: "2026-06-01T06:38:49.012Z",
     importance: "normal"
   },
   {
@@ -365,7 +233,7 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "finance-1780294465475-1",
+    id: "finance-1780295929012-1",
     title: "国际金融市场早知道：6月1日|美联储_新浪财经_新浪网",
     summary: "国际金融市场早知道：6月1日\n\n转自：新华财经\n\n【资讯导读】\n\n•美联储理事沃勒：稳定币普及将扩大美国货币政策影响力\n\n•英国央行行长贝利：经济疲软下可容忍通",
     deepDive: "",
@@ -373,7 +241,19 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://finance.sina.com.cn/money/bond/2026-06-01/doc-inhzwcks5484646.shtml",
     publishedAt: "2026-06-01T00:00:51.000Z",
-    updatedAt: "2026-06-01T06:14:25.475Z",
+    updatedAt: "2026-06-01T06:38:49.012Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1780295928742-8",
+    title: "停火名存实亡，以军扩大在黎巴嫩军事行动，欲以“焦土”换安全_京报网",
+    summary: "停火名存实亡，以军扩大在黎巴嫩军事行动，欲以“焦土”换安全_京报网\n\n电子报\n\n停火名存实亡，以军扩大在黎巴嫩军事行动，欲以“焦土”换安全\n\n随着以军日前越过利",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://news.bjd.com.cn/2026/06/01/11777758.shtml",
+    publishedAt: "2026-06-01T00:00:00.000Z",
+    updatedAt: "2026-06-01T06:38:48.742Z",
     importance: "hot"
   },
   {
@@ -389,19 +269,19 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "geopolitics-1780294465195-8",
-    title: "停火名存实亡，以军扩大在黎巴嫩军事行动，欲以“焦土”换安全_京报网",
-    summary: "停火名存实亡，以军扩大在黎巴嫩军事行动，欲以“焦土”换安全_京报网\n\n电子报\n\n停火名存实亡，以军扩大在黎巴嫩军事行动，欲以“焦土”换安全\n\n随着以军日前越过利",
+    id: "geopolitics-1780295928742-6",
+    title: "特朗普突传重磅！美媒：特朗普要求修改其特使与伊朗谈判达成的协议提供者FX168",
+    summary: "tqttier\n\n关注\n\n0\n\n0\n\n获赞\n\n粉丝\n\n23 2 0收藏举报\n\n— 分享 —\n\n摘要：据一名政府高级官员和另一位了解情况的消息人士透露，美国总统特",
     deepDive: "",
     category: "geopolitics",
     source: "Exa 搜索",
-    sourceUrl: "https://news.bjd.com.cn/2026/06/01/11777758.shtml",
-    publishedAt: "2026-06-01T00:00:00.000Z",
-    updatedAt: "2026-06-01T06:14:25.196Z",
-    importance: "hot"
+    sourceUrl: "https://www.fx168news.com/article/%E7%89%B9%E6%9C%97%E6%99%AE-1037736",
+    publishedAt: "2026-05-31T23:32:49.000Z",
+    updatedAt: "2026-06-01T06:38:48.742Z",
+    importance: "normal"
   },
   {
-    id: "geopolitics-1780294465194-4",
+    id: "geopolitics-1780295928740-1",
     title: "俄制无人机砸中罗马尼亚居民楼，普京不认账后罗方拿出鉴定结果|北约|俄军|乌克兰|俄罗斯_网易订阅",
     summary: "0\n\n分享至好友和朋友圈\n\n俄制Geran-2无人机砸中了罗马尼亚加拉茨一栋居民楼，造成2人受伤，罗马尼亚专家已经确认残骸来自俄罗斯。更关键的是，普京此前还试图",
     deepDive: "",
@@ -409,11 +289,23 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.163.com/dy/article/KUAJMMBE05528J01.html",
     publishedAt: "2026-05-31T21:34:20.000Z",
-    updatedAt: "2026-06-01T06:14:25.195Z",
+    updatedAt: "2026-06-01T06:38:48.741Z",
     importance: "normal"
   },
   {
-    id: "geopolitics-1780294465195-5",
+    id: "geopolitics-1780295928741-5",
+    title: "特朗普要求修改美伊谅解备忘录，“尤其是涉及伊朗浓缩铀库的条款”_腾讯新闻",
+    summary: "问AI · 特朗普为何对协议进展持不着急态度？\n\n据央视新闻消息，当地时间5月30日，美国总统特朗普在当晚福克斯新闻播出的一档采访节目中表示，当前美伊已接近达成",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://news.qq.com/rain/a/20260531A043XK00",
+    publishedAt: "2026-05-31T11:06:21.000Z",
+    updatedAt: "2026-06-01T06:38:48.742Z",
+    importance: "normal"
+  },
+  {
+    id: "geopolitics-1780295928741-3",
     title: "美伊60天协议惊爆反转？特朗普称若协议不利，就恢复对伊朗动武|停火|德黑兰|华盛顿|唐纳·川普|唐纳德·特朗普|国际原子能机构_网易订阅",
     summary: "0\n\n分享至好友和朋友圈\n\n在阅读本文之前，诚邀您轻点“关注”，以便更便捷地参与讨论与内容分享，您的支持是我们持续深耕国际深度报道的重要动力。\n\n本文所有内容均",
     deepDive: "",
@@ -421,7 +313,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.163.com/dy/article/KU90D1AV05567N87.html",
     publishedAt: "2026-05-31T06:37:21.000Z",
-    updatedAt: "2026-06-01T06:14:25.195Z",
+    updatedAt: "2026-06-01T06:38:48.741Z",
     importance: "hot"
   },
   {
@@ -461,18 +353,6 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "robotics-1780193266786-6",
-    title: "特斯拉公开灵巧手专利：技术收敛，共识已至-36氪",
-    summary: "特斯拉公开灵巧手专利，标志着该领域从多路线试错（包括直驱、绳驱、气压等）走向技术收敛，类似“VLA”范式在灵巧手领域的正式落地。中美产业同步趋同，结束“百花齐放",
-    deepDive: "",
-    category: "robotics",
-    source: "Exa 搜索",
-    sourceUrl: "https://36kr.com/p/3780331664405251",
-    publishedAt: "2026-05-31T02:07:46.786Z",
-    updatedAt: "2026-05-31T02:07:46.786Z",
-    importance: "normal"
-  },
-  {
     id: "robotics-1780193266786-7",
     title: "让机器人“边想边做”，蚂蚁灵波“因果世界模型”论文被世界机器人顶会RSS 2026接收_腾讯新闻",
     summary: "近日，蚂蚁灵波科技与香港科技大学等高校合作完成的研究论文 《Causal World Modeling for Robot Control》被国际机器人顶级学术",
@@ -480,18 +360,6 @@ const hardcodedData: NewsData = {
     category: "robotics",
     source: "Exa 搜索",
     sourceUrl: "https://news.qq.com/rain/a/20260525A040VS00",
-    publishedAt: "2026-05-31T02:07:46.786Z",
-    updatedAt: "2026-05-31T02:07:46.786Z",
-    importance: "normal"
-  },
-  {
-    id: "robotics-1780193266786-8",
-    title: "重磅开源｜Wall-OSS-0.5：国产具身大模型破解零样本部署难题，无需微调直驱真实机器人 – Prompt 语宙",
-    summary: "重磅开源｜Wall-OSS-0.5：国产具身大模型破解零样本部署难题，无需微调直驱真实机器人 – Prompt 语宙\n\nSHARE\n\n💡 站外导读：具身智能领",
-    deepDive: "",
-    category: "robotics",
-    source: "Exa 搜索",
-    sourceUrl: "https://paooo.com/aigc-news/18137/",
     publishedAt: "2026-05-31T02:07:46.786Z",
     updatedAt: "2026-05-31T02:07:46.786Z",
     importance: "normal"
@@ -893,15 +761,135 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "finance-1780294465476-7",
+    id: "ai-1780295928023-0",
+    title: "OpenAI发布生物防御AI工具Rosalind",
+    summary: "OpenAI首席执行官Sam Altman于2024年11月15日在社交平台X上发文，宣布OpenAI已暂停ChatGPT Plus新用户注册。原因是自11月1",
+    deepDive: "",
+    category: "ai",
+    source: "X：Sam Altman (@sama)",
+    sourceUrl: "https://x.com/sama/status/2061101875303530871",
+    publishedAt: "2026-05-31T00:00:00.000Z",
+    updatedAt: "2026-06-01T06:38:48.024Z",
+    importance: "hot"
+  },
+  {
+    id: "ai-1780295928024-1",
+    title: "DeepSeek V4 Flash 已上线 OpenCode Zen",
+    summary: "抱歉，您提供的原文内容似乎不完整，仅包含“X：opencode (@opencode)”，缺少具体的新闻正文。请您补充完整的新闻文本，我将根据您的要求，为您撰写",
+    deepDive: "",
+    category: "ai",
+    source: "X：opencode (@opencode)",
+    sourceUrl: "https://x.com/opencode/status/2061153857321775209",
+    publishedAt: "2026-05-31T00:00:00.000Z",
+    updatedAt: "2026-06-01T06:38:48.025Z",
+    importance: "normal"
+  },
+  {
+    id: "ai-1780295928025-2",
+    title: "v2.1.159",
+    summary: "Claude Code 于 GitHub Releases 正式发布。该版本包含多项关键更新：新增对多行编辑的支持，允许用户一次性修改多行代码；引入工具调用功能",
+    deepDive: "",
+    category: "ai",
+    source: "Claude Code：GitHub Releases（RSS）",
+    sourceUrl: "https://github.com/anthropics/claude-code/releases/tag/v2.1.159",
+    publishedAt: "2026-05-31T00:00:00.000Z",
+    updatedAt: "2026-06-01T06:38:48.025Z",
+    importance: "normal"
+  },
+  {
+    id: "ai-1780295928025-3",
+    title: "OpenAI正式进军机器人领域并启动招聘",
+    summary: "OpenAI宣布成立OpenAI Robotics团队，并开始招聘全栈硬件、系统及ML工程师，以编程和制造能服务社会的机器人。该项目由Aditya Ramesh",
+    deepDive: "",
+    category: "ai",
+    source: "X：Sam Altman (@sama)",
+    sourceUrl: "https://x.com/sama/status/2061117302528188712",
+    publishedAt: "2026-05-31T00:00:00.000Z",
+    updatedAt: "2026-06-01T06:38:48.025Z",
+    importance: "normal"
+  },
+  {
+    id: "ai-1780295928025-4",
+    title: "苹果WWDC将推AI升级：Gemini蒸馏模型本地运行，但技术栈外部依赖显著",
+    summary: "苹果下月WWDC将重点展示延迟已久的Siri及设备端AI升级，核心是在iPhone芯片本地运行从Google Gemini蒸馏而来的更小模型，以强调隐私与降低t",
+    deepDive: "",
+    category: "ai",
+    source: "X：Kim (@kimmonismus)",
+    sourceUrl: "https://x.com/kimmonismus/status/2061058117304262999",
+    publishedAt: "2026-05-31T00:00:00.000Z",
+    updatedAt: "2026-06-01T06:38:48.025Z",
+    importance: "normal"
+  },
+  {
+    id: "ai-1780295928025-5",
+    title: "6000 多公里全程零干预：特斯拉 FSD 完成全球首次横穿加拿大自动驾驶",
+    summary: "一辆特斯拉汽车搭载 FSD V14.3.3 版本软件，完成了全球首次全程零人工干预、横穿加拿大的自动驾驶行程。车辆从温哥华出发，历时 4 天 21 小时，行驶 ",
+    deepDive: "",
+    category: "ai",
+    source: "IT之家（RSS）",
+    sourceUrl: "https://www.ithome.com/0/957/718.htm",
+    publishedAt: "2026-05-31T00:00:00.000Z",
+    updatedAt: "2026-06-01T06:38:48.025Z",
+    importance: "normal"
+  },
+  {
+    id: "ai-1780295928025-6",
+    title: "我花200英镑把一台数据中心级GPU装进了我的游戏电脑",
+    summary: "国际空间站（ISS）上的宇航员近日成功完成了一次紧急太空行走，以修复一处关键冷却系统故障。美国宇航局（NASA）确认，此次任务于北京时间3月15日14时开始，由",
+    deepDive: "",
+    category: "ai",
+    source: "Hacker News 热门（buzzing.cc 中文翻译）",
+    sourceUrl: "https://blog.tymscar.com/posts/v100localllm",
+    publishedAt: "2026-05-31T00:00:00.000Z",
+    updatedAt: "2026-06-01T06:38:48.025Z",
+    importance: "normal"
+  },
+  {
+    id: "ai-1780295928025-7",
+    title: "教皇似乎比Geoffrey Hinton更懂人工智能",
+    summary: "在题为《通往可信赖人工智能之路》的文章中，认知科学家、纽约大学名誉教授Gary Marcus系统阐述了当前人工智能系统在可靠性、透明度和安全性方面的根本缺陷。M",
+    deepDive: "",
+    category: "ai",
+    source: "Gary Marcus：The Road to AI We Can Trust（RSS）",
+    sourceUrl: "https://garymarcus.substack.com/p/the-pope-appears-to-understand-ai",
+    publishedAt: "2026-05-31T00:00:00.000Z",
+    updatedAt: "2026-06-01T06:38:48.025Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1780295929012-4",
     title: "5月份PMI数据出炉 我国经济总体产出保持扩张-新华网",
-    summary: "Exa搜索公司近期完成了一轮融资，具体金额未公开，但据知情人士透露，该公司估值已超过10亿美元，跻身独角兽企业行列。本轮融资由知名风投机构Lightspeed ",
+    summary: "Exa搜索（Exa Search）近期完成了一轮融资，具体金额未公开，但据知情人士透露，该轮融资由知名风投机构Lightspeed Venture Partne",
     deepDive: "",
     category: "finance",
     source: "Exa 搜索",
     sourceUrl: "http://www.xinhuanet.com/fortune/20260531/7a96a7d36b1d47f3b45f77666742d054/c.html",
     publishedAt: "2026-05-31T00:00:00.000Z",
-    updatedAt: "2026-06-01T06:14:25.476Z",
+    updatedAt: "2026-06-01T06:38:49.012Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1780295929012-6",
+    title: "国家统计局服务业调查中心首席统计师霍丽慧解读2026年5月中国采购经理指数 - 21经济网",
+    summary: "###### 2026年05月31日 09:45 国家统计局\n\n#### 5月份综合PMI产出指数保持扩张\n\n#### ——国家统计局服务业调查中心首席统计师霍",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.21jingji.com/article/20260531/herald/15745e2d9d5e4e46dc40377c6b670e49.html",
+    publishedAt: "2026-05-31T00:00:00.000Z",
+    updatedAt: "2026-06-01T06:38:49.012Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1780295929313-4",
+    title: "闪电们打破人类半马世界纪录，荣耀机器人技术三重底牌首次揭秘-36氪",
+    summary: "是时候重新思考中国机器人产业了\n\n北京亦庄每年的机器人马拉松，是一个中国机器人水平的绝佳观察窗口。\n\n去年，大多数机器人跌跌撞撞，甚至出现跑着跑着“头掉手断”的",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://36kr.com/p/3786143708323073",
+    publishedAt: "2026-05-30T17:00:21.000Z",
+    updatedAt: "2026-06-01T06:38:49.313Z",
     importance: "hot"
   },
   {
@@ -2679,6 +2667,54 @@ const hardcodedData: NewsData = {
     publishedAt: "2026-05-29T04:06:58.439Z",
     updatedAt: "2026-05-29T04:06:58.439Z",
     importance: "normal"
+  },
+  {
+    id: "robotics-1780295929314-6",
+    title: "特斯拉公开灵巧手专利：技术收敛，共识已至-36氪",
+    summary: "中美同频共振。\n\n灵巧手终于迎来自己的「VLA」范式，走到了共识时刻。\n\n在过去数年的具身智能产业浪潮里，灵巧手赛道堪称整个具身智能产业最热闹也最割裂的“修罗场",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://36kr.com/p/3780331664405251",
+    publishedAt: "2026-05-28T10:06:46.000Z",
+    updatedAt: "2026-06-01T06:38:49.314Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1780295929314-9",
+    title: "重磅开源｜Wall-OSS-0.5：国产具身大模型破解零样本部署难题，无需微调直驱真实机器人 – Prompt 语宙",
+    summary: "重磅开源｜Wall-OSS-0.5：国产具身大模型破解零样本部署难题，无需微调直驱真实机器人 – Prompt 语宙\n\nSHARE\n\n💡 站外导读：具身智能领",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://paooo.com/aigc-news/18137/",
+    publishedAt: "2026-05-28T06:06:56.000Z",
+    updatedAt: "2026-06-01T06:38:49.314Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1780295929313-5",
+    title: "生成即可仿真！大晓机器人与南洋理工大学发布全球首个统一物理3D生成框架|运动学_网易订阅",
+    summary: "0\n\n分享至好友和朋友圈\n\n通用机器人的终极目标是在开放世界中自主完成复杂任务，这要求机器人不仅能“看见”世界，更能“理解”并与世界“交互”。\n\n大晓机器人与南",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.163.com/dy/article/KU0JU4RD05506BEH.html",
+    publishedAt: "2026-05-28T00:25:33.000Z",
+    updatedAt: "2026-06-01T06:38:49.314Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1780295929314-8",
+    title: "从“蹒跚学步”到“超越人类”，这届半马看点何在？-36氪",
+    summary: "从“蹒跚学步”到“超越人类”，这届半马看点何在？\n\n时隔一年，人形机器人半程马拉松再次在北京亦庄鸣枪开跑。\n\n去年首届赛事，20支参赛队伍仅有6台机器人成功完赛",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://36kr.com/p/3775128610779911",
+    publishedAt: "2026-05-26T21:06:02.000Z",
+    updatedAt: "2026-06-01T06:38:49.314Z",
+    importance: "hot"
   }
   ],
 };
