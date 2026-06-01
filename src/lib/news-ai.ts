@@ -10,7 +10,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：Google AI for Developers (@googleaidevs)",
     sourceUrl: "https://x.com/googleaidevs/status/2060685345738375640",
-    publishedAt: "2026-05-31T02:07:42.288Z",
+    publishedAt: "2026-02-27T14:08:10.000Z",
     updatedAt: "2026-05-31T02:07:42.288Z",
     importance: "hot"
   },
@@ -22,7 +22,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：阶跃星辰 StepFun (@StepFun_ai)",
     sourceUrl: "https://x.com/StepFun_ai/status/2060678753030947226",
-    publishedAt: "2026-05-31T02:07:42.288Z",
+    publishedAt: "2026-04-02T00:00:00.000Z",
     updatedAt: "2026-05-31T02:07:42.288Z",
     importance: "hot"
   },
@@ -34,7 +34,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "Hacker News 热门（buzzing.cc 中文翻译）",
     sourceUrl: "https://github.com/jmaczan/tiny-vllm",
-    publishedAt: "2026-05-31T02:07:42.288Z",
+    publishedAt: "2026-05-29T10:08:43.506Z",
     updatedAt: "2026-05-31T02:07:42.288Z",
     importance: "normal"
   },
@@ -46,7 +46,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：SemiAnalysis (@SemiAnalysis_)",
     sourceUrl: "https://x.com/SemiAnalysis_/status/2060571944575963482",
-    publishedAt: "2026-05-31T02:07:42.288Z",
+    publishedAt: "2026-05-31T10:08:43.184Z",
     updatedAt: "2026-05-31T02:07:42.288Z",
     importance: "normal"
   },
@@ -58,7 +58,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "The Verge：AI（RSS）",
     sourceUrl: "https://www.theverge.com/ai-artificial-intelligence/938844/ai-tiktok-shop-blackface-shein-dropshipping",
-    publishedAt: "2026-05-31T02:07:42.288Z",
+    publishedAt: "2026-05-30T13:00:00.000Z",
     updatedAt: "2026-05-31T02:07:42.288Z",
     importance: "normal"
   },
@@ -70,7 +70,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "Bloomberg：Technology（RSS）",
     sourceUrl: "https://www.bloomberg.com/news/articles/2026-05-30/ai-dangers-eclipse-nuclear-weapons-at-singapore-defense-forum",
-    publishedAt: "2026-05-31T02:07:42.288Z",
+    publishedAt: "2026-05-30T08:00:00.000Z",
     updatedAt: "2026-05-31T02:07:42.288Z",
     importance: "normal"
   },
@@ -82,7 +82,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "Bloomberg：Technology（RSS）",
     sourceUrl: "https://www.bloomberg.com/news/articles/2026-05-30/softbank-to-invest-some-75-billion-in-ai-in-france-reports-say",
-    publishedAt: "2026-05-31T02:07:42.288Z",
+    publishedAt: "2026-05-30T08:00:00.000Z",
     updatedAt: "2026-05-31T02:07:42.288Z",
     importance: "normal"
   },
@@ -94,7 +94,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "TechCrunch：AI（RSS）",
     sourceUrl: "https://techcrunch.com/2026/05/30/what-a-joke-github-copilots-new-token-based-billing-spurs-consternation-among-devs",
-    publishedAt: "2026-05-31T02:07:42.288Z",
+    publishedAt: "2026-05-30T18:00:20.000Z",
     updatedAt: "2026-05-31T02:07:42.288Z",
     importance: "normal"
   },
@@ -106,7 +106,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
     sourceUrl: "https://x.com/alibaba_cloud/status/2060520586489770167",
-    publishedAt: "2026-05-31T02:07:42.288Z",
+    publishedAt: "2026-05-30T13:48:12.000Z",
     updatedAt: "2026-05-31T02:07:42.288Z",
     importance: "normal"
   },
@@ -118,7 +118,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：阿易 AI Notes (@AYi_AInotes)",
     sourceUrl: "https://x.com/AYi_AInotes/status/2060779431648547016",
-    publishedAt: "2026-05-31T02:07:42.288Z",
+    publishedAt: "2026-05-31T17:59:00.000Z",
     updatedAt: "2026-05-31T02:07:42.288Z",
     importance: "hot"
   },
@@ -130,7 +130,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：阿易 AI Notes (@AYi_AInotes)",
     sourceUrl: "https://x.com/AYi_AInotes/status/2060740414273941874",
-    publishedAt: "2026-05-31T02:07:42.288Z",
+    publishedAt: "2026-05-31T01:46:32.000Z",
     updatedAt: "2026-05-31T02:07:42.288Z",
     importance: "normal"
   },
@@ -142,7 +142,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "Simon Willison 博客",
     sourceUrl: "https://simonwillison.net/2026/May/30/pyodide-asgi-browser",
-    publishedAt: "2026-05-31T02:07:42.288Z",
+    publishedAt: "2026-05-30T20:05:21.000Z",
     updatedAt: "2026-05-31T02:07:42.288Z",
     importance: "normal"
   },
@@ -154,7 +154,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "Hacker News 热门（buzzing.cc 中文翻译）",
     sourceUrl: "https://www.wsj.com/tech/ai/corporate-america-is-starting-to-ration-ai-as-cost-skyrockets-1eb99d7a",
-    publishedAt: "2026-05-31T02:07:42.288Z",
+    publishedAt: "2026-05-29T10:42:45.000Z",
     updatedAt: "2026-05-31T02:07:42.288Z",
     importance: "normal"
   },
@@ -166,7 +166,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "Hacker News 热门（buzzing.cc 中文翻译）",
     sourceUrl: "https://steve-yegge.medium.com/the-last-technical-interview-bc13ddcf4564",
-    publishedAt: "2026-05-31T02:07:42.288Z",
+    publishedAt: "2022-03-27T02:23:11.000Z",
     updatedAt: "2026-05-31T02:07:42.288Z",
     importance: "normal"
   },
@@ -274,7 +274,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：Greg Brockman (@gdb)",
     sourceUrl: "https://x.com/gdb/status/2060452095279415725",
-    publishedAt: "2026-05-30T14:47:19.664Z",
+    publishedAt: "2026-05-08T09:55:00.000Z",
     updatedAt: "2026-05-30T14:47:19.664Z",
     importance: "normal"
   },
@@ -286,7 +286,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：阶跃星辰 StepFun (@StepFun_ai)",
     sourceUrl: "https://x.com/StepFun_ai/status/2060149124117475791",
-    publishedAt: "2026-05-30T14:47:19.664Z",
+    publishedAt: "2026-05-29T11:36:13.000Z",
     updatedAt: "2026-05-30T14:47:19.664Z",
     importance: "hot"
   },
@@ -298,7 +298,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "IT之家（RSS）",
     sourceUrl: "https://www.ithome.com/0/957/282.htm",
-    publishedAt: "2026-05-30T14:47:19.664Z",
+    publishedAt: "2026-04-14T13:03:31.000Z",
     updatedAt: "2026-05-30T14:47:19.664Z",
     importance: "hot"
   },
@@ -310,7 +310,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "Qwen：Blog Retrieval（API）",
     sourceUrl: "https://qwen.ai/blog?id=qwenvla",
-    publishedAt: "2026-05-30T14:47:19.664Z",
+    publishedAt: "2026-05-29T10:08:50.242Z",
     updatedAt: "2026-05-30T14:47:19.664Z",
     importance: "normal"
   },
@@ -334,7 +334,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：Gemini (@GeminiApp)",
     sourceUrl: "https://x.com/GeminiApp/status/2060435981946503243",
-    publishedAt: "2026-05-30T14:47:19.664Z",
+    publishedAt: "2026-05-20T02:00:00.000Z",
     updatedAt: "2026-05-30T14:47:19.664Z",
     importance: "normal"
   },
@@ -346,7 +346,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：OpenAI (@OpenAI)",
     sourceUrl: "https://x.com/OpenAI/status/2060428604727771421",
-    publishedAt: "2026-05-30T14:47:19.664Z",
+    publishedAt: "2026-04-16T00:00:00.000Z",
     updatedAt: "2026-05-30T14:47:19.664Z",
     importance: "normal"
   },
@@ -358,7 +358,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "OpenRouter：Announcements（RSS）",
     sourceUrl: "https://openrouter.ai/announcements/guardrails",
-    publishedAt: "2026-05-30T14:47:19.664Z",
+    publishedAt: "2026-05-14T14:00:00.000Z",
     updatedAt: "2026-05-30T14:47:19.664Z",
     importance: "normal"
   },
@@ -370,7 +370,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：Runway (@runwayml)",
     sourceUrl: "https://x.com/runwayml/status/2060453805519765548",
-    publishedAt: "2026-05-30T14:47:19.664Z",
+    publishedAt: "2026-03-31T00:00:00.000Z",
     updatedAt: "2026-05-30T14:47:19.664Z",
     importance: "normal"
   },
@@ -382,7 +382,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：OpenRouter (@OpenRouter)",
     sourceUrl: "https://x.com/OpenRouter/status/2060395056196936054",
-    publishedAt: "2026-05-30T14:47:19.664Z",
+    publishedAt: "2026-04-10T00:00:00.000Z",
     updatedAt: "2026-05-30T14:47:19.664Z",
     importance: "normal"
   },
@@ -394,7 +394,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：ChatGPT (@ChatGPTapp)",
     sourceUrl: "https://x.com/ChatGPTapp/status/2060467129066070182",
-    publishedAt: "2026-05-30T14:47:19.664Z",
+    publishedAt: "2026-05-30T04:04:54.000Z",
     updatedAt: "2026-05-30T14:47:19.664Z",
     importance: "normal"
   },
@@ -406,7 +406,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：Gemini (@GeminiApp)",
     sourceUrl: "https://x.com/GeminiApp/status/2060389565052096911",
-    publishedAt: "2026-05-30T14:47:19.664Z",
+    publishedAt: "2026-05-20T01:45:00.000Z",
     updatedAt: "2026-05-30T14:47:19.664Z",
     importance: "normal"
   },
@@ -418,7 +418,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "IT之家（RSS）",
     sourceUrl: "https://www.ithome.com/0/957/319.htm",
-    publishedAt: "2026-05-30T14:47:19.664Z",
+    publishedAt: "2026-05-29T10:08:54.033Z",
     updatedAt: "2026-05-30T14:47:19.664Z",
     importance: "normal"
   },
@@ -430,7 +430,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "OpenAI：官网动态（RSS · 排除企业/客户案例）",
     sourceUrl: "https://openai.com/index/boston-childrens-hospital",
-    publishedAt: "2026-05-30T14:47:19.664Z",
+    publishedAt: "2026-05-29T16:57:36.000Z",
     updatedAt: "2026-05-30T14:47:19.664Z",
     importance: "normal"
   },
@@ -442,7 +442,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "Google Blog：AI（RSS）",
     sourceUrl: "https://blog.google/innovation-and-ai/technology/ai/university-waterloo-labs",
-    publishedAt: "2026-05-30T14:47:19.664Z",
+    publishedAt: "2026-05-29T12:00:00.000Z",
     updatedAt: "2026-05-30T14:47:19.664Z",
     importance: "normal"
   },
@@ -454,7 +454,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：Fei-Fei Li (@drfeifei, World Labs)",
     sourceUrl: "https://x.com/drfeifei/status/2060404846734512205",
-    publishedAt: "2026-05-30T14:47:19.664Z",
+    publishedAt: "2026-05-29T10:08:57.452Z",
     updatedAt: "2026-05-30T14:47:19.664Z",
     importance: "hot"
   },
@@ -466,7 +466,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：洪明 (@hongming731)",
     sourceUrl: "https://x.com/hongming731/status/2060487110906527820",
-    publishedAt: "2026-05-30T14:47:19.664Z",
+    publishedAt: "2026-05-27T12:05:05.000Z",
     updatedAt: "2026-05-30T14:47:19.664Z",
     importance: "hot"
   },
@@ -478,7 +478,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：Rohan Paul (@rohanpaul_ai)",
     sourceUrl: "https://x.com/rohanpaul_ai/status/2060409504693645440",
-    publishedAt: "2026-05-30T14:47:19.664Z",
+    publishedAt: "2026-05-23T12:08:33.000Z",
     updatedAt: "2026-05-30T14:47:19.664Z",
     importance: "normal"
   },
@@ -502,7 +502,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "X：邵猛 (@shao__meng)",
     sourceUrl: "https://x.com/shao__meng/status/2060167182777249886",
-    publishedAt: "2026-05-30T14:47:19.664Z",
+    publishedAt: "2026-05-13T10:10:50.000Z",
     updatedAt: "2026-05-30T14:47:19.664Z",
     importance: "hot"
   },
@@ -526,7 +526,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "TechCrunch：AI（RSS）",
     sourceUrl: "https://techcrunch.com/video/what-happens-when-companies-become-too-ai-pilled",
-    publishedAt: "2026-05-30T14:47:19.664Z",
+    publishedAt: "2026-05-24T19:39:01.000Z",
     updatedAt: "2026-05-30T14:47:19.664Z",
     importance: "normal"
   },
@@ -538,7 +538,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "IT之家（RSS）",
     sourceUrl: "https://www.ithome.com/0/956/864.htm",
-    publishedAt: "2026-05-30T14:47:19.664Z",
+    publishedAt: "2026-05-29T00:00:00.000Z",
     updatedAt: "2026-05-30T14:47:19.664Z",
     importance: "normal"
   },
@@ -550,7 +550,7 @@ const items: NewsItem[] = [
     category: "ai",
     source: "TechCrunch：AI（RSS）",
     sourceUrl: "https://techcrunch.com/2026/05/29/cognitions-scott-wu-says-ai-coding-agents-shouldnt-replace-humans",
-    publishedAt: "2026-05-30T14:47:19.664Z",
+    publishedAt: "2026-05-29T18:04:25.000Z",
     updatedAt: "2026-05-30T14:47:19.664Z",
     importance: "normal"
   }

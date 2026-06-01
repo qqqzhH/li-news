@@ -10,7 +10,7 @@ const items: NewsItem[] = [
     category: "other",
     source: "Test",
     sourceUrl: "#",
-    publishedAt: "2026-05-29T04:06:58.439Z",
+    publishedAt: "2001-01-01T14:02:10.000Z",
     updatedAt: "2026-05-29T04:06:58.439Z",
     importance: "normal"
   }
