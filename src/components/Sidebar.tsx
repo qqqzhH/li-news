@@ -87,9 +87,11 @@ export default function Sidebar() {
       </button>
 
       <aside
-        className={`fixed top-0 left-0 h-screen z-30 bg-[var(--color-sidebar-bg)] border-r border-[var(--color-border)] flex flex-col transition-all duration-300 overflow-hidden ${
-          collapsed ? "-translate-x-full md:translate-x-0 md:w-16" : "translate-x-0 w-64"
-        }`}
+        className={`fixed top-0 left-0 h-screen z-30 w-64 bg-[var(--color-sidebar-bg)] border-r border-[var(--color-border)] flex flex-col overflow-hidden will-change-transform`}
+        style={{
+          transform: collapsed ? "translateX(-100%)" : "translateX(0)",
+          transition: "transform 0.3s ease",
+        }}
       >
         {/* Header */}
         <div className="flex items-center justify-between px-3 py-3 border-b border-[var(--color-border)] min-h-0">

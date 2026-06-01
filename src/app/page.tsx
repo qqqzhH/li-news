@@ -60,7 +60,6 @@ export default function HomePage() {
   const quoteRef = useRef<HTMLDivElement>(null);
   const searchRef = useRef<HTMLDivElement>(null);
   const catsRef = useRef<HTMLDivElement>(null);
-  const arrowRef = useRef<HTMLDivElement>(null);
   const section2Ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -88,8 +87,6 @@ export default function HomePage() {
         }
       }, 50);
     }, 600);
-
-    gsap.to(arrowRef.current, { y: -6, duration: 1.8, repeat: -1, yoyo: true, ease: "sine.inOut" });
 
     let cleanupScroll: (() => void) | undefined;
     const s2 = section2Ref.current;
@@ -196,17 +193,6 @@ export default function HomePage() {
           })}
         </div>
 
-        {/* Arrow — push down with more margin, click to scroll */}
-        <div
-          ref={arrowRef}
-          onClick={() => section2Ref.current?.scrollIntoView({ behavior: "smooth" })}
-          className="mt-10 sm:mt-16 flex flex-col items-center gap-1 text-[var(--color-text-muted)]/50 cursor-pointer pb-4 sm:pb-8"
-        >
-          <span className="text-xs tracking-widest">探索</span>
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-          </svg>
-        </div>
       </section>
 
       {/* ===== Screen 2: 今日精选 ===== */}
@@ -291,6 +277,16 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Explore — bottom of page */}
+      <div
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        className="flex flex-col items-center gap-1 py-10 sm:py-16 text-[var(--color-text-muted)]/50 cursor-pointer"
+      >
+        <span className="text-xs tracking-widest">探索</span>
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+        </svg>
+      </div>
     </div>
   );
 }
