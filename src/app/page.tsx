@@ -216,7 +216,7 @@ export default function HomePage() {
         {/* 探索 */}
         <div
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="flex flex-col items-center gap-1 pt-24 sm:pt-32 pb-10 sm:pb-16 text-[var(--color-text-muted)]/50 cursor-pointer"
+          className="flex flex-col items-center gap-1 mt-auto mb-[5vh] text-[var(--color-text-muted)]/50 cursor-pointer"
         >
           <span className="text-xs tracking-widest">探索</span>
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

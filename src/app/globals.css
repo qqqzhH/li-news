@@ -81,10 +81,10 @@ body { overflow-x: hidden; width: 100%; max-width: 100vw; }
   z-index: 9999;
 }
 
-/* 侧边栏 — clip-path 裁剪，GPU 加速丝滑 */
+/* 侧边栏 — 宽度过渡 */
 .sidebar-aside {
   width: 256px;
-  will-change: clip-path;
+  overflow: hidden;
 }
 /* 移动端：折叠时整体滑出 */
 @media (max-width: 767px) {
@@ -97,17 +97,17 @@ body { overflow-x: hidden; width: 100%; max-width: 100vw; }
     transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-/* 桌面端：折叠时 clip-path 裁掉右侧，露出左侧 48px 图标 */
+/* 桌面端：折叠时宽度缩到 48px */
 @media (min-width: 768px) {
   .sidebar-collapsed {
-    clip-path: inset(0 208px 0 0);
+    width: 48px;
   }
   .sidebar-expanded {
-    clip-path: inset(0 0 0 0);
+    width: 256px;
   }
   .sidebar-aside.sidebar-collapsed,
   .sidebar-aside.sidebar-expanded {
-    transition: clip-path 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 /* 主内容区 — transform 代替 margin-left，不触发重排 */
@@ -125,7 +125,7 @@ body { overflow-x: hidden; width: 100%; max-width: 100vw; }
   }
 }
 
-/* 全屏滚动 — 由 JS 接管，CSS 不 snap */
+/* 全屏滚动 — 用 JS 接管，CSS 不 snap */
 .snap-container {
   overflow-y: auto;
   overflow-x: hidden;
@@ -167,7 +167,7 @@ body { overflow-x: hidden; width: 100%; max-width: 100vw; }
   transform: translateY(-1px);
 }
 
-/* 分类卡片悬停阴影 */
+/* 分类卡片悬浮阴影 */
 .category-card {
   transition: all 0.2s ease;
 }
@@ -184,7 +184,7 @@ body { overflow-x: hidden; width: 100%; max-width: 100vw; }
   background: var(--color-ocean-50);
 }
 
-/* 深挖内容动画 */
+/* 深化内容动画 */
 .deep-dive-content {
   max-height: 0;
   overflow: hidden;

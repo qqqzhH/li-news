@@ -19,7 +19,7 @@ export default function Sidebar() {
     return () => document.body.classList.remove("sidebar-is-collapsed");
   }, [collapsed]);
 
-  // 只在首页使用 IntersectionObserver 跟踪滚动位置
+  // 只在首页使用 IntersectionObserver 追踪滚动位置
   useEffect(() => {
     if (pathname !== "/") return;
 
@@ -93,19 +93,8 @@ export default function Sidebar() {
         </svg>
       </button>
 
-      {/* Desktop toggle — aside 外面，不被 clip-path 裁掉 */}
-      <button
-        onClick={() => setCollapsed(!collapsed)}
-        className={`fixed z-40 hidden md:flex items-center justify-center w-6 h-12 rounded-r-lg bg-[var(--color-sidebar-bg)] border border-l-0 border-[var(--color-border)] text-[var(--color-text-secondary)] hover:bg-[var(--color-ocean-100)] hover:text-[var(--color-ocean-600)] shadow-sm cursor-pointer ${collapsed ? "top-3 left-[48px]" : "top-3 left-[256px]"}`}
-        aria-label={collapsed ? "展开侧栏" : "折叠侧栏"}
-      >
-        <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d={collapsed ? "M9 5l7 7-7 7" : "M15 19l-7-7 7-7"} />
-        </svg>
-      </button>
-
       <aside
-        className={`fixed top-0 left-0 h-screen z-30 bg-[var(--color-sidebar-bg)] border-r border-[var(--color-border)] flex flex-col overflow-hidden will-change-transform sidebar-aside ${collapsed ? "sidebar-collapsed" : "sidebar-expanded"}`}
+        className={`fixed top-0 left-0 h-screen z-30 bg-[var(--color-sidebar-bg)] border-r border-[var(--color-border)] flex flex-col overflow-hidden sidebar-aside ${collapsed ? "sidebar-collapsed" : "sidebar-expanded"}`}
       >
         {/* Header */}
         <div className="flex items-center justify-between px-3 py-3 border-b border-[var(--color-border)] min-h-0">
@@ -125,7 +114,7 @@ export default function Sidebar() {
         <nav className="flex-1 py-2 space-y-0.5 px-1.5 overflow-y-auto">
           <button
             onClick={() => scrollTo("home")}
-            className={`w-full flex items-center justify-center md:justify-start gap-3 px-2 py-2 rounded-lg transition-all ${
+            className={`w-full flex items-center justify-center gap-3 px-2 py-2 rounded-lg transition-all ${
               isActive("home")
                 ? "bg-[var(--color-ocean-100)] text-[var(--color-ocean-700)] font-medium"
                 : "text-[var(--color-text-secondary)] hover:bg-[var(--color-ocean-50)] hover:text-[var(--color-ocean-600)]"
@@ -138,7 +127,7 @@ export default function Sidebar() {
 
           <button
             onClick={() => scrollTo("recommended")}
-            className={`w-full flex items-center justify-center md:justify-start gap-3 px-2 py-2 rounded-lg transition-all ${
+            className={`w-full flex items-center justify-center gap-3 px-2 py-2 rounded-lg transition-all ${
               isActive("recommended")
                 ? "bg-[var(--color-ocean-100)] text-[var(--color-ocean-700)] font-medium"
                 : "text-[var(--color-text-secondary)] hover:bg-[var(--color-ocean-50)] hover:text-[var(--color-ocean-600)]"
@@ -160,7 +149,7 @@ export default function Sidebar() {
             <Link
               key={cat.key}
               href={`/${cat.key}`}
-              className={`flex items-center justify-center md:justify-start gap-3 px-2 py-2 rounded-lg transition-all ${
+              className={`flex items-center justify-center gap-3 px-2 py-2 rounded-lg transition-all ${
                 isActive(cat.key)
                   ? "bg-[var(--color-ocean-100)] text-[var(--color-ocean-700)] font-medium"
                   : "text-[var(--color-text-secondary)] hover:bg-[var(--color-ocean-50)] hover:text-[var(--color-ocean-600)]"
@@ -176,7 +165,7 @@ export default function Sidebar() {
 
           <Link
             href="/search"
-            className={`flex items-center justify-center md:justify-start gap-3 px-2 py-2 rounded-lg transition-all ${
+            className={`flex items-center justify-center gap-3 px-2 py-2 rounded-lg transition-all ${
               pathname === "/search"
                 ? "bg-[var(--color-ocean-100)] text-[var(--color-ocean-700)] font-medium"
                 : "text-[var(--color-text-secondary)] hover:bg-[var(--color-ocean-50)] hover:text-[var(--color-ocean-600)]"
@@ -187,6 +176,25 @@ export default function Sidebar() {
             {!collapsed && <span className="text-sm">搜索</span>}
           </Link>
         </nav>
+
+        {/* 折叠/展开按钮 — 在 aside 内部，始终可见 */}
+        <div className="border-t border-[var(--color-border)] p-2">
+          <button
+            onClick={() => setCollapsed(!collapsed)}
+            className="w-full flex items-center justify-center gap-2 px-2 py-2 rounded-lg text-[var(--color-text-secondary)] hover:bg-[var(--color-ocean-50)] hover:text-[var(--color-ocean-600)] transition-all cursor-pointer"
+            title={collapsed ? "展开侧栏" : "折叠侧栏"}
+          >
+            <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d={collapsed ? "M9 5l7 7-7 7" : "M15 19l-7-7 7-7"}
+              />
+            </svg>
+            {!collapsed && <span className="text-sm">折叠</span>}
+          </button>
+        </div>
 
         {!collapsed && (
           <div className="p-2 border-t border-[var(--color-border)] text-xs text-[var(--color-text-muted)] text-center">
