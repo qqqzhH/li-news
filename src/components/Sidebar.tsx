@@ -28,7 +28,6 @@ export default function Sidebar() {
 
     const observer = new IntersectionObserver(
       (entries) => {
-        // 找到当前最可见的 section
         let best: { id: string; ratio: number } = { id: "home", ratio: 0 };
         entries.forEach((entry) => {
           const id = entry.target.getAttribute("data-section") || "";
@@ -59,7 +58,6 @@ export default function Sidebar() {
 
   const scrollTo = (sectionId: string) => {
     if (pathname !== "/") {
-      // 如果在非首页，先回到首页再滚动
       window.location.href = "/";
       return;
     }
@@ -95,6 +93,17 @@ export default function Sidebar() {
         </svg>
       </button>
 
+      {/* Desktop toggle — aside 外面，不被 clip-path 裁掉 */}
+      <button
+        onClick={() => setCollapsed(!collapsed)}
+        className={`fixed z-40 hidden md:flex items-center justify-center w-6 h-12 rounded-r-lg bg-[var(--color-sidebar-bg)] border border-l-0 border-[var(--color-border)] text-[var(--color-text-secondary)] hover:bg-[var(--color-ocean-100)] hover:text-[var(--color-ocean-600)] transition-all shadow-sm cursor-pointer ${collapsed ? "top-3 left-[64px]" : "top-3 left-[256px]"}`}
+        aria-label={collapsed ? "展开侧栏" : "折叠侧栏"}
+      >
+        <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d={collapsed ? "M9 5l7 7-7 7" : "M15 19l-7-7 7-7"} />
+        </svg>
+      </button>
+
       <aside
         className={`fixed top-0 left-0 h-screen z-30 bg-[var(--color-sidebar-bg)] border-r border-[var(--color-border)] flex flex-col overflow-hidden will-change-transform sidebar-aside ${collapsed ? "sidebar-collapsed" : "sidebar-expanded"}`}
       >
@@ -110,20 +119,10 @@ export default function Sidebar() {
               <span className="text-base font-bold text-[var(--color-ocean-600)]">木</span>
             </button>
           )}
-          <button
-            onClick={() => setCollapsed(!collapsed)}
-            className="p-1 rounded-md hover:bg-[var(--color-ocean-100)] transition-colors text-[var(--color-text-secondary)] md:block hidden"
-            aria-label={collapsed ? "展开侧栏" : "折叠侧栏"}
-          >
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={collapsed ? "M13 5l7 7-7 7M5 5l7 7-7 7" : "M11 19l-7-7 7-7m8 14l-7-7 7-7"} />
-            </svg>
-          </button>
         </div>
 
         {/* Navigation */}
         <nav className="flex-1 py-2 space-y-0.5 px-1.5 overflow-y-auto">
-          {/* 首页 — 滚动到 section-home */}
           <button
             onClick={() => scrollTo("home")}
             className={`w-full flex items-center justify-center md:justify-start gap-3 px-2 py-2 rounded-lg transition-all ${
@@ -137,7 +136,6 @@ export default function Sidebar() {
             {!collapsed && <span className="text-sm">首页</span>}
           </button>
 
-          {/* 推荐 — 滚动到 section-recommended */}
           <button
             onClick={() => scrollTo("recommended")}
             className={`w-full flex items-center justify-center md:justify-start gap-3 px-2 py-2 rounded-lg transition-all ${
@@ -158,7 +156,6 @@ export default function Sidebar() {
 
           <div className="my-1.5 border-t border-[var(--color-border)]" />
 
-          {/* 分类栏目 — 点击跳转到对应页面 */}
           {CATEGORIES.map((cat) => (
             <Link
               key={cat.key}
