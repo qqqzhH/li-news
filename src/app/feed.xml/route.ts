@@ -2,6 +2,8 @@ import { getAllNews } from "@/lib/news";
 import { formatTime } from "@/lib/utils";
 import { CATEGORY_LABEL } from "@/types";
 
+export const dynamic = "force-static";
+
 export async function GET() {
   const data = getAllNews();
   const siteUrl = "https://li-news.vercel.app";
