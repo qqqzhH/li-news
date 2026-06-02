@@ -104,21 +104,39 @@ export default function HomePage() {
       check();
     }
 
-    // 接管滚轮：一滚即切屏，不等待 snap
+    // 接管滚轮：目标索引法，不管滚多快都只滑到正确的目标页
     let cleanupWheel: (() => void) | undefined;
     const container = document.querySelector(".snap-container") as HTMLElement | null;
     if (container) {
-      let busy = false;
       const sections = container.querySelectorAll("section");
+      const totalSections = sections.length;
+      let targetIndex = 0;
+      let animating = false;
+
+      // 根据当前滚动位置同步 targetIndex
+      const syncTarget = () => {
+        if (animating) return;
+        targetIndex = Math.round(container.scrollTop / window.innerHeight);
+        targetIndex = Math.max(0, Math.min(targetIndex, totalSections - 1));
+      };
+      syncTarget();
+
+      const scrollToTarget = () => {
+        animating = true;
+        sections[targetIndex].scrollIntoView({ behavior: "smooth" });
+        // 等动画结束后恢复
+        setTimeout(() => { animating = false; syncTarget(); }, 500);
+      };
+
       const onWheel = (e: WheelEvent) => {
-        if (busy) return;
-        const current = Math.round(container.scrollTop / window.innerHeight);
-        const next = e.deltaY > 0 ? current + 1 : current - 1;
-        if (next < 0 || next >= sections.length) return;
         e.preventDefault();
-        busy = true;
-        sections[next].scrollIntoView({ behavior: "smooth" });
-        setTimeout(() => { busy = false; }, 600);
+        // 根据滚动方向更新目标
+        if (e.deltaY > 0) {
+          targetIndex = Math.min(targetIndex + 1, totalSections - 1);
+        } else if (e.deltaY < 0) {
+          targetIndex = Math.max(targetIndex - 1, 0);
+        }
+        scrollToTarget();
       };
       container.addEventListener("wheel", onWheel, { passive: false });
       cleanupWheel = () => container.removeEventListener("wheel", onWheel);

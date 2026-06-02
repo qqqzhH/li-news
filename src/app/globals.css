@@ -81,10 +81,11 @@ body { overflow-x: hidden; width: 100%; max-width: 100vw; }
   z-index: 9999;
 }
 
-/* 侧边栏 — 桌面端折叠缩窄，移动端滑出/隐藏 */
+/* 侧边栏 — 用 transform 代替 width，GPU 加速丝滑 */
 .sidebar-aside {
   width: 256px;
-  transition: width 0.3s ease, transform 0.3s ease;
+  will-change: transform;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* 移动端：折叠时滑出屏幕 */
 @media (max-width: 767px) {
@@ -95,22 +96,25 @@ body { overflow-x: hidden; width: 100%; max-width: 100vw; }
     transform: translateX(0);
   }
 }
-/* 桌面端：折叠时缩窄到图标宽度 */
+/* 桌面端：折叠时左移露出 64px 图标区 */
 @media (min-width: 768px) {
   .sidebar-collapsed {
-    width: 64px !important;
+    transform: translateX(-192px);
   }
   .sidebar-expanded {
-    width: 256px !important;
+    transform: translateX(0);
   }
 }
-/* 主内容区边距跟随侧栏状态 */
+/* 主内容区边距跟随侧栏状态，加过渡 */
+.sidebar-content-main {
+  transition: margin-left 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
 @media (min-width: 768px) {
   .sidebar-content-main {
-    margin-left: 256px !important;
+    margin-left: 256px;
   }
   body.sidebar-is-collapsed .sidebar-content-main {
-    margin-left: 64px !important;
+    margin-left: 64px;
   }
 }
 
