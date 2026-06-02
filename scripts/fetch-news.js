@@ -63,6 +63,18 @@ async function fetchAIHOTNews() {
 }
 
 // ========== Fetch from Exa Search ==========
+// 从 URL 中提取日期
+function extractDateFromUrl(url) {
+  if (!url) return null;
+  // /2025-05-13/ or 2025-05-13T
+  let m = url.match(/\/(\d{4})-(\d{2})-(\d{2})[\/T\s]/);
+  if (m) return new Date(`${m[1]}-${m[2]}-${m[3]}T00:00:00.000Z`).toISOString();
+  // /20250513 (QQ News, Sina)
+  m = url.match(/\/(\d{4})(\d{2})(\d{2})(?=[^0-9]|$)/);
+  if (m) return new Date(`${m[1]}-${m[2]}-${m[3]}T00:00:00.000Z`).toISOString();
+  return null;
+}
+
 // 检测繁体中文
 function isTraditional(text) {
   // 繁体特有的常用字
@@ -208,7 +220,7 @@ async function searchExa(query, category, sourceLabel, days = 2) {
       category: category,
       source: sourceLabel,
       sourceUrl: r.url || "#",
-          publishedAt: r.publishedDate || r.published_at || new Date().toISOString(),
+          publishedAt: r.publishedDate || r.published_at || extractDateFromUrl(r.url) || new Date().toISOString(),
           updatedAt: new Date().toISOString(),
           importance: "normal",
     }));
