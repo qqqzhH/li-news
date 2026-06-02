@@ -196,9 +196,8 @@ export default function HomePage() {
       </section>
 
       {/* ===== Screen 2: 今日精选 ===== */}
-      <section data-section="recommended" className="min-h-screen flex flex-col py-6 sm:py-20 px-3 sm:px-6 md:px-16" ref={section2Ref}>
-        <div className="flex-1 flex flex-col justify-center">
-          <div className="max-w-5xl mx-auto w-full">
+      <section data-section="recommended" className="min-h-screen flex flex-col justify-center py-6 sm:py-20 px-3 sm:px-6 md:px-16" ref={section2Ref}>
+        <div className="max-w-5xl mx-auto w-full">
           {/* Section header */}
           <div className="flex items-center gap-2 sm:gap-4 mb-4 sm:mb-8">
             <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[var(--color-ocean-300)] to-transparent max-w-[60px] sm:max-w-[120px]" />
@@ -275,18 +274,6 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-        </div>
-        </div>
-
-        {/* 探索 — 放在热点区域底部 */}
-        <div
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="flex flex-col items-center gap-1 mt-10 sm:mt-16 text-[var(--color-text-muted)]/50 cursor-pointer"
-        >
-          <span className="text-xs tracking-widest">探索</span>
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-          </svg>
         </div>
       </section>
     </div>

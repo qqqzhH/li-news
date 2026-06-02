@@ -1,6 +1,7 @@
 import { getGeopoliticsNews } from "@/lib/news-geopolitics";
 import NewsCard from "@/components/NewsCard";
 import SearchBar from "@/components/SearchBar";
+import ExploreButton from "@/components/ExploreButton";
 
 export const dynamic = "force-static";
 export const revalidate = 3600;
@@ -46,6 +47,8 @@ export default function GeopoliticsPage() {
           <p className="text-sm">每日 9:00 自动更新，敬请期待</p>
         </div>
       )}
+
+      <ExploreButton />
     </div>
   );
 }

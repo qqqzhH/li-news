@@ -81,6 +81,22 @@ body { overflow-x: hidden; width: 100%; max-width: 100vw; }
   z-index: 9999;
 }
 
+/* 侧边栏 — 移动端滑出/隐藏，桌面端始终可见 */
+.sidebar-aside {
+  transition: transform 0.3s ease;
+}
+.sidebar-collapsed {
+  transform: translateX(-100%);
+}
+.sidebar-expanded {
+  transform: translateX(0);
+}
+@media (min-width: 768px) {
+  .sidebar-aside {
+    transform: translateX(0) !important;
+  }
+}
+
 /* 全屏滚动 — 由 JS 接管，CSS 不 snap */
 .snap-container {
   overflow-y: auto;
