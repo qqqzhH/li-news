@@ -90,7 +90,7 @@ export default function Sidebar() {
       </button>
 
       <aside
-        className={`fixed top-0 left-0 h-screen z-30 w-64 bg-[var(--color-sidebar-bg)] border-r border-[var(--color-border)] flex flex-col overflow-hidden will-change-transform`}
+        className={`fixed top-0 left-0 h-screen z-30 w-64 bg-[var(--color-sidebar-bg)] border-r border-[var(--color-border)] flex flex-col overflow-hidden will-change-transform md:translate-x-0`}
         style={{
           transform: collapsed ? "translateX(-100%)" : "translateX(0)",
           transition: "transform 0.3s ease",
