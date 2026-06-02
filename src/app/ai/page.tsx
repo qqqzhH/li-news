@@ -1,7 +1,6 @@
 import { getAiNews } from "@/lib/news-ai";
 import NewsCard from "@/components/NewsCard";
 import SearchBar from "@/components/SearchBar";
-import ExploreButton from "@/components/ExploreButton";
 
 export const dynamic = "force-static";
 export const revalidate = 3600;
@@ -48,7 +47,6 @@ export default function AiPage() {
         </div>
       )}
 
-      <ExploreButton />
     </div>
   );
 }

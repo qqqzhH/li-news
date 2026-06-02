@@ -1,7 +1,6 @@
 import { getFinanceNews } from "@/lib/news-finance";
 import NewsCard from "@/components/NewsCard";
 import SearchBar from "@/components/SearchBar";
-import ExploreButton from "@/components/ExploreButton";
 
 export const dynamic = "force-static";
 export const revalidate = 3600;
@@ -48,7 +47,6 @@ export default function FinancePage() {
         </div>
       )}
 
-      <ExploreButton />
     </div>
   );
 }
