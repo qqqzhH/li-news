@@ -13,6 +13,12 @@ export default function Sidebar() {
   });
   const [activeSection, setActiveSection] = useState<string>("home");
 
+  // 同步折叠状态到 body class，控制主内容边距
+  useEffect(() => {
+    document.body.classList.toggle("sidebar-is-collapsed", collapsed);
+    return () => document.body.classList.remove("sidebar-is-collapsed");
+  }, [collapsed]);
+
   // 只在首页使用 IntersectionObserver 跟踪滚动位置
   useEffect(() => {
     if (pathname !== "/") return;
@@ -90,7 +96,7 @@ export default function Sidebar() {
       </button>
 
       <aside
-        className={`fixed top-0 left-0 h-screen z-30 w-64 bg-[var(--color-sidebar-bg)] border-r border-[var(--color-border)] flex flex-col overflow-hidden will-change-transform sidebar-aside ${collapsed ? "sidebar-collapsed" : "sidebar-expanded"}`}
+        className={`fixed top-0 left-0 h-screen z-30 bg-[var(--color-sidebar-bg)] border-r border-[var(--color-border)] flex flex-col overflow-hidden will-change-transform sidebar-aside ${collapsed ? "sidebar-collapsed" : "sidebar-expanded"}`}
       >
         {/* Header */}
         <div className="flex items-center justify-between px-3 py-3 border-b border-[var(--color-border)] min-h-0">
