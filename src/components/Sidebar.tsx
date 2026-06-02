@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -96,7 +96,7 @@ export default function Sidebar() {
       {/* Desktop toggle — aside 外面，不被 clip-path 裁掉 */}
       <button
         onClick={() => setCollapsed(!collapsed)}
-        className={`fixed z-40 hidden md:flex items-center justify-center w-6 h-12 rounded-r-lg bg-[var(--color-sidebar-bg)] border border-l-0 border-[var(--color-border)] text-[var(--color-text-secondary)] hover:bg-[var(--color-ocean-100)] hover:text-[var(--color-ocean-600)] transition-all shadow-sm cursor-pointer ${collapsed ? "top-3 left-[64px]" : "top-3 left-[256px]"}`}
+        className={`fixed z-40 hidden md:flex items-center justify-center w-6 h-12 rounded-r-lg bg-[var(--color-sidebar-bg)] border border-l-0 border-[var(--color-border)] text-[var(--color-text-secondary)] hover:bg-[var(--color-ocean-100)] hover:text-[var(--color-ocean-600)] shadow-sm cursor-pointer ${collapsed ? "top-3 left-[48px]" : "top-3 left-[256px]"}`}
         aria-label={collapsed ? "展开侧栏" : "折叠侧栏"}
       >
         <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
