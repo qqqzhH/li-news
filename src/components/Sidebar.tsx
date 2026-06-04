@@ -72,6 +72,10 @@ export default function Sidebar() {
     />
   );
 
+  const labelDelay = (index: number) => ({
+    transitionDelay: collapsed ? "0ms" : `${190 + index * 35}ms`,
+  });
+
   return (
     <>
       {/* Mobile overlay */}
@@ -99,7 +103,7 @@ export default function Sidebar() {
         {/* Header */}
         <div className={`flex items-center border-b border-[var(--color-border)] min-h-0 ${collapsed ? "justify-center px-1.5 py-3" : "justify-between px-3 py-3"}`}>
           {!collapsed ? (
-            <button onClick={() => scrollTo("home")} className="flex items-center gap-1.5 ml-1 cursor-pointer">
+            <button onClick={() => scrollTo("home")} className="sidebar-header-brand flex items-center gap-1.5 ml-1 cursor-pointer">
               <span className="text-lg font-bold text-[var(--color-ocean-600)]">木子</span>
               <span className="text-base font-medium text-[var(--color-text)]">新闻</span>
             </button>
@@ -141,7 +145,7 @@ export default function Sidebar() {
             title="首页"
           >
             {renderIcon("home")}
-            {!collapsed && <span className="text-sm">首页</span>}
+            <span className="sidebar-label text-sm" style={labelDelay(0)}>首页</span>
           </button>
 
           <button
@@ -154,17 +158,15 @@ export default function Sidebar() {
             title="推荐"
           >
             {renderIcon("recommended")}
-            {!collapsed && (
-              <span className="flex items-center gap-2 text-sm">
+            <span className="sidebar-label flex items-center gap-2 text-sm" style={labelDelay(1)}>
                 推荐
                 <span className="px-1.5 py-0.5 text-xs rounded-full bg-red-50 text-red-500">热门</span>
-              </span>
-            )}
+            </span>
           </button>
 
           <div className="my-1.5 border-t border-[var(--color-border)]" />
 
-          {CATEGORIES.map((cat) => (
+          {CATEGORIES.map((cat, index) => (
             <Link
               key={cat.key}
               href={`/${cat.key}`}
@@ -176,7 +178,7 @@ export default function Sidebar() {
               title={cat.label}
             >
               {renderIcon(cat.key)}
-              {!collapsed && <span className="text-sm">{cat.label}</span>}
+              <span className="sidebar-label text-sm" style={labelDelay(index + 2)}>{cat.label}</span>
             </Link>
           ))}
 
@@ -192,15 +194,13 @@ export default function Sidebar() {
             title="搜索"
           >
             {renderIcon("search")}
-            {!collapsed && <span className="text-sm">搜索</span>}
+            <span className="sidebar-label text-sm" style={labelDelay(CATEGORIES.length + 2)}>搜索</span>
           </Link>
         </nav>
 
-        {!collapsed && (
-          <div className="p-2 border-t border-[var(--color-border)] text-xs text-[var(--color-text-muted)] text-center">
+        <div className="sidebar-footer-label p-2 border-t border-[var(--color-border)] text-xs text-[var(--color-text-muted)] text-center">
             RSS 订阅
-          </div>
-        )}
+        </div>
       </aside>
     </>
   );

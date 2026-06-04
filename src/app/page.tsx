@@ -1,7 +1,8 @@
 ﻿"use client";
 
 import Link from "next/link";
-import { getAllNews, getHotNews } from "@/lib/news";
+import { getAllNews } from "@/lib/news";
+import { getDailySummary } from "@/lib/daily-summary";
 import { formatTime } from "@/lib/utils";
 import SearchBar from "@/components/SearchBar";
 import { CATEGORIES, CATEGORY_ICONS } from "@/types";
@@ -51,7 +52,7 @@ function getDailyQuote() {
 
 export default function HomePage() {
   const data = getAllNews();
-  const hotNews = getHotNews();
+  const summary = getDailySummary();
   const quote = getDailyQuote();
 
   const titleRef = useRef<HTMLHeadingElement>(null);
@@ -94,8 +95,7 @@ export default function HomePage() {
       const check = () => {
         const r = s2.getBoundingClientRect();
         if (r.top < window.innerHeight * 0.85) {
-          gsap.fromTo(".s2-title-line", { scaleX: 0 }, { scaleX: 1, duration: 0.4, ease: "power2.out", transformOrigin: "left center" });
-          gsap.fromTo(".s2-cols", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.35, ease: "power2.out" });
+      gsap.fromTo(".daily-summary", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" });
           cleanupScroll?.();
         }
       };
@@ -226,87 +226,119 @@ export default function HomePage() {
 
       </section>
 
-      {/* ===== Screen 2: 今日精选 ===== */}
-      <section data-section="recommended" className="min-h-screen flex flex-col justify-center py-6 sm:py-20 px-3 sm:px-6 md:px-16" ref={section2Ref}>
-        <div className="max-w-5xl mx-auto w-full">
-          {/* Section header */}
-          <div className="flex items-center gap-2 sm:gap-4 mb-4 sm:mb-8">
-            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[var(--color-ocean-300)] to-transparent max-w-[60px] sm:max-w-[120px]" />
-            <div className="text-center shrink-0">
-              <h2 className="text-xl sm:text-3xl md:text-4xl font-black text-[var(--color-text)] tracking-tight">今日精选</h2>
-              <p className="text-sm text-[var(--color-text-muted)] mt-1">推荐阅读 · 最新动态</p>
+      {/* ===== Screen 2: 今日新闻总结 ===== */}
+      <section data-section="summary" className="min-h-screen flex flex-col py-6 sm:py-16 px-4 sm:px-8 md:px-16" ref={section2Ref}>
+        <div className="max-w-4xl mx-auto w-full">
+          {/* Section header — left-aligned */}
+          <div className="mb-6 sm:mb-10">
+            <div className="flex items-center gap-3 mb-1">
+              <div className="w-1 h-6 sm:h-8 bg-[var(--color-ocean-600)] rounded-full" />
+              <h2 className="text-xl sm:text-3xl md:text-4xl font-black text-[var(--color-text)] tracking-tight">今日新闻总结</h2>
             </div>
-            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[var(--color-ocean-300)] to-transparent max-w-[60px] sm:max-w-[120px]" />
+            <p className="text-xs sm:text-sm text-[var(--color-text-muted)] ml-4 sm:ml-5">{summary.date} · 每日 9:00 更新</p>
           </div>
 
-          {/* Single column on mobile, two columns on desktop */}
-          <div className="space-y-6 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 md:gap-16">
-            {/* Top: Recommended */}
-            <div>
-              <div className="flex items-center gap-2 mb-4">
-                <div className="flex items-center justify-center w-7 h-7 rounded-lg bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200">
-                  <svg className="w-3.5 h-3.5 text-amber-500" fill="currentColor" viewBox="0 0 24 24">
-                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                  </svg>
-                </div>
-                <h3 className="text-base sm:text-lg font-bold text-[var(--color-text)]">推荐阅读</h3>
-              </div>
-              <div className="divide-y divide-[var(--color-border)] border border-[var(--color-border)] rounded-2xl overflow-hidden bg-white shadow-sm">
-                {hotNews.slice(0, 5).length > 0 ? hotNews.slice(0, 5).map((item, idx) => (
-                  <Link key={item.id} href={`/${item.category}`}
-                    className="flex items-center gap-3 px-5 py-4 hover:bg-[var(--color-ocean-50)] transition-colors group"
-                  >
-                    <span className={`flex items-center justify-center w-7 h-7 rounded-xl text-xs font-bold shrink-0 ${idx < 3 ? "bg-red-50 text-red-500" : "bg-gray-50 text-[var(--color-text-muted)]"}`}>
-                      {idx + 1}
-                    </span>
-                    <div className="min-w-0 flex-1">
-                      <div className="text-sm font-medium text-[var(--color-text)] leading-snug group-hover:text-[var(--color-ocean-700)] transition-colors">{item.title}</div>
-                      <div className="text-xs text-[var(--color-text-muted)] mt-0.5">{formatTime(item.publishedAt)}</div>
-                    </div>
-                  </Link>
-                )) : (
-                  <div className="px-5 py-12 text-center text-sm text-[var(--color-text-muted)]">暂无推荐</div>
-                )}
-              </div>
-            </div>
+          {/* Content */}
+          <div className="daily-summary space-y-8 sm:space-y-12">
+            {/* 一、今日核心事件 */}
+            <SectionBlock title="一、今日核心事件">
+              <ContentText text={summary.coreEvents} />
+            </SectionBlock>
 
-            {/* Bottom: Latest */}
-            <div>
-              <div className="flex items-center gap-2 mb-4">
-                <div className="flex items-center justify-center w-7 h-7 rounded-lg bg-gradient-to-br from-[var(--color-ocean-50)] to-blue-50 border border-[var(--color-ocean-200)]">
-                  <svg className="w-3.5 h-3.5 text-[var(--color-ocean-500)]" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
+            {/* 二、分类要点 */}
+            <SectionBlock title="二、分类要点">
+              <div className="space-y-5 sm:space-y-7">
+                <CatSection title="AI 动态" color="var(--color-ocean-600)">
+                  <ContentText text={summary.categoryHighlights.ai} />
+                </CatSection>
+                <CatSection title="机器人" color="#16a34a">
+                  <ContentText text={summary.categoryHighlights.robotics} />
+                </CatSection>
+                <CatSection title="地缘政治" color="#dc2626">
+                  <ContentText text={summary.categoryHighlights.geopolitics} />
+                </CatSection>
+                <CatSection title="金融市场" color="#ca8a04">
+                  <ContentText text={summary.categoryHighlights.finance} />
+                </CatSection>
+                <CatSection title="其他要闻" color="var(--color-text-muted)">
+                  <ContentText text={summary.categoryHighlights.other} />
+                </CatSection>
+              </div>
+            </SectionBlock>
+
+            {/* 三、AI 分析 */}
+            <SectionBlock title="三、AI 分析">
+              <div className="space-y-6 sm:space-y-8">
+                <div>
+                  <h4 className="text-base sm:text-lg font-bold text-[var(--color-text)] mb-3 flex items-center gap-2">
+                    <span className="w-1 h-4 bg-red-500 rounded-full inline-block" />
+                    地缘政治
+                  </h4>
+                  <ContentText text={summary.aiAnalysis.geopolitics} />
                 </div>
-                <h3 className="text-base sm:text-lg font-bold text-[var(--color-text)]">最新动态</h3>
+                <div className="border-t border-[var(--color-border)] pt-6 sm:pt-8">
+                  <h4 className="text-base sm:text-lg font-bold text-[var(--color-text)] mb-3 flex items-center gap-2">
+                    <span className="w-1 h-4 bg-amber-500 rounded-full inline-block" />
+                    金融市场
+                  </h4>
+                  <ContentText text={summary.aiAnalysis.finance} />
+                </div>
               </div>
-              <div className="divide-y divide-[var(--color-border)] border border-[var(--color-border)] rounded-2xl overflow-hidden bg-white shadow-sm">
-                {data.items.slice(0, 5).length > 0 ? data.items.slice(0, 5).map((item) => {
-                  const cat = CATEGORIES.find(c => c.key === item.category);
-                  return (
-                    <Link key={item.id} href={`/${item.category}`}
-                      className="flex items-center gap-3 px-5 py-4 hover:bg-[var(--color-ocean-50)] transition-colors group"
-                    >
-                      <span className="flex items-center justify-center shrink-0 w-5 h-5 text-[var(--color-ocean-400)] group-hover:text-[var(--color-ocean-600)] transition-colors"
-                        dangerouslySetInnerHTML={{ __html: CATEGORY_ICONS[item.category] || "" }}
-                      />
-                      <div className="min-w-0 flex-1">
-                        <div className="text-sm font-medium text-[var(--color-text)] leading-snug group-hover:text-[var(--color-ocean-700)] transition-colors">{item.title}</div>
-                      </div>
-                      <div className="flex items-center gap-2 shrink-0">
-                        <span className="hidden sm:inline text-xs px-2 py-1 rounded-full bg-[var(--color-bg-alt)] text-[var(--color-text-muted)] font-medium">{cat?.label}</span>
-                        <span className="text-xs text-[var(--color-text-muted)]">{formatTime(item.publishedAt)}</span>
-                      </div>
-                    </Link>
-                  );
-                }) : (
-                  <div className="px-5 py-12 text-center text-sm text-[var(--color-text-muted)]">暂无新闻</div>
-                )}
-              </div>
-            </div>
+            </SectionBlock>
+
+            {/* 四、今日判断 */}
+            <SectionBlock title="四、今日判断">
+              <ul className="space-y-2 sm:space-y-3">
+                {summary.todayJudgment.map((item, idx) => (
+                  <li key={idx} className="flex items-start gap-3 text-sm sm:text-base leading-relaxed text-[var(--color-text-secondary)]">
+                    <span className="mt-0.5 shrink-0 w-5 h-5 rounded-full bg-[var(--color-ocean-50)] text-[var(--color-ocean-600)] text-xs font-bold flex items-center justify-center">{idx + 1}</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </SectionBlock>
           </div>
         </div>
       </section>
+    </div>
+  );
+}
+
+// ─── Helper components for daily summary ───
+
+/** Top-level section with numbered heading */
+function SectionBlock({ title, children }: { title: string; children: React.ReactNode }) {
+  return (
+    <div>
+      <h3 className="text-base sm:text-xl font-black text-[var(--color-text)] mb-3 sm:mb-5 pb-2 sm:pb-3 border-b border-[var(--color-border)]">
+        {title}
+      </h3>
+      {children}
+    </div>
+  );
+}
+
+/** Category sub-section with colored label */
+function CatSection({ title, color, children }: { title: string; color: string; children: React.ReactNode }) {
+  return (
+    <div>
+      <h4 className="text-sm sm:text-base font-bold mb-2 flex items-center gap-2" style={{ color }}>
+        <span className="w-1.5 h-1.5 rounded-full inline-block shrink-0" style={{ backgroundColor: color }} />
+        {title}
+      </h4>
+      {children}
+    </div>
+  );
+}
+
+/** Renders markdown-style multi-paragraph text */
+function ContentText({ text }: { text: string }) {
+  const paragraphs = text.split(/\n\n+/).filter(Boolean);
+  return (
+    <div className="text-sm sm:text-base leading-relaxed text-[var(--color-text-secondary)] space-y-3 sm:space-y-4">
+      {paragraphs.map((p, i) => (
+        <p key={i}>{p}</p>
+      ))}
     </div>
   );
 }

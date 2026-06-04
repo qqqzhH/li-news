@@ -26,6 +26,30 @@ export const CATEGORIES: { key: Category; label: string }[] = [
   { key: "other", label: "其他要闻" },
 ];
 
+// Daily summary structure for homepage section 2
+export interface DailySummarySection {
+  title: string;
+  content: string;
+}
+
+export interface DailySummary {
+  date: string;
+  lastUpdated: string;
+  coreEvents: string;
+  categoryHighlights: {
+    ai: string;
+    robotics: string;
+    geopolitics: string;
+    finance: string;
+    other: string;
+  };
+  aiAnalysis: {
+    geopolitics: string;
+    finance: string;
+  };
+  todayJudgment: string[];
+}
+
 export const CATEGORY_LABEL: Record<Category, string> = {
   ai: "AI",
   robotics: "机器人",
