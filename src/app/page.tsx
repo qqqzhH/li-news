@@ -63,6 +63,12 @@ export default function HomePage() {
   const catsRef = useRef<HTMLDivElement>(null);
   const section2Ref = useRef<HTMLDivElement>(null);
 
+  // Shared scroll state (refs so onClick and wheel handler both see updates)
+  const freeScrollRef = useRef(false);
+  const freeScrollTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const containerRef = useRef<HTMLElement | null>(null);
+  const sectionsRef = useRef<NodeListOf<Element> | null>(null);
+
   useEffect(() => {
     const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
     tl.fromTo(titleRef.current, { opacity: 0, y: -15 }, { opacity: 1, y: 0, duration: 0.6 })
@@ -104,16 +110,19 @@ export default function HomePage() {
       check();
     }
 
-    // 接管滚轮：目标索引法，不管滚多快都只滑到正确的目标页
+    // 接管滚轮：snap 模式 + 自由滚动双态
     let cleanupWheel: (() => void) | undefined;
     const container = document.querySelector(".snap-container") as HTMLElement | null;
     if (container) {
+      containerRef.current = container;
       const sections = container.querySelectorAll("section");
+      sectionsRef.current = sections;
       const totalSections = sections.length;
+      const section2El = sections[1] as HTMLElement | null;
+
       let targetIndex = 0;
       let animating = false;
 
-      // 根据当前滚动位置同步 targetIndex
       const syncTarget = () => {
         if (animating) return;
         targetIndex = Math.round(container.scrollTop / window.innerHeight);
@@ -121,23 +130,62 @@ export default function HomePage() {
       };
       syncTarget();
 
-      const scrollToTarget = () => {
+      const scrollToIndex = (index: number) => {
         animating = true;
-        sections[targetIndex].scrollIntoView({ behavior: "smooth" });
-        // 等动画结束后恢复
+        sections[index].scrollIntoView({ behavior: "smooth" });
         setTimeout(() => { animating = false; syncTarget(); }, 500);
       };
 
+      const enableFreeScroll = () => {
+        freeScrollRef.current = true;
+        freeScrollTimerRef.current = null;
+      };
+
+      const startFreeScrollTimer = () => {
+        if (freeScrollTimerRef.current) clearTimeout(freeScrollTimerRef.current);
+        freeScrollRef.current = false;
+        freeScrollTimerRef.current = setTimeout(enableFreeScroll, 1500);
+      };
+
       const onWheel = (e: WheelEvent) => {
+        // 自由滚动模式
+        if (freeScrollRef.current) {
+          // 在第二屏顶部 + 向上滚动 → snap 回首屏
+          if (section2El) {
+            const section2Top = section2El.offsetTop;
+            const atSection2Top = container.scrollTop <= section2Top + 20;
+            if (atSection2Top && e.deltaY < 0) {
+              e.preventDefault();
+              freeScrollRef.current = false;
+              if (freeScrollTimerRef.current) clearTimeout(freeScrollTimerRef.current);
+              targetIndex = 0;
+              scrollToIndex(0);
+              return;
+            }
+          }
+          // 正常自由滚动，不拦截
+          return;
+        }
+
+        // Snap 模式：拦截滚轮，按整屏切换
         e.preventDefault();
-        // 根据滚动方向更新目标
         if (e.deltaY > 0) {
           targetIndex = Math.min(targetIndex + 1, totalSections - 1);
         } else if (e.deltaY < 0) {
           targetIndex = Math.max(targetIndex - 1, 0);
         }
-        scrollToTarget();
+        scrollToIndex(targetIndex);
+
+        // 滑到第二屏后启动自由滚动计时器
+        if (targetIndex === 1) {
+          startFreeScrollTimer();
+        } else {
+          // 回到首屏或其它位置，取消自由滚动
+          if (freeScrollTimerRef.current) clearTimeout(freeScrollTimerRef.current);
+          freeScrollRef.current = false;
+        }
       };
+
       container.addEventListener("wheel", onWheel, { passive: false });
       cleanupWheel = () => container.removeEventListener("wheel", onWheel);
     }
@@ -215,7 +263,18 @@ export default function HomePage() {
 
         {/* 探索 */}
         <div
-          onClick={() => section2Ref.current?.scrollIntoView({ behavior: "smooth" })}
+          onClick={() => {
+            const container = containerRef.current;
+            const sections = sectionsRef.current;
+            if (!container || !sections || sections.length < 2) return;
+            freeScrollRef.current = false;
+            if (freeScrollTimerRef.current) clearTimeout(freeScrollTimerRef.current);
+            (sections[1] as HTMLElement).scrollIntoView({ behavior: "smooth" });
+            freeScrollTimerRef.current = setTimeout(() => {
+              freeScrollRef.current = true;
+              freeScrollTimerRef.current = null;
+            }, 1500);
+          }}
           className="flex flex-col items-center gap-1 mb-6 sm:mb-8 text-[var(--color-text-muted)]/50 hover:text-[var(--color-ocean-500)] transition-colors cursor-pointer"
         >
           <span className="text-xs tracking-widest">探索</span>
