@@ -50,7 +50,7 @@ export default function Sidebar() {
   const isActive = (id: string) => {
     if (pathname !== "/") {
       if (id === "home") return pathname === "/";
-      if (id === "recommended") return false;
+      if (id === "summary") return false;
       return pathname === `/${id}`;
     }
     return activeSection === id;
@@ -149,15 +149,15 @@ export default function Sidebar() {
           </button>
 
           <button
-            onClick={() => scrollTo("recommended")}
+            onClick={() => scrollTo("summary")}
             className={`w-full flex items-center justify-center gap-3 px-2 py-2 rounded-lg transition-all ${
-              isActive("recommended")
+              isActive("summary")
                 ? "bg-[var(--color-ocean-100)] text-[var(--color-ocean-700)] font-medium"
                 : "text-[var(--color-text-secondary)] hover:bg-[var(--color-ocean-50)] hover:text-[var(--color-ocean-600)]"
             }`}
             title="推荐"
           >
-            {renderIcon("recommended")}
+            {renderIcon("summary")}
             <span className="sidebar-label flex items-center gap-2 text-sm" style={labelDelay(1)}>
                 推荐
                 <span className="px-1.5 py-0.5 text-xs rounded-full bg-red-50 text-red-500">热门</span>
