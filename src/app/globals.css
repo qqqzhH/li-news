@@ -110,18 +110,22 @@ body { overflow-x: hidden; width: 100%; max-width: 100vw; }
     transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-/* 主内容区 — transform 代替 margin-left，不触发重排 */
+/* 主内容区 — 真实 margin 过渡，保持右侧边缘和浏览器窗口对齐 */
 .sidebar-content-main {
-  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  min-height: 100vh;
+  transition: margin-left 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media (min-width: 768px) {
   .sidebar-content-main {
     margin-left: 256px;
-    transform: translateX(0);
   }
   body.sidebar-is-collapsed .sidebar-content-main {
-    margin-left: 256px;
-    transform: translateX(-208px);
+    margin-left: 48px;
+  }
+}
+@media (max-width: 767px) {
+  .sidebar-content-main {
+    margin-left: 0;
   }
 }
 

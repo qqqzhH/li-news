@@ -17,11 +17,11 @@ export default function RootLayout({
   return (
     <html lang="zh-CN">
       <body className="bg-[var(--color-bg)] text-[var(--color-text)] antialiased">
-        <div className="flex min-h-screen">
+        <div className="min-h-screen">
           <Sidebar />
           <TabTitleTrick />
           <EasterEggs />
-          <main className="flex-1 min-w-0 w-full p-4 md:p-6 lg:p-8 sidebar-content-main">
+          <main className="min-w-0 p-4 md:p-6 lg:p-8 sidebar-content-main">
             {children}
           </main>
         </div>

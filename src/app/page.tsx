@@ -152,71 +152,71 @@ export default function HomePage() {
     <div className="snap-container space-y-0">
 
       {/* ===== Screen 1: Hero ===== */}
-      <section data-section="home" className="min-h-screen flex flex-col justify-center items-center px-4 md:px-16 max-w-4xl mx-auto w-full">
+      <section data-section="home" className="h-screen flex flex-col items-center px-4 md:px-16 max-w-4xl mx-auto w-full overflow-hidden">
 
-        {/* Title */}
-        <div className="text-center">
-          <h1 ref={titleRef} className="text-4xl sm:text-7xl md:text-8xl font-black tracking-wide leading-none">
-            <span className="text-[var(--color-ocean-600)]">木子</span>
-            <span className="text-[var(--color-text)]">新闻</span>
-          </h1>
-          <p ref={subtitleRef} className="mt-3 sm:mt-5 text-xs sm:text-base text-[var(--color-text-muted)] max-w-md mx-auto">
-            AI 动态 · 机器人 · 地缘政治 · 金融市场
-          </p>
-          <div ref={updRef} className="mt-3 text-xs text-[var(--color-text-muted)]/60">
-            <span>每日 9:00 自动更新</span>
-            {data.lastUpdated && (
-              <>
-                <span className="mx-1.5 inline-block w-0.5 h-0.5 rounded-full bg-[var(--color-text-muted)]/40 align-middle" />
-                <span>上次更新 {formatTime(data.lastUpdated)}</span>
-              </>
-            )}
-          </div>
-        </div>
-
-        {/* Quote - daily */}
-        <div ref={quoteRef} className="mt-6 sm:mt-8 text-center">
-          <div className="inline-block px-4 sm:px-8 py-3 sm:py-4 rounded-2xl bg-gradient-to-r from-[var(--color-ocean-50)] to-blue-50 border border-[var(--color-ocean-100)] shadow-sm">
-            <p className="quote-text text-sm sm:text-lg text-[var(--color-ocean-700)] font-serif italic leading-relaxed tracking-wide" data-text={quote.text}>
-              <span className="text-2xl text-[var(--color-ocean-400)] leading-none mr-2">&ldquo;</span>
-              {quote.text}
-              <span className="text-2xl text-[var(--color-ocean-400)] leading-none ml-2">&rdquo;</span>
+        <div className="flex-1 min-h-0 flex flex-col justify-center items-center w-full pt-8 pb-4">
+          {/* Title */}
+          <div className="text-center">
+            <h1 ref={titleRef} className="text-4xl sm:text-7xl md:text-8xl font-black tracking-wide leading-none">
+              <span className="text-[var(--color-ocean-600)]">木子</span>
+              <span className="text-[var(--color-text)]">新闻</span>
+            </h1>
+            <p ref={subtitleRef} className="mt-3 sm:mt-5 text-xs sm:text-base text-[var(--color-text-muted)] max-w-md mx-auto">
+              AI 动态 · 机器人 · 地缘政治 · 金融市场
             </p>
-            {quote.author && (
-              <p className="text-xs text-[var(--color-text-muted)] mt-1.5">&mdash; {quote.author}</p>
-            )}
+            <div ref={updRef} className="mt-3 text-xs text-[var(--color-text-muted)]/60">
+              <span>每日 9:00 自动更新</span>
+              {data.lastUpdated && (
+                <>
+                  <span className="mx-1.5 inline-block w-0.5 h-0.5 rounded-full bg-[var(--color-text-muted)]/40 align-middle" />
+                  <span>上次更新 {formatTime(data.lastUpdated)}</span>
+                </>
+              )}
+            </div>
+          </div>
+
+          {/* Quote - daily */}
+          <div ref={quoteRef} className="mt-6 sm:mt-8 text-center">
+            <div className="inline-block px-4 sm:px-8 py-3 sm:py-4 rounded-2xl bg-gradient-to-r from-[var(--color-ocean-50)] to-blue-50 border border-[var(--color-ocean-100)] shadow-sm">
+              <p className="quote-text text-sm sm:text-lg text-[var(--color-ocean-700)] font-serif italic leading-relaxed tracking-wide" data-text={quote.text}>
+                <span className="text-2xl text-[var(--color-ocean-400)] leading-none mr-2">&ldquo;</span>
+                {quote.text}
+                <span className="text-2xl text-[var(--color-ocean-400)] leading-none ml-2">&rdquo;</span>
+              </p>
+              {quote.author && (
+                <p className="text-xs text-[var(--color-text-muted)] mt-1.5">&mdash; {quote.author}</p>
+              )}
+            </div>
+          </div>
+
+          {/* Search */}
+          <div ref={searchRef} className="mt-6 sm:mt-8 max-w-sm mx-auto w-full px-4 sm:px-0">
+            <SearchBar large />
+          </div>
+
+          {/* Category cards */}
+          <div ref={catsRef} className="mt-6 sm:mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 sm:gap-3 max-w-3xl mx-auto w-full px-4 sm:px-0">
+            {CATEGORIES.map((cat) => {
+              const count = data.items.filter((i) => i.category === cat.key).length;
+              return (
+                <Link key={cat.key} href={`/${cat.key}`}
+                  className="cat-card bg-white border border-[var(--color-border)] rounded-xl py-2 sm:py-3 px-2 text-center hover:border-[var(--color-ocean-400)] hover:shadow-lg hover:-translate-y-1.5 transition-all duration-250"
+                >
+                  <div className="flex justify-center mb-1 sm:mb-2 text-[var(--color-ocean-500)]">
+                    <span className="scale-75 sm:scale-100" dangerouslySetInnerHTML={{ __html: CATEGORY_ICONS[cat.key] || "" }} />
+                  </div>
+                  <div className="text-xs sm:text-sm font-semibold text-[var(--color-text)]">{cat.label}</div>
+                  <div className="text-[11px] text-[var(--color-text-muted)] mt-1">{count} 条</div>
+                </Link>
+              );
+            })}
           </div>
         </div>
-
-        {/* Search */}
-        <div ref={searchRef} className="mt-6 sm:mt-8 max-w-sm mx-auto w-full px-4 sm:px-0">
-          <SearchBar large />
-        </div>
-
-        {/* Category cards */}
-        <div ref={catsRef} className="mt-6 sm:mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 sm:gap-3 max-w-3xl mx-auto w-full px-4 sm:px-0">
-          {CATEGORIES.map((cat) => {
-            const count = data.items.filter((i) => i.category === cat.key).length;
-            return (
-              <Link key={cat.key} href={`/${cat.key}`}
-                className="cat-card bg-white border border-[var(--color-border)] rounded-xl py-2 sm:py-3 px-2 text-center hover:border-[var(--color-ocean-400)] hover:shadow-lg hover:-translate-y-1.5 transition-all duration-250"
-              >
-                <div className="flex justify-center mb-1 sm:mb-2 text-[var(--color-ocean-500)]">
-                  <span className="scale-75 sm:scale-100" dangerouslySetInnerHTML={{ __html: CATEGORY_ICONS[cat.key] || "" }} />
-                </div>
-                <div className="text-xs sm:text-sm font-semibold text-[var(--color-text)]">{cat.label}</div>
-                <div className="text-[11px] text-[var(--color-text-muted)] mt-1">{count} 条</div>
-              </Link>
-            );
-          })}
-        </div>
-
-
 
         {/* 探索 */}
         <div
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="flex flex-col items-center gap-1 mt-auto mb-[5vh] text-[var(--color-text-muted)]/50 cursor-pointer"
+          onClick={() => section2Ref.current?.scrollIntoView({ behavior: "smooth" })}
+          className="flex flex-col items-center gap-1 mb-6 sm:mb-8 text-[var(--color-text-muted)]/50 hover:text-[var(--color-ocean-500)] transition-colors cursor-pointer"
         >
           <span className="text-xs tracking-widest">探索</span>
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

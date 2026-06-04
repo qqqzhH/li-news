@@ -97,15 +97,34 @@ export default function Sidebar() {
         className={`fixed top-0 left-0 h-screen z-30 bg-[var(--color-sidebar-bg)] border-r border-[var(--color-border)] flex flex-col overflow-hidden sidebar-aside ${collapsed ? "sidebar-collapsed" : "sidebar-expanded"}`}
       >
         {/* Header */}
-        <div className="flex items-center justify-between px-3 py-3 border-b border-[var(--color-border)] min-h-0">
+        <div className={`flex items-center border-b border-[var(--color-border)] min-h-0 ${collapsed ? "justify-center px-1.5 py-3" : "justify-between px-3 py-3"}`}>
           {!collapsed ? (
             <button onClick={() => scrollTo("home")} className="flex items-center gap-1.5 ml-1 cursor-pointer">
               <span className="text-lg font-bold text-[var(--color-ocean-600)]">木子</span>
               <span className="text-base font-medium text-[var(--color-text)]">新闻</span>
             </button>
           ) : (
-            <button onClick={() => scrollTo("home")} className="mx-auto cursor-pointer">
-              <span className="text-base font-bold text-[var(--color-ocean-600)]">木</span>
+            <button
+              onClick={() => setCollapsed(false)}
+              className="flex items-center justify-center w-9 h-9 rounded-lg text-[var(--color-text-secondary)] hover:bg-[var(--color-ocean-50)] hover:text-[var(--color-ocean-600)] transition-all cursor-pointer"
+              title="展开侧栏"
+              aria-label="展开侧栏"
+            >
+              <svg className="w-4.5 h-4.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          )}
+          {!collapsed && (
+            <button
+              onClick={() => setCollapsed(true)}
+              className="flex items-center justify-center w-8 h-8 rounded-lg text-[var(--color-text-secondary)] hover:bg-[var(--color-ocean-50)] hover:text-[var(--color-ocean-600)] transition-all cursor-pointer"
+              title="折叠侧栏"
+              aria-label="折叠侧栏"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
             </button>
           )}
         </div>
@@ -176,25 +195,6 @@ export default function Sidebar() {
             {!collapsed && <span className="text-sm">搜索</span>}
           </Link>
         </nav>
-
-        {/* 折叠/展开按钮 — 在 aside 内部，始终可见 */}
-        <div className="border-t border-[var(--color-border)] p-2">
-          <button
-            onClick={() => setCollapsed(!collapsed)}
-            className="w-full flex items-center justify-center gap-2 px-2 py-2 rounded-lg text-[var(--color-text-secondary)] hover:bg-[var(--color-ocean-50)] hover:text-[var(--color-ocean-600)] transition-all cursor-pointer"
-            title={collapsed ? "展开侧栏" : "折叠侧栏"}
-          >
-            <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d={collapsed ? "M9 5l7 7-7 7" : "M15 19l-7-7 7-7"}
-              />
-            </svg>
-            {!collapsed && <span className="text-sm">折叠</span>}
-          </button>
-        </div>
 
         {!collapsed && (
           <div className="p-2 border-t border-[var(--color-border)] text-xs text-[var(--color-text-muted)] text-center">
