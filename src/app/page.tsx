@@ -144,7 +144,7 @@ export default function HomePage() {
       const startFreeScrollTimer = () => {
         if (freeScrollTimerRef.current) clearTimeout(freeScrollTimerRef.current);
         freeScrollRef.current = false;
-        freeScrollTimerRef.current = setTimeout(enableFreeScroll, 1500);
+        freeScrollTimerRef.current = setTimeout(enableFreeScroll, 500);
       };
 
       const onWheel = (e: WheelEvent) => {
@@ -273,7 +273,7 @@ export default function HomePage() {
             freeScrollTimerRef.current = setTimeout(() => {
               freeScrollRef.current = true;
               freeScrollTimerRef.current = null;
-            }, 1500);
+            }, 500);
           }}
           className="flex flex-col items-center gap-1 mb-6 sm:mb-8 text-[var(--color-text-muted)]/50 hover:text-[var(--color-ocean-500)] transition-colors cursor-pointer"
         >
