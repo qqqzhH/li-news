@@ -2,8 +2,32 @@
 import { NewsData, NewsItem, Category } from "@/types";
 
 const hardcodedData: NewsData = {
-  lastUpdated: "2026-08-01T03:23:49.033Z",
+  lastUpdated: "2026-08-02T02:44:38.133Z",
   items: [
+  {
+    id: "geopolitics-1785638556508-1",
+    title: "伊朗指控美国助长“紧张局势升级” 阿曼附近一油轮遭袭",
+    summary: "伊朗军方周六指责美国助长中东战争中的“紧张局势升级”，并警告华盛顿在该地区的盟友，要求他们“重新考虑（与美国）合作”。一艘油轮在阿曼一侧的霍尔木兹海峡入口出遭“",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.rfi.fr/cn/%E5%9B%BD%E9%99%85/20260801-%E4%BC%8A%E6%9C%97%E6%8C%87%E6%8E%A7%E7%BE%8E%E5%9B%BD%E5%8A%A9%E9%95%BF-%E7%B4%A7%E5%BC%A0%E5%B1%80%E5%8A%BF%E5%8D%87%E7%BA%A7-%E9%98%BF%E6%9B%BC%E9%99%84%E8%BF%91%E4%B8%80%E6%B2%B9%E8%BD%AE%E9%81%AD%E8%A2%AD",
+    publishedAt: "2026-08-01T15:42:43.620Z",
+    updatedAt: "2026-08-02T02:42:36.508Z",
+    importance: "normal"
+  },
+  {
+    id: "ai-1785638554613-1",
+    title: "OpenAI Astra 以约2000美元证明10项数学难题",
+    summary: "OpenAI 用下一代模型 Astra 内部版解决了数学与理论计算机科学领域的10项重大进展，总成本约2000美元（按 Sol API 价格计算）。Astra ",
+    deepDive: "",
+    category: "ai",
+    source: "X：Greg Brockman (@gdb)",
+    sourceUrl: "https://x.com/gdb/status/2083457463337287721",
+    publishedAt: "2026-08-01T07:39:02.684Z",
+    updatedAt: "2026-08-02T02:42:34.613Z",
+    importance: "hot"
+  },
   {
     id: "finance-1785554334059-2",
     title: "熊园：美联储不加息，美债为何不买账？|熊园|美债|美联储加息|议息|货币政策|通胀压力_手机网易网",
@@ -39,6 +63,126 @@ const hardcodedData: NewsData = {
     publishedAt: "2026-08-01T00:50:28.000Z",
     updatedAt: "2026-08-01T01:20:46.340Z",
     importance: "normal"
+  },
+  {
+    id: "ai-1785638554612-0",
+    title: "德国法院裁定AI音乐生成器Suno侵犯版权，驳回合理使用抗辩",
+    summary: "慕尼黑法院裁定，AI音乐生成器Suno在训练过程及输出结果中均侵犯版权，并驳回其合理使用抗辩。法院认定Suno 3.5和4版本模型可复现六首知名歌曲的原创元素，",
+    deepDive: "",
+    category: "ai",
+    source: "The Decoder：AI News（RSS）",
+    sourceUrl: "https://the-decoder.com/german-court-rules-ai-music-generator-suno-violated-copyrights-rejects-fair-use-defense",
+    publishedAt: "2026-08-01T00:00:00.000Z",
+    updatedAt: "2026-08-02T02:42:34.613Z",
+    importance: "normal"
+  },
+  {
+    id: "geopolitics-1785638556508-2",
+    title: "“主动介入中东战局，乌克兰打什么算盘”？ - 21财经",
+    summary: "乌克兰军方7月25日出动远程无人机，袭击里海水域一艘伊朗商船致其爆炸并造成船员伤亡。这次跨境远距离军事行动，成为俄乌冲突与美伊博弈出现直接战术关联的标志性事件。",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://m.21jingji.com/article/20260801/herald/342632bceaf53503a6e11089f0d5c9fe.html",
+    publishedAt: "2026-08-01T00:00:00.000Z",
+    updatedAt: "2026-08-02T02:42:36.508Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1785638556508-3",
+    title: "14国卷入乱局！中东已形成反伊朗大联盟，哈马斯彻底缴械离场|沙特|胡塞|加沙地带|唐纳德·特朗普_网易订阅",
+    summary: "当下中东局势彻底告别局部摩擦，迈入全面博弈新阶段，两大核心事件搅动全球地缘政治格局。\n\n一边是沙特牵头拉拢14国组建海上防御联盟，成型针对性反伊朗区域阵营，红海",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.163.com/dy/article/L38AKRJ50556C7IE.html",
+    publishedAt: "2026-08-01T00:00:00.000Z",
+    updatedAt: "2026-08-02T02:42:36.508Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1785638556509-9",
+    title: "“主动介入中东战局，乌克兰打什么算盘”？_新浪财经_新浪网",
+    summary: "“主动介入中东战局，乌克兰打什么算盘”？\n\n 2026年08月01日 11:33 环球网\n\n乌克兰军方7月25日出动远程无人机，袭击里海水域一艘伊朗商船致其爆炸",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/roll/2026-08-01/doc-inikurwp0727659.shtml",
+    publishedAt: "2026-08-01T00:00:00.000Z",
+    updatedAt: "2026-08-02T02:42:36.509Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1785638557942-0",
+    title: "巨震、跳水，发生了什么|油价|加息|日元|特朗普|日本央行|通胀数据_网易订阅",
+    summary: "昨夜今晨，发生了两件大事：\n\n1、日元汇率突然大幅升值，对美元一度升了3.65%，收盘升2.37%，收盘报157.57日元兑换1美元，此前贬到163.98日元对",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.163.com/dy/article/L3899C9G0519DH2H.html",
+    publishedAt: "2026-08-01T00:00:00.000Z",
+    updatedAt: "2026-08-02T02:42:37.942Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1785638557942-2",
+    title: "美联储三名持异议官员表态：抗击通胀威胁需要加息",
+    summary: "美元/人民币+0.06%\n\n美联储周三投票维持利率不变，三名投反对票的官员警示，拖延对抗通胀，未来或将被迫实施更加激进的政策。\n\n克利夫兰联储主席贝丝·哈马克周",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://news.futunn.com/post/76963061/three-dissenting-fed-officials-stated-that-raising-interest-rates-is",
+    publishedAt: "2026-08-01T00:00:00.000Z",
+    updatedAt: "2026-08-02T02:42:37.942Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1785638557942-5",
+    title: "贝森特“小纸条”曝光：美国下场拉日元，是怕美债跟着遭殃？_新浪财经_新浪网",
+    summary: "贝森特“小纸条”曝光：美国下场拉日元，是怕美债跟着遭殃？\n\n 2026年08月02日 05:06 财联社\n\n转自：财联社\n\n财联社8月2日讯（编辑 史正丞）随着",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/roll/2026-08-02/doc-inikwkfr3253758.shtml",
+    publishedAt: "2026-08-01T00:00:00.000Z",
+    updatedAt: "2026-08-02T02:42:37.942Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1785638559558-4",
+    title: "LimX Luna 发布：定义新一代交互型全尺寸人形机器人-36氪",
+    summary: "时氪分享·2026年05月25日 18:18\n\n释放具身力与美，探索物理 AI 商业价值，即日起接受预定\n\n随着具身智能持续演进，全尺寸人形机器人的落地应用正从",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://36kr.com/p/3824552110100609",
+    publishedAt: "2026-08-01T00:00:00.000Z",
+    updatedAt: "2026-08-02T02:42:39.558Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1785638559558-7",
+    title: "一台机器人的“入学考”：杭州国家级中试基地探营 谁在帮宇树、星海图们补齐“毕业证”？|活力中国调研行",
+    summary: "财联社 · 10:02 \n\n①杭州拿到国家级中试基地，背后是浙江在整机、核心部件、人工智能和应用场景上的积累；②具身智能的市场热度首先体现在机器人本体上，但企业",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://news.futunn.com/post/76964549/a-robot-s-entrance-exam-visiting-hangzhou-s-national-pilot",
+    publishedAt: "2026-08-01T00:00:00.000Z",
+    updatedAt: "2026-08-02T02:42:39.558Z",
+    importance: "normal"
+  },
+  {
+    id: "robotics-1785638559558-8",
+    title: "谷歌发布 Gemini Robotics ER 2：打造机器人的“超级大脑”，支持多机协作与原生工具调用",
+    summary: "2026-08-01 分类：前沿 阅读(2) 赞(0) \n\nGoogle 正式推出了 Gemini Robotics ER 2，这是目前最强大的机器人“具身推",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.80aj.com/2026/08/01/gemini-robotics-er2/",
+    publishedAt: "2026-08-01T00:00:00.000Z",
+    updatedAt: "2026-08-02T02:42:39.558Z",
+    importance: "hot"
   },
   {
     id: "finance-1785547247878-0",
@@ -113,6 +257,18 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
+    id: "geopolitics-1785638556508-6",
+    title: "土耳其如何确立其在国防领域的关键地位",
+    summary: "从无人机到武器系统，土耳其在短短几十年内就打造了世界上最具活力的国防工业之一。这一战略优势使其能够在北约内部以及多个国际舞台上发挥更大的影响力。 \n\n发表时间：",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.rfi.fr/cn/%E5%9B%BD%E9%99%85/20260731-%E5%9C%9F%E8%80%B3%E5%85%B6%E5%A6%82%E4%BD%95%E7%A1%AE%E7%AB%8B%E5%85%B6%E5%9C%A8%E5%9B%BD%E9%98%B2%E9%A2%86%E5%9F%9F%E7%9A%84%E5%85%B3%E9%94%AE%E5%9C%B0%E4%BD%8D",
+    publishedAt: "2026-07-31T02:42:43.620Z",
+    updatedAt: "2026-08-02T02:42:36.508Z",
+    importance: "hot"
+  },
+  {
     id: "ai-1785554330961-3",
     title: "Replit Design 推出数百设计模板",
     summary: "再也不用从空白页开始了。 Replit Design 内置了由真实设计师制作的数百个模板，涵盖手机界面、落地页到社交媒体帖子。 可以拖入一个模板开始，或在项目中",
@@ -123,6 +279,54 @@ const hardcodedData: NewsData = {
     publishedAt: "2026-07-31T00:00:07.562Z",
     updatedAt: "2026-08-01T03:18:50.961Z",
     importance: "normal"
+  },
+  {
+    id: "geopolitics-1785638556508-4",
+    title: "美军重启大规模轰炸，伊朗亮出中国这张牌，北京究竟接不接|外交|停火|美伊|中东|北京市|美军基地_网易订阅",
+    summary: "中东战局在7月底上演了极具戏剧性的反转，一场看似由美国全权掌控的军事对抗，逐渐演变成白宫难以收场的地缘困局。\n\n特朗普前脚主动按下对伊打击暂停键，试图为外交谈判",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.163.com/dy/article/L36UJ03A0556BYS4.html",
+    publishedAt: "2026-07-31T00:00:00.000Z",
+    updatedAt: "2026-08-02T02:42:36.508Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1785638556508-5",
+    title: "美国海军向南海部署一艘航母 局势再升温-国际军事-世界论坛网（电脑版）",
+    summary: "此次部署发生在中国和菲律宾船只发生对峙数天之后，亚洲地区的危机始于7月27日。\n\n7月27日当天，中国海警派遣一艘小型充气艇前往仁爱礁。抵达现场后，中国海警人员",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.wforum.com/news/international/2026/07/31/571464.html",
+    publishedAt: "2026-07-31T00:00:00.000Z",
+    updatedAt: "2026-08-02T02:42:36.508Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1785638557942-3",
+    title: "分析：市场听到的是鸽派沃什，但他自己的话却暗示可能加息_新浪财经_新浪网",
+    summary: "分析：市场听到的是鸽派沃什，但他自己的话却暗示可能加息\n\n 2026年08月01日 03:02 环球市场播报\n\n 美联储主席凯文·沃什周三言论的普遍解读是，他将",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/stock/usstock/c/2026-08-01/doc-iniktusq9183348.shtml",
+    publishedAt: "2026-07-31T00:00:00.000Z",
+    updatedAt: "2026-08-02T02:42:37.942Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1785638557942-7",
+    title: "沃什：2%通胀目标不动摇，保持独立性，关注AI变革（附全文） - 洱海新闻",
+    summary: "沃什：2%通胀目标不动摇，保持独立性，关注AI变革（附全文） - 洱海新闻\n\n美联储主席沃什视市场利率上行，为金融条件收紧的信号，亦重申2%通胀目标“无任何弹性",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://erhainews.com/n40665.html",
+    publishedAt: "2026-07-31T00:00:00.000Z",
+    updatedAt: "2026-08-02T02:42:37.942Z",
+    importance: "hot"
   },
   {
     id: "ai-1785554330960-1",
@@ -341,18 +545,6 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "finance-1785554334059-1",
-    title: "分析：市场听到的是鸽派沃什，但他自己的话却暗示可能加息_新浪财经_新浪网",
-    summary: "分析：市场听到的是鸽派沃什，但他自己的话却暗示可能加息\n\n 2026年08月01日 03:02 环球市场播报\n\n 美联储主席凯文·沃什周三言论的普遍解读是，他将",
-    deepDive: "",
-    category: "finance",
-    source: "Exa 搜索",
-    sourceUrl: "https://finance.sina.com.cn/stock/usstock/c/2026-08-01/doc-iniktusq9183348.shtml",
-    publishedAt: "2026-07-31T00:00:00.000Z",
-    updatedAt: "2026-08-01T03:18:54.059Z",
-    importance: "hot"
-  },
-  {
     id: "finance-1785554334059-4",
     title: "5万亿美元加息押注瓦解！美联储按兵不动，史上最大利率交易遭遇反转提供者FX168",
     summary: "金融界\n\n金融界\n\n关注\n\n0\n\n0\n\n获赞\n\n粉丝\n\n喜欢 0 0收藏举报\n\n— 分享 —\n\n摘要：来源：金十数据美联储在最新政策会议上选择维持利率不变后，市",
@@ -509,6 +701,18 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
+    id: "robotics-1785638559558-6",
+    title: "比亚迪玩跨界？进军人形机器人，代号“尧舜禹”-36氪",
+    summary: "投行圈子·2026年06月05日 21:55\n\n比亚迪，闷声搞事。\n\n两年前就秘密立项，代号“尧舜禹”，四百多人研发团队、四千多名上下游工程师协同作战，这不是科",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://36kr.com/p/3840170310502663",
+    publishedAt: "2026-07-30T00:00:00.000Z",
+    updatedAt: "2026-08-02T02:42:39.558Z",
+    importance: "hot"
+  },
+  {
     id: "geopolitics-1785554332838-9",
     title: "观察｜伊拉克埃及接连遇袭，美伊僵局下中东战火为何越烧越大？|沙特|伊朗|也门|胡塞|伊拉克政府_网易订阅",
     summary: "Exa 搜索（Exa）是一家专注于人工智能领域的搜索引擎初创公司，近期完成了一轮融资，具体金额未披露，但投资方包括知名风投机构 Andreessen Horow",
@@ -590,6 +794,18 @@ const hardcodedData: NewsData = {
     sourceUrl: "https://www.gasgoo.com/robot/news/70467759-%E8%AE%A9%E6%9C%BA%E5%99%A8%E4%BA%BA-%E6%91%B8%E6%87%82-%E4%B8%96%E7%95%8C/",
     publishedAt: "2026-07-29T00:00:00.000Z",
     updatedAt: "2026-08-01T03:18:55.823Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1785638559558-9",
+    title: "车企扎堆“造人”！比亚迪人形机器人8月发布、小鹏IRON量产在即，理想双路并进_新浪财经_新浪网",
+    summary: "车企扎堆“造人”！比亚迪人形机器人8月发布、小鹏IRON量产在即，理想双路并进\n\n炒股就看金麒麟分析师研报，权威，专业，及时，全面，助您挖掘潜力主题机会！\n\n中",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/stock/t/2026-07-28/doc-inikivty8179610.shtml",
+    publishedAt: "2026-07-28T00:00:00.000Z",
+    updatedAt: "2026-08-02T02:42:39.558Z",
     importance: "hot"
   },
   {
