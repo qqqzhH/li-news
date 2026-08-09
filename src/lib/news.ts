@@ -2,8 +2,44 @@
 import { NewsData, NewsItem, Category } from "@/types";
 
 const hardcodedData: NewsData = {
-  lastUpdated: "2026-08-08T01:18:57.348Z",
+  lastUpdated: "2026-08-09T01:18:01.525Z",
   items: [
+  {
+    id: "geopolitics-1786238132059-0",
+    title: "万斯称美伊冲突仍处于“博弈中段”_中国经济网——国家经济门户",
+    summary: "Exa 搜索（Exa）是一家专注于人工智能驱动的语义搜索引擎初创公司，近期完成了一轮 1700 万美元的 A 轮融资。本轮融资由 Lightspeed Vent",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "http://intl.ce.cn/qqss/202608/t20260809_3136129.shtml",
+    publishedAt: "2026-08-08T22:46:00.000Z",
+    updatedAt: "2026-08-09T01:15:32.060Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1786238133730-6",
+    title: "美国现货比特币ETF单周流入10亿美元，创4月来新高_新浪财经_新浪网",
+    summary: "美国现货比特币ETF单周流入10亿美元，创4月来新高\n\n2026年08月09日 06:25\n\n[格隆汇APP](https://www.gelonghui.co",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/stock/bxjj/2026-08-09/doc-inimshav2111263.shtml",
+    publishedAt: "2026-08-08T22:26:49.000Z",
+    updatedAt: "2026-08-09T01:15:33.730Z",
+    importance: "hot"
+  },
+  {
+    id: "ai-1786238130279-2",
+    title: "Grok Imagine 图像编辑迎来重大升级",
+    summary: "马斯克旗下人工智能公司xAI于2023年7月正式成立，其核心产品Grok聊天机器人于同年11月向X平台（原推特）Premium+用户开放测试。2024年3月，x",
+    deepDive: "",
+    category: "ai",
+    source: "X：Elon Musk (@elonmusk, xAI)",
+    sourceUrl: "https://x.com/elonmusk/status/2086127247077843282",
+    publishedAt: "2026-08-08T16:27:48.730Z",
+    updatedAt: "2026-08-09T01:15:30.279Z",
+    importance: "hot"
+  },
   {
     id: "geopolitics-1786151713242-2",
     title: "黎巴嫩：黎以谈判在边界问题等方面取得进展_中国经济网——国家经济门户",
@@ -15,6 +51,102 @@ const hardcodedData: NewsData = {
     publishedAt: "2026-08-08T00:06:00.000Z",
     updatedAt: "2026-08-08T01:15:13.242Z",
     importance: "normal"
+  },
+  {
+    id: "ai-1786238130278-0",
+    title: "苹果 Mac 简体中文支持文档更新，“Apple 智能”阿里千问扩展现身",
+    summary: "IT之家报道，全球半导体行业迎来重大整合。芯片巨头英伟达于4月15日正式宣布，将以400亿美元全股票交易方式收购英国芯片设计公司安谋（Arm）。根据协议，英伟达",
+    deepDive: "",
+    category: "ai",
+    source: "IT之家（RSS）",
+    sourceUrl: "https://www.ithome.com/0/987/366.htm",
+    publishedAt: "2026-08-08T00:00:00.000Z",
+    updatedAt: "2026-08-09T01:15:30.278Z",
+    importance: "normal"
+  },
+  {
+    id: "ai-1786238130279-1",
+    title: "OpenAI 桌面端 ChatGPT 上线语音交互功能，可语音操控电脑执行多步骤任务",
+    summary: "OpenAI 更新 ChatGPT 桌面应用，新增对 ChatGPT Voice 的支持，用户可直接通过语音对话控制 AI 智能体并让其在电脑上执行任务。该功能",
+    deepDive: "",
+    category: "ai",
+    source: "IT之家（RSS）",
+    sourceUrl: "https://www.ithome.com/0/987/452.htm",
+    publishedAt: "2026-08-08T00:00:00.000Z",
+    updatedAt: "2026-08-09T01:15:30.279Z",
+    importance: "normal"
+  },
+  {
+    id: "ai-1786238130279-3",
+    title: "Claude Code v2.1.225 发布：新增网关支出限额支持与工作区信任提示",
+    summary: "Claude Code v2.1.225 为用量警告新增网关支出限额支持，达到限额时提示将显示上限、重置时间及操作者消息。该版本还为不受信任目录中的 claud",
+    deepDive: "",
+    category: "ai",
+    source: "Claude Code：GitHub Releases（RSS）",
+    sourceUrl: "https://github.com/anthropics/claude-code/releases/tag/v2.1.225",
+    publishedAt: "2026-08-08T00:00:00.000Z",
+    updatedAt: "2026-08-09T01:15:30.279Z",
+    importance: "hot"
+  },
+  {
+    id: "ai-1786238130279-4",
+    title: "Cloudflare：AI 机器人流量已超越人类，预计五年后人机流量比达 1:1000 近乎“误差”",
+    summary: "Cloudflare 在 2026 年第二季度财报电话会议上披露，AI 机器人等非人类流量已于 2026 年 5 月正式超过人类流量，比 CEO 此前预测的 2",
+    deepDive: "",
+    category: "ai",
+    source: "IT之家（RSS）",
+    sourceUrl: "https://www.ithome.com/0/987/438.htm",
+    publishedAt: "2026-08-08T00:00:00.000Z",
+    updatedAt: "2026-08-09T01:15:30.279Z",
+    importance: "normal"
+  },
+  {
+    id: "ai-1786238130279-5",
+    title: "Firebird 在亚美尼亚启动独联体地区最大 AI 工厂",
+    summary: "NVIDIA于GTC 2025大会发布新一代Blackwell Ultra GPU及Vera Rubin平台，标志着AI计算架构的又一次跃升。Blackwell",
+    deepDive: "",
+    category: "ai",
+    source: "NVIDIA Blog（RSS）",
+    sourceUrl: "https://blogs.nvidia.com/blog/firebird-ai-factory-armenia-blackwell-rubin-dsx",
+    publishedAt: "2026-08-08T00:00:00.000Z",
+    updatedAt: "2026-08-09T01:15:30.279Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1786238133730-0",
+    title: "【环球财经】美国7月非农就业数据疲弱 纽约股市三大股指7日上涨_新浪财经_新浪网",
+    summary: "【环球财经】美国7月非农就业数据疲弱 纽约股市三大股指7日上涨\n\n 2026年08月08日 08:33 中国金融信息网\n\n新华财经纽约8月7日电（刘亚南 左婧骁",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/jjxw/2026-08-08/doc-inimqccv2815851.shtml",
+    publishedAt: "2026-08-08T00:00:00.000Z",
+    updatedAt: "2026-08-09T01:15:33.730Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1786238133730-1",
+    title: "非农利空变利好？SpaceX暴涨15%，光通信大涨，存储芯片却遭抛售_新浪财经_新浪网",
+    summary: "非农利空变利好？SpaceX暴涨15%，光通信大涨，存储芯片却遭抛售\n\n滚动播报\n\n（来源：财闻）\n\n美股三大指数周五集体收涨，均创4月中旬以来最高单周涨幅。纳",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/jjxw/2026-08-08/doc-inimqimt2709680.shtml",
+    publishedAt: "2026-08-08T00:00:00.000Z",
+    updatedAt: "2026-08-09T01:15:33.730Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1786238133730-2",
+    title: "美股因就业恶化、加息预期回落上涨……标普500创历史新高 - 阿视亚经济",
+    summary: "美股因就业恶化、加息预期回落上涨……标普500创历史新高 - 阿视亚经济\n\ncontainer\n\n语言\n\nDim\n\n## S&P再创历史最高纪录就业恶化被视为利",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.asiae.co.kr/cn/article/2026080809164784208",
+    publishedAt: "2026-08-08T00:00:00.000Z",
+    updatedAt: "2026-08-09T01:15:33.730Z",
+    importance: "hot"
   },
   {
     id: "finance-1786151714653-0",
@@ -87,6 +219,102 @@ const hardcodedData: NewsData = {
     publishedAt: "2026-08-07T01:15:10.331Z",
     updatedAt: "2026-08-08T01:15:13.241Z",
     importance: "hot"
+  },
+  {
+    id: "finance-1786238133730-3",
+    title: "统筹平衡多重目标 精准施策用好货币政策工具 - 中国金融信息网",
+    summary: "中国证券报|2026年08月07日\n\n阅读量：\n\n专家表示，在推动经济持续向新向优向好发展过程中，货币政策需要统筹平衡多重目标。当前，降准、降息仍在政策工具箱内",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.cnfin.com/hb-lb/detail/20260807/4452010_1.html",
+    publishedAt: "2026-08-07T00:00:00.000Z",
+    updatedAt: "2026-08-09T01:15:33.730Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1786238133730-4",
+    title: "“今天要买带字母的！”发生了什么？ - 21财经",
+    summary: "中国证券报\n\n今天A股上午收盘，上证指数上涨0.49%，深证成指上涨1.31%，创业板指上涨1.75%，科创综指上涨1.78%。全市场半日成交额为16767亿元",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://m.21jingji.com/article/20260807/herald/0e10ccacf7489a8a5c7439b84b6161d7.html",
+    publishedAt: "2026-08-07T00:00:00.000Z",
+    updatedAt: "2026-08-09T01:15:33.730Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1786238133730-5",
+    title: "谷歌天量发债叠加沃什加息信号 美债收益率集体大涨 - 中国金融信息网",
+    summary: "新华财经| 2026年08月07日\n\n市场人士表示，美债调整的直接推手来自两个方向的同步施压：企业债天量供给冲击，以及美联储主席沃什释放出的明确加息信号。\n\n新",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.cnfin.com/zs-lb/detail/20260807/4452078_1.html",
+    publishedAt: "2026-08-07T00:00:00.000Z",
+    updatedAt: "2026-08-09T01:15:33.730Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1786238133730-7",
+    title: "买转全球｜8.6美股复盘：非农前夕美股指数淡定，财报分化个股剧烈波动_新浪财经_新浪网",
+    summary: "买转全球｜8.6美股复盘：非农前夕美股指数淡定，财报分化个股剧烈波动\n\n 2026年08月07日 16:42 市场资讯\n\n（来源：华泰证券财富管理）\n\n周四美股",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/roll/2026-08-07/doc-inimnrap3231075.shtml",
+    publishedAt: "2026-08-07T00:00:00.000Z",
+    updatedAt: "2026-08-09T01:15:33.730Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1786238133730-8",
+    title: "看涨情绪升至2021年来极端水平！美股反弹之际美银泼冷水：投资者应降低风险资产敞口_新浪财经_新浪网",
+    summary: "看涨情绪升至2021年来极端水平！美股反弹之际美银泼冷水：投资者应降低风险资产敞口\n\n 2026年08月07日 20:41 智通财经网\n\n美国银行策略师警告称，",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/stock/hkstock/ggscyd/2026-08-07/doc-inimnzsm4728244.shtml",
+    publishedAt: "2026-08-07T00:00:00.000Z",
+    updatedAt: "2026-08-09T01:15:33.730Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1786238133730-9",
+    title: "比特币大户买入价值12亿美元的比特币，ETF吸引7.5亿美元资金",
+    summary: "## 比特币大户本周累计增持价值12亿美元的BTC，同时现货ETF吸引资金7.54亿美元。 \n\n作者 Omkar Godbole\n\n 2026年8月7日 上午5",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.coindesk.com/zh/markets/2026/08/07/bitcoin-whales-load-up-on-usd1-2-billion-in-btc-as-etfs-attract-usd750-million",
+    publishedAt: "2026-08-07T00:00:00.000Z",
+    updatedAt: "2026-08-09T01:15:33.730Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1786238135074-4",
+    title: "在合肥，机器人要上“大学”｜活力中国调研行 - 21经济网",
+    summary: "###### 2026年08月07日 12:33 21世纪经济报道 21财经APP 吴文汐 \n\n21世纪经济报道记者吴文汐 合肥报道 “十五五”时期，是具身智能",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.21jingji.com/article/20260807/herald/823dbeec392ed55f814f4aafc176bbb6.html",
+    publishedAt: "2026-08-07T00:00:00.000Z",
+    updatedAt: "2026-08-09T01:15:35.074Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1786238135074-5",
+    title: "活力中国调研行丨安徽人形机器人加速迈向商用-新华网",
+    summary: "Exa 搜索（Exa）近日宣布完成 1700 万美元 A 轮融资，由 Lightspeed Venture Partners 领投，NVIDIA 旗下 NVen",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.news.cn/local/20260807/998c64195e554258b2d20f5d6916ee48/c.html",
+    publishedAt: "2026-08-07T00:00:00.000Z",
+    updatedAt: "2026-08-09T01:15:35.074Z",
+    importance: "normal"
   },
   {
     id: "ai-1786151711236-0",
@@ -411,6 +639,18 @@ const hardcodedData: NewsData = {
     publishedAt: "2026-08-06T00:00:00.000Z",
     updatedAt: "2026-08-08T01:15:14.655Z",
     importance: "normal"
+  },
+  {
+    id: "robotics-1786238135074-6",
+    title: "优艾智合具身智能系列新品全球首发：3年赋能10000个工业现场-36氪",
+    summary: "Exa 搜索（Exa Labs）近日宣布完成 1700 万美元 A 轮融资，由 Lightspeed Venture Partners 领投，CoinFund、",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.36kr.com/p/3875046492165381",
+    publishedAt: "2026-08-05T00:00:00.000Z",
+    updatedAt: "2026-08-09T01:15:35.075Z",
+    importance: "hot"
   },
   {
     id: "geopolitics-1785926040406-5",
@@ -953,7 +1193,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "robotics-1786151716013-1",
+    id: "robotics-1786238135074-0",
     title: "人形机器人的2026，产量狂欢与落地迷思-36氪",
     summary: "半导体产业纵横·2026年08月03日 07:44\n\n不只会跳舞的机器人，才能活过行业淘汰赛。\n\n2026年过半，人形机器人行业交出了一份看似光鲜的成绩单。\n\n",
     deepDive: "",
@@ -961,8 +1201,32 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://36kr.com/p/3921839985454470",
     publishedAt: "2026-08-03T00:00:00.000Z",
-    updatedAt: "2026-08-08T01:15:16.013Z",
+    updatedAt: "2026-08-09T01:15:35.074Z",
     importance: "hot"
+  },
+  {
+    id: "robotics-1786238135074-3",
+    title: "剑指机器人界的\"安卓\"？谷歌DeepMind发布通用AI“大脑”",
+    summary: "财联社· 08/03 15:44\n\n①谷歌旗下DeepMind近期推出Gemini Robotics 2系列套件，定位为机器人通用 “智能层”，支持跨机型适配；",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://news.futunn.com/post/77004584/aiming-to-create-the-android-of-robotics-google-deepmind-unveils",
+    publishedAt: "2026-08-03T00:00:00.000Z",
+    updatedAt: "2026-08-09T01:15:35.074Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1786238135075-8",
+    title: "KDDIなどが国産ヒューマノイドにGemini搭載、自然な会話で人間味ある接客 | 日経クロステック（xTECH）",
+    summary: "- 市川 大地\n- AI・データラボ／日経クロステック記者\n\n KDDIとAVITAは2026年7月30日、共同開発した国産ヒューマノイド（ヒト型ロボット）と米",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://xtech.nikkei.com/atcl/nxt/column/18/00001/11939/",
+    publishedAt: "2026-08-03T00:00:00.000Z",
+    updatedAt: "2026-08-09T01:15:35.075Z",
+    importance: "normal"
   },
   {
     id: "robotics-1786151716013-2",
