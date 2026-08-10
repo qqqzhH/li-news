@@ -2,8 +2,68 @@
 import { NewsData, NewsItem, Category } from "@/types";
 
 const hardcodedData: NewsData = {
-  lastUpdated: "2026-08-09T01:18:01.525Z",
+  lastUpdated: "2026-08-10T03:16:57.011Z",
   items: [
+  {
+    id: "ai-1786331723976-1",
+    title: "Anthropic 称已基本解决提示注入攻击",
+    summary: "Anthropic 的 Boris Cherny 表示，通过模型训练已基本解决 Claude 模型在实际使用中的提示注入威胁。独立研究者的基准测试显示，叠加模型",
+    deepDive: "",
+    category: "ai",
+    source: "X：Boris Cherny (@bcherny)",
+    sourceUrl: "https://x.com/bcherny/status/2086520950259118464",
+    publishedAt: "2026-08-09T18:32:14.883Z",
+    updatedAt: "2026-08-10T03:15:23.977Z",
+    importance: "normal"
+  },
+  {
+    id: "ai-1786331723975-0",
+    title: "Seedance 2.5 上线一周新增六种创意玩法",
+    summary: "Seedance 2.5 上线一周后，国内外社区涌现出时间静止、超级英雄变身、创意广告、K-pop MV、电商广告、拉片复刻等六类热门玩法。经实测，该版本人物面",
+    deepDive: "",
+    category: "ai",
+    source: "公众号：卡尔的AI沃茨",
+    sourceUrl: "https://mp.weixin.qq.com/s?__biz=Mzg3MTk3NzYzNw%3D%3D&mid=2247509275&idx=1&sn=48cc15b0f9b22173ce93350da61f15dc",
+    publishedAt: "2026-08-09T00:00:00.000Z",
+    updatedAt: "2026-08-10T03:15:23.976Z",
+    importance: "normal"
+  },
+  {
+    id: "ai-1786331723977-2",
+    title: "用DistilBERT LoRA与TF-IDF基线做IMDb情感分析：校准、可解释性与半监督学习",
+    summary: "本教程基于Stanford IMDb数据集构建端到端情感分析流程，对比TF-IDF逻辑回归基线与LoRA微调的DistilBERT。模型评估涵盖准确率、macr",
+    deepDive: "",
+    category: "ai",
+    source: "MarkTechPost（RSS）",
+    sourceUrl: "https://www.marktechpost.com/2026/08/09/imdb-sentiment-analysis-with-distilbert-lora-tf-idf-baselines-calibration-interpretability-robustness-testing-and-semi-supervised-learning",
+    publishedAt: "2026-08-09T00:00:00.000Z",
+    updatedAt: "2026-08-10T03:15:23.977Z",
+    importance: "normal"
+  },
+  {
+    id: "ai-1786331723977-3",
+    title: "从黑客事件中汲取的教训：前沿模型攻击暴露激励与治理失衡",
+    summary: "近期前沿模型引发的网络攻击事件促使作者反思当前激励体系难以适应快速技术变革。科技公司受增长驱动持续扩展，而政府行动迟缓，双方均未准备好应对未来12-24个月的挑",
+    deepDive: "",
+    category: "ai",
+    source: "Nathan Lambert：Interconnects（RSS）",
+    sourceUrl: "https://www.interconnects.ai/p/lessons-from-the-hacks",
+    publishedAt: "2026-08-09T00:00:00.000Z",
+    updatedAt: "2026-08-10T03:15:23.977Z",
+    importance: "normal"
+  },
+  {
+    id: "geopolitics-1786331725877-5",
+    title: "国际观察｜沙土巴三国“共同防务”防什么-新华网",
+    summary: "Exa 搜索是一家专注于人工智能领域的搜索初创公司，其核心产品是一款面向 AI 模型的网络索引工具，旨在解决大语言模型在实时信息获取上的局限性。该公司由 Wil",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.news.cn/20260809/7dfccb8f326c46419b9c57e08d3d08c6/c.html",
+    publishedAt: "2026-08-09T00:00:00.000Z",
+    updatedAt: "2026-08-10T03:15:25.877Z",
+    importance: "hot"
+  },
   {
     id: "geopolitics-1786238132059-0",
     title: "万斯称美伊冲突仍处于“博弈中段”_中国经济网——国家经济门户",
@@ -41,6 +101,18 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
+    id: "geopolitics-1786331725874-1",
+    title: "对峙特朗普：伊朗控制关键海峡的豪赌 - DW",
+    summary: "媒体：台湾2027国防预算或逾GDP3%，首度破1兆新台币\n\n## 媒体：台湾2027国防预算或逾GDP3%，首度破1兆新台币\n\n据台湾媒体周日报道，随着政府加",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://amp.dw.com/zh/%E5%B0%81%E9%94%81%E9%9C%8D%E5%B0%94%E6%9C%A8%E5%85%B9%E6%B5%B7%E5%B3%A1%E4%BC%8A%E6%9C%97%E5%8D%9A%E5%BC%88%E7%89%B9%E6%9C%97%E6%99%AE%E7%9A%84%E9%A3%8E%E9%99%A9/a-78288365",
+    publishedAt: "2026-08-08T03:15:25.663Z",
+    updatedAt: "2026-08-10T03:15:25.876Z",
+    importance: "hot"
+  },
+  {
     id: "geopolitics-1786151713242-2",
     title: "黎巴嫩：黎以谈判在边界问题等方面取得进展_中国经济网——国家经济门户",
     summary: "Exa 搜索（Exa）是一家专注于人工智能驱动的语义搜索引擎初创公司，近期完成了一轮融资，具体金额未披露，但据知情人士透露，该轮融资由知名风险投资机构 Andr",
@@ -50,6 +122,90 @@ const hardcodedData: NewsData = {
     sourceUrl: "http://intl.ce.cn/qqss/202608/t20260808_3135714.shtml",
     publishedAt: "2026-08-08T00:06:00.000Z",
     updatedAt: "2026-08-08T01:15:13.242Z",
+    importance: "normal"
+  },
+  {
+    id: "geopolitics-1786331725877-8",
+    title: "欧盟与澳大利亚达成自由贸易协定 寻求对冲美国不确定性风险__上海有色网",
+    summary: "欧盟与澳大利亚于周二达成了一项全面贸易协定，这是美国盟友在全球地缘政治不确定性加剧背景下，重新审视经济关系的最新举措。\n\n这项历经近八年谈判达成的协定，将取消双",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://news.smm.cn/news/103822581",
+    publishedAt: "2026-08-08T00:00:00.000Z",
+    updatedAt: "2026-08-10T03:15:25.877Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1786331725877-9",
+    title: "沙特-土耳其-巴基斯坦协议如何考验伊朗的地区战略 - AL-MONITOR: The Middle Eastʼs leading independent news source since 2012",
+    summary: "## Subscribe for as low as $2/week to access this story and all reporting.\n\nBy e",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.al-monitor.com/zh-hans/originals/2026/08/shate-tuerqi-bajisitanxieyiruhekaoyanyilangdedequzhane",
+    publishedAt: "2026-08-08T00:00:00.000Z",
+    updatedAt: "2026-08-10T03:15:25.877Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1786331727264-2",
+    title: "外汇周评：历史性联手撼动汇市？日元狂飙后回调，非农意外爆冷，美元刷新七周低点_外汇动态报道",
+    summary: "——八月首周，美日自1998年来首次联手干预汇市，日元一度飙至155的三个月高位，但受基本面制约迅速回吐涨幅，美元指数则因美国7月非农意外负增长而连续第二周走软",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://fx678.com/C/20260808/202608081156182062.html",
+    publishedAt: "2026-08-08T00:00:00.000Z",
+    updatedAt: "2026-08-10T03:15:27.264Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1786331727264-4",
+    title: "非农爆冷下滑，美联储9月还会加息吗_凤凰网",
+    summary: "2026年08月08日 10:00:25 来自北京\n\n作者 | 第一财经 樊志菁\n\n备受瞩目的非农报告意外爆冷，美国7月就业岗位出现减少，5、6月就业数据也被大",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.ifeng.com/c/8vPxJ2p2zZw",
+    publishedAt: "2026-08-08T00:00:00.000Z",
+    updatedAt: "2026-08-10T03:15:27.264Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1786331727264-5",
+    title: "彻底爆冷！_新浪财经_新浪网",
+    summary: "2026年08月08日 10:26 市场资讯\n\n1.美国7月非农就业\"爆冷\"转负\n\n美国劳工统计局公布7月非农就业数据，新增就业人数减少2.3万人，远低于市场预",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/roll/2026-08-08/doc-inimqimv9856885.shtml",
+    publishedAt: "2026-08-08T00:00:00.000Z",
+    updatedAt: "2026-08-10T03:15:27.264Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1786331727264-6",
+    title: "美联储暂不加息，为何会危机重重？-36氪",
+    summary: "东针商略· 2026年07月31日 20:12\n\n市场为何反应剧烈？\n\n美联储主席凯文·沃什在新闻发布会上的一席话，意外引爆了市场对央行抗通胀决心的信任危机。\n",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.36kr.com/p/3919446807506562",
+    publishedAt: "2026-08-08T00:00:00.000Z",
+    updatedAt: "2026-08-10T03:15:27.265Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1786331727265-9",
+    title: "Polymarket 上“美联储 9 月加息 25 个基点”概率回落至 37%， 24 小时下降 12% - Odaily",
+    summary: "PPP 预测市场工具监测显示，非农数据公布后，Polymarket 上“美联储 9 月加息 25 个基点”概率回落至 37%，24 小时下降 12%；9 月维持",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.odaily.news/zh-CN/newsflash/507861",
+    publishedAt: "2026-08-08T00:00:00.000Z",
+    updatedAt: "2026-08-10T03:15:27.265Z",
     importance: "normal"
   },
   {
@@ -221,6 +377,18 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
+    id: "robotics-1786331728255-3",
+    title: "活力中国调研行丨安徽人形机器人加速迈向商用-新华网",
+    summary: "Exa 搜索（Exa）是一家专注于人工智能驱动的企业级搜索服务提供商，其核心产品为面向开发者的神经搜索 API。该 API 基于大型语言模型（LLM）技术，能够",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "http://www.news.cn/20260807/ed57cffcc6c441c3aacb10bc6f86c6a6/c.html",
+    publishedAt: "2026-08-07T00:00:00.000Z",
+    updatedAt: "2026-08-10T03:15:28.255Z",
+    importance: "normal"
+  },
+  {
     id: "finance-1786238133730-3",
     title: "统筹平衡多重目标 精准施策用好货币政策工具 - 中国金融信息网",
     summary: "中国证券报|2026年08月07日\n\n阅读量：\n\n专家表示，在推动经济持续向新向优向好发展过程中，货币政策需要统筹平衡多重目标。当前，降准、降息仍在政策工具箱内",
@@ -303,18 +471,6 @@ const hardcodedData: NewsData = {
     publishedAt: "2026-08-07T00:00:00.000Z",
     updatedAt: "2026-08-09T01:15:35.074Z",
     importance: "hot"
-  },
-  {
-    id: "robotics-1786238135074-5",
-    title: "活力中国调研行丨安徽人形机器人加速迈向商用-新华网",
-    summary: "Exa 搜索（Exa）近日宣布完成 1700 万美元 A 轮融资，由 Lightspeed Venture Partners 领投，NVIDIA 旗下 NVen",
-    deepDive: "",
-    category: "robotics",
-    source: "Exa 搜索",
-    sourceUrl: "https://www.news.cn/local/20260807/998c64195e554258b2d20f5d6916ee48/c.html",
-    publishedAt: "2026-08-07T00:00:00.000Z",
-    updatedAt: "2026-08-09T01:15:35.074Z",
-    importance: "normal"
   },
   {
     id: "ai-1786151711236-0",
@@ -1193,7 +1349,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "robotics-1786238135074-0",
+    id: "robotics-1786331728255-5",
     title: "人形机器人的2026，产量狂欢与落地迷思-36氪",
     summary: "半导体产业纵横·2026年08月03日 07:44\n\n不只会跳舞的机器人，才能活过行业淘汰赛。\n\n2026年过半，人形机器人行业交出了一份看似光鲜的成绩单。\n\n",
     deepDive: "",
@@ -1201,11 +1357,11 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://36kr.com/p/3921839985454470",
     publishedAt: "2026-08-03T00:00:00.000Z",
-    updatedAt: "2026-08-09T01:15:35.074Z",
+    updatedAt: "2026-08-10T03:15:28.255Z",
     importance: "hot"
   },
   {
-    id: "robotics-1786238135074-3",
+    id: "robotics-1786331728255-7",
     title: "剑指机器人界的\"安卓\"？谷歌DeepMind发布通用AI“大脑”",
     summary: "财联社· 08/03 15:44\n\n①谷歌旗下DeepMind近期推出Gemini Robotics 2系列套件，定位为机器人通用 “智能层”，支持跨机型适配；",
     deepDive: "",
@@ -1213,7 +1369,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://news.futunn.com/post/77004584/aiming-to-create-the-android-of-robotics-google-deepmind-unveils",
     publishedAt: "2026-08-03T00:00:00.000Z",
-    updatedAt: "2026-08-09T01:15:35.074Z",
+    updatedAt: "2026-08-10T03:15:28.255Z",
     importance: "hot"
   },
   {

@@ -3,6 +3,18 @@ import { NewsItem } from "@/types";
 
 const items: NewsItem[] = [
   {
+    id: "geopolitics-1786331725877-5",
+    title: "国际观察｜沙土巴三国“共同防务”防什么-新华网",
+    summary: "Exa 搜索是一家专注于人工智能领域的搜索初创公司，其核心产品是一款面向 AI 模型的网络索引工具，旨在解决大语言模型在实时信息获取上的局限性。该公司由 Will Bryk 和 Jeff Wang 于 2021 年共同创立，总部位于旧金山。Exa 的搜索引擎采用独特的“嵌入”技术，能够理解查询的语义而非仅依赖关键词匹配，从而为 AI 应用提供更精准、更相关的网页结果。截至目前，Exa 已累计融资 1700 万美元，投资方包括 OpenAI 创始成员 Andrej Karpathy、Former Stripe 高管 Lachy Groom 以及知名风投机构 A16Z 等。其客户涵盖多家头部 AI 实验室和科技公司，包括 OpenAI、Meta、Anthropic、Notion 和 Perplexity。Exa 的商业模式为 API 订阅制，按查询量收费，其搜索索引覆盖超过 10 亿个网页。公司近期还推出了新功能“Exa Answer”，允许用户直接获取基于搜索结果的 AI 生成答案，进一步强化其在 AI 原生搜索领域的定位。",
+    deepDive: "## AI 解读\n\n核心要点提炼：  \n沙土巴三国“共同防务”机制的本质，是地缘政治博弈下的安全再平衡。三国试图通过军事协作对冲外部干预风险，尤其在红海航道安全、地区代理人冲突及能源设施保护等议题上形成联动。此举表面聚焦“防务”，实则指向经济走廊安全化与战略资源控制权，折射出中东安全架构碎片化趋势。\n\n影响分析：  \n短期看，该机制将强化三国在区域危机中的协同反应能力，削弱域外力量单边介入的便利性，尤其对红海航运通道的管控权产生直接牵制。中期而言，可能倒逼周边国家调整安全策略，引发军备竞合升级，并影响国际能源运输定价预期。值得警惕的是，若三国合作缺乏制度化约束，极易因内部利益分歧演变为“联盟内博弈”，反而加剧区域不确定性。对全球供应链而言，红海-波斯湾走廊的军事化倾向将推高航运保险成本，间接扰动欧亚贸易节奏。中方需关注该机制是否与“一带一路”安全需求形成互补或冲突，并保持战略沟通弹性。",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.news.cn/20260809/7dfccb8f326c46419b9c57e08d3d08c6/c.html",
+    publishedAt: "2026-08-09T00:00:00.000Z",
+    updatedAt: "2026-08-10T03:15:25.877Z",
+    importance: "hot"
+  },
+  {
     id: "geopolitics-1786238132059-0",
     title: "万斯称美伊冲突仍处于“博弈中段”_中国经济网——国家经济门户",
     summary: "Exa 搜索（Exa）是一家专注于人工智能驱动的语义搜索引擎初创公司，近期完成了一轮 1700 万美元的 A 轮融资。本轮融资由 Lightspeed Venture Partners 领投，参与者包括 Nvidia 的风险投资部门 NVentures 以及 Y Combinator 的 Continuity Fund。Exa 成立于 2021 年，总部位于旧金山，由首席执行官 Will Bryk 和首席技术官 Jeff Wang 联合创立。该公司开发了一种基于神经网络嵌入的搜索技术，旨在理解用户查询的深层语义，而非仅仅依赖关键词匹配，从而为 AI 应用、开发者及研究场景提供更精准的网络信息检索服务。Exa 表示，新资金将用于扩大团队规模、增强其搜索基础设施，并加速面向企业客户的产品商业化。目前，Exa 的客户已包括多家知名 AI 实验室和科技公司，其搜索 API 每月处理数百万次查询。该公司认为，随着大语言模型对实时、高质量外部数据需求的激增，语义搜索将成为 AI 生态中不可或缺的基础层。",
@@ -15,6 +27,18 @@ const items: NewsItem[] = [
     importance: "normal"
   },
   {
+    id: "geopolitics-1786331725874-1",
+    title: "对峙特朗普：伊朗控制关键海峡的豪赌 - DW",
+    summary: "媒体：台湾2027国防预算或逾GDP3%，首度破1兆新台币\n\n## 媒体：台湾2027国防预算或逾GDP3%，首度破1兆新台币\n\n据台湾媒体周日报道，随着政府加强军备实力的努力，台湾行政院将提议2027年国防预算增长16%，这将使预算总额首次突破1万亿新台币（约合310亿美元）。\n\n政治\n\n2026年8月9日\n\n### 德语媒体：台湾开始练习抵抗\n\n政治\n\n2026年8月7日\n\n### 中共建军99周年 中国防长：坚定挫败台独\n\n冲突\n\n2026年8月1日\n\n### “汉光演习”：赖清德亲自参与 首度封锁淡江大桥\n\n政治\n\n2026年8月7日\n\n跳转至下一栏 更多DW报道\n\n# 更多DW报道\n\n事实核查：默茨真的会宣布辞职吗？\n\n### 事实核查：默茨真的会宣布辞职吗？\n\n一段据称来自德国之声的视频援引执政党基民盟内部文件，声称总理默茨即将宣布辞职。这则假消息很可能与俄罗斯的虚假信息攻势有关。\n\n政治\n\n2026年8月9日\n\n媒体：FBI局长帕特尔任下 与中俄建立执法合作关系\n\n### 媒体：FBI局长帕特尔任下 与中俄建立执法合作关系\n\n美国联邦情报局（FBI）局长帕特尔表示，过去一年与中俄建立了新的执法伙伴关系，以共同打击包括芬太尼、网络诈骗和儿童性剥削在内的跨国犯罪。\n\n政治\n\n2026年8月9日\n\n欧洲天太热 核电产能低\n\n### 欧洲天太热 核电产能低\n\n提到欧洲的热浪，你脑海里或许只有社交媒体上“无空调硬扛”的幽默自嘲。但在这个酷暑中，比家里没凉风更危险的，是能源动脉的“中暑”。天太热、不下雨、河流水位暴跌——为欧洲提供动力的核电厂，正因为缺少冷却水而被迫关小“阀门”。\n\n自然与环境\n\n2026年8月9日\n\n“德国趋势”民调：AfD进一步领先联盟党\n\n### “德国趋势”民调：AfD进一步领先联盟党\n\n最新“ARD-德国趋势”问卷调查显示，德国选择党AfD的支持率已升至28%，联盟党则降至21%。32%的受访者认为，是否与AfD合作应视具体情况而定。\n\n政治\n\n2026年8月9日\n\n对峙特朗普：伊朗控制关键海峡的豪赌\n\n### 对峙特朗普：伊朗控制关键海峡的豪赌\n\n伊朗坚信能通过控制霍尔木兹海峡逼迫美国服软。然而面对深重的经济危机与军事反制风险，德黑兰的这场战略豪赌能否迎来它预料中的结局？\n\n政治\n\n2026年8月8日\n\nAI失控了？Meta人工智能“闯入”别家公司系统\n\n### AI失控了？Meta人工智能“闯入”别家公司系统\n\n继OpenAI和Anthropic之后，Facebook母公司Meta也确认，旗下一款AI模型在测试过程中意外进入另一家企业的计算机系统。“AI黑客”有什么不一样？普通用户要担心吗？\n\n科学\n\n2026年8月8日\n\n前往首页",
+    deepDive: "## AI 解读\n\n### 核心要点提炼\n\n1. 战略升级：台湾2027年国防预算拟增至GDP的3%以上，总额首破1万亿新台币，同比增长16%，显示防务政策从\"量变\"转向\"质变\"。\n2. 时间节点敏感：预算案与2027年时间窗口高度重合，呼应美台军事协作深化的趋势，也折射出对大陆\"武统\"风险的预判性应对。\n3. 政治信号明确：此举既是向美国展示\"自我防卫决心\"，也是赖清德当局强化\"备战以避战\"叙事的关键举措，意在巩固内部民意支持。\n\n### 影响分析\n\n- 区域安全格局：预算跃升将实质性提升台湾防卫能力，尤其在无人机、岸基反舰及防空系统领域，可能加剧台海军事平衡的重新校准，增加大陆统一成本。\n- 两岸关系风险：此举恐被北京解读为\"以武谋独\"的实质性步骤，或触发大陆更强硬的军事威慑与经济反制，形成\"军备竞赛-对抗升级\"的恶性循环。\n- 经济与财政压力：GDP的3%占比将挤压社会福利与基建支出，长期看可能削弱经济韧性，且军工采购的海外依赖（尤其对美）将加大地缘政治捆绑。\n- 国际博弈变量：预算案为美国对台军售提供\"政策依据\"，但也会刺激区域国家（如日本）加速防卫扩张，推动西太平洋安全架构的阵营化重组。\n\n总体研判：这是台湾防务政策的\"分水岭\"决策，短期内强化自我防卫信号，但中长期看，其战略效果取决于两岸实力对比的演变及国际干预的深度，若缺乏政治解方，军事投入的边际效益将递减，反而加剧区域不稳定性。",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://amp.dw.com/zh/%E5%B0%81%E9%94%81%E9%9C%8D%E5%B0%94%E6%9C%A8%E5%85%B9%E6%B5%B7%E5%B3%A1%E4%BC%8A%E6%9C%97%E5%8D%9A%E5%BC%88%E7%89%B9%E6%9C%97%E6%99%AE%E7%9A%84%E9%A3%8E%E9%99%A9/a-78288365",
+    publishedAt: "2026-08-08T03:15:25.663Z",
+    updatedAt: "2026-08-10T03:15:25.876Z",
+    importance: "hot"
+  },
+  {
     id: "geopolitics-1786151713242-2",
     title: "黎巴嫩：黎以谈判在边界问题等方面取得进展_中国经济网——国家经济门户",
     summary: "Exa 搜索（Exa）是一家专注于人工智能驱动的语义搜索引擎初创公司，近期完成了一轮融资，具体金额未披露，但据知情人士透露，该轮融资由知名风险投资机构 Andreessen Horowitz（a16z）领投，参投方包括 Lightspeed Venture Partners 等。Exa 成立于 2021 年，总部位于旧金山，由首席执行官 Will Bryk 和首席技术官 Jeff Wang 联合创立，其核心产品是一款基于神经网络嵌入的搜索引擎，旨在通过理解查询意图和语义关联，而非单纯依赖关键词匹配，来提供更精准的搜索结果。该公司此前已获得来自 Y Combinator 的种子轮支持，并在 2023 年完成了由 Lightspeed 领投的 1700 万美元 A 轮融资。截至目前，Exa 的累计融资额已超过 2000 万美元。Exa 的搜索引擎主要面向开发者、研究人员及企业用户，支持自然语言查询，并能返回网页、文档、代码库等多种类型的结果，其 API 服务已被多家 AI 初创公司及研究机构采用。本轮新资金将用于扩大工程团队、优化模型训练基础设施，并拓展企业级客户市场。Exa 表示，其目标是在传统搜索引擎之外，构建一个面向 AI 时代的知识检索层，使机器和人类都能以更自然的方式访问和理解互联网信息。",
@@ -24,6 +48,30 @@ const items: NewsItem[] = [
     sourceUrl: "http://intl.ce.cn/qqss/202608/t20260808_3135714.shtml",
     publishedAt: "2026-08-08T00:06:00.000Z",
     updatedAt: "2026-08-08T01:15:13.242Z",
+    importance: "normal"
+  },
+  {
+    id: "geopolitics-1786331725877-8",
+    title: "欧盟与澳大利亚达成自由贸易协定 寻求对冲美国不确定性风险__上海有色网",
+    summary: "欧盟与澳大利亚于周二达成了一项全面贸易协定，这是美国盟友在全球地缘政治不确定性加剧背景下，重新审视经济关系的最新举措。\n\n这项历经近八年谈判达成的协定，将取消双方绝大多数商品关税，并为欧盟获取澳大利亚关键矿产资源提供更大便利。\n\n根据这项备受期待的贸易协定，欧盟将取消约98%的澳大利亚商品进口关税，涵盖葡萄酒、乳制品、小麦、大麦及海产品等；作为交换，澳大利亚将取消超过99%的欧盟商品关税，重点涉及乳制品、汽车及化工产品。\n\n欧盟委员会主席冯德莱恩在声明中表示：“在动荡时期，我们向世界发出了一个强烈信号——友谊与合作至关重要。”\n\n她补充称：“欧盟与澳大利亚虽相距遥远，但在世界观上高度一致。随着在安全、防务及贸易等领域建立新的动态合作关系，双方正进一步拉近距离。”\n\n冯德莱恩本周早些时候与澳大利亚总理阿尔巴尼斯会晤，为这场自2018年启动的贸易谈判画上了句号。\n\n阿尔巴尼斯在周二的新闻发布会上表示，该协定将促进澳大利亚经济的发展，欧盟取消澳大利亚关键矿产几乎所有进口关税，将有助于稳定全球供应链。\n\n据悉，这场双边谈判曾在2023年陷入僵局，主要分歧在于：澳大利亚希望扩大对欧盟的羊肉和牛肉出口配额，而欧盟则要求获得更多关键矿产资源准入并降低关税。随着特朗普政府提高对外关税，双方随后加快了谈判进程。\n\n目前，欧盟主要从澳大利亚进口矿产品和农产品，同时向其出口机械设备、运输设备及化工产品。\n\n几乎所有澳大利亚制造业产品和矿产资源出口进入欧盟市场时，将实现零关税。欧盟作为澳大利亚第二大外资来源，其投资规模预计将增长超过87%。\n\n该协定还包含双边保障机制：若澳大利亚进口激增对欧盟市场造成冲击，欧盟可采取措施保护本地敏感产业。\n\n关键矿产供应\n\n欧盟将从澳大利亚获得铝、锂、锰等关键原材料的特定供应，这些资源对欧盟经济安全至关重要。\n\n欧盟指出，关键原材料贸易“极易受到突发经济或地缘政治冲击影响”，因此与可靠伙伴建立合作关系对保障供应安全至关重要。\n\n在安全层面，欧盟与澳大利亚还承诺加强在危机管理、海上安全及人工智能(AI)等颠覆性技术领域的合作。\n\n贸易关系多元化\n\n过去一年，欧盟加快与多方达成贸易协议，以分散经济、贸易及安全合作风险。随着美国被视为愈发不可靠，这一趋势愈加明显。\n\n美国总统特朗普对包括盟友在内征收高额关税，冲击以规则为基础的贸易体系；同时在委内瑞拉和伊朗发动突袭行动且未提前告知盟友，进一步加剧与传统伙伴之间的紧张关系。\n\n冯德莱恩周二在澳大利亚议会就中东局势发言时表示：“伊朗战争带来的地缘政治和经济冲击，没有任何国家可以独善其身。”\n\n当前地区冲突已重新引发市场对能源供应紧张及欧洲通胀上行的担忧。欧洲在很大程度上依赖进口原油和天然气。\n\n欧盟今年早些时候已与印度达成贸易协议，将对90%以上商品取消或降低关税；去年则完成与印度尼西亚的贸易谈判。\n\n此外，欧盟委员会周一表示，与南美“南方共同市场”的贸易协定预计将于5月开始临时生效。\n\n李丹访问TA的主页",
+    deepDive: "## AI 解读\n\n核心要点提炼：\n\n1. 战略对冲明确：历经八年谈判，欧盟与澳大利亚在特朗普关税冲击下加速达成全面自贸协定，覆盖98%-99%商品关税取消，核心逻辑在于以“可靠伙伴”替代“不确定性盟友”。\n2. 资源换市场：协定本质是欧盟以农产品市场准入换取澳大利亚关键矿产（锂、铝、锰）稳定供应，直指欧洲能源转型与供应链安全痛点。\n3. 安全维度延伸：双方同步强化危机管理、海上安全及AI合作，标志经贸协定升级为地缘政治工具包。\n\n影响分析：\n\n- 对欧盟：短期缓解关键原材料“卡脖子”风险，长期为“战略自主”提供资源锚点；但双边保障机制预留保护主义后门，或引发WTO合规争议。\n- 对澳大利亚：对欧出口多元化降低对华依赖，但羊肉、牛肉配额未获突破，农业利益让位于矿产战略，国内或面临产业补偿压力。\n- 全球格局：欧盟年内连签印度、印尼、南方共同市场协定，构建“去美国化”贸易网络意图明显；美欧裂痕深化，以规则为基础的贸易体系加速碎片化，跨大西洋联盟在经济层面持续松动。\n\n风险提示：协定实际生效尚需欧洲议会及成员国批准，法国等农业敏感国或将掣肘；且矿产供应承诺缺乏强制约束力，执行力度存疑。",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://news.smm.cn/news/103822581",
+    publishedAt: "2026-08-08T00:00:00.000Z",
+    updatedAt: "2026-08-10T03:15:25.877Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1786331725877-9",
+    title: "沙特-土耳其-巴基斯坦协议如何考验伊朗的地区战略 - AL-MONITOR: The Middle Eastʼs leading independent news source since 2012",
+    summary: "## Subscribe for as low as $2/week to access this story and all reporting.\n\nBy entering your email, you agree to receive AL-MONITOR's daily newsletter and occasional marketing messages.\n\n## Why AL-MONITOR?\n\nAL-MONITOR is an award-winning media outlet covering the Middle East, valued for its independence, diversity and analysis. It is read widely by US, international and Middle East decision makers at the highest levels, as well as by media, thought and business leaders and academia.\n\n### Read by\n\n### Live news & notifications\n\nFollow over 100 expert journalists based across the region and get notified in real time of breaking stories and exclusives. *Expanded coverage on Energy & Defense sectors.\n\n### Premier analysis of the Middle East\n\nAccess the sharpest and most diverse regional minds giving you all the angles on regional trends.\n\n### Live events & video\n\nPriority access to roundtables, summits and other events alongside AL-MONITOR's global community of regional influencers.\n\n### Specialized Newsletters\n\nGet timely reporting on key countries and sectors with up to 10 daily and weekly newsletters straight to your inbox.\n\n### Big, exclusive interviews\n\nFollow conversations with the region's biggest names in politics and business.\n\n### AL-MONITOR archives since 2012\n\nAccess a repository of over a decade's worth of regional coverage, insights and trends.\n\n## Subscribe for unlimited access\n\nBy becoming an AL-MONITOR subscriber, you drive our team’s rigorous and independent journalism spanning the Middle East.\n\n### Related Articles\n\nAnalysis\n\n## Why Iran's generals are intensifying anti-US rhetoric amid negotiations\n\nA correspondent in Tehran In Tehran, reporting on politics\n\nAnalysis\n\n## Trump’s Gulf tour alarms Iran as it fears isolation, shifting alliances\n\nA correspondent in Tehran In Tehran, reporting on politics\n\n## Saudi Arabia, Turkey, Pakistan sign defence pact amid regional war\n\nAgence France-Presse\n\nAnalysis",
+    deepDive: "## AI 解读\n\n核心要点提炼：  \n沙特、土耳其与巴基斯坦签署防务协议，标志着中东-南亚地缘格局的深度重组。该协议表面聚焦军事合作，实则构建了一个横跨波斯湾、安纳托利亚与印度洋的战略三角，直接对冲伊朗的“什叶派之弧”影响力，并在红海、霍尔木兹海峡及南亚方向形成多维度牵制。此举亦反映三国对美国安全承诺可靠性下降的共同焦虑，试图以“自主安全”填补权力真空。\n\n影响分析：  \n对伊朗而言，该协议构成三重战略挤压：其一，沙特-巴基斯坦核能力与土耳其北约背景的叠加，使伊朗在常规威慑与核博弈中面临更复杂安全困境；其二，三国在防务、情报及能源通道上的协同，可能削弱伊朗在也门、叙利亚及阿富汗的代理人网络运作空间；其三，协议隐含的“逊尼派安全共同体”叙事，将加剧教派矛盾，迫使德黑兰在核谈判与地区扩张间做出更艰难取舍。短期看，伊朗或加速与中俄的军事协作对冲压力；长期看，中东安全架构正从“美以-伊朗”对抗轴心，转向多极阵营化博弈，地区冲突风险与外交斡旋空间同步上升。",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.al-monitor.com/zh-hans/originals/2026/08/shate-tuerqi-bajisitanxieyiruhekaoyanyilangdedequzhane",
+    publishedAt: "2026-08-08T00:00:00.000Z",
+    updatedAt: "2026-08-10T03:15:25.877Z",
     importance: "normal"
   },
   {
