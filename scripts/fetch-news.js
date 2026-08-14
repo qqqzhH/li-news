@@ -31,6 +31,7 @@ async function fetchAIHOTNews() {
   console.log("[AIHOT] Fetching AI news...");
   const res = await fetch("https://aihot.virxact.com/api/public/daily", {
     headers: { "User-Agent": "Mozilla/5.0 (compatible; LiNews/1.0)" },
+    signal: AbortSignal.timeout(45000),
   });
   if (!res.ok) throw new Error(`AIHOT API error: ${res.status}`);
   const data = await res.json();
@@ -204,6 +205,7 @@ async function searchExa(query, category, sourceLabel, days = 2) {
         },
         startPublishedDate: getDaysAgo(days),
       }),
+      signal: AbortSignal.timeout(45000),
     });
     
     if (!res.ok) {
@@ -236,6 +238,7 @@ async function scrapeNewsSource(url, category, label, selector) {
   try {
     const res = await fetch(url, {
       headers: { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" },
+      signal: AbortSignal.timeout(30000),
     });
     if (!res.ok) return [];
     const html = await res.text();
@@ -463,6 +466,7 @@ async function main() {
             ],
             max_tokens: 800, temperature: 0.7,
           }),
+          signal: AbortSignal.timeout(60000),
         });
         if (res.ok) {
           const data = await res.json();

@@ -50,6 +50,7 @@ const summarize = async (text, opts = {}) => {
         max_tokens: 2048,
         temperature: 0.5,
       }),
+      signal: AbortSignal.timeout(60000),
     });
 
     if (!res.ok) {
