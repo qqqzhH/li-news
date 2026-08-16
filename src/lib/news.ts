@@ -2,8 +2,68 @@
 import { NewsData, NewsItem, Category } from "@/types";
 
 const hardcodedData: NewsData = {
-  lastUpdated: "2026-08-15T01:22:55.644Z",
+  lastUpdated: "2026-08-16T02:36:27.130Z",
   items: [
+  {
+    id: "geopolitics-1786847667483-5",
+    title: "伊朗外交部：美以非法行动导致霍尔木兹海峡“不稳定”",
+    summary: "Author: 6   21938    06-18 14:18\nPublished: 2026-08-16T00:12:46+00:00\nSource: yi",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.yicai.com/news/103319871.html",
+    publishedAt: "2026-08-16T00:12:46.000Z",
+    updatedAt: "2026-08-16T02:34:27.484Z",
+    importance: "normal"
+  },
+  {
+    id: "ai-1786847665595-0",
+    title: "AI生成书籍正淹没亚马逊，并拉低人类作者的单书收入",
+    summary: "一项对14,419本自出版电子书的分析显示，AI生成书籍正以数量而非质量挤占人类作者市场，即便未检测到AI文本的书籍，单书收入也在下滑。2023年Q1至2026",
+    deepDive: "",
+    category: "ai",
+    source: "The Decoder：AI News（RSS）",
+    sourceUrl: "https://the-decoder.com/ai-generated-books-are-flooding-amazon-and-tanking-sales-for-human-authors",
+    publishedAt: "2026-08-15T00:00:00.000Z",
+    updatedAt: "2026-08-16T02:34:25.595Z",
+    importance: "normal"
+  },
+  {
+    id: "geopolitics-1786847667484-7",
+    title: "特朗普称“很快将宣布霍尔木兹海峡为美国领土”_新闻频道_央视网(cctv.com)",
+    summary: "央视新闻 | 2026年08月15日 06:32:51\n\n###### 原标题：\n\n正在加载\n\n编辑：黄佐春 责任编辑：刘亮\n\n点击收起全文\n\n返回央视网首页返",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://news.cctv.com/2026/08/15/ARTI23Tl6KMAyP3DELIjq40u260815.shtml",
+    publishedAt: "2026-08-15T00:00:00.000Z",
+    updatedAt: "2026-08-16T02:34:27.484Z",
+    importance: "normal"
+  },
+  {
+    id: "geopolitics-1786847667484-8",
+    title: "伊朗战争促中国开通北极航线……要挤走印度洋航线？[时事秀] - 阿视亚经济",
+    summary: "by Lee Hyunwoo\n\nPublished 15 Aug.2026 09:00(KST) \n\nUpdated 15 Aug.2026 09:11(KST",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.asiae.co.kr/cn/article/2026081508440687016",
+    publishedAt: "2026-08-15T00:00:00.000Z",
+    updatedAt: "2026-08-16T02:34:27.484Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1786847668866-1",
+    title: "央行二季度货币政策报告：综合运用并适时调整货币政策工具_新浪财经_新浪网",
+    summary: "日前央行发布了《2026年第二季度中国货币政策执行报告》（以下简称“《报告》”）。\n\n　　对于下一阶段货币政策主要思路，《报告》提出：“充分发挥各项存量政策效能",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/jjxw/2026-08-15/doc-ininkfhv8772447.shtml",
+    publishedAt: "2026-08-15T00:00:00.000Z",
+    updatedAt: "2026-08-16T02:34:28.866Z",
+    importance: "hot"
+  },
   {
     id: "finance-1786756775979-3",
     title: "央行明确新信号 利率端改革多点推进_新浪财经_新浪网",
@@ -53,16 +113,148 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "robotics-1786711910947-0",
+    id: "geopolitics-1786847667483-3",
+    title: "美军林肯号航母伊朗等地航行250天 官兵人道状况受关注 - BBC News 中文",
+    summary: "图像来源，US Navy via Getty Images\n\n图像加注文字，林肯号核动力航空母舰已连续航行超过八个月。\n\nAuthor, 安娜·法吉（Ana F",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.bbc.com/zhongwen/articles/ce34eqlg2ppo/simp",
+    publishedAt: "2026-08-14T00:00:00.000Z",
+    updatedAt: "2026-08-16T02:34:27.483Z",
+    importance: "normal"
+  },
+  {
+    id: "geopolitics-1786847667483-4",
+    title: "特朗普对无人机开征最高100%关税 降低对外国依赖",
+    summary: "特朗普对无人机开征最高100%关税 降低对外国依赖\n\n1. 跳转至内容\n2. 跳转至主菜单\n3. 跳转到更多DW网站\n\n外部链接 — 通过 Facebook 分",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.dw.com/zh/%E7%89%B9%E6%9C%97%E6%99%AE%E5%AF%B9%E6%97%A0%E4%BA%BA%E6%9C%BA%E5%BC%80%E5%BE%81%E6%9C%80%E9%AB%98100%E5%85%B3%E7%A8%8E-%E9%99%8D%E4%BD%8E%E5%AF%B9%E5%A4%96%E5%9B%BD%E4%BE%9D%E8%B5%96/a-78361268",
+    publishedAt: "2026-08-14T00:00:00.000Z",
+    updatedAt: "2026-08-16T02:34:27.483Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1786847668866-0",
+    title: "央行详解货币政策思路：把握力度、节奏和时机，增量政策在路上 - 21财经",
+    summary: "21世纪经济报道 唐婧\n\n8月12日，央行发布《2026年第二季度中国货币政策执行报告》（以下简称《报告》），明确下一阶段将“加大逆周期调节力度”，并提出“及时",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://m.21jingji.com/article/20260814/348b3872dad08195b592194baf263c8a.html",
+    publishedAt: "2026-08-14T00:00:00.000Z",
+    updatedAt: "2026-08-16T02:34:28.866Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1786847668866-3",
+    title: "美股、黄金大跌：美联储降息预期被击穿，加息交易归来？-36氪",
+    summary: "36氪的朋友们·2026年06月08日 08:39\n\n市场突然意识到，沃什接手的美联储，也许不是准备降息的美联储，而是可能还没紧够的美联储。\n\n谁能想到，凯文·",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.36kr.com/p/3843717725063427",
+    publishedAt: "2026-08-14T00:00:00.000Z",
+    updatedAt: "2026-08-16T02:34:28.866Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1786847668866-4",
+    title: "二季度货币政策执行报告释放了哪些新信号？_经济_宏观频道首页_财经网 - CAIJING.COM.CN",
+    summary: "二季度货币政策执行报告释放了哪些新信号？_经济_宏观频道首页_财经网 - CAIJING.COM.CN\n\n当前位置：宏观频道首页>经济>\n\n## 二季度货币政策",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "http://economy.caijing.com.cn/20260814/5177119.shtml",
+    publishedAt: "2026-08-14T00:00:00.000Z",
+    updatedAt: "2026-08-16T02:34:28.867Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1786847668867-5",
+    title: "美存储股爆发，闪迪涨超13%！事关加息，美联储最新发声_新浪财经_新浪网",
+    summary: "当地时间8月13日，美国三大股指全线收涨，存储股爆发。\n\n标普500指数涨0.65%，再创历史新高；道琼斯工业平均指数涨0.13%，纳斯达克指数涨0.81%。\n",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/roll/2026-08-14/doc-ininhaiu2672426.shtml",
+    publishedAt: "2026-08-14T00:00:00.000Z",
+    updatedAt: "2026-08-16T02:34:28.867Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1786847668867-8",
+    title: "美联储暂停准备金管理国库券购买出人意料 华尔街料至少暂停至10月_新浪财经_新浪网",
+    summary: "美联储表示下一操作期内不会出于准备金管理目的买入美国国库券后，华尔街策略师正在调整对其未来月度国库券购买规模的预期。\n\n　　美联储这一决定意味着，自准备金管理购",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/stock/usstock/c/2026-08-15/doc-ininikce2344977.shtml",
+    publishedAt: "2026-08-14T00:00:00.000Z",
+    updatedAt: "2026-08-16T02:34:28.867Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1786847668867-9",
+    title: "比特币（BTC）价格下滑，美国生产者价格指数（PPI）未能引发涨幅，ETF迎来八月首个连续两日回调",
+    summary: "## 现货比特币ETF自七月底以来首次出现连续资金流出，原因是这最大加密货币抹去了上周的涨幅，而山寨币则难以找到明确的方向。\n\n作者 Oliver Knight",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.coindesk.com/zh/markets/2026/08/14/bitcoin-slips-as-u-s-inflation-fails-to-spark-gains-etfs-see-august-s-first-two-day-drawdown",
+    publishedAt: "2026-08-14T00:00:00.000Z",
+    updatedAt: "2026-08-16T02:34:28.867Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1786847670227-0",
+    title: "第二届世界人形机器人运动会参赛机器人数量较上届翻两番-新华网",
+    summary: "Exa 搜索（Exa）是一家专注于人工智能领域的搜索引擎初创公司，其核心产品为面向 AI 模型与开发者设计的“网页嵌入索引”（Web Embedding Ind",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "http://www.xinhuanet.com/tech/20260814/52c94790f5b14954bb18bbc31c972f00/c.html",
+    publishedAt: "2026-08-14T00:00:00.000Z",
+    updatedAt: "2026-08-16T02:34:30.227Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1786847670227-2",
+    title: "构建真实场景驱动“数据飞轮” 机器人兼具“炫技+实干”扎堆进厂“上班”_新浪财经_新浪网",
+    summary: "构建真实场景驱动“数据飞轮” 机器人兼具“炫技+实干”扎堆进厂“上班”\n\n 2026年08月14日 23:38 滚动播报\n\n曾经在展台上跳舞、翻跟头的机器人，如",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/jjxw/2026-08-14/doc-ininicva4015792.shtml",
+    publishedAt: "2026-08-14T00:00:00.000Z",
+    updatedAt: "2026-08-16T02:34:30.227Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1786847670228-6",
     title: "搭载英伟达“人工智能大脑”的LG人形机器人……明年一季度亮相 - 阿视亚经济",
-    summary: "Author: Kim Jinyeong\nPublished: 2026-08-14T10:03:55+09:00\nSource: asiae.co.kr (a",
+    summary: "搭载英伟达“人工智能大脑”的LG人形机器人……明年一季度亮相 - 阿视亚经济\n\ncontainer\n\n语言\n\nDim\n\n## Koo Kwangmo与Jense",
     deepDive: "",
     category: "robotics",
     source: "Exa 搜索",
     sourceUrl: "https://www.asiae.co.kr/cn/article/2026081408181006618",
-    publishedAt: "2026-08-14T01:03:55.000Z",
-    updatedAt: "2026-08-14T12:51:50.947Z",
+    publishedAt: "2026-08-14T00:00:00.000Z",
+    updatedAt: "2026-08-16T02:34:30.228Z",
     importance: "normal"
+  },
+  {
+    id: "robotics-1786847670228-8",
+    title: "7项人形机器人国家标准编制在武汉市启动_湖北_每日经济",
+    summary: "2026年8月14日 星期五 17:37 产业 \n\n据湖北省政府网站消息，人形机器人会走、会看、会干活，但到底走得稳不稳、看得准不准，不同厂家不能各拿一把尺子量",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://cn.dailyeconomic.com/hb/2026/08/14/6860.html",
+    publishedAt: "2026-08-14T00:00:00.000Z",
+    updatedAt: "2026-08-16T02:34:30.228Z",
+    importance: "hot"
   },
   {
     id: "ai-1786756772497-0",
@@ -233,30 +425,6 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "finance-1786756775979-4",
-    title: "美存储股爆发，闪迪涨超13%！事关加息，美联储最新发声_新浪财经_新浪网",
-    summary: "当地时间8月13日，美国三大股指全线收涨，存储股爆发。\n\n标普500指数涨0.65%，再创历史新高；道琼斯工业平均指数涨0.13%，纳斯达克指数涨0.81%。\n",
-    deepDive: "",
-    category: "finance",
-    source: "Exa 搜索",
-    sourceUrl: "https://finance.sina.com.cn/roll/2026-08-14/doc-ininhaiu2672426.shtml",
-    publishedAt: "2026-08-14T00:00:00.000Z",
-    updatedAt: "2026-08-15T01:19:35.979Z",
-    importance: "normal"
-  },
-  {
-    id: "finance-1786756775979-7",
-    title: "美股、黄金大跌：美联储降息预期被击穿，加息交易归来？-36氪",
-    summary: "36氪的朋友们·2026年06月08日 08:39\n\n市场突然意识到，沃什接手的美联储，也许不是准备降息的美联储，而是可能还没紧够的美联储。\n\n谁能想到，凯文·",
-    deepDive: "",
-    category: "finance",
-    source: "Exa 搜索",
-    sourceUrl: "https://www.36kr.com/p/3843717725063427",
-    publishedAt: "2026-08-14T00:00:00.000Z",
-    updatedAt: "2026-08-15T01:19:35.979Z",
-    importance: "hot"
-  },
-  {
     id: "robotics-1786756776954-6",
     title: "华盛顿大学发布新模型，FLEX-π用3D几何+物体语义重塑机器人操控_凤凰网",
     summary: "2026年08月14日 17:11:43 来自北京\n\n机器人前瞻（公众号：robot_pro）\n\n作者 | 刘俐杉\n\n编辑 | 许丽思\n\n机器人前瞻8月14日报",
@@ -303,6 +471,42 @@ const hardcodedData: NewsData = {
     publishedAt: "2026-08-13T12:51:48.217Z",
     updatedAt: "2026-08-14T12:51:48.128Z",
     importance: "hot"
+  },
+  {
+    id: "robotics-1786847670227-1",
+    title: "北大实验室披露机器人新突破！乒乓球成最好见证_京报网",
+    summary: "北大实验室披露机器人新突破！乒乓球成最好见证_京报网\n\n辟谣专区\n\n电子报\n\n北京日报\n\n北京晚报\n\n北京城市副中心报\n\n北京商报\n\n北京青年报\n\n冬奥会会刊\n",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://news.bjd.com.cn/2026/08/13/11914772.shtml",
+    publishedAt: "2026-08-13T00:00:00.000Z",
+    updatedAt: "2026-08-16T02:34:30.227Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1786847670227-3",
+    title: "人形机器人行业全景深度分析报告(2026)：从一场运动会看产业热度_中研普华_中研网",
+    summary: "郭梦 2026年8月13日 来源：中研网 367 17 繁体 \n\n- 人形机器人行业市场需求与发展前景如何?怎样做价值投资？\n- - 北京用户提问：市场竞争激烈",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.chinairn.com/scfx/20260813/164415170.shtml",
+    publishedAt: "2026-08-13T00:00:00.000Z",
+    updatedAt: "2026-08-16T02:34:30.228Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1786847670228-4",
+    title: "全球首个！北京具身智能机器人获“通行证”，一亿美元订单开始交付_京报网",
+    summary: "全球首个！北京具身智能机器人获“通行证”，一亿美元订单开始交付_京报网\n\n辟谣专区\n\n电子报\n\n北京日报\n\n北京晚报\n\n北京城市副中心报\n\n北京商报\n\n北京青年",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://news.bjd.com.cn/2026/08/13/11914735.shtml",
+    publishedAt: "2026-08-13T00:00:00.000Z",
+    updatedAt: "2026-08-16T02:34:30.228Z",
+    importance: "normal"
   },
   {
     id: "geopolitics-1786756774342-2",
@@ -425,18 +629,6 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "robotics-1786756776954-1",
-    title: "北大实验室披露机器人新突破！乒乓球成最好见证_京报网",
-    summary: "北大实验室披露机器人新突破！乒乓球成最好见证_京报网\n\n辟谣专区\n\n电子报\n\n北京日报\n\n北京晚报\n\n北京城市副中心报\n\n北京商报\n\n北京青年报\n\n冬奥会会刊\n",
-    deepDive: "",
-    category: "robotics",
-    source: "Exa 搜索",
-    sourceUrl: "https://news.bjd.com.cn/2026/08/13/11914772.shtml",
-    publishedAt: "2026-08-13T00:00:00.000Z",
-    updatedAt: "2026-08-15T01:19:36.954Z",
-    importance: "hot"
-  },
-  {
     id: "robotics-1786756776954-2",
     title: "北大、NTU等推出世界动作模型ω-0，重塑人形机器人的居家作业模式|轨迹|机器人本体_网易订阅",
     summary: "家庭，是人形机器人最向往的落地场景，也是技术难度最高的考场。\n\n工厂里的机器人面对的是结构化的流水线，每一步操作都可以提前规划；而家庭环境充满变量，桌面可能堆满",
@@ -459,18 +651,6 @@ const hardcodedData: NewsData = {
     publishedAt: "2026-08-13T00:00:00.000Z",
     updatedAt: "2026-08-15T01:19:36.954Z",
     importance: "hot"
-  },
-  {
-    id: "robotics-1786756776955-9",
-    title: "全球首个！北京具身智能机器人获“通行证”，一亿美元订单开始交付_京报网",
-    summary: "全球首个！北京具身智能机器人获“通行证”，一亿美元订单开始交付_京报网\n\n辟谣专区\n\n电子报\n\n北京日报\n\n北京晚报\n\n北京城市副中心报\n\n北京商报\n\n北京青年",
-    deepDive: "",
-    category: "robotics",
-    source: "Exa 搜索",
-    sourceUrl: "https://news.bjd.com.cn/2026/08/13/11914735.shtml",
-    publishedAt: "2026-08-13T00:00:00.000Z",
-    updatedAt: "2026-08-15T01:19:36.955Z",
-    importance: "normal"
   },
   {
     id: "ai-1786711906110-0",
@@ -1263,6 +1443,18 @@ const hardcodedData: NewsData = {
     publishedAt: "2026-08-11T17:00:34.764Z",
     updatedAt: "2026-08-12T15:04:53.773Z",
     importance: "normal"
+  },
+  {
+    id: "robotics-1786847670228-5",
+    title: "2026年全球人形机器人行业发展观察：从技术验证到规模化落地的产业跃迁_中研普华_中研网",
+    summary: "2026年8月11日 来源：互联网 447 23 繁体 \n\n- 人形机器人行业发展机遇大，如何驱动行业内在发展动力？\n- - 北京用户提问：市场竞争激烈，外来强",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.chinairn.com/hyzx/20260811/174000747.shtml",
+    publishedAt: "2026-08-11T00:00:00.000Z",
+    updatedAt: "2026-08-16T02:34:30.228Z",
+    importance: "hot"
   },
   {
     id: "geopolitics-1786587275991-2",
