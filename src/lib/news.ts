@@ -2,8 +2,20 @@
 import { NewsData, NewsItem, Category } from "@/types";
 
 const hardcodedData: NewsData = {
-  lastUpdated: "2026-08-16T02:36:27.130Z",
+  lastUpdated: "2026-08-17T01:57:07.814Z",
   items: [
+  {
+    id: "geopolitics-1786931685253-2",
+    title: "伊朗：美国被驱逐已成事实，今后不得进入波斯湾、阿曼湾和霍尔木兹海峡！多个海湾国家不满：特朗普发动战争，我们为此付出代价_哈塔米_法案",
+    summary: "Exa 搜索（Exa Search）是一家专注于人工智能驱动的网络搜索初创公司，近期完成了一轮融资，总额达 1700 万美元。本轮融资由 Lightspeed ",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.sohu.com/a/1063759199_115362?edtcode=v1kPcsuVpwONqQTmI9mDPg%3D%3D&edtsign=4614C98EEAA476FB6BC906907A6206ED5D59BCED&scm=thor.280_14-200000.0.0-0-0-0-0.",
+    publishedAt: "2026-08-17T00:31:34.000Z",
+    updatedAt: "2026-08-17T01:54:45.253Z",
+    importance: "hot"
+  },
   {
     id: "geopolitics-1786847667483-5",
     title: "伊朗外交部：美以非法行动导致霍尔木兹海峡“不稳定”",
@@ -15,6 +27,162 @@ const hardcodedData: NewsData = {
     publishedAt: "2026-08-16T00:12:46.000Z",
     updatedAt: "2026-08-16T02:34:27.484Z",
     importance: "normal"
+  },
+  {
+    id: "ai-1786931683745-0",
+    title: "Qwen 3.8 27B 表现出色，但默认推理强度过高导致过度思考",
+    summary: "Simon Willison在其博客中发布了一篇技术文章，探讨了人工智能编程工具的最新进展。文章重点介绍了Anthropic公司发布的Claude 3.5 So",
+    deepDive: "",
+    category: "ai",
+    source: "Simon Willison 博客",
+    sourceUrl: "https://simonwillison.net/2026/Aug/16/qwen-38-27b",
+    publishedAt: "2026-08-16T00:00:00.000Z",
+    updatedAt: "2026-08-17T01:54:43.747Z",
+    importance: "hot"
+  },
+  {
+    id: "ai-1786931683747-1",
+    title: "The hyping of Anthropic’s IPO",
+    summary: "认知科学家、纽约大学心理学与神经科学荣誉教授Gary Marcus近日发表长文，系统阐述其对当前人工智能发展路径的深刻忧虑与建设性主张。Marcus指出，以深度",
+    deepDive: "",
+    category: "ai",
+    source: "Gary Marcus：The Road to AI We Can Trust（RSS）",
+    sourceUrl: "https://garymarcus.substack.com/p/the-hyping-of-anthropics-ipo",
+    publishedAt: "2026-08-16T00:00:00.000Z",
+    updatedAt: "2026-08-17T01:54:43.748Z",
+    importance: "normal"
+  },
+  {
+    id: "geopolitics-1786931685253-4",
+    title: "知情官员：海湾盟友对美沮丧情绪持续上升_新浪财经_新浪网",
+    summary: "知情官员：海湾盟友对美沮丧情绪持续上升\n\n 2026年08月16日 19:55 央视\n\n据美国方面15日消息，多名阿拉伯国家和西方国家官员称，美国海湾盟友对美国",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/jjxw/2026-08-16/doc-ininpmti7606008.shtml",
+    publishedAt: "2026-08-16T00:00:00.000Z",
+    updatedAt: "2026-08-17T01:54:45.253Z",
+    importance: "normal"
+  },
+  {
+    id: "geopolitics-1786931685253-6",
+    title: "曝光：美国要给30多国写信，逼其选边站_新浪军事_新浪新闻",
+    summary: "曝光：美国要给30多国写信，逼其选边站\n\n2026年08月16日 15:42\n\n环球时报 环球时报官方账号\n\n 原标题：曝光：美国要给30多国写信，逼其选边站\n",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://mil.news.sina.com.cn/2026-08-16/doc-ininnzcp7757339.shtml",
+    publishedAt: "2026-08-16T00:00:00.000Z",
+    updatedAt: "2026-08-17T01:54:45.254Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1786931686767-0",
+    title: "【中国银河宏观】政策加力稳增长，海外扰动仍升温 ——宏观周报（8月10日-8月16日）_新浪财经_新浪网",
+    summary: "（来源：中国银河宏观\n中国银河宏观）\n\n本周关注：本周国内经济延续需求偏弱、生产分化、价格扰动抬升的特征。消费端暑期出行热度有所降温，汽车消费仍弱，外需方面干散",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/wm/2026-08-16/doc-ininnzcq9732172.shtml",
+    publishedAt: "2026-08-16T00:00:00.000Z",
+    updatedAt: "2026-08-17T01:54:46.767Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1786931686768-1",
+    title: "加息，突变！美联储，重磅来袭！“大幅削减”，影响多大？ - 21财经",
+    summary: "券商中国\n\n“加息交易”正迅速瓦解。\n\n在一系列美国宏观数据发布后，华尔街交易员本周大幅削减对美联储9月加息的押注，据CME“美联储观察”，美联储9月加息概率已",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://m.21jingji.com/article/20260816/herald/7cf05ac858428c3bec375e4219def180.html",
+    publishedAt: "2026-08-16T00:00:00.000Z",
+    updatedAt: "2026-08-17T01:54:46.768Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1786931686768-4",
+    title: "下周外盘看点丨美联储会议纪要释放什么信号，阿里等中概股财报亮相 - 21财经",
+    summary: "东方财富网\n\n本周国际市场风云变幻，霍尔木兹海峡通航重启谈判陷入僵局，美国7月通胀数据符合预期。美股涨跌互现，道指周跌0.56%，纳指周涨0.14%，标普500",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://m.21jingji.com/article/20260816/herald/149f53e207c6ece4177412a9ab6916c3.html",
+    publishedAt: "2026-08-16T00:00:00.000Z",
+    updatedAt: "2026-08-17T01:54:46.768Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1786931686768-5",
+    title: "美股点金丨新一轮波动风险酝酿中？“恐慌指数”跌至年内低位，科技股高位震荡_新浪财经_新浪网",
+    summary: "转自：第一财经\n\n美股点金丨新一轮波动风险酝酿中？“恐慌指数”跌至年内低位，科技股高位震荡\n\n　　本周美股各大指数表现分化，标普500迎来7800点里程碑的同时",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/roll/2026-08-16/doc-ininnuvq1050454.shtml",
+    publishedAt: "2026-08-16T00:00:00.000Z",
+    updatedAt: "2026-08-17T01:54:46.768Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1786931686768-7",
+    title: "芯片股领涨推动纳指反弹，道指首次站上5.3万点，油金承压，比特币随特朗普表态飙升__上海有色网",
+    summary: "美股周一全线上扬，科技股领跑，打断了上周连续下跌的颓势。与此同时，沙特大幅下调原油售价加剧供应过剩忧虑，国际油价承压。\n\n黄金因ETF持续流出而小幅走低；比特币",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://news.smm.cn/news/103990289",
+    publishedAt: "2026-08-16T00:00:00.000Z",
+    updatedAt: "2026-08-17T01:54:46.768Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1786931686769-9",
+    title: "中信建投：A股科技修复为何弱于海外？_新浪财经_新浪网",
+    summary: "中信建投：A股科技修复为何弱于海外？\n\n 2026年08月16日 19:16 市场资讯\n\n 文|夏凡捷 何盛\n\n 7月底全球科技去杠杆基本结束，海外科技在宏观约",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/roll/2026-08-16/doc-ininpmti7582289.shtml",
+    publishedAt: "2026-08-16T00:00:00.000Z",
+    updatedAt: "2026-08-17T01:54:46.769Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1786931686768-2",
+    title: "央行二季度货币政策报告：综合运用并适时调整货币政策工具_新浪财经_新浪网",
+    summary: "日前央行发布了《2026年第二季度中国货币政策执行报告》（以下简称“《报告》”）。\n\n　　对于下一阶段货币政策主要思路，《报告》提出：“充分发挥各项存量政策效能",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/jjxw/2026-08-15/doc-ininkfhv8772447.shtml",
+    publishedAt: "2026-08-15T00:00:00.000Z",
+    updatedAt: "2026-08-17T01:54:46.768Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1786931686768-3",
+    title: "通胀数据降温叠加零售销售骤降，美元承压100关口！日元干预成果腰斩，160关口成生死线_新浪财经_新浪网",
+    summary: "——本周全球汇市在美国经济数据的双重冲击下波动明显。先是通胀指标连续降温，削弱了市场对美联储9月加息的紧迫预期；随后周五（8月14日）公布的7月零售销售意外大幅",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/world/2026-08-15/doc-ininkmqn3532044.shtml",
+    publishedAt: "2026-08-15T00:00:00.000Z",
+    updatedAt: "2026-08-17T01:54:46.768Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1786931686768-6",
+    title: "信号持续增强！人民币创三年半新高，A股吸引力抬升！“股汇双强”行情可期_新浪财经_新浪网",
+    summary: "信号持续增强！人民币创三年半新高，A股吸引力抬升！“股汇双强”行情可期\n\n 2026年08月16日 07:35 券商中国\n\n> 炒股就看金麒麟分析师研报，权威，",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/stock/zqgd/2026-08-16/doc-ininncxv1679135.shtml",
+    publishedAt: "2026-08-15T00:00:00.000Z",
+    updatedAt: "2026-08-17T01:54:46.768Z",
+    importance: "hot"
   },
   {
     id: "ai-1786847665595-0",
@@ -51,18 +219,6 @@ const hardcodedData: NewsData = {
     publishedAt: "2026-08-15T00:00:00.000Z",
     updatedAt: "2026-08-16T02:34:27.484Z",
     importance: "normal"
-  },
-  {
-    id: "finance-1786847668866-1",
-    title: "央行二季度货币政策报告：综合运用并适时调整货币政策工具_新浪财经_新浪网",
-    summary: "日前央行发布了《2026年第二季度中国货币政策执行报告》（以下简称“《报告》”）。\n\n　　对于下一阶段货币政策主要思路，《报告》提出：“充分发挥各项存量政策效能",
-    deepDive: "",
-    category: "finance",
-    source: "Exa 搜索",
-    sourceUrl: "https://finance.sina.com.cn/jjxw/2026-08-15/doc-ininkfhv8772447.shtml",
-    publishedAt: "2026-08-15T00:00:00.000Z",
-    updatedAt: "2026-08-16T02:34:28.866Z",
-    importance: "hot"
   },
   {
     id: "finance-1786756775979-3",
@@ -110,6 +266,54 @@ const hardcodedData: NewsData = {
     sourceUrl: "https://finance.sina.com.cn/jjxw/2026-08-14/doc-ininfvzs4209579.shtml",
     publishedAt: "2026-08-14T01:21:24.000Z",
     updatedAt: "2026-08-14T12:51:49.767Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1786931688022-3",
+    title: "搭载英伟达“人工智能大脑”的LG人形机器人……明年一季度亮相 - 阿视亚经济",
+    summary: "搭载英伟达“人工智能大脑”的LG人形机器人……明年一季度亮相 - 阿视亚经济\n\ncontainer\n\n语言\n\nDim\n\n## Koo Kwangmo与Jense",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.asiae.co.kr/cn/article/2026081408181006618",
+    publishedAt: "2026-08-14T00:00:00.000Z",
+    updatedAt: "2026-08-17T01:54:48.022Z",
+    importance: "normal"
+  },
+  {
+    id: "robotics-1786931688022-4",
+    title: "第二届世界人形机器人运动会参赛机器人数量较上届翻两番-新华网",
+    summary: "Exa 搜索（Exa）是一家专注于人工智能驱动的网络搜索初创公司，近期完成新一轮融资，总额达 1700 万美元。本轮融资由 Lightspeed Venture",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "http://www.xinhuanet.com/tech/20260814/52c94790f5b14954bb18bbc31c972f00/c.html",
+    publishedAt: "2026-08-14T00:00:00.000Z",
+    updatedAt: "2026-08-17T01:54:48.022Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1786931688022-5",
+    title: "构建真实场景驱动“数据飞轮” 机器人兼具“炫技+实干”扎堆进厂“上班”_新浪财经_新浪网",
+    summary: "构建真实场景驱动“数据飞轮” 机器人兼具“炫技+实干”扎堆进厂“上班”\n\n 2026年08月14日 23:38 滚动播报\n\n曾经在展台上跳舞、翻跟头的机器人，如",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/jjxw/2026-08-14/doc-ininicva4015792.shtml",
+    publishedAt: "2026-08-14T00:00:00.000Z",
+    updatedAt: "2026-08-17T01:54:48.022Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1786931688023-9",
+    title: "7项人形机器人国家标准编制在武汉市启动_湖北_每日经济",
+    summary: "2026年8月14日 星期五 17:37 产业 \n\n据湖北省政府网站消息，人形机器人会走、会看、会干活，但到底走得稳不稳、看得准不准，不同厂家不能各拿一把尺子量",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://cn.dailyeconomic.com/hb/2026/08/14/6860.html",
+    publishedAt: "2026-08-14T00:00:00.000Z",
+    updatedAt: "2026-08-17T01:54:48.023Z",
     importance: "hot"
   },
   {
@@ -206,54 +410,6 @@ const hardcodedData: NewsData = {
     sourceUrl: "https://www.coindesk.com/zh/markets/2026/08/14/bitcoin-slips-as-u-s-inflation-fails-to-spark-gains-etfs-see-august-s-first-two-day-drawdown",
     publishedAt: "2026-08-14T00:00:00.000Z",
     updatedAt: "2026-08-16T02:34:28.867Z",
-    importance: "hot"
-  },
-  {
-    id: "robotics-1786847670227-0",
-    title: "第二届世界人形机器人运动会参赛机器人数量较上届翻两番-新华网",
-    summary: "Exa 搜索（Exa）是一家专注于人工智能领域的搜索引擎初创公司，其核心产品为面向 AI 模型与开发者设计的“网页嵌入索引”（Web Embedding Ind",
-    deepDive: "",
-    category: "robotics",
-    source: "Exa 搜索",
-    sourceUrl: "http://www.xinhuanet.com/tech/20260814/52c94790f5b14954bb18bbc31c972f00/c.html",
-    publishedAt: "2026-08-14T00:00:00.000Z",
-    updatedAt: "2026-08-16T02:34:30.227Z",
-    importance: "hot"
-  },
-  {
-    id: "robotics-1786847670227-2",
-    title: "构建真实场景驱动“数据飞轮” 机器人兼具“炫技+实干”扎堆进厂“上班”_新浪财经_新浪网",
-    summary: "构建真实场景驱动“数据飞轮” 机器人兼具“炫技+实干”扎堆进厂“上班”\n\n 2026年08月14日 23:38 滚动播报\n\n曾经在展台上跳舞、翻跟头的机器人，如",
-    deepDive: "",
-    category: "robotics",
-    source: "Exa 搜索",
-    sourceUrl: "https://finance.sina.com.cn/jjxw/2026-08-14/doc-ininicva4015792.shtml",
-    publishedAt: "2026-08-14T00:00:00.000Z",
-    updatedAt: "2026-08-16T02:34:30.227Z",
-    importance: "hot"
-  },
-  {
-    id: "robotics-1786847670228-6",
-    title: "搭载英伟达“人工智能大脑”的LG人形机器人……明年一季度亮相 - 阿视亚经济",
-    summary: "搭载英伟达“人工智能大脑”的LG人形机器人……明年一季度亮相 - 阿视亚经济\n\ncontainer\n\n语言\n\nDim\n\n## Koo Kwangmo与Jense",
-    deepDive: "",
-    category: "robotics",
-    source: "Exa 搜索",
-    sourceUrl: "https://www.asiae.co.kr/cn/article/2026081408181006618",
-    publishedAt: "2026-08-14T00:00:00.000Z",
-    updatedAt: "2026-08-16T02:34:30.228Z",
-    importance: "normal"
-  },
-  {
-    id: "robotics-1786847670228-8",
-    title: "7项人形机器人国家标准编制在武汉市启动_湖北_每日经济",
-    summary: "2026年8月14日 星期五 17:37 产业 \n\n据湖北省政府网站消息，人形机器人会走、会看、会干活，但到底走得稳不稳、看得准不准，不同厂家不能各拿一把尺子量",
-    deepDive: "",
-    category: "robotics",
-    source: "Exa 搜索",
-    sourceUrl: "https://cn.dailyeconomic.com/hb/2026/08/14/6860.html",
-    publishedAt: "2026-08-14T00:00:00.000Z",
-    updatedAt: "2026-08-16T02:34:30.228Z",
     importance: "hot"
   },
   {
@@ -473,19 +629,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "robotics-1786847670227-1",
-    title: "北大实验室披露机器人新突破！乒乓球成最好见证_京报网",
-    summary: "北大实验室披露机器人新突破！乒乓球成最好见证_京报网\n\n辟谣专区\n\n电子报\n\n北京日报\n\n北京晚报\n\n北京城市副中心报\n\n北京商报\n\n北京青年报\n\n冬奥会会刊\n",
-    deepDive: "",
-    category: "robotics",
-    source: "Exa 搜索",
-    sourceUrl: "https://news.bjd.com.cn/2026/08/13/11914772.shtml",
-    publishedAt: "2026-08-13T00:00:00.000Z",
-    updatedAt: "2026-08-16T02:34:30.227Z",
-    importance: "hot"
-  },
-  {
-    id: "robotics-1786847670227-3",
+    id: "robotics-1786931688022-1",
     title: "人形机器人行业全景深度分析报告(2026)：从一场运动会看产业热度_中研普华_中研网",
     summary: "郭梦 2026年8月13日 来源：中研网 367 17 繁体 \n\n- 人形机器人行业市场需求与发展前景如何?怎样做价值投资？\n- - 北京用户提问：市场竞争激烈",
     deepDive: "",
@@ -493,11 +637,23 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.chinairn.com/scfx/20260813/164415170.shtml",
     publishedAt: "2026-08-13T00:00:00.000Z",
-    updatedAt: "2026-08-16T02:34:30.228Z",
+    updatedAt: "2026-08-17T01:54:48.022Z",
     importance: "hot"
   },
   {
-    id: "robotics-1786847670228-4",
+    id: "robotics-1786931688022-2",
+    title: "北大实验室披露机器人新突破！乒乓球成最好见证_京报网",
+    summary: "北大实验室披露机器人新突破！乒乓球成最好见证_京报网\n\n辟谣专区\n\n电子报\n\n北京日报\n\n北京晚报\n\n北京城市副中心报\n\n北京商报\n\n北京青年报\n\n冬奥会会刊\n",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://news.bjd.com.cn/2026/08/13/11914772.shtml",
+    publishedAt: "2026-08-13T00:00:00.000Z",
+    updatedAt: "2026-08-17T01:54:48.022Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1786931688022-6",
     title: "全球首个！北京具身智能机器人获“通行证”，一亿美元订单开始交付_京报网",
     summary: "全球首个！北京具身智能机器人获“通行证”，一亿美元订单开始交付_京报网\n\n辟谣专区\n\n电子报\n\n北京日报\n\n北京晚报\n\n北京城市副中心报\n\n北京商报\n\n北京青年",
     deepDive: "",
@@ -505,8 +661,20 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://news.bjd.com.cn/2026/08/13/11914735.shtml",
     publishedAt: "2026-08-13T00:00:00.000Z",
-    updatedAt: "2026-08-16T02:34:30.228Z",
+    updatedAt: "2026-08-17T01:54:48.023Z",
     importance: "normal"
+  },
+  {
+    id: "robotics-1786931688023-7",
+    title: "第四届中国具身智能机器人产业大会观察_新浪财经_新浪网",
+    summary: "转自：科技日报\n\n具身智能发展迈向场景落地阶段——第四届中国具身智能机器人产业大会观察\n\n◎本报记者 李 均\n\n从AI芯片、多模态感知系统、运动控制核心零部件，",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/jjxw/2026-08-14/doc-ininfrtx2991928.shtml",
+    publishedAt: "2026-08-13T00:00:00.000Z",
+    updatedAt: "2026-08-17T01:54:48.023Z",
+    importance: "hot"
   },
   {
     id: "geopolitics-1786756774342-2",
@@ -639,18 +807,6 @@ const hardcodedData: NewsData = {
     publishedAt: "2026-08-13T00:00:00.000Z",
     updatedAt: "2026-08-15T01:19:36.954Z",
     importance: "normal"
-  },
-  {
-    id: "robotics-1786756776954-3",
-    title: "第四届中国具身智能机器人产业大会观察_新浪财经_新浪网",
-    summary: "转自：科技日报\n\n具身智能发展迈向场景落地阶段——第四届中国具身智能机器人产业大会观察\n\n◎本报记者 李 均\n\n从AI芯片、多模态感知系统、运动控制核心零部件，",
-    deepDive: "",
-    category: "robotics",
-    source: "Exa 搜索",
-    sourceUrl: "https://finance.sina.com.cn/jjxw/2026-08-14/doc-ininfrtx2991928.shtml",
-    publishedAt: "2026-08-13T00:00:00.000Z",
-    updatedAt: "2026-08-15T01:19:36.954Z",
-    importance: "hot"
   },
   {
     id: "ai-1786711906110-0",
@@ -1445,7 +1601,7 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "robotics-1786847670228-5",
+    id: "robotics-1786931688023-8",
     title: "2026年全球人形机器人行业发展观察：从技术验证到规模化落地的产业跃迁_中研普华_中研网",
     summary: "2026年8月11日 来源：互联网 447 23 繁体 \n\n- 人形机器人行业发展机遇大，如何驱动行业内在发展动力？\n- - 北京用户提问：市场竞争激烈，外来强",
     deepDive: "",
@@ -1453,7 +1609,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.chinairn.com/hyzx/20260811/174000747.shtml",
     publishedAt: "2026-08-11T00:00:00.000Z",
-    updatedAt: "2026-08-16T02:34:30.228Z",
+    updatedAt: "2026-08-17T01:54:48.023Z",
     importance: "hot"
   },
   {
