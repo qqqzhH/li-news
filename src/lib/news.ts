@@ -2,8 +2,44 @@
 import { NewsData, NewsItem, Category } from "@/types";
 
 const hardcodedData: NewsData = {
-  lastUpdated: "2026-08-22T02:30:32.153Z",
+  lastUpdated: "2026-08-23T01:09:11.266Z",
   items: [
+  {
+    id: "finance-1787447240638-2",
+    title: "刚刚，官媒重磅发文，释放强烈信号！8月24日周一，A股没太大悬念|a股|美债|美股|股指|抛压|结构性行情_网易订阅",
+    summary: "0\n\n分享至好友和朋友圈\n\n本周五A股收官，上证指数收于3905点，艰难守住3900点整数关口。全天指数振幅收窄，多空双方在关键点位陷入僵持，短期博弈进入弱平衡",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.163.com/dy/article/L4V0Q3VP05561UAV.html?f=post1603_tab_news",
+    publishedAt: "2026-08-22T16:00:06.000Z",
+    updatedAt: "2026-08-23T01:07:20.639Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1787447239498-2",
+    title: "专家担心特朗普与金正恩再次会晤恐成又一次外交挫败",
+    summary: "发表时间： 21/08/2026 - 16:12\n\n 21日出版的法国全国性大报头版头条均以法国国内话题开篇。国际版最凸出的主题是东亚安全。美国总统特朗普在美韩",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E6%B3%95%E5%9B%BD%E6%8A%A5%E7%BA%B8%E6%91%98%E8%A6%81/20260821-%E4%B8%93%E5%AE%B6%E6%8B%85%E5%BF%83%E7%89%B9%E6%9C%97%E6%99%AE%E4%B8%8E%E9%87%91%E6%AD%A3%E6%81%A9%E5%86%8D%E6%AC%A1%E4%BC%9A%E6%99%A4%E4%BC%9A%E6%98%AF%E5%8F%88%E4%B8%80%E6%AC%A1%E5%A4%96%E4%BA%A4%E6%8C%AB%E8%B4%A5",
+    publishedAt: "2026-08-22T01:07:21.802Z",
+    updatedAt: "2026-08-23T01:07:19.498Z",
+    importance: "hot"
+  },
+  {
+    id: "ai-1787447237291-0",
+    title: "第二届世界人形机器人运动会开幕：2056 台机器人齐聚“冰丝带”，666 支队伍竞技 51 赛项",
+    summary: "第二届世界人形机器人运动会今晚在国家速滑馆“冰丝带”开幕，666 支队伍、2056 台机器人参赛，队伍数量较首届增长 138%，机器人数量翻了两番。天工 Ult",
+    deepDive: "",
+    category: "ai",
+    source: "IT之家（RSS）",
+    sourceUrl: "https://www.ithome.com/0/993/105.htm",
+    publishedAt: "2026-08-22T00:00:00.000Z",
+    updatedAt: "2026-08-23T01:07:17.292Z",
+    importance: "normal"
+  },
   {
     id: "finance-1787365629025-0",
     title: "美财长压降美债收益率点燃“货币贬值交易”！黄金创三个月新高，比特币单周暴涨超25%|美联储|债券市场_网易订阅",
@@ -41,18 +77,6 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "robotics-1787308169960-5",
-    title: "对话小米机器人团队：“铁大”将探索更多工位，家用短期难兑现 - 21财经",
-    summary: "Published: 2026-08-21T06:34:00+00:00\nSource: m.21jingji.com (m.21jingji.com)\nLan",
-    deepDive: "",
-    category: "robotics",
-    source: "Exa 搜索",
-    sourceUrl: "https://m.21jingji.com/article/20260821/herald/e963d39a83570532c7123b46aa3a8569.html",
-    publishedAt: "2026-08-21T06:34:00.000Z",
-    updatedAt: "2026-08-21T10:29:29.960Z",
-    importance: "hot"
-  },
-  {
     id: "geopolitics-1787308167041-4",
     title: "美威胁“前所未有”孤立 伊朗回应|美国|美军|恐怖主义|伊朗外交部|唐纳德·特朗普_网易订阅",
     summary: "Exa 搜索（Exa）是一家专注于人工智能驱动的网络搜索引擎初创公司，其核心产品旨在为 AI 模型和开发者提供高度相关的网页数据。该公司近期完成了由知名风险投资",
@@ -65,18 +89,6 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "finance-1787308168355-4",
-    title: "美债回购“信号意义”重于“实际效果”！野村：如果市场继续恶化，美联储会下场“YCC或QE”_新浪财经_新浪网",
-    summary: "Published: 2026-08-21T10:27:38+08:00\nSource: finance.sina.com.cn (finance.sina.c",
-    deepDive: "",
-    category: "finance",
-    source: "Exa 搜索",
-    sourceUrl: "https://finance.sina.com.cn/money/forex/whxwsd/2026-08-21/doc-ininztww1461786.shtml",
-    publishedAt: "2026-08-21T02:27:38.000Z",
-    updatedAt: "2026-08-21T10:29:28.355Z",
-    importance: "hot"
-  },
-  {
     id: "robotics-1787308169960-6",
     title: "北京人形正式发布大一统模型Pelican‑Unify和新品天工Omni|omni|pelican|双足人形机器人_网易订阅",
     summary: "0\n\n分享至好友和朋友圈\n\n新京报贝壳财经讯（记者程靓）8月20日，北京人形机器人创新中心有限公司（以下简称“北京人形”）在2026世界机器人大会“具身觉醒·慧",
@@ -86,6 +98,162 @@ const hardcodedData: NewsData = {
     sourceUrl: "https://www.163.com/dy/article/L4RJDG8F055284JB.html?clickfrom=w_tech",
     publishedAt: "2026-08-21T01:30:08.000Z",
     updatedAt: "2026-08-21T10:29:29.960Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1787447239498-1",
+    title: "美国敦促盟友和中国加入最新“摧毁”伊朗的经济攻势 - ABC News",
+    summary: "Xiaoning Mo, Iris Zhao https://www.abc.net.au/chinese/michael-li/11318130和 Jason",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.abc.net.au/chinese/2026-08-21/us-economic-warfare-iran-allies-china/107062150",
+    publishedAt: "2026-08-21T00:00:00.000Z",
+    updatedAt: "2026-08-23T01:07:19.498Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1787447239499-4",
+    title: "美威胁“前所未有”孤立 伊朗回应-新华网",
+    summary: "Exa 搜索近期完成新一轮融资，获得多家知名投资机构支持，具体金额未披露，但公司估值已突破 10 亿美元，跻身 AI 搜索赛道独角兽行列。该公司由前 OpenA",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.news.cn/world/20260821/13787ad250254011b200b9d345f80a07/c.html",
+    publishedAt: "2026-08-21T00:00:00.000Z",
+    updatedAt: "2026-08-23T01:07:19.499Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1787447240638-0",
+    title: "长端美债利率攀升引发全球资产重估，A股防御板块获青睐_新浪财经_新浪网",
+    summary: "（来源：汇丰晋信基金\n汇丰晋信基金）\n\n本周市场回顾\n\n本周A股经历“放量大涨—高位分歧—恐慌下跌—缩量修复”的剧烈波动周期。本周核心变量是周三大跌，系外部流动",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/wm/2026-08-21/doc-iniparar1629097.shtml",
+    publishedAt: "2026-08-21T00:00:00.000Z",
+    updatedAt: "2026-08-23T01:07:20.638Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1787447240638-1",
+    title: "牛市踩刹车！贝森特“救市”有效期仅一天，美债、美股齐跌_新浪财经_新浪网",
+    summary: "牛市踩刹车！贝森特“救市”有效期仅一天，美债、美股齐跌\n\n 2026年08月21日 07:36 市场资讯\n\n 昨夜今晨，随着美国财政部稳定债市的效果迅速消退，美",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/money/forex/whqqscgd/2026-08-21/doc-ininzpqz8310178.shtml",
+    publishedAt: "2026-08-21T00:00:00.000Z",
+    updatedAt: "2026-08-23T01:07:20.638Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1787447240639-4",
+    title: "财政部出手、美联储观望，美债市场的“权力游戏”_新浪财经_新浪网",
+    summary: "文章来源：汇通财经\n\n　　在美国财政部出人意料地干预债券市场后，两位美联储官员周四（8月20日）被问及此举可能如何影响货币政策时，均谨慎作答，强调美联储独立制定",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/money/forex/hbfx/2026-08-21/doc-ininzprc1643757.shtml",
+    publishedAt: "2026-08-21T00:00:00.000Z",
+    updatedAt: "2026-08-23T01:07:20.639Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1787447240640-6",
+    title: "超17万人爆仓！比特币、黄金、白银、美股，集体大涨_新浪财经_新浪网",
+    summary: "超17万人爆仓！比特币、黄金、白银、美股，集体大涨\n\n 2026年08月21日 20:58 证券时报\n\n加密货币、黄金、白银，集体大涨！\n\n加密货币今日再度暴涨",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/stock/zqgd/2026-08-21/doc-inipavkk1286783.shtml",
+    publishedAt: "2026-08-21T00:00:00.000Z",
+    updatedAt: "2026-08-23T01:07:20.640Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1787447240640-7",
+    title: "〈7月纪要鹰派底色与解读分裂、Bessent回购效应两日消退、30Y重回5.23%上方、杰克逊霍尔成裁决点〉更新 - Fed 宏观追踪 - sembr",
+    summary: "过去24小时双主线：7月纪要确认鹰派支持面大于三票异议、但解读分裂为「鹰味被低估」与「没那么鹰」两派，Bessent回购扩容的缓解效应两日即消退、30Y重回5.",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://sembr.live/digests/fed-macro-20260821/",
+    publishedAt: "2026-08-21T00:00:00.000Z",
+    updatedAt: "2026-08-23T01:07:20.640Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1787447240640-8",
+    title: "美债回购“信号意义”重于“实际效果”！野村：如果市场继续恶化，美联储会下场“YCC或QE”_新浪财经_新浪网",
+    summary: "美债回购“信号意义”重于“实际效果”！野村：如果市场继续恶化，美联储会下场“YCC或QE”\n\n 2026年08月21日 08:52 市场资讯\n\n 美国财政部仓促",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/money/forex/whxwsd/2026-08-21/doc-ininztww1461786.shtml",
+    publishedAt: "2026-08-21T00:00:00.000Z",
+    updatedAt: "2026-08-23T01:07:20.640Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1787447242449-0",
+    title: "从“炫技”到“实干”，机器人走向更多真实场景-新华网",
+    summary: "Exa 搜索（Exa）是一家专注于人工智能时代的知识检索与发现工具，其核心产品为面向开发者和研究人员的语义搜索引擎。该引擎基于自研的神经网络嵌入模型，能够理解查",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "http://bj.news.cn/20260821/24e4b24daf244e369f848f6e7c541a75/c.html",
+    publishedAt: "2026-08-21T00:00:00.000Z",
+    updatedAt: "2026-08-23T01:07:22.450Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1787447242450-1",
+    title: "从炫技到干活 从分歧到共识 具身智能进入务实新阶段",
+    summary: "从炫技到干活 从分歧到共识 具身智能进入务实新阶段\n\n返回首页\n\n“去年机器人还主要在做表演，今年所有人都在关心场景。”京东零售具身智能业务负责人郑小丹在202",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.cs.com.cn/ssgs/cj2020/2026/08/21/detail_2026082110032823.html",
+    publishedAt: "2026-08-21T00:00:00.000Z",
+    updatedAt: "2026-08-23T01:07:22.450Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1787447242450-4",
+    title: "从“上场”到“进厂” 资本加码押注人形机器人产业化前景-国际在线",
+    summary: "从“上场”到“进厂” 资本加码押注人形机器人产业化前景-国际在线\n\n从“上场”到“进厂” 资本加码押注人形机器人产业化前景\n\n 记者8月20日从2026世界机器",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://ge.cri.cn/20260821/8fde42a8-7d2f-476d-ae73-ead9f5665e4a.html",
+    publishedAt: "2026-08-21T00:00:00.000Z",
+    updatedAt: "2026-08-23T01:07:22.450Z",
+    importance: "normal"
+  },
+  {
+    id: "robotics-1787447242450-5",
+    title: "对话小米机器人团队：“铁大”将探索更多工位，家用短期难兑现 - 21财经",
+    summary: "21世纪经济报道 21财经APP 雷晨\n\n人形机器人离大规模进入家庭场景还有多远？\n\n21世纪经济报道记者雷晨 北京报道\n\n在2026年世界机器人大会上，小米展",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://m.21jingji.com/article/20260821/herald/e963d39a83570532c7123b46aa3a8569.html",
+    publishedAt: "2026-08-21T00:00:00.000Z",
+    updatedAt: "2026-08-23T01:07:22.450Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1787447242451-9",
+    title: "从“更能跑”到“更会干活”！北京人形机器人“天工”家族添新丁_京报网",
+    summary: "从“更能跑”到“更会干活”！北京人形机器人“天工”家族添新丁_京报网\n\n辟谣专区\n\n电子报\n\n北京日报\n\n北京晚报\n\n北京城市副中心报\n\n北京商报\n\n北京青年报",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://news.bjd.com.cn/2026/08/21/11925250.shtml",
+    publishedAt: "2026-08-21T00:00:00.000Z",
+    updatedAt: "2026-08-23T01:07:22.451Z",
     importance: "hot"
   },
   {
@@ -257,30 +425,6 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "geopolitics-1787365627768-0",
-    title: "美国敦促盟友和中国加入最新“摧毁”伊朗的经济攻势 - ABC News",
-    summary: "Xiaoning Mo, Iris Zhao https://www.abc.net.au/chinese/michael-li/11318130和 Jason",
-    deepDive: "",
-    category: "geopolitics",
-    source: "Exa 搜索",
-    sourceUrl: "https://www.abc.net.au/chinese/2026-08-21/us-economic-warfare-iran-allies-china/107062150",
-    publishedAt: "2026-08-21T00:00:00.000Z",
-    updatedAt: "2026-08-22T02:27:07.769Z",
-    importance: "hot"
-  },
-  {
-    id: "robotics-1787365629850-2",
-    title: "从“上场”到“进厂” 资本加码押注人形机器人产业化前景-国际在线",
-    summary: "从“上场”到“进厂” 资本加码押注人形机器人产业化前景-国际在线\n\n从“上场”到“进厂” 资本加码押注人形机器人产业化前景\n\n 记者8月20日从2026世界机器",
-    deepDive: "",
-    category: "robotics",
-    source: "Exa 搜索",
-    sourceUrl: "https://ge.cri.cn/20260821/8fde42a8-7d2f-476d-ae73-ead9f5665e4a.html",
-    publishedAt: "2026-08-21T00:00:00.000Z",
-    updatedAt: "2026-08-22T02:27:09.850Z",
-    importance: "normal"
-  },
-  {
     id: "geopolitics-1787231497723-4",
     title: "特朗普宣布经济战孤立伊朗，警告任何国家不得提供“生命线”|阿联酋|德黑兰|以色列|伊朗外交部|唐纳·川普|美国选民档案|唐纳德·特朗普_网易订阅",
     summary: "0\n\n分享至好友和朋友圈\n\n澎湃新闻记者 南博一\n\n一句话读懂\n\n当地时间8月19日，美国总统特朗普宣布美国将对伊朗发起“有史以来对任何国家采取的最严厉的经济行",
@@ -326,6 +470,54 @@ const hardcodedData: NewsData = {
     sourceUrl: "https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E6%9B%BC%E8%B0%B7%E4%B8%93%E6%A0%8F/20260820-%E4%BF%84%E4%B9%8C%E5%86%B2%E7%AA%81%E5%8D%87%E7%BA%A7-%E6%99%AE%E4%BA%AC%E8%BD%AC%E5%90%91%E4%B8%9C%E6%9C%9B",
     publishedAt: "2026-08-20T02:27:09.138Z",
     updatedAt: "2026-08-22T02:27:07.769Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1787447242450-2",
+    title: "报告：人形机器人行业应用迈入“全面铺开”深水区 - 中国日报网",
+    summary: "8月19日，以“人机共生 产需共融”为主题的2026世界机器人大会在北京亦庄北人亦创国际会展中心开幕。图为参观者了解通用具身智能机器人。 中新社记者 王紫儒 摄",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://cnews.chinadaily.com.cn/a/202608/20/WS6a869f46a3105d3d7a27bf62.html",
+    publishedAt: "2026-08-20T00:00:00.000Z",
+    updatedAt: "2026-08-23T01:07:22.450Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1787447242450-3",
+    title: "2026 年上半年全球人形机器人出货量同比增长近 300%，商用落地持续提速 - Counterpoint",
+    summary: "2026.08.20| Insights, PR|\n\n- 2026 年上半年，全球人形机器人市场保持高速增长，出货量超 2.2 万台，同比增长接近 300%。\n",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://china.counterpointresearch.com/2026-%e5%b9%b4%e4%b8%8a%e5%8d%8a%e5%b9%b4%e5%85%a8%e7%90%83%e4%ba%ba%e5%bd%a2%e6%9c%ba%e5%99%a8%e4%ba%ba%e5%87%ba%e8%b4%a7%e9%87%8f%e5%90%8c%e6%af%94%e5%a2%9e%e9%95%bf/",
+    publishedAt: "2026-08-20T00:00:00.000Z",
+    updatedAt: "2026-08-23T01:07:22.450Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1787447242450-7",
+    title: "《环球时报》记者探访2026世界机器人大会：人形机器人向生活场景加速进化_新浪财经_新浪网",
+    summary: "【环球时报报道 记者 陈子帅】2026世界机器人大会于8月19日在北京经济技术开发区北人亦创国际会展中心开幕。《环球时报》记者在现场的最直观感受是，跳舞、表演节",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/roll/2026-08-21/doc-ininzpqz8290282.shtml",
+    publishedAt: "2026-08-20T00:00:00.000Z",
+    updatedAt: "2026-08-23T01:07:22.451Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1787447242451-8",
+    title: "机器人“大脑”加速进化 模型与数据成为产业竞争新焦点_新浪财经_新浪网",
+    summary: "Exa 搜索（Exa）是一家专注于人工智能驱动的网络搜索初创公司，近期完成新一轮融资，总额达 1700 万美元，由 Lightspeed Venture Par",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/roll/2026-08-21/doc-ininzaze1690467.shtml",
+    publishedAt: "2026-08-20T00:00:00.000Z",
+    updatedAt: "2026-08-23T01:07:22.451Z",
     importance: "hot"
   },
   {
@@ -456,30 +648,6 @@ const hardcodedData: NewsData = {
     category: "robotics",
     source: "Exa 搜索",
     sourceUrl: "https://www.36kr.com/p/3947647141920131",
-    publishedAt: "2026-08-20T00:00:00.000Z",
-    updatedAt: "2026-08-22T02:27:09.850Z",
-    importance: "hot"
-  },
-  {
-    id: "robotics-1787365629850-3",
-    title: "机器人“大脑”加速进化 模型与数据成为产业竞争新焦点_新浪财经_新浪网",
-    summary: "Exa 搜索（Exa）是一家专注于人工智能时代的知识发现与检索技术公司，其核心产品为面向 AI 与开发者的神经语义搜索引擎。该引擎基于先进的嵌入模型与向量检索技",
-    deepDive: "",
-    category: "robotics",
-    source: "Exa 搜索",
-    sourceUrl: "https://finance.sina.com.cn/roll/2026-08-21/doc-ininzaze1690467.shtml",
-    publishedAt: "2026-08-20T00:00:00.000Z",
-    updatedAt: "2026-08-22T02:27:09.850Z",
-    importance: "hot"
-  },
-  {
-    id: "robotics-1787365629850-4",
-    title: "报告：人形机器人行业应用迈入“全面铺开”深水区 - 中国日报网",
-    summary: "8月19日，以“人机共生 产需共融”为主题的2026世界机器人大会在北京亦庄北人亦创国际会展中心开幕。图为参观者了解通用具身智能机器人。 中新社记者 王紫儒 摄",
-    deepDive: "",
-    category: "robotics",
-    source: "Exa 搜索",
-    sourceUrl: "https://cnews.chinadaily.com.cn/a/202608/20/WS6a869f46a3105d3d7a27bf62.html",
     publishedAt: "2026-08-20T00:00:00.000Z",
     updatedAt: "2026-08-22T02:27:09.850Z",
     importance: "hot"
