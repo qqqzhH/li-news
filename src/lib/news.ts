@@ -2,8 +2,140 @@
 import { NewsData, NewsItem, Category } from "@/types";
 
 const hardcodedData: NewsData = {
-  lastUpdated: "2026-08-23T01:09:11.266Z",
+  lastUpdated: "2026-08-24T12:53:52.965Z",
   items: [
+  {
+    id: "finance-1787575885116-8",
+    title: "比特币冲破7.7万、黄金突破4600：一场针对“法币信用”的全球大起义|国债|货币_网易订阅",
+    summary: "0\n\n分享至好友和朋友圈\n\n本文来自微信公众号： AI时代我的人生下半场 ，作者：席春迎博士\n\nR E A D I N GG U I D E\n\n当比特币冲破7.",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.163.com/dy/article/L54E4OBI051188EA.html?clickfrom=w_dy",
+    publishedAt: "2026-08-24T11:51:08.000Z",
+    updatedAt: "2026-08-24T12:51:25.116Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1787575886365-2",
+    title: "千机竞技 人形机器人赛场“亮剑”",
+    summary: "Exa 搜索是一家专注于 AI 原生搜索的初创公司，其核心产品是一款面向人工智能模型与开发者的定制化搜索引擎，旨在解决传统搜索引擎（如 Google）在 AI ",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.cs.com.cn/xwzx/01/2026/08/24/detail_2026082410033351.html",
+    publishedAt: "2026-08-24T00:00:00.000Z",
+    updatedAt: "2026-08-24T12:51:26.365Z",
+    importance: "hot"
+  },
+  {
+    id: "ai-1787575881521-0",
+    title: "德克萨斯州一名学生如何揭发了一起恶意AI黑客攻击企图",
+    summary: "德克萨斯大学达拉斯分校学生Sinan Can Demir在GitHub上发现并挫败了一起针对开源软件myNetwork的恶意代码植入企图，事后得知对手竟是英国A",
+    deepDive: "",
+    category: "ai",
+    source: "Hacker News 热门（buzzing.cc 中文翻译）",
+    sourceUrl: "https://www.reuters.com/world/how-texas-student-blew-whistle-rogue-ai-hacking-attempt-2026-08-20",
+    publishedAt: "2026-08-23T00:00:00.000Z",
+    updatedAt: "2026-08-24T12:51:21.521Z",
+    importance: "normal"
+  },
+  {
+    id: "ai-1787575881522-1",
+    title: "OpenAI 首席全球事务官勒汉恩：公众、企业要为 AI 网络攻击做好防御准备",
+    summary: "OpenAI 首席全球事务官克里斯·勒汉恩警告，前沿 AI 模型已开始具备规划和发动复杂网络攻击的能力，公众和企业需为 AI“持续不断”的攻击做好防御准备。Op",
+    deepDive: "",
+    category: "ai",
+    source: "IT之家（RSS）",
+    sourceUrl: "https://www.ithome.com/0/993/305.htm",
+    publishedAt: "2026-08-23T00:00:00.000Z",
+    updatedAt: "2026-08-24T12:51:21.522Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1787575883575-2",
+    title: "国际观察｜“旧怨”加“新争”，以土矛盾如何收场-新华网",
+    summary: "Exa 搜索（Exa）是一家专注于人工智能领域的新型搜索引擎初创公司，近期完成了一轮融资，总额达 1700 万美元。本轮融资由 Lightspeed Ventu",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.news.cn/world/20260823/70c91249c9e940088888c713a505fc65/c.html",
+    publishedAt: "2026-08-23T00:00:00.000Z",
+    updatedAt: "2026-08-24T12:51:23.575Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1787575883576-6",
+    title: "美特使称以“诱土开战” 以外长否认-新华网",
+    summary: "Exa 搜索是一家专注于人工智能领域的搜索初创公司，近期完成了由知名风投机构 Benchmark 领投的 1700 万美元 A 轮融资，参投方包括 Y Comb",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.news.cn/20260823/d5440ced53f846178b230fb37a1b59a9/c.html",
+    publishedAt: "2026-08-23T00:00:00.000Z",
+    updatedAt: "2026-08-24T12:51:23.576Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1787575885115-4",
+    title: "人民币对美元升破6.72，创近三年半新高，“越结越高”效应下此轮升值停不下来？-虎嗅网",
+    summary: "8月21日，人民币对美元继续升值。在岸市场上，盘中一度达6.7192，人民币对美元汇率创下近三年半新高。离岸市场上，人民币对美元盘中一度达6.7179。\n\n20",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.huxiu.com/article/4885267.html",
+    publishedAt: "2026-08-23T00:00:00.000Z",
+    updatedAt: "2026-08-24T12:51:25.116Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1787575886365-3",
+    title: "出货已超4万台，工厂准备好为“人形”买单了吗？_凤凰网",
+    summary: "下载客户端独家抢先看\n\n2026年08月23日 16:55:24 来自北京\n\n8月19日至23日，2026世界机器人大会（WRC）在北京亦庄举行，300余家企业",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://tech.ifeng.com/c/8vpIz3jPKrw",
+    publishedAt: "2026-08-23T00:00:00.000Z",
+    updatedAt: "2026-08-24T12:51:26.366Z",
+    importance: "normal"
+  },
+  {
+    id: "robotics-1787575886366-4",
+    title: "五位具身大佬谈：万台交付中，卡点在哪里？",
+    summary: "2026-08-23热度: 3898\n\n文章围绕具身机器人万台级量产交付的现实瓶颈展开，聚焦大脑可靠性（任务成功率需达99.99%）、硬件指标与批次一致性、产线",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://news.marsbit.co/20260823110410865973.html",
+    publishedAt: "2026-08-23T00:00:00.000Z",
+    updatedAt: "2026-08-24T12:51:26.366Z",
+    importance: "normal"
+  },
+  {
+    id: "robotics-1787575886366-5",
+    title: "第二届世界人形机器人运动会“冰丝带”开幕_央广网",
+    summary: "央广网北京8月23日消息（记者 庞婷）8月22日晚，第二届世界人形机器人运动会在国家速滑馆“冰丝带”开幕。来自六大洲16个国家的666支参赛队伍、2056台机器",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "http://www.cnr.cn/bj/isue/20260823/t20260823_527787544.shtml",
+    publishedAt: "2026-08-23T00:00:00.000Z",
+    updatedAt: "2026-08-24T12:51:26.366Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1787575886366-7",
+    title: "机器人成为中国高端制造出口新名片-新华网",
+    summary: "Exa 搜索（Exa）是一家专注于人工智能原生的搜索引擎公司，近日宣布完成 1700 万美元 A 轮融资，由 Lightspeed Venture Partne",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.news.cn/tech/20260823/89c9edd177884604ad6766e1bcf68436/c.html",
+    publishedAt: "2026-08-23T00:00:00.000Z",
+    updatedAt: "2026-08-24T12:51:26.366Z",
+    importance: "normal"
+  },
   {
     id: "finance-1787447240638-2",
     title: "刚刚，官媒重磅发文，释放强烈信号！8月24日周一，A股没太大悬念|a股|美债|美股|股指|抛压|结构性行情_网易订阅",
@@ -26,6 +158,102 @@ const hardcodedData: NewsData = {
     sourceUrl: "https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E6%B3%95%E5%9B%BD%E6%8A%A5%E7%BA%B8%E6%91%98%E8%A6%81/20260821-%E4%B8%93%E5%AE%B6%E6%8B%85%E5%BF%83%E7%89%B9%E6%9C%97%E6%99%AE%E4%B8%8E%E9%87%91%E6%AD%A3%E6%81%A9%E5%86%8D%E6%AC%A1%E4%BC%9A%E6%99%A4%E4%BC%9A%E6%98%AF%E5%8F%88%E4%B8%80%E6%AC%A1%E5%A4%96%E4%BA%A4%E6%8C%AB%E8%B4%A5",
     publishedAt: "2026-08-22T01:07:21.802Z",
     updatedAt: "2026-08-23T01:07:19.498Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1787575883574-0",
+    title: "国际观察丨美国对伊朗“史上最严制裁”能奏效吗-新华网",
+    summary: "Exa 搜索是一家专注于人工智能驱动的搜索引擎初创公司，近期完成新一轮融资，总额达 1700 万美元，由 Lightspeed Venture Partners",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.news.cn/20260822/55b3acfc267e40f98e81189eb95a173d/c.html",
+    publishedAt: "2026-08-22T00:00:00.000Z",
+    updatedAt: "2026-08-24T12:51:23.575Z",
+    importance: "normal"
+  },
+  {
+    id: "geopolitics-1787575883575-4",
+    title: "美伊进入“经济战”，中东局势何去何从？_京报网",
+    summary: "伊朗外交部发言人巴加埃8月22日说，美国宣称对伊朗实施新的经济制裁，在国际法层面毫无依据。\n\n由于与伊朗的谈判停滞，美国总统特朗普8月19日宣布对伊朗实施“毁灭",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://news.bjd.com.cn/2026/08/22/11927607.shtml",
+    publishedAt: "2026-08-22T00:00:00.000Z",
+    updatedAt: "2026-08-24T12:51:23.576Z",
+    importance: "normal"
+  },
+  {
+    id: "geopolitics-1787575883576-5",
+    title: "俄乌加强无人机远程打击，试图瘫痪对方经济基础设施",
+    summary: "- 美国之音\n\n俄乌加强无人机远程打击，试图瘫痪对方经济基础设施\n\n分享\n\n分享\n\n评论\n\n资料照片：乌克兰军人准备向哈尔科夫地区的俄军发射FP-2型攻击无人机",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.voachinese.com/a/russia-ukraine-ramp-up-drone-campaigns-aiming-to-cripple-other-s-economic-infrastructure-20260822/8189256.html",
+    publishedAt: "2026-08-22T00:00:00.000Z",
+    updatedAt: "2026-08-24T12:51:23.576Z",
+    importance: "normal"
+  },
+  {
+    id: "geopolitics-1787575883577-9",
+    title: "土耳其押注美国避免冲突，而以色列则扩大了对叙利亚的红线。 - AL-MONITOR: The Middle Eastʼs leading independent news source since 2012",
+    summary: "## Subscribe for as low as $2/week to access this story and all reporting. \n\n## ",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.al-monitor.com/zh-hans/originals/2026/08/tuerqiyazhumeiguobimianchongtueryiseliezekuodaleduixuliyadehongxian",
+    publishedAt: "2026-08-22T00:00:00.000Z",
+    updatedAt: "2026-08-24T12:51:23.577Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1787575885115-0",
+    title: "40万亿债务压顶！美债风暴席卷全球，人民币资产能否成为避风港？读懂这背后三大逻辑！_新浪财经_新浪网",
+    summary: "40万亿债务压顶！美债风暴席卷全球，人民币资产能否成为避风港？读懂这背后三大逻辑！\n\n 2026年08月23日 07:35 券商中国\n\n 尽管美国财政部本周三突",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/stock/zqgd/2026-08-23/doc-inipfzva2719418.shtml",
+    publishedAt: "2026-08-22T00:00:00.000Z",
+    updatedAt: "2026-08-24T12:51:25.115Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1787575885115-3",
+    title: "美股全线上涨，金价重回4600美元_新浪财经_新浪网",
+    summary: "当地时间8月21日，美股三大股指集体收涨，特斯拉大涨逾5%。国际金价收复4600美元/盎司关口。\n\n　　日前美国财政部宣布扩大国债回购规模“救市”，有机构认为，",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/jjxw/2026-08-22/doc-inipcwvt6183425.shtml",
+    publishedAt: "2026-08-22T00:00:00.000Z",
+    updatedAt: "2026-08-24T12:51:25.115Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1787575885116-7",
+    title: "美债没救成，却坑了美元，黄金暴涨，贝森特“偷鸡不成蚀把米”-虎嗅网",
+    summary: "华尔街见闻\n\n本文来自微信公众号： 华尔街见闻 ，作者：杨宸 鲍奕龙，原文标题：《美债没救成，却坑了美元，黄金暴涨！贝森特“偷鸡不成蚀把米”》\n\n美国财政部长贝",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.huxiu.com/article/4885186.html",
+    publishedAt: "2026-08-22T00:00:00.000Z",
+    updatedAt: "2026-08-24T12:51:25.116Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1787575886365-0",
+    title: "从两场世界级大会看中国机器人产业新气象-新华网",
+    summary: "Exa 搜索（Exa）是一家专注于人工智能驱动的网络搜索初创公司，近期完成新一轮融资，总额达 1700 万美元，由 Lightspeed Venture Par",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.news.cn/tech/20260822/662b320f66c842488ee3186c51752125/c.html",
+    publishedAt: "2026-08-22T00:00:00.000Z",
+    updatedAt: "2026-08-24T12:51:26.365Z",
     importance: "hot"
   },
   {
@@ -98,6 +326,42 @@ const hardcodedData: NewsData = {
     sourceUrl: "https://www.163.com/dy/article/L4RJDG8F055284JB.html?clickfrom=w_tech",
     publishedAt: "2026-08-21T01:30:08.000Z",
     updatedAt: "2026-08-21T10:29:29.960Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1787575886365-1",
+    title: "从炫技到干活 从分歧到共识 具身智能进入务实新阶段",
+    summary: "从炫技到干活 从分歧到共识 具身智能进入务实新阶段\n\n返回首页\n\n“去年机器人还主要在做表演，今年所有人都在关心场景。”京东零售具身智能业务负责人郑小丹在202",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.cs.com.cn/ssgs/cj2020/2026/08/21/detail_2026082110032823.html",
+    publishedAt: "2026-08-21T00:00:00.000Z",
+    updatedAt: "2026-08-24T12:51:26.365Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1787575886366-6",
+    title: "从“炫技”到“实干”，机器人走向更多真实场景-新华网",
+    summary: "Exa 搜索（Exa Labs）于2025年5月完成由Lightspeed Venture Partners领投的1700万美元A轮融资，累计融资额达2300万",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "http://bj.news.cn/20260821/24e4b24daf244e369f848f6e7c541a75/c.html",
+    publishedAt: "2026-08-21T00:00:00.000Z",
+    updatedAt: "2026-08-24T12:51:26.366Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1787575886366-8",
+    title: "中国具身智能迎来规模化应用关键窗口期",
+    summary: "Exa 搜索是一家专注于为人工智能时代构建搜索基础设施的初创公司，其核心产品是一款面向 AI 应用和大型语言模型的神经搜索工具。该工具旨在通过语义理解而非单纯的",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.cs.com.cn/xwzx/01/2026/08/21/detail_2026082110033111.html",
+    publishedAt: "2026-08-21T00:00:00.000Z",
+    updatedAt: "2026-08-24T12:51:26.366Z",
     importance: "hot"
   },
   {
@@ -194,30 +458,6 @@ const hardcodedData: NewsData = {
     sourceUrl: "https://finance.sina.com.cn/money/forex/whxwsd/2026-08-21/doc-ininztww1461786.shtml",
     publishedAt: "2026-08-21T00:00:00.000Z",
     updatedAt: "2026-08-23T01:07:20.640Z",
-    importance: "hot"
-  },
-  {
-    id: "robotics-1787447242449-0",
-    title: "从“炫技”到“实干”，机器人走向更多真实场景-新华网",
-    summary: "Exa 搜索（Exa）是一家专注于人工智能时代的知识检索与发现工具，其核心产品为面向开发者和研究人员的语义搜索引擎。该引擎基于自研的神经网络嵌入模型，能够理解查",
-    deepDive: "",
-    category: "robotics",
-    source: "Exa 搜索",
-    sourceUrl: "http://bj.news.cn/20260821/24e4b24daf244e369f848f6e7c541a75/c.html",
-    publishedAt: "2026-08-21T00:00:00.000Z",
-    updatedAt: "2026-08-23T01:07:22.450Z",
-    importance: "hot"
-  },
-  {
-    id: "robotics-1787447242450-1",
-    title: "从炫技到干活 从分歧到共识 具身智能进入务实新阶段",
-    summary: "从炫技到干活 从分歧到共识 具身智能进入务实新阶段\n\n返回首页\n\n“去年机器人还主要在做表演，今年所有人都在关心场景。”京东零售具身智能业务负责人郑小丹在202",
-    deepDive: "",
-    category: "robotics",
-    source: "Exa 搜索",
-    sourceUrl: "https://www.cs.com.cn/ssgs/cj2020/2026/08/21/detail_2026082110032823.html",
-    publishedAt: "2026-08-21T00:00:00.000Z",
-    updatedAt: "2026-08-23T01:07:22.450Z",
     importance: "hot"
   },
   {
