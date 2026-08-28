@@ -1,0 +1,246 @@
+﻿@import "tailwindcss";
+
+:root {
+  --color-ocean-50: #eff6ff;
+  --color-ocean-100: #dbeafe;
+  --color-ocean-200: #bfdbfe;
+  --color-ocean-300: #93c5fd;
+  --color-ocean-400: #60a5fa;
+  --color-ocean-500: #3b82f6;
+  --color-ocean-600: #2563eb;
+  --color-ocean-700: #1d4ed8;
+  --color-ocean-800: #1e40af;
+  --color-ocean-900: #1e3a5f;
+  --color-red-accent: #ef4444;
+  --color-yellow-accent: #eab308;
+  --color-bg: #ffffff;
+  --color-bg-alt: #f8fafc;
+  --color-text: #1a1a2e;
+  --color-text-secondary: #64748b;
+  --color-text-muted: #94a3b8;
+  --color-border: #e2e8f0;
+  --color-border-light: #f1f5f9;
+  --color-sidebar-bg: #f0f7ff;
+  --color-card-bg: #ffffff;
+}
+
+* { box-sizing: border-box; }
+html { overflow-x: hidden; }
+body { overflow-x: hidden; width: 100%; max-width: 100vw; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+/* 黑客模式 */
+.hacker-mode {
+  --color-bg: #0a0a0a !important;
+  --color-text: #00ff41 !important;
+  --color-text-secondary: #00cc33 !important;
+  --color-text-muted: #008800 !important;
+  --color-border: #003300 !important;
+  --color-border-light: #002200 !important;
+  --color-sidebar-bg: #050505 !important;
+  --color-card-bg: #0d0d0d !important;
+  --color-bg-alt: #0a0a0a !important;
+  --color-ocean-50: #001a00 !important;
+  --color-ocean-100: #002200 !important;
+  --color-ocean-200: #003300 !important;
+  --color-ocean-300: #004400 !important;
+  --color-ocean-400: #00cc33 !important;
+  --color-ocean-500: #00ff41 !important;
+  --color-ocean-600: #00ff41 !important;
+  --color-ocean-700: #00cc33 !important;
+}
+.hacker-mode body,
+.hacker-mode * {
+  font-family: "Courier New", "Consolas", monospace !important;
+}
+/* 扫描线效果 */
+.hacker-mode body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 255, 65, 0.03) 2px,
+    rgba(0, 255, 65, 0.03) 4px
+  );
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* 侧边栏 — 宽度过渡 */
+.sidebar-aside {
+  width: 256px;
+  overflow: hidden;
+}
+.sidebar-header-brand,
+.sidebar-label,
+.sidebar-footer-label {
+  white-space: nowrap;
+  word-break: keep-all;
+  overflow: hidden;
+}
+.sidebar-header-brand {
+  min-width: 0;
+  max-width: 140px;
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.18s ease 0.14s, transform 0.22s ease 0.14s;
+}
+.sidebar-label {
+  display: inline-flex;
+  align-items: center;
+  max-width: 140px;
+  opacity: 1;
+  transform: translateX(0);
+  transition-property: opacity, transform, max-width;
+  transition-duration: 0.2s, 0.24s, 0.24s;
+  transition-timing-function: ease, cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
+}
+.sidebar-footer-label {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.18s ease 0.42s, transform 0.22s ease 0.42s;
+}
+.sidebar-aside.sidebar-collapsed .sidebar-header-brand,
+.sidebar-aside.sidebar-collapsed .sidebar-label,
+.sidebar-aside.sidebar-collapsed .sidebar-footer-label {
+  max-width: 0;
+  opacity: 0;
+  transform: translateX(-6px);
+  transition-delay: 0ms !important;
+  pointer-events: none;
+}
+.sidebar-aside.sidebar-collapsed .sidebar-footer-label {
+  transform: translateY(6px);
+}
+.sidebar-aside.sidebar-collapsed nav button,
+.sidebar-aside.sidebar-collapsed nav a {
+  gap: 0;
+}
+/* 移动端：折叠时整体滑出 */
+@media (max-width: 767px) {
+  .sidebar-collapsed {
+    transform: translateX(-100%);
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .sidebar-expanded {
+    transform: translateX(0);
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+/* 桌面端：折叠时宽度缩到 48px */
+@media (min-width: 768px) {
+  .sidebar-collapsed {
+    width: 48px;
+  }
+  .sidebar-expanded {
+    width: 256px;
+  }
+  .sidebar-aside.sidebar-collapsed,
+  .sidebar-aside.sidebar-expanded {
+    transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+/* 主内容区 — 真实 margin 过渡，保持右侧边缘和浏览器窗口对齐 */
+.sidebar-content-main {
+  min-height: 100vh;
+  transition: margin-left 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (min-width: 768px) {
+  .sidebar-content-main {
+    margin-left: 256px;
+  }
+  body.sidebar-is-collapsed .sidebar-content-main {
+    margin-left: 48px;
+  }
+}
+@media (max-width: 767px) {
+  .sidebar-content-main {
+    margin-left: 0;
+  }
+}
+
+/* 全屏滚动 — 用 JS 接管，CSS 不 snap */
+.snap-container {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100vh;
+  overscroll-behavior: none;
+  padding: 0 !important;
+  margin: calc(-1rem) 0 0 calc(-1rem);
+  width: calc(100% + 2rem);
+}
+@media (min-width: 768px) {
+  .snap-container {
+    margin: calc(-1.5rem) calc(-1.5rem) 0 calc(-1.5rem);
+    width: calc(100% + 3rem);
+  }
+}
+@media (min-width: 1024px) {
+  .snap-container {
+    margin: calc(-2rem) calc(-2rem) 0 calc(-2rem);
+    width: calc(100% + 4rem);
+  }
+}
+.snap-container > section {
+  padding: 1rem 0.75rem;
+}
+@media (min-width: 768px) {
+  .snap-container > section {
+    padding: 1.5rem;
+  }
+}
+
+/* News card - 增强阴影层次 */
+.news-card {
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+.news-card:hover {
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.1);
+  border-color: var(--color-ocean-300);
+  transform: translateY(-1px);
+}
+
+/* 分类卡片悬浮阴影 */
+.category-card {
+  transition: all 0.2s ease;
+}
+.category-card:hover {
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.08);
+  transform: translateY(-1px);
+}
+
+/* 最新动态列表项 */
+.recent-item {
+  transition: all 0.15s ease;
+}
+.recent-item:hover {
+  background: var(--color-ocean-50);
+}
+
+/* 深化内容动画 */
+.deep-dive-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.2s ease;
+  opacity: 0;
+}
+.deep-dive-content.open {
+  max-height: 2000px;
+  opacity: 1;
+}
