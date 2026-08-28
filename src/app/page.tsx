@@ -202,16 +202,19 @@ export default function HomePage() {
       {/* ===== Screen 1: Hero ===== */}
       <section data-section="home" className="h-screen flex flex-col items-center px-4 md:px-16 max-w-4xl mx-auto w-full overflow-hidden relative">
 
-        {/* 右上角：跳转到墨极日报 */}
+        {/* 右上角：跳转到墨极日报（墨极风格印章按钮） */}
         <a
           href="https://li-news.pages.dev/moji_daily.html"
           target="_blank"
           rel="noopener noreferrer"
-          className="absolute top-5 right-5 z-40 flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[var(--color-ocean-600)] text-white text-sm font-semibold shadow-lg hover:bg-[var(--color-ocean-700)] hover:scale-105 transition-all duration-200"
+          className="absolute top-4 right-4 z-40 flex items-center gap-2.5 px-5 py-3 rounded-xl bg-[#b0392e] text-[#f5f2ec] text-base font-bold tracking-wide shadow-lg hover:bg-[#8f2e24] hover:scale-105 hover:-translate-y-0.5 transition-all duration-200"
+          style={{ fontFamily: '"KaiTi","STKaiti","Ma Shan Zheng",serif' }}
           title="跳转到墨极日报"
         >
-          <svg className="w-4.5 h-4.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.2} d="M4.5 12h15M13 5.5l6.5 6.5-6.5 6.5M4.5 12h15" />
+          {/* 墨极印章图标：朱砂印框 + 墨字 */}
+          <svg className="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="4.5" stroke="#f5f2ec" strokeWidth="1.8" />
+            <text x="12" y="16.5" fontSize="13" textAnchor="middle" fill="#f5f2ec" style={{ fontFamily: '"KaiTi","Ma Shan Zheng",serif' }}>墨</text>
           </svg>
           墨极日报
         </a>
