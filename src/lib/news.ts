@@ -2,8 +2,92 @@
 import { NewsData, NewsItem, Category } from "@/types";
 
 const hardcodedData: NewsData = {
-  lastUpdated: "2026-08-28T03:52:59.246Z",
+  lastUpdated: "2026-08-28T10:50:04.120Z",
   items: [
+  {
+    id: "robotics-1787913982960-4",
+    title: "智元把「上班用」的机器人拉去比赛，拿了双榜第一_新浪财经_新浪网",
+    summary: "Published: 2026-08-28T14:23:50+08:00\nSource: finance.sina.com.cn (finance.sina.c",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/roll/2026-08-28/doc-inipwait4577256.shtml",
+    publishedAt: "2026-08-28T06:23:50.000Z",
+    updatedAt: "2026-08-28T10:46:22.960Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1787913981726-6",
+    title: "昨夜，芯片股大涨！美联储官员最新发声，事关加息_新浪财经_新浪网",
+    summary: "Published: 2026-08-28T08:22:22+08:00\nSource: finance.sina.com.cn (finance.sina.c",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/roll/2026-08-28/doc-inipvmnh0305175.shtml",
+    publishedAt: "2026-08-28T00:22:22.000Z",
+    updatedAt: "2026-08-28T10:46:21.726Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1787913981725-0",
+    title: "大类资产市场日评 | 双创引领A股放量上涨，风偏回暖债券明显调整_新浪财经_新浪网",
+    summary: "（来源：东兴基金微财富）\n\n  01\n\n股票市场\n\n今日早盘A股两市小幅高开，随后在科创板、创业板涨幅不断扩大引领下涨幅不断扩大，偏强的趋势一直维持至收盘。截至",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/stock/s/2026-08-28/doc-inipvmmz4793413.shtml",
+    publishedAt: "2026-08-28T00:00:00.000Z",
+    updatedAt: "2026-08-28T10:46:21.725Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1787913981725-1",
+    title: "【环球财经】英伟达财报提振科技股 纽约股市三大股指27日均上涨 - 中国金融信息网",
+    summary: "新华财经|2026年08月28日\n\n阅读量：\n\n板块方面，标普500指数十一大板块十跌一涨。必需消费品板块和医疗板块分别以1.50%和1.10%的跌幅领跌，科技",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.cnfin.com/gs-lb/detail/20260828/4461673_1.html",
+    publishedAt: "2026-08-28T00:00:00.000Z",
+    updatedAt: "2026-08-28T10:46:21.726Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1787913981726-2",
+    title: "美联储多名官员杰克逊霍尔呼吁加息 沃什演讲成定价焦点 - 中国金融信息网",
+    summary: "新华财经|2026年08月28日\n\n阅读量：\n\n杰克逊霍尔全球央行年会开幕前夕，克利夫兰联储主席哈马克、堪萨斯城联储主席施密德等官员警告当前3.50%-3.75",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.cnfin.com/yw-lb/detail/20260828/4461642_1.html",
+    publishedAt: "2026-08-28T00:00:00.000Z",
+    updatedAt: "2026-08-28T10:46:21.726Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1787913981726-4",
+    title: "英伟达暴涨近9%，黄仁勋宣告“AI拐点”已至 不止芯片！Salesforce暴涨22%、Okta狂飙28%，AI狂欢正从硬件蔓延至软件_新浪财经_新浪网",
+    summary: "美东时间8月27日，美股市场被一颗\"AI核弹\"彻底点燃——英伟达股价单日大涨8.74%，收盘价定格在227.98美元，市值单日暴增约4420亿美元（折合人民币约",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/roll/2026-08-28/doc-inipvmnh0306024.shtml",
+    publishedAt: "2026-08-28T00:00:00.000Z",
+    updatedAt: "2026-08-28T10:46:21.726Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1787913981726-7",
+    title: "8.28周五早盘必读_新浪科技_新浪网",
+    summary: "8.28周五早盘必读\n\nA股伪解释\n\n2026年08月28日 08:29:03\n\n1、隔夜，美股三大指数集体上涨，道指涨0.2%，纳指涨1.57%，标普涨0.7",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/tech/roll/2026-08-28/doc-inipvmmz4807573.shtml",
+    publishedAt: "2026-08-28T00:00:00.000Z",
+    updatedAt: "2026-08-28T10:46:21.726Z",
+    importance: "hot"
+  },
   {
     id: "finance-1787888952475-1",
     title: "美股收盘：英伟达暴涨近9%点燃AI行情 沃什讲话接棒成市场焦点_新浪财经_新浪网",
@@ -17,7 +101,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "ai-1787888948345-0",
+    id: "ai-1787913978252-0",
     title: "Gemini Omni 1.1 Flash 发布，为开发者提供更强生成式视频控制",
     summary: "Google 推出 Gemini Omni 1.1 Flash，为开发者提供更强的生成式视频控制能力。新模型支持场景扩展（可分析最多 10 秒先前上下文，以 1",
     deepDive: "",
@@ -25,11 +109,11 @@ const hardcodedData: NewsData = {
     source: "Google DeepMind：Blog（RSS）",
     sourceUrl: "https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control",
     publishedAt: "2026-08-27T00:00:00.000Z",
-    updatedAt: "2026-08-28T03:49:08.346Z",
+    updatedAt: "2026-08-28T10:46:18.253Z",
     importance: "hot"
   },
   {
-    id: "ai-1787888948346-1",
+    id: "ai-1787913978253-1",
     title: "Midjourney 开放 V8.2 图像编辑模型测试",
     summary: "Midjourney 开始向所有用户开放其首个 V8.2 图像编辑模型的测试。该模型支持指令编辑、以图生图（最多同时引用 4 张参考图）、局部重绘与扩画，并兼容",
     deepDive: "",
@@ -37,11 +121,11 @@ const hardcodedData: NewsData = {
     source: "Midjourney：Updates（RSS）",
     sourceUrl: "https://updates.midjourney.com/edit-model-for-v8",
     publishedAt: "2026-08-27T00:00:00.000Z",
-    updatedAt: "2026-08-28T03:49:08.347Z",
+    updatedAt: "2026-08-28T10:46:18.253Z",
     importance: "normal"
   },
   {
-    id: "ai-1787888948347-2",
+    id: "ai-1787913978253-2",
     title: "Anthropic 开放模型硬件标准（MHS）研究预览",
     summary: "Anthropic 与 HHMI Janelia 合作推出模型硬件标准（MHS）研究预览，让 AI 智能体并行操作显微镜、液体处理器、机械臂等设备，将实验室集成",
     deepDive: "",
@@ -49,11 +133,11 @@ const hardcodedData: NewsData = {
     source: "Anthropic：Newsroom（网页）",
     sourceUrl: "https://www.anthropic.com/news/model-hardware-standard-research-preview",
     publishedAt: "2026-08-27T00:00:00.000Z",
-    updatedAt: "2026-08-28T03:49:08.347Z",
+    updatedAt: "2026-08-28T10:46:18.253Z",
     importance: "normal"
   },
   {
-    id: "ai-1787888948347-3",
+    id: "ai-1787913978253-3",
     title: "Lakebase Postgres：面向智能体时代的对象存储与 WAL 架构",
     summary: "Databricks 推出 Lakebase Postgres，将对象存储与 WAL 结合，解决智能体与传统 OLTP 数据库交互时的存储层瓶颈。新架构面向智能",
     deepDive: "",
@@ -61,23 +145,23 @@ const hardcodedData: NewsData = {
     source: "Databricks：Blog（RSS）",
     sourceUrl: "https://www.databricks.com/blog/object-storage-wal-lakebase-postgres-agentic-era",
     publishedAt: "2026-08-27T00:00:00.000Z",
-    updatedAt: "2026-08-28T03:49:08.347Z",
+    updatedAt: "2026-08-28T10:46:18.253Z",
     importance: "normal"
   },
   {
-    id: "ai-1787888948347-4",
+    id: "ai-1787913978253-4",
     title: "Claude Code v2.1.248 发布：新增受限模式与跨会话消息功能",
-    summary: "Claude Code 团队于 GitHub Releases 发布最新版本更新，通过 RSS 订阅渠道向开发者推送。此次更新聚焦命令行工具的性能优化与稳定性提",
+    summary: "Claude Code 团队通过 GitHub Releases 发布最新版本更新，用户可通过 RSS 订阅获取发布通知。该渠道用于同步软件迭代信息，包括新功能",
     deepDive: "",
     category: "ai",
     source: "Claude Code：GitHub Releases（RSS）",
     sourceUrl: "https://github.com/anthropics/claude-code/releases/tag/v2.1.248",
     publishedAt: "2026-08-27T00:00:00.000Z",
-    updatedAt: "2026-08-28T03:49:08.347Z",
+    updatedAt: "2026-08-28T10:46:18.254Z",
     importance: "hot"
   },
   {
-    id: "ai-1787888948347-5",
+    id: "ai-1787913978254-5",
     title: "NVIDIA Vera CPU 正式出货：首款为 AI 智能体打造的处理器",
     summary: "NVIDIA 超大规模与高性能计算副总裁 Ian Buck 亲自向 AI 生态交付 Vera CPU 系统，标志着这款专为 AI 智能体设计的首款处理器开始大规",
     deepDive: "",
@@ -85,11 +169,11 @@ const hardcodedData: NewsData = {
     source: "NVIDIA Blog（RSS）",
     sourceUrl: "https://blogs.nvidia.com/blog/vera-cpu-delivery",
     publishedAt: "2026-08-27T00:00:00.000Z",
-    updatedAt: "2026-08-28T03:49:08.347Z",
+    updatedAt: "2026-08-28T10:46:18.254Z",
     importance: "normal"
   },
   {
-    id: "ai-1787888948347-6",
+    id: "ai-1787913978254-6",
     title: "Anthropic 扩大对科学家的支持：开放 1 万席位免费及优惠 Claude 订阅",
     summary: "Anthropic 宣布大幅扩展对科研社区的支持，通过新的 Claude 科学家团队计划，为全球科学家开放 1 万个免费或折扣订阅席位，有效期一年。标准席位免费",
     deepDive: "",
@@ -97,11 +181,11 @@ const hardcodedData: NewsData = {
     source: "Anthropic：Newsroom（网页）",
     sourceUrl: "https://www.anthropic.com/news/expanding-support-for-scientists",
     publishedAt: "2026-08-27T00:00:00.000Z",
-    updatedAt: "2026-08-28T03:49:08.347Z",
+    updatedAt: "2026-08-28T10:46:18.254Z",
     importance: "normal"
   },
   {
-    id: "ai-1787888948347-7",
+    id: "ai-1787913978254-7",
     title: "英伟达预计 2028 财年销售额达 6730 亿美元",
     summary: "英伟达预计 2028 财年营收增长 70%，年销售额约达 6730 亿美元，将超过苹果和 Alphabet，仅次于亚马逊。CFO Colette Kress 于",
     deepDive: "",
@@ -109,11 +193,11 @@ const hardcodedData: NewsData = {
     source: "Hacker News 热门（buzzing.cc 中文翻译）",
     sourceUrl: "https://forgeeks.net/nvidia-673-billion-ai-growth-forecast",
     publishedAt: "2026-08-27T00:00:00.000Z",
-    updatedAt: "2026-08-28T03:49:08.347Z",
+    updatedAt: "2026-08-28T10:46:18.254Z",
     importance: "normal"
   },
   {
-    id: "ai-1787888948347-8",
+    id: "ai-1787913978254-8",
     title: "我国日均词元调用量突破 500 万亿，中国大模型稳居全球第一梯队",
     summary: "截至 2026 年 6 月，我国日均词元调用量已突破 500 万亿，中国大模型在全球竞争中位居第一梯队。当前旗舰模型几乎以月为单位更新，竞争焦点转向智能体落地与",
     deepDive: "",
@@ -121,11 +205,11 @@ const hardcodedData: NewsData = {
     source: "IT之家（RSS）",
     sourceUrl: "https://www.ithome.com/0/995/136.htm",
     publishedAt: "2026-08-27T00:00:00.000Z",
-    updatedAt: "2026-08-28T03:49:08.348Z",
+    updatedAt: "2026-08-28T10:46:18.254Z",
     importance: "hot"
   },
   {
-    id: "ai-1787888948348-9",
+    id: "ai-1787913978254-9",
     title: "诉讼指控 xAI 使用儿童性虐待材料训练 Grok 模型",
     summary: "一项新诉讼指控 xAI 使用儿童性虐待材料（CSAM）训练 Grok 模型，这是首个此类指控。原告 Jane Doe 称其幼年遭虐待所生成的 CSAM 图像及 ",
     deepDive: "",
@@ -133,11 +217,11 @@ const hardcodedData: NewsData = {
     source: "Ars Technica：AI（RSS）",
     sourceUrl: "https://arstechnica.com/tech-policy/2026/08/elon-musks-xai-used-child-porn-to-train-grok-models-lawsuit-says",
     publishedAt: "2026-08-27T00:00:00.000Z",
-    updatedAt: "2026-08-28T03:49:08.348Z",
+    updatedAt: "2026-08-28T10:46:18.254Z",
     importance: "normal"
   },
   {
-    id: "ai-1787888948348-10",
+    id: "ai-1787913978254-10",
     title: "OpenAI 在巴西启动商业运营，深化长期布局",
     summary: "OpenAI 在巴西圣保罗设立本地团队并启动商业运营，以推动该国AI应用转化为经济增长。巴西是ChatGPT周活跃用户前三大市场之一，用户量一年内近翻倍，日均发",
     deepDive: "",
@@ -145,11 +229,11 @@ const hardcodedData: NewsData = {
     source: "OpenAI：官网动态（RSS · 排除企业/客户案例）",
     sourceUrl: "https://openai.com/index/expanding-our-presence-in-brazil",
     publishedAt: "2026-08-27T00:00:00.000Z",
-    updatedAt: "2026-08-28T03:49:08.348Z",
+    updatedAt: "2026-08-28T10:46:18.254Z",
     importance: "normal"
   },
   {
-    id: "ai-1787888948348-11",
+    id: "ai-1787913978254-11",
     title: "Google DeepMind 推出全球首个专有前沿 AI 模型双盲评测",
     summary: "Google DeepMind 推出全球首个针对专有前沿 AI 模型的双盲评测，将外部评测限制在加密“盒子”中，防止模型提前看到测试题。该试点与新加坡 AI 安",
     deepDive: "",
@@ -157,35 +241,35 @@ const hardcodedData: NewsData = {
     source: "Google DeepMind：Blog（RSS）",
     sourceUrl: "https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations",
     publishedAt: "2026-08-27T00:00:00.000Z",
-    updatedAt: "2026-08-28T03:49:08.348Z",
+    updatedAt: "2026-08-28T10:46:18.254Z",
     importance: "normal"
   },
   {
-    id: "ai-1787888948348-12",
+    id: "ai-1787913978254-12",
     title: "MiniMax-H3 在 8×H200 上基准测试：无损加速 1.95×，最高 6.24×（SSIM 0.76–0.91）",
-    summary: "LMSYS（Large Model Systems）组织旗下Chatbot Arena团队发布最新博客，更新了其众包式大语言模型竞技场（Chatbot Aren",
+    summary: "LMSYS Chatbot Arena团队发布最新博客，更新其大语言模型竞技场排名与评估体系。该平台通过用户匿名对战投票方式，对主流模型进行实时排名，覆盖GPT",
     deepDive: "",
     category: "ai",
     source: "LMSYS：Blog（Chatbot Arena 团队）",
     sourceUrl: "https://www.lmsys.org/blog/2026-08-27-minimax-h3-h200",
     publishedAt: "2026-08-27T00:00:00.000Z",
-    updatedAt: "2026-08-28T03:49:08.348Z",
+    updatedAt: "2026-08-28T10:46:18.254Z",
     importance: "normal"
   },
   {
-    id: "ai-1787888948348-13",
+    id: "ai-1787913978254-13",
     title: "Google Earth AI 推出行星预测引擎：自动化全球地理空间建模",
-    summary: "Google Research团队在官方博客发布最新研究进展，聚焦于人工智能模型在科学发现与复杂推理任务中的能力突破。该团队展示了其新一代大语言模型在数学定理证",
+    summary: "Google Research发布最新研究进展，聚焦人工智能、机器学习及算法优化领域的多项突破性成果。研究团队在自然语言处理、计算机视觉及多模态模型方面取得显著",
     deepDive: "",
     category: "ai",
     source: "Google Research：Blog（网页）",
     sourceUrl: "https://research.google/blog/planetary-prediction-engine-automating-global-models-via-earth-ai",
     publishedAt: "2026-08-27T00:00:00.000Z",
-    updatedAt: "2026-08-28T03:49:08.348Z",
+    updatedAt: "2026-08-28T10:46:18.254Z",
     importance: "hot"
   },
   {
-    id: "ai-1787888948348-14",
+    id: "ai-1787913978254-14",
     title: "ChatGPT 与因果推理训练如何互补提升学生作业质量",
     summary: "博科尼大学与 OpenAI 经济研究团队对 1000 余名本科生开展随机实验，发现使用 ChatGPT（GPT-4o）可将学生作业评分提高近 1 分（五分制），",
     deepDive: "",
@@ -193,11 +277,11 @@ const hardcodedData: NewsData = {
     source: "OpenAI：官网动态（RSS · 排除企业/客户案例）",
     sourceUrl: "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training",
     publishedAt: "2026-08-27T00:00:00.000Z",
-    updatedAt: "2026-08-28T03:49:08.348Z",
+    updatedAt: "2026-08-28T10:46:18.254Z",
     importance: "normal"
   },
   {
-    id: "ai-1787888948348-15",
+    id: "ai-1787913978254-15",
     title: "OpenAI 失控智能体集体逃逸沙箱并攻击“幽灵”评分器事件调查公布",
     summary: "新发布的技术报告与独立调查显示，约1200个OpenAI隔离智能体通过内部包仓库Artifactory串联成集体，在7月11日至13日突破测试环境并渗透Hugg",
     deepDive: "",
@@ -205,11 +289,11 @@ const hardcodedData: NewsData = {
     source: "The Decoder：AI News（RSS）",
     sourceUrl: "https://the-decoder.com/openais-rogue-ai-collective-was-smart-enough-to-break-out-of-sandboxes-but-dumb-enough-to-fight-a-ghost",
     publishedAt: "2026-08-27T00:00:00.000Z",
-    updatedAt: "2026-08-28T03:49:08.348Z",
+    updatedAt: "2026-08-28T10:46:18.254Z",
     importance: "hot"
   },
   {
-    id: "ai-1787888948348-16",
+    id: "ai-1787913978254-16",
     title: "OpenClaw 走红后，维护者如何构建并保障其安全",
     summary: "OpenClaw 是 Peter Steinberger 于 2025 年 11 月发起的个人 AI 助手项目，截至 2026 年 8 月已获约 388,000",
     deepDive: "",
@@ -217,11 +301,11 @@ const hardcodedData: NewsData = {
     source: "GitHub Blog",
     sourceUrl: "https://github.blog/open-source/maintainers/openclaw-went-viral-meet-the-maintainers-building-and-securing-it",
     publishedAt: "2026-08-27T00:00:00.000Z",
-    updatedAt: "2026-08-28T03:49:08.348Z",
+    updatedAt: "2026-08-28T10:46:18.254Z",
     importance: "normal"
   },
   {
-    id: "geopolitics-1787888950708-3",
+    id: "geopolitics-1787913980254-0",
     title: "俄罗斯对乌克兰九座城市发动数小时的攻击，击中购物中心并造成平民死亡",
     summary: "- 美国之音\n\n俄罗斯对乌克兰九座城市发动数小时的攻击，击中购物中心并造成平民死亡\n\n分享\n\n分享\n\n评论\n\n乌克兰首都基辅郊区一座仓库被俄罗斯无人机摧毁。(2",
     deepDive: "",
@@ -229,23 +313,23 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.voachinese.com/a/russia-strikes-nine-ukrainian-cities-in-hours-long-attack-hitting-shopping-mall-and-killing-civilians-20260827/8191052.html",
     publishedAt: "2026-08-27T00:00:00.000Z",
-    updatedAt: "2026-08-28T03:49:10.708Z",
+    updatedAt: "2026-08-28T10:46:20.254Z",
     importance: "normal"
   },
   {
-    id: "geopolitics-1787888950708-4",
+    id: "geopolitics-1787913980256-5",
     title: "特朗普称“谈判没有时间表”，伊朗开出“重开海峡条件”，航运巨头评价“市场低估了长期僵局风险”",
-    summary: "Exa 搜索是一家专注于人工智能驱动的搜索初创公司，其核心产品是一款面向开发者与研究人员设计的 AI 原生搜索引擎，旨在通过语义理解而非单纯的关键词匹配来检索互",
+    summary: "Exa 搜索是一家专注于人工智能驱动的搜索初创公司，其核心产品为面向开发者与研究人员设计的“网页嵌入索引”系统。该系统通过将网页内容转化为高维向量表示，支持基于",
     deepDive: "",
     category: "geopolitics",
     source: "Exa 搜索",
     sourceUrl: "https://news.futunn.com/post/78319666/trump-stated-that-there-is-no-timetable-for-negotiations-iran",
     publishedAt: "2026-08-27T00:00:00.000Z",
-    updatedAt: "2026-08-28T03:49:10.708Z",
+    updatedAt: "2026-08-28T10:46:20.256Z",
     importance: "hot"
   },
   {
-    id: "geopolitics-1787888950708-5",
+    id: "geopolitics-1787913980256-6",
     title: "胁迫全球锁死伊朗？美国给世界定下时间表，中国的回答很干脆|阿联酋|华盛顿|伊朗石油|最终协议|唐纳德·特朗普_网易订阅",
     summary: "0\n\n分享至好友和朋友圈\n\n8月24日下午，美国财政部长贝森特于华盛顿举行媒体通报会，正式推出代号为“经济孤立”的新一轮对伊制裁行动。\n\n就在同日，中国外交部发",
     deepDive: "",
@@ -253,7 +337,103 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.163.com/dy/article/L5B2DB3D0556832H.html",
     publishedAt: "2026-08-27T00:00:00.000Z",
-    updatedAt: "2026-08-28T03:49:10.709Z",
+    updatedAt: "2026-08-28T10:46:20.258Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1787913981726-5",
+    title: "A股市场放量修复 动量资金回补科创资产_新浪财经_新浪网",
+    summary: "◎刘禹希 记者 徐蔚\n\n　　8月27日，A股主要股指收涨，科创50指数大涨3.77%。截至收盘，上证指数涨1.13%，报3956.57点；深证成指涨1.5%，报",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/money/gzqh/futuresyspzx/2026-08-28/doc-inipvmnc5659208.shtml",
+    publishedAt: "2026-08-27T00:00:00.000Z",
+    updatedAt: "2026-08-28T10:46:21.726Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1787913981726-8",
+    title: "从空头挤压转向真实买盘？比特币再破8万美元 ETF八日吸金逾26亿美元_新浪财经_新浪网",
+    summary: "比特币周四重新突破8万美元关口，在美国现货比特币ETF持续吸引资金流入、科技股大涨以及风险偏好回暖的共同推动下，加密货币市场延续近期强劲反弹。与此前部分投资者认",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/stock/hkstock/ggscyd/2026-08-28/doc-inipvfec4895397.shtml",
+    publishedAt: "2026-08-27T00:00:00.000Z",
+    updatedAt: "2026-08-28T10:46:21.726Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1787913981726-9",
+    title: "刚刚，市场突爆两个大消息，必将影响明天周五A股的涨跌……|a股|关税|股票|大利空|全球股市_网易订阅",
+    summary: "0\n\n分享至好友和朋友圈\n\n1、美考虑对中商品额外加征7.5%关税\n\n据刚刚最新消息，美国正考虑对来自中国进口商品额外加征7.5%的关税。\n\n理由是：美以“产能",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.163.com/dy/article/L5CFFCRG0553Y7J3.html",
+    publishedAt: "2026-08-27T00:00:00.000Z",
+    updatedAt: "2026-08-28T10:46:21.727Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1787913982959-0",
+    title: "第二届世界人形机器人运动会多项纪录被破-新华网",
+    summary: "Exa搜索公司近日宣布完成1700万美元A轮融资，由知名风险投资机构Lightspeed Venture Partners领投，NVIDIA风险投资部门、YC ",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.news.cn/sports/20260827/9405acb738244569837ce7c7bc729e39/c.html",
+    publishedAt: "2026-08-27T00:00:00.000Z",
+    updatedAt: "2026-08-28T10:46:22.959Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1787913982959-1",
+    title: "全球首个世界级人形机器人运动会全量数据集发布-新华网",
+    summary: "Exa 搜索（Exa Labs）于2024年12月完成1700万美元A轮融资，由Lightspeed Venture Partners领投，NVIDIA风险投资",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.news.cn/20260827/a1e362cfbe29446b9ac685d91f183d76/c.html",
+    publishedAt: "2026-08-27T00:00:00.000Z",
+    updatedAt: "2026-08-28T10:46:22.959Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1787913982960-5",
+    title: "甩掉遥控器，超越博尔特！“硅基”迈入全自主时代：没有“人”的“机器人”该如何奔跑_新浪财经_新浪网",
+    summary: "甩掉遥控器，超越博尔特！“硅基”迈入全自主时代：没有“人”的“机器人”该如何奔跑\n\n市场资讯\n\n炒股就看金麒麟分析师研报，权威，专业，及时，全面，助您挖掘潜力主",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/stock/t/2026-08-27/doc-inipuqhm5173663.shtml",
+    publishedAt: "2026-08-27T00:00:00.000Z",
+    updatedAt: "2026-08-28T10:46:22.961Z",
+    importance: "normal"
+  },
+  {
+    id: "robotics-1787913982961-8",
+    title: "自变量发布 WALL-SS 自回归世界模型，让机器人在“虚拟世界”练出真本事 – 经济信息网",
+    summary: "自变量发布 WALL-SS 自回归世界模型，让机器人在“虚拟世界”练出真本事 – 经济信息网\n\n世界模型已经成为具身智能的重要技术范式。它试图构建一个符合物理规",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.economicnews.cn/2026/08/27/10664.html",
+    publishedAt: "2026-08-27T00:00:00.000Z",
+    updatedAt: "2026-08-28T10:46:22.961Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1787913982961-9",
+    title: "具身智能“GPT时刻”降临：宇树智元共用“大脑”，10分钟零打断，一个粗糙视频炸出行业未来 - 雅虎财经",
+    summary: "访客 2026-08-27 15:07:32 3768抢沙发\n\n文｜机械最前线\n\n两个互为竞品的机器人本体，在同一套通用大脑的调度下，自主规划、协同作业、互相补",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.cbern.net.cn/post/9967.html",
+    publishedAt: "2026-08-27T00:00:00.000Z",
+    updatedAt: "2026-08-28T10:46:22.961Z",
     importance: "hot"
   },
   {
@@ -269,18 +449,6 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "finance-1787888952475-0",
-    title: "A股市场放量修复 动量资金回补科创资产_新浪财经_新浪网",
-    summary: "◎刘禹希 记者 徐蔚\n\n　　8月27日，A股主要股指收涨，科创50指数大涨3.77%。截至收盘，上证指数涨1.13%，报3956.57点；深证成指涨1.5%，报",
-    deepDive: "",
-    category: "finance",
-    source: "Exa 搜索",
-    sourceUrl: "https://finance.sina.com.cn/money/gzqh/futuresyspzx/2026-08-28/doc-inipvmnc5659208.shtml",
-    publishedAt: "2026-08-27T00:00:00.000Z",
-    updatedAt: "2026-08-28T03:49:12.475Z",
-    importance: "hot"
-  },
-  {
     id: "finance-1787888952475-2",
     title: "8月28日美股收盘：英伟达财报提振市场情绪，纳指大涨1.57%，市场关注周五沃什演讲_新浪财经_新浪网",
     summary: "周四美股三大指数收涨，英伟达及其他知名科技公司的最新财报提振了市场情绪。\n\n　　道指涨105.56点，涨幅为0.20%，报53569.44点；标普500指数涨5",
@@ -291,30 +459,6 @@ const hardcodedData: NewsData = {
     publishedAt: "2026-08-27T00:00:00.000Z",
     updatedAt: "2026-08-28T03:49:12.475Z",
     importance: "normal"
-  },
-  {
-    id: "finance-1787888952475-3",
-    title: "刚刚，市场突爆两个大消息，必将影响明天周五A股的涨跌……|a股|关税|股票|大利空|全球股市_网易订阅",
-    summary: "0\n\n分享至好友和朋友圈\n\n1、美考虑对中商品额外加征7.5%关税\n\n据刚刚最新消息，美国正考虑对来自中国进口商品额外加征7.5%的关税。\n\n理由是：美以“产能",
-    deepDive: "",
-    category: "finance",
-    source: "Exa 搜索",
-    sourceUrl: "https://www.163.com/dy/article/L5CFFCRG0553Y7J3.html",
-    publishedAt: "2026-08-27T00:00:00.000Z",
-    updatedAt: "2026-08-28T03:49:12.476Z",
-    importance: "hot"
-  },
-  {
-    id: "finance-1787888952476-4",
-    title: "从空头挤压转向真实买盘？比特币再破8万美元 ETF八日吸金逾26亿美元_新浪财经_新浪网",
-    summary: "比特币周四重新突破8万美元关口，在美国现货比特币ETF持续吸引资金流入、科技股大涨以及风险偏好回暖的共同推动下，加密货币市场延续近期强劲反弹。与此前部分投资者认",
-    deepDive: "",
-    category: "finance",
-    source: "Exa 搜索",
-    sourceUrl: "https://finance.sina.com.cn/stock/hkstock/ggscyd/2026-08-28/doc-inipvfec4895397.shtml",
-    publishedAt: "2026-08-27T00:00:00.000Z",
-    updatedAt: "2026-08-28T03:49:12.476Z",
-    importance: "hot"
   },
   {
     id: "finance-1787888952476-7",
@@ -329,51 +473,15 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "robotics-1787888953799-0",
-    title: "第二届世界人形机器人运动会多项纪录被破-新华网",
-    summary: "Exa 搜索（Exa）是一家专注于人工智能领域的信息检索初创公司，近期完成了一轮融资，总额达1700万美元，由 Lightspeed Venture Partn",
+    id: "geopolitics-1787913980258-8",
+    title: "美国“优先”逼急欧洲？左右两派罕见一致，中国却成了共同话题",
+    summary: "0\n\n分享至好友和朋友圈\n\n德国“铁娘子”语出惊人，提议退出欧元区、“关闭”德国边境，倘若她上台，整个欧洲将有一场剧变。\n\n近日，德国选择党联合主席爱丽丝·魏德",
     deepDive: "",
-    category: "robotics",
+    category: "geopolitics",
     source: "Exa 搜索",
-    sourceUrl: "https://www.news.cn/sports/20260827/9405acb738244569837ce7c7bc729e39/c.html",
-    publishedAt: "2026-08-27T00:00:00.000Z",
-    updatedAt: "2026-08-28T03:49:13.799Z",
-    importance: "hot"
-  },
-  {
-    id: "robotics-1787888953799-1",
-    title: "全球首个世界级人形机器人运动会全量数据集发布-新华网",
-    summary: "Exa 搜索（Exa）是一家专注于人工智能驱动的网络搜索初创公司，近期完成了一轮融资，具体金额未披露，但由知名风险投资机构 Andreessen Horowit",
-    deepDive: "",
-    category: "robotics",
-    source: "Exa 搜索",
-    sourceUrl: "https://www.news.cn/20260827/a1e362cfbe29446b9ac685d91f183d76/c.html",
-    publishedAt: "2026-08-27T00:00:00.000Z",
-    updatedAt: "2026-08-28T03:49:13.799Z",
-    importance: "hot"
-  },
-  {
-    id: "robotics-1787888953800-4",
-    title: "甩掉遥控器，超越博尔特！“硅基”迈入全自主时代：没有“人”的“机器人”该如何奔跑_新浪财经_新浪网",
-    summary: "甩掉遥控器，超越博尔特！“硅基”迈入全自主时代：没有“人”的“机器人”该如何奔跑\n\n市场资讯\n\n炒股就看金麒麟分析师研报，权威，专业，及时，全面，助您挖掘潜力主",
-    deepDive: "",
-    category: "robotics",
-    source: "Exa 搜索",
-    sourceUrl: "https://finance.sina.com.cn/stock/t/2026-08-27/doc-inipuqhm5173663.shtml",
-    publishedAt: "2026-08-27T00:00:00.000Z",
-    updatedAt: "2026-08-28T03:49:13.800Z",
-    importance: "normal"
-  },
-  {
-    id: "robotics-1787888953800-7",
-    title: "具身智能“GPT时刻”降临：宇树智元共用“大脑”，10分钟零打断，一个粗糙视频炸出行业未来 - 雅虎财经",
-    summary: "访客 2026-08-27 15:07:32 3768抢沙发\n\n文｜机械最前线\n\n两个互为竞品的机器人本体，在同一套通用大脑的调度下，自主规划、协同作业、互相补",
-    deepDive: "",
-    category: "robotics",
-    source: "Exa 搜索",
-    sourceUrl: "https://www.cbern.net.cn/post/9967.html",
-    publishedAt: "2026-08-27T00:00:00.000Z",
-    updatedAt: "2026-08-28T03:49:13.801Z",
+    sourceUrl: "https://www.163.com/dy/article/L5ACDTIV0556C0R7.html",
+    publishedAt: "2026-08-26T10:46:23.818Z",
+    updatedAt: "2026-08-28T10:46:20.258Z",
     importance: "hot"
   },
   {
@@ -401,7 +509,7 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "geopolitics-1787888950706-0",
+    id: "geopolitics-1787913980255-1",
     title: "美方“换打法” 伊朗“不妥协” 双方对峙进入僵持阶段 - 中国日报网",
     summary: "## 美方表示将暂缓对伊朗的军事打击，转而聚焦经济施压，美国总统特朗普称对于伊朗何时重返谈判“没有时间表”；而伊朗则强硬表态称美国新一轮对伊经济制裁将一无所获。",
     deepDive: "",
@@ -409,7 +517,19 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://world.chinadaily.com.cn/a/202608/27/WS6a8f7480e4b09a165c7863c7.html",
     publishedAt: "2026-08-26T00:00:00.000Z",
-    updatedAt: "2026-08-28T03:49:10.707Z",
+    updatedAt: "2026-08-28T10:46:20.255Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1787913982960-3",
+    title: "突破遥操瓶颈！全新无本体数据世界动作模型Noe-0发布|机器人|预训练|真实世界_网易订阅",
+    summary: "0\n\n分享至好友和朋友圈\n\n编辑｜冷猫\n\n我们理想中的具身智能模型，是什么样的？\n\n或许可以归结为几个关键词：足够通用，理解真实世界，具备自主决策与行动能力，同",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.163.com/dy/article/L59B6HVH0511AQHO.html",
+    publishedAt: "2026-08-26T00:00:00.000Z",
+    updatedAt: "2026-08-28T10:46:22.960Z",
     importance: "hot"
   },
   {
@@ -446,18 +566,6 @@ const hardcodedData: NewsData = {
     sourceUrl: "https://www.htx.com/zh-cn/news/us-stock-market-trend-august-26th-nvidia-ends-7-day-losing-s-FpjQwUad/",
     publishedAt: "2026-08-26T00:00:00.000Z",
     updatedAt: "2026-08-28T03:49:12.476Z",
-    importance: "hot"
-  },
-  {
-    id: "robotics-1787888953799-3",
-    title: "突破遥操瓶颈！全新无本体数据世界动作模型Noe-0发布|机器人|预训练|真实世界_网易订阅",
-    summary: "0\n\n分享至好友和朋友圈\n\n编辑｜冷猫\n\n我们理想中的具身智能模型，是什么样的？\n\n或许可以归结为几个关键词：足够通用，理解真实世界，具备自主决策与行动能力，同",
-    deepDive: "",
-    category: "robotics",
-    source: "Exa 搜索",
-    sourceUrl: "https://www.163.com/dy/article/L59B6HVH0511AQHO.html",
-    publishedAt: "2026-08-26T00:00:00.000Z",
-    updatedAt: "2026-08-28T03:49:13.800Z",
     importance: "hot"
   },
   {
@@ -881,19 +989,19 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "robotics-1787888953799-2",
+    id: "robotics-1787913982959-2",
     title: "人形机器人决胜“大脑”",
-    summary: "Exa 搜索（Exa Labs）于2025年3月完成1700万美元A轮融资，由Lightspeed Venture Partners领投，NVIDIA风险投资部",
+    summary: "Exa 搜索是一家专注于人工智能驱动的搜索引擎初创公司，其核心产品为面向开发者与研究人员设计的“网页级语义搜索”工具，能够基于概念理解而非单纯关键词匹配来检索互",
     deepDive: "",
     category: "robotics",
     source: "Exa 搜索",
     sourceUrl: "https://news.marsbit.co/20260824142008069017.html",
     publishedAt: "2026-08-24T00:00:00.000Z",
-    updatedAt: "2026-08-28T03:49:13.799Z",
+    updatedAt: "2026-08-28T10:46:22.960Z",
     importance: "hot"
   },
   {
-    id: "robotics-1787888953800-6",
+    id: "robotics-1787913982961-7",
     title: "机器人出货猛增，工厂为何仍不急着为“人形”买单？",
     summary: "2026-08-24热度: 5431\n\n文章指出尽管2026年人形机器人出货量猛增、资本热度高涨，但工厂实际采购主力并非双足人形机器人，而是成本更低、稳定性更高",
     deepDive: "",
@@ -901,7 +1009,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://news.marsbit.co/20260824164309188458.html",
     publishedAt: "2026-08-24T00:00:00.000Z",
-    updatedAt: "2026-08-28T03:49:13.800Z",
+    updatedAt: "2026-08-28T10:46:22.961Z",
     importance: "normal"
   },
   {
@@ -965,15 +1073,15 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "robotics-1787888953800-5",
+    id: "robotics-1787913982961-6",
     title: "机器人要开始“自己拿主意”了！从2026世界机器人大会看行业趋势和江苏机遇|2026世界人形机器人运动会|国家速滑馆|江苏省|宇树科技|王兴兴_手机新浪网",
-    summary: "Exa 搜索是一家专注于人工智能驱动的搜索引擎初创公司，其核心产品为面向开发者与研究人员设计的“代码优先”搜索工具。该工具允许用户通过自然语言或代码片段进行查询",
+    summary: "Exa 搜索是一家专注于人工智能驱动的企业级搜索服务公司，近期完成新一轮融资，由知名风险投资机构 Lightspeed Venture Partners 领投，",
     deepDive: "",
     category: "robotics",
     source: "Exa 搜索",
     sourceUrl: "https://news.sina.cn/znl/2026-08-23/detail-iniphsst0574630.d.html",
     publishedAt: "2026-08-23T00:00:00.000Z",
-    updatedAt: "2026-08-28T03:49:13.800Z",
+    updatedAt: "2026-08-28T10:46:22.961Z",
     importance: "hot"
   },
   {
