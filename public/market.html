@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>纸上集市 · 今日</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --board:#2f4f47;
+  --chalk:#f5f2e8;
+  --chalk-yellow:#ffe9a8;
+  --chalk-pink:#ffc9d6;
+  --chalk-blue:#bfe3ff;
+  --paper:#fdfbf5; --paper2:#fff8e6; --paper3:#f3f7ee; --pink:#fdeef0; --blue:#eef4fb;
+  --ink:#3d3629; --ink-soft:#6f6654;
+  --tape1:rgba(255,214,140,0.65); --tape2:rgba(178,220,255,0.55); --tape3:rgba(255,170,190,0.5);
+  --red:#c94f43; --green:#5d7d54;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body {
+  background:
+    /* 窗外斜射的阳光：两道斜向暖金光带 */
+    linear-gradient(115deg,
+      transparent 4%,
+      rgba(255,236,180,0.32) 9%,
+      rgba(255,240,195,0.38) 16%,
+      rgba(255,236,180,0.28) 23%,
+      transparent 30%,
+      transparent 46%,
+      rgba(255,232,170,0.20) 54%,
+      rgba(255,236,185,0.26) 62%,
+      transparent 72%),
+    var(--board);
+  min-height:100vh;
+  font-family:"Noto Sans SC",-apple-system,"PingFang SC",sans-serif;
+  color:var(--ink);
+  padding-bottom:80px;
+}
+/* 木纹 + 光斑里的浮尘 */
+/* 粉笔灰质感：细颗粒 + 微噪点 */
+body::before {
+  content:""; position:fixed; inset:0;
+  background-image:
+    radial-gradient(rgba(245,242,232,0.09) 0.8px, transparent 1.2px),
+    radial-gradient(rgba(245,242,232,0.06) 0.7px, transparent 1.1px),
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.012) 0 1px, transparent 1px 3px);
+  background-size:90px 90px, 140px 140px, auto;
+  pointer-events:none;
+}
+/* 光带的柔光罩层：让光更像"照进来"而不是画上去 */
+/* 讲台灯的暖光从上方洒下 */
+body::after {
+  content:""; position:fixed; inset:0;
+  background:radial-gradient(ellipse 80% 50% at 50% -10%, rgba(255,240,190,0.10), transparent 65%);
+  pointer-events:none;
+}
+
+/* ===== 粉笔字通用 ===== */
+.chalk {
+  font-family:"LXGW WenKai TC","Kaiti SC","KaiTi",serif !important;
+  color:var(--chalk);
+  text-shadow:0 0 1px rgba(245,242,232,0.5), 0 0 6px rgba(245,242,232,0.12);
+}
+.chalk-yellow { color:var(--chalk-yellow) !important; }
+.chalk-pink { color:var(--chalk-pink) !important; }
+.chalk-blue { color:var(--chalk-blue) !important; }
+
+/* ===== 桌面道具（纯CSS具象物件）===== */
+.desk-props { position:fixed; inset:0; z-index:0; pointer-events:none; overflow:hidden; }
+
+/* 粉笔涂鸦角落布置 */
+.chalk-doodle { position:absolute; max-width:280px; line-height:1.6; }
+.cd-topleft  { top:26px; left:30px; transform:rotate(-2deg); }
+.cd-topright { top:24px; right:34px; text-align:right; transform:rotate(1.5deg); }
+.cd-botright { bottom:36px; right:40px; text-align:right; transform:rotate(-1deg); }
+.cd-botleft  { bottom:30px; left:36px; transform:rotate(1.8deg); }
+
+/* 涂鸦在窄屏淡出，避免挡内容 */
+@media (max-width:1100px){
+  .chalk-doodle { opacity:0.35; }
+}
+@media (max-width:760px){
+  .chalk-doodle { display:none; }
+}
+
+/* 黑板边框：木框包住整个视口 */
+.board-frame {
+  position:fixed; inset:0; z-index:1; pointer-events:none;
+  border:14px solid #6b4e2e;
+  box-shadow:
+    inset 0 0 0 3px rgba(255,240,200,0.15),
+    inset 0 0 40px rgba(0,0,0,0.25);
+}
+.board-frame::before {
+  /* 木框四角螺丝 */
+  content:"";
+  position:absolute; inset:6px;
+  background:
+    radial-gradient(circle 5px at 10px 10px, rgba(255,235,190,0.4) 40%, transparent 45%),
+    radial-gradient(circle 5px at calc(100% - 10px) 10px, rgba(255,235,190,0.4) 40%, transparent 45%),
+    radial-gradient(circle 5px at 10px calc(100% - 10px), rgba(255,235,190,0.4) 40%, transparent 45%),
+    radial-gradient(circle 5px at calc(100% - 10px) calc(100% - 10px), rgba(255,235,190,0.4) 40%, transparent 45%);
+}
+.prop-notebook { position:absolute; top:-90px; right:-110px; width:560px; height:400px; transform:rotate(13deg); }
+.nb-page {
+  position:absolute; inset:0; border-radius:6px;
+  background:
+    repeating-linear-gradient(180deg, transparent 0 27px, rgba(125,145,190,0.32) 28px),
+    #fdfcf6;
+  box-shadow:0 14px 40px rgba(80,50,15,0.35), inset 0 0 70px rgba(210,175,115,0.15);
+}
+.nb-under {
+  position:absolute; left:-18px; top:10px; width:100%; height:96%;
+  background:#f3eedd; transform:rotate(-2.6deg); border-radius:6px;
+  box-shadow:0 8px 24px rgba(80,50,15,0.25);
+}
+.nb-spine { position:absolute; left:49%; top:0; bottom:0; width:3px; background:linear-gradient(90deg, rgba(150,128,92,0.45), rgba(150,128,92,0.1)); }
+.nb-margin { position:absolute; left:11%; top:0; bottom:0; width:1.5px; background:rgba(220,110,100,0.4); }
+
+.prop-coffee { position:absolute; left:-46px; bottom:-58px; width:250px; height:250px; }
+.cup-saucer {
+  position:absolute; inset:0; border-radius:50%;
+  background:radial-gradient(circle at 36% 30%, #ffffff, #ece5d5 70%);
+  box-shadow:0 14px 34px rgba(80,50,15,0.38);
+}
+.cup-body {
+  position:absolute; inset:27px; border-radius:50%;
+  background:radial-gradient(circle at 38% 32%, #ffffff, #f0eadd 76%);
+  box-shadow:inset 0 0 0 3px rgba(160,140,100,0.22);
+}
+.cup-liquid {
+  position:absolute; inset:46px; border-radius:50%;
+  background:
+    radial-gradient(ellipse 26px 12px at 60% 62%, rgba(230,200,150,0.9), transparent),
+    radial-gradient(circle at 44% 40%, rgba(222,190,140,0.75) 0 8%, transparent 9%),
+    radial-gradient(circle at 40% 38%, #a5713d, #7a5127 72%);
+}
+.cup-handle {
+  position:absolute; right:-24px; top:50%; transform:translateY(-50%) rotate(8deg);
+  width:62px; height:72px;
+  border:13px solid #f4efe2; border-left:none; border-radius:0 46px 46px 0;
+  box-shadow:5px 9px 18px rgba(80,50,15,0.25);
+}
+.steam {
+  position:absolute; left:38%; top:-70px;
+  width:5px; height:64px; border-radius:50%;
+  background:linear-gradient(180deg, transparent, rgba(255,252,240,0.55));
+  filter:blur(3px);
+}
+.steam.s2 { left:47%; top:-88px; height:82px; opacity:0.7; }
+
+.prop-pencil {
+  position:absolute; right:4%; bottom:30px;
+  width:min(310px,26vw); height:16px;
+  transform:rotate(-22deg); display:flex;
+  filter:drop-shadow(-6px 8px 10px rgba(80,50,15,0.3));
+}
+.pc-body { flex:1; background:repeating-linear-gradient(90deg,#eec04e 0 20px,#dda83c 20px 22px); border-radius:2px 0 0 2px; }
+.pc-tip {
+  width:30px; background:#ecd9b4; position:relative;
+  clip-path:polygon(0 50%, 100% 0, 100% 100%);
+}
+.pc-tip::after {
+  content:""; position:absolute; left:0; top:37%;
+  width:10px; height:26%; background:#3c3c3c;
+  clip-path:polygon(0 50%, 100% 0, 100% 100%);
+}
+.pc-metal { width:11px; background:linear-gradient(180deg,#e0e0e0,#a8a8a8); }
+.pc-eraser { width:24px; background:linear-gradient(180deg,#f2aab4,#dd8d99); border-radius:0 7px 7px 0; }
+
+@media (max-width:900px){
+  .prop-notebook{ opacity:0.55; transform:rotate(13deg) scale(0.8); }
+  .prop-pencil{ display:none; }
+  .prop-coffee{ transform:scale(0.8); }
+}
+.wrap { position:relative; max-width:1180px; margin:0 auto; padding:clamp(20px,4vh,44px) clamp(14px,3vw,40px) 0; }
+
+/* ===== 木牌标题 ===== */
+.board-title { text-align:center; margin-bottom:clamp(22px,4vh,40px); position:relative; }
+.sign {
+  display:inline-block; position:relative;
+  background:var(--paper); color:var(--ink);
+  font-weight:900; font-size:clamp(26px,4vw,42px); letter-spacing:0.22em;
+  padding:16px 46px;
+  box-shadow:0 3px 0 rgba(61,54,41,0.25), 0 14px 30px rgba(50,35,15,0.35);
+  transform:rotate(-1.6deg);
+}
+/* 吊绳+图钉 */
+.sign::before {
+  content:""; position:absolute; left:50%; top:-70px; transform:translateX(-50%);
+  width:2px; height:70px; background:rgba(61,54,41,0.55);
+}
+.pin {
+  position:absolute; width:16px; height:16px; border-radius:50%;
+  background:radial-gradient(circle at 32% 30%, #ff7b6e, var(--red) 68%);
+  box-shadow:0 2px 4px rgba(0,0,0,0.35);
+}
+.sign .pin.p1 { top:-9px; left:-7px; }
+.sign .pin.p2 { top:-9px; right:-7px; }
+.subtitle { margin-top:14px; font-size:12px; letter-spacing:0.4em; color:rgba(255,250,238,0.85); }
+
+/* 判语：撕纸条 */
+.tears { display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin-bottom:clamp(26px,4vh,44px); }
+.tear {
+  font-family:"LXGW WenKai TC","Kaiti SC","KaiTi",serif;
+  background:var(--paper2); color:var(--ink-soft);
+  font-size:13px; line-height:1.7;
+  padding:10px 18px 12px; max-width:270px;
+  clip-path:polygon(0% 8%, 3% 0%, 97% 2%, 100% 12%, 99% 92%, 96% 100%, 4% 98%, 0% 90%);
+  box-shadow:0 4px 10px rgba(50,35,15,0.28);
+}
+.tear:nth-child(odd){ transform:rotate(-1.4deg); }
+.tear:nth-child(even){ transform:rotate(1.1deg); }
+.tear b { color:var(--red); margin-right:6px; font-weight:700; }
+
+/* ===== 简报大卡（中央钉住的信纸） ===== */
+.brief {
+  position:relative; max-width:820px; margin:0 auto clamp(30px,5vh,52px);
+  background:
+    repeating-linear-gradient(180deg, transparent, transparent 27px, rgba(93,125,84,0.16) 28px),
+    var(--paper3);
+  padding:26px 30px 30px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.5);
+  transform:rotate(0.5deg);
+  border-radius:2px;
+}
+.brief .pin.big {
+  width:20px; height:20px; top:-11px; left:50%; transform:translateX(-50%);
+  background:radial-gradient(circle at 32% 30%, #ffd66e, #d99a1f 68%);
+}
+.brief h2 {
+  font-size:14px; letter-spacing:0.5em; color:var(--green);
+  margin-bottom:12px; font-weight:900;
+}
+.brief p { font-size:14px; line-height:2.05; color:#4a4436; text-align:justify; }
+.tape {
+  position:absolute; width:88px; height:26px;
+  backdrop-filter:saturate(1.2);
+  opacity:0.9;
+}
+
+/* ===== 摊位木牌 ===== */
+.stall-sign {
+  display:flex; align-items:baseline; gap:14px;
+  margin:clamp(26px,4vh,40px) 0 20px;
+  padding-bottom:8px;
+  border-bottom:2px dashed rgba(61,54,41,0.35);
+}
+.stall-sign .ss-board {
+  font-family:"LXGW WenKai TC","Kaiti SC","KaiTi",serif;
+  font-size:clamp(19px,2.2vw,24px); font-weight:700; letter-spacing:0.3em;
+  color:#fff8e6;
+  background:linear-gradient(180deg, #8a663e, #6d4e2c);
+  padding:6px 20px;
+  border-radius:2px;
+  box-shadow:0 3px 8px rgba(80,55,20,0.35);
+  transform:rotate(-1.2deg);
+}
+.stall-sign .ss-en {
+  font-family:Georgia,serif; font-size:11.5px; letter-spacing:0.22em;
+  color:rgba(90,60,25,0.75);
+  text-shadow:0 1px 0 rgba(255,240,200,0.4);
+}
+
+/* ===== 新闻便签网格 ===== */
+.notes {
+  column-width:330px; column-gap:22px;
+}
+.note-card {
+  break-inside:avoid; position:relative;
+  margin:0 0 22px; padding:20px 20px 18px;
+  border-radius:1.5px;
+  box-shadow:0 6px 20px rgba(0,0,0,0.45), 0 2px 5px rgba(0,0,0,0.3);
+}
+.note-card.c1 { background:var(--paper);  transform:rotate(-1.1deg); }
+.note-card.c2 { background:var(--paper2); transform:rotate(0.9deg); }
+.note-card.c3 { background:var(--blue);   transform:rotate(-0.5deg); }
+.note-card.c4 { background:var(--pink);   transform:rotate(1.3deg); }
+.note-card:hover { transform:rotate(0deg) scale(1.02); z-index:3; transition:transform 0.22s ease; }
+.note-card .tape.t {
+  top:-12px; left:50%; transform:translateX(-50%) rotate(-2deg);
+}
+.nc-meta { display:flex; align-items:center; gap:8px; font-size:10.5px; color:var(--ink-soft); letter-spacing:0.1em; margin-bottom:8px; flex-wrap:wrap; }
+.nc-cat {
+  font-weight:900; font-size:10px; letter-spacing:0.28em;
+  padding:2px 8px; border-radius:2px;
+  background:var(--ink); color:var(--paper);
+}
+.hot .nc-cat { background:var(--red); }
+.nc-time { font-family:Georgia,serif; }
+.note-card h2 {
+  font-size:17.5px; font-weight:900; line-height:1.55; margin-bottom:8px;
+}
+.note-card h2 a { color:var(--ink); text-decoration:none; }
+.note-card h2 a:hover { text-decoration:underline; text-decoration-color:var(--red); text-decoration-thickness:2px; text-underline-offset:4px; }
+.note-card p { font-size:13px; line-height:1.95; color:#57503f; text-align:justify; }
+.nc-src { margin-top:10px; font-size:10.5px; color:var(--ink-soft); }
+.nc-src a { color:var(--green); text-decoration:none; font-weight:700; }
+.nc-src a:hover { text-decoration:underline; }
+
+footer.colophon {
+  text-align:center; margin-top:34px; color:rgba(96,64,28,0.75);
+  font-size:11px; letter-spacing:0.45em;
+  text-shadow:0 1px 0 rgba(255,240,200,0.35);
+}
+
+/* 飘落粉笔灰 */
+.chalk-dust { position:fixed; inset:0; z-index:1; pointer-events:none; overflow:hidden; }
+.chalk-dust i {
+  position:absolute; top:-10px;
+  width:4px; height:4px; border-radius:50%;
+  background:rgba(245,242,232,0.5);
+  animation:dust-fall linear infinite;
+}
+.chalk-dust i:nth-child(1) { left:12%; animation-duration:11s; animation-delay:0s; }
+.chalk-dust i:nth-child(2) { left:34%; animation-duration:14s; animation-delay:3s; }
+.chalk-dust i:nth-child(3) { left:57%; animation-duration:9s;  animation-delay:5s; }
+.chalk-dust i:nth-child(4) { left:76%; animation-duration:13s; animation-delay:1.5s; }
+.chalk-dust i:nth-child(5) { left:91%; animation-duration:16s; animation-delay:7s; }
+@keyframes dust-fall {
+  from { transform:translateY(-10px) translateX(0); opacity:0; }
+  10%  { opacity:0.8; }
+  to   { transform:translateY(105vh) translateX(40px); opacity:0; }
+}
+@media (prefers-reduced-motion:reduce){ .chalk-dust{display:none;} }
+</style>
+</head>
+<body>
+<div class="board-frame" aria-hidden="true"></div>
+<div class="chalk-dust" aria-hidden="true"></div>
+<div class="desk-props" aria-hidden="true">
+  <!-- 左上角：值日生公告 -->
+  <div class="chalk-doodle cd-topleft">
+    <p class="chalk" style="font-size:17px; letter-spacing:0.2em;">今日值日生</p>
+    <p class="chalk chalk-yellow" style="font-size:14px; margin-top:6px; transform:rotate(-1.5deg);">AI君 · 机械酱 · 寰宇桑</p>
+    <p class="chalk" style="font-size:12px; margin-top:10px; opacity:0.75;">❤ 请勿在黑板上画乌龟</p>
+    <svg class="chalk-turtle" width="64" height="40" viewBox="0 0 64 40" fill="none">
+      <ellipse cx="32" cy="24" rx="18" ry="11" stroke="#f5f2e8" stroke-width="2" opacity="0.5"/>
+      <circle cx="52" cy="20" r="6" stroke="#f5f2e8" stroke-width="2" opacity="0.5"/>
+      <path d="M20 30 L14 36 M32 34 L32 39 M44 30 L50 36" stroke="#f5f2e8" stroke-width="2" opacity="0.5"/>
+      <path d="M8 18 Q4 16 3 20" stroke="#ffc9d6" stroke-width="1.6" opacity="0.55"/>
+    </svg>
+    <p class="chalk chalk-pink" style="font-size:11px; transform:rotate(2deg); margin-top:2px;">哎呀还是画了</p>
+  </div>
+
+  <!-- 右上角：课程表涂改版 -->
+  <div class="chalk-doodle cd-topright">
+    <p class="chalk" style="font-size:15px; letter-spacing:0.25em;">本周课表</p>
+    <p class="chalk chalk-blue" style="font-size:13px; margin-top:5px;">周一 AI课 → 全体清醒</p>
+    <p class="chalk chalk-yellow" style="font-size:13px; margin-top:3px;">周二 机器人体育 → 别想逃</p>
+    <p class="chalk chalk-pink" style="font-size:13px; margin-top:3px;">周五 自由阅读 → 冲呀！</p>
+    <p class="chalk" style="font-size:11px; margin-top:7px; opacity:0.65; text-decoration:line-through;">周三 补考</p>
+    <p class="chalk chalk-yellow" style="font-size:11px; margin-top:2px;">↑ 被班长擦掉了嘻嘻</p>
+  </div>
+
+  <!-- 右下角：加油口号 -->
+  <div class="chalk-doodle cd-botright">
+    <p class="chalk chalk-yellow" style="font-size:19px; transform:rotate(-2deg);">今天也要好好看新闻鸭！</p>
+    <p class="chalk" style="font-size:12px; margin-top:5px; opacity:0.7;">—— 宣传委员 留</p>
+  </div>
+
+  <!-- 左下角：小粉笔画 -->
+  <div class="chalk-doodle cd-botleft">
+    <svg width="90" height="70" viewBox="0 0 90 70" fill="none">
+      <circle cx="45" cy="26" r="13" stroke="#ffe9a8" stroke-width="2" opacity="0.75"/>
+      <path d="M39 22 Q41 19 44 21 M49 21 Q52 19 53 22" stroke="#ffe9a8" stroke-width="1.8" opacity="0.75"/>
+      <path d="M39 31 Q45 35 51 31" stroke="#ffe9a8" stroke-width="1.8" opacity="0.75"/>
+      <path d="M28 62 Q45 48 62 62" stroke="#bfe3ff" stroke-width="2" opacity="0.6"/>
+      <text x="60" y="18" fill="#ffc9d6" font-size="11" opacity="0.7" transform="rotate(8 60 18)">✿</text>
+    </svg>
+    <p class="chalk chalk-blue" style="font-size:12px; margin-top:-4px;">笑脸太阳 · 美术课上画的</p>
+  </div>
+</div>
+<div class="wrap">
+
+  <div class="board-title">
+    <p class="chalk" style="font-size:13px; letter-spacing:0.7em; text-indent:0.7em; opacity:0.75; margin-bottom:10px;">高二三班 · 新闻园地</p>
+    <h1 class="chalk" style="font-size:clamp(38px,6vw,64px); font-weight:700; letter-spacing:0.24em; line-height:1.2;">纸上集市</h1>
+    <p class="chalk chalk-yellow" style="font-size:14px; letter-spacing:0.3em; margin-top:12px; transform:rotate(-1deg);">2026-08-26 · 今日 12 张字条 · 看完记得交作业哦</p>
+    <div style="margin-top:18px; display:flex; align-items:center; justify-content:center; gap:14px;">
+      <span style="display:inline-block; width:80px; height:2px; background:rgba(245,242,232,0.35);"></span>
+      <span class="chalk" style="font-size:16px;">✿</span>
+      <span style="display:inline-block; width:80px; height:2px; background:rgba(245,242,232,0.35);"></span>
+    </div>
+  </div>
+
+  <div class="tears"><div class="tear"><b>判</b>Apple 芯片军备竞赛升级，M6 与 M5 Ultra 将端侧AI算力推向新高度，本地大模型运行成标配。</div>
+<div class="tear"><b>判</b>OpenAI 自研芯片 Jalapeño 首秀，AI 硬件自主化加速，行业竞争从模型层延伸至芯片层。</div>
+<div class="tear"><b>判</b>美伊边打边谈，制裁与停火并行，霍尔木兹通航共识若落实，油价面临重估。</div>
+<div class="tear"><b>判</b>美国财政部回购长债点燃避险资产，黄金比特币新高，法币信用遭遇全球质疑。</div></div>
+
+  <section class="brief">
+    <span class="pin big"></span>
+    <div class="tape" style="background:var(--tape1); top:-12px; left:-24px; transform:rotate(-38deg);"></div>
+    <div class="tape" style="background:var(--tape2); bottom:-10px; right:-22px; transform:rotate(142deg);"></div>
+    <h2>今 日 集 市 吆 喝</h2>
+    <p>今日科技领域迎来密集发布潮：Apple 推出搭载 M5 Max/M5 Ultra 及 M6 芯片的多款新品，AI 算力大幅跃升；OpenAI 自研推理芯片 Jalapeño 首秀，主打行业领先的速度与能效。地缘方面，美伊冲突进入关键阶段，美国宣布对伊全面经济制裁，同时霍尔木兹海峡通航谈判传出进展，油价一度大跌。金融市场上，美国财政部扩大长债回购规模引发连锁反应，黄金与比特币齐创新高，科技股承压分化。机器人领域，第二届世界人形机器人运动会火热进行，多款具备自主学习能力的机器人亮相，展现运动能力新突破。</p>
+  </section>
+
+<div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin:0 auto clamp(24px,4vh,40px);"><a href="#stall-ai" style="color:var(--ink);text-decoration:none;font-size:12.5px;letter-spacing:0.2em;background:var(--paper);padding:7px 16px;box-shadow:0 2px 6px rgba(50,35,15,0.3);transform:rotate(-1.5deg);display:inline-block;font-weight:700;">机器 · 9</a>
+<a href="#stall-geopolitics" style="color:var(--ink);text-decoration:none;font-size:12.5px;letter-spacing:0.2em;background:var(--paper);padding:7px 16px;box-shadow:0 2px 6px rgba(50,35,15,0.3);transform:rotate(-0.5deg);display:inline-block;font-weight:700;">寰宇 · 1</a>
+<a href="#stall-finance" style="color:var(--ink);text-decoration:none;font-size:12.5px;letter-spacing:0.2em;background:var(--paper);padding:7px 16px;box-shadow:0 2px 6px rgba(50,35,15,0.3);transform:rotate(0.5deg);display:inline-block;font-weight:700;">泉货 · 2</a></div>
+<div id="stall-ai" class="stall-sign">
+<span class="ss-board">机器 摊</span>
+<span class="ss-en">MACHINE STALL · 9</span>
+</div>
+<div class="notes">
+<article class="note-card c2 hot">
+<div class="tape t" style="background:var(--tape2); transform:translateX(-50%) rotate(-0.5deg);"></div>
+<div class="nc-meta"><span class="nc-cat">机器</span>
+<span class="nc-time">8月25日 18:16</span>
+<span style="color:var(--red); font-weight:900;">★ 热卖</span>
+</div>
+<h2><a href="https://x.com/AndrewYNg/status/2092315079576555806" target="_blank" rel="noopener">OpenWorker 新版发布，内置网络安全智能体</a></h2>
+<p>Andrew Ng 旗下开源智能体 OpenWorker 发布新版，强化安全工作流。</p>
+<div class="nc-src">源 · <a href="https://x.com/AndrewYNg/status/2092315079576555806" target="_blank" rel="noopener">X：Andrew Ng（Deep</a></div>
+</article>
+<article class="note-card c3 hot">
+<div class="tape t" style="background:var(--tape3); transform:translateX(-50%) rotate(1.5deg);"></div>
+<div class="nc-meta"><span class="nc-cat">机器</span>
+<span class="nc-time">8月25日 15:37</span>
+<span style="color:var(--red); font-weight:900;">★ 热卖</span>
+</div>
+<h2><a href="https://x.com/GoogleAI/status/2092275116503707733" target="_blank" rel="noopener">WeatherNext 预测气旋：提前五天预警五级飓风</a></h2>
+<p>Google AI 发布 WeatherNext 气旋预测模型，可同时预测风暴路径、强度和规模，比现有系统多提供一整天的预警时间。</p>
+<div class="nc-src">源 · <a href="https://x.com/GoogleAI/status/2092275116503707733" target="_blank" rel="noopener">X：Google AI (@Go</a></div>
+</article>
+<article class="note-card c4">
+<div class="tape t" style="background:var(--tape1); transform:translateX(-50%) rotate(-1.5deg);"></div>
+<div class="nc-meta"><span class="nc-cat">机器</span>
+<span class="nc-time">8月25日</span>
+</div>
+<h2><a href="https://claude.com/blog/claudes-memory-works-everywhere-and-you-decide-whats-in-it" target="_blank" rel="noopener">Claude 记忆功能全面打通聊天与 Cowork，用户可逐条查看和编辑</a></h2>
+<p>Claude 即日起将聊天与 Claude Cowork 的记忆统一，用户在任一场景对话时都能调用此前积累的上下文，减少重复解释。</p>
+<div class="nc-src">源 · <a href="https://claude.com/blog/claudes-memory-works-everywhere-and-you-decide-whats-in-it" target="_blank" rel="noopener">Claude：Blog（网页）</a></div>
+</article>
+<article class="note-card c1">
+<div class="tape t" style="background:var(--tape2); transform:translateX(-50%) rotate(0.5deg);"></div>
+<div class="nc-meta"><span class="nc-cat">机器</span>
+<span class="nc-time">8月25日</span>
+</div>
+<h2><a href="https://www.langchain.com/blog/making-data-ingestion-production-ready-a-langchain-powered-airbyte-destination" target="_blank" rel="noopener">LangChain 与 Airbyte 集成：让数据摄取达到生产级就绪</a></h2>
+<p>LangChain团队于2025年1月发布其年度回顾报告，总结了过去一年在AI应用开发框架领域的关键进展。</p>
+<div class="nc-src">源 · <a href="https://www.langchain.com/blog/making-data-ingestion-production-ready-a-langchain-powered-airbyte-destination" target="_blank" rel="noopener">LangChain：Blog（R</a></div>
+</article>
+<article class="note-card c2">
+<div class="tape t" style="background:var(--tape3); transform:translateX(-50%) rotate(-2.5deg);"></div>
+<div class="nc-meta"><span class="nc-cat">机器</span>
+<span class="nc-time">8月25日</span>
+</div>
+<h2><a href="https://openai.com/index/introducing-admin-plugin" target="_blank" rel="noopener">OpenAI 推出 ChatGPT Work 和 Codex 的 Admin 插件</a></h2>
+<p>OpenAI 为 ChatGPT Work 和 Codex 推出 Admin 插件，让管理员在单一对话中完成查看工作区活动、管理成员与权限、调整用量限制及审批支出请求等操作。</p>
+<div class="nc-src">源 · <a href="https://openai.com/index/introducing-admin-plugin" target="_blank" rel="noopener">OpenAI：官网动态（RSS </a></div>
+</article>
+<article class="note-card c3">
+<div class="tape t" style="background:var(--tape1); transform:translateX(-50%) rotate(-0.5deg);"></div>
+<div class="nc-meta"><span class="nc-cat">机器</span>
+<span class="nc-time">8月25日</span>
+</div>
+<h2><a href="https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia" target="_blank" rel="noopener">OpenAI 封禁俄罗斯虚假影响力行动账号</a></h2>
+<p>OpenAI于2025年5月发布多项模型与产品更新。</p>
+<div class="nc-src">源 · <a href="https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia" target="_blank" rel="noopener">OpenAI：官网动态（RSS </a></div>
+</article>
+<article class="note-card c4">
+<div class="tape t" style="background:var(--tape2); transform:translateX(-50%) rotate(1.5deg);"></div>
+<div class="nc-meta"><span class="nc-cat">机器</span>
+<span class="nc-time">8月25日</span>
+</div>
+<h2><a href="https://machinelearning.apple.com/research/starflow2-multimodal-generation" target="_blank" rel="noopener">STARFlow2：用归一化流桥接语言模型，实现统一多模态生成</a></h2>
+<p>STARFlow2 提出将自回归归一化流与语言模型统一，用于多模态生成。</p>
+<div class="nc-src">源 · <a href="https://machinelearning.apple.com/research/starflow2-multimodal-generation" target="_blank" rel="noopener">Apple Machine Le</a></div>
+</article>
+<article class="note-card c1">
+<div class="tape t" style="background:var(--tape3); transform:translateX(-50%) rotate(-1.5deg);"></div>
+<div class="nc-meta"><span class="nc-cat">机器</span>
+<span class="nc-time">8月25日</span>
+</div>
+<h2><a href="https://openrouter.ai/blog/tutorials/choose-best-ai-model" target="_blank" rel="noopener">如何在编辑器里实时挑选最佳 AI 模型</a></h2>
+<p>OpenRouter 提出一套模型选型框架：先定义任务，从实时用量和第三方基准中筛选候选，再对比各提供商的定价与延迟，最后用自有提示词测试。</p>
+<div class="nc-src">源 · <a href="https://openrouter.ai/blog/tutorials/choose-best-ai-model" target="_blank" rel="noopener">OpenRouter：Annou</a></div>
+</article>
+<article class="note-card c2">
+<div class="tape t" style="background:var(--tape1); transform:translateX(-50%) rotate(0.5deg);"></div>
+<div class="nc-meta"><span class="nc-cat">机器</span>
+<span class="nc-time">8月25日</span>
+</div>
+<h2><a href="https://openrouter.ai/blog/tutorials/video-generation-api" target="_blank" rel="noopener">OpenRouter 视频生成 API：一份代码优先的接入指南</a></h2>
+<p>OpenRouter 推出统一的异步视频生成 API，通过 POST /api/v1/videos 提交任务、轮询状态并下载 MP4，支持 Seedance、Veo、Wan 等模型，切换模型只需更改 </p>
+<div class="nc-src">源 · <a href="https://openrouter.ai/blog/tutorials/video-generation-api" target="_blank" rel="noopener">OpenRouter：Annou</a></div>
+</article>
+</div>
+<div id="stall-geopolitics" class="stall-sign">
+<span class="ss-board">寰宇 摊</span>
+<span class="ss-en">WORLD STALL · 1</span>
+</div>
+<div class="notes">
+<article class="note-card c3 hot">
+<div class="tape t" style="background:var(--tape2); transform:translateX(-50%) rotate(-2.5deg);"></div>
+<div class="nc-meta"><span class="nc-cat">寰宇</span>
+<span class="nc-time">8月25日 23:09</span>
+<span style="color:var(--red); font-weight:900;">★ 热卖</span>
+</div>
+<h2><a href="https://finance.sina.com.cn/money/future/fmnews/2026-08-26/doc-inipqnsh2289338.shtml" target="_blank" rel="noopener">美伊停火谈判传重大进展！据称双方就霍尔木兹自由通航达成共识，布油一度跌6%_新浪财经_新浪网</a></h2>
+<p>Published: 2026-08-26T07:09:11+08:00
+Source: finance.sina.com.cn (finance.sina.com.cn)
+Language: zh
+</p>
+<div class="nc-src">源 · <a href="https://finance.sina.com.cn/money/future/fmnews/2026-08-26/doc-inipqnsh2289338.shtml" target="_blank" rel="noopener">Exa 搜索</a></div>
+</article>
+</div>
+<div id="stall-finance" class="stall-sign">
+<span class="ss-board">泉货 摊</span>
+<span class="ss-en">MARKET STALL · 2</span>
+</div>
+<div class="notes">
+<article class="note-card c4">
+<div class="tape t" style="background:var(--tape3); transform:translateX(-50%) rotate(-0.5deg);"></div>
+<div class="nc-meta"><span class="nc-cat">泉货</span>
+<span class="nc-time">8月26日 00:03</span>
+</div>
+<h2><a href="https://finance.sina.com.cn/roll/2026-08-26/doc-inipqxfy5395462.shtml" target="_blank" rel="noopener">凌晨，利好突袭！美股全线拉升！霍尔木兹海峡，大消息_新浪财经_新浪网</a></h2>
+<p>Exa 搜索（Exa）是一家专注于人工智能领域的搜索初创公司，其核心产品是一款面向 AI 模型训练与推理场景的神经网络搜索引擎。</p>
+<div class="nc-src">源 · <a href="https://finance.sina.com.cn/roll/2026-08-26/doc-inipqxfy5395462.shtml" target="_blank" rel="noopener">Exa 搜索</a></div>
+</article>
+<article class="note-card c1 hot">
+<div class="tape t" style="background:var(--tape1); transform:translateX(-50%) rotate(1.5deg);"></div>
+<div class="nc-meta"><span class="nc-cat">泉货</span>
+<span class="nc-time">8月25日 08:03</span>
+<span style="color:var(--red); font-weight:900;">★ 热卖</span>
+</div>
+<h2><a href="https://www.mk.co.kr/cn/stock/12135928" target="_blank" rel="noopener">美国财政部扩大长期国债回购规模后,黄金和比特币成为替代资产,同时暴涨。 据分析,美国财政赤字扩大和美元流动性增加导致货币价值下降的忧虑刺激了所谓的&quot;Debasement Trade(货币价值毁损赌注).. - MK</a></h2>
+<p>Author: 허서윤
+Published: 2026-08-25T17:03:00+09:00
+Source: mk.co.kr (mk.co.kr)
+Language: zh
+
+## Story
+</p>
+<div class="nc-src">源 · <a href="https://www.mk.co.kr/cn/stock/12135928" target="_blank" rel="noopener">Exa 搜索</a></div>
+</article>
+</div>
+
+  <footer class="colophon">纸上集市 PAPER MARKET · 字条皆机器手书，原文以来源为准</footer>
+
+</div>
+</body>
+</html>
