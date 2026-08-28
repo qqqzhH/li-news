@@ -200,7 +200,22 @@ export default function HomePage() {
     <div className="snap-container space-y-0">
 
       {/* ===== Screen 1: Hero ===== */}
-      <section data-section="home" className="h-screen flex flex-col items-center px-4 md:px-16 max-w-4xl mx-auto w-full overflow-hidden">
+      <section data-section="home" className="h-screen flex flex-col items-center px-4 md:px-16 max-w-4xl mx-auto w-full overflow-hidden relative">
+
+        {/* 右上角：跳转到墨极日报 */}
+        <a
+          href="https://li-news.pages.dev/moji_daily.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute top-5 right-5 z-40 flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[var(--color-ocean-600)] text-white text-sm font-semibold shadow-lg hover:bg-[var(--color-ocean-700)] hover:scale-105 transition-all duration-200"
+          title="跳转到墨极日报"
+        >
+          <svg className="w-4.5 h-4.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.2} d="M4.5 12h15M13 5.5l6.5 6.5-6.5 6.5M4.5 12h15" />
+          </svg>
+          墨极日报
+        </a>
+
 
         <div className="flex-1 min-h-0 flex flex-col justify-center items-center w-full pt-8 pb-4">
           {/* Title */}
