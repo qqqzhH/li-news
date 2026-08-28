@@ -202,20 +202,22 @@ export default function HomePage() {
       {/* ===== Screen 1: Hero ===== */}
       <section data-section="home" className="h-screen flex flex-col items-center px-4 md:px-16 max-w-4xl mx-auto w-full overflow-hidden relative">
 
-        {/* 右上角：跳转按钮组（墨极日报 + 档案馆） */}
+        {/* 右上角：跳转按钮组（温故知新 + 墨极日报） */}
         <div className="absolute top-4 right-4 z-40 flex items-center gap-3">
-          {/* 档案馆：浏览全部新闻日期 */}
+          {/* 温故知新：浏览全部新闻日期（墨极浓墨风） */}
           <a
             href="https://li-news.pages.dev/archive.html"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[var(--color-ocean-600)] text-white text-sm font-semibold shadow-lg hover:bg-[var(--color-ocean-700)] hover:scale-105 transition-all duration-200"
-            title="浏览全部新闻档案馆"
+            className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#17140f] text-[#f5f2ec] text-base font-bold tracking-wide shadow-lg hover:bg-[#2a251c] hover:scale-105 hover:-translate-y-0.5 transition-all duration-200"
+            style={{ fontFamily: '"KaiTi","STKaiti","Ma Shan Zheng",serif' }}
+            title="翻看往日新闻"
           >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V4H6.5A2.5 2.5 0 0 0 4 6.5v13zM4 19.5A2.5 2.5 0 0 0 6.5 22H20V17M9 8h6" />
+            {/* 书卷图标 */}
+            <svg className="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="#f5f2ec" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V4H6.5A2.5 2.5 0 0 0 4 6.5v13zM4 19.5A2.5 2.5 0 0 0 6.5 22H20V17M9 8h6" />
             </svg>
-            档案馆
+            温故知新
           </a>
 
           {/* 墨极日报：朱砂印章按钮 */}
