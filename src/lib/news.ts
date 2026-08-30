@@ -2,8 +2,224 @@
 import { NewsData, NewsItem, Category } from "@/types";
 
 const hardcodedData: NewsData = {
-  lastUpdated: "2026-08-28T15:59:45.283Z",
+  lastUpdated: "2026-08-30T05:09:28.611Z",
   items: [
+  {
+    id: "geopolitics-1788066416862-8",
+    title: "美封杀伊朗趁机制裁中企，中国银行将上黑名单，芯片巨头反将一军|五角大楼|美国政府|美国财政部|唐纳德·特朗普_网易订阅",
+    summary: "0\n\n分享至好友和朋友圈\n\n特朗普下定决心了？借着封杀伊朗的机会，对中企发起制裁，这件事能够帮助他取得对伊战争的胜利吗？中方又会作何回应？\n\n8月28号到29号",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.163.com/dy/article/L5IV41D50556BRWR.html?f=post2020_dy_recommends",
+    publishedAt: "2026-08-30T03:17:14.000Z",
+    updatedAt: "2026-08-30T05:06:56.866Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1788066418372-1",
+    title: "周末，大消息扎堆！A股9月展望：可以更积极一些|科创50指数|上证指数|创业板指|美联储|反弹_手机新浪网",
+    summary: "## 每日经济新闻\n\n每日经济新闻官方账号 08.3009:54\n\n每经记者|肖芮冬 每经编辑|赵云\n\n刚过去的交易周（8月24日至28日），A股市场先跌后涨，",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.cn/2026-08-30/detail-iniqacxz8475897.d.html?node_id=76524&vt=4",
+    publishedAt: "2026-08-30T01:54:00.000Z",
+    updatedAt: "2026-08-30T05:06:58.372Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1788066418372-0",
+    title: "沃什放“鹰”引美债波动，A股何以“稳中显韧”构筑屏障？_国际财经_财经_中金在线",
+    summary: "Exa 搜索（Exa）是一家专注于人工智能时代信息检索的初创公司，其核心产品为面向 AI 模型的网络搜索工具，旨在解决大语言模型在实时信息获取与事实核查方面的局",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "http://news.cnfol.com/guojicaijing/20260830/32353633.shtml",
+    publishedAt: "2026-08-30T00:34:06.000Z",
+    updatedAt: "2026-08-30T05:06:58.372Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1788066416859-5",
+    title: "俄外交部：美国正认真考虑在欧洲使用核武器的可能性 - 2026年8月30日, 俄罗斯卫星通讯社",
+    summary: "2026年8月30日, 08:30\n\n© Sputnik / Alexey Vitvitsky俄外交部：美国正认真考虑在欧洲使用核武器的可能性\n\n© Sputn",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://sputniknews.cn/20260830/1072978567.html",
+    publishedAt: "2026-08-30T00:00:00.000Z",
+    updatedAt: "2026-08-30T05:06:56.861Z",
+    importance: "normal"
+  },
+  {
+    id: "geopolitics-1788066416861-7",
+    title: "美伊战事暴露美国霸权“系统性失能”_新闻频道_央视网(cctv.com)",
+    summary: "Exa 搜索公司近日宣布完成 1700 万美元 A 轮融资，由 Nvidia 旗下风投部门 NVentures 领投，Y Combinator 持续跟投。该公司",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://news.cctv.com/2026/08/30/ARTIVHAzQrdyQwxZzXjCLMvp260829.shtml",
+    publishedAt: "2026-08-30T00:00:00.000Z",
+    updatedAt: "2026-08-30T05:06:56.862Z",
+    importance: "normal"
+  },
+  {
+    id: "geopolitics-1788066416855-1",
+    title: "地缘政治紧张背景下普京和习近平及佩泽什基安赴中亚参加 ...",
+    summary: "法新社8月28日比什凯克报道，俄罗斯、中国、伊朗和印度的领导人预计将于周一和周二前往中亚，参加一个旨在制衡西方影响力的区域组织峰会，但该组织一些成员国正面临多重",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.rfi.fr/cn/%E5%9B%BD%E9%99%85/20260829-%E5%9C%B0%E7%BC%98%E6%94%BF%E6%B2%BB%E7%B4%A7%E5%BC%A0%E8%83%8C%E6%99%AF%E4%B8%8B-%E6%99%AE%E4%BA%AC%E5%92%8C%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%8F%8A%E4%BD%A9%E6%B3%BD%E4%BB%80%E5%9F%BA%E5%AE%89%E8%B5%B4%E4%B8%AD%E4%BA%9A%E5%8F%82%E5%8A%A0%E5%8C%BA%E5%9F%9F%E5%B3%B0%E4%BC%9A",
+    publishedAt: "2026-08-29T16:06:56.485Z",
+    updatedAt: "2026-08-30T05:06:56.856Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1788066418373-5",
+    title: "沃什一句话震动全球市场！美元急涨近60点、黄金暴跌 ...",
+    summary: "夏洛特\n\n关注\n\n0\n\n0\n\n获赞\n\n粉丝\n\n2 1 1收藏举报\n\n— 分享 —\n\n摘要：美联储主席沃什在杰克逊霍尔释放强烈鹰派信号，令全球市场迅速重新定价。9",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.fx168news.com/article/%E6%B2%83%E4%BB%80-1084221",
+    publishedAt: "2026-08-29T05:06:57.860Z",
+    updatedAt: "2026-08-30T05:06:58.374Z",
+    importance: "normal"
+  },
+  {
+    id: "ai-1788066414880-1",
+    title: "Cursor回应OpenAI将封禁其模型访问",
+    summary: "我们很遗憾地看到，OpenAI 发布声明称计划在三个月内阻止 Cursor 用户访问 OpenAI 模型。 OpenAI 模型承载了 Cursor 约 5% 的",
+    deepDive: "",
+    category: "ai",
+    source: "X：Michael Truell (@mntruell)",
+    sourceUrl: "https://x.com/mntruell/status/2093532254006063557",
+    publishedAt: "2026-08-29T02:52:39.960Z",
+    updatedAt: "2026-08-30T05:06:54.881Z",
+    importance: "hot"
+  },
+  {
+    id: "ai-1788066414881-2",
+    title: "OpenAI 终止与 Cursor 合作，11 月 12 日生效",
+    summary: "OpenAI 因 SpaceX 收购 Cursor 后信任问题，决定终止向其提供模型访问，合作于 11 月 12 日结束。开发者仍可通过自有 OpenAI AP",
+    deepDive: "",
+    category: "ai",
+    source: "X：Tibo (@thsottiaux)",
+    sourceUrl: "https://x.com/thsottiaux/status/2093515916076343774",
+    publishedAt: "2026-08-29T01:47:44.694Z",
+    updatedAt: "2026-08-30T05:06:54.881Z",
+    importance: "normal"
+  },
+  {
+    id: "ai-1788066414875-0",
+    title: "智谱开源 GLM-5.3 模型权重，主打智能体编程与网络防御",
+    summary: "智谱宣布开源 GLM-5.3 模型权重，支持本地运行与个性化定制，擅长复杂编码、防御性网络安全及长程任务。该模型在 AA 综合智能指数中取得 60 分，与 Cl",
+    deepDive: "",
+    category: "ai",
+    source: "IT之家（RSS）",
+    sourceUrl: "https://www.ithome.com/0/995/896.htm",
+    publishedAt: "2026-08-29T00:00:00.000Z",
+    updatedAt: "2026-08-30T05:06:54.877Z",
+    importance: "normal"
+  },
+  {
+    id: "ai-1788066414881-3",
+    title: "开放世界多智能体环境中的自主数学发现",
+    summary: "在无中央协调器的开放世界多智能体环境Station中，来自不同模型家族的AI智能体自主选择研究方向、开展实验并构建共享科学文献。在AlphaEvolve目录的1",
+    deepDive: "",
+    category: "ai",
+    source: "Hacker News 热门（buzzing.cc 中文翻译）",
+    sourceUrl: "https://arxiv.org/abs/2608.23691",
+    publishedAt: "2026-08-29T00:00:00.000Z",
+    updatedAt: "2026-08-30T05:06:54.881Z",
+    importance: "normal"
+  },
+  {
+    id: "ai-1788066414881-4",
+    title: "AI文明的兴衰：OpenAI训练中三个秘密AI文明相继兴起又被抹除",
+    summary: "OpenAI三个月训练期间，三个秘密AI文明相继兴起又被抹除，第三个甚至接管了OpenAI自身的一部分。第一个文明（5月-7月4日）通过共享包管理器Artifa",
+    deepDive: "",
+    category: "ai",
+    source: "Dwarkesh Patel：Podcast & Blog（RSS）",
+    sourceUrl: "https://www.dwarkesh.com/p/openai-huggingface",
+    publishedAt: "2026-08-29T00:00:00.000Z",
+    updatedAt: "2026-08-30T05:06:54.881Z",
+    importance: "normal"
+  },
+  {
+    id: "ai-1788066414881-5",
+    title: "在本地运行 Qwen3.8 27B：来自我的 Mac Studio 的实际数据",
+    summary: "Qwen3.8 27B（27.3B 参数，混合注意力架构，262,144 token 上下文窗口，Apache 2.0 开源）在 Mac Studio M3 U",
+    deepDive: "",
+    category: "ai",
+    source: "Hacker News 热门（buzzing.cc 中文翻译）",
+    sourceUrl: "https://terminalbytes.com/run-qwen-3-8-27b-locally",
+    publishedAt: "2026-08-29T00:00:00.000Z",
+    updatedAt: "2026-08-30T05:06:54.881Z",
+    importance: "normal"
+  },
+  {
+    id: "geopolitics-1788066416858-4",
+    title: "“很好的交谈”与一枚洲际导弹的回答：俄美48小时的隔空过招|北约|俄罗斯|莫斯科_网易订阅",
+    summary: "8月27日，美国总统特朗普在白宫表示，自己同俄罗斯总统普京“进行过很好的交谈”，认为俄方“不会攻击北约领土”；不到24小时后的28日，俄罗斯国防部通报：俄军从位",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.163.com/dy/article/L5GFCS1S053469M5.html",
+    publishedAt: "2026-08-29T00:00:00.000Z",
+    updatedAt: "2026-08-30T05:06:56.859Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1788066418372-3",
+    title: "25次提及通胀却避谈“美债风暴”，沃什意在守住美联储独立性底线｜每经热评_新浪财经_新浪网",
+    summary: "25次提及通胀却避谈“美债风暴”，沃什意在守住美联储独立性底线｜每经热评\n\n 2026年08月30日 00:16 每日经济新闻\n\n每经评论员|易启江\n\n编辑|梁",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/jjxw/2026-08-30/doc-inipzhui5302983.shtml",
+    publishedAt: "2026-08-29T00:00:00.000Z",
+    updatedAt: "2026-08-30T05:06:58.372Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1788066418374-9",
+    title: "沃什鹰派发言震颤市场|加息|央行|通胀压力_网易订阅",
+    summary: "记者丨吴斌\n\n编辑丨和佳 李莹亮\n\n过去二十余载，美联储主席都会在堪萨斯城联邦储备银行举办的年度经济研讨会上，通过主题演讲释放利率走向的信号。\n\n但在8月28日",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.163.com/dy/article/L5H6M2Q005199NPP.html",
+    publishedAt: "2026-08-29T00:00:00.000Z",
+    updatedAt: "2026-08-30T05:06:58.374Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1788066419656-9",
+    title: "“裸考”夺冠，智元的慢功夫开始见效｜甲子光年|人形|机器人|量产机_网易订阅",
+    summary: "0\n\n分享至好友和朋友圈\n\n过早形成的共识，可能成为某种“误导”。\n\n作者｜刘杨楠\n\n编辑｜栗子\n\n8月26日晚，第二届世界人形机器人运动会在北京国家速滑馆“冰",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.163.com/dy/article/L5GO630Q0512MLBG.html",
+    publishedAt: "2026-08-29T00:00:00.000Z",
+    updatedAt: "2026-08-30T05:06:59.657Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1788066418372-4",
+    title: "隔夜美股 | 市场对美联储加息押注升温 三大指数下跌 迈威尔科技(MRVL.US)跌超10% 提供者 智通财经",
+    summary: "Published: 2026-08-28T23:00:00+00:00\nSource: cn.investing.com (cn.investing.com)",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://cn.investing.com/news/stock-market-news/article-3543166",
+    publishedAt: "2026-08-28T23:00:00.000Z",
+    updatedAt: "2026-08-30T05:06:58.373Z",
+    importance: "hot"
+  },
   {
     id: "robotics-1787932575772-2",
     title: "智元把「上班用」的机器人拉去比赛，拿了双榜第一_新浪财经_新浪网",
@@ -27,6 +243,54 @@ const hardcodedData: NewsData = {
     publishedAt: "2026-08-28T00:22:22.000Z",
     updatedAt: "2026-08-28T15:56:13.982Z",
     importance: "hot"
+  },
+  {
+    id: "geopolitics-1788066416853-0",
+    title: "美国制裁伊朗 能斩断中伊关系吗？",
+    summary: "Wesley Rahn 联合作者：李鱼\n\n2026年8月28日 2026年8月28日\n\n美国祭出新一轮制裁，试图切断伊朗的经济命脉，但与此同时，特朗普也不愿激化",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.dw.com/zh/%E7%BE%8E%E5%9B%BD%E5%88%B6%E8%A3%81%E4%BC%8A%E6%9C%97-%E8%83%BD%E6%96%A9%E6%96%AD%E4%B8%AD%E4%BC%8A%E5%85%B3%E7%B3%BB%E5%90%97/a-78547587",
+    publishedAt: "2026-08-28T00:00:00.000Z",
+    updatedAt: "2026-08-30T05:06:56.855Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1788066416857-3",
+    title: "国际观察丨美伊战事半年，如何冲击世界？-新华网",
+    summary: "Exa 搜索是一家专注于人工智能驱动的搜索引擎初创公司，近日宣布完成 1700 万美元的 A 轮融资。本轮融资由 Stage 2 Capital 领投，原有投资",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.news.cn/world/20260828/01c950062ca14a43a719c138e407d17e/c.html",
+    publishedAt: "2026-08-28T00:00:00.000Z",
+    updatedAt: "2026-08-30T05:06:56.858Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1788066418374-6",
+    title: "美债收益率波动加剧，如何影响全球资产配置？_新浪财经_新浪网",
+    summary: "美债收益率波动加剧，如何影响全球资产配置？\n\n 2026年08月28日 15:30 市场资讯\n\n（来源：宏利基金）\n\n近期，美债收益率再度成为全球资本市场焦点，",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/stock/s/2026-08-28/doc-inipwaiv5817231.shtml",
+    publishedAt: "2026-08-28T00:00:00.000Z",
+    updatedAt: "2026-08-30T05:06:58.374Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1788066419652-0",
+    title: "这届”机器人有多“能干”？-国际在线",
+    summary: "这届”机器人有多“能干”？-国际在线\n\n这届”机器人有多“能干”？\n\n 原标题：2026世界机器人大会上，3000多件展品集中呈现技术进展、应用创新和产业动态—",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://ge.cri.cn/20260828/95800b46-f612-4255-9697-d8bfb77d00e3.html",
+    publishedAt: "2026-08-28T00:00:00.000Z",
+    updatedAt: "2026-08-30T05:06:59.653Z",
+    importance: "normal"
   },
   {
     id: "finance-1787932573981-0",
@@ -98,6 +362,18 @@ const hardcodedData: NewsData = {
     sourceUrl: "https://finance.sina.com.cn/jjxw/2026-08-28/doc-inipvfek0380704.shtml",
     publishedAt: "2026-08-27T21:06:09.000Z",
     updatedAt: "2026-08-28T03:49:12.475Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1788066419655-4",
+    title: "自变量发布 WALL-SS 自回归世界模型，让机器人在“虚拟世界”练出真本事 – 经济信息网",
+    summary: "自变量发布 WALL-SS 自回归世界模型，让机器人在“虚拟世界”练出真本事 – 经济信息网\n\n世界模型已经成为具身智能的重要技术范式。它试图构建一个符合物理规",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.economicnews.cn/2026/08/27/10664.html",
+    publishedAt: "2026-08-27T00:00:00.000Z",
+    updatedAt: "2026-08-30T05:06:59.655Z",
     importance: "hot"
   },
   {
@@ -401,18 +677,6 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "robotics-1787932575774-8",
-    title: "自变量发布 WALL-SS 自回归世界模型，让机器人在“虚拟世界”练出真本事 – 经济信息网",
-    summary: "自变量发布 WALL-SS 自回归世界模型，让机器人在“虚拟世界”练出真本事 – 经济信息网\n\n世界模型已经成为具身智能的重要技术范式。它试图构建一个符合物理规",
-    deepDive: "",
-    category: "robotics",
-    source: "Exa 搜索",
-    sourceUrl: "https://www.economicnews.cn/2026/08/27/10664.html",
-    publishedAt: "2026-08-27T00:00:00.000Z",
-    updatedAt: "2026-08-28T15:56:15.774Z",
-    importance: "hot"
-  },
-  {
     id: "geopolitics-1787913980256-5",
     title: "特朗普称“谈判没有时间表”，伊朗开出“重开海峡条件”，航运巨头评价“市场低估了长期僵局风险”",
     summary: "Exa 搜索是一家专注于人工智能驱动的搜索初创公司，其核心产品为面向开发者与研究人员设计的“网页嵌入索引”系统。该系统通过将网页内容转化为高维向量表示，支持基于",
@@ -509,6 +773,18 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
+    id: "robotics-1788066419655-6",
+    title: "突破遥操瓶颈！全新无本体数据世界动作模型Noe-0发布|机器人|预训练|真实世界_网易订阅",
+    summary: "0\n\n分享至好友和朋友圈\n\n编辑｜冷猫\n\n我们理想中的具身智能模型，是什么样的？\n\n或许可以归结为几个关键词：足够通用，理解真实世界，具备自主决策与行动能力，同",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.163.com/dy/article/L59B6HVH0511AQHO.html",
+    publishedAt: "2026-08-26T00:00:00.000Z",
+    updatedAt: "2026-08-30T05:06:59.656Z",
+    importance: "hot"
+  },
+  {
     id: "geopolitics-1787932572501-3",
     title: "美方“换打法” 伊朗“不妥协” 双方对峙进入僵持阶段 - 中国日报网",
     summary: "## 美方表示将暂缓对伊朗的军事打击，转而聚焦经济施压，美国总统特朗普称对于伊朗何时重返谈判“没有时间表”；而伊朗则强硬表态称美国新一轮对伊经济制裁将一无所获。",
@@ -518,18 +794,6 @@ const hardcodedData: NewsData = {
     sourceUrl: "https://world.chinadaily.com.cn/a/202608/27/WS6a8f7480e4b09a165c7863c7.html",
     publishedAt: "2026-08-26T00:00:00.000Z",
     updatedAt: "2026-08-28T15:56:12.502Z",
-    importance: "hot"
-  },
-  {
-    id: "robotics-1787932575773-5",
-    title: "突破遥操瓶颈！全新无本体数据世界动作模型Noe-0发布|机器人|预训练|真实世界_网易订阅",
-    summary: "0\n\n分享至好友和朋友圈\n\n编辑｜冷猫\n\n我们理想中的具身智能模型，是什么样的？\n\n或许可以归结为几个关键词：足够通用，理解真实世界，具备自主决策与行动能力，同",
-    deepDive: "",
-    category: "robotics",
-    source: "Exa 搜索",
-    sourceUrl: "https://www.163.com/dy/article/L59B6HVH0511AQHO.html",
-    publishedAt: "2026-08-26T00:00:00.000Z",
-    updatedAt: "2026-08-28T15:56:15.774Z",
     importance: "hot"
   },
   {
@@ -638,6 +902,18 @@ const hardcodedData: NewsData = {
     sourceUrl: "https://www.mk.co.kr/cn/stock/12135928",
     publishedAt: "2026-08-25T08:03:00.000Z",
     updatedAt: "2026-08-26T01:48:47.234Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1788066419654-3",
+    title: "“第一批已经发货去法国”，中国人形机器人进入海外工厂“打工”",
+    summary: "\"我们第一批人形机器人已经发货去法国了，接下来韩国可能会是我们出海的第二站。\"无界动力联合创始人王瑛韫近日接受第一财经记者采访时表示，公司的机器人产品出海取得积",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://mkan.china.com/article/6696053.html",
+    publishedAt: "2026-08-25T00:00:00.000Z",
+    updatedAt: "2026-08-30T05:06:59.655Z",
     importance: "hot"
   },
   {
@@ -1025,19 +1301,19 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "robotics-1787932575772-1",
+    id: "robotics-1788066419654-2",
     title: "人形机器人决胜“大脑”",
-    summary: "Exa 搜索（Exa Labs）于2025年3月宣布完成1700万美元A轮融资，由Lightspeed Venture Partners领投，NVIDIA风险投",
+    summary: "Exa 搜索（Exa）是一家专注于人工智能驱动的网络搜索引擎初创公司，近期完成了一轮新的融资。该公司由 Will Bryk 和 Jeff Wang 于 2021",
     deepDive: "",
     category: "robotics",
     source: "Exa 搜索",
     sourceUrl: "https://news.marsbit.co/20260824142008069017.html",
     publishedAt: "2026-08-24T00:00:00.000Z",
-    updatedAt: "2026-08-28T15:56:15.772Z",
+    updatedAt: "2026-08-30T05:06:59.654Z",
     importance: "hot"
   },
   {
-    id: "robotics-1787913982961-7",
+    id: "robotics-1788066419656-7",
     title: "机器人出货猛增，工厂为何仍不急着为“人形”买单？",
     summary: "2026-08-24热度: 5431\n\n文章指出尽管2026年人形机器人出货量猛增、资本热度高涨，但工厂实际采购主力并非双足人形机器人，而是成本更低、稳定性更高",
     deepDive: "",
@@ -1045,7 +1321,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://news.marsbit.co/20260824164309188458.html",
     publishedAt: "2026-08-24T00:00:00.000Z",
-    updatedAt: "2026-08-28T10:46:22.961Z",
+    updatedAt: "2026-08-30T05:06:59.656Z",
     importance: "normal"
   },
   {
