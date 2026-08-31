@@ -375,8 +375,24 @@ async function main() {
   // 6. Combine all new items
   const allNewItems = [...aiItems, ...geoItems, ...finItems, ...robItems, ...geoScrapeVal, ...finScrapeVal, ...robScrapeVal];
 
+  // 6b. 新鲜度闸门：源站专题页有时会混回几天前的旧文；
+  // publishedAt 超过 72 小时的直接丢弃（无法解析日期的保留）。
+  const FRESH_WINDOW_MS = 72 * 60 * 60 * 1000;
+  const nowMs = Date.now();
+  const isStale = (item) => {
+    const t = Date.parse(item.publishedAt || "");
+    return !Number.isNaN(t) && nowMs - t > FRESH_WINDOW_MS;
+  };
+  const staleDropped = allNewItems.filter(isStale);
+  if (staleDropped.length) {
+    console.log(`Freshness gate: dropped ${staleDropped.length} stale item(s) older than 72h:`);
+    for (const it of staleDropped) {
+      console.log(`  - [${(it.publishedAt || "").slice(0, 10)}] ${(it.title || "").slice(0, 50)}`);
+    }
+  }
+
   // 7. Deduplicate and tag
-  const newItems = addHotTags(deduplicate(allNewItems));
+  const newItems = addHotTags(deduplicate(allNewItems.filter((i) => !isStale(i))));
   console.log(`New items: ${newItems.length}`);
 
   // 8. 合并前先去重
