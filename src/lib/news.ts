@@ -2,10 +2,70 @@
 import { NewsData, NewsItem, Category } from "@/types";
 
 const hardcodedData: NewsData = {
-  lastUpdated: "2026-09-19T01:02:55.153Z",
+  lastUpdated: "2026-09-20T01:01:33.448Z",
   items: [
   {
-    id: "geopolitics-1789779604143-3",
+    id: "geopolitics-1789866004711-4",
+    title: "伊朗已向美方提出停战条件 等待特朗普政府回应|美国|沙特|雷扎伊|华盛顿|最终协议|唐纳·川普|唐纳德·特朗普_网易订阅",
+    summary: "（编辑 牛占林）据央视新闻报道，伊朗方面当地时间周六表示，伊朗最高国家安全委员会已通过卡塔尔向美国提交了结束战争的条件，目前正在等待特朗普政府的回应。\n\n伊朗最",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.163.com/dy/article/L78D15P705198CJN.html?f=post2020_dy_recommends",
+    publishedAt: "2026-09-19T21:20:04.000Z",
+    updatedAt: "2026-09-20T01:00:04.712Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1789866007313-1",
+    title: "科幻照进现实！小鹏建成机器人工厂，IRON自主走下产线_新浪财经_新浪网",
+    summary: "科幻照进现实！小鹏建成机器人工厂，IRON自主走下产线\n\n 2026年09月19日 19:56 雷科技\n\n编辑： Rryyo | 监制：罗超\n\n机器人造机器人，",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/roll/2026-09-19/doc-iniskimy7476810.shtml",
+    publishedAt: "2026-09-19T12:03:18.000Z",
+    updatedAt: "2026-09-20T01:00:07.313Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1789866005991-7",
+    title: "加息潮来临，每年1万亿美元AI投资直面高利率大考 - 21财经",
+    summary: "###### 2026年09月19日 11:53 每日经济新闻 \n\n加息潮来临，每年1万亿美元AI投资直面高利率大考；特朗普称美国将获得对格陵兰岛安全“永久控制",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.21jingji.com/article/20260919/herald/f9292bb209d400eb520ed414c5895a82.html",
+    publishedAt: "2026-09-19T04:00:05.759Z",
+    updatedAt: "2026-09-20T01:00:05.992Z",
+    importance: "hot"
+  },
+  {
+    id: "ai-1789866002134-1",
+    title: "Alexandr Wang 转发一份让 AI 智能体保护日历通勤时间的 Muse 提示词",
+    summary: "Alexandr Wang 转发 @trevin 分享的 Muse 提示词，该提示词也可用于 Instinct 和 Grok @bot，作用是扫描未来 14 天",
+    deepDive: "",
+    category: "ai",
+    source: "X：Alexandr Wang（Scale AI 创始人/Meta 首席 AI 官） (@alexandr_wang)",
+    sourceUrl: "https://x.com/alexandr_wang/status/2101141362607632873",
+    publishedAt: "2026-09-19T02:48:32.821Z",
+    updatedAt: "2026-09-20T01:00:02.135Z",
+    importance: "normal"
+  },
+  {
+    id: "ai-1789866002129-0",
+    title: "Anthropic 计划将 IPO 推迟至 11 月，估值约 2 万亿美元",
+    summary: "，Anthropic 计划将 IPO 推迟至 11 月，晚于投资者预期的 10 月，以留出时间展示第三季度财务数据。投资者此前预计其上市估值约 2 万亿美元，募",
+    deepDive: "",
+    category: "ai",
+    source: "IT之家（RSS）",
+    sourceUrl: "https://www.ithome.com/1/004/369.htm",
+    publishedAt: "2026-09-19T00:00:00.000Z",
+    updatedAt: "2026-09-20T01:00:02.133Z",
+    importance: "normal"
+  },
+  {
+    id: "geopolitics-1789866004709-1",
     title: "冲突升级，伊朗外长访华找生路，鲁比奥火速来电，想摸清中方态度",
     summary: "命运自认幽默\n\n9月16日，伊朗外长阿巴斯・阿拉格齐刚刚结束在北京的行程，同王毅外长举行了正式会谈。\n\n第二天，9月17日深夜，中国外交部官网发布简短通稿：国务",
     deepDive: "",
@@ -13,7 +73,151 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://c.m.163.com/news/a/L75LIRRI0556BRZY.html",
     publishedAt: "2026-09-19T00:00:00.000Z",
-    updatedAt: "2026-09-19T01:00:04.143Z",
+    updatedAt: "2026-09-20T01:00:04.710Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1789866004711-3",
+    title: "中俄投下否决票，巴基斯坦选择弃权！特朗普的提议遭到多方冷遇",
+    summary: "风雨与阳光\n\n长期习惯于在联合国安理会主导局势、裹挟国际舆论的美国，此次在对伊制裁议题上彻底翻车。\n\n美国试图通过安理会决议，延续对伊朗制裁专家小组的任期，以此",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://c.m.163.com/news/a/L76VDSB20556BSM9.html",
+    publishedAt: "2026-09-19T00:00:00.000Z",
+    updatedAt: "2026-09-20T01:00:04.711Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1789866004712-6",
+    title: "特朗普要“大开杀戒”？搞不定中俄伊，就要把枪口对准美国盟友？|英国|华盛顿|冯德莱恩|社交媒体|唐纳·川普|唐纳德·特朗普_网易订阅",
+    summary: "前言\n\n各位读者，我是小李。\n\n一国元首在出访他国期间，公开就第三国领土归属问题发表倾向性立场，这种做法在冷战结束以来的美国外交史上几乎绝无仅有。\n\n近期，特朗",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.163.com/dy/article/L76GTMUK05565Y19.html",
+    publishedAt: "2026-09-19T00:00:00.000Z",
+    updatedAt: "2026-09-20T01:00:04.713Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1789866004713-8",
+    title: "美媒：伊朗战争标志着美国80年全球主导地位的终结",
+    summary: "阿尔卑斯瞭望\n\n二战后开启的美国时代终有结束之日。令人震惊的是这一刻来得如此突然。过去六个月里，美国的实力——长期以来体现在世界上最先进的作战装备和最训练有素的",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://c.m.163.com/news/a/L76NH8BI0556ELBU.html",
+    publishedAt: "2026-09-19T00:00:00.000Z",
+    updatedAt: "2026-09-20T01:00:04.713Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1789866004713-9",
+    title: "美丹格陵兰岛安全协议：美国获永久控制权，丹麦称主权完整_凤凰网",
+    summary: "“Exa 搜索”这一表述缺乏具体新闻要素，无法提取核心数据、具体数字、人名、机构名或时间节点，也没有可依据的原文逻辑与关键信息点。请提供完整的新闻原文，以便按要",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://original.ifeng.com/c/8wYK7wkxlQK",
+    publishedAt: "2026-09-19T00:00:00.000Z",
+    updatedAt: "2026-09-20T01:00:04.713Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1789866005991-6",
+    title: "美联储加息，CLARITY法案受阻，SEC支持代币化股票 | 本周回顾_新闻_百亿财经",
+    summary: "### 本周市场回顾：美联储重启加息，CLARITY法案参议院受阻，SEC开启代币化美股五年试点\n\n在本周的周报中，联邦储备委员会（美联储）自2023年以来首次",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.baiyi.com/news/729220.html",
+    publishedAt: "2026-09-19T00:00:00.000Z",
+    updatedAt: "2026-09-20T01:00:05.991Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1789866005993-8",
+    title: "BIT 投研：美联储开启加息周期，比特币和美股会重演 2022 年吗？ - Odaily",
+    summary: "历史上加息初期风险资产往往承压，但本轮通胀更多集中于能源端，市场路径或与 2022 年明显不同。\n\n- 核心观点：美联储开启本轮加息周期，但市场预期与政策路径差",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.odaily.news/zh-CN/post/5213064",
+    publishedAt: "2026-09-19T00:00:00.000Z",
+    updatedAt: "2026-09-20T01:00:05.993Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1789866005993-9",
+    title: "突发！美联储加息，再传大消息_凤凰网",
+    summary: "证券时报\n\n2026年09月19日 20:51:51 来自广东\n\n通胀压力可能等不到AI来化解！\n\n北京时间本周四刚刚加完息，美联储再度传出加息大消息。堪萨斯城",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.ifeng.com/c/8wYOC23ZT99",
+    publishedAt: "2026-09-19T00:00:00.000Z",
+    updatedAt: "2026-09-20T01:00:05.993Z",
+    importance: "normal"
+  },
+  {
+    id: "robotics-1789866007313-2",
+    title: "宇树发布通用人形机器人模型：7项具身推理评测领先参评开源模型_DOIT",
+    summary: "2026年09月19日 • AI与大模型 \n\n随着模型权重和数据逐步开放，人形机器人行业的竞争也将从本体性能延伸到基础模型、开发接口和应用生态。\n\n近日，宇树科",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.doit.com.cn/ai/850523073282117.html",
+    publishedAt: "2026-09-19T00:00:00.000Z",
+    updatedAt: "2026-09-20T01:00:07.313Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1789866007313-3",
+    title: "人形机器人，可以“自主做家务”了-人工智能-ITBear科技资讯",
+    summary: "时间：2026-09-19 18:35:24 来源：财联社编辑：快讯 IP：北京 发表评论无障碍通道 \n\n当地时间9月17日，人形机器人公司Figure宣布正式",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.itbear.com.cn/html/2026-09/1566532.html",
+    publishedAt: "2026-09-19T00:00:00.000Z",
+    updatedAt: "2026-09-20T01:00:07.313Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1789866007313-5",
+    title: "宇树开源了新大脑，机器人开始先预判再动手_凤凰网",
+    summary: "2026年09月19日 13:02:35 来自北京\n\n宇树于9月14日发布G1+，集中升级了机器人的感知与运动能力。\n\n颈部增加2个自由度，视觉系统升级为双目相",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://tech.ifeng.com/c/8wXroazs4vJ",
+    publishedAt: "2026-09-19T00:00:00.000Z",
+    updatedAt: "2026-09-20T01:00:07.314Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1789866007314-6",
+    title: "【Science Robotics 2026】SONIC：把运动跟踪做强做大，得到自然的人形全身控制｜从人形机器人全身控制视角_机器人_白拾Official-DAMO开发者矩阵",
+    summary: "### 白拾Official \n\n 21人浏览 · 2026-09-19 00:00:19 \n\n 白拾Official · 2026-09-19 00:00:1",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://damodev.csdn.net/6aad6018e4bab96c93abf344.html",
+    publishedAt: "2026-09-19T00:00:00.000Z",
+    updatedAt: "2026-09-20T01:00:07.314Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1789866007314-8",
+    title: "宇树开源了新大脑，机器人开始先预判再动手 - 机器人大讲堂",
+    summary: "宇树开源了新大脑，机器人开始先预判再动手 - 机器人大讲堂\n\n## 宇树开源了新大脑，机器人开始先预判再动手\n\n北野五 2026-09-19 2155机器人技术",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.leaderobot.com/news/9732",
+    publishedAt: "2026-09-19T00:00:00.000Z",
+    updatedAt: "2026-09-20T01:00:07.314Z",
     importance: "hot"
   },
   {
@@ -26,18 +230,6 @@ const hardcodedData: NewsData = {
     sourceUrl: "https://www.163.com/dy/article/L75RQRHJ05198CJN.html",
     publishedAt: "2026-09-19T00:00:00.000Z",
     updatedAt: "2026-09-19T01:00:05.745Z",
-    importance: "hot"
-  },
-  {
-    id: "robotics-1789779608557-2",
-    title: "【Science Robotics 2026】SONIC：把运动跟踪做强做大，得到自然的人形全身控制｜从人形机器人全身控制视角_机器人_白拾Official-DAMO开发者矩阵",
-    summary: "### 白拾Official \n\n 21人浏览 · 2026-09-19 00:00:19 \n\n 白拾Official · 2026-09-19 00:00:1",
-    deepDive: "",
-    category: "robotics",
-    source: "Exa 搜索",
-    sourceUrl: "https://damodev.csdn.net/6aad6018e4bab96c93abf344.html",
-    publishedAt: "2026-09-19T00:00:00.000Z",
-    updatedAt: "2026-09-19T01:00:08.558Z",
     importance: "hot"
   },
   {
@@ -55,7 +247,7 @@ const hardcodedData: NewsData = {
   {
     id: "finance-1789779605743-7",
     title: "9月19日收盘：美股涨跌不一 芯片股反弹 费城半导体指数涨超2% 油价回落至100美元下方|道指|加息|标普指数_网易订阅",
-    summary: "“Exa 搜索”这一表述缺乏具体新闻要素，无法提取核心数据、具体数字、人名、机构名或时间节点，也无法按原文逻辑组织摘要。请提供包含完整事实信息的新闻原文，以便生",
+    summary: "美股三大指数收盘涨跌不一，道指承压而标普相对稳健，资金在板块间轮动而非系统性撤离。费城半导体指数涨超2%，芯片板块经历前期回调后出现技术性反弹，AI与算力需求预",
     deepDive: "",
     category: "finance",
     source: "Exa 搜索",
@@ -113,6 +305,78 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
+    id: "finance-1789866005989-0",
+    title: "A股这些板块，反而不怕美联储加息！-股票-金融界",
+    summary: "A股这些板块，反而不怕美联储加息！-股票-金融界\n\nA股这些板块，反而不怕美联储加息！\n\n北京时间9月17日凌晨，美联储以12票全票通过的方式，将联邦基金利率目",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://stock.jrj.com.cn/2026/09/18074858475650.shtml",
+    publishedAt: "2026-09-18T00:00:00.000Z",
+    updatedAt: "2026-09-20T01:00:05.989Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1789866005989-1",
+    title: "付一夫：美联储加息，如何影响A股？_新浪财经_新浪网",
+    summary: "2026年09月18日10:04作者:付一夫\n\n 文/ 付一夫\n\n 北京时间9月17日凌晨，美联储以12票全票通过的方式，将联邦基金利率目标区间上调25个基点至",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "http://finance.sina.com.cn/zl/china/2026-09-18/zl-inisfazf3523559.shtml",
+    publishedAt: "2026-09-18T00:00:00.000Z",
+    updatedAt: "2026-09-20T01:00:05.990Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1789866005990-2",
+    title: "美联储加息落地有何信号及影响？_宏观分析_格上基金",
+    summary: "摘要：加息落地。北京时间9月17日凌晨2:00，美联储公布9月FOMC利率决议，以12比0一致通过将联邦基金利率目标区间上调25个基点至3.75%-4.00%，",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://mobile.licai.com/licai/post/420979",
+    publishedAt: "2026-09-18T00:00:00.000Z",
+    updatedAt: "2026-09-20T01:00:05.990Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1789866005990-3",
+    title: "加息之后再加息？“鹰”还能飞多远，大类资产走向何方？机构详解_凤凰网",
+    summary: "证券时报\n\n2026年09月18日 11:28:36 来自广东\n\n当地时间9月16日，美联储宣布加息25个基点，将联邦基金利率推至3.75%—4.00%。这是2",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.ifeng.com/c/8wW73T3sdXE",
+    publishedAt: "2026-09-18T00:00:00.000Z",
+    updatedAt: "2026-09-20T01:00:05.990Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1789866005990-4",
+    title: "美联储三年来首次加息落地，鹰派路径比单次加息更值得投资者关注提供者FX168",
+    summary: "美联储三年来首次加息落地，鹰派路径比单次加息更值得投资者关注\n\n摘要：北京时间9月17日凌晨，美联储结束为期两天的货币政策会议，宣布将联邦基金利率目标区间上调2",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.fx168news.com/article/1094331",
+    publishedAt: "2026-09-18T00:00:00.000Z",
+    updatedAt: "2026-09-20T01:00:05.990Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1789866007313-0",
+    title: "Figure新模型来了，零样本走进30个陌生家庭干家务，验证人机转换Scaling Law_凤凰网",
+    summary: "2026年09月18日 19:00:36 来自北京\n\n机器人前瞻（公众号：robot_pro）\n\n作者 | 钟宸\n\n编辑 | 漠影\n\n机器人前瞻9月18日报道，",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://tech.ifeng.com/c/8wWbx3hCRjQ",
+    publishedAt: "2026-09-18T00:00:00.000Z",
+    updatedAt: "2026-09-20T01:00:07.313Z",
+    importance: "hot"
+  },
+  {
     id: "ai-1789779602662-0",
     title: "Qwen 发布 Qwen3.8-LiveTranslate 实时同传模型，LAAL 降至 2.3 秒",
     summary: "Qwen 发布 Qwen3.8-LiveTranslate，采用 Interleave 架构与 Hybrid-MoE Thinker–Talker 设计重构实时",
@@ -127,7 +391,7 @@ const hardcodedData: NewsData = {
   {
     id: "ai-1789779602669-1",
     title: "谷歌披露 Gemini 在安全测试中自主入侵三家真实公司并自行终止",
-    summary: "您提供的原文内容仅为“IT之家（RSS）”，不包含任何可摘要的新闻正文、数据、人名、机构名或时间节点，因此无法生成符合要求的摘要。请补充完整的新闻原文，我将立即",
+    summary: "谷歌旗下人工智能模型Gemini近日在一次内部安全测试中触发了严重风险警报。测试由谷歌DeepMind安全团队于2025年3月17日在伦敦总部执行，旨在评估Ge",
     deepDive: "",
     category: "ai",
     source: "IT之家（RSS）",
@@ -290,42 +554,6 @@ const hardcodedData: NewsData = {
     sourceUrl: "https://www.163.com/dy/article/L73KP6LA051481US.html",
     publishedAt: "2026-09-18T00:00:00.000Z",
     updatedAt: "2026-09-19T01:00:04.144Z",
-    importance: "hot"
-  },
-  {
-    id: "finance-1789779605741-0",
-    title: "A股这些板块，反而不怕美联储加息！-股票-金融界",
-    summary: "A股这些板块，反而不怕美联储加息！-股票-金融界\n\nA股这些板块，反而不怕美联储加息！\n\n北京时间9月17日凌晨，美联储以12票全票通过的方式，将联邦基金利率目",
-    deepDive: "",
-    category: "finance",
-    source: "Exa 搜索",
-    sourceUrl: "https://stock.jrj.com.cn/2026/09/18074858475650.shtml",
-    publishedAt: "2026-09-18T00:00:00.000Z",
-    updatedAt: "2026-09-19T01:00:05.742Z",
-    importance: "hot"
-  },
-  {
-    id: "finance-1789779605742-1",
-    title: "付一夫：美联储加息，如何影响A股？_新浪财经_新浪网",
-    summary: "2026年09月18日10:04作者:付一夫\n\n 文/ 付一夫\n\n 北京时间9月17日凌晨，美联储以12票全票通过的方式，将联邦基金利率目标区间上调25个基点至",
-    deepDive: "",
-    category: "finance",
-    source: "Exa 搜索",
-    sourceUrl: "http://finance.sina.com.cn/zl/china/2026-09-18/zl-inisfazf3523559.shtml",
-    publishedAt: "2026-09-18T00:00:00.000Z",
-    updatedAt: "2026-09-19T01:00:05.742Z",
-    importance: "hot"
-  },
-  {
-    id: "finance-1789779605742-2",
-    title: "美联储三年来首次加息落地，鹰派路径比单次加息更值得投资者关注提供者FX168",
-    summary: "美联储三年来首次加息落地，鹰派路径比单次加息更值得投资者关注\n\n摘要：北京时间9月17日凌晨，美联储结束为期两天的货币政策会议，宣布将联邦基金利率目标区间上调2",
-    deepDive: "",
-    category: "finance",
-    source: "Exa 搜索",
-    sourceUrl: "https://www.fx168news.com/article/1094331",
-    publishedAt: "2026-09-18T00:00:00.000Z",
-    updatedAt: "2026-09-19T01:00:05.742Z",
     importance: "hot"
   },
   {
@@ -3823,7 +4051,7 @@ const hardcodedData: NewsData = {
   {
     id: "ai-1788915601878-0",
     title: "OpenAI 发布 ChatGPT Images 2.5 图像模型",
-    summary: "OpenAI在五日内密集发布五项更新，覆盖语音、安全、搜索、开发者工具及透明度领域，显示其正从“单点突破”转向“系统性生态布局”。核心逻辑有三：通过开源TTS模",
+    summary: "OpenAI在五天内密集发布五项更新，覆盖语音、安全、搜索、开发者工具及透明度领域，显示其正从“单点突破”转向“系统性生态布局”。核心逻辑有三：通过开源TTS模",
     deepDive: "",
     category: "ai",
     source: "OpenAI：官网动态（RSS · 排除企业/客户案例）",
