@@ -3,10 +3,58 @@ import { NewsItem } from "@/types";
 
 const items: NewsItem[] = [
   {
+    id: "ai-1789987817409-2",
+    title: "Qwen-Image-2.1 已支持 ComfyUI，开源权重开放下载",
+    summary: "Qwen 宣布 Qwen-Image-2.1 现已支持 ComfyUI，权重开放。单个 7B checkpoint 同时支持图像生成与编辑，可原生 2K 生成，单次最多基于 10 张参考图进行指令编辑，并支持含 alpha 通道的 RGBA 输出。",
+    deepDive: "## AI 解读\n\n核心要点\n\n1. Qwen-Image-2.1 以单一 7B checkpoint 打通图像生成与编辑，降低部署与切换成本；\n2. 原生 2K 输出、单次最多 10 张参考图指令编辑、支持 RGBA alpha 通道，工程能力对标主流闭源方案；\n3. 接入 ComfyUI 并开放权重，直接嵌入现有开源工作流生态。\n\n影响分析\n\n此次发布的战略意义大于参数本身。7B 单模型同时覆盖生成与编辑，意味着推理资源占用和运维复杂度显著下降，对中小团队和独立开发者尤为友好。10 张参考图的指令编辑能力，将多图一致性、角色/风格迁移等此前依赖复杂管线或付费 API 的场景，拉低到本地可跑的门槛。RGBA 输出则补齐了合成、图层化生产的关键一环，利好设计、电商、游戏素材等下游工作流。\n\n更关键的是“ComfyUI + 开源权重”的组合：ComfyUI 已是开源图像生成的事实标准入口，Qwen 借此绕开自建生态的冷启动难题，快速获取开发者与插件生态。这既是对闭源图像模型的正面竞争，也在中美开源多模态竞赛中强化了阿里的存在感。短期看，受益最直接的是本地化部署与定制化需求强的团队；中期看，图像编辑工具链和 API 中间商的定价权可能被进一步压缩。",
+    category: "ai",
+    source: "X：通义千问 / Qwen (@Alibaba_Qwen)",
+    sourceUrl: "https://x.com/Alibaba_Qwen/status/2101670814953455780",
+    publishedAt: "2026-09-20T13:52:24.097Z",
+    updatedAt: "2026-09-21T10:50:17.409Z",
+    importance: "normal"
+  },
+  {
+    id: "ai-1789987817407-0",
+    title: "Qwen 开源 Qwen-Image-2.1：7B 统一生成与编辑并原生支持透明图像",
+    summary: "Qwen 团队开源 Qwen-Image-2.1，将文生图与图像编辑统一到一个模型中，视觉生成组件仅 7B 参数，并原生支持生成和编辑透明图像。模型支持最多 10 张参考图、圆形/涂鸦/独立蒙版指定局部编辑，通过混合粒度注意力架构和 KV cache 复用提升推理效率，同时改进文字渲染、人像光照与人物产品保真度，并覆盖全景图、信息图和分镜等任务。",
+    deepDive: "## AI 解读\n\n核心要点\n\n1. 架构统一：Qwen-Image-2.1 将文生图与图像编辑合并进单一模型，视觉生成组件仅 7B 参数，打破以往“生成模型+编辑模型”分立的产品形态。\n2. 透明图像原生支持：直接生成和编辑带 alpha 通道的透明图，直击电商、设计、游戏素材等高频刚需场景，此前多为闭源商业工具的能力。\n3. 工程效率优化：混合粒度注意力 + KV cache 复用，配合最多 10 张参考图与多种局部蒙版（圆形/涂鸦/独立），在可控性与推理成本间取得平衡。\n4. 能力补强：文字渲染、人像光照、人物与产品保真度提升，并覆盖全景图、信息图、分镜等任务，指向生产力工具而非玩具。\n\n影响分析\n\n对开源生态而言，7B 的统一模型显著降低了“生成+编辑”一体化能力的部署门槛，中小团队可在消费级显卡上落地，有望催生一批轻量级设计、电商与内容创作工具。对闭源厂商（如 Adobe、部分商业 API）构成直接压力，透明图与局部编辑是其长期收费壁垒，如今被开源方案正面冲击。更关键的是，统一架构意味着生成与编辑共享表征，未来迭代可同步提升两端能力，开源多模态的竞争正从“单点能力”转向“一体化工作流”，行业洗牌或将加速。",
+    category: "ai",
+    source: "Qwen：Blog Retrieval（API）",
+    sourceUrl: "https://qwen.ai/blog?id=qwen-image-2.1",
+    publishedAt: "2026-09-20T00:00:00.000Z",
+    updatedAt: "2026-09-21T10:50:17.409Z",
+    importance: "normal"
+  },
+  {
+    id: "ai-1789987817409-1",
+    title: "阶跃星辰发布旗舰模型 Step 5 Preview，10 月 15 日开源权重",
+    summary: "阶跃星辰发布旗舰基座模型 Step 5 Preview，采用稀疏 MoE 架构，总参数量 600B、激活 27B，支持 100 万 Token 上下文和文本与视觉输入，在 Artificial Analysis Intelligence Index 得 44 分，居全球开源模型前三，单任务成本为 Claude Opus 5 的 1/8。",
+    deepDive: "## AI 解读\n\n核心要点\n\n1. 技术规格：Step 5 Preview采用稀疏MoE架构，总参数600B、激活仅27B，支持100万Token上下文与文本/视觉多模态输入。\n2. 性能定位：Artificial Analysis Intelligence Index得分44，跻身全球开源模型前三。\n3. 成本优势：单任务成本仅为Claude Opus 5的1/8，性价比突出。\n4. 开源策略：10月15日开源权重，走开放生态路线。\n\n影响分析\n\n此次发布标志着国产大模型在“高性能+低成本”组合上取得实质突破。稀疏MoE架构以27B激活参数撬动600B总容量，兼顾推理效率与能力上限，百万级上下文则打开了长文档、代码库级Agent应用的想象空间。44分的智能指数意味着开源阵营与闭源头部的差距进一步收窄，而1/8的成本优势将直接冲击企业级API市场——对成本敏感的开发者和中小团队而言，开源权重+低价推理构成强吸引力。\n\n更深层看，阶跃星辰选择开源权重，是在用生态换规模，试图在巨头林立的基础模型赛道中抢占开发者心智。这可能加速行业价格战，并推动更多厂商重新评估“闭源高溢价”策略。若Step 5正式版如期兑现Preview承诺，其有望成为下半年开源模型格局的重要变量。",
+    category: "ai",
+    source: "公众号：阶跃星辰（Step）",
+    sourceUrl: "https://mp.weixin.qq.com/s?__biz=MzkyNTYxNzg5Mg%3D%3D&mid=2247488120&idx=1&sn=8ba9ac7f0b36682d6262290677c665da",
+    publishedAt: "2026-09-20T00:00:00.000Z",
+    updatedAt: "2026-09-21T10:50:17.409Z",
+    importance: "hot"
+  },
+  {
+    id: "ai-1789987817409-3",
+    title: "独立调查：ChatGPT 的 __obi 跨站 Cookie 可将站外浏览行为关联到 ChatGPT 账号",
+    summary: "作者通过自己手机上的流量捕获复现了 OpenAI 广告收集器机制：bzr.openai.com 在 .openai.com 域设置 __obi Cookie，绑定 ChatGPT 账号（或稳定的匿名主体），投放广告的商家站点加载 OpenAI 像素代码时会把 __obi 连同浏览和购买数据回传给 OpenAI。",
+    deepDive: "## AI 解读\n\n核心要点\n\n1. 跨站追踪机制落地：OpenAI通过`bzr.openai.com`在`.openai.com`域写入`__obi` Cookie，作为用户（含匿名主体）的稳定标识符，实现跨站身份绑定。\n2. 广告像素回传闭环：投放OpenAI广告的商家站点加载其像素代码后，会将`__obi`与用户的浏览、购买行为一并回传，形成\"站外行为→ChatGPT账号\"的关联链路。\n3. 可复现性：作者通过手机流量捕获独立验证，说明该机制并非理论推测，而是已实际运行的广告基础设施。\n\n影响分析\n\n此举标志着OpenAI从纯订阅/API商业模式向广告变现延伸，`__obi`本质是广告技术栈中的通用用户ID（类似Google的`_ga`或Meta的`_fbp`）。关键影响有三：\n\n其一，隐私边界模糊。ChatGPT账号通常关联真实身份与敏感对话数据，一旦与站外消费、浏览行为打通，用户画像的颗粒度将远超传统广告平台，监管风险显著上升，尤其在欧洲GDPR与加州CCPA框架下可能面临合规质疑。\n\n其二，信任成本转移。用户对ChatGPT的核心预期是\"对话工具\"，而非\"行为追踪器\"。跨站关联若未充分披露与授权，可能触发用户信任反噬。\n\n其三，行业信号：AI头部玩家正加速复制成熟广告生态的追踪范式，意味着\"AI+广告\"的隐私博弈将成为下一阶段监管焦点。",
+    category: "ai",
+    source: "Hacker News 热门（buzzing.cc 中文翻译）",
+    sourceUrl: "https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector",
+    publishedAt: "2026-09-20T00:00:00.000Z",
+    updatedAt: "2026-09-21T10:50:17.409Z",
+    importance: "normal"
+  },
+  {
     id: "ai-1789874503020-1",
     title: "Alexandr Wang 转发一份让 AI 智能体保护日历通勤时间的 Muse 提示词",
     summary: "Alexandr Wang 转发 @trevin 分享的 Muse 提示词，该提示词也可用于 Instinct 和 Grok @bot，作用是扫描未来 14 天日历、为异地会议自动添加 Travel time 通勤缓冲时间块。",
-    deepDive: "## AI 解读\n\nX：Alexandr Wang（Scale AI 创始人/Meta 首席 AI 官） (@alexandr_wang)",
+    deepDive: "## AI 解读\n\n核心要点提炼\n\n1. 产品信号：Scale AI 创始人 Alexandr Wang 转发该提示词，本质是为“AI智能体主动管理个人日程”这一能力背书，而非单纯分享技巧。\n2. 功能实质：提示词驱动 Muse/Instinct/Grok 等智能体扫描未来14天日历，识别异地会议并自动插入通勤缓冲时间块，实现从“被动提醒”到“主动规划”的跨越。\n3. 技术路径：以自然语言提示词调用日历读写权限，无需复杂集成，降低了智能体落地门槛。\n\n影响分析\n\n短期看，这是AI Agent从“对话工具”向“日程管家”演进的标志性案例，验证了提示词工程在真实办公场景中的实用价值。中期看，日历作为个人数据核心入口，一旦被智能体稳定接管，将成为AI助手争夺的高频刚需场景，可能催生“日程优化”类垂直Agent。长期看，若此类能力被整合进Grok等通用助手，将直接冲击Calendly、Reclaim等日程自动化工具，并倒逼日历平台开放更细粒度的API权限。风险在于：自动修改日历涉及隐私与误操作，信任机制仍是规模化前提。",
     category: "ai",
     source: "X：Alexandr Wang（Scale AI 创始人/Meta 首席 AI 官） (@alexandr_wang)",
     sourceUrl: "https://x.com/alexandr_wang/status/2101141362607632873",
