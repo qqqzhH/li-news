@@ -17,6 +17,7 @@ export default function NewsCard({ item }: NewsCardProps) {
 
   const catColors: Record<string, { bg: string; text: string }> = {
     ai: { bg: "#dbeafe", text: "#1d4ed8" },
+    robotics: { bg: "#dcfce7", text: "#15803d" },
     geopolitics: { bg: "#fce7f3", text: "#be185d" },
     finance: { bg: "#fef3c7", text: "#b45309" },
     other: { bg: "#f3f4f6", text: "#6b7280" },

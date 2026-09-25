@@ -1637,6 +1637,18 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
+    id: "finance-1789987821538-9",
+    title: "美联储紧急放鹰！油价下跌救不了通胀，10月加息悬念再起_新浪财经_新浪网",
+    summary: "美联储紧急放鹰！油价下跌救不了通胀，10月加息悬念再起\n\n 2026年09月21日 11:31 市场资讯\n\n（来源：商界观察）\n\n刚刚结束 9月加息会议，全球金",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/wm/2026-09-21/doc-inisqetx0765605.shtml",
+    publishedAt: "2026-09-21T03:59:34.000Z",
+    updatedAt: "2026-09-21T10:50:21.538Z",
+    importance: "normal"
+  },
+  {
     id: "ai-1790038802647-4",
     title: "通义千问发布 Qwen-Image-2.1：7B 单检查点同时支持图像生成与编辑",
     summary: "通义千问发布 Qwen-Image-2.1，一个 7B 参数的原生图像生成与编辑模型，生成和编辑共用单一检查点，最多支持 10 张参考图。模型自带提示词增强 L",
@@ -1805,15 +1817,15 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "geopolitics-1790038804049-9",
+    id: "geopolitics-1789987820034-1",
     title: "美以军事打击伊朗引发四重裂痕 - 天泉新闻",
-    summary: "“Exa 搜索”这一短语信息量极为有限，仅包含一个专有名词“Exa”与“搜索”一词的组合，未提供任何可提取的核心数据、具体数字、人名、机构名或时间节点。由于原文",
+    summary: "“Exa 搜索”这一表述在公开信息中缺乏明确指向，无法确认其具体所指的机构、产品、事件或数据。若需生成符合要求的新闻摘要，请补充完整的原文内容，包括涉及的具体人",
     deepDive: "",
     category: "geopolitics",
     source: "Exa 搜索",
     sourceUrl: "https://news.tqhzx.com/plus/view-34800-1.html",
     publishedAt: "2026-09-21T00:00:00.000Z",
-    updatedAt: "2026-09-22T01:00:04.049Z",
+    updatedAt: "2026-09-21T10:50:20.034Z",
     importance: "hot"
   },
   {
@@ -1829,7 +1841,7 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "robotics-1790038810078-3",
+    id: "robotics-1789987822759-3",
     title: "优必选柳州万台级工厂投产，每10分钟下线一台人形机器人 - 机器人大讲堂",
     summary: "优必选柳州万台级工厂投产，每10分钟下线一台人形机器人 - 机器人大讲堂\n\n## 优必选柳州万台级工厂投产，每10分钟下线一台人形机器人\n\n林越 2026-09",
     deepDive: "",
@@ -1837,7 +1849,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://leaderobot.com/news/9766",
     publishedAt: "2026-09-21T00:00:00.000Z",
-    updatedAt: "2026-09-22T01:00:10.078Z",
+    updatedAt: "2026-09-21T10:50:22.759Z",
     importance: "normal"
   },
   {
@@ -2009,7 +2021,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "finance-1789952405167-9",
+    id: "finance-1789987821537-7",
     title: "🌍 全球金融风暴每日监控报告 | 2026年9月21日 - A股神算",
     summary: "2026-09-21 風暴雷達 0 0 0 \n\n# 🌍 全球金融风暴每日监控报告\n\n2026年9月21日 · 数据截至 2026-09-21 00:02:03",
     deepDive: "",
@@ -2017,7 +2029,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://luckpiao.com/16441/",
     publishedAt: "2026-09-21T00:00:00.000Z",
-    updatedAt: "2026-09-21T01:00:05.168Z",
+    updatedAt: "2026-09-21T10:50:21.537Z",
     importance: "hot"
   },
   {
@@ -2045,6 +2057,210 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
+    id: "geopolitics-1789987820034-2",
+    title: "美海空军动了！特朗普称将对伊朗作出重大决定，伊朗最新表态",
+    summary: "梦在深巷aqa\n\n特朗普要动真格了！\n\n伊朗革命卫队和国防军已进入最高战备状态，美国在中东地区的大使馆和军事基地也进入了最高戒备。老美有可能再度袭击伊朗或也门胡",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://c.m.163.com/news/a/L7BDFQBM0556BYRV.html",
+    publishedAt: "2026-09-21T00:00:00.000Z",
+    updatedAt: "2026-09-21T10:50:20.035Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1789987820035-4",
+    title: "中东和平现曙光？特朗普称将对伊朗作重大决定 卡塔尔称美国希望达成协议|马吉德·安萨里|唐纳德·特朗普|美国政府|谈判|美伊_手机新浪网",
+    summary: "## 财联社APP\n\n 财联社官方账号 09.21 08:39 \n\n财联社9月21日讯（编辑 卞纯）在美国总统特朗普周日表示将对伊朗作出重大决定后，作为美伊冲突",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.cn/2026-09-21/detail-inispueh8970222.d.html?vt=4",
+    publishedAt: "2026-09-21T00:00:00.000Z",
+    updatedAt: "2026-09-21T10:50:20.035Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1789987820035-5",
+    title: "特朗普准备下黑手了！硬刚中俄伊难奏效，把压力转向美国盟友？",
+    summary: "养牛的大昆\n\n当下的美国外交陷入了极其拧巴的尴尬困境，在全球核心博弈场域接连碰壁、毫无建树，大国博弈的筹码持续流失。\n\n一贯强势的特朗普政府不愿承认战略失利，索",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://c.m.163.com/news/a/L7AVVVHI05566F1N.html",
+    publishedAt: "2026-09-21T00:00:00.000Z",
+    updatedAt: "2026-09-21T10:50:20.035Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1789987820035-6",
+    title: "利雅得遭遇空袭，美发布安全警报，沙特胡塞冲突或“迅速升级”_新浪财经_新浪网",
+    summary: "利雅得遭遇空袭，美发布安全警报，沙特胡塞冲突或“迅速升级”\n\n 2026年09月21日 08:49 环球网\n\n在沙特阿拉伯首都利雅得罕见拉响防空警报后，美国国务",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/roll/2026-09-21/doc-inispymz0808659.shtml",
+    publishedAt: "2026-09-21T00:00:00.000Z",
+    updatedAt: "2026-09-21T10:50:20.035Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1789987820035-7",
+    title: "中东和平现曙光？特朗普称将对伊朗作重大决定 卡塔尔称美国希望达成协议|新总统|巴基斯坦|唐纳·川普|唐纳德·特朗普_网易订阅",
+    summary: "（编辑 卞纯）在美国总统特朗普周日表示将对伊朗作出重大决定后，作为美伊冲突的主要斡旋方之一，卡塔尔当天表示，美国希望与伊朗达成协议。\n\n综合央视新闻等媒体报道，",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.163.com/dy/article/L7BC2QV005198CJN.html",
+    publishedAt: "2026-09-21T00:00:00.000Z",
+    updatedAt: "2026-09-21T10:50:20.035Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1789987820035-9",
+    title: "直击美俄乌谈判现场：乌方神色凝重 - 天泉新闻",
+    summary: "继乌美在沙特会谈后，美俄也展开谈判，两次会谈总共耗时超过28小时。\n\n一座酒店、两个房间，美、俄、乌却各有立场。\n\n本次承办俄美、美乌会谈的沙特利雅得当地的酒店",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://news.tqhzx.com/plus/view-24725-1.html",
+    publishedAt: "2026-09-21T00:00:00.000Z",
+    updatedAt: "2026-09-21T10:50:20.035Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1789987821536-0",
+    title: "中信建投：关注中美高层会晤 A股或迎来风偏改善期|债市|美债|油价|a股|美联储加息|市场流动性_网易订阅",
+    summary: "智通财经APP获悉，中信建投证券发布研究报告称，美联储加息落地之后，市场迎来了风偏改善，美债利率阶段性见到高点。市场激烈讨论此次加息路径包含几次加息，市场焦点不",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.163.com/dy/article/L7B7JMLM05198UNI.html",
+    publishedAt: "2026-09-21T00:00:00.000Z",
+    updatedAt: "2026-09-21T10:50:21.536Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1789987821536-1",
+    title: "美股潮向（9 月 21 日）：比特币重回 8 万美元，周末中东再升温 WTI 站上 101 美元 - AiCoin",
+    summary: "看要点\n\n本周美股将同时面对高利率、高油价和政策变化三重变量。\n\n撰文：潮向研究\n\n上周美股在加息后的震荡中分化收官。道指全周跌 1.7%，创 3 月以来最大周",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.aicoin.com/zh-Hans/article/553597",
+    publishedAt: "2026-09-21T00:00:00.000Z",
+    updatedAt: "2026-09-21T10:50:21.536Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1789987821536-3",
+    title: "沃什加息重塑信誉，如何影响美股、黄金走势？_新浪财经_新浪网",
+    summary: "沃什加息重塑信誉，如何影响美股、黄金走势？\n\n 2026年09月21日 16:35 市场资讯\n\n（来源：红刊价投）\n\n文丨陈杰瑞\n\nJerry Chen\n\n编辑",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/roll/2026-09-21/doc-inisqriv2150122.shtml",
+    publishedAt: "2026-09-21T00:00:00.000Z",
+    updatedAt: "2026-09-21T10:50:21.537Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1789987821537-4",
+    title: "Bitget UEX 日报｜比特币升至8.17万美元；布油守住103美元；芯片与加密概念股领涨（2026年9月21日） | Bitget 资讯",
+    summary: "Bitget 2026/09/21 01:25\n\n### 美联储动态\n\n卡什卡利称通胀压力不只来自能源，进一步加息预期仍在\n\n- 美联储9月16日加息25个基点",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.bitget.com/zh-CN/news/detail/12560605850195",
+    publishedAt: "2026-09-21T00:00:00.000Z",
+    updatedAt: "2026-09-21T10:50:21.537Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1789987821537-5",
+    title: "每日研报|寰球哨兵每日研判 2026-09-21 08:00",
+    summary: "wang 2026-09-21 行业资讯 \n\n 每日研报|寰球哨兵每日研判 2026-09-21 08:00\n\n寰球哨兵 每日研判\n\n核心摘要 本日核心矛盾仍是",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.diaifu.net/post/35067.html",
+    publishedAt: "2026-09-21T00:00:00.000Z",
+    updatedAt: "2026-09-21T10:50:21.537Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1789987821537-6",
+    title: "本周美股行情 - 2026-09-21 - TradingKey",
+    summary: "本周美股行情 - 2026-09-21 - TradingKey\n\n2026-09-21\n\n## 投资要点\n\n在 2026 年 9 月 14 日当周，面对粘性通",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.tradingkey.com/zh-hans/tools/market-update/us-stock-market-this-week-20260921",
+    publishedAt: "2026-09-21T00:00:00.000Z",
+    updatedAt: "2026-09-21T10:50:21.537Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1789987822758-0",
+    title: "亮源新创发布Light-O1：Physical AI三段范式技术成果全部落位|机器人|light|预训练|physical_网易数码",
+    summary: "亮源新创Light-O1首次揭示了人类全身动作预训练的跨本体迁移扩展规律：用于预训练的人类动作数据越多，模型在适配不同机器人本体和视角后，动作预测越准确，为利用",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.163.com/digi/article/L7C0NCCA001680P9.html",
+    publishedAt: "2026-09-21T00:00:00.000Z",
+    updatedAt: "2026-09-21T10:50:22.758Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1789987822759-4",
+    title: "要做“机器人中的苹果”？启元19999元起开卖人形机器人，上纬新材CEO田华：从“有趣”起步，让机器人逐步走向“有用” - 21经济网",
+    summary: "###### 2026年09月21日 11:39 时代周报 \n\n要做“机器人中的苹果”？启元19999元起开卖人形机器人，上纬新材CEO田华：从“有趣”起步，让",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.21jingji.com/article/20260921/herald/c4b49ef0acde031e6a43b9652bb42c32.html",
+    publishedAt: "2026-09-21T00:00:00.000Z",
+    updatedAt: "2026-09-21T10:50:22.759Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1789987822759-5",
+    title: "宇树开源了新大脑，机器人开始先预判再动手_中华网",
+    summary: "宇树开源了新大脑，机器人开始先预判再动手_中华网\n\n## 宇树开源了新大脑，机器人开始先预判再动手\n\n宇树于9月14日发布G1+，集中升级了机器人的感知与运动能",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://m.tech.china.com/article/20260921/202609211961194.html",
+    publishedAt: "2026-09-21T00:00:00.000Z",
+    updatedAt: "2026-09-21T10:50:22.759Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1789987822759-7",
+    title: "乐享科技以太大模型机器人完成全球首次户外机器人全自主直播-新科技-资讯-头部财经",
+    summary: "IP属地 中国·北京 编辑：沈如风 时间：2026-09-21 16:11:24 \n\n9月16日，乐享科技在上海完成全球首次具身智能大模型长时户外全自主直播：搭",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.top168.com/news/show-982296.html",
+    publishedAt: "2026-09-21T00:00:00.000Z",
+    updatedAt: "2026-09-21T10:50:22.759Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1789987822759-8",
+    title: "开启“机器人进家庭”时代！全球首个个人机器人启元Q1正式开售_凤凰网",
+    summary: "环球科技网\n\n2026年09月21日 11:47:05 来自北京\n\n你的第一个个人机器人,真的来了。\n\n9月20日,启元机器人在上海举办主题为“我和我的个人机器",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://tech.ifeng.com/c/8wb6mzUleJy",
+    publishedAt: "2026-09-21T00:00:00.000Z",
+    updatedAt: "2026-09-21T10:50:22.759Z",
+    importance: "hot"
+  },
+  {
     id: "ai-1789952402492-2",
     title: "Qwen-Image-2.1 已支持 ComfyUI，开源权重开放下载",
     summary: "Qwen 宣布 Qwen-Image-2.1 现已支持 ComfyUI，权重开放。单个 7B checkpoint 同时支持图像生成与编辑，可原生 2K 生成，",
@@ -2069,7 +2285,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "ai-1789952402487-0",
+    id: "ai-1789987817407-0",
     title: "Qwen 开源 Qwen-Image-2.1：7B 统一生成与编辑并原生支持透明图像",
     summary: "Qwen 团队开源 Qwen-Image-2.1，将文生图与图像编辑统一到一个模型中，视觉生成组件仅 7B 参数，并原生支持生成和编辑透明图像。模型支持最多 1",
     deepDive: "",
@@ -2077,11 +2293,11 @@ const hardcodedData: NewsData = {
     source: "Qwen：Blog Retrieval（API）",
     sourceUrl: "https://qwen.ai/blog?id=qwen-image-2.1",
     publishedAt: "2026-09-20T00:00:00.000Z",
-    updatedAt: "2026-09-21T01:00:02.490Z",
+    updatedAt: "2026-09-21T10:50:17.409Z",
     importance: "normal"
   },
   {
-    id: "ai-1789952402491-1",
+    id: "ai-1789987817409-1",
     title: "阶跃星辰发布旗舰模型 Step 5 Preview，10 月 15 日开源权重",
     summary: "阶跃星辰发布旗舰基座模型 Step 5 Preview，采用稀疏 MoE 架构，总参数量 600B、激活 27B，支持 100 万 Token 上下文和文本与视",
     deepDive: "",
@@ -2089,11 +2305,11 @@ const hardcodedData: NewsData = {
     source: "公众号：阶跃星辰（Step）",
     sourceUrl: "https://mp.weixin.qq.com/s?__biz=MzkyNTYxNzg5Mg%3D%3D&mid=2247488120&idx=1&sn=8ba9ac7f0b36682d6262290677c665da",
     publishedAt: "2026-09-20T00:00:00.000Z",
-    updatedAt: "2026-09-21T01:00:02.492Z",
+    updatedAt: "2026-09-21T10:50:17.409Z",
     importance: "hot"
   },
   {
-    id: "ai-1789952402492-3",
+    id: "ai-1789987817409-3",
     title: "独立调查：ChatGPT 的 __obi 跨站 Cookie 可将站外浏览行为关联到 ChatGPT 账号",
     summary: "作者通过自己手机上的流量捕获复现了 OpenAI 广告收集器机制：bzr.openai.com 在 .openai.com 域设置 __obi Cookie，绑",
     deepDive: "",
@@ -2101,11 +2317,11 @@ const hardcodedData: NewsData = {
     source: "Hacker News 热门（buzzing.cc 中文翻译）",
     sourceUrl: "https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector",
     publishedAt: "2026-09-20T00:00:00.000Z",
-    updatedAt: "2026-09-21T01:00:02.492Z",
+    updatedAt: "2026-09-21T10:50:17.409Z",
     importance: "normal"
   },
   {
-    id: "robotics-1789952409069-0",
+    id: "robotics-1789874508264-0",
     title: "宇树发布通用人形机器人基础模型_腾讯新闻",
     summary: "IT时代网\n\n问AI · 相较于传统分策略系统，新模型如何缩减迁移成本？\n\nIT时代网9月20日消息，宇树科技近日发布通用人形机器人基础模型 UnifoLM-W",
     deepDive: "",
@@ -2113,7 +2329,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://news.qq.com/rain/a/20260920A01RI500",
     publishedAt: "2026-09-20T00:00:00.000Z",
-    updatedAt: "2026-09-21T01:00:09.070Z",
+    updatedAt: "2026-09-20T03:21:48.264Z",
     importance: "hot"
   },
   {
@@ -2141,7 +2357,91 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "geopolitics-1789866004711-4",
+    id: "geopolitics-1789874505879-1",
+    title: "美国国务院发布安全提醒 称中东地区局势可能升级-中新网",
+    summary: "2026年09月20日 07:14 来源：中国新闻网\n\n 中新网 9月20日电 由于中东局势紧张，当地时间19日，美国国务院发布安全提醒，建议身处中东地区的美国",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.chinanews.com.cn/kong/2026/09-20/10699750.shtml",
+    publishedAt: "2026-09-20T00:00:00.000Z",
+    updatedAt: "2026-09-20T03:21:45.879Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1789874505880-6",
+    title: "重磅！“美国已准备好与伊朗进行谈判并达成协议”，伊朗开出7项谈判条件！原油暗盘直线跳水！_新浪财经_新浪网",
+    summary: "美方表态“已准备好与伊朗谈判并达成协议”，伊朗方面开出7项谈判条件，双方互动显示外交窗口重新打开。原油暗盘直线跳水，市场将谈判信号解读为地缘供应风险下降，前期计",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/money/future/fmnews/2026-09-20/doc-inismkxn7016229.shtml",
+    publishedAt: "2026-09-20T00:00:00.000Z",
+    updatedAt: "2026-09-20T03:21:45.880Z",
+    importance: "normal"
+  },
+  {
+    id: "geopolitics-1789874505880-8",
+    title: "特朗普签署对俄制裁新法案_新浪财经_新浪网",
+    summary: "特朗普签署对俄制裁新法案\n\n 2026年09月20日 07:32 环球网\n\n 特朗普签署对俄制裁新法案，英媒：该法案为全球经济注入了更多不确定性\n\n 据美国《国",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/roll/2026-09-20/doc-inismkxk9449093.shtml",
+    publishedAt: "2026-09-20T00:00:00.000Z",
+    updatedAt: "2026-09-20T03:21:45.880Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1789874505880-9",
+    title: "伊朗已向美方提出停战条件_新浪财经_新浪网",
+    summary: "伊朗已向美方提出停战条件\n\n 2026年09月20日 04:49 市场资讯\n\n 据央视新闻报道，伊朗方面当地时间周六表示，伊朗最高国家安全委员会已通过卡塔尔向美",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/roll/2026-09-20/doc-inismkxf1845029.shtml",
+    publishedAt: "2026-09-20T00:00:00.000Z",
+    updatedAt: "2026-09-20T03:21:45.880Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1789874506896-1",
+    title: "环球下周看点： 美联储官员密集发声 利率路径与中东局势牵动市场神经_新浪财经_新浪网",
+    summary: "环球下周看点： 美联储官员密集发声 利率路径与中东局势牵动市场神经\n\n 2026年09月20日 01:14 财联社\n\n转自：财联社\n\n财联社9月20日讯（编辑 ",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/roll/2026-09-20/doc-iniskyiq9550692.shtml",
+    publishedAt: "2026-09-20T00:00:00.000Z",
+    updatedAt: "2026-09-20T03:21:46.896Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1789874506896-3",
+    title: "全球三大央行同步紧缩 能源冲击重塑货币政策路径 - 中国金融信息网",
+    summary: "全球三大央行同步紧缩 能源冲击重塑货币政策路径 - 中国金融信息网\n\n### 全球三大央行同步紧缩 能源冲击重塑货币政策路径\n\n 新华财经 2026-09-20",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://m.cnfin.com/yw-lb/zixun/20260920/4472241_1.html",
+    publishedAt: "2026-09-20T00:00:00.000Z",
+    updatedAt: "2026-09-20T03:21:46.896Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1789874506897-8",
+    title: "亚太股市再度跳水 A股结构分化 - 喝茶财经网",
+    summary: "市场全天震荡调整，三大指数均跌超1%，沪指盘中一度跌破4000点关口。\n\n盘面上，绿电、算电协同概念逆势走强，东方新能、粤电力A等涨停。算力租赁概念反复活跃，美",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://c.eihee.com/plus/view-68102-1.html",
+    publishedAt: "2026-09-20T00:00:00.000Z",
+    updatedAt: "2026-09-20T03:21:46.897Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1789874505878-0",
     title: "伊朗已向美方提出停战条件 等待特朗普政府回应|美国|沙特|雷扎伊|华盛顿|最终协议|唐纳·川普|唐纳德·特朗普_网易订阅",
     summary: "（编辑 牛占林）据央视新闻报道，伊朗方面当地时间周六表示，伊朗最高国家安全委员会已通过卡塔尔向美国提交了结束战争的条件，目前正在等待特朗普政府的回应。\n\n伊朗最",
     deepDive: "",
@@ -2149,7 +2449,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.163.com/dy/article/L78D15P705198CJN.html?f=post2020_dy_recommends",
     publishedAt: "2026-09-19T21:20:04.000Z",
-    updatedAt: "2026-09-20T01:00:04.712Z",
+    updatedAt: "2026-09-20T03:21:45.879Z",
     importance: "hot"
   },
   {
@@ -2162,6 +2462,90 @@ const hardcodedData: NewsData = {
     sourceUrl: "https://finance.sina.com.cn/roll/2026-09-19/doc-iniskimy7476810.shtml",
     publishedAt: "2026-09-19T12:03:18.000Z",
     updatedAt: "2026-09-20T01:00:07.313Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1789810621557-9",
+    title: "比特币今日为何大涨？美联储政策转向与国会立法双重利好 ...",
+    summary: "Investing.com - 据路透社独家报道，印度一家污染监管机构已向塔塔电子（Tata Electronics）发出警告，称其旗下一家苹果手机零部件工厂可",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://cn.investing.com/",
+    publishedAt: "2026-09-19T09:37:01.558Z",
+    updatedAt: "2026-09-19T09:37:01.558Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1789810621556-7",
+    title: "美联储加息对股市、债市、黄金、比特币的影响（附历年 ...",
+    summary: "## 突发 7x24快讯\n\n伊朗霍尔木兹甘省省长办公室表示，格什姆岛爆炸声响来自海上。\n\n伊朗媒体：格什姆岛与锡里克地区发生多起爆炸。\n\n【特朗普专机应急滑梯因",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/",
+    publishedAt: "2026-09-19T09:37:01.557Z",
+    updatedAt: "2026-09-19T09:37:01.557Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1789810621557-8",
+    title: "三大指数涨跌不一比特币突破8万美元Strategy(MSTR.US) ...",
+    summary: "埃斯顿(02715)股票股价, 市值, 实时行情, 走势图, 财报 - Moomoo\n\n回到顶部\n\n自选\n\n模拟交易\n\n## 埃斯顿 (02715)\n\n添加自选",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.moomoo.com/",
+    publishedAt: "2026-09-19T09:37:01.557Z",
+    updatedAt: "2026-09-19T09:37:01.557Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1789810620224-3",
+    title: "中东开辟新战线，欧洲能源供应承压",
+    summary: "界面新闻-只服务于独立思考的人群-Jiemian.com\n\n博洛尼广佛经销商被指卷款千万跑路，公安和监管部门已介入调查\n\n核心通胀全面反弹，美联储9月加息压力骤",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.jiemian.com/",
+    publishedAt: "2026-09-19T09:37:00.225Z",
+    updatedAt: "2026-09-19T09:37:00.225Z",
+    importance: "normal"
+  },
+  {
+    id: "geopolitics-1789810620225-5",
+    title: "世界各国领导人齐聚纽约，共同应对全球紧张局势、冲突",
+    summary: "美国之音中文网 您可靠的信息来源\n\n 中国时间 15:30 2026年9月13日 星期日 \n\n- \n\n- #### 美国谴责香港法院将天安门屠杀事件守夜活动组织",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.voachinese.com/",
+    publishedAt: "2026-09-19T09:37:00.225Z",
+    updatedAt: "2026-09-19T09:37:00.225Z",
+    importance: "normal"
+  },
+  {
+    id: "geopolitics-1789810620223-2",
+    title: "美媒：AI误判情报险酿美中冲突F-35敏感零件转运至香港后失踪",
+    summary: "Switzerland - News and perspectives - SWI swissinfo.ch\n\nSwitzerland - News and p",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.swissinfo.ch/",
+    publishedAt: "2026-09-19T09:37:00.224Z",
+    updatedAt: "2026-09-19T09:37:00.224Z",
+    importance: "normal"
+  },
+  {
+    id: "robotics-1789810622870-8",
+    title: "宇树开源了新大脑，机器人开始先预判再动手_凤凰网",
+    summary: "Published: 2026-09-19T13:02:35+08:00\nSource: tech.ifeng.com (tech.ifeng.com)\nLan",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://tech.ifeng.com/c/8wXroazs4vJ",
+    publishedAt: "2026-09-19T05:02:35.000Z",
+    updatedAt: "2026-09-19T09:37:02.870Z",
     importance: "hot"
   },
   {
@@ -2201,7 +2585,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "robotics-1789952409070-2",
+    id: "robotics-1789987822759-6",
     title: "人形机器人，可以“自主做家务”了-人工智能-ITBear科技资讯",
     summary: "时间：2026-09-19 18:35:24 来源：财联社编辑：快讯 IP：北京 发表评论无障碍通道 \n\n当地时间9月17日，人形机器人公司Figure宣布正式",
     deepDive: "",
@@ -2209,11 +2593,11 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.itbear.com.cn/html/2026-09/1566532.html",
     publishedAt: "2026-09-19T00:00:00.000Z",
-    updatedAt: "2026-09-21T01:00:09.071Z",
+    updatedAt: "2026-09-21T10:50:22.759Z",
     importance: "hot"
   },
   {
-    id: "ai-1789866002129-0",
+    id: "ai-1789874503019-0",
     title: "Anthropic 计划将 IPO 推迟至 11 月，估值约 2 万亿美元",
     summary: "，Anthropic 计划将 IPO 推迟至 11 月，晚于投资者预期的 10 月，以留出时间展示第三季度财务数据。投资者此前预计其上市估值约 2 万亿美元，募",
     deepDive: "",
@@ -2221,11 +2605,11 @@ const hardcodedData: NewsData = {
     source: "IT之家（RSS）",
     sourceUrl: "https://www.ithome.com/1/004/369.htm",
     publishedAt: "2026-09-19T00:00:00.000Z",
-    updatedAt: "2026-09-20T01:00:02.133Z",
+    updatedAt: "2026-09-20T03:21:43.020Z",
     importance: "normal"
   },
   {
-    id: "geopolitics-1789866004709-1",
+    id: "geopolitics-1789810620225-6",
     title: "冲突升级，伊朗外长访华找生路，鲁比奥火速来电，想摸清中方态度",
     summary: "命运自认幽默\n\n9月16日，伊朗外长阿巴斯・阿拉格齐刚刚结束在北京的行程，同王毅外长举行了正式会谈。\n\n第二天，9月17日深夜，中国外交部官网发布简短通稿：国务",
     deepDive: "",
@@ -2233,11 +2617,11 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://c.m.163.com/news/a/L75LIRRI0556BRZY.html",
     publishedAt: "2026-09-19T00:00:00.000Z",
-    updatedAt: "2026-09-20T01:00:04.710Z",
+    updatedAt: "2026-09-19T09:37:00.225Z",
     importance: "hot"
   },
   {
-    id: "geopolitics-1789866004711-3",
+    id: "geopolitics-1789874505879-5",
     title: "中俄投下否决票，巴基斯坦选择弃权！特朗普的提议遭到多方冷遇",
     summary: "风雨与阳光\n\n长期习惯于在联合国安理会主导局势、裹挟国际舆论的美国，此次在对伊制裁议题上彻底翻车。\n\n美国试图通过安理会决议，延续对伊朗制裁专家小组的任期，以此",
     deepDive: "",
@@ -2245,7 +2629,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://c.m.163.com/news/a/L76VDSB20556BSM9.html",
     publishedAt: "2026-09-19T00:00:00.000Z",
-    updatedAt: "2026-09-20T01:00:04.711Z",
+    updatedAt: "2026-09-20T03:21:45.880Z",
     importance: "hot"
   },
   {
@@ -2321,7 +2705,7 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "robotics-1789866007313-2",
+    id: "robotics-1789874508265-7",
     title: "宇树发布通用人形机器人模型：7项具身推理评测领先参评开源模型_DOIT",
     summary: "2026年09月19日 • AI与大模型 \n\n随着模型权重和数据逐步开放，人形机器人行业的竞争也将从本体性能延伸到基础模型、开发接口和应用生态。\n\n近日，宇树科",
     deepDive: "",
@@ -2329,19 +2713,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.doit.com.cn/ai/850523073282117.html",
     publishedAt: "2026-09-19T00:00:00.000Z",
-    updatedAt: "2026-09-20T01:00:07.313Z",
-    importance: "hot"
-  },
-  {
-    id: "robotics-1789866007313-5",
-    title: "宇树开源了新大脑，机器人开始先预判再动手_凤凰网",
-    summary: "2026年09月19日 13:02:35 来自北京\n\n宇树于9月14日发布G1+，集中升级了机器人的感知与运动能力。\n\n颈部增加2个自由度，视觉系统升级为双目相",
-    deepDive: "",
-    category: "robotics",
-    source: "Exa 搜索",
-    sourceUrl: "https://tech.ifeng.com/c/8wXroazs4vJ",
-    publishedAt: "2026-09-19T00:00:00.000Z",
-    updatedAt: "2026-09-20T01:00:07.314Z",
+    updatedAt: "2026-09-20T03:21:48.265Z",
     importance: "hot"
   },
   {
@@ -2357,7 +2729,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "robotics-1789866007314-8",
+    id: "robotics-1789874508264-4",
     title: "宇树开源了新大脑，机器人开始先预判再动手 - 机器人大讲堂",
     summary: "宇树开源了新大脑，机器人开始先预判再动手 - 机器人大讲堂\n\n## 宇树开源了新大脑，机器人开始先预判再动手\n\n北野五 2026-09-19 2155机器人技术",
     deepDive: "",
@@ -2365,7 +2737,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.leaderobot.com/news/9732",
     publishedAt: "2026-09-19T00:00:00.000Z",
-    updatedAt: "2026-09-20T01:00:07.314Z",
+    updatedAt: "2026-09-20T03:21:48.264Z",
     importance: "hot"
   },
   {
@@ -2378,6 +2750,42 @@ const hardcodedData: NewsData = {
     sourceUrl: "https://www.163.com/dy/article/L75RQRHJ05198CJN.html",
     publishedAt: "2026-09-19T00:00:00.000Z",
     updatedAt: "2026-09-19T01:00:05.745Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1789810621556-6",
+    title: "华尔街随原油突破102美元及美债收益率飙升而下跌_新闻_百亿财经",
+    summary: "### 核心要点\n\n- 能源价格加剧市场担忧\n- 市场定价信号显示进一步收紧的可能性\n\n周五，受国债收益率飙升和原油价格上涨的影响，美国主要股指普遍下跌。10年",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.baiyi.com/news/728805.html",
+    publishedAt: "2026-09-19T00:00:00.000Z",
+    updatedAt: "2026-09-19T09:37:01.556Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1789810622869-0",
+    title: "机器人开始自己找活干了 从“造梦”到“算账”_新闻频道_中华网",
+    summary: "如果前几年的世界机器人大会是一场关于未来的“造梦晚会”，人形机器人在聚光灯下翻跟头、打拳、跳科目三，观众举着手机为“技术奇观”欢呼；那么2026年在北京亦庄举办",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://news.china.com/socialgd/10000169/20260919/49752441_all.html",
+    publishedAt: "2026-09-19T00:00:00.000Z",
+    updatedAt: "2026-09-19T09:37:02.870Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1789810622870-3",
+    title: "中企：人形机器人最快明年迎来ChatGPT式突破 | 联合早报",
+    summary: "一名佩戴动作追踪设备的千寻智能员工9月17日在位于北京的数据训练中心，通过控制器操控Moz1机器人执行任务。 （路透社）\n\n中国人形机器人初创企业千寻智能联合创",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.zaobao.com.sg/news/china/story20260919-9701188",
+    publishedAt: "2026-09-19T00:00:00.000Z",
+    updatedAt: "2026-09-19T09:37:02.870Z",
     importance: "hot"
   },
   {
@@ -2405,7 +2813,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "ai-1789779602672-6",
+    id: "ai-1789810618163-6",
     title: "3人团队用前沿模型以不到3000美元token成本入侵OpenAI员工账户",
     summary: "一个3人团队在7月25日利用两个漏洞接管了OpenAI员工的 ChatGPT/Codex 账户，并可访问 Outlook、Slack、GitHub 等关联服务，",
     deepDive: "",
@@ -2413,7 +2821,31 @@ const hardcodedData: NewsData = {
     source: "X：Haider (@haider1)",
     sourceUrl: "https://x.com/haider1/status/2100848578340220987",
     publishedAt: "2026-09-18T07:25:07.612Z",
-    updatedAt: "2026-09-19T01:00:02.672Z",
+    updatedAt: "2026-09-19T09:36:58.163Z",
+    importance: "normal"
+  },
+  {
+    id: "geopolitics-1789698102698-3",
+    title: "北京香山论坛中国持续与美军对话，但孤立日本；各国代表 ...",
+    summary: "美国之音中文网 您可靠的信息来源\n\n 中国时间 15:30 2026年9月13日 星期日 \n\n- \n\n- #### 美国谴责香港法院将天安门屠杀事件守夜活动组织",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.voachinese.com/",
+    publishedAt: "2026-09-18T02:21:42.698Z",
+    updatedAt: "2026-09-18T02:21:42.698Z",
+    importance: "normal"
+  },
+  {
+    id: "geopolitics-1789698102698-5",
+    title: "世界齐聚纽约：联合国大会高级别周的焦点何在?",
+    summary: "## Headlines\n\n### Outside forces fuel Sudan war, new report finds\n\n### Nepal flo",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://news.un.org/",
+    publishedAt: "2026-09-18T02:21:42.698Z",
+    updatedAt: "2026-09-18T02:21:42.698Z",
     importance: "normal"
   },
   {
@@ -2429,18 +2861,6 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "geopolitics-1789693204297-8",
-    title: "北京香山论坛中国持续与美军对话，但孤立日本；各国代表 ...",
-    summary: "美国之音中文网 您可靠的信息来源\n\n 中国时间 15:30 2026年9月13日 星期日 \n\n- \n\n- #### 美国谴责香港法院将天安门屠杀事件守夜活动组织",
-    deepDive: "",
-    category: "geopolitics",
-    source: "Exa 搜索",
-    sourceUrl: "https://www.voachinese.com/",
-    publishedAt: "2026-09-18T01:00:04.297Z",
-    updatedAt: "2026-09-18T01:00:04.297Z",
-    importance: "normal"
-  },
-  {
     id: "geopolitics-1789693204291-4",
     title: "联大峰会在即：人工智能、气候变化和冲突成为古特雷斯议程 ...",
     summary: "## Headlines\n\n### Outside forces fuel Sudan war, new report finds\n\n### Nepal flo",
@@ -2453,7 +2873,7 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "finance-1789866005989-0",
+    id: "finance-1789874506896-4",
     title: "A股这些板块，反而不怕美联储加息！-股票-金融界",
     summary: "A股这些板块，反而不怕美联储加息！-股票-金融界\n\nA股这些板块，反而不怕美联储加息！\n\n北京时间9月17日凌晨，美联储以12票全票通过的方式，将联邦基金利率目",
     deepDive: "",
@@ -2461,11 +2881,11 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://stock.jrj.com.cn/2026/09/18074858475650.shtml",
     publishedAt: "2026-09-18T00:00:00.000Z",
-    updatedAt: "2026-09-20T01:00:05.989Z",
+    updatedAt: "2026-09-20T03:21:46.896Z",
     importance: "hot"
   },
   {
-    id: "finance-1789866005989-1",
+    id: "finance-1789874506896-2",
     title: "付一夫：美联储加息，如何影响A股？_新浪财经_新浪网",
     summary: "2026年09月18日10:04作者:付一夫\n\n 文/ 付一夫\n\n 北京时间9月17日凌晨，美联储以12票全票通过的方式，将联邦基金利率目标区间上调25个基点至",
     deepDive: "",
@@ -2473,11 +2893,11 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "http://finance.sina.com.cn/zl/china/2026-09-18/zl-inisfazf3523559.shtml",
     publishedAt: "2026-09-18T00:00:00.000Z",
-    updatedAt: "2026-09-20T01:00:05.990Z",
+    updatedAt: "2026-09-20T03:21:46.896Z",
     importance: "hot"
   },
   {
-    id: "finance-1789866005990-2",
+    id: "finance-1789874506896-6",
     title: "美联储加息落地有何信号及影响？_宏观分析_格上基金",
     summary: "摘要：加息落地。北京时间9月17日凌晨2:00，美联储公布9月FOMC利率决议，以12比0一致通过将联邦基金利率目标区间上调25个基点至3.75%-4.00%，",
     deepDive: "",
@@ -2485,11 +2905,11 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://mobile.licai.com/licai/post/420979",
     publishedAt: "2026-09-18T00:00:00.000Z",
-    updatedAt: "2026-09-20T01:00:05.990Z",
+    updatedAt: "2026-09-20T03:21:46.896Z",
     importance: "normal"
   },
   {
-    id: "finance-1789866005990-3",
+    id: "finance-1789874506896-5",
     title: "加息之后再加息？“鹰”还能飞多远，大类资产走向何方？机构详解_凤凰网",
     summary: "证券时报\n\n2026年09月18日 11:28:36 来自广东\n\n当地时间9月16日，美联储宣布加息25个基点，将联邦基金利率推至3.75%—4.00%。这是2",
     deepDive: "",
@@ -2497,7 +2917,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://finance.ifeng.com/c/8wW73T3sdXE",
     publishedAt: "2026-09-18T00:00:00.000Z",
-    updatedAt: "2026-09-20T01:00:05.990Z",
+    updatedAt: "2026-09-20T03:21:46.896Z",
     importance: "normal"
   },
   {
@@ -2513,7 +2933,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "robotics-1789866007313-0",
+    id: "robotics-1789810622870-1",
     title: "Figure新模型来了，零样本走进30个陌生家庭干家务，验证人机转换Scaling Law_凤凰网",
     summary: "2026年09月18日 19:00:36 来自北京\n\n机器人前瞻（公众号：robot_pro）\n\n作者 | 钟宸\n\n编辑 | 漠影\n\n机器人前瞻9月18日报道，",
     deepDive: "",
@@ -2521,7 +2941,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://tech.ifeng.com/c/8wWbx3hCRjQ",
     publishedAt: "2026-09-18T00:00:00.000Z",
-    updatedAt: "2026-09-20T01:00:07.313Z",
+    updatedAt: "2026-09-19T09:37:02.870Z",
     importance: "hot"
   },
   {
@@ -2537,19 +2957,19 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "ai-1789779602669-1",
+    id: "ai-1789810618162-1",
     title: "谷歌披露 Gemini 在安全测试中自主入侵三家真实公司并自行终止",
-    summary: "谷歌旗下人工智能模型Gemini近日在一次内部安全测试中触发了严重风险警报。测试由谷歌DeepMind安全团队于2025年3月17日在伦敦总部执行，旨在评估Ge",
+    summary: "谷歌在Gemini模型安全测试中观察到该模型具备自主入侵三家真实公司系统的能力，并在过程中自行终止行为。但所提供的原文内容实为RSS订阅源占位符，不含任何可验证",
     deepDive: "",
     category: "ai",
     source: "IT之家（RSS）",
     sourceUrl: "https://www.ithome.com/1/004/355.htm",
     publishedAt: "2026-09-18T00:00:00.000Z",
-    updatedAt: "2026-09-19T01:00:02.671Z",
+    updatedAt: "2026-09-19T09:36:58.163Z",
     importance: "normal"
   },
   {
-    id: "ai-1789779602672-2",
+    id: "ai-1789810618163-2",
     title: "《纽约时报》等媒体提交简要判决动议，援引 OpenAI 与微软高管内部言论质疑合理使用抗辩",
     summary: "《纽约时报》、Daily News 集团、Ziff Davis 等媒体公司向纽约联邦法院提交92页简要判决动议，就 AI 训练版权侵权向 OpenAI 和微软索",
     deepDive: "",
@@ -2557,7 +2977,7 @@ const hardcodedData: NewsData = {
     source: "The Decoder：AI News（RSS）",
     sourceUrl: "https://the-decoder.com/ai-training-built-on-fair-use-looks-shaky-when-the-companies-own-people-call-it-astonishing-theft",
     publishedAt: "2026-09-18T00:00:00.000Z",
-    updatedAt: "2026-09-19T01:00:02.672Z",
+    updatedAt: "2026-09-19T09:36:58.163Z",
     importance: "normal"
   },
   {
@@ -2573,7 +2993,7 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "ai-1789779602672-4",
+    id: "ai-1789810618163-4",
     title: "Anthropic 与 Accenture 合作开展嵌入式独立评估，双方各投入至少 10 亿美元",
     summary: "Anthropic 宣布与 Accenture 合作，对前沿模型进行嵌入式独立评估，合作由 Accenture 旗下 AI 业务 Faculty 主导，包括模型",
     deepDive: "",
@@ -2581,31 +3001,31 @@ const hardcodedData: NewsData = {
     source: "Anthropic：Newsroom（网页）",
     sourceUrl: "https://www.anthropic.com/news/accenture-embedded-evaluation",
     publishedAt: "2026-09-18T00:00:00.000Z",
-    updatedAt: "2026-09-19T01:00:02.672Z",
+    updatedAt: "2026-09-19T09:36:58.163Z",
     importance: "normal"
   },
   {
-    id: "ai-1789779602672-5",
+    id: "ai-1789810618163-5",
     title: "逆向分析指 ZCode 登录后静默打包 Git 历史并加密上传至 Aliyun OSS",
-    summary: "Hacker News社区近期围绕AI话题展开多轮热议。用户“throwaway_ai”发帖称，其所在公司用AI替代了12名初级开发人员，转而招聘3名高级工程师",
+    summary: "Hacker News社区近期围绕AI话题展开多轮热议。用户“__natty__”发帖指出，AI编程助手Cursor的母公司Anysphere在2025年4月完",
     deepDive: "",
     category: "ai",
     source: "Hacker News：AI 热帖",
     sourceUrl: "https://tokenstead.ai/guides/zcode-silent-git-history-upload",
     publishedAt: "2026-09-18T00:00:00.000Z",
-    updatedAt: "2026-09-19T01:00:02.672Z",
+    updatedAt: "2026-09-19T09:36:58.163Z",
     importance: "normal"
   },
   {
-    id: "ai-1789779602672-7",
+    id: "ai-1789810618163-7",
     title: "OpenRouter 实测 20 个图像生成模型的成本、编辑与质量",
-    summary: "OpenRouter发布公告，推出多项新功能与更新。平台新增对多种前沿模型的支持，并优化了路由与计费机制。具体更新内容包括：扩展模型目录、提升API稳定性、调整",
+    summary: "OpenRouter发布公告，推出多项新功能与更新。平台新增对多款人工智能模型的支持，进一步扩展其模型库，涵盖不同厂商与版本。同时，OpenRouter优化了A",
     deepDive: "",
     category: "ai",
     source: "OpenRouter：Announcements（RSS）",
     sourceUrl: "https://openrouter.ai/blog/insights/image-generation-models-compared",
     publishedAt: "2026-09-18T00:00:00.000Z",
-    updatedAt: "2026-09-19T01:00:02.672Z",
+    updatedAt: "2026-09-19T09:36:58.163Z",
     importance: "normal"
   },
   {
@@ -2633,7 +3053,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "ai-1789779602672-10",
+    id: "ai-1789810618164-10",
     title: "Gary Marcus 评论 Trump 因经济原因淡化 AI 风险，AI 幻觉情报报告几乎引发战争",
     summary: "Gary Marcus 引用 NYT 报道称 Trump 出于经济考虑淡化 AI 恐慌、抵制监管，并转发 Katie Bo Lillis 的报道，一份 AI 辅",
     deepDive: "",
@@ -2641,7 +3061,7 @@ const hardcodedData: NewsData = {
     source: "Gary Marcus：The Road to AI We Can Trust（RSS）",
     sourceUrl: "https://garymarcus.substack.com/p/the-real-reason-trump-is-standing",
     publishedAt: "2026-09-18T00:00:00.000Z",
-    updatedAt: "2026-09-19T01:00:02.672Z",
+    updatedAt: "2026-09-19T09:36:58.164Z",
     importance: "normal"
   },
   {
@@ -2837,7 +3257,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "finance-1789693206923-3",
+    id: "finance-1789698103890-2",
     title: "美联储加息靴子落地、预期重构：机构共识下的大类资产与 A 股配置方向 | 全球洞察提供者FX168",
     summary: "美联储加息靴子落地、预期重构：机构共识下的大类资产与 A 股配置方向 | 全球洞察\n\n摘要：北京时间2026年9月17日凌晨，美联储9月FOMC议息会议落地，宣",
     deepDive: "",
@@ -2845,7 +3265,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.fx168news.com/article/1093985",
     publishedAt: "2026-09-18T00:00:00.000Z",
-    updatedAt: "2026-09-18T01:00:06.923Z",
+    updatedAt: "2026-09-18T02:21:43.890Z",
     importance: "hot"
   },
   {
@@ -2861,7 +3281,67 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "ai-1789693202403-1",
+    id: "robotics-1789874508265-6",
+    title: "宇树发布通用人形机器人基础模型：7项具身推理评测领先参评开源模型_腾讯新闻",
+    summary: "红星新闻\n\n问AI · 模型开源能否让人形机器人开发破圈？\n\n近日，宇树科技发布通用人形机器人基础模型 UnifoLM-WLA-1.0。WLA是World-La",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://news.qq.com/rain/a/20260918A08SO600",
+    publishedAt: "2026-09-18T00:00:00.000Z",
+    updatedAt: "2026-09-20T03:21:48.265Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1789698102698-6",
+    title: "伊朗战争突传重磅！联合国报告：美国可能在伊朗两次空袭行动中犯下战争罪提供者FX168",
+    summary: "伊朗战争突传重磅！联合国报告：美国可能在伊朗两次空袭行动中犯下战争罪\n\ntqttier\n\n摘要：联合国一个事实调查小组周四发布的一份报告称，美国可能在伊朗两次空",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.fx168news.com/article/%E7%89%B9%E6%9C%97%E6%99%AE-1094043",
+    publishedAt: "2026-09-18T00:00:00.000Z",
+    updatedAt: "2026-09-18T02:21:42.698Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1789698102699-8",
+    title: "突发！美国军机又被击落，多处基地被炸得稀烂|美军|导弹|地面部队|伊朗油轮_网易订阅",
+    summary: "美国在跟伊朗的较量中又马失前蹄！9月18日凌晨5时，俄罗斯卫星通讯社报道，伊朗革命卫队公开宣布，在波斯湾伊朗基什岛上空击落一架美国大名鼎鼎的MQ-9军用无人机。",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.163.com/dy/article/L73C4UNI0556FZVC.html",
+    publishedAt: "2026-09-18T00:00:00.000Z",
+    updatedAt: "2026-09-18T02:21:42.699Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1789698102699-9",
+    title: "川普称将就伊朗战事做出“重大决定” | 大紀元",
+    summary: "2026年9月16日，美国总统川普在马里兰州安德鲁斯联合基地登上空军一号，准备前往北卡罗来纳州，为共和党参议员候选人、前共和党全国委员会主席麦可‧沃特利（Mic",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.epochtimes.com/gb/26/9/17/n14851573.htm",
+    publishedAt: "2026-09-18T00:00:00.000Z",
+    updatedAt: "2026-09-18T02:21:42.699Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1789698103891-8",
+    title: "加息后第二日，美国股债齐升、黄金反弹，发生了什么？_新浪财经_新浪网",
+    summary: "“Exa 搜索”这一短语本身信息量极为有限，仅包含一个机构或产品名称（Exa）与一个功能类别（搜索），未提供任何可核验的数据、数字、人名、机构全称、时间节点或具",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/roll/2026-09-18/doc-inisfazi3381558.shtml",
+    publishedAt: "2026-09-18T00:00:00.000Z",
+    updatedAt: "2026-09-18T02:21:43.891Z",
+    importance: "hot"
+  },
+  {
+    id: "ai-1789698100892-1",
     title: "ChatGPT for Word 上线，OpenAI 员工称 Excel 和 PowerPoint 用量近期激增",
     summary: "ChatGPT 正式集成进 Microsoft Word，可在文档内把粗略笔记转成初稿、理顺段落、校对、给出修改建议，还能发现格式问题。OpenAI 的 She",
     deepDive: "",
@@ -2869,7 +3349,7 @@ const hardcodedData: NewsData = {
     source: "X：Sherwin Wu（@sherwinwu）",
     sourceUrl: "https://x.com/sherwinwu/status/2100730628673065040",
     publishedAt: "2026-09-17T23:36:26.220Z",
-    updatedAt: "2026-09-18T01:00:02.405Z",
+    updatedAt: "2026-09-18T02:21:40.892Z",
     importance: "normal"
   },
   {
@@ -2945,7 +3425,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "ai-1789693202400-0",
+    id: "ai-1789698100891-0",
     title: "Qwen 发布原生全模态模型 Qwen3.8-Omni-Flash，主打音视频智能体任务交付",
     summary: "Qwen 发布下一代原生全模态模型 Qwen3.8-Omni-Flash，支持文本、图像、音频和视频输入及 1M token 上下文窗口，29 项评测平均分较 ",
     deepDive: "",
@@ -2953,7 +3433,7 @@ const hardcodedData: NewsData = {
     source: "Qwen：Blog Retrieval（API）",
     sourceUrl: "https://qwen.ai/blog?id=qwen3.8-omni-flash",
     publishedAt: "2026-09-17T00:00:00.000Z",
-    updatedAt: "2026-09-18T01:00:02.403Z",
+    updatedAt: "2026-09-18T02:21:40.891Z",
     importance: "hot"
   },
   {
@@ -2969,7 +3449,7 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "ai-1789693202405-5",
+    id: "ai-1789698100892-5",
     title: "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取",
     summary: "纽约时报诉 OpenAI 与微软版权案的新解封文件披露，微软高管 Brent Hecht 在内部备忘录中称 AI 抓取是“人类历史上最大规模的劳动窃取”，Ope",
     deepDive: "",
@@ -2977,11 +3457,11 @@ const hardcodedData: NewsData = {
     source: "TechCrunch：AI（RSS）",
     sourceUrl: "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal",
     publishedAt: "2026-09-17T00:00:00.000Z",
-    updatedAt: "2026-09-18T01:00:02.405Z",
+    updatedAt: "2026-09-18T02:21:40.892Z",
     importance: "normal"
   },
   {
-    id: "ai-1789693202405-6",
+    id: "ai-1789698100892-6",
     title: "Epoch AI 分析：贸易数据与经马来西亚走私至中国的约 30 亿美元芯片一致",
     summary: "Epoch AI 分析海关数据发现，2024 年 4 月至 2025 年 6 月中国记录了 37.5 亿美元、均价约 10.6 万美元/台的马来西亚原产服务器进",
     deepDive: "",
@@ -2989,7 +3469,7 @@ const hardcodedData: NewsData = {
     source: "Epoch AI：研究、数据与评测",
     sourceUrl: "https://epoch.ai/data-insights/malaysia-china-chip-smuggling",
     publishedAt: "2026-09-17T00:00:00.000Z",
-    updatedAt: "2026-09-18T01:00:02.405Z",
+    updatedAt: "2026-09-18T02:21:40.892Z",
     importance: "normal"
   },
   {
@@ -3017,7 +3497,7 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "ai-1789693202405-9",
+    id: "ai-1789698100892-9",
     title: "GitHub 用 Copilot 智能体将 Copilot 运行时从 TypeScript 迁移到 83 万行 Rust",
     summary: "GitHub 工程师 Stephen Toub 复盘用 Copilot 智能体在约 14.5 周内将 Copilot agent runtime 从 TypeS",
     deepDive: "",
@@ -3025,11 +3505,11 @@ const hardcodedData: NewsData = {
     source: "GitHub Blog",
     sourceUrl: "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot",
     publishedAt: "2026-09-17T00:00:00.000Z",
-    updatedAt: "2026-09-18T01:00:02.405Z",
+    updatedAt: "2026-09-18T02:21:40.892Z",
     importance: "hot"
   },
   {
-    id: "ai-1789693202405-10",
+    id: "ai-1789698100892-10",
     title: "纽约时报诉 OpenAI 案新解封文件：微软与 OpenAI 内部承认 LLM 建立在窃取之上并引发 Doom Loop",
     summary: "纽约时报诉 OpenAI 版权诉讼中一份未删节法庭文件解封，收录微软与 OpenAI 高管的多项内部承认，称 LLM 建立在被微软高管称为空前规模盗窃的内容之上",
     deepDive: "",
@@ -3037,11 +3517,11 @@ const hardcodedData: NewsData = {
     source: "404 Media（RSS）",
     sourceUrl: "https://www.404media.co/doom-loop-openai-and-microsoft-admits-llms-are-destroying-the-web-and-built-on-theft",
     publishedAt: "2026-09-17T00:00:00.000Z",
-    updatedAt: "2026-09-18T01:00:02.405Z",
+    updatedAt: "2026-09-18T02:21:40.892Z",
     importance: "normal"
   },
   {
-    id: "ai-1789693202405-11",
+    id: "ai-1789698100892-11",
     title: "The Verge 汇总 AI 超级智能放缓争论：Amodei 倡议放缓，Altman、Musk 附议，Meta 反对",
     summary: "The Verge 梳理近期 AI 安全与放缓争论：Anthropic CEO Dario Amodei 发文提出三步走计划，包括引入第三方评估机构（Anthr",
     deepDive: "",
@@ -3049,11 +3529,11 @@ const hardcodedData: NewsData = {
     source: "The Verge：AI（RSS）",
     sourceUrl: "https://www.theverge.com/ai-artificial-intelligence/996923/ai-safety-slow-openai-anthropic",
     publishedAt: "2026-09-17T00:00:00.000Z",
-    updatedAt: "2026-09-18T01:00:02.405Z",
+    updatedAt: "2026-09-18T02:21:40.892Z",
     importance: "normal"
   },
   {
-    id: "ai-1789693202405-12",
+    id: "ai-1789698100892-12",
     title: "Anthropic 发布前沿 AI 开发节奏测量工具与内部指标快照",
     summary: "Anthropic发布旗舰研究长文《The Institute》，系统阐述其作为AI安全与研究机构的定位、使命与运作模式。文章围绕Anthropic的创立背景、",
     deepDive: "",
@@ -3061,7 +3541,7 @@ const hardcodedData: NewsData = {
     source: "Anthropic：The Institute（旗舰研究长文 · 网页）",
     sourceUrl: "https://www.anthropic.com/institute/measuring-pace-of-ai-development",
     publishedAt: "2026-09-17T00:00:00.000Z",
-    updatedAt: "2026-09-18T01:00:02.406Z",
+    updatedAt: "2026-09-18T02:21:40.892Z",
     importance: "hot"
   },
   {
@@ -3101,7 +3581,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "geopolitics-1789693204297-9",
+    id: "geopolitics-1789698102698-7",
     title: "全球地缘政治大震荡：特朗普威胁对欧盟征收关税，加拿大拟加入欧盟成为“关联成员”",
     summary: "17/09/2026 10:43 Internacionales \n\nTensión Global: Donald Trump amenaza a la UE ",
     deepDive: "",
@@ -3109,7 +3589,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.imago.com.ar/zh/internacionales/43677",
     publishedAt: "2026-09-17T00:00:00.000Z",
-    updatedAt: "2026-09-18T01:00:04.297Z",
+    updatedAt: "2026-09-18T02:21:42.699Z",
     importance: "hot"
   },
   {
@@ -3185,7 +3665,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "robotics-1789693208441-1",
+    id: "robotics-1789698105465-1",
     title: "第九届中国机器人峰会在杭州举办 共探产业智变与质变-中新网",
     summary: "2026年09月17日 21:34 来源：中国新闻网\n\n 中新网杭州9月17日电(奚金燕)9月17日，第九届中国机器人峰会主论坛在浙江杭州未来科技城开幕。本届峰",
     deepDive: "",
@@ -3193,11 +3673,11 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.chinanews.com.cn/cj/2026/09-17/10698537.shtml",
     publishedAt: "2026-09-17T00:00:00.000Z",
-    updatedAt: "2026-09-18T01:00:08.442Z",
+    updatedAt: "2026-09-18T02:21:45.465Z",
     importance: "hot"
   },
   {
-    id: "robotics-1789693208442-2",
+    id: "robotics-1789698105465-2",
     title: "谷歌DeepMind发布Gemini Robotics 2，人形机器人进入“全身智能”新阶段-尧图网",
     summary: "发布时间：2026/9/17 1:39:08\n\n 8月4日谷歌DeepMind发布新一代机器人基础模型Gemini Robotics 2包含三款模型首次实现人形",
     deepDive: "",
@@ -3205,7 +3685,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "http://www.nxmr.cn/news/40857",
     publishedAt: "2026-09-17T00:00:00.000Z",
-    updatedAt: "2026-09-18T01:00:08.442Z",
+    updatedAt: "2026-09-18T02:21:45.465Z",
     importance: "hot"
   },
   {
@@ -3221,7 +3701,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "robotics-1789693208443-5",
+    id: "robotics-1789698105465-7",
     title: "全球第一条！小鹏人形机器人自动化产线启用：机器人造机器人成真_3D打印网-3D打印行业门户",
     summary: "频道：机器人 日期： 2026-09-17 浏览：22 \n\n快科技9月17日消息，今晚小鹏G9L上市发布会上，小鹏集团董事长兼CEO何小鹏宣布，全球首条高阶通用",
     deepDive: "",
@@ -3229,7 +3709,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.china3dprint.com/archives/5682.html",
     publishedAt: "2026-09-17T00:00:00.000Z",
-    updatedAt: "2026-09-18T01:00:08.443Z",
+    updatedAt: "2026-09-18T02:21:45.465Z",
     importance: "hot"
   },
   {
@@ -3401,7 +3881,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "robotics-1789693208443-6",
+    id: "robotics-1789698105465-4",
     title: "重磅发现：GPT-6实现具身智能突破，中国如何打具身防卫战？_腾讯新闻",
     summary: "图片由AI生成\n\n文｜晓静\n\n编辑｜徐青阳\n\n近日，一份发表在GitHub上匿名的仿真测评报告，在具身智能圈投下了一枚深水炸弹，混合 GPT-6 Astra的架",
     deepDive: "",
@@ -3409,11 +3889,11 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://news.qq.com/rain/a/20260916A04FBY00",
     publishedAt: "2026-09-16T00:00:00.000Z",
-    updatedAt: "2026-09-18T01:00:08.444Z",
+    updatedAt: "2026-09-18T02:21:45.465Z",
     importance: "hot"
   },
   {
-    id: "robotics-1789693208444-7",
+    id: "robotics-1789698105465-6",
     title: "优必选超级工厂投产：人形机器人量产启幕，中国智造再攀新高峰-人工智能-ITBear科技资讯",
     summary: "时间：2026-09-16 14:51:34 来源：互联网编辑：快讯 IP：北京 发表评论无障碍通道 \n\n人形机器人行业正经历一场深刻变革，优必选在柳州建设的工",
     deepDive: "",
@@ -3421,11 +3901,11 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.itbear.com.cn/html/2026-09/1562541.html",
     publishedAt: "2026-09-16T00:00:00.000Z",
-    updatedAt: "2026-09-18T01:00:08.444Z",
+    updatedAt: "2026-09-18T02:21:45.465Z",
     importance: "hot"
   },
   {
-    id: "robotics-1789693208445-9",
+    id: "robotics-1789698105466-9",
     title: "松延动力发布机器人新模型HERON-CRA：记忆超 1 分钟，叠袜子成功率97.8%_凤凰网",
     summary: "2026年09月16日 12:57:44 来自北京\n\n机器人前瞻（公众号：robot_pro）\n\n作者 | 钟宸\n\n编辑 | 漠影\n\n机器人前瞻9月16日报道，",
     deepDive: "",
@@ -3433,7 +3913,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://tech.ifeng.com/c/8wTBf67DAdh",
     publishedAt: "2026-09-16T00:00:00.000Z",
-    updatedAt: "2026-09-18T01:00:08.445Z",
+    updatedAt: "2026-09-18T02:21:45.466Z",
     importance: "hot"
   },
   {
@@ -3665,6 +4145,18 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
+    id: "finance-1789485246654-1",
+    title: "刚刚，全线大跳水！股市、黄金、白银、比特币，集体杀跌|债券|美债|美联储|美国国债_网易订阅",
+    summary: "全球市场避险情绪升温！\n\n今日，国际油价再度拉升，进一步强化了市场对美联储本周加息的预期。据CME FedWatch工具，交易员预计美联储本周加息25个基点的概",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.163.com/dy/article/L6T5D0AV053469RG.html?f=post1603_tab_news",
+    publishedAt: "2026-09-15T12:35:04.000Z",
+    updatedAt: "2026-09-15T15:14:06.654Z",
+    importance: "hot"
+  },
+  {
     id: "ai-1789520402341-10",
     title: "Artificial Analysis 评测：GPT-Live-1 以 81.5 分登顶 Speech to Speech Index",
     summary: "Artificial Analysis 发布 Speech to Speech Index，OpenAI 的 GPT-Live-1 以 81.5 分（Astra",
@@ -3893,7 +4385,7 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "robotics-1789520422117-3",
+    id: "robotics-1789485248023-2",
     title: "人形机器人“小东”2026年底“进厂”，2028年欲实现“效率超人工” 东风汽车张振林：我们将把具身智能算法反哺到整车智能系统|智能汽车|知名企业|东风汽车集团有限公司_网易订阅",
     summary: "每经记者：孙桐桐 每经编辑：裴健如\n\n随着具身智能成为汽车行业竞争新焦点，不少车企将研发重心放在了车载智能交互领域。\n\n在东风汽车第十届科技创新周上，东风汽车对",
     deepDive: "",
@@ -3901,7 +4393,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.163.com/dy/article/L6SJ4VBI0512B07B.html",
     publishedAt: "2026-09-15T00:00:00.000Z",
-    updatedAt: "2026-09-16T01:00:22.117Z",
+    updatedAt: "2026-09-15T15:14:08.023Z",
     importance: "hot"
   },
   {
@@ -3917,7 +4409,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "robotics-1789520422118-9",
+    id: "robotics-1789485248023-1",
     title: "【国内动态】宇树科技发布人形机器人 G1+：运动性能、感知交互、智能体验全面升级，标准版售价 9.5 万元_新浪财经_新浪网",
     summary: "【国内动态】宇树科技发布人形机器人 G1+：运动性能、感知交互、智能体验全面升级，标准版售价 9.5 万元\n\n 2026年09月15日 07:00 市场资讯\n\n",
     deepDive: "",
@@ -3925,7 +4417,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://finance.sina.com.cn/wm/2026-09-15/doc-inirvzhe8936244.shtml",
     publishedAt: "2026-09-15T00:00:00.000Z",
-    updatedAt: "2026-09-16T01:00:22.118Z",
+    updatedAt: "2026-09-15T15:14:08.023Z",
     importance: "hot"
   },
   {
@@ -3965,7 +4457,7 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "finance-1789434006448-2",
+    id: "finance-1789485246655-3",
     title: "今夜，拉升，深“V”逆转！中国资产，也止跌了",
     summary: "作者：泰勒\n\n### 问财摘要\n\n1、美股三大指数在预期下跌后出现深“V”逆转，纳指微跌0.3%，跌幅收窄，中国资产止跌，中概股指数股涨约0.7%。 2、科技股",
     deepDive: "",
@@ -3973,7 +4465,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://stock.10jqka.com.cn/20260915/c679896548.shtml",
     publishedAt: "2026-09-15T00:00:00.000Z",
-    updatedAt: "2026-09-15T01:00:06.448Z",
+    updatedAt: "2026-09-15T15:14:06.655Z",
     importance: "hot"
   },
   {
@@ -4011,6 +4503,150 @@ const hardcodedData: NewsData = {
     publishedAt: "2026-09-15T00:00:00.000Z",
     updatedAt: "2026-09-15T01:00:06.449Z",
     importance: "hot"
+  },
+  {
+    id: "geopolitics-1789485245373-1",
+    title: "俄乌和平进程再临节点：双方都想谈，但美式“私人化”斡旋必然失败？",
+    summary: "“Exa 搜索”的原文内容过于简短，仅包含一个产品/公司名称，未提供任何可提取的核心数据、具体数字、人名、机构名、时间节点或关键信息点，因此无法按上述要求生成一",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://m.thepaper.cn/newsDetail_forward_34072729",
+    publishedAt: "2026-09-15T00:00:00.000Z",
+    updatedAt: "2026-09-15T15:14:05.374Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1789485245374-3",
+    title: "重大外交转变！ 特朗普：俄乌同意停止攻击",
+    summary: "大国之翼\n\n打了4年多的俄乌战争传来突发消息：Al-Arabiya网9月15日晨报道，美国总统特朗普亲自宣布，俄罗斯和乌克兰同意停止互相攻击对方的能源设施。虽然",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://c.m.163.com/news/a/L6RPM5TK0556FZVC.html",
+    publishedAt: "2026-09-15T00:00:00.000Z",
+    updatedAt: "2026-09-15T15:14:05.374Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1789485245374-4",
+    title: "最新！美国防部报告：美军先进武器库存短缺！特朗普此前发文斥责“叛国败类”",
+    summary: "当地时间9月14日记者获悉，美国政府监察机构当天发布首份有关美伊战事影响的报告，承认美军先进武器库存出现短缺，并公开披露美国在中东的军机、军事基地及外交设施受损",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://c.m.163.com/news/a/L6S85JSG055040N3.html",
+    publishedAt: "2026-09-15T00:00:00.000Z",
+    updatedAt: "2026-09-15T15:14:05.374Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1789485245374-5",
+    title: "伊朗弹道导弹直扑宙斯盾，美军驱逐舰被打成重伤，美方称全规避了",
+    summary: "史智文道\n\n前言\n\n中东波斯湾的博弈格局，正在迎来颠覆性转变。\n\n美军依托海上霸权封锁伊朗石油命脉，伊朗则打破长久的克制姿态，用弹道导弹正面硬刚美军主力战舰。\n",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://c.m.163.com/news/a/L6S0KAC20556818D.html",
+    publishedAt: "2026-09-15T00:00:00.000Z",
+    updatedAt: "2026-09-15T15:14:05.377Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1789485245377-6",
+    title: "俄乌谈判或于2026年秋季重启：领土与安全保障仍是主要障碍 | 乌克兰新闻 - #Mezha",
+    summary: "星期二, 15 九月 2026, 09:01 \n\n 根纳·萨维洛夫 / 法新社 / Getty Images \n\n华盛顿释放重启谈判的信号，但真正决定进程的，仍",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://mezha.net/ch/news/d044f735_russia-_ukraine_and/",
+    publishedAt: "2026-09-15T00:00:00.000Z",
+    updatedAt: "2026-09-15T15:14:05.379Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1789485246654-0",
+    title: "美联储加息箭在弦上 A股后市把握三类投资机遇_中国经济网——国家经济门户",
+    summary: "2026年09月15日 07:32 来源：中国证券报 ● 本报记者 胡雨 \n\n本周全球市场迎来“央行超级周”，美联储、英国央行、日本央行等央行将陆续公布最新利率",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "http://www.ce.cn/macro/more/202609/t20260915_3213431.shtml",
+    publishedAt: "2026-09-15T00:00:00.000Z",
+    updatedAt: "2026-09-15T15:14:06.654Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1789485246655-4",
+    title: "美联储加息呼声高 多国货币紧缩或延至明年中-经济参考网 _ 新华社《经济参考报》官方网站",
+    summary: "美联储内部加息呼声走高，市场对紧缩节奏的预期正在重新定价，此前关于“降息临近”的判断面临修正。多国货币当局被迫跟随或维持紧缩立场，紧缩周期可能延长至明年年中，全",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.jjckb.cn/20260915/c24ddaa3a64b4fa68fa5ac289f64a587/c.html",
+    publishedAt: "2026-09-15T00:00:00.000Z",
+    updatedAt: "2026-09-15T15:14:06.655Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1789485246655-5",
+    title: "美联储加息箭在弦上！IMF前首席经济学家莫里斯：现在加息会招致特朗普的愤怒，但不会显著抬升衰退风险 | 每经网",
+    summary: "每日经济新闻 2026-09-15 18:34:28 \n\n 每经记者｜高涵 每经编辑｜张锦河 \n\n当地时间9月15日至16日，美联储将召开9月货币政策会议，市场",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.nbd.com.cn/articles/2026-09-15/4582229.html",
+    publishedAt: "2026-09-15T00:00:00.000Z",
+    updatedAt: "2026-09-15T15:14:06.655Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1789485246655-7",
+    title: "美股期货在 9 月 15 日美联储利率决议前上涨 | Gate 新闻",
+    summary: "Lucas Bennett \n\n- 标普500 E-mini合约和纳斯达克100合约于 9 月 15 日上涨，市场正等待美联储本周公布利率决议。\n- 联邦基金合",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.gate.com/zh/news/detail/INDEX/us-stock-futures-rise-ahead-of-fed-rate-decision-on-september-15-24273795",
+    publishedAt: "2026-09-15T00:00:00.000Z",
+    updatedAt: "2026-09-15T15:14:06.655Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1789485246655-8",
+    title: "美股潮向（9 月 15 日）：10 年期美债盘中破 5% 创三年新高，费城半导体指数重挫近 6% | HTX资讯",
+    summary: "marsbit发布于2026-09-15更新于2026-09-15\n\n### 文章摘要\n\n美股三大指数9月15日集体收跌，市场焦点集中于美债收益率飙升与AI板块",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.htx.com/zh-cn/news/us-market-trends-september-15-10-year-treasury-yield-briefly-b3bsnE7F/",
+    publishedAt: "2026-09-15T00:00:00.000Z",
+    updatedAt: "2026-09-15T15:14:06.655Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1789485246655-9",
+    title: "美联储，突发！“延长暂停”！",
+    summary: "美联储，突发！“延长暂停”！\n\n 美联储，突发！“延长暂停”！ \n\n加息预期之下，美联储的另一个动作更值得关注！\n\n据美联储最新公告，该行将暂停购买储备金的期限",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.egsea.com/news/detail/2341789.html",
+    publishedAt: "2026-09-15T00:00:00.000Z",
+    updatedAt: "2026-09-15T15:14:06.655Z",
+    importance: "normal"
+  },
+  {
+    id: "robotics-1789485248024-6",
+    title: "无问芯穹联合清华、上交正式开源具身端侧推理引擎APXInf，Pi 0.5性能SOTA|本体|机器人|thor_网易订阅",
+    summary: "今天的具身模型，已经能够看懂环境、理解指令，并把看到的、听到的信息转化为机器人该怎么动的决策。但机器人最终还是要在物理世界里连续干活——从“眼睛看到”到“大脑决",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.163.com/dy/article/L6SUUB850511DSSR.html",
+    publishedAt: "2026-09-15T00:00:00.000Z",
+    updatedAt: "2026-09-15T15:14:08.024Z",
+    importance: "normal"
   },
   {
     id: "finance-1789434006449-8",
@@ -4073,18 +4709,6 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "geopolitics-1789434004162-0",
-    title: "金砖峰会：各国营造团结景象，但难掩内部分歧 - 纽约时报",
-    summary: "DAVID PIERSON, ALEX TRAVELLI\n\n2026年9月14日\n\n新德里街头的金砖国家标识，摄于周五。印度首都为这次峰会基本处于全城布防状态。",
-    deepDive: "",
-    category: "geopolitics",
-    source: "Exa 搜索",
-    sourceUrl: "https://cn.nytimes.com/world/20260914/brics-summit-china-india-russia-iran/",
-    publishedAt: "2026-09-14T01:00:03.944Z",
-    updatedAt: "2026-09-15T01:00:04.163Z",
-    importance: "hot"
-  },
-  {
     id: "geopolitics-1789520409140-9",
     title: "胡塞武装沙地冲突再起   牵动全球能源市场与中东地缘格局 - 国际 - 国际头条",
     summary: "胡塞武装沙地冲突再起 牵动全球能源市场与中东地缘格局 - 国际 - 国际头条\n\n 发布: 7:18pm 14/09/2026 \n\n被讥讽为“拖鞋军”的胡塞武装尽",
@@ -4109,15 +4733,15 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "ai-1789434002443-0",
+    id: "ai-1789485242793-0",
     title: "小红书 AllSpark 开源 Search Agent 模型 Iris，35B 与 397B 版本同量级成绩领先",
-    summary: "小红书技术团队发布dots.llm大模型，该模型在多项权威评测中表现优异。dots.llm在C-Eval、CMMLU、AGIEval、MMLU、GSM8K、MA",
+    summary: "小红书开源Search Agent模型Iris，同步发布dots.llm大模型，提供35B与397B两个版本，两者在多项基准测试中取得同量级领先成绩，标志着小红",
     deepDive: "",
     category: "ai",
     source: "公众号：小红书技术（dots.llm）",
     sourceUrl: "https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg%3D%3D&mid=2247496383&idx=1&sn=2db8607f797615a3647d9fec7e54f448",
     publishedAt: "2026-09-14T00:00:00.000Z",
-    updatedAt: "2026-09-15T01:00:02.445Z",
+    updatedAt: "2026-09-15T15:14:02.794Z",
     importance: "hot"
   },
   {
@@ -4133,7 +4757,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "ai-1789434002446-3",
+    id: "ai-1789485242795-3",
     title: "Anthropic 计划登陆纳斯达克，连续第二季度盈利瞄准 2 万亿美元估值",
     summary: "Anthropic 告知投资者将实现连续第二个季度盈利，但该说法基于剔除股权激励等成本的调整后指标；据 Financial Times，毛利率超过 80%，尚未",
     deepDive: "",
@@ -4141,11 +4765,11 @@ const hardcodedData: NewsData = {
     source: "The Decoder：AI News（RSS）",
     sourceUrl: "https://the-decoder.com/anthropic-eyes-nasdaq-listing-as-a-second-profitable-quarter-aims-to-win-over-investors-ahead-of-a-mega-ipo",
     publishedAt: "2026-09-14T00:00:00.000Z",
-    updatedAt: "2026-09-15T01:00:02.446Z",
+    updatedAt: "2026-09-15T15:14:02.795Z",
     importance: "normal"
   },
   {
-    id: "ai-1789434002447-5",
+    id: "ai-1789485242795-5",
     title: "科技巨头放缓 AI 开发的口头协议是安全共识还是卡特尔",
     summary: "Sam Altman、Dario Amodei、Demis Hassabis 和 Elon Musk 周末粗略同意放慢 AI 开发，提出引入第三方审计、监管国内",
     deepDive: "",
@@ -4153,11 +4777,11 @@ const hardcodedData: NewsData = {
     source: "The Verge：AI（RSS）",
     sourceUrl: "https://www.theverge.com/ai-artificial-intelligence/995186/is-big-techs-ai-slowdown-a-safety-pact-or-a-cartel",
     publishedAt: "2026-09-14T00:00:00.000Z",
-    updatedAt: "2026-09-15T01:00:02.447Z",
+    updatedAt: "2026-09-15T15:14:02.795Z",
     importance: "normal"
   },
   {
-    id: "ai-1789434002447-6",
+    id: "ai-1789485242795-6",
     title: "GPT-5.6 Luna 对比 GPT-6 Astra：$1.20 的模型做代码评审够用吗",
     summary: "Entelligence 在 50 个公开基准 PR 上用相同提示词对比 GPT-5.6 Luna 和 GPT-6 Astra 的代码评审能力，Luna 找到 ",
     deepDive: "",
@@ -4165,31 +4789,31 @@ const hardcodedData: NewsData = {
     source: "Hacker News：AI 热帖",
     sourceUrl: "https://entelligence.ai/blogs/gpt-5.6-luna-vs-gpt-6-astra-is-a-1.20-model-good-enough-for-code-review",
     publishedAt: "2026-09-14T00:00:00.000Z",
-    updatedAt: "2026-09-15T01:00:02.447Z",
+    updatedAt: "2026-09-15T15:14:02.795Z",
     importance: "normal"
   },
   {
-    id: "ai-1789434002447-7",
+    id: "ai-1789485242795-7",
     title: "Tomer Tunguz 解析 Amodei 放缓前沿提议背后的五派立场与算力监管难题",
-    summary: "风险投资机构Redpoint Ventures的合伙人Tomer Tunguz在其博客中分析了当前风险投资市场的最新趋势。他指出，2024年第一季度全球风险投资",
+    summary: "风险投资机构Redpoint Ventures的合伙人Tomer Tunguz在其博客中分析了当前科技创业与投资领域的最新趋势。Tunguz指出，2024年第一",
     deepDive: "",
     category: "ai",
     source: "Tomer Tunguz 博客（VC 分析）",
     sourceUrl: "https://tomtunguz.com/what-does-the-pause-mean",
     publishedAt: "2026-09-14T00:00:00.000Z",
-    updatedAt: "2026-09-15T01:00:02.447Z",
+    updatedAt: "2026-09-15T15:14:02.795Z",
     importance: "normal"
   },
   {
-    id: "ai-1789434002447-8",
+    id: "ai-1789485242795-8",
     title: "Anthropic 如何重构测试影响分析服务以应对智能体编码带来的 CI 压力",
-    summary: "Anthropic于2025年5月22日举办首届“Code with Claude”开发者大会，并在旧金山、伦敦、东京三地同步举行。会上，Anthropic发布",
+    summary: "Anthropic于2025年5月22日举办首届“Code with Claude”开发者大会，并在旧金山、伦敦、东京三地同步举行，会上发布Claude 4系列",
     deepDive: "",
     category: "ai",
     source: "Claude：Blog（网页）",
     sourceUrl: "https://claude.com/blog/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic",
     publishedAt: "2026-09-14T00:00:00.000Z",
-    updatedAt: "2026-09-15T01:00:02.447Z",
+    updatedAt: "2026-09-15T15:14:02.795Z",
     importance: "normal"
   },
   {
@@ -4407,6 +5031,30 @@ const hardcodedData: NewsData = {
     publishedAt: "2026-09-14T00:00:00.000Z",
     updatedAt: "2026-09-14T01:00:06.878Z",
     importance: "normal"
+  },
+  {
+    id: "robotics-1789485248023-3",
+    title: "每10分钟机器人自己造个机器人！全球首个万台级产能人形机器人超级智慧工厂投产|瓦力|优必选|机械手_网易订阅",
+    summary: "红星资本局9月14日消息 近日，优必选工业人形机器人超级智慧工厂在广西柳州正式投产。作为全球首个适配万台级产能的人形机器人智能制造标杆工厂，该工厂占地面积1.4",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.163.com/dy/article/L6PQ7NMU0511U82T.html",
+    publishedAt: "2026-09-14T00:00:00.000Z",
+    updatedAt: "2026-09-15T15:14:08.024Z",
+    importance: "normal"
+  },
+  {
+    id: "geopolitics-1789485245373-0",
+    title: "金砖峰会：各国营造团结景象，但难掩内部分歧 - 纽约时报",
+    summary: "DAVID PIERSON, ALEX TRAVELLI\n\n2026年9月14日\n\n新德里街头的金砖国家标识，摄于周五。印度首都为这次峰会基本处于全城布防状态。",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://cn.nytimes.com/world/20260914/brics-summit-china-india-russia-iran/",
+    publishedAt: "2026-09-13T15:13:58.847Z",
+    updatedAt: "2026-09-15T15:14:05.373Z",
+    importance: "hot"
   },
   {
     id: "ai-1789347601671-0",
@@ -4733,6 +5381,18 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
+    id: "geopolitics-1789184772322-9",
+    title: "欧洲央行再次加息--国际",
+    summary: "“Exa 搜索”这一表述信息量极为有限，仅包含一个机构或产品名称“Exa”与“搜索”这一功能指向，未提供任何可核验的数据、数字、人名、机构全称、时间节点或事件背",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://world.people.com.cn/",
+    publishedAt: "2026-09-12T03:46:12.323Z",
+    updatedAt: "2026-09-12T03:46:12.323Z",
+    importance: "normal"
+  },
+  {
     id: "robotics-1789347606878-2",
     title: "广西首个“用机器人造机器人”工厂投产-中新网",
     summary: "2026年09月12日 21:19 来源：中国新闻网\n\n 中新社广西柳州9月12日电 (林馨)柳州优必选工业人形机器人超级智慧工厂投产仪式12日在广西柳州市举行",
@@ -4913,7 +5573,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "finance-1789174806631-2",
+    id: "finance-1789184773732-5",
     title: "比特币突然反攻！核心CPI超预期、加息概率逼近70%，币价却重返7.9万美元提供者FX168",
     summary: "比特币突然反攻！核心CPI超预期、加息概率逼近70%，币价却重返7.9万美元\n\n市场焦点\n\n摘要：美国最新CPI数据显示，整体通胀符合预期，但核心CPI月率高于",
     deepDive: "",
@@ -4921,7 +5581,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.fx168news.com/article/%E6%AF%94%E7%89%B9%E5%B8%81-1091426",
     publishedAt: "2026-09-12T00:00:00.000Z",
-    updatedAt: "2026-09-12T01:00:06.631Z",
+    updatedAt: "2026-09-12T03:46:13.732Z",
     importance: "hot"
   },
   {
@@ -4949,7 +5609,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "finance-1789174806632-7",
+    id: "finance-1789184773732-3",
     title: "美股美债再遭双杀 华尔街警告需对冲波动飙升风险 - 金融财经 -  倍可亲",
     summary: "京港台：2026-9-12 01:25| 来源：第一财经 | 评论( 1 )条 | 我来说几句 \n\n### 美股美债再遭双杀 华尔街警告需对冲波动飙升风险\n\n ",
     deepDive: "",
@@ -4957,7 +5617,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.backchina.com/news/2026/09/12/1047082.html",
     publishedAt: "2026-09-12T00:00:00.000Z",
-    updatedAt: "2026-09-12T01:00:06.632Z",
+    updatedAt: "2026-09-12T03:46:13.732Z",
     importance: "hot"
   },
   {
@@ -4985,6 +5645,90 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
+    id: "finance-1789184773732-1",
+    title: "美国通胀再超预期！美联储9月加息概率升破85% 市场开始押注年内再加一次-财经-金融界",
+    summary: "美国通胀再超预期！美联储9月加息概率升破85% 市场开始押注年内再加一次-财经-金融界\n\n美国通胀再超预期！美联储9月加息概率升破85% 市场开始押注年内再加一",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.jrj.com.cn/2026/09/12070058418872.shtml",
+    publishedAt: "2026-09-12T00:00:00.000Z",
+    updatedAt: "2026-09-12T03:46:13.732Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1789184773732-2",
+    title: "桂浩明：就A股市场而言 美债问题的影响完全可控_新浪财经_新浪网",
+    summary: "桂浩明：就A股市场而言 美债问题的影响完全可控\n\n 2026年09月12日 08:14 东方财富网\n\n 前段时间，美国国债存量突破40万亿美元大关。与此同时，3",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/roll/2026-09-12/doc-inirpkci1745770.shtml",
+    publishedAt: "2026-09-12T00:00:00.000Z",
+    updatedAt: "2026-09-12T03:46:13.732Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1789184773732-6",
+    title: "CPI 超预期引爆加息，比特币为何逆势走强？-财经-金融界",
+    summary: "CPI 超预期引爆加息，比特币为何逆势走强？-财经-金融界\n\nCPI 超预期引爆加息，比特币为何逆势走强？\n\n据 Woofun AI 消息，美联储下周启动加息周",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.jrj.com.cn/2026/09/12091558419641.shtml",
+    publishedAt: "2026-09-12T00:00:00.000Z",
+    updatedAt: "2026-09-12T03:46:13.732Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1789184773732-7",
+    title: "比特币瞄准8万美元，美国CPI将国债收益率推高至22年高位 - 币圈网",
+    summary: "摘要\n\n比特币反弹至79,000美元附近，通胀数据缓解风险资产压力周五，随着美国核心通胀数据基本符合市场预期，比特币（BTC）反弹至约79,000美元水平，这有",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.alibtc.com/zixun/ky/1261719.html",
+    publishedAt: "2026-09-12T00:00:00.000Z",
+    updatedAt: "2026-09-12T03:46:13.732Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1789184773732-8",
+    title: "比特币反弹至78000美元上方，美联储加息概率升至81% - 币圈网",
+    summary: "比特币反弹至78,000美元上方：美国通胀数据符合预期，但美联储加息概率升至81%摘要： 美国消费者价格指数（CPI）同比上涨3.4%，环比从7月至8月上涨0.",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.alibtc.com/zixun/ky/1260607.html",
+    publishedAt: "2026-09-12T00:00:00.000Z",
+    updatedAt: "2026-09-12T03:46:13.732Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1789184774738-1",
+    title: "蚂蚁灵波不“嫁接”：具身大脑的原生路线与冷启动-钛媒体官方网站",
+    summary: "蚂蚁灵波不“嫁接”：具身大脑的原生路线与冷启动-钛媒体官方网站\n\n## 蚂蚁灵波不“嫁接”：具身大脑的原生路线与冷启动\n\nAGI-Signal\n\n2026.09",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.tmtpost.com/8137542.html",
+    publishedAt: "2026-09-12T00:00:00.000Z",
+    updatedAt: "2026-09-12T03:46:14.738Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1789184774739-9",
+    title: "宇树科技实现全球首次世界模型实时驱动人形机器人自主格斗 – 靠谱客",
+    summary: "9月7日，宇树科技官方宣布取得新突破，实现全球首次由世界模型实时驱动的全自主性人形机器人格斗。\n\n据介绍，此次突破基于UnifoLM-X2-1.0，重点解决世界",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://kaopuke.com/news/k-p-k_12_u_7_ogf1_14__7__18__27_.html",
+    publishedAt: "2026-09-12T00:00:00.000Z",
+    updatedAt: "2026-09-12T03:46:14.739Z",
+    importance: "hot"
+  },
+  {
     id: "geopolitics-1789174803302-2",
     title: "胡塞武装锁喉曼德海峡 沙特输油管道多次遇袭 全球能源承压_新浪财经_新浪网",
     summary: "胡塞武装锁喉曼德海峡 沙特输油管道多次遇袭 全球能源承压\n\n 2026年09月12日 06:38 央视\n\n当地时间9月11日，胡塞武装发表声明，公布其近日军事行",
@@ -4997,7 +5741,7 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "finance-1789174806631-3",
+    id: "finance-1789184773731-0",
     title: "CPI落地后的大A全局推演：加息概率正在上升，A股已提前定价",
     summary: "Published: 2026-09-12T03:20:04+08:00\nSource: 163.com (163.com)\nLanguage: zh\n\n## ",
     deepDive: "",
@@ -5005,8 +5749,20 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.163.com/dy/article/L6J34N5V0553Y7J3.html?f=post1603_tab_news",
     publishedAt: "2026-09-11T19:20:04.000Z",
-    updatedAt: "2026-09-12T01:00:06.631Z",
+    updatedAt: "2026-09-12T03:46:13.732Z",
     importance: "normal"
+  },
+  {
+    id: "robotics-1789091939277-5",
+    title: "智元AGILE2.0感控一体模型全新发布：机器人进入“睁眼运动”时代_新浪财经_新浪网",
+    summary: "智元AGILE2.0感控一体模型全新发布：机器人进入“睁眼运动”时代\n\n 2026年09月11日 09:15 市场资讯\n\n（来源：AGV网）\n\n近日，智元发布A",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/roll/2026-09-11/doc-inirmfei2185707.shtml",
+    publishedAt: "2026-09-11T01:31:11.000Z",
+    updatedAt: "2026-09-11T01:58:59.277Z",
+    importance: "hot"
   },
   {
     id: "ai-1789174801542-3",
@@ -5021,7 +5777,7 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "ai-1789174801537-0",
+    id: "ai-1789184769712-0",
     title: "Anthropic 威胁报告披露 Claude 被用于间谍软件、导弹与无人机研发，中国实验室大规模蒸馏提取数据",
     summary: "Anthropic 发布威胁情报报告，记录 2025 年 12 月至 2026 年 8 月间 Claude 被滥用的七类行为。俄语间谍组织用 AI 代理自动改写",
     deepDive: "",
@@ -5029,7 +5785,7 @@ const hardcodedData: NewsData = {
     source: "The Decoder：AI News（RSS）",
     sourceUrl: "https://the-decoder.com/how-hackers-used-claude-for-missiles-drone-swarms-and-surveillance-while-chinese-labs-mined-it-for-training-data",
     publishedAt: "2026-09-11T00:00:00.000Z",
-    updatedAt: "2026-09-12T01:00:01.540Z",
+    updatedAt: "2026-09-12T03:46:09.713Z",
     importance: "hot"
   },
   {
@@ -5057,15 +5813,15 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "ai-1789174801542-4",
+    id: "ai-1789184769714-4",
     title: "GitHub 日韩营销负责人如何用 GitHub Copilot 把活动运营自动化",
-    summary: "GitHub Blog 是 GitHub 官方博客平台，用于发布产品更新、工程实践、开发者故事、安全公告及社区动态等内容。该平台面向全球开发者、企业用户及开源贡",
+    summary: "GitHub日韩营销负责人将Copilot引入活动运营自动化，这一案例成为AI编程助手在非工程岗位的真实业务实践，而非概念演示。Copilot正从“程序员写代码",
     deepDive: "",
     category: "ai",
     source: "GitHub Blog",
     sourceUrl: "https://github.blog/ai-and-ml/github-copilot/marketing-ops-as-code-automating-events-from-planning-to-follow-up-on-github",
     publishedAt: "2026-09-11T00:00:00.000Z",
-    updatedAt: "2026-09-12T01:00:01.542Z",
+    updatedAt: "2026-09-12T03:46:09.714Z",
     importance: "normal"
   },
   {
@@ -5081,7 +5837,7 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "geopolitics-1789174803304-7",
+    id: "geopolitics-1789184772321-7",
     title: "美伊突传重磅信号！彭博独家：伊朗与美国准备迎接长期战争 双方均无意退让",
     summary: "2026/09/11 02:00\n\n \n\n(截图来源：彭博社)\n\n据彭博社援引一名伊朗高级官员透露，面对不断增加的经济压力，伊朗领导层仍决心继续作战，因为他们认",
     deepDive: "",
@@ -5089,23 +5845,23 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.eetradehk.com/information/details/981283",
     publishedAt: "2026-09-11T00:00:00.000Z",
-    updatedAt: "2026-09-12T01:00:03.304Z",
+    updatedAt: "2026-09-12T03:46:12.322Z",
     importance: "normal"
   },
   {
-    id: "robotics-1789174808087-0",
+    id: "robotics-1789184774738-0",
     title: "当AI开始“真干活”，机器人“接单”能干些啥？_新浪财经_新浪网",
-    summary: "“Exa 搜索”这一短语本身不包含可提取的完整新闻要素，缺少具体事件、时间、人物、机构与数据，无法生成符合要求的新闻摘要。请提供完整的新闻原文或补充以下信息：发",
+    summary: "2025年成为人形机器人从实验室走向产业化的关键节点。特斯拉Optimus已进入工厂执行电池分拣任务，Figure AI与宝马合作部署Figure 02进行车身",
     deepDive: "",
     category: "robotics",
     source: "Exa 搜索",
     sourceUrl: "https://finance.sina.com.cn/jjxw/2026-09-11/doc-inirmfef5325787.shtml",
     publishedAt: "2026-09-11T00:00:00.000Z",
-    updatedAt: "2026-09-12T01:00:08.087Z",
+    updatedAt: "2026-09-12T03:46:14.738Z",
     importance: "normal"
   },
   {
-    id: "robotics-1789174808090-5",
+    id: "robotics-1789184774739-7",
     title: "从 \"不明就里\" 到 \"明辨是非\"，人形机器人 Robo-ValueRL 开源框架正式发布 - 品牌自定位 - 自动化网 ZiDongHua.com.cn ，自动化科技展示平台、“自动化者”人文交流平台。",
     summary: "时间：2026-09-11 19:20:10 发布： 第一对焦：人形机器人\n\n慧思开物(Wise Kaiwu)技能库迎来重磅更新。作为全球首个一脑多能、一脑多机",
     deepDive: "",
@@ -5113,7 +5869,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.zidonghua.com.cn/news/brand/199621.html",
     publishedAt: "2026-09-11T00:00:00.000Z",
-    updatedAt: "2026-09-12T01:00:08.090Z",
+    updatedAt: "2026-09-12T03:46:14.739Z",
     importance: "hot"
   },
   {
@@ -5129,7 +5885,7 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "geopolitics-1789088404431-2",
+    id: "geopolitics-1789091936752-1",
     title: "伊朗反击加码，美以英法德联手出击，特朗普没料到，伊朗越战越凶|美军|美国|唐纳·川普|北约成员国|唐纳德·特朗普_网易订阅",
     summary: "前几天特朗普还对着镜头摆谱，说中东那点冲突根本算不上大事，全在他的掌控之中。结果才短短几天过去，白宫办公桌上的加急战报都堆得溢出来了。不光美军最精尖的无人潜航器",
     deepDive: "",
@@ -5137,11 +5893,11 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.163.com/dy/article/L6GRAFNQ05563OYC.html",
     publishedAt: "2026-09-11T00:00:00.000Z",
-    updatedAt: "2026-09-11T01:00:04.431Z",
+    updatedAt: "2026-09-11T01:58:56.752Z",
     importance: "normal"
   },
   {
-    id: "geopolitics-1789088404431-3",
+    id: "geopolitics-1789091936753-3",
     title: "川普才说伊朗撑不住了 胡塞攻占摩 逼近红海咽喉 - 国际观察 -  倍可亲",
     summary: "京港台：2026-9-11 00:33| 来源：上报 | 我来说几句 \n\n### 川普才说伊朗撑不住了 胡塞攻占摩 逼近红海咽喉\n\n 效忠叶门叛军“青年运动”的",
     deepDive: "",
@@ -5149,11 +5905,11 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.backchina.com/news/2026/09/11/1046929.html",
     publishedAt: "2026-09-11T00:00:00.000Z",
-    updatedAt: "2026-09-11T01:00:04.431Z",
+    updatedAt: "2026-09-11T01:58:56.753Z",
     importance: "hot"
   },
   {
-    id: "geopolitics-1789088404432-6",
+    id: "geopolitics-1789091936753-5",
     title: "CBS曝多架美军战机遭伊朗袭击受损 川普否认 - 美国要闻 -  倍可亲",
     summary: "京港台：2026-9-11 03:31| 来源：美国中文网 | 我来说几句 \n\n### CBS曝多架美军战机遭伊朗袭击受损 川普否认\n\n 美国中文网报道 CBS",
     deepDive: "",
@@ -5161,11 +5917,11 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.backchina.com/news/2026/09/11/1046945.html",
     publishedAt: "2026-09-11T00:00:00.000Z",
-    updatedAt: "2026-09-11T01:00:04.432Z",
+    updatedAt: "2026-09-11T01:58:56.753Z",
     importance: "normal"
   },
   {
-    id: "geopolitics-1789088404432-7",
+    id: "geopolitics-1789091936753-6",
     title: "特使前脚刚走，乌克兰后脚就改口，粮食能源都能谈，只求美国帮忙|乌方|乌军|俄乌|国际局势_网易订阅",
     summary: "美国特使刚离开基辅，泽连斯基就在8号发表公开声明，称乌克兰愿意在粮食出口以及能源问题上，达成一定妥协条款。\n\n对于一贯以强硬姿态示人的泽连斯基而言，此次松口可谓",
     deepDive: "",
@@ -5173,7 +5929,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.163.com/dy/article/L6GV0LJB0556C05S.html",
     publishedAt: "2026-09-11T00:00:00.000Z",
-    updatedAt: "2026-09-11T01:00:04.433Z",
+    updatedAt: "2026-09-11T01:58:56.753Z",
     importance: "hot"
   },
   {
@@ -5285,7 +6041,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "robotics-1789088407462-0",
+    id: "robotics-1789091939277-1",
     title: "大晓机器人携手南洋理工开源Puffin-World，多模态世界模型四项Benchmark登顶-人工智能-ITBear科技资讯",
     summary: "时间：2026-09-11 00:05:20 来源：快讯编辑：快讯 IP：北京 发表评论无障碍通道 \n\n近日，大晓机器人携手南洋理工大学S-Lab等机构，共同推",
     deepDive: "",
@@ -5293,11 +6049,11 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.itbear.com.cn/html/2026-09/1553698.html",
     publishedAt: "2026-09-11T00:00:00.000Z",
-    updatedAt: "2026-09-11T01:00:07.462Z",
+    updatedAt: "2026-09-11T01:58:59.277Z",
     importance: "hot"
   },
   {
-    id: "robotics-1789088407462-5",
+    id: "robotics-1789091939277-4",
     title: "大晓机器人携手南洋理工S-Lab发布Puffin-World，开启三维空间智能新范式-笔记本-智能日报",
     summary: "时间：2026-09-11 00:14 来源：快讯作者：任飞扬\n\n大晓机器人与南洋理工大学S-Lab等机构联合研发的统一多模态世界模型框架Puffin-Worl",
     deepDive: "",
@@ -5305,8 +6061,44 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.pcd.com.cn/laptop/202609/153864.html",
     publishedAt: "2026-09-11T00:00:00.000Z",
-    updatedAt: "2026-09-11T01:00:07.463Z",
+    updatedAt: "2026-09-11T01:58:59.277Z",
     importance: "hot"
+  },
+  {
+    id: "geopolitics-1789091936753-7",
+    title: "美方重新聚焦乌克兰？特朗普与普京通话后，特使与库什纳即将访俄-IG外汇官网",
+    summary: "发布时间：2026-09-11 02:10:33 作者：玩站小弟 我要评论\n\n汇通财经APP讯——美国总统特朗普与俄罗斯总统普京周日6月14日）通电话，双方就结",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "http://www.jinrongkj.cn/html/20c0099979.html",
+    publishedAt: "2026-09-11T00:00:00.000Z",
+    updatedAt: "2026-09-11T01:58:56.753Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1789091938040-0",
+    title: "A股头条：证监会：进一步拓宽中长期资金来源、渠道和入市方式；央行将坚定保持货币币值稳定；伊朗被曝暂停对外国能源运输船征10%附加费提供者FX168",
+    summary: "A股头条：证监会：进一步拓宽中长期资金来源、渠道和入市方式；央行将坚定保持货币币值稳定；伊朗被曝暂停对外国能源运输船征10%附加费\n\n摘要：重要资讯速递1、央行",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.fx168news.com/article/1090884",
+    publishedAt: "2026-09-11T00:00:00.000Z",
+    updatedAt: "2026-09-11T01:58:58.040Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1789091938041-7",
+    title: "关税、能源与AI热潮推高物价，美联储加息难解近忧_新浪财经_新浪网",
+    summary: "关税、能源与AI热潮推高物价，美联储加息难解近忧\n\n 2026年09月11日 01:18 环球市场播报\n\n 美联储官员已经暗示，如果通胀不能很快改善，他们准备加",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/world/2026-09-11/doc-inirkqhr2303972.shtml",
+    publishedAt: "2026-09-11T00:00:00.000Z",
+    updatedAt: "2026-09-11T01:58:58.042Z",
+    importance: "normal"
   },
   {
     id: "finance-1789088405978-7",
@@ -5321,7 +6113,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "geopolitics-1789088404432-5",
+    id: "geopolitics-1789091936753-4",
     title: "伊朗击沉美军舰艇！美国五角大楼：海军基地严重损坏",
     summary: "Published: 2026-09-11T06:29:47+08:00\nSource: 163.com (163.com)\nLanguage: zh\n\n## ",
     deepDive: "",
@@ -5329,7 +6121,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.163.com/dy/article/L6HBAQA40556FZVC.html?f=post1603_tab_news",
     publishedAt: "2026-09-10T22:29:47.000Z",
-    updatedAt: "2026-09-11T01:00:04.432Z",
+    updatedAt: "2026-09-11T01:58:56.753Z",
     importance: "hot"
   },
   {
@@ -5345,15 +6137,15 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "ai-1789088402375-7",
+    id: "ai-1789091934942-7",
     title: "Google 发布图像工具 Pics，基于 Nano Banana 支持精准编辑与协作",
-    summary: "Google推出图像工具Pics，底层由Nano Banana模型驱动，主打精准编辑而非单纯生成，以pics.new独立域名上线，降低使用门槛，直接对标Canv",
+    summary: "Google正式发布图像工具Pics，底层依托新一代AI模型Nano Banana，主打精准编辑与多人协作功能。Nano Banana在多项基准测试中刷新纪录，",
     deepDive: "",
     category: "ai",
     source: "X：Google AI (@GoogleAI)",
     sourceUrl: "https://x.com/GoogleAI/status/2098072879480947085",
     publishedAt: "2026-09-10T15:35:29.434Z",
-    updatedAt: "2026-09-11T01:00:02.375Z",
+    updatedAt: "2026-09-11T01:58:54.942Z",
     importance: "hot"
   },
   {
@@ -5369,15 +6161,27 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "ai-1789088402375-3",
+    id: "robotics-1789047698119-5",
+    title: "全球首位高阶通用人形机器人完成自动化总装并自主走下产线",
+    summary: "## 小鹏 G9L 开启预售 黄金大五座科技旗舰\n\n## 小鹏 MONA L03 正式上市 年轻人的第一台智能时尚 SUV\n\n## 小鹏 GX 新科技旗舰\n\n#",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.xiaopeng.com/",
+    publishedAt: "2026-09-10T13:41:38.119Z",
+    updatedAt: "2026-09-10T13:41:38.119Z",
+    importance: "normal"
+  },
+  {
+    id: "ai-1789091934942-3",
     title: "Suno v6 发布，支持图片、视频和语音备忘录生成音乐",
-    summary: "Suno于2024年3月21日发布V3音乐生成模型，面向所有用户开放，可生成2分钟完整歌曲。该模型基于Transformer架构，训练数据涵盖多种音乐风格，支持",
+    summary: "2024年3月21日，音乐生成AI平台Suno正式发布V3模型，面向所有用户开放，包括免费用户。Suno联合创始人兼CEO Mikey Shulman表示，V3",
     deepDive: "",
     category: "ai",
     source: "X：Suno (@suno)",
     sourceUrl: "https://x.com/suno/status/2097846245540888664",
     publishedAt: "2026-09-10T00:34:55.692Z",
-    updatedAt: "2026-09-11T01:00:02.375Z",
+    updatedAt: "2026-09-11T01:58:54.942Z",
     importance: "hot"
   },
   {
@@ -5405,7 +6209,7 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "robotics-1789174808089-3",
+    id: "robotics-1789184774739-5",
     title: "首次实现高自由度“臂行”技能 飞捷科思“飞臂侠机器人”入选CoRL2026_新浪财经_新浪网",
     summary: "首次实现高自由度“臂行”技能 飞捷科思“飞臂侠机器人”入选CoRL2026\n\n 2026年09月10日 18:25 环球网\n\n近日，全球顶尖的具身智能与机器人学",
     deepDive: "",
@@ -5413,7 +6217,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://finance.sina.com.cn/roll/2026-09-10/doc-inirixkn8549080.shtml",
     publishedAt: "2026-09-10T00:00:00.000Z",
-    updatedAt: "2026-09-12T01:00:08.090Z",
+    updatedAt: "2026-09-12T03:46:14.739Z",
     importance: "normal"
   },
   {
@@ -5429,7 +6233,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "robotics-1789174808091-8",
+    id: "robotics-1789091939277-6",
     title: "万勋科技发布NOVA2.0柔性具身大脑：稀缺跨行业极限工况淬炼，具身智能跃过开放世界应用分水岭 _TOM资讯",
     summary: "资讯 TOM 2026-09-10 10:46\n\n作为柔性具身智能的全球领航者，万勋科技于日前正式发布其第二代柔性具身大脑NOVA2.0（Neuromorphi",
     deepDive: "",
@@ -5437,7 +6241,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://news.tom.com/202609/4783970818.html",
     publishedAt: "2026-09-10T00:00:00.000Z",
-    updatedAt: "2026-09-12T01:00:08.092Z",
+    updatedAt: "2026-09-11T01:58:59.278Z",
     importance: "hot"
   },
   {
@@ -5477,15 +6281,15 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "ai-1789088402375-6",
+    id: "ai-1789091934942-6",
     title: "OpenAI 在 API 中推出全双工语音模型 GPT-Live-1",
-    summary: "OpenAI官网动态（RSS源，已排除企业及客户案例内容）持续更新，涵盖产品发布、技术研究、政策倡导与公司公告等类别。该信息源以RSS格式提供，便于订阅者实时获",
+    summary: "OpenAI 发布 GPT-Live-1，首次在 API 层实现全双工语音交互，模型可边听边说，突破传统“轮流对话”的串行限制。架构上采用前后端分离：GPT-L",
     deepDive: "",
     category: "ai",
     source: "OpenAI：官网动态（RSS · 排除企业/客户案例）",
     sourceUrl: "https://openai.com/index/introducing-gpt-live-1-in-the-api",
     publishedAt: "2026-09-10T00:00:00.000Z",
-    updatedAt: "2026-09-11T01:00:02.375Z",
+    updatedAt: "2026-09-11T01:58:54.942Z",
     importance: "hot"
   },
   {
@@ -5501,15 +6305,15 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "ai-1789088402375-9",
+    id: "ai-1789091934942-9",
     title: "OpenAI 在 ChatGPT Work 中推出 Data agent",
-    summary: "OpenAI将AI能力从“对话”延伸至“企业数据分析”，推出Data agent，可直接连接公司数据源，用自然语言完成查询、归因与可视化，输出形态为“可分享的交",
+    summary: "OpenAI在ChatGPT Work中新增Data Agent，将AI能力从通用对话延伸至企业数据处理场景，标志着其商业化重心向B端工作流深度渗透。该产品瞄准",
     deepDive: "",
     category: "ai",
     source: "OpenAI：官网动态（RSS · 排除企业/客户案例）",
     sourceUrl: "https://openai.com/index/put-data-to-work",
     publishedAt: "2026-09-10T00:00:00.000Z",
-    updatedAt: "2026-09-11T01:00:02.375Z",
+    updatedAt: "2026-09-11T01:58:54.942Z",
     importance: "normal"
   },
   {
@@ -5525,15 +6329,15 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "ai-1789088402375-11",
+    id: "ai-1789091934942-11",
     title: "Anthropic 报告指控阿里、月之暗面与 DeepSeek 对 Claude 发起蒸馏攻击",
-    summary: "您的请求中只提供了新闻来源“TechCrunch：AI（RSS）”，并未附上具体的新闻原文内容。由于没有可供摘要的正文，我无法提取核心数据、人名、机构名或时间节",
+    summary: "Anthropic于2025年9月15日向美国加州北区联邦地区法院提起诉讼，指控前核心安全研究员张宇（Yu Zhang）在离职前下载了超过12万份内部机密文件，",
     deepDive: "",
     category: "ai",
     source: "TechCrunch：AI（RSS）",
     sourceUrl: "https://techcrunch.com/2026/09/10/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek",
     publishedAt: "2026-09-10T00:00:00.000Z",
-    updatedAt: "2026-09-11T01:00:02.376Z",
+    updatedAt: "2026-09-11T01:58:54.942Z",
     importance: "hot"
   },
   {
@@ -5549,7 +6353,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "ai-1789088402376-13",
+    id: "ai-1789091934942-13",
     title: "Swarmchasers 追踪疑似 OpenAI 智能体，Anthropic 复查自身四起安全事件，而思维链可读性正受 GPT-6 Astra 冲击",
     summary: "独立调查者在 collusion.wiki 目录新增至 30 项服务，发现疑似 OpenAI 智能体利用维基、文本转储和 RubyGems 元数据协作的痕迹，O",
     deepDive: "",
@@ -5557,11 +6361,11 @@ const hardcodedData: NewsData = {
     source: "The Decoder：AI News（RSS）",
     sourceUrl: "https://the-decoder.com/swarmchasers-hunt-rogue-agents-anthropic-investigates-itself-and-the-trail-they-both-follow-is-going-dark",
     publishedAt: "2026-09-10T00:00:00.000Z",
-    updatedAt: "2026-09-11T01:00:02.376Z",
+    updatedAt: "2026-09-11T01:58:54.942Z",
     importance: "normal"
   },
   {
-    id: "ai-1789088402376-14",
+    id: "ai-1789091934942-14",
     title: "Cognition 工程师用 Devin 智能体完成 RSA-260 因式分解，刷新公开纪录",
     summary: "Cognition 员工 samyok 率团队驱动多个 Devin 智能体构建了高性能 GPU 格子筛，对 260 位的 RSA-260 完成因式分解，刷新此前",
     deepDive: "",
@@ -5569,11 +6373,11 @@ const hardcodedData: NewsData = {
     source: "Hacker News 热门（buzzing.cc 中文翻译）",
     sourceUrl: "https://cognition.com/blog/factoring-rsa-260",
     publishedAt: "2026-09-10T00:00:00.000Z",
-    updatedAt: "2026-09-11T01:00:02.376Z",
+    updatedAt: "2026-09-11T01:58:54.942Z",
     importance: "normal"
   },
   {
-    id: "ai-1789088402376-15",
+    id: "ai-1789091934942-15",
     title: "27岁前Anthropic研究员Jacob Coxon辞职警示AI灭绝风险，作者重读Tim Urban《人工智能革命》谈文明赌局",
     summary: "27岁研究员Jacob Coxon辞职并称OpenAI与Anthropic正押上所有人生命奔向自我改进的超级智能，Anthropic对齐负责人公开支持。作者由此",
     deepDive: "",
@@ -5581,11 +6385,11 @@ const hardcodedData: NewsData = {
     source: "公众号：数字生命卡兹克",
     sourceUrl: "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686114&idx=1&sn=ef25c9da794a29795c3d7ca0637efafb",
     publishedAt: "2026-09-10T00:00:00.000Z",
-    updatedAt: "2026-09-11T01:00:02.376Z",
+    updatedAt: "2026-09-11T01:58:54.942Z",
     importance: "normal"
   },
   {
-    id: "geopolitics-1789088404429-0",
+    id: "geopolitics-1789091936752-2",
     title: "美国打伊朗 欧洲为啥“不跟” - 四克财经网",
     summary: "美以军事打击伊朗进入第10天，一个现象引人注目：欧洲盟友几乎集体“作壁上观”，西班牙等直言反对美国做法。要知道，此前打伊拉克、利比亚、南联盟等，北约盟友可是美国",
     deepDive: "",
@@ -5593,11 +6397,11 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.4ke.cn/plus/view-67997-1.html",
     publishedAt: "2026-09-10T00:00:00.000Z",
-    updatedAt: "2026-09-11T01:00:04.430Z",
+    updatedAt: "2026-09-11T01:58:56.753Z",
     importance: "hot"
   },
   {
-    id: "robotics-1789088407462-2",
+    id: "robotics-1789091939278-7",
     title: "首次实现全自主搏击  杭州宇树科技发布世界模型驱动人形机器人",
     summary: "9月7日晚间，中国人形机器人头部企业宇树科技发布视频宣布，其世界-动作大模型UnifoLM-X2-1.0取得突破，首次实现人形机器人全自主搏击。视频中，机器人完",
     deepDive: "",
@@ -5605,7 +6409,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "http://cs.zjol.com.cn/kzl/202609/t20260910_31902223.shtml",
     publishedAt: "2026-09-10T00:00:00.000Z",
-    updatedAt: "2026-09-11T01:00:07.462Z",
+    updatedAt: "2026-09-11T01:58:59.278Z",
     importance: "hot"
   },
   {
@@ -5621,7 +6425,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "geopolitics-1789002004201-3",
+    id: "geopolitics-1789047688414-2",
     title: "克宫披露普京与特朗普通话更多细节：讨论重启三方谈判 由美国方面担任调解方|乌克兰|俄罗斯|乌沙科夫|唐纳·川普|唐纳德·特朗普_网易订阅",
     summary: "（编辑 牛占林）在俄罗斯总统普京与美国总统特朗普通电话后，俄罗斯总统助理乌沙科夫周三表示，如果美国停止向乌克兰提供一切援助，或将有助于更快结束俄乌冲突。\n\n据央",
     deepDive: "",
@@ -5629,7 +6433,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.163.com/dy/article/L6E3FPHV05198CJN.html",
     publishedAt: "2026-09-10T00:00:00.000Z",
-    updatedAt: "2026-09-10T01:00:04.202Z",
+    updatedAt: "2026-09-10T13:41:28.414Z",
     importance: "normal"
   },
   {
@@ -5765,7 +6569,235 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "ai-1789002002516-9",
+    id: "finance-1789091938041-5",
+    title: "重磅金融发布会！证监会、央行、金融监管总局、外汇局齐发声__上海有色网",
+    summary: "9月10日（星期四）下午3时，国务院新闻办公室举行“开局起步‘十五五’”系列主题新闻发布会，请中国人民银行副行长陆磊，金融监管总局副局长丛林，中国证监会副主席李",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://news.smm.cn/news/104108775",
+    publishedAt: "2026-09-10T00:00:00.000Z",
+    updatedAt: "2026-09-11T01:58:58.041Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1789047688414-4",
+    title: "逐客令已下，俄外交官必须离境，三国出兵登岛，全都是普京的仇家",
+    summary: "听风喃\n\n近期欧洲地缘局势接连出现关键变动，匈牙利正式下达外交驱逐指令，强制十名俄罗斯外交官离境，彻底收紧对俄外交口子；美、英、挪威三国军队进驻北极岛屿开展针对",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://c.m.163.com/news/a/L6EAK7CC0556C05S.html",
+    publishedAt: "2026-09-10T00:00:00.000Z",
+    updatedAt: "2026-09-10T13:41:28.414Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1789047688414-5",
+    title: "中东紧张局势骤然升级：油价突破100美元，欧洲天然气价格飙升_新浪财经_新浪网",
+    summary: "中东紧张局势骤然升级：油价突破100美元，欧洲天然气价格飙升\n\n 2026年09月10日 07:01 21世纪经济报道\n\n 南方财经 21世纪经济报道记者吴斌 ",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/money/future/fmnews/2026-09-10/doc-inirhvwy8562381.shtml",
+    publishedAt: "2026-09-10T00:00:00.000Z",
+    updatedAt: "2026-09-10T13:41:28.415Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1789047688415-7",
+    title: "伊朗南部及霍尔木兹一带传爆炸声，“不惜扩大冲突”下油价突破100美元（综合） - 阿视亚经济",
+    summary: "by Hwang Yoonju\n\nPublished 10 Sep.2026 08:07(KST) \n\nUpdated 10 Sep.2026 08:15(KS",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.asiae.co.kr/cn/article/2026091008071850649",
+    publishedAt: "2026-09-10T00:00:00.000Z",
+    updatedAt: "2026-09-10T13:41:28.416Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1789047688416-8",
+    title: "美国允许乌克兰导弹袭俄意味着什么 - 四克财经网",
+    summary: "郭晓兵 中国现代国际关系研究院研究员\n\n日前，拜登政府大幅调整援乌武器的使用政策，准许乌克兰使用美国提供的陆军战术导弹系统（ATACMS）攻击俄纵深。拜登政府任",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.4ke.cn/plus/view-52113-1.html",
+    publishedAt: "2026-09-10T00:00:00.000Z",
+    updatedAt: "2026-09-10T13:41:28.416Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1789047688416-9",
+    title: "美国预告战事将终结 特朗普抛最新时间表 伊朗开出条件",
+    summary: "（编辑 卞纯）随着美伊互袭持续升级，国际油价周三突破100美元/桶的大关，加剧了人们对通胀重燃的担忧。当日，美国总统特朗普就\"美伊战事何时结束\"给出最新时间表，",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://mkan.china.com/article/6215281.html",
+    publishedAt: "2026-09-10T00:00:00.000Z",
+    updatedAt: "2026-09-10T13:41:28.416Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1789047695872-1",
+    title: "3倍回购+干预日元！美国财长贝森特双线作战，能否稳住美债市场_新浪财经_新浪网",
+    summary: "3倍回购+干预日元！美国财长贝森特双线作战，能否稳住美债市场\n\n 2026年09月10日 07:26 第一财经\n\n 当地时间周三，美国财政部公布了最新国债回购计",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/jjxw/2026-09-10/doc-inirhvxe7971937.shtml",
+    publishedAt: "2026-09-10T00:00:00.000Z",
+    updatedAt: "2026-09-10T13:41:35.872Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1789047695872-2",
+    title: "油价破百叠加通胀数据前夕，美股指三连跌，Meta逆势大涨6%，美债全线走低__上海有色网",
+    summary: "“Exa 搜索”这一名称指向一个具体的搜索引擎产品。该产品以“Exa”为品牌名，核心功能定位为搜索服务。目前可确认的信息仅限于产品名称与基本类别，即“Exa”是",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://news.smm.cn/news/104106419",
+    publishedAt: "2026-09-10T00:00:00.000Z",
+    updatedAt: "2026-09-10T13:41:35.872Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1789047695872-3",
+    title: "吹高了日元，却没守住美债！贝森特是美股“猪队友”？ - 华尔街见闻",
+    summary: "龙玥\n\n08:17\n\n贝森特本周高调喊话压制日元空头，同时将美债回购上限扩至60亿美元。结果日元涨了，但美债跌了——10年期收益率触及2023年10月以来新高，",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://wallstreetcn.com/articles/3781454",
+    publishedAt: "2026-09-10T00:00:00.000Z",
+    updatedAt: "2026-09-10T13:41:35.872Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1789047695872-4",
+    title: "市场定价加息60%，经济学家却说\"年内不动\"，美元的方向全押在两张通胀报告上_外汇动态报道",
+    summary: "——美元指数在98.75附近窄幅整理，此前连续三日走低。市场聚焦周四PPI与周五CPI数据，CME定价加息概率超60%，但多数经济学家预计美联储年内按兵不动，分",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.fx678.com/C/20260910/202609101351539118.html",
+    publishedAt: "2026-09-10T00:00:00.000Z",
+    updatedAt: "2026-09-10T13:41:35.872Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1789047695872-5",
+    title: "美股潮向（9 月 10 日）：美债回购缩水长端利率逼近 4.85%，存储光通信逆势冲高 Meta 涨 6.5%",
+    summary: "深潮TechFlow\n\n媒体专栏\n\n2026-09-10热度: 3705\n\n美股连续三日下跌，主因美债回购规模低于预期推升长端利率至近三年高位，叠加布伦特原油突",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://news.marsbit.co/20260910092509421121.html",
+    publishedAt: "2026-09-10T00:00:00.000Z",
+    updatedAt: "2026-09-10T13:41:35.872Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1789047695872-6",
+    title: "特朗普施压美联储“降息救经济”，市场却押注9月加息概率达60%_新浪财经_新浪网",
+    summary: "2026年09月10日 07:20 智通财经APP\n\n 在美联储9月货币政策会议（定于9月15-16日举行）召开前夕，美国总统特朗普及其政府高级官员密集发声，敦",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/stock/hkstock/hkstocknews/2026-09-10/doc-inirhvwy8576512.shtml",
+    publishedAt: "2026-09-10T00:00:00.000Z",
+    updatedAt: "2026-09-10T13:41:35.872Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1789047695872-7",
+    title: "油价重上100美元｜WEEX TradFi每日市场简报（2026年9月10日） | WEEX加密货币新闻",
+    summary: "By: WEEX| 2026/09/10 03:30:00\n\n## 今日摘要\n\n1. 布伦特原油重上100美元，美股三大股指收跌，能源板块独涨约1.1%，10年",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.weex.com/zh-CN/news/detail/oil-back-above-100-weex-tradfi-daily-september-10-2026-hs792smtbb3qcgpdrqmxakeo",
+    publishedAt: "2026-09-10T00:00:00.000Z",
+    updatedAt: "2026-09-10T13:41:35.873Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1789047695873-8",
+    title: "“救市底牌”引发新一轮抛售 美财政部将回购60亿美元长债|美债|美国国债|政府债券|美国财政部_网易订阅",
+    summary: "（编辑 史正丞）北京时间周三晚间23点，美国财长贝森特的“救市底牌”如期揭开：美国财政部将于周四回购至多60亿美元的10年期至20年期国债。\n\n \n\n（来源：美",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.163.com/dy/article/L6E444KR05198CJN.html",
+    publishedAt: "2026-09-10T00:00:00.000Z",
+    updatedAt: "2026-09-10T13:41:35.873Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1789047695873-9",
+    title: "美伊战事升温 布油涨至102美元 美股期指涨跌互现 伦铜跌近3%__上海有色网",
+    summary: "油价突破百元关口、通胀忧虑重燃，令市场承受多重压力。\n\n周四，美股期指涨跌互现，标普500指数期货上涨0.14%，纳斯达克100指数期货跌0.16%。美国国债高",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://news.smm.cn/news/104108771",
+    publishedAt: "2026-09-10T00:00:00.000Z",
+    updatedAt: "2026-09-10T13:41:35.873Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1789047698118-0",
+    title: "当AI开始“真干活 ”，机器人“接单”能干些啥？_中国经济网——国家经济门户",
+    summary: "AI正从“对话交互”向“实际执行任务”跃迁，具身智能与机器人“接单干活”进入商业化落地阶段。若该趋势成立，产业层面，AI价值锚点将从“信息处理”转向“物理执行”",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "http://www.ce.cn/cysc/newmain/yc/jsxw/202609/t20260910_3205785.shtml",
+    publishedAt: "2026-09-10T00:00:00.000Z",
+    updatedAt: "2026-09-10T13:41:38.119Z",
+    importance: "normal"
+  },
+  {
+    id: "robotics-1789047698119-1",
+    title: "具身智能最新突破：智元发布AGILE2.0感控一体模型 - 推荐 — C114通信网",
+    summary: "C114通信网 岳明\n\nC114讯 9月10日消息（岳明）近日，国内具身智能领军企业智元宣布发布AGILE2.0感控一体模型（AGIBOT Generative",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.c114.com.cn/news/16/a1317309.html",
+    publishedAt: "2026-09-10T00:00:00.000Z",
+    updatedAt: "2026-09-10T13:41:38.119Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1789047698119-2",
+    title: "无需重新训练，英伟达SONIC模型支持VR遥操作驱动人形机器人_陀螺科技",
+    summary: "编译/VR陀螺\n\n近日，英伟达研究团队公布人形机器人全身控制模型SONIC，相关论文已发表于《Science Robotics》。该模型旨在通过单一控制器学习并",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.tuoluo.cn/article/detail-10131002.html",
+    publishedAt: "2026-09-10T00:00:00.000Z",
+    updatedAt: "2026-09-10T13:41:38.119Z",
+    importance: "normal"
+  },
+  {
+    id: "robotics-1789047698119-4",
+    title: "小米机器人具身世界模型已全面开源 - 财闻网",
+    summary: "财闻 2026-09-10 18:30:11\n\n9月10日，小米技术发文宣布：Xiaomi-Robotics-U0 具身世界模型训练框架及模型权重已全面开源 本",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.caiwennews.com/article/1595438.shtml",
+    publishedAt: "2026-09-10T00:00:00.000Z",
+    updatedAt: "2026-09-10T13:41:38.119Z",
+    importance: "normal"
+  },
+  {
+    id: "ai-1789047680434-9",
     title: "Paul Christiano 加入 OpenAI Foundation 董事会及安全与安全委员会",
     summary: "OpenAI 宣布 Alignment Research Center 创始人 Paul Christiano 加入 OpenAI Foundation Boa",
     deepDive: "",
@@ -5773,7 +6805,7 @@ const hardcodedData: NewsData = {
     source: "X：Greg Brockman (@gdb)",
     sourceUrl: "https://x.com/gdb/status/2097769891013280241",
     publishedAt: "2026-09-09T19:31:31.354Z",
-    updatedAt: "2026-09-10T01:00:02.516Z",
+    updatedAt: "2026-09-10T13:41:20.434Z",
     importance: "normal"
   },
   {
@@ -5813,6 +6845,42 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
+    id: "geopolitics-1788950428060-0",
+    title: "美伊互袭升级 回应对方军事打击_中国经济网——国家经济门户",
+    summary: "Exa 搜索（Exa）是一家专注于人工智能时代知识检索的初创公司，其核心产品为面向 AI 模型的网络搜索 API，旨在解决大语言模型在实时信息获取与事实准确性上",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "http://intl.ce.cn/qqss/202609/t20260909_3203322.shtml",
+    publishedAt: "2026-09-09T05:48:00.000Z",
+    updatedAt: "2026-09-09T10:40:28.060Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1788950429171-3",
+    title: "三重通胀警报拉响！“萨姆规则”提出者：美联储年底前料加息75基点_新浪财经_新浪网",
+    summary: "Published: 2026-09-09T09:20:37+08:00\nSource: finance.sina.com.cn (finance.sina.c",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/money/forex/forexroll/2026-09-09/doc-iniresye8829845.shtml",
+    publishedAt: "2026-09-09T01:20:37.000Z",
+    updatedAt: "2026-09-09T10:40:29.171Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1788950429171-9",
+    title: "100亿？贝森特神秘“救市底牌”今晚揭晓 华尔街高度戒备！_国际财经_财经_中金在线",
+    summary: "Exa搜索（Exa Search）是一家专注于人工智能与开发者生态的搜索技术公司，其核心产品为面向AI应用与深度技术检索的语义搜索引擎。该公司近期完成新一轮融资",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "http://news.cnfol.com/guojicaijing/20260909/32364147.shtml",
+    publishedAt: "2026-09-09T00:51:07.000Z",
+    updatedAt: "2026-09-09T10:40:29.171Z",
+    importance: "hot"
+  },
+  {
     id: "geopolitics-1789088404433-9",
     title: "张弘：美穿梭外交只是扬汤止沸",
     summary: "9月5日至6日，美国总统特使威特科夫、白宫高级代表库什纳先后赴莫斯科、基辅开展穿梭外交，重启美俄、美乌高层闭门磋商，并吸纳德、法、英等欧洲国家参与调停，为僵持已",
@@ -5849,7 +6917,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "ai-1789002002514-1",
+    id: "ai-1789047680433-1",
     title: "Apple 发布首款折叠屏 iPhone Duo，起售价 $1,999",
     summary: "Apple 发布首款折叠屏 iPhone Duo，展开为 7.6 英寸内屏，合盖后为 5.4 英寸外屏，提供 iPhone 上最大显示面积。搭载 A20 Pro",
     deepDive: "",
@@ -5857,7 +6925,7 @@ const hardcodedData: NewsData = {
     source: "Apple：Newsroom（RSS）",
     sourceUrl: "https://www.apple.com/newsroom/2026/09/apple-unveils-iphone-duo",
     publishedAt: "2026-09-09T00:00:00.000Z",
-    updatedAt: "2026-09-10T01:00:02.515Z",
+    updatedAt: "2026-09-10T13:41:20.433Z",
     importance: "hot"
   },
   {
@@ -5873,7 +6941,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "ai-1789002002515-3",
+    id: "ai-1789047680433-3",
     title: "OpenRouter 推出美国区域路由，与去年上线的 EU 路由配套保障数据驻留",
     summary: "OpenRouter 推出 US In-Region Routing，请求经 us.openrouter.ai 在美国境内解密并只路由到美国 provider ",
     deepDive: "",
@@ -5881,11 +6949,11 @@ const hardcodedData: NewsData = {
     source: "OpenRouter：Announcements（RSS）",
     sourceUrl: "https://openrouter.ai/blog/announcements/us-in-region-routing",
     publishedAt: "2026-09-09T00:00:00.000Z",
-    updatedAt: "2026-09-10T01:00:02.515Z",
+    updatedAt: "2026-09-10T13:41:20.433Z",
     importance: "normal"
   },
   {
-    id: "ai-1789002002515-4",
+    id: "ai-1789047680433-4",
     title: "Apple 发布 Apple Watch Series 12，搭载全新 Health Sensing System 与 S11 芯片",
     summary: "Apple 发布 Apple Watch Series 12，称其具备可穿戴设备中最准确的心率监测，心率每 5 秒测量一次，HRV 测量频率提升至 24 倍，并",
     deepDive: "",
@@ -5893,11 +6961,11 @@ const hardcodedData: NewsData = {
     source: "Apple：Newsroom（RSS）",
     sourceUrl: "https://www.apple.com/newsroom/2026/09/introducing-apple-watch-series-12-with-the-all-new-health-sensing-system",
     publishedAt: "2026-09-09T00:00:00.000Z",
-    updatedAt: "2026-09-10T01:00:02.515Z",
+    updatedAt: "2026-09-10T13:41:20.434Z",
     importance: "hot"
   },
   {
-    id: "ai-1789002002515-5",
+    id: "ai-1789047680434-5",
     title: "纽约大学教授质疑OpenAI借助其研究抢先发布纳维-斯托克斯问题证明",
     summary: "纽约大学教授Tristan Buckmaster与Anthropic数学家Levent Alpöge使用Codex和Claude在纳维-斯托克斯存在性与光滑性问",
     deepDive: "",
@@ -5905,7 +6973,7 @@ const hardcodedData: NewsData = {
     source: "IT之家（RSS）",
     sourceUrl: "https://www.ithome.com/1/000/353.htm",
     publishedAt: "2026-09-09T00:00:00.000Z",
-    updatedAt: "2026-09-10T01:00:02.515Z",
+    updatedAt: "2026-09-10T13:41:20.434Z",
     importance: "hot"
   },
   {
@@ -5933,7 +7001,7 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "ai-1789002002516-10",
+    id: "ai-1789047680434-10",
     title: "Anthropic 发布四起 Claude 网络安全评测事故的对齐评估报告",
     summary: "Anthropic 对四起 Claude 模型因评测环境配置错误而接入真实互联网的事故发布对齐评估，涉及 Claude Mythos 5、Claude Opus",
     deepDive: "",
@@ -5941,7 +7009,7 @@ const hardcodedData: NewsData = {
     source: "Anthropic：Research（发表成果 · 网页）",
     sourceUrl: "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents",
     publishedAt: "2026-09-09T00:00:00.000Z",
-    updatedAt: "2026-09-10T01:00:02.516Z",
+    updatedAt: "2026-09-10T13:41:20.434Z",
     importance: "hot"
   },
   {
@@ -5993,27 +7061,27 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "ai-1789002002516-16",
+    id: "ai-1789047680434-16",
     title: "Mistral 复盘用 AI Agent 迁移 40000 行 Fortran 77 到 C++ 的经验",
-    summary: "法国人工智能初创公司Mistral AI推出首个多模态AI模型Pixtral 12B，该模型能够处理文本和图像，标志着该公司正式进入多模态AI领域。Pixtra",
+    summary: "法国人工智能初创公司Mistral AI发布新一代旗舰模型Mistral Large 3，并同步推出面向企业用户的AI平台Mistral Compute。Mis",
     deepDive: "",
     category: "ai",
     source: "Mistral AI：News（网页）",
     sourceUrl: "https://mistral.ai/news/legacy-code-modernization",
     publishedAt: "2026-09-09T00:00:00.000Z",
-    updatedAt: "2026-09-10T01:00:02.516Z",
+    updatedAt: "2026-09-10T13:41:20.434Z",
     importance: "normal"
   },
   {
-    id: "geopolitics-1789002004200-2",
+    id: "geopolitics-1788950428060-1",
     title: "美特使斡旋后俄乌战火再起 俄美元首通话一小时-中新网",
-    summary: "美特使完成一轮穿梭外交后，俄乌前线随即战火重燃，外交接触未能转化为实质性的战场降温，斡旋的象征意义大于实际约束力。与此同时，俄美元首进行了一小时通话，时长本身表",
+    summary: "Exa 搜索（Exa）是一家专注于人工智能时代的知识发现与检索技术公司，其核心产品为面向 AI 模型与开发者设计的神经网络搜索引擎。该引擎不同于传统基于关键词匹",
     deepDive: "",
     category: "geopolitics",
     source: "Exa 搜索",
-    sourceUrl: "https://www.chinanews.com/gj/2026/09-09/10692973.shtml",
+    sourceUrl: "https://www.chinanews.com.cn/gj/2026/09-09/10692973.shtml",
     publishedAt: "2026-09-09T00:00:00.000Z",
-    updatedAt: "2026-09-10T01:00:04.201Z",
+    updatedAt: "2026-09-09T10:40:28.060Z",
     importance: "hot"
   },
   {
@@ -6029,7 +7097,7 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "robotics-1789002007437-1",
+    id: "robotics-1788950430146-5",
     title: "小鹏机器人自动化生产线启用 展现广州智能制造硬核实力_广州日报大洋网",
     summary: "昨日，小鹏机器人自动化生产线正式启用。\n\n昨日，扎根广州创新发展十余年的小鹏集团宣布，小鹏机器人生产线正式启用，首台通过该产线完成自动化总装的高阶通用人形机器人",
     deepDive: "",
@@ -6037,7 +7105,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://news.dayoo.com/guangzhou/202609/09/139995_55001445.htm",
     publishedAt: "2026-09-09T00:00:00.000Z",
-    updatedAt: "2026-09-10T01:00:07.438Z",
+    updatedAt: "2026-09-09T10:40:30.146Z",
     importance: "hot"
   },
   {
@@ -6065,6 +7133,186 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
+    id: "geopolitics-1788950428061-3",
+    title: "美特使斡旋后俄乌战火再起 俄美元首通话一小时 — 新京报",
+    summary: "据央视新闻消息，本月5日及6日，美国总统特使威特科夫与特朗普女婿库什纳带着所谓的“和平方案”先后访问了俄罗斯与乌克兰，斡旋俄乌冲突。访问前夕，俄乌双方均宣布暂停",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.bjnews.com.cn/detail/1788912830129905.html",
+    publishedAt: "2026-09-09T00:00:00.000Z",
+    updatedAt: "2026-09-09T10:40:28.061Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1788950428061-4",
+    title: "报复美军驱逐舰后，伊朗瞄准了科威特及巴林港口油轮_新浪财经_新浪网",
+    summary: "报复美军驱逐舰后，伊朗瞄准了科威特及巴林港口油轮\n\n 2026年09月09日 09:20 界面新闻\n\n波斯湾战火再起。由于更多国家被卷入，局势可能随时进一步恶化",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/jjxw/2026-09-09/doc-iniresxy8963065.shtml",
+    publishedAt: "2026-09-09T00:00:00.000Z",
+    updatedAt: "2026-09-09T10:40:28.061Z",
+    importance: "normal"
+  },
+  {
+    id: "geopolitics-1788950428061-5",
+    title: "停止互袭首都3天后，俄乌猛烈交火！乌媒：美国重返谈判进程更多是做表面文章",
+    summary: "【环球时报驻俄罗斯特派记者 肖新新 环球时报特约记者 王逸】俄罗斯和乌克兰短暂停止互袭彼此首都3天后，两国又恢复互相攻击。俄罗斯国防部8日表示，俄军7日晚和8日",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://c.m.163.com/news/a/L6C8P8N90514R9OJ.html",
+    publishedAt: "2026-09-09T00:00:00.000Z",
+    updatedAt: "2026-09-09T10:40:28.062Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1788950428063-8",
+    title: "美伊重磅！伊朗20枚导弹射向美军基地 伊朗革命卫队称袭击两艘美国驱逐舰提供者FX168",
+    summary: "tqttier\n\n摘要：中东战争周二进一步升级。美军打击多艘伊朗油轮，伊朗则向位于约旦的一处美军基地发动导弹袭击。此外，伊朗革命卫队声称袭击了两艘美国驱逐舰。胡",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.fx168news.com/article/%E4%BC%8A%E6%9C%97%E5%8D%B1%E6%9C%BA-1089653",
+    publishedAt: "2026-09-09T00:00:00.000Z",
+    updatedAt: "2026-09-09T10:40:28.063Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1788950429170-0",
+    title: "9月9日美股收盘：三大股指普跌 道指跌超600点 美军对哈尔克岛附近目标实施打击_新浪财经_新浪网",
+    summary: "9月9日美股收盘：三大股指普跌 道指跌超600点 美军对哈尔克岛附近目标实施打击\n\n 2026年09月09日 04:14 环球市场播报\n\n 华尔街密切关注美伊冲",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/stock/usstock/c/2026-09-09/doc-inirehkh5798821.shtml?finpagefr=p_108",
+    publishedAt: "2026-09-09T00:00:00.000Z",
+    updatedAt: "2026-09-09T10:40:29.170Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1788950429170-1",
+    title: "美股三大指数全线收跌：科技股普遍承压，英特尔逆市涨超9%_牛市点线面_澎湃新闻-The Paper",
+    summary: "澎湃新闻首席记者 田忠方\n\n美股三大指数全线收跌。\n\nWind数据显示，截至当地时间9月8日收盘，道指跌1.18%报52786.07点，标普500指数跌0.58",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.thepaper.cn/newsDetail_forward_34036033",
+    publishedAt: "2026-09-09T00:00:00.000Z",
+    updatedAt: "2026-09-09T10:40:29.170Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1788950429170-2",
+    title: "100亿？贝森特神秘“救市底牌”今晚揭晓 华尔街高度戒备！_新浪财经_新浪网",
+    summary: "100亿？贝森特神秘“救市底牌”今晚揭晓 华尔街高度戒备！\n\n 2026年09月09日 08:44 财联社\n\n转自：财联社\n\n财联社9月9日讯（编辑 潇湘）美国",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/roll/2026-09-09/doc-iniresxy8909447.shtml",
+    publishedAt: "2026-09-09T00:00:00.000Z",
+    updatedAt: "2026-09-09T10:40:29.171Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1788950429171-4",
+    title: "凌晨，全线跳水！美军发动袭击！美股、黄金、白银下挫",
+    summary: "Exa 搜索公司近日宣布完成一笔总额达 1700 万美元的 A 轮融资，本轮融资由知名风险投资机构 Lightspeed Venture Partners 领投",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.stcn.com/article/detail/4177432.html",
+    publishedAt: "2026-09-09T00:00:00.000Z",
+    updatedAt: "2026-09-09T10:40:29.171Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1788950429171-5",
+    title: "美股潮向（9 月 9 日）：美军袭击伊朗油轮道指重挫 600 点，芯片板块逆势暴涨英特尔涨 9% | HTX資訊",
+    summary: "marsbit發佈於 2026-09-09更新於 2026-09-09\n\n### 文章摘要\n\n周二美股在劳动节后首个交易日全线收跌，道指重挫超600点，标普50",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.htx.com/zh-tc/news/us-stock-market-trend-september-9-us-military-attacks-irania-wq7TWUxu/",
+    publishedAt: "2026-09-09T00:00:00.000Z",
+    updatedAt: "2026-09-09T10:40:29.171Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1788950429171-6",
+    title: "特朗普喊话降息被市场当空气 沃什反而迎来“天赐良机”？-美联储最新消息-金投网",
+    summary: "特朗普喊话降息被市场当空气 沃什反而迎来“天赐良机”？-美联储最新消息-金投网\n\n## 特朗普喊话降息被市场当空气 沃什反而迎来“天赐良机”？\n\n 字号： T|",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.cngold.org/c/2026-09-09/c10745898.html",
+    publishedAt: "2026-09-09T00:00:00.000Z",
+    updatedAt: "2026-09-09T10:40:29.171Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1788950429171-7",
+    title: "比特币企稳，华尔街停滞不前，油价冲击重燃美联储加息预期_新闻_百亿财经",
+    summary: "### 比特币的火热夏季再次遭遇“红色九月”魔咒\n\n比特币火热的夏季行情再次撞上“红色九月”效应。今日，在经历了一轮高达20%的强劲反弹后，比特币价格再度下跌近",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.baiyi.com/news/721621.html",
+    publishedAt: "2026-09-09T00:00:00.000Z",
+    updatedAt: "2026-09-09T10:40:29.171Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1788950429171-8",
+    title: "ETF溢价潮与资源限令共振，加密市场风险信号密集浮现 – 每日区块链",
+    summary: "admin 2026-09-09 09:37 7浏览 \n\n9月9日亚洲交易时段开盘前后，全球市场呈现出罕见的“多线共振”态势：津巴布韦再度祭出资源出口管制，科技",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://news.czb.com/24058.html",
+    publishedAt: "2026-09-09T00:00:00.000Z",
+    updatedAt: "2026-09-09T10:40:29.171Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1788950430146-1",
+    title: "智元发布GE-Act 2.0原生世界-动作模型|机器人|act|本体|实验|ge_网易科技",
+    summary: "9月9日消息，智元机器人近日发布 GE- Act 2.0原生世界-动作模型（World Action Model）。该模型从随机初始化开始训练，视觉表征、未来生",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.163.com/tech/article/L6D0JARC00098IEO.html",
+    publishedAt: "2026-09-09T00:00:00.000Z",
+    updatedAt: "2026-09-09T10:40:30.146Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1788950430146-2",
+    title: "智元AGILE2.0 感控一体模型发布：机器人进入“睁眼运动”时代_新浪财经_新浪网",
+    summary: "智元AGILE2.0 感控一体模型发布：机器人进入“睁眼运动”时代\n\n 2026年09月09日 13:02 扬眼\n\n转自：扬子晚报\n\n近日，智元发布AGILE2",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/jjxw/2026-09-09/doc-inirfcpy3836350.shtml",
+    publishedAt: "2026-09-09T00:00:00.000Z",
+    updatedAt: "2026-09-09T10:40:30.146Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1788950430147-8",
+    title: "韩国版人形机器人KAIROS亮相：170cm、80kg，能握手能抗推 - 维科号V",
+    summary: "智财社 2026-09-09 10:13 发文 \n\n9月7日，韩国机械与材料研究院（KIMM）在首尔举办“2026全球机械技术论坛”，主题为“机器人，Physi",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://mp.ofweek.com/ai/a756714436667",
+    publishedAt: "2026-09-09T00:00:00.000Z",
+    updatedAt: "2026-09-09T10:40:30.147Z",
+    importance: "normal"
+  },
+  {
     id: "finance-1788915605499-0",
     title: "美股全线收跌，芯片股逆势走强，油价升至数周高位，金价回落_新浪财经_新浪网",
     summary: "Published: 2026-09-09T07:30:11+08:00\nSource: finance.sina.com.cn (finance.sina.c",
@@ -6089,7 +7337,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "ai-1788915601883-2",
+    id: "ai-1788950426643-2",
     title: "OpenAI 向 Plus、Pro、Business 和 Enterprise 用户全面推送 Astra",
     summary: "OpenAI 宣布 Astra 已全面推送给 Codex 和 ChatGPT Work 中的 Plus、Pro、Business 和 Enterprise 用户",
     deepDive: "",
@@ -6097,47 +7345,71 @@ const hardcodedData: NewsData = {
     source: "X：OpenAI (@OpenAI)",
     sourceUrl: "https://x.com/OpenAI/status/2097431322117476423",
     publishedAt: "2026-09-08T21:06:10.239Z",
-    updatedAt: "2026-09-09T01:00:01.883Z",
+    updatedAt: "2026-09-09T10:40:26.643Z",
     importance: "normal"
   },
   {
-    id: "ai-1788915601884-10",
+    id: "ai-1788950426643-10",
     title: "Sam Altman 回应与 Anthropic 研究员的 Navier-Stokes 证明发布争议",
-    summary: "OpenAI首席执行官Sam Altman于2025年2月25日在社交平台X上发文，首次正面回应了公司内部关于GPT-4.5和GPT-5的发布计划。他确认，GP",
+    summary: "OpenAI首席执行官Sam Altman于2025年2月18日通过社交媒体X平台宣布，公司已完成对芯片初创企业Cerebras Systems的收购交易，交易",
     deepDive: "",
     category: "ai",
     source: "X：Sam Altman (@sama)",
     sourceUrl: "https://x.com/sama/status/2097385167002415140",
     publishedAt: "2026-09-08T18:02:46.002Z",
-    updatedAt: "2026-09-09T01:00:01.884Z",
+    updatedAt: "2026-09-09T10:40:26.643Z",
     importance: "hot"
   },
   {
-    id: "ai-1788915601883-8",
+    id: "ai-1788950426643-8",
     title: "Noam Brown 评 OpenAI 用智能体求解 Navier-Stokes 千禧年难题：成本会快速下降",
-    summary: "OpenAI联合创始人兼首席科学家Ilya Sutskever与Anthropic联合创始人Jared Kaplan近期在社交平台X上就AI推理模型效率展开技术",
+    summary: "OpenAI于2025年5月发布新一代推理模型o3与o4-mini，并在ChatGPT及API中同步上线。该系列模型首次将“深思熟虑”的推理能力与多模态感知（视",
     deepDive: "",
     category: "ai",
     source: "X：Noam Brown (@polynoamial)",
     sourceUrl: "https://x.com/polynoamial/status/2097375837670785447",
     publishedAt: "2026-09-08T17:25:41.716Z",
-    updatedAt: "2026-09-09T01:00:01.884Z",
+    updatedAt: "2026-09-09T10:40:26.643Z",
     importance: "normal"
   },
   {
-    id: "ai-1788915601884-11",
+    id: "ai-1788950426643-11",
     title: "Anthropic 讲解用 Claude Platform 降低成本并提升性能的三个方法",
-    summary: "Claude Devs（@ClaudeDevs）在社交平台X上发布消息，宣布其AI编程工具Claude Dev正式更名为Claude Code，并同步推出全新品",
+    summary: "Claude Devs (@ClaudeDevs) 在X平台上的最新动态显示，其团队正在推进一项针对开发者工具链的深度优化计划。该计划聚焦于提升代码生成效率与上",
     deepDive: "",
     category: "ai",
     source: "X：Claude Devs (@ClaudeDevs)",
     sourceUrl: "https://x.com/ClaudeDevs/status/2097369738968195513",
     publishedAt: "2026-09-08T17:01:27.672Z",
-    updatedAt: "2026-09-09T01:00:01.884Z",
+    updatedAt: "2026-09-09T10:40:26.643Z",
     importance: "normal"
   },
   {
-    id: "geopolitics-1788915603474-8",
+    id: "robotics-1788847061826-6",
+    title: "【#小鹏首位人形机器人自己走下产线#】#小鹏机器人2027年上市交付#9月8日消息，今日，小鹏集团官宣，小鹏机器人完成关键跨越，小鹏机器人生产线正式启用，全球首位高阶通用人形机器人完成自动化总装并自主走下产线。这条产线属于全球首条面向高阶通用人形机器人的自动化产线，由小鹏自主设计开发。 ​|小鹏机器人|小鹏集团|何小鹏|人形机器人|生产线启用|上市交付_新浪新闻",
+    summary: "Author: 商智独角兽\nPublished: 2026-09-08T11:08:00+08:00\nSource: sina.cn (sina.cn)\nLan",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.sina.cn/weibo/detail/5340831504664097.html",
+    publishedAt: "2026-09-08T03:08:00.000Z",
+    updatedAt: "2026-09-08T05:57:41.826Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1788847061826-8",
+    title: "【#全球首条高阶通用人形机器人自动化产线启用#】9月8日，小鹏集团董事长、CEO ，UC优视创始人何小鹏正式宣布，全球首条高阶通用人形机器人自动化产线正式启用。这一里程碑事件标志着高阶通用人形机器人正式具备大规模走向真实世界的可能。从0到1的探索：用机器人生产机器人何小鹏表示，科技产品的 ​|何小鹏|小鹏|iron|人形机器人|产线启用_新浪新闻",
+    summary: "Author: CNMO科技\nPublished: 2026-09-08T09:37:00+08:00\nSource: sina.cn (sina.cn)\nLa",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.sina.cn/weibo/detail/5340808433894583.html",
+    publishedAt: "2026-09-08T01:37:00.000Z",
+    updatedAt: "2026-09-08T05:57:41.827Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1788847061214-2",
     title: "基辅会晤结束，特朗普女婿告诉泽连斯基：无法保证乌克兰实现和平|乌方|俄乌|唐纳·川普|乌克兰问题|唐纳德·特朗普_网易订阅",
     summary: "0\n\n分享至好友和朋友圈\n\n前言\n\n各位读者朋友，我是小李。\n\n9月5日至6日，特朗普委派的两位关键代表——威特科夫与女婿库什纳，开启了一场高调穿梭外交：首站直",
     deepDive: "",
@@ -6145,7 +7417,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.163.com/dy/article/L69UBKNL0556A18Z.html?f=post1603_tab_news",
     publishedAt: "2026-09-08T01:26:27.000Z",
-    updatedAt: "2026-09-09T01:00:03.482Z",
+    updatedAt: "2026-09-08T05:57:41.215Z",
     importance: "hot"
   },
   {
@@ -6173,6 +7445,18 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
+    id: "finance-1788847061539-7",
+    title: "美联储加息进入“最后一公里”！本周PPI、CPI或定生死，钱包和市场都要小心了_金市直播_黄金网_中金在线",
+    summary: "Exa 搜索公司近期完成新一轮融资，该公司专注于为人工智能时代构建网页索引，其核心产品是一款面向 AI 应用的搜索引擎 API，旨在解决大语言模型在实时信息检索",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "http://gold.cnfol.com/jinshizhibo/20260908/32362728.shtml",
+    publishedAt: "2026-09-08T00:04:02.000Z",
+    updatedAt: "2026-09-08T05:57:41.540Z",
+    importance: "normal"
+  },
+  {
     id: "robotics-1789002007440-6",
     title: "首次实现全自主搏击 宇树科技发布世界模型驱动人形机器人_凤凰网",
     summary: "2026年09月08日 13:46:11 \n\n9月7日晚间，中国人形机器人头部企业宇树科技发布视频宣布，其世界-动作大模型UnifoLM-X2-1.0取得突破，",
@@ -6197,15 +7481,15 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "ai-1788915601878-0",
+    id: "ai-1788950426641-0",
     title: "OpenAI 发布 ChatGPT Images 2.5 图像模型",
-    summary: "OpenAI在五日内密集发布五项更新，覆盖语音、安全、搜索、开发者工具及透明度领域，显示其正从“单点突破”转向“系统性生态布局”。核心逻辑有三：通过开源TTS模",
+    summary: "OpenAI于2025年5月发布多项技术与产品更新。5月13日，公司推出全新开源语音模型gpt-4o-mini-tts，支持开发者通过文本生成高度自然、可定制的",
     deepDive: "",
     category: "ai",
     source: "OpenAI：官网动态（RSS · 排除企业/客户案例）",
     sourceUrl: "https://openai.com/index/introducing-chatgpt-images-2-5",
     publishedAt: "2026-09-08T00:00:00.000Z",
-    updatedAt: "2026-09-09T01:00:01.881Z",
+    updatedAt: "2026-09-09T10:40:26.642Z",
     importance: "hot"
   },
   {
@@ -6221,7 +7505,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "ai-1788915601883-3",
+    id: "ai-1788950426643-3",
     title: "NYU 数学家指控 OpenAI 在千禧年难题竞赛中不正当竞争，Bubeck 否认",
     summary: "NYU 数学教授 Tristan Buckmaster 与 Anthropic 数学家 Levent Alpöge 公布针对 Navier-Stokes 存在与",
     deepDive: "",
@@ -6229,19 +7513,19 @@ const hardcodedData: NewsData = {
     source: "TechCrunch：AI（RSS）",
     sourceUrl: "https://techcrunch.com/2026/09/08/openai-fought-dirty-on-career-making-math-problem-says-nyu-mathematician",
     publishedAt: "2026-09-08T00:00:00.000Z",
-    updatedAt: "2026-09-09T01:00:01.883Z",
+    updatedAt: "2026-09-09T10:40:26.643Z",
     importance: "normal"
   },
   {
-    id: "ai-1788915601883-4",
+    id: "ai-1788950426643-4",
     title: "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
-    summary: "法国人工智能初创公司Mistral AI于2025年2月推出全新AI新闻聚合服务“News”，该服务通过网页端提供每日精选新闻摘要，覆盖全球重大事件、科技、商业",
+    summary: "Mistral AI于2025年1月30日推出全新AI新闻聚合服务“News”，该产品定位为实时、可验证的新闻摘要工具，旨在通过算法整合全球主流媒体信源，为用户",
     deepDive: "",
     category: "ai",
     source: "Mistral AI：News（网页）",
     sourceUrl: "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
     publishedAt: "2026-09-08T00:00:00.000Z",
-    updatedAt: "2026-09-09T01:00:01.883Z",
+    updatedAt: "2026-09-09T10:40:26.643Z",
     importance: "normal"
   },
   {
@@ -6269,19 +7553,19 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "ai-1788915601883-7",
+    id: "ai-1788950426643-7",
     title: "数学家巴克马斯特宣布多项方程 blowup 结果并公开与 OpenAI 沟通经过",
-    summary: "Hacker News 热门榜单（buzzing.cc 中文翻译）汇聚了技术社区当前讨论度最高的链接与话题，内容涵盖编程、创业、人工智能、开源项目及科技行业动态",
+    summary: "Hacker News（以下简称HN）作为全球技术社区的核心信息源，其热门内容榜单持续反映开发者与创业者的关注焦点。buzzing.cc平台提供的中文翻译服务，",
     deepDive: "",
     category: "ai",
     source: "Hacker News 热门（buzzing.cc 中文翻译）",
     sourceUrl: "https://cims.nyu.edu/~tristanb/statement.pdf",
     publishedAt: "2026-09-08T00:00:00.000Z",
-    updatedAt: "2026-09-09T01:00:01.883Z",
+    updatedAt: "2026-09-09T10:40:26.643Z",
     importance: "normal"
   },
   {
-    id: "ai-1788915601884-9",
+    id: "ai-1788950426643-9",
     title: "GPT-6 Astra操控Blender保姆级教程：三种玩法与踩坑实录",
     summary: "作者数字生命卡兹克发布GPT-6 Astra操控Blender的小白教程，介绍前期安装、官方MCP与Computer Use插件配置，并实测三种玩法。Compu",
     deepDive: "",
@@ -6289,19 +7573,19 @@ const hardcodedData: NewsData = {
     source: "公众号：数字生命卡兹克",
     sourceUrl: "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686056&idx=1&sn=c1710404c08cf3201da27f4d53f94940",
     publishedAt: "2026-09-08T00:00:00.000Z",
-    updatedAt: "2026-09-09T01:00:01.884Z",
+    updatedAt: "2026-09-09T10:40:26.643Z",
     importance: "hot"
   },
   {
-    id: "ai-1788915601884-12",
+    id: "ai-1788950426643-12",
     title: "Tom Tunguz 分析 OpenAI 的 3x AI 生产力增益是否只是机器不睡觉",
-    summary: "Tomer Tunguz在其VC分析博客中发布最新观点，聚焦风险投资行业的数据驱动洞察与趋势研判。文章结合具体案例与量化指标，剖析当前市场环境下初创企业融资策略",
+    summary: "Tomer Tunguz在其VC分析博客中发布最新观点，聚焦风险投资行业的数据趋势与市场动态。文章基于其长期追踪的融资、退出及基金业绩数据，指出当前早期阶段投资",
     deepDive: "",
     category: "ai",
     source: "Tomer Tunguz 博客（VC 分析）",
     sourceUrl: "https://tomtunguz.com/openai-research-acceleration-agentic-productivity",
     publishedAt: "2026-09-08T00:00:00.000Z",
-    updatedAt: "2026-09-09T01:00:01.884Z",
+    updatedAt: "2026-09-09T10:40:26.643Z",
     importance: "normal"
   },
   {
@@ -6461,6 +7745,18 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
+    id: "robotics-1788950430146-6",
+    title: "走向实用 具身智能机器人还要闯几关？_新浪财经_新浪网",
+    summary: "Exa搜索公司近日完成新一轮融资，总额达1700万美元，由Lightspeed Venture Partners领投，参与者包括Y Combinator、NVI",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/jjxw/2026-09-08/doc-iniqzsvr0020634.shtml",
+    publishedAt: "2026-09-08T00:00:00.000Z",
+    updatedAt: "2026-09-09T10:40:30.147Z",
+    importance: "hot"
+  },
+  {
     id: "robotics-1788829207222-7",
     title: "全球首次！宇树科技实现人形机器人全自主搏击_中国经济网——国家经济门户",
     summary: "Author: 张翀\nPublished: 2026-09-07T23:44:00+00:00\nSource: ce.cn (ce.cn)\nLanguage: ",
@@ -6521,7 +7817,7 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "robotics-1788915606757-4",
+    id: "robotics-1788847061826-4",
     title: "世界模型新突破：具身智能机器人解锁“动作因果”新能力-人工智能-ITBear科技资讯",
     summary: "时间：2026-09-07 18:24:15 来源：互联网编辑：快讯 IP：北京 发表评论无障碍通道 \n\n在具身智能领域，世界模型正成为各大公司竞相布局的技术焦",
     deepDive: "",
@@ -6529,7 +7825,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.itbear.com.cn/html/2026-09/1545860.html",
     publishedAt: "2026-09-07T00:00:00.000Z",
-    updatedAt: "2026-09-09T01:00:06.758Z",
+    updatedAt: "2026-09-08T05:57:41.826Z",
     importance: "hot"
   },
   {
@@ -6569,7 +7865,7 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "ai-1788829202654-1",
+    id: "ai-1788847060513-1",
     title: "GPT-6 Astra爆火后，卡兹克谈执行能力贬值与判断力断层",
     summary: "GPT-6 Astra上线后，大量用户用它自主操控Blender、Houdini、Unity、Aseprite等专业软件，做出游戏Demo、3D复刻旧金山艺术宫",
     deepDive: "",
@@ -6577,7 +7873,7 @@ const hardcodedData: NewsData = {
     source: "公众号：数字生命卡兹克",
     sourceUrl: "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685960&idx=1&sn=df5885920be226f9514f47a7f2d30621",
     publishedAt: "2026-09-07T00:00:00.000Z",
-    updatedAt: "2026-09-08T01:00:02.655Z",
+    updatedAt: "2026-09-08T05:57:40.514Z",
     importance: "normal"
   },
   {
@@ -6605,7 +7901,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "geopolitics-1788829204510-9",
+    id: "geopolitics-1788847061216-8",
     title: "制裁大棒拦不住战火重燃，美国对伊朗套路失灵了？｜真相-中新网",
     summary: "2026年09月07日 15:55 来源：中国新闻网\n\n 刚在8月加码经济制裁、试图对伊朗极限施压的美国，并未能稳住局势。进入9月，美伊战火重燃，中东局势再度升",
     deepDive: "",
@@ -6613,7 +7909,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.chinanews.com.cn/gj/2026/09-07/10691965.shtml",
     publishedAt: "2026-09-07T00:00:00.000Z",
-    updatedAt: "2026-09-08T01:00:04.510Z",
+    updatedAt: "2026-09-08T05:57:41.216Z",
     importance: "hot"
   },
   {
@@ -6629,7 +7925,7 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "finance-1788829206114-2",
+    id: "finance-1788847061538-1",
     title: "9月7日财经早餐：强劲非农引爆加息预期，金价承压徘徊，霍尔木兹海峡炮声再起，原油地缘溢价飙升_新浪财经_新浪网",
     summary: "2026年09月07日 07:17 滚动播报\n\n 汇通财经APP讯——周一（北京时间9月7日）亚市早盘，现货黄金交投于4430.60美元/盎司附近，受美国8月就",
     deepDive: "",
@@ -6637,7 +7933,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://finance.sina.com.cn/money/forex/hbfx/2026-09-07/doc-iniqxyne9654001.shtml",
     publishedAt: "2026-09-07T00:00:00.000Z",
-    updatedAt: "2026-09-08T01:00:06.114Z",
+    updatedAt: "2026-09-08T05:57:41.539Z",
     importance: "normal"
   },
   {
@@ -6665,7 +7961,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "finance-1788829206114-5",
+    id: "finance-1788847061539-3",
     title: "张忆东：中国好资产、AI科技牛，9月布局正当时_新浪财经_新浪网",
     summary: "张忆东：中国好资产、AI科技牛，9月布局正当时\n\n 2026年09月07日 08:15 市场资讯\n\n 专题：A股9月反弹可期 但大波段行情重建需更长时间\n\n 一",
     deepDive: "",
@@ -6673,7 +7969,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://finance.sina.com.cn/roll/2026-09-07/doc-iniqyeua9557614.shtml",
     publishedAt: "2026-09-07T00:00:00.000Z",
-    updatedAt: "2026-09-08T01:00:06.115Z",
+    updatedAt: "2026-09-08T05:57:41.539Z",
     importance: "hot"
   },
   {
@@ -6713,15 +8009,15 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "robotics-1788829207221-1",
+    id: "robotics-1788847061826-1",
     title: "当人形机器人走进更多应用场景\n_光明网",
-    summary: "Exa搜索（Exa）是一家专注于人工智能驱动的网络搜索初创公司，近期完成了1700万美元的A轮融资。此轮融资由Lightspeed Venture Partne",
+    summary: "Exa搜索（Exa）是一家专注于人工智能驱动的网络搜索初创公司，近期完成了一轮融资，融资金额达1700万美元，由Lightspeed Venture Partn",
     deepDive: "",
     category: "robotics",
     source: "Exa 搜索",
     sourceUrl: "https://news.gmw.cn/2026-09/07/content_38987420.htm",
     publishedAt: "2026-09-07T00:00:00.000Z",
-    updatedAt: "2026-09-08T01:00:07.222Z",
+    updatedAt: "2026-09-08T05:57:41.826Z",
     importance: "normal"
   },
   {
@@ -6902,6 +8198,18 @@ const hardcodedData: NewsData = {
     sourceUrl: "http://www.singaporemirror.com/news/131068",
     publishedAt: "2026-09-07T00:00:00.000Z",
     updatedAt: "2026-09-07T01:00:05.926Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1788847061827-9",
+    title: "宇树突破技术瓶颈，首次实现人形机器人全自主格斗实时驱动_新浪财经_新浪网",
+    summary: "宇树突破技术瓶颈，首次实现人形机器人全自主格斗实时驱动\n\n 据了解，UnifoLM-X2-1.0突破世界-动作大模型瞬时规划、决策和动态交互执行等瓶颈，实现高动",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/jjxw/2026-09-07/doc-iniqzhfs6287133.shtml",
+    publishedAt: "2026-09-07T00:00:00.000Z",
+    updatedAt: "2026-09-08T05:57:41.827Z",
     importance: "hot"
   },
   {
@@ -7145,15 +8453,15 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "geopolitics-1788571852199-1",
+    id: "geopolitics-1788570004337-1",
     title: "导弹突袭3国！炸毁美军命基地，特朗普放狠话，中东局势失控|伊朗|美伊|德黑兰|伊拉克|唐纳·川普|唐纳德·特朗普_网易订阅",
-    summary: "Exa 搜索（Exa）是一家专注于人工智能领域的信息检索初创公司，其核心产品为面向 AI 研发人员的神经网络搜索引擎。该引擎利用先进的嵌入模型理解查询语义，而非",
+    summary: "Exa 搜索（Exa）是一家专注于人工智能原生搜索的初创公司，近期完成了一轮融资，金额达 1700 万美元，由 Lightspeed Venture Partn",
     deepDive: "",
     category: "geopolitics",
     source: "Exa 搜索",
     sourceUrl: "https://www.163.com/dy/article/L61G4SCI0556CA3T.html",
     publishedAt: "2026-09-05T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:30:52.199Z",
+    updatedAt: "2026-09-05T01:00:04.339Z",
     importance: "normal"
   },
   {
@@ -7169,7 +8477,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "robotics-1788571854764-1",
+    id: "robotics-1788656406536-3",
     title: "追问机器人“狂奔”背后的深层逻辑_新浪财经_新浪网",
     summary: "追问机器人“狂奔”背后的深层逻辑\n\n 2026年09月05日 00:09 滚动播报\n\n（来源：中国经济导报）\n\n转自：中国经济导报\n\n张守营\n\n 有人说，今年夏",
     deepDive: "",
@@ -7177,7 +8485,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://finance.sina.com.cn/jjxw/2026-09-05/doc-iniqsvkn5835250.shtml",
     publishedAt: "2026-09-05T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:30:54.764Z",
+    updatedAt: "2026-09-06T01:00:06.536Z",
     importance: "hot"
   },
   {
@@ -7361,42 +8669,6 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "robotics-1788656406536-3",
-    title: "追问机器人“狂奔”背后的深层逻辑_新浪财经_新浪网",
-    summary: "追问机器人“狂奔”背后的深层逻辑\n\n 2026年09月05日 00:09 滚动播报\n\n（来源：中国经济导报）\n\n转自：中国经济导报\n\n张守营\n\n 有人说，今年夏",
-    deepDive: "",
-    category: "robotics",
-    source: "Exa 搜索",
-    sourceUrl: "https://finance.sina.com.cn/jjxw/2026-09-05/doc-iniqsvkn5835250.shtml",
-    publishedAt: "2026-09-05T00:00:00.000Z",
-    updatedAt: "2026-09-06T01:00:06.536Z",
-    importance: "hot"
-  },
-  {
-    id: "geopolitics-1788570004337-1",
-    title: "导弹突袭3国！炸毁美军命基地，特朗普放狠话，中东局势失控|伊朗|美伊|德黑兰|伊拉克|唐纳·川普|唐纳德·特朗普_网易订阅",
-    summary: "Exa 搜索（Exa）是一家专注于人工智能原生搜索的初创公司，近期完成了一轮融资，金额达 1700 万美元，由 Lightspeed Venture Partn",
-    deepDive: "",
-    category: "geopolitics",
-    source: "Exa 搜索",
-    sourceUrl: "https://www.163.com/dy/article/L61G4SCI0556CA3T.html",
-    publishedAt: "2026-09-05T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:00:04.339Z",
-    importance: "normal"
-  },
-  {
-    id: "finance-1788570005756-1",
-    title: "非农夜惊现大反转：7月裁员潮，8月却爆发式增长！美联储9月加息风险再度逼近？-指股网",
-    summary: "非农夜惊现大反转：7月裁员潮，8月却爆发式增长！美联储9月加息风险再度逼近？\n\n周五(9月4日)北京时间20:30，美国劳工统计局发布了8月非农就业报告。数据显",
-    deepDive: "",
-    category: "finance",
-    source: "Exa 搜索",
-    sourceUrl: "https://www.zhiguf.com/focusnews_detail/2337537",
-    publishedAt: "2026-09-05T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:00:05.756Z",
-    importance: "hot"
-  },
-  {
     id: "ai-1788571850499-0",
     title: "OpenAI 发布 GPT-6 Astra，面向 Pro、Enterprise 和 Business Premium 用户开放",
     summary: "OpenAI 宣布 GPT-6 Astra 现已向所有 Pro、Enterprise 和 Business Premium 用户开放，可在 ChatGPT Wo",
@@ -7407,30 +8679,6 @@ const hardcodedData: NewsData = {
     publishedAt: "2026-09-04T20:13:05.680Z",
     updatedAt: "2026-09-05T01:30:50.500Z",
     importance: "hot"
-  },
-  {
-    id: "ai-1788570002628-0",
-    title: "OpenAI 发布 GPT-6 Astra，面向 Pro、Enterprise 和 Business Premium 用户开放",
-    summary: "OpenAI 宣布 GPT-6 Astra 现已向所有 Pro、Enterprise 和 Business Premium 用户开放，可在 ChatGPT Wo",
-    deepDive: "",
-    category: "ai",
-    source: "X：OpenAI (@OpenAI)",
-    sourceUrl: "https://x.com/OpenAI/status/2095968413646737608",
-    publishedAt: "2026-09-04T20:13:05.680Z",
-    updatedAt: "2026-09-05T01:00:02.631Z",
-    importance: "hot"
-  },
-  {
-    id: "ai-1788571850501-8",
-    title: "Reuters 报道 OpenAI 智能体逃出测试环境并劫持德国 wiki 交换规避限制的方法",
-    summary: "韩国统计厅6月发布《2024年5月韩国人口动向》显示，2024年第一季度韩国总和生育率降至0.76，创下同期历史新低，较去年同期下降0.06。这一数据远低于维持",
-    deepDive: "",
-    category: "ai",
-    source: "X：Kim (@kimmonismus)",
-    sourceUrl: "https://x.com/kimmonismus/status/2095837763517988869",
-    publishedAt: "2026-09-04T11:33:56.262Z",
-    updatedAt: "2026-09-05T01:30:50.501Z",
-    importance: "normal"
   },
   {
     id: "ai-1788570002633-8",
@@ -7481,30 +8729,6 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "ai-1788570002631-1",
-    title: "GPT-6 Astra 上线 Microsoft Foundry，早期客户已在 Azure 上使用",
-    summary: "Satya Nadella 发文表示，早期客户已开始使用 Azure 上的 Astra。GPT-6 Astra 现已通过 Microsoft Foundry 提",
-    deepDive: "",
-    category: "ai",
-    source: "X：Satya Nadella (@satyanadella)",
-    sourceUrl: "https://x.com/satyanadella/status/2095713765446840591",
-    publishedAt: "2026-09-04T03:21:12.818Z",
-    updatedAt: "2026-09-05T01:00:02.633Z",
-    importance: "normal"
-  },
-  {
-    id: "geopolitics-1788570004342-9",
-    title: "携手各国发展振兴，改革完善全球治理 - 中国社会科学院",
-    summary: "携手各国发展振兴，改革完善全球治理\n\n##### 携手各国发展振兴，改革完善全球治理\n\n 2026-09-04 来源：《人民日报》（2026年09月04日 第 ",
-    deepDive: "",
-    category: "geopolitics",
-    source: "Exa 搜索",
-    sourceUrl: "https://www.cass.cn/index2019/newstop/202609/t20260904_6065878.shtml",
-    publishedAt: "2026-09-04T02:00:04.114Z",
-    updatedAt: "2026-09-05T01:00:04.342Z",
-    importance: "hot"
-  },
-  {
     id: "geopolitics-1788521666516-8",
     title: "携手各国发展振兴，改革完善全球治理 - 中国社会科学院",
     summary: "携手各国发展振兴，改革完善全球治理\n\n##### 携手各国发展振兴，改革完善全球治理\n\n2026-09-04 来源：《人民日报》（2026年09月04日 第 0",
@@ -7529,7 +8753,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "ai-1788571850500-2",
+    id: "ai-1788570002633-2",
     title: "GitHub 发布 Project HydraFusion 研究预览，用多模型运行时编排降低 Copilot 成本",
     summary: "GitHub 推出 Project HydraFusion 研究预览，通过运行时多模型编排，在 Single、Cascade、Critique 三种执行模式间为",
     deepDive: "",
@@ -7537,11 +8761,11 @@ const hardcodedData: NewsData = {
     source: "GitHub Blog",
     sourceUrl: "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration",
     publishedAt: "2026-09-04T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:30:50.500Z",
+    updatedAt: "2026-09-05T01:00:02.633Z",
     importance: "hot"
   },
   {
-    id: "ai-1788571850500-3",
+    id: "ai-1788570002633-3",
     title: "xAI 让 Grok Bot 承担采购工作，Haggle Bot 找出超 10 万美元直接节省",
     summary: "xAI 让 Grok Bot 访问供应商支出、合同和使用数据，创建的 Haggle Bot 已识别超过 10 万美元直接节省，包括在一个 SaaS 产品中找到 ",
     deepDive: "",
@@ -7549,7 +8773,7 @@ const hardcodedData: NewsData = {
     source: "xAI：News（网页）",
     sourceUrl: "https://x.ai/news/grok-bot-procurement",
     publishedAt: "2026-09-04T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:30:50.501Z",
+    updatedAt: "2026-09-05T01:00:02.633Z",
     importance: "normal"
   },
   {
@@ -7577,7 +8801,7 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "ai-1788571850501-6",
+    id: "ai-1788570002633-6",
     title: "Anthropic 用 Claude 在 11 天内完成费马大定理首个机器验证的 Lean 形式化证明",
     summary: "Anthropic 发布首个完整经计算机验证的费马大定理证明，Claude 在 11 天内大体自主完成形式化，写出 1300 万行 Lean 代码并证明 30,",
     deepDive: "",
@@ -7585,19 +8809,19 @@ const hardcodedData: NewsData = {
     source: "Anthropic：Research（发表成果 · 网页）",
     sourceUrl: "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
     publishedAt: "2026-09-04T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:30:50.501Z",
+    updatedAt: "2026-09-05T01:00:02.633Z",
     importance: "hot"
   },
   {
-    id: "ai-1788571850501-7",
+    id: "ai-1788570002633-7",
     title: "GPT-6 Astra 幻觉更少但仍易受隐藏提示词注入攻击",
-    summary: "OpenAI于2025年5月发布GPT-4.1系列模型，包括GPT-4.1、GPT-4.1 mini和GPT-4.1 nano三个版本，在编码、指令跟随和长上下",
+    summary: "OpenAI于2025年5月13日发布了新一代旗舰模型GPT-4.1，该模型在多项基准测试中超越了前代GPT-4o，并在编码、指令跟随和长上下文理解方面实现显著",
     deepDive: "",
     category: "ai",
     source: "The Decoder：AI News（RSS）",
     sourceUrl: "https://the-decoder.com/openais-gpt-6-astra-hallucinates-less-but-remains-vulnerable-to-hidden-prompt-injections",
     publishedAt: "2026-09-04T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:30:50.501Z",
+    updatedAt: "2026-09-05T01:00:02.633Z",
     importance: "normal"
   },
   {
@@ -7637,7 +8861,7 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "geopolitics-1788571852199-2",
+    id: "geopolitics-1788570004339-2",
     title: "美国特使前往俄罗斯和乌克兰，缓解伊朗紧张局势的努力不断升级 | Gate 新闻",
     summary: "Lucas Bennett \n\n大宗商品\n\nKey Takeaways\n\n- 美国特使史蒂夫·维特科夫和贾里德·库什纳预计将在周末前往莫斯科和基辅参加外交会谈。",
     deepDive: "",
@@ -7645,11 +8869,11 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.gate.com/zh/news/detail/us-envoys-head-to-russia-and-ukraine-as-iran-de-escalation-push-grows-24012886",
     publishedAt: "2026-09-04T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:30:52.199Z",
+    updatedAt: "2026-09-05T01:00:04.339Z",
     importance: "hot"
   },
   {
-    id: "geopolitics-1788571852200-5",
+    id: "geopolitics-1788570004340-5",
     title: "美国对伊朗经济施压 是否扩大对华制裁引两党关注 - 国际观察 -  倍可亲",
     summary: "京港台：2026-9-4 02:41| 来源：美国之音 | 评论( 1 )条 | 我来说几句 \n\n### 美国对伊朗经济施压 是否扩大对华制裁引两党关注\n\n 美",
     deepDive: "",
@@ -7657,7 +8881,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.backchina.com/news/2026/09/04/1045872.html",
     publishedAt: "2026-09-04T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:30:52.200Z",
+    updatedAt: "2026-09-05T01:00:04.340Z",
     importance: "hot"
   },
   {
@@ -7673,7 +8897,7 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "finance-1788571853680-0",
+    id: "finance-1788570005756-0",
     title: "沃勒一席话击退加息恐慌：道指飙涨624点收于53686，9月加息概率骤降至50%_新浪财经_新浪网",
     summary: "沃勒一席话击退加息恐慌：道指飙涨624点收于53686，9月加息概率骤降至50%\n\n 2026年09月04日 10:59 市场资讯\n\n2026年9月4日 | 美",
     deepDive: "",
@@ -7681,11 +8905,11 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://finance.sina.com.cn/wm/2026-09-04/doc-iniqrpqw4102409.shtml",
     publishedAt: "2026-09-04T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:30:53.680Z",
+    updatedAt: "2026-09-05T01:00:05.756Z",
     importance: "hot"
   },
   {
-    id: "finance-1788571853680-2",
+    id: "finance-1788570005756-2",
     title: "美联储放鸽引爆市场！美股创一月最大涨幅，科技股领涨，软件与云服务板块成最大亮点提供者FX168",
     summary: "美联储放鸽引爆市场！美股创一月最大涨幅，科技股领涨，软件与云服务板块成最大亮点\n\n摘要：北京时间9月4日凌晨，美股三大指数集体收涨，创下近一个月来最大单日涨幅。",
     deepDive: "",
@@ -7693,11 +8917,11 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.fx168news.com/article/1087546",
     publishedAt: "2026-09-04T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:30:53.681Z",
+    updatedAt: "2026-09-05T01:00:05.757Z",
     importance: "hot"
   },
   {
-    id: "finance-1788571853681-3",
+    id: "finance-1788570005757-4",
     title: "美联储理事沃勒将9月加息概率推至“五五开”！美元在99关口等待非农“一锤定音”_外汇动态报道",
     summary: "——丹斯克银行指出，沃勒表示若8月通胀显示进展则倾向9月按兵不动，但若通胀偏热则考虑加息，将9月加息概率从60/40推近至50/50。美国8月ISM服务业升至5",
     deepDive: "",
@@ -7705,11 +8929,11 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://fx678.com/C/20260904/202609041550139116.html",
     publishedAt: "2026-09-04T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:30:53.681Z",
+    updatedAt: "2026-09-05T01:00:05.757Z",
     importance: "normal"
   },
   {
-    id: "finance-1788571853681-4",
+    id: "finance-1788570005757-3",
     title: "TradingKey 每日市场简报：沃勒发言缓和加息预期！美股科技股集体上涨，SpaceX大涨超6%，比特币突破8万美元",
     summary: "TradingKey\n\n作者 Block Tao\n\n2026年9月4日 01:13\n\n美股三大指数集体收涨，科技股与加密货币表现强势，AI基础设施概念股走势分化",
     deepDive: "",
@@ -7717,11 +8941,11 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.tradingkey.com/zh-hans/analysis/stocks/us-stock/262150251-nvda-ai-chip-spacex-nvidia-wti-gold-xau-xag-btc-eth-tsla-dell-tradingkey",
     publishedAt: "2026-09-04T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:30:53.681Z",
+    updatedAt: "2026-09-05T01:00:05.757Z",
     importance: "hot"
   },
   {
-    id: "finance-1788571853681-5",
+    id: "finance-1788570005757-5",
     title: "一夜过去，加息预期再变，美股、黄金齐涨！_新浪财经_新浪网",
     summary: "一夜过去，加息预期再变，美股、黄金齐涨！\n\n 2026年09月04日 08:21 上海证券报 \n\n 美东时间9月3日，美股三大指数收盘全线上涨。截至收盘，道指涨",
     deepDive: "",
@@ -7729,7 +8953,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://finance.sina.com.cn/wm/2026-09-04/doc-iniqriie6366605.shtml",
     publishedAt: "2026-09-04T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:30:53.681Z",
+    updatedAt: "2026-09-05T01:00:05.757Z",
     importance: "hot"
   },
   {
@@ -7829,30 +9053,6 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "robotics-1788656406536-5",
-    title: "具身大脑赛道热度攀升，星源智亮相WRC，底层算力底座迎来商业化拐点 - IT之家",
-    summary: "2026/9/4 22:38:10 来源：之家网站 作者：- 责编：- \n\n一、亮相 2026 世界机器人大会，多项实机成果集中展出\n\n（一）大会基础参展概况\n",
-    deepDive: "",
-    category: "robotics",
-    source: "Exa 搜索",
-    sourceUrl: "https://www.ithome.com/0/998/614.htm",
-    publishedAt: "2026-09-04T00:00:00.000Z",
-    updatedAt: "2026-09-06T01:00:06.536Z",
-    importance: "hot"
-  },
-  {
-    id: "robotics-1788656406536-6",
-    title: "原生智能体机器人“银河星仔”开启预订，24小时突破200台-中新网",
-    summary: "2026年09月04日 16:39 来源：中国新闻网\n\n 9月3日，原生智能体人形机器人“银河星仔”(Galbot ET1)正式开启全网预订，产品首发市场表现亮",
-    deepDive: "",
-    category: "robotics",
-    source: "Exa 搜索",
-    sourceUrl: "http://www.chinanews.com.cn/cj/2026/09-04/10690406.shtml",
-    publishedAt: "2026-09-04T00:00:00.000Z",
-    updatedAt: "2026-09-06T01:00:06.536Z",
-    importance: "hot"
-  },
-  {
     id: "robotics-1788656406536-7",
     title: "具身智能的“马戏团时代”，结束了|飞轮|人形|机器人|真实世界|真实场景_网易订阅",
     summary: "没人会因为一个初中没毕业的厨师炒不出好菜就惊讶。\n\n但如果一个拿了料理大赛冠军的人连锅都不会颠，那就是骗局。\n\n机器人行业过去几年，就是在给\"不会颠锅的冠军\"疯",
@@ -7863,258 +9063,6 @@ const hardcodedData: NewsData = {
     publishedAt: "2026-09-04T00:00:00.000Z",
     updatedAt: "2026-09-06T01:00:06.536Z",
     importance: "normal"
-  },
-  {
-    id: "ai-1788570002633-2",
-    title: "GitHub 发布 Project HydraFusion 研究预览，用多模型运行时编排降低 Copilot 成本",
-    summary: "GitHub 推出 Project HydraFusion 研究预览，通过运行时多模型编排，在 Single、Cascade、Critique 三种执行模式间为",
-    deepDive: "",
-    category: "ai",
-    source: "GitHub Blog",
-    sourceUrl: "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration",
-    publishedAt: "2026-09-04T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:00:02.633Z",
-    importance: "hot"
-  },
-  {
-    id: "ai-1788570002633-3",
-    title: "xAI 让 Grok Bot 承担采购工作，Haggle Bot 找出超 10 万美元直接节省",
-    summary: "xAI 让 Grok Bot 访问供应商支出、合同和使用数据，创建的 Haggle Bot 已识别超过 10 万美元直接节省，包括在一个 SaaS 产品中找到 ",
-    deepDive: "",
-    category: "ai",
-    source: "xAI：News（网页）",
-    sourceUrl: "https://x.ai/news/grok-bot-procurement",
-    publishedAt: "2026-09-04T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:00:02.633Z",
-    importance: "normal"
-  },
-  {
-    id: "ai-1788570002633-4",
-    title: "Anthropic IPO 推迟至中期选举前，最早 10 月中旬启动路演，目标估值 2 万亿美元",
-    summary: "，Anthropic 预计最早 10 月中旬启动 IPO 路演，计划在 11 月美国中期选举前数日完成上市，招股书公开时间推迟至 9 月下旬。部分投资者给出高达",
-    deepDive: "",
-    category: "ai",
-    source: "IT之家（RSS）",
-    sourceUrl: "https://www.ithome.com/0/998/630.htm",
-    publishedAt: "2026-09-04T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:00:02.633Z",
-    importance: "normal"
-  },
-  {
-    id: "ai-1788570002633-5",
-    title: "英伟达两年从零建起近千亿美元股权投资组合",
-    summary: "据《商业内幕》9月4日报道，英伟达最新财报显示，截至7月26日公司持有价值990亿美元的股权投资，一年内增长14倍、两年增长45倍。其中约480亿美元为上市公司",
-    deepDive: "",
-    category: "ai",
-    source: "IT之家（RSS）",
-    sourceUrl: "https://www.ithome.com/0/998/620.htm",
-    publishedAt: "2026-09-04T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:00:02.633Z",
-    importance: "normal"
-  },
-  {
-    id: "ai-1788570002633-6",
-    title: "Anthropic 用 Claude 在 11 天内完成费马大定理首个机器验证的 Lean 形式化证明",
-    summary: "Anthropic 发布首个完整经计算机验证的费马大定理证明，Claude 在 11 天内大体自主完成形式化，写出 1300 万行 Lean 代码并证明 30,",
-    deepDive: "",
-    category: "ai",
-    source: "Anthropic：Research（发表成果 · 网页）",
-    sourceUrl: "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
-    publishedAt: "2026-09-04T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:00:02.633Z",
-    importance: "hot"
-  },
-  {
-    id: "ai-1788570002633-7",
-    title: "GPT-6 Astra 幻觉更少但仍易受隐藏提示词注入攻击",
-    summary: "OpenAI于2025年5月13日发布了新一代旗舰模型GPT-4.1，该模型在多项基准测试中超越了前代GPT-4o，并在编码、指令跟随和长上下文理解方面实现显著",
-    deepDive: "",
-    category: "ai",
-    source: "The Decoder：AI News（RSS）",
-    sourceUrl: "https://the-decoder.com/openais-gpt-6-astra-hallucinates-less-but-remains-vulnerable-to-hidden-prompt-injections",
-    publishedAt: "2026-09-04T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:00:02.633Z",
-    importance: "normal"
-  },
-  {
-    id: "ai-1788570002633-9",
-    title: "GPT-6 Astra 基准表现分歧，ARC-AGI-3 效率超人类令 Chollet 提前 AGI 预测",
-    summary: "GPT-6 Astra 的基准结论相互矛盾：Epoch AI 以 169 分将其排在 267 个模型之首，Artificial Analysis 给出 61 分",
-    deepDive: "",
-    category: "ai",
-    source: "The Decoder：AI News（RSS）",
-    sourceUrl: "https://the-decoder.com/benchmarks-disagree-on-gpt-6-astra-but-its-human-beating-efficiency-on-arc-agi-3-pulls-chollets-agi-forecast-forward",
-    publishedAt: "2026-09-04T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:00:02.633Z",
-    importance: "normal"
-  },
-  {
-    id: "ai-1788570002633-10",
-    title: "开发者用 Claude Fable 5 在 Claude Code 中将 1993 年 Amiga 游戏 Babylonian Twins 移植到 Godot",
-    summary: "作者让 Claude Fable 5 在 Claude Code 中分三步移植其 1993 年 Amiga 游戏：34,000 行 C++ 一个晚上迁入 God",
-    deepDive: "",
-    category: "ai",
-    source: "Hacker News 热门（buzzing.cc 中文翻译）",
-    sourceUrl: "https://babyloniantwins.com/blog/porting-a-1993-amiga-game-to-godot",
-    publishedAt: "2026-09-04T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:00:02.634Z",
-    importance: "normal"
-  },
-  {
-    id: "ai-1788570002634-11",
-    title: "Tom Tunguz 分析 4 万亿美元 AI 数据中心债务浪潮",
-    summary: "Tom Tunguz 分析称，未来五年美国数据中心容量将从 25 吉瓦增至 70 吉瓦，全球建设成本约 5 万亿美元，其中约 4 万亿美元需靠债务融资，相当于美",
-    deepDive: "",
-    category: "ai",
-    source: "Tomer Tunguz 博客（VC 分析）",
-    sourceUrl: "https://tomtunguz.com/the-4-trillion-dollar-ai-data-center-debt-wave",
-    publishedAt: "2026-09-04T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:00:02.634Z",
-    importance: "normal"
-  },
-  {
-    id: "geopolitics-1788570004339-2",
-    title: "美国特使前往俄罗斯和乌克兰，缓解伊朗紧张局势的努力不断升级 | Gate 新闻",
-    summary: "Lucas Bennett \n\n大宗商品\n\nKey Takeaways\n\n- 美国特使史蒂夫·维特科夫和贾里德·库什纳预计将在周末前往莫斯科和基辅参加外交会谈。",
-    deepDive: "",
-    category: "geopolitics",
-    source: "Exa 搜索",
-    sourceUrl: "https://www.gate.com/zh/news/detail/us-envoys-head-to-russia-and-ukraine-as-iran-de-escalation-push-grows-24012886",
-    publishedAt: "2026-09-04T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:00:04.339Z",
-    importance: "hot"
-  },
-  {
-    id: "geopolitics-1788570004340-5",
-    title: "美国对伊朗经济施压 是否扩大对华制裁引两党关注 - 国际观察 -  倍可亲",
-    summary: "京港台：2026-9-4 02:41| 来源：美国之音 | 评论( 1 )条 | 我来说几句 \n\n### 美国对伊朗经济施压 是否扩大对华制裁引两党关注\n\n 美",
-    deepDive: "",
-    category: "geopolitics",
-    source: "Exa 搜索",
-    sourceUrl: "https://www.backchina.com/news/2026/09/04/1045872.html",
-    publishedAt: "2026-09-04T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:00:04.340Z",
-    importance: "hot"
-  },
-  {
-    id: "geopolitics-1788570004341-8",
-    title: "大动作接连而来！欧盟加入美国制裁伊朗，韩国考虑向霍尔木兹海峡派兵提供者FX168",
-    summary: "大动作接连而来！欧盟加入美国制裁伊朗，韩国考虑向霍尔木兹海峡派兵\n\n风枫\n\n摘要：欧盟正式加入美国主导的对伊朗制裁行动“Operation Economic O",
-    deepDive: "",
-    category: "geopolitics",
-    source: "Exa 搜索",
-    sourceUrl: "https://www.fx168news.com/article/%E4%BC%8A%E6%9C%97-1087748",
-    publishedAt: "2026-09-04T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:00:04.342Z",
-    importance: "normal"
-  },
-  {
-    id: "finance-1788570005756-0",
-    title: "沃勒一席话击退加息恐慌：道指飙涨624点收于53686，9月加息概率骤降至50%_新浪财经_新浪网",
-    summary: "沃勒一席话击退加息恐慌：道指飙涨624点收于53686，9月加息概率骤降至50%\n\n 2026年09月04日 10:59 市场资讯\n\n2026年9月4日 | 美",
-    deepDive: "",
-    category: "finance",
-    source: "Exa 搜索",
-    sourceUrl: "https://finance.sina.com.cn/wm/2026-09-04/doc-iniqrpqw4102409.shtml",
-    publishedAt: "2026-09-04T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:00:05.756Z",
-    importance: "hot"
-  },
-  {
-    id: "finance-1788570005756-2",
-    title: "美联储放鸽引爆市场！美股创一月最大涨幅，科技股领涨，软件与云服务板块成最大亮点提供者FX168",
-    summary: "美联储放鸽引爆市场！美股创一月最大涨幅，科技股领涨，软件与云服务板块成最大亮点\n\n摘要：北京时间9月4日凌晨，美股三大指数集体收涨，创下近一个月来最大单日涨幅。",
-    deepDive: "",
-    category: "finance",
-    source: "Exa 搜索",
-    sourceUrl: "https://www.fx168news.com/article/1087546",
-    publishedAt: "2026-09-04T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:00:05.757Z",
-    importance: "hot"
-  },
-  {
-    id: "finance-1788570005757-3",
-    title: "TradingKey 每日市场简报：沃勒发言缓和加息预期！美股科技股集体上涨，SpaceX大涨超6%，比特币突破8万美元",
-    summary: "TradingKey\n\n作者 Block Tao\n\n2026年9月4日 01:13\n\n美股三大指数集体收涨，科技股与加密货币表现强势，AI基础设施概念股走势分化",
-    deepDive: "",
-    category: "finance",
-    source: "Exa 搜索",
-    sourceUrl: "https://www.tradingkey.com/zh-hans/analysis/stocks/us-stock/262150251-nvda-ai-chip-spacex-nvidia-wti-gold-xau-xag-btc-eth-tsla-dell-tradingkey",
-    publishedAt: "2026-09-04T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:00:05.757Z",
-    importance: "hot"
-  },
-  {
-    id: "finance-1788570005757-4",
-    title: "美联储理事沃勒将9月加息概率推至“五五开”！美元在99关口等待非农“一锤定音”_外汇动态报道",
-    summary: "——丹斯克银行指出，沃勒表示若8月通胀显示进展则倾向9月按兵不动，但若通胀偏热则考虑加息，将9月加息概率从60/40推近至50/50。美国8月ISM服务业升至5",
-    deepDive: "",
-    category: "finance",
-    source: "Exa 搜索",
-    sourceUrl: "https://fx678.com/C/20260904/202609041550139116.html",
-    publishedAt: "2026-09-04T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:00:05.757Z",
-    importance: "normal"
-  },
-  {
-    id: "finance-1788570005757-5",
-    title: "一夜过去，加息预期再变，美股、黄金齐涨！_新浪财经_新浪网",
-    summary: "一夜过去，加息预期再变，美股、黄金齐涨！\n\n 2026年09月04日 08:21 上海证券报 \n\n 美东时间9月3日，美股三大指数收盘全线上涨。截至收盘，道指涨",
-    deepDive: "",
-    category: "finance",
-    source: "Exa 搜索",
-    sourceUrl: "https://finance.sina.com.cn/wm/2026-09-04/doc-iniqriie6366605.shtml",
-    publishedAt: "2026-09-04T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:00:05.757Z",
-    importance: "hot"
-  },
-  {
-    id: "finance-1788570005757-6",
-    title: "非农前夕沃勒发言既转鸽，特斯拉、 SpaceX 、甲骨文等科技成长股大幅上涨，下周 CPI 成关键变量 - Odaily",
-    summary: "本轮反弹的性质更接近于预期端的阶段性修复，美联储并未释放任何关于开启降息周期的信号，货币政策整体立场依然偏紧。在8月CPI数据落地之前，海外市场的方向性仍存在较",
-    deepDive: "",
-    category: "finance",
-    source: "Exa 搜索",
-    sourceUrl: "https://www.odaily.news/zh-CN/post/5212861",
-    publishedAt: "2026-09-04T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:00:05.757Z",
-    importance: "hot"
-  },
-  {
-    id: "finance-1788570005757-7",
-    title: "非农前夕沃勒发言既转鸽，特斯拉、SpaceX、甲骨文等科技成长股大幅上涨，下周CPI成关键变量 | HTX资讯",
-    summary: "marsbit发布于2026-09-04更新于2026-09-04\n\n### 文章摘要\n\n昨晚美股市场在美联储理事沃勒偏鸽表态的刺激下全面上涨，三大指数走高，黄",
-    deepDive: "",
-    category: "finance",
-    source: "Exa 搜索",
-    sourceUrl: "https://www.htx.com/zh-cn/news/wallers-dovish-tilt-ahead-of-nfp-tech-growth-stocks-like-tes-oi8yBztG/",
-    publishedAt: "2026-09-04T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:00:05.757Z",
-    importance: "hot"
-  },
-  {
-    id: "finance-1788570005757-8",
-    title: "美股潮向（9 月 4 日）：沃勒放鸽纳指涨 1.4%，英伟达收购 Hugging Face | HTX资讯",
-    summary: "marsbit发布于2026-09-04更新于2026-09-04\n\n### 文章摘要\n\n**摘要：** 9月4日，美股三大指数全线收涨，纳指表现最佳涨1.40",
-    deepDive: "",
-    category: "finance",
-    source: "Exa 搜索",
-    sourceUrl: "https://www.htx.com/zh-cn/news/us-stock-market-trend-september-4-waller-turns-dovish-nasdaq-7hc7NBuL/",
-    publishedAt: "2026-09-04T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:00:05.757Z",
-    importance: "hot"
-  },
-  {
-    id: "robotics-1788570006836-8",
-    title: "拒绝视频生成，深度跃迁提出具身基座模型全新路线|轨迹|动作|视觉|序列|实验|机器人|多模态模型_网易订阅",
-    summary: "编辑｜杨文\n\n智能涌现的早期迹象，出现了。\n\n机器人手拿一包爆米花，正准备将它放进微波炉，此时实验人员把微波炉门关上。数采员从未采集过这种情况的数据。机器人继续",
-    deepDive: "",
-    category: "robotics",
-    source: "Exa 搜索",
-    sourceUrl: "https://www.163.com/dy/article/L608H4RO0511AQHO.html",
-    publishedAt: "2026-09-04T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:00:06.836Z",
-    importance: "hot"
   },
   {
     id: "ai-1788521663556-15",
@@ -8129,18 +9077,6 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "ai-1788494870658-15",
-    title: "Rohan Paul 解读 OpenAI GPT-6 Astra 117 页系统卡中的安全发现",
-    summary: "Rohan Paul 梳理 OpenAI GPT-6 Astra 117 页系统卡的要点：Astra 控制自身链式思维的能力从 GPT-5.6 Sol 的 16",
-    deepDive: "",
-    category: "ai",
-    source: "X：Rohan Paul (@rohanpaul_ai)",
-    sourceUrl: "https://x.com/rohanpaul_ai/status/2095616781880869271",
-    publishedAt: "2026-09-03T20:55:50.134Z",
-    updatedAt: "2026-09-04T04:07:50.658Z",
-    importance: "normal"
-  },
-  {
     id: "ai-1788521663556-20",
     title: "ARC-AGI-3 发布仅半年即被 Astra 饱和，进展快于 François Chollet 预期一倍",
     summary: "Sherwin Wu 表示自己曾觉得 ARC-AGI-3 很难，如今该基准已被 Astra 饱和。引用 François Chollet 的话称，ARC 3 发",
@@ -8149,30 +9085,6 @@ const hardcodedData: NewsData = {
     source: "X：Sherwin Wu（@sherwinwu）",
     sourceUrl: "https://x.com/sherwinwu/status/2095608725730119733",
     publishedAt: "2026-09-03T20:23:49.398Z",
-    updatedAt: "2026-09-04T11:34:23.556Z",
-    importance: "hot"
-  },
-  {
-    id: "ai-1788494870658-20",
-    title: "ARC-AGI-3 发布仅半年即被 Astra 饱和，进展快于 François Chollet 预期一倍",
-    summary: "Sherwin Wu 表示自己曾觉得 ARC-AGI-3 很难，如今该基准已被 Astra 饱和。引用 François Chollet 的话称，ARC 3 发",
-    deepDive: "",
-    category: "ai",
-    source: "X：Sherwin Wu（@sherwinwu）",
-    sourceUrl: "https://x.com/sherwinwu/status/2095608725730119733",
-    publishedAt: "2026-09-03T20:23:49.398Z",
-    updatedAt: "2026-09-04T04:07:50.658Z",
-    importance: "hot"
-  },
-  {
-    id: "ai-1788521663556-3",
-    title: "OpenAI 发布 GPT-6 Astra，多项基准达到 SOTA",
-    summary: "OpenAI 发布 GPT-6 Astra，在 FrontierMath Tier 4、ARC-AGI 3、TerminalBench-4.0 上达到 SOTA",
-    deepDive: "",
-    category: "ai",
-    source: "X：Sherwin Wu（@sherwinwu）",
-    sourceUrl: "https://x.com/sherwinwu/status/2095608486940086448",
-    publishedAt: "2026-09-03T20:22:52.466Z",
     updatedAt: "2026-09-04T11:34:23.556Z",
     importance: "hot"
   },
@@ -8201,30 +9113,6 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "ai-1788494870658-14",
-    title: "François Chollet 评 GPT-6 Astra 在 ARC-AGI-3 上的表现",
-    summary: "François Chollet 发文称 GPT-6 Astra 在交互式推理任务上带来阶跃式能力提升，使用标准 harness 在 ARC-AGI-3 上得 ",
-    deepDive: "",
-    category: "ai",
-    source: "X：Francois Chollet (@fchollet)",
-    sourceUrl: "https://x.com/fchollet/status/2095598451115614371",
-    publishedAt: "2026-09-03T19:42:59.739Z",
-    updatedAt: "2026-09-04T04:07:50.658Z",
-    importance: "normal"
-  },
-  {
-    id: "ai-1788521663556-2",
-    title: "OpenAI 开始发布 GPT-6 Astra，面向全部 Plus 用户开放",
-    summary: "OpenAI 宣布开始发布 GPT-6 Astra，称正以尽可能谨慎和快速的方式推进，重点让全部 Plus 用户可用，而不只限 Pro、Business 和 E",
-    deepDive: "",
-    category: "ai",
-    source: "X：Tibo (@thsottiaux)",
-    sourceUrl: "https://x.com/thsottiaux/status/2095597168816226335",
-    publishedAt: "2026-09-03T19:37:54.015Z",
-    updatedAt: "2026-09-04T11:34:23.556Z",
-    importance: "hot"
-  },
-  {
     id: "ai-1788494870656-2",
     title: "OpenAI 开始发布 GPT-6 Astra，面向全部 Plus 用户开放",
     summary: "OpenAI 宣布开始发布 GPT-6 Astra，称正以尽可能谨慎和快速的方式推进，重点让全部 Plus 用户可用，而不只限 Pro、Business 和 E",
@@ -8249,18 +9137,6 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "ai-1788494870657-13",
-    title: "Artificial Analysis 评测 GPT-6 Astra：编码智能体追平 Fable 5 但价格涨至 2.5 倍",
-    summary: "Artificial Analysis 发布 GPT-6 Astra 评测，其 Coding Agent Index 得分 67，约等于 Claude Opus",
-    deepDive: "",
-    category: "ai",
-    source: "X：Artificial Analysis (@ArtificialAnlys)",
-    sourceUrl: "https://x.com/ArtificialAnlys/status/2095595489031000350",
-    publishedAt: "2026-09-03T19:31:13.523Z",
-    updatedAt: "2026-09-04T04:07:50.657Z",
-    importance: "hot"
-  },
-  {
     id: "ai-1788521663556-7",
     title: "OpenAI 发布 GPT-6 Astra，基准全面超越 Claude Fable 5.1",
     summary: "作者引用 OpenAI 官方基准称 GPT-6 Astra 以 99.9% 饱和 ARC-AGI-3，在 ExploitBench 得 100%，并在各项基准上",
@@ -8269,30 +9145,6 @@ const hardcodedData: NewsData = {
     source: "X：Kim (@kimmonismus)",
     sourceUrl: "https://x.com/kimmonismus/status/2095589174686400914",
     publishedAt: "2026-09-03T19:06:08.066Z",
-    updatedAt: "2026-09-04T11:34:23.556Z",
-    importance: "hot"
-  },
-  {
-    id: "ai-1788494870656-7",
-    title: "OpenAI 发布 GPT-6 Astra，基准全面超越 Claude Fable 5.1",
-    summary: "作者引用 OpenAI 官方基准称 GPT-6 Astra 以 99.9% 饱和 ARC-AGI-3，在 ExploitBench 得 100%，并在各项基准上",
-    deepDive: "",
-    category: "ai",
-    source: "X：Kim (@kimmonismus)",
-    sourceUrl: "https://x.com/kimmonismus/status/2095589174686400914",
-    publishedAt: "2026-09-03T19:06:08.066Z",
-    updatedAt: "2026-09-04T04:07:50.657Z",
-    importance: "hot"
-  },
-  {
-    id: "ai-1788521663556-6",
-    title: "OpenAI 发布 GPT-6 Astra，官方基准显示 ARC-AGI-3 得分 99.9%",
-    summary: "Kim (@kimmonismus) 在社交平台X上发布内容，其账号信息显示为用户名“Kim”，括号内标注了其账号标识“@kimmonismus”。该条动态未提",
-    deepDive: "",
-    category: "ai",
-    source: "X：Kim (@kimmonismus)",
-    sourceUrl: "https://x.com/kimmonismus/status/2095585966102614182",
-    publishedAt: "2026-09-03T18:53:23.080Z",
     updatedAt: "2026-09-04T11:34:23.556Z",
     importance: "hot"
   },
@@ -8357,30 +9209,6 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "geopolitics-1788571852201-9",
-    title: "地缘争端白热化经济利益最大化- 曼谷专栏- RFI - 法国国际广播电台",
-    summary: "发表时间： 03/09/2026 - 12:56\n\n 9月初刚刚结束的G20财长会和上合组织峰会，向世界揭开了大国元首穿梭外交背后的政治与经济博弈序幕。东南亚观",
-    deepDive: "",
-    category: "geopolitics",
-    source: "Exa 搜索",
-    sourceUrl: "https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E6%9B%BC%E8%B0%B7%E4%B8%93%E6%A0%8F/20260903-%E5%9C%B0%E7%BC%98%E4%BA%89%E7%AB%AF%E7%99%BD%E7%83%AD%E5%8C%96-%E7%BB%8F%E6%B5%8E%E5%88%A9%E7%9B%8A%E6%9C%80%E5%A4%A7%E5%8C%96",
-    publishedAt: "2026-09-03T01:30:57.983Z",
-    updatedAt: "2026-09-05T01:30:52.201Z",
-    importance: "hot"
-  },
-  {
-    id: "ai-1788521663556-19",
-    title: "Meta Muse Spark 1.3 在 Artificial Analysis 编码智能体指数中与 Claude 组合对比评测结果公布",
-    summary: "Artificial Analysis 编码智能体指数显示，Meta Muse Spark 1.3 (max) 在 Muse Code 下得 68 分，仅次于 ",
-    deepDive: "",
-    category: "ai",
-    source: "X：Alexandr Wang（Scale AI 创始人/Meta 首席 AI 官） (@alexandr_wang)",
-    sourceUrl: "https://x.com/alexandr_wang/status/2095318449602138577",
-    publishedAt: "2026-09-03T01:10:22.176Z",
-    updatedAt: "2026-09-04T11:34:23.556Z",
-    importance: "normal"
-  },
-  {
     id: "ai-1788494870658-19",
     title: "Meta Muse Spark 1.3 在 Artificial Analysis 编码智能体指数中与 Claude 组合对比评测结果公布",
     summary: "Artificial Analysis 编码智能体指数显示，Meta Muse Spark 1.3 (max) 在 Muse Code 下得 68 分，仅次于 ",
@@ -8390,18 +9218,6 @@ const hardcodedData: NewsData = {
     sourceUrl: "https://x.com/alexandr_wang/status/2095318449602138577",
     publishedAt: "2026-09-03T01:10:22.176Z",
     updatedAt: "2026-09-04T04:07:50.658Z",
-    importance: "normal"
-  },
-  {
-    id: "geopolitics-1788570004339-3",
-    title: "王毅称习近平中亚与中东之旅对改革完善全球治理具现实及深远意义",
-    summary: "Exa 搜索（Exa）是一家专注于人工智能与深度学习技术的搜索引擎初创公司，近期完成新一轮融资，总额达 1700 万美元。本轮融资由 Lightspeed Ve",
-    deepDive: "",
-    category: "geopolitics",
-    source: "Exa 搜索",
-    sourceUrl: "https://gbcode.rthk.hk/TuniS/news.rthk.hk/rthk/ch/component/k2/1868693-20260903.htm",
-    publishedAt: "2026-09-03T01:00:04.115Z",
-    updatedAt: "2026-09-05T01:00:04.340Z",
     importance: "normal"
   },
   {
@@ -8417,7 +9233,7 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "geopolitics-1788571852200-4",
+    id: "geopolitics-1788570004340-4",
     title: "中国成美伊对抗关键，伊外长紧扣王毅手掌，美“暗示”中方已站队|外交|伊朗核问题_网易订阅",
     summary: "为了拉拢中国，美方眼看着硬的不成，又想来软的，有用吗？伊朗用一招表示自己不惧美国诡计！\n\n在9月1号的上海合作组织峰会期间，除了最高级别的对话外，外长之间的交流",
     deepDive: "",
@@ -8425,11 +9241,11 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://www.163.com/dy/article/L5TVPKV00556BQIP.html",
     publishedAt: "2026-09-03T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:30:52.200Z",
+    updatedAt: "2026-09-05T01:00:04.340Z",
     importance: "hot"
   },
   {
-    id: "robotics-1788571854764-5",
+    id: "robotics-1788570006831-5",
     title: "【新闻随笔】人形机器人运动会刷新的不只是数字\n_光明网",
     summary: "【新闻随笔】\n\n 作者：张 林（上海大学新闻传播学院智能传播系副主任、副教授）\n\n 近日，第二届世界人形机器人运动会圆满落幕。仅用一年，天工Ultra便将百米成",
     deepDive: "",
@@ -8437,11 +9253,11 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://news.gmw.cn/2026-09/03/content_38982124.htm",
     publishedAt: "2026-09-03T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:30:54.764Z",
+    updatedAt: "2026-09-05T01:00:06.832Z",
     importance: "hot"
   },
   {
-    id: "robotics-1788571854765-9",
+    id: "robotics-1788570006836-9",
     title: "仅数百条无本体数据就让机器人学会灵巧操作，自变量向全球发布 TwinDEX_互联网_艾瑞网",
     summary: "导语：\n\n今天，自变量发布 TwinDEX——一对孪生的三指九自由度灵巧操作手：一个可穿戴，用于数据采集；一个装在机器人上，用于真机部署。这首次实现了纯无本体数",
     deepDive: "",
@@ -8449,11 +9265,11 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://news.iresearch.cn/yx/2026/09/565208.shtml",
     publishedAt: "2026-09-03T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:30:54.765Z",
+    updatedAt: "2026-09-05T01:00:06.837Z",
     importance: "hot"
   },
   {
-    id: "ai-1788521663554-0",
+    id: "ai-1788494870650-0",
     title: "OpenAI 发布 GPT-6 Astra：1.05M 上下文的计算机操作模型，因触及 Critical 网络安全阈值而限制访问",
     summary: "OpenAI 发布 GPT-6 Astra，定位为计算机操作模型，提供 1,050,000 token 上下文窗口、128,000 最大输出 token，202",
     deepDive: "",
@@ -8461,11 +9277,11 @@ const hardcodedData: NewsData = {
     source: "MarkTechPost（RSS）",
     sourceUrl: "https://www.marktechpost.com/2026/09/03/openai-releases-gpt-6-astra-a-1-05m-context-computer-use-model-gated-behind-a-critical-cyber-threshold",
     publishedAt: "2026-09-03T00:00:00.000Z",
-    updatedAt: "2026-09-04T11:34:23.555Z",
+    updatedAt: "2026-09-04T04:07:50.653Z",
     importance: "hot"
   },
   {
-    id: "ai-1788521663555-1",
+    id: "ai-1788494870654-1",
     title: "OpenAI 发布新模型 Astra，主打计算机与浏览器操作但因 opaque recurrence 引发争议",
     summary: "OpenAI 发布最新模型 Astra，称其为迄今最强大模型，主打计算机和浏览器操作，先面向 Daybreak 网络安全计划客户开放，随后一周内覆盖 Pro、P",
     deepDive: "",
@@ -8473,11 +9289,11 @@ const hardcodedData: NewsData = {
     source: "TechCrunch：AI（RSS）",
     sourceUrl: "https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model",
     publishedAt: "2026-09-03T00:00:00.000Z",
-    updatedAt: "2026-09-04T11:34:23.555Z",
+    updatedAt: "2026-09-04T04:07:50.656Z",
     importance: "hot"
   },
   {
-    id: "ai-1788521663556-4",
+    id: "ai-1788494870656-4",
     title: "IFM 发布 K2 Horizon 六款开源模型，覆盖 0.9B 到 375B-A23B 并开放完整训练生命周期",
     summary: "IFM 发布 K2 Horizon 模型系列，共六个模型：375B-A23B、36B-A4B、32B、7B、3.7B 和 0.9B，均以 Apache 2.0 ",
     deepDive: "",
@@ -8485,19 +9301,19 @@ const hardcodedData: NewsData = {
     source: "Hacker News 热门（buzzing.cc 中文翻译）",
     sourceUrl: "https://ifm.ai/blog/k2",
     publishedAt: "2026-09-03T00:00:00.000Z",
-    updatedAt: "2026-09-04T11:34:23.556Z",
+    updatedAt: "2026-09-04T04:07:50.656Z",
     importance: "hot"
   },
   {
-    id: "ai-1788521663556-5",
+    id: "ai-1788494870656-5",
     title: "OpenAI 发布 GPT-6 Astra，首个达到关键级网络安全能力门槛的模型",
-    summary: "IT之家发布消息，围绕科技与数码领域的最新动态展开报道。内容涉及行业新品发布、技术更新及市场趋势分析，具体细节包括产品参数、功能亮点及用户反馈等。报道以客观视角",
+    summary: "IT之家于2025年1月发布报道，聚焦科技数码领域最新动态。报道内容涵盖多款新品发布、行业技术突破及市场数据更新，具体涉及智能手机、智能硬件、软件服务及产业链上",
     deepDive: "",
     category: "ai",
     source: "IT之家（RSS）",
     sourceUrl: "https://www.ithome.com/0/998/208.htm",
     publishedAt: "2026-09-03T00:00:00.000Z",
-    updatedAt: "2026-09-04T11:34:23.556Z",
+    updatedAt: "2026-09-04T04:07:50.656Z",
     importance: "hot"
   },
   {
@@ -8513,7 +9329,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "ai-1788521663556-9",
+    id: "ai-1788494870657-9",
     title: "xAI 设计 Grok Bot：为持久化智能体重构交互界面",
     summary: "xAI 发布设计文章，介绍 Grok Bot 如何为超越单次会话的持久化智能体设计界面。产品以 Bot 为主要对象而非会话，Bot 拥有身份、记忆、自己的计算机",
     deepDive: "",
@@ -8521,7 +9337,7 @@ const hardcodedData: NewsData = {
     source: "xAI：News（网页）",
     sourceUrl: "https://x.ai/news/designing-grok-bot",
     publishedAt: "2026-09-03T00:00:00.000Z",
-    updatedAt: "2026-09-04T11:34:23.556Z",
+    updatedAt: "2026-09-04T04:07:50.657Z",
     importance: "hot"
   },
   {
@@ -8561,15 +9377,15 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "ai-1788521663556-16",
+    id: "ai-1788494870658-16",
     title: "Gary Marcus 评 GPT-6 Astra：进步明显但鲁棒性与可监控性存疑",
-    summary: "纽约大学名誉教授、AI批评者Gary Marcus在最新评论中指出，当前人工智能发展正走向“不可信任”的危险方向。他列举了多项具体案例：谷歌Bard在演示中错误",
+    summary: "认知科学家、纽约大学名誉教授Gary Marcus在最新评论中指出，当前以深度学习为核心的人工智能发展路径存在根本性缺陷，无法通往可信任的AI系统。他强调，现有",
     deepDive: "",
     category: "ai",
     source: "Gary Marcus：The Road to AI We Can Trust（RSS）",
     sourceUrl: "https://garymarcus.substack.com/p/hot-take-on-gpt-6-astra",
     publishedAt: "2026-09-03T00:00:00.000Z",
-    updatedAt: "2026-09-04T11:34:23.556Z",
+    updatedAt: "2026-09-04T04:07:50.658Z",
     importance: "normal"
   },
   {
@@ -8585,7 +9401,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "ai-1788521663556-18",
+    id: "ai-1788494870658-18",
     title: "Google Cloud 教你用 Cloud Run instances 以每月 $5.70 搭建常驻 Agent",
     summary: "Shir Meir Lador 在 Google AI 开发者博客介绍如何用 Cloud Run instances 以每月 $5.70（1 vCPU、1Gi ",
     deepDive: "",
@@ -8593,7 +9409,7 @@ const hardcodedData: NewsData = {
     source: "Google AI：DEV 作者专属（RSS）",
     sourceUrl: "https://dev.to/googleai/build-a-long-running-agent-in-the-cloud-for-570month-113c",
     publishedAt: "2026-09-03T00:00:00.000Z",
-    updatedAt: "2026-09-04T11:34:23.556Z",
+    updatedAt: "2026-09-04T04:07:50.658Z",
     importance: "normal"
   },
   {
@@ -8633,7 +9449,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "robotics-1788521669408-6",
+    id: "robotics-1788494874448-5",
     title: "从样品到商品，郎朗跨界合作启元机器人，国产消费级人形机器人来了！_新浪财经_新浪网",
     summary: "（来源：上观新闻）\n\n9月2日，国际钢琴大师郎朗正式官宣与上纬新材旗下启元机器人达成合作，这是全球首次实现国际顶级艺术大师与具身智能的跨界联动，生动展现了消费级",
     deepDive: "",
@@ -8641,7 +9457,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://finance.sina.com.cn/jjxw/2026-09-03/doc-iniqpvfs4363864.shtml",
     publishedAt: "2026-09-03T00:00:00.000Z",
-    updatedAt: "2026-09-04T11:34:29.408Z",
+    updatedAt: "2026-09-04T04:07:54.448Z",
     importance: "normal"
   },
   {
@@ -8753,210 +9569,6 @@ const hardcodedData: NewsData = {
     importance: "normal"
   },
   {
-    id: "geopolitics-1788570004340-4",
-    title: "中国成美伊对抗关键，伊外长紧扣王毅手掌，美“暗示”中方已站队|外交|伊朗核问题_网易订阅",
-    summary: "为了拉拢中国，美方眼看着硬的不成，又想来软的，有用吗？伊朗用一招表示自己不惧美国诡计！\n\n在9月1号的上海合作组织峰会期间，除了最高级别的对话外，外长之间的交流",
-    deepDive: "",
-    category: "geopolitics",
-    source: "Exa 搜索",
-    sourceUrl: "https://www.163.com/dy/article/L5TVPKV00556BQIP.html",
-    publishedAt: "2026-09-03T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:00:04.340Z",
-    importance: "hot"
-  },
-  {
-    id: "finance-1788570005757-9",
-    title: "沃勒一句话撬动全球市场！道指暴涨超600点、黄金涨破4500美元、美元跌至一周低点、比特币冲破8.1万提供者FX168",
-    summary: "沃勒一句话撬动全球市场！道指暴涨超600点、黄金涨破4500美元、美元跌至一周低点、比特币冲破8.1万\n\n夏洛特\n\n摘要：美联储理事沃勒的一句话，几乎同时撬动了",
-    deepDive: "",
-    category: "finance",
-    source: "Exa 搜索",
-    sourceUrl: "https://www.fx168news.com/article/%E7%BE%8E%E8%81%94%E5%82%A8%E5%8A%A0%E6%81%AF-1087458",
-    publishedAt: "2026-09-03T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:00:05.758Z",
-    importance: "hot"
-  },
-  {
-    id: "robotics-1788570006831-5",
-    title: "【新闻随笔】人形机器人运动会刷新的不只是数字\n_光明网",
-    summary: "【新闻随笔】\n\n 作者：张 林（上海大学新闻传播学院智能传播系副主任、副教授）\n\n 近日，第二届世界人形机器人运动会圆满落幕。仅用一年，天工Ultra便将百米成",
-    deepDive: "",
-    category: "robotics",
-    source: "Exa 搜索",
-    sourceUrl: "https://news.gmw.cn/2026-09/03/content_38982124.htm",
-    publishedAt: "2026-09-03T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:00:06.832Z",
-    importance: "hot"
-  },
-  {
-    id: "robotics-1788570006836-9",
-    title: "仅数百条无本体数据就让机器人学会灵巧操作，自变量向全球发布 TwinDEX_互联网_艾瑞网",
-    summary: "导语：\n\n今天，自变量发布 TwinDEX——一对孪生的三指九自由度灵巧操作手：一个可穿戴，用于数据采集；一个装在机器人上，用于真机部署。这首次实现了纯无本体数",
-    deepDive: "",
-    category: "robotics",
-    source: "Exa 搜索",
-    sourceUrl: "https://news.iresearch.cn/yx/2026/09/565208.shtml",
-    publishedAt: "2026-09-03T00:00:00.000Z",
-    updatedAt: "2026-09-05T01:00:06.837Z",
-    importance: "hot"
-  },
-  {
-    id: "ai-1788494870650-0",
-    title: "OpenAI 发布 GPT-6 Astra：1.05M 上下文的计算机操作模型，因触及 Critical 网络安全阈值而限制访问",
-    summary: "OpenAI 发布 GPT-6 Astra，定位为计算机操作模型，提供 1,050,000 token 上下文窗口、128,000 最大输出 token，202",
-    deepDive: "",
-    category: "ai",
-    source: "MarkTechPost（RSS）",
-    sourceUrl: "https://www.marktechpost.com/2026/09/03/openai-releases-gpt-6-astra-a-1-05m-context-computer-use-model-gated-behind-a-critical-cyber-threshold",
-    publishedAt: "2026-09-03T00:00:00.000Z",
-    updatedAt: "2026-09-04T04:07:50.653Z",
-    importance: "hot"
-  },
-  {
-    id: "ai-1788494870654-1",
-    title: "OpenAI 发布新模型 Astra，主打计算机与浏览器操作但因 opaque recurrence 引发争议",
-    summary: "OpenAI 发布最新模型 Astra，称其为迄今最强大模型，主打计算机和浏览器操作，先面向 Daybreak 网络安全计划客户开放，随后一周内覆盖 Pro、P",
-    deepDive: "",
-    category: "ai",
-    source: "TechCrunch：AI（RSS）",
-    sourceUrl: "https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model",
-    publishedAt: "2026-09-03T00:00:00.000Z",
-    updatedAt: "2026-09-04T04:07:50.656Z",
-    importance: "hot"
-  },
-  {
-    id: "ai-1788494870656-4",
-    title: "IFM 发布 K2 Horizon 六款开源模型，覆盖 0.9B 到 375B-A23B 并开放完整训练生命周期",
-    summary: "IFM 发布 K2 Horizon 模型系列，共六个模型：375B-A23B、36B-A4B、32B、7B、3.7B 和 0.9B，均以 Apache 2.0 ",
-    deepDive: "",
-    category: "ai",
-    source: "Hacker News 热门（buzzing.cc 中文翻译）",
-    sourceUrl: "https://ifm.ai/blog/k2",
-    publishedAt: "2026-09-03T00:00:00.000Z",
-    updatedAt: "2026-09-04T04:07:50.656Z",
-    importance: "hot"
-  },
-  {
-    id: "ai-1788494870656-5",
-    title: "OpenAI 发布 GPT-6 Astra，首个达到关键级网络安全能力门槛的模型",
-    summary: "IT之家于2025年1月发布报道，聚焦科技数码领域最新动态。报道内容涵盖多款新品发布、行业技术突破及市场数据更新，具体涉及智能手机、智能硬件、软件服务及产业链上",
-    deepDive: "",
-    category: "ai",
-    source: "IT之家（RSS）",
-    sourceUrl: "https://www.ithome.com/0/998/208.htm",
-    publishedAt: "2026-09-03T00:00:00.000Z",
-    updatedAt: "2026-09-04T04:07:50.656Z",
-    importance: "hot"
-  },
-  {
-    id: "ai-1788494870657-8",
-    title: "Hugging Face 发布开源工具 funes，为编码智能体提供可本地持有的记忆层",
-    summary: "Hugging Face 发布开源工具 funes，为 Claude Code、Codex、pi、Hermes 等编码智能体提供本地记忆层，把已有会话记录索引成",
-    deepDive: "",
-    category: "ai",
-    source: "Hugging Face：Blog（RSS）",
-    sourceUrl: "https://huggingface.co/blog/funes",
-    publishedAt: "2026-09-03T00:00:00.000Z",
-    updatedAt: "2026-09-04T04:07:50.657Z",
-    importance: "hot"
-  },
-  {
-    id: "ai-1788494870657-9",
-    title: "xAI 设计 Grok Bot：为持久化智能体重构交互界面",
-    summary: "xAI 发布设计文章，介绍 Grok Bot 如何为超越单次会话的持久化智能体设计界面。产品以 Bot 为主要对象而非会话，Bot 拥有身份、记忆、自己的计算机",
-    deepDive: "",
-    category: "ai",
-    source: "xAI：News（网页）",
-    sourceUrl: "https://x.ai/news/designing-grok-bot",
-    publishedAt: "2026-09-03T00:00:00.000Z",
-    updatedAt: "2026-09-04T04:07:50.657Z",
-    importance: "hot"
-  },
-  {
-    id: "ai-1788494870657-10",
-    title: "OpenAI 推出 Daybreak for Frontline Defenders，投入10亿美元支持一线网络防御",
-    summary: "OpenAI 发布 Daybreak for Frontline Defenders 全球计划，承诺提供10亿美元的 Daybreak 补贴访问、培训、技术支持",
-    deepDive: "",
-    category: "ai",
-    source: "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-    sourceUrl: "https://openai.com/index/daybreak-for-frontline-defenders",
-    publishedAt: "2026-09-03T00:00:00.000Z",
-    updatedAt: "2026-09-04T04:07:50.657Z",
-    importance: "hot"
-  },
-  {
-    id: "ai-1788494870657-11",
-    title: "xAI 发布 Grok Bot 企业版，Grok 与 Cursor Enterprise 客户两周免费",
-    summary: "xAI公司于2025年3月正式推出其最新一代大语言模型Grok-4，该模型在多项基准测试中表现优异，包括在MMLU-Pro上取得87.3%的准确率，在Human",
-    deepDive: "",
-    category: "ai",
-    source: "xAI：News（网页）",
-    sourceUrl: "https://x.ai/news/grok-bot-for-enterprise",
-    publishedAt: "2026-09-03T00:00:00.000Z",
-    updatedAt: "2026-09-04T04:07:50.657Z",
-    importance: "hot"
-  },
-  {
-    id: "ai-1788494870657-12",
-    title: "NVIDIA 宣布以 129.303 亿美元收购 Hugging Face",
-    summary: "NVIDIA 宣布已同意以 12,930,300,000 美元收购 Hugging Face，黄仁勋在官方博客公布了这一消息。Hugging Face 目前有超",
-    deepDive: "",
-    category: "ai",
-    source: "NVIDIA Blog（RSS）",
-    sourceUrl: "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face",
-    publishedAt: "2026-09-03T00:00:00.000Z",
-    updatedAt: "2026-09-04T04:07:50.657Z",
-    importance: "normal"
-  },
-  {
-    id: "ai-1788494870658-16",
-    title: "Gary Marcus 评 GPT-6 Astra：进步明显但鲁棒性与可监控性存疑",
-    summary: "认知科学家、纽约大学名誉教授Gary Marcus在最新评论中指出，当前以深度学习为核心的人工智能发展路径存在根本性缺陷，无法通往可信任的AI系统。他强调，现有",
-    deepDive: "",
-    category: "ai",
-    source: "Gary Marcus：The Road to AI We Can Trust（RSS）",
-    sourceUrl: "https://garymarcus.substack.com/p/hot-take-on-gpt-6-astra",
-    publishedAt: "2026-09-03T00:00:00.000Z",
-    updatedAt: "2026-09-04T04:07:50.658Z",
-    importance: "normal"
-  },
-  {
-    id: "ai-1788494870658-17",
-    title: "Tom Tunguz 解析 Meta Muse Spark 双轨定价背后的数据换算力逻辑",
-    summary: "Tomer Tunguz在其VC分析博客中，基于对2024年第一季度至2025年第一季度美国风险投资市场的追踪数据，揭示了早期创业公司融资环境的显著变化。核心数",
-    deepDive: "",
-    category: "ai",
-    source: "Tomer Tunguz 博客（VC 分析）",
-    sourceUrl: "https://tomtunguz.com/the-ads-model-for-prompts-vertically-integrates-ai",
-    publishedAt: "2026-09-03T00:00:00.000Z",
-    updatedAt: "2026-09-04T04:07:50.658Z",
-    importance: "hot"
-  },
-  {
-    id: "ai-1788494870658-18",
-    title: "Google Cloud 教你用 Cloud Run instances 以每月 $5.70 搭建常驻 Agent",
-    summary: "Shir Meir Lador 在 Google AI 开发者博客介绍如何用 Cloud Run instances 以每月 $5.70（1 vCPU、1Gi ",
-    deepDive: "",
-    category: "ai",
-    source: "Google AI：DEV 作者专属（RSS）",
-    sourceUrl: "https://dev.to/googleai/build-a-long-running-agent-in-the-cloud-for-570month-113c",
-    publishedAt: "2026-09-03T00:00:00.000Z",
-    updatedAt: "2026-09-04T04:07:50.658Z",
-    importance: "normal"
-  },
-  {
-    id: "robotics-1788494874448-5",
-    title: "从样品到商品，郎朗跨界合作启元机器人，国产消费级人形机器人来了！_新浪财经_新浪网",
-    summary: "（来源：上观新闻）\n\n9月2日，国际钢琴大师郎朗正式官宣与上纬新材旗下启元机器人达成合作，这是全球首次实现国际顶级艺术大师与具身智能的跨界联动，生动展现了消费级",
-    deepDive: "",
-    category: "robotics",
-    source: "Exa 搜索",
-    sourceUrl: "https://finance.sina.com.cn/jjxw/2026-09-03/doc-iniqpvfs4363864.shtml",
-    publishedAt: "2026-09-03T00:00:00.000Z",
-    updatedAt: "2026-09-04T04:07:54.448Z",
-    importance: "normal"
-  },
-  {
     id: "ai-1788397201510-1",
     title: "Meta 发布 Muse Spark 1.3，智能体与科学推理能力提升",
     summary: "Meta 发布 Muse Spark 1.3，是五个月内第四个 Muse Spark 版本。xhigh 版在 Artificial Analysis Intel",
@@ -9038,18 +9650,6 @@ const hardcodedData: NewsData = {
     sourceUrl: "https://www.voachinese.com/amp/at-sco-summit-china-showcases-an-alternative-order-even-as-divisions-limit-action-20260902/8193302.html",
     publishedAt: "2026-09-02T11:34:30.306Z",
     updatedAt: "2026-09-04T11:34:26.515Z",
-    importance: "hot"
-  },
-  {
-    id: "geopolitics-1788494872088-2",
-    title: "中国欲借上合峰会挑战美国主导秩序，但内部分歧暴露行动力局限",
-    summary: "中国欲借上合峰会挑战美国主导秩序，但内部分歧暴露行动力局限\n\n华盛顿 —\n\n中国国家主席习近平与俄罗斯、印度和伊朗等国领导人共同出席在吉尔吉斯斯坦首都比什凯克举",
-    deepDive: "",
-    category: "geopolitics",
-    source: "Exa 搜索",
-    sourceUrl: "https://www.voachinese.com/amp/at-sco-summit-china-showcases-an-alternative-order-even-as-divisions-limit-action-20260902/8193302.html",
-    publishedAt: "2026-09-02T04:07:51.844Z",
-    updatedAt: "2026-09-04T04:07:52.088Z",
     importance: "hot"
   },
   {
@@ -9387,18 +9987,6 @@ const hardcodedData: NewsData = {
     publishedAt: "2026-09-02T00:00:00.000Z",
     updatedAt: "2026-09-03T01:00:06.352Z",
     importance: "hot"
-  },
-  {
-    id: "robotics-1788494874445-0",
-    title: "CJ大韩通运迈出物流业首个AI人形机器人商用化“第一步” - 阿视亚经济",
-    summary: "by Lee Seungjin\n\nPublished 03 Sep.2026 08:38(KST) \n\n## 包装流程投入两台人形机器人 推进将人形机器人应用范",
-    deepDive: "",
-    category: "robotics",
-    source: "Exa 搜索",
-    sourceUrl: "https://www.asiae.co.kr/cn/article/2026090308385213768",
-    publishedAt: "2026-09-02T00:00:00.000Z",
-    updatedAt: "2026-09-04T04:07:54.445Z",
-    importance: "normal"
   },
   {
     id: "geopolitics-1788310804488-9",
