@@ -1,5 +1,4 @@
 // Client-safe utilities - no server deps
-import { NewsItem, Category } from "@/types";
 
 export function formatTime(isoString: string): string {
   const date = new Date(isoString);

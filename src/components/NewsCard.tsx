@@ -100,7 +100,6 @@ export default function NewsCard({ item }: NewsCardProps) {
     // 正则：匹配 **text** 或 [text](url) 或普通文本
     const regex = /(\*\*(.+?)\*\*)|(\*(.+?)\*)|(\[(.+?)\]\((.+?)\))|([^*[\n]+)/g;
     let match;
-    let lastIndex = 0;
     
     while ((match = regex.exec(text)) !== null) {
       if (match[1]) {

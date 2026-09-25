@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { CATEGORIES, Category, CATEGORY_ICONS } from "@/types";
+import { CATEGORIES, CATEGORY_ICONS } from "@/types";
 import { useState, useEffect } from "react";
 
 export default function Sidebar() {
