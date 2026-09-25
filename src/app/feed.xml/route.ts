@@ -6,7 +6,7 @@ export const dynamic = "force-static";
 
 export async function GET() {
   const data = getAllNews();
-  const siteUrl = "https://li-news.vercel.app";
+  const siteUrl = "https://li-news.pages.dev";
 
   const itemsXml = data.items
     .map(
