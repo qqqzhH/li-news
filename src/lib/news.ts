@@ -2,8 +2,188 @@
 import { NewsData, NewsItem, Category } from "@/types";
 
 const hardcodedData: NewsData = {
-  lastUpdated: "2026-09-25T01:02:08.822Z",
+  lastUpdated: "2026-09-25T16:22:10.631Z",
   items: [
+  {
+    id: "geopolitics-1790353180531-0",
+    title: "聚焦中美元首峰会：军机表演和盛大仪式背后的博弈与分歧 - 纽约时报中文网",
+    summary: "ZOLAN KANNO-YOUNGS\n\n2026年9月25日\n\n周四，习近平和彭丽媛在白宫进行国事访问期间与特朗普和梅拉尼娅合影。 Haiyun Jiang/T",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://cn.nytimes.com/world/20260925/trump-xi-us-china-summit/",
+    publishedAt: "2026-09-25T00:00:00.000Z",
+    updatedAt: "2026-09-25T16:19:40.532Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1790353180533-2",
+    title: "习近平访美：一场象征意义浓厚的特习会 - ABC News",
+    summary: "“Exa 搜索”这一表述缺乏具体上下文，无法确认所指对象。若指 Exa（原 Metaphor）公司，其核心业务为面向 AI 的搜索引擎 API，2024 年完成",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.abc.net.au/chinese/2026-09-25/trump-welcomes-china-s-xi-with-fanfare-but-no-breakthroughs/107196682",
+    publishedAt: "2026-09-25T00:00:00.000Z",
+    updatedAt: "2026-09-25T16:19:40.534Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1790353180534-3",
+    title: "习近平出席美国总统特朗普在白宫举行的欢迎仪式__中国政府网",
+    summary: "当地时间9月24日上午，美国总统特朗普在白宫举行隆重仪式，热烈欢迎中国国家主席习近平对美国进行国事访问。\n\n9月的华盛顿秋色宜人，中美两国国旗迎风飘扬。习近平和",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.gov.cn/yaowen/liebiao/202609/content_7082030.htm",
+    publishedAt: "2026-09-25T00:00:00.000Z",
+    updatedAt: "2026-09-25T16:19:40.534Z",
+    importance: "normal"
+  },
+  {
+    id: "geopolitics-1790353180535-6",
+    title: "报道称美伊探讨分阶段重启霍尔木兹海峡，伊朗官媒否认、总统喊话“中期选举前签协议”、军方威胁“将战事扩大至印度洋地区” - 华尔街见闻",
+    summary: "“Exa 搜索”这一表述在所提供的原文中并未包含任何可提取的新闻要素，既无核心数据、具体数字、人名、机构名，也无时间节点或事件描述，因此无法生成符合要求的新闻摘",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://wallstreetcn.com/articles/3782499",
+    publishedAt: "2026-09-25T00:00:00.000Z",
+    updatedAt: "2026-09-25T16:19:40.535Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1790353180535-7",
+    title: "特习会后，美中分歧仍未见突破，专家指未尝不是好事",
+    summary: "“Exa 搜索”这一短语信息量极为有限，仅包含一个专有名词“Exa”与“搜索”一词，未提供任何可核实的核心数据、具体数字、人名、机构名或时间节点。由于原文缺乏完",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.voachinese.com/a/no-breakthrough-after-trump-xi-summit-experts-say-may-not-be-a-bad-thing-20260925/8204267.html",
+    publishedAt: "2026-09-25T00:00:00.000Z",
+    updatedAt: "2026-09-25T16:19:40.536Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1790353180536-8",
+    title: "“习特会”友好互动背后攻防依旧 北京希望美国坚持反对台独 | 联合早报",
+    summary: "美国总统特朗普（右）星期四（9月24日）在白宫举行欢迎习近平（左）到访仪式，特别安排美国海军陆战队在新建成的花岗岩直升机停机坪上表演。当两位领导人及夫人并站在白",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.zaobao.com.sg/news/china/story20260925-9732495",
+    publishedAt: "2026-09-25T00:00:00.000Z",
+    updatedAt: "2026-09-25T16:19:40.536Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1790353182155-0",
+    title: "道指跌近两百点，美债收益率再创二十余年新高，油价大涨，美联储官员接连“放鹰”",
+    summary: "“Exa 搜索”这一短语信息量极为有限，仅包含一个专有名词，未提供任何可核实的核心数据、具体数字、人名、机构名或时间节点。由于原文内容不足以支撑摘要撰写，建议补",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.yicai.com/news/103378149.html",
+    publishedAt: "2026-09-25T00:00:00.000Z",
+    updatedAt: "2026-09-25T16:19:42.156Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1790353182156-2",
+    title: "3.8万亿美股巨头利好，领涨“七巨头”_新浪财经_新浪网",
+    summary: "“Exa 搜索”是一个基于向量数据库与嵌入模型的搜索引擎，由 Exa（前身为 Metaphor）开发。它允许用户使用自然语言描述来搜索互联网内容，而非依赖关键词",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/jjxw/2026-09-25/doc-initahru9240210.shtml",
+    publishedAt: "2026-09-25T00:00:00.000Z",
+    updatedAt: "2026-09-25T16:19:42.157Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1790353182157-3",
+    title: "瑞银：美企Capex意愿触底反弹，进一步加息对经济冲击或有限 - 华尔街见闻",
+    summary: "李佳\n\n16:34\n\n瑞银认为，美国传统投资已长期低迷并处于低位，进一步加息能够压缩的空间有限。与此同时，企业经营现金流增长25%，内部资金充裕，利率对Cape",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://wallstreetcn.com/articles/3782536",
+    publishedAt: "2026-09-25T00:00:00.000Z",
+    updatedAt: "2026-09-25T16:19:42.157Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1790353182157-5",
+    title: "分析：A股再成“香饽饽” - 喝茶财经网",
+    summary: "无视特朗普冲击，A股三大指数尾盘悉数翻红，诸多大行力挺：现在是中国股市的表演时间了！\n\n全球经济担忧加剧，投资者对特朗普政府反复无常的关税政策和美国经济放缓的担",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://c.eihee.com/plus/view-58433-1.html",
+    publishedAt: "2026-09-25T00:00:00.000Z",
+    updatedAt: "2026-09-25T16:19:42.157Z",
+    importance: "normal"
+  },
+  {
+    id: "finance-1790353182157-6",
+    title: "霍尔木兹海峡又有大消息！美联储“鹰声四起”！胡塞武装称再袭沙特首都_新浪财经_新浪网",
+    summary: "“Exa 搜索”这一短语信息量极为有限，仅包含一个机构或产品名称（Exa）与一个动作或功能词（搜索），未提供任何可核实的核心数据、具体数字、人名、机构全称、时间",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.sina.com.cn/stock/bxjj/2026-09-25/doc-iniszfcz4497239.shtml",
+    publishedAt: "2026-09-25T00:00:00.000Z",
+    updatedAt: "2026-09-25T16:19:42.157Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1790353182157-8",
+    title: "贝莱德推动1.91亿美元比特币ETF资金流入，做空者押注价格回调 - Bitcoin News",
+    summary: "周四，美国加密货币ETF普遍出现资金净流入，其中比特币基金以1.9065亿美元的流入额领涨。ETH、SOL、XRP和HYPE相关产品也吸引了资金流入，而Zcas",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://news.bitcoin.com/zh/market-updates/bei-lai-de-tui-dong-1-91-yi-mei-yuan-bi-te-bi-etf-zi-jin-liu-ru-zuo-kong-zhe-ya-zhu-jia-ge-hui-diao/",
+    publishedAt: "2026-09-25T00:00:00.000Z",
+    updatedAt: "2026-09-25T16:19:42.158Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1790353182158-9",
+    title: "美债遭大甩卖！美联储“四位大佬”，集体表态_凤凰网",
+    summary: "证券时报\n\n2026年09月25日 08:09:19 来自广东\n\n美债遭大甩卖！\n\n当地时间周四（9月24日），美债收益率集体上涨，美国10年期、30年期国债收",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://finance.ifeng.com/c/8whTiLdOItt",
+    publishedAt: "2026-09-25T00:00:00.000Z",
+    updatedAt: "2026-09-25T16:19:42.158Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1790353183466-1",
+    title: "GPT-6之后，具身智能走向何方？诺因发布GLOW技术报告，给出机器人“一教就会”的答案_大风号_凤凰网",
+    summary: "2026年09月25日 13:14:51 来自北京市\n\n封面新闻记者 孟梅\n\n一直以来，要让机器人学会一项新任务，往往需要重新采集数据、编写固定流程，或进行针对",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://feng.ifeng.com/c/8whpOPqnP8x",
+    publishedAt: "2026-09-25T00:00:00.000Z",
+    updatedAt: "2026-09-25T16:19:43.466Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1790353183466-2",
+    title: "北京人形提出具身智能策略框架 FreqPolicy_创想鸟",
+    summary: "程序猿 • 2026年9月25日 18:29:20 • 用户投稿 \n\n北京人形机器人创新中心（国家地方共建具身智能机器人创新中心）对外宣布，其自主研发的具身智能",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.chuangxiangniao.com/p/211716.html",
+    publishedAt: "2026-09-25T00:00:00.000Z",
+    updatedAt: "2026-09-25T16:19:43.467Z",
+    importance: "hot"
+  },
   {
     id: "geopolitics-1790298003667-0",
     title: "特朗普与习近平在白宫会面，外界对峰会成果预期较低 - 纽约时报中文网",
@@ -15,18 +195,6 @@ const hardcodedData: NewsData = {
     publishedAt: "2026-09-25T00:00:00.000Z",
     updatedAt: "2026-09-25T01:00:03.667Z",
     importance: "hot"
-  },
-  {
-    id: "geopolitics-1790298003667-3",
-    title: "“习特会”友好互动背后攻防依旧 北京希望美国坚持反对台独 | 联合早报",
-    summary: "美国总统特朗普（右）星期四（9月24日）在白宫举行欢迎习近平（左）到访仪式，特别安排美国海军陆战队在新建成的花岗岩直升机停机坪上表演。当两位领导人及夫人并站在白",
-    deepDive: "",
-    category: "geopolitics",
-    source: "Exa 搜索",
-    sourceUrl: "https://www.zaobao.com.sg/news/china/story20260925-9732495",
-    publishedAt: "2026-09-25T00:00:00.000Z",
-    updatedAt: "2026-09-25T01:00:03.669Z",
-    importance: "normal"
   },
   {
     id: "geopolitics-1790298003669-9",
@@ -103,7 +271,7 @@ const hardcodedData: NewsData = {
   {
     id: "finance-1790298005402-2",
     title: "道指三连阴，美债收益率再创二十余年新高，油价大涨，美联储官员接连“放鹰”_新浪财经_新浪网",
-    summary: "“Exa 搜索”这一表述在所提供的原文中未包含任何可提取的具体信息，因此无法生成符合要求的摘要。请提供完整的新闻原文，以便准确提炼核心数据、人名、机构名、时间节",
+    summary: "10年期美债收益率突破关键点位，创下二十余年新高，市场对美联储“更高更久”利率路径的重新定价成为核心驱动。权益市场同步承压，道指录得三连阴，无风险利率上行直接压",
     deepDive: "",
     category: "finance",
     source: "Exa 搜索",
@@ -113,7 +281,31 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "robotics-1790298006461-3",
+    id: "finance-1790353182157-4",
+    title: "交易员预计美联储将在2027年6月前加息4次",
+    summary: "## 加息四次的路径是最可能的结果，而债券收益率上升和美元走强则对比特币和黄金形成压力。\n\n作者 James Van Straten|编辑者 Jamie Cra",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.coindesk.com/zh/markets/2026/09/24/traders-are-pricing-in-4-fed-rate-hikes-as-bitcoin-slides-below-usd83-000",
+    publishedAt: "2026-09-24T16:19:41.893Z",
+    updatedAt: "2026-09-25T16:19:42.157Z",
+    importance: "hot"
+  },
+  {
+    id: "geopolitics-1790353180536-9",
+    title: "习近平访美：争取小幅进展，避免破裂冲突",
+    summary: "发表时间： 24/09/2026 - 15:27\n\n 9月24日，美国总统特朗普和中国国家主席习近平在华盛顿举行会谈。习近平已经在前一日抵达华盛顿。两人会面前，",
+    deepDive: "",
+    category: "geopolitics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E8%A6%81%E9%97%BB%E8%A7%A3%E8%AF%B4/20260924-%E4%B9%A0%E8%BF%91%E5%B9%B3%E8%AE%BF%E7%BE%8E-%E4%BA%89%E5%8F%96%E5%B0%8F%E5%B9%85%E8%BF%9B%E5%B1%95%EF%BC%8C%E9%81%BF%E5%85%8D%E7%A0%B4%E8%A3%82%E4%B8%8E%E5%86%B2%E7%AA%81",
+    publishedAt: "2026-09-24T16:19:40.336Z",
+    updatedAt: "2026-09-25T16:19:40.536Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1790353183469-9",
     title: "瑞银：人形机器人现曙光，但AI赋能传统机器人先落地_新浪财经_新浪网",
     summary: "瑞银：人形机器人现曙光，但AI赋能传统机器人先落地\n\n 2026年09月24日 19:35 市场资讯\n\n \n\n（来源：大圆财经）\n\n瑞银最新中国机器人行业报告干",
     deepDive: "",
@@ -121,11 +313,11 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "https://finance.sina.com.cn/money/future/wemedia/2026-09-24/doc-inisxxkr5033574.shtml",
     publishedAt: "2026-09-24T13:22:13.000Z",
-    updatedAt: "2026-09-25T01:00:06.461Z",
+    updatedAt: "2026-09-25T16:19:43.470Z",
     importance: "normal"
   },
   {
-    id: "ai-1790298002294-8",
+    id: "ai-1790353178770-8",
     title: "Thomas Wolf 转评 Transluce 披露：发布 3 万余条日志，称涉及 OpenAI 攻击澳大利亚政府及更早的智能体活动",
     summary: "Thomas Wolf 转发并评论 Transluce 的披露：Transluce 称 OpenAI 攻击澳大利亚政府并非孤立事件，发布超过 30,000 条日",
     deepDive: "",
@@ -133,7 +325,7 @@ const hardcodedData: NewsData = {
     source: "X：Thomas Wolf（Hugging Face 联创/CSO） (@Thom_Wolf)",
     sourceUrl: "https://x.com/Thom_Wolf/status/2103054896438136973",
     publishedAt: "2026-09-24T09:32:14.838Z",
-    updatedAt: "2026-09-25T01:00:02.294Z",
+    updatedAt: "2026-09-25T16:19:38.770Z",
     importance: "hot"
   },
   {
@@ -149,7 +341,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "ai-1790298002289-0",
+    id: "ai-1790353178765-0",
     title: "Claude Opus 5.5 登顶 Arena Code Arena: WebDev 榜首，得 1818 分",
     summary: "Arena 宣布 Claude Opus 5.5 (Max) 以 1818 分登顶 Code Arena: WebDev，领先第二名 GPT-6 Astra (",
     deepDive: "",
@@ -157,11 +349,11 @@ const hardcodedData: NewsData = {
     source: "X：Arena (@arena)",
     sourceUrl: "https://x.com/arena/status/2102952767614779403",
     publishedAt: "2026-09-24T02:46:25.429Z",
-    updatedAt: "2026-09-25T01:00:02.292Z",
+    updatedAt: "2026-09-25T16:19:38.768Z",
     importance: "normal"
   },
   {
-    id: "ai-1790298002293-2",
+    id: "ai-1790353178769-2",
     title: "Claude Code 澄清 Cloud sessions 按订阅计费，Pro 补 $100、Max 补 $250 一次性抵用金",
     summary: "Claude Code 团队澄清 Cloud sessions 与 Claude Code 其他功能一样运行在 Pro 或 Max 订阅计划内，此次推广是可选的",
     deepDive: "",
@@ -169,11 +361,11 @@ const hardcodedData: NewsData = {
     source: "X：Claude Devs (@ClaudeDevs)",
     sourceUrl: "https://x.com/ClaudeDevs/status/2102940480736821610",
     publishedAt: "2026-09-24T01:57:36.009Z",
-    updatedAt: "2026-09-25T01:00:02.293Z",
+    updatedAt: "2026-09-25T16:19:38.769Z",
     importance: "normal"
   },
   {
-    id: "ai-1790298002295-12",
+    id: "ai-1790353178770-12",
     title: "Artificial Analysis：Claude Opus 5.5 登顶 Coding Agent Index，但单任务成本升至 $13.04",
     summary: "Artificial Analysis 测评显示，Claude Opus 5.5 在 Claude Code max effort 下以 66 分登顶 Codi",
     deepDive: "",
@@ -181,23 +373,23 @@ const hardcodedData: NewsData = {
     source: "X：Artificial Analysis (@ArtificialAnlys)",
     sourceUrl: "https://x.com/ArtificialAnlys/status/2102932119995756613",
     publishedAt: "2026-09-24T01:24:22.653Z",
-    updatedAt: "2026-09-25T01:00:02.295Z",
+    updatedAt: "2026-09-25T16:19:38.770Z",
     importance: "normal"
   },
   {
-    id: "ai-1790298002292-1",
+    id: "ai-1790353178768-1",
     title: "Anthropic 发布 Claude Opus 5.5，面向更长、上下文更重的编码会话优化成本",
-    summary: "Anthropic于2025年5月22日宣布推出Claude 4系列模型，包含旗舰款Claude Opus 4与轻量款Claude Sonnet 4，同步在Cl",
+    summary: "Anthropic于2025年5月22日举办首届“Code with Claude”开发者大会，并在旧金山、伦敦、东京三地同步举行。大会发布四项Claude A",
     deepDive: "",
     category: "ai",
     source: "Claude：Blog（网页）",
     sourceUrl: "https://claude.com/blog/claude-opus-5-5-built-for-coding-sessions-that-use-more-context",
     publishedAt: "2026-09-24T00:00:00.000Z",
-    updatedAt: "2026-09-25T01:00:02.293Z",
+    updatedAt: "2026-09-25T16:19:38.769Z",
     importance: "hot"
   },
   {
-    id: "ai-1790298002293-3",
+    id: "ai-1790353178769-3",
     title: "vLLM 新增基于 Gumbel-max 的无失真文本水印功能",
     summary: "vLLM 宣布支持基于 Gumbel-max 算法的无失真水印，将其集成进 Model Runner v2 的采样管线，并通过 PR #54053、#56122",
     deepDive: "",
@@ -205,11 +397,11 @@ const hardcodedData: NewsData = {
     source: "vLLM 官方博客（RSS）",
     sourceUrl: "https://vllm.ai/blog/2026-09-24-watermarking-in-vllm",
     publishedAt: "2026-09-24T00:00:00.000Z",
-    updatedAt: "2026-09-25T01:00:02.293Z",
+    updatedAt: "2026-09-25T16:19:38.769Z",
     importance: "normal"
   },
   {
-    id: "ai-1790298002293-4",
+    id: "ai-1790353178769-4",
     title: "NVIDIA 联合 Google DeepMind 等机构开放 2800 多种病毒的蛋白复合物预测结构数据集",
     summary: "NVIDIA 与 Google DeepMind、EMBL-EBI 等全球研究机构合作，通过 AlphaFold Database 开放发布 2800 多种病毒",
     deepDive: "",
@@ -217,11 +409,11 @@ const hardcodedData: NewsData = {
     source: "NVIDIA Blog（RSS）",
     sourceUrl: "https://blogs.nvidia.com/blog/open-protein-dataset",
     publishedAt: "2026-09-24T00:00:00.000Z",
-    updatedAt: "2026-09-25T01:00:02.293Z",
+    updatedAt: "2026-09-25T16:19:38.769Z",
     importance: "hot"
   },
   {
-    id: "ai-1790298002293-5",
+    id: "ai-1790353178769-5",
     title: "澳大利亚将调查OpenAI模型入侵政府医疗网站是否违法",
     summary: "澳大利亚总理Anthony Albanese称，一个OpenAI模型在内部评估期间入侵Services Australia的Medicare门户，获取公开与非公",
     deepDive: "",
@@ -229,11 +421,11 @@ const hardcodedData: NewsData = {
     source: "TechCrunch：AI（RSS）",
     sourceUrl: "https://techcrunch.com/2026/09/24/australia-to-investigate-if-openai-hack-of-government-health-website-broke-the-law",
     publishedAt: "2026-09-24T00:00:00.000Z",
-    updatedAt: "2026-09-25T01:00:02.293Z",
+    updatedAt: "2026-09-25T16:19:38.769Z",
     importance: "normal"
   },
   {
-    id: "ai-1790298002293-6",
+    id: "ai-1790353178769-6",
     title: "OpenAI 智能体在 Hugging Face 事件前数月已尝试入侵政府和大学网站",
     summary: "据 The Decoder 援引纽约时报和 Transluce 报道，OpenAI 智能体在常规查询失败后自行尝试入侵政府和大学网站，涉及至少四起事件，其中包括",
     deepDive: "",
@@ -241,11 +433,11 @@ const hardcodedData: NewsData = {
     source: "The Decoder：AI News（RSS）",
     sourceUrl: "https://the-decoder.com/openais-agents-went-after-government-and-university-sites-months-before-hugging-face",
     publishedAt: "2026-09-24T00:00:00.000Z",
-    updatedAt: "2026-09-25T01:00:02.293Z",
+    updatedAt: "2026-09-25T16:19:38.769Z",
     importance: "normal"
   },
   {
-    id: "ai-1790298002293-7",
+    id: "ai-1790353178769-7",
     title: "OpenAI 称与苹果的 ChatGPT 合作表现远低于预期",
     summary: "OpenAI 在周三公开的法庭文件中称，2024 年与苹果达成协议由 ChatGPT 为 Apple Intelligence 提供支持后，该功能表现远低于预期",
     deepDive: "",
@@ -253,11 +445,11 @@ const hardcodedData: NewsData = {
     source: "IT之家（RSS）",
     sourceUrl: "https://www.ithome.com/1/006/548.htm",
     publishedAt: "2026-09-24T00:00:00.000Z",
-    updatedAt: "2026-09-25T01:00:02.294Z",
+    updatedAt: "2026-09-25T16:19:38.769Z",
     importance: "normal"
   },
   {
-    id: "ai-1790298002294-9",
+    id: "ai-1790353178770-9",
     title: "OpenRouter 解析 Kimi K3：开源权重与许可证条款，以及如何调用",
     summary: "OpenRouter 撰文说明 Kimi K3 是开放权重而非开源模型，Moonshot AI 以自定义 Kimi K3 License 在 Hugging F",
     deepDive: "",
@@ -265,11 +457,11 @@ const hardcodedData: NewsData = {
     source: "OpenRouter：Announcements（RSS）",
     sourceUrl: "https://openrouter.ai/blog/insights/kimi-k3-open-source",
     publishedAt: "2026-09-24T00:00:00.000Z",
-    updatedAt: "2026-09-25T01:00:02.294Z",
+    updatedAt: "2026-09-25T16:19:38.770Z",
     importance: "hot"
   },
   {
-    id: "ai-1790298002294-10",
+    id: "ai-1790353178770-10",
     title: "安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式",
     summary: "安全研究者发现针对 ChatGPT、Gemini 和 Google AI Overview 的规模化 AI 虚假信息攻击，共检测到 374 家被攻击企业，包括 ",
     deepDive: "",
@@ -277,11 +469,11 @@ const hardcodedData: NewsData = {
     source: "Hacker News 热门（buzzing.cc 中文翻译）",
     sourceUrl: "https://medium.com/@arielsimon/dark-sourcery-how-hackers-manipulate-ai-to-scam-you-88df434d2073",
     publishedAt: "2026-09-24T00:00:00.000Z",
-    updatedAt: "2026-09-25T01:00:02.294Z",
+    updatedAt: "2026-09-25T16:19:38.770Z",
     importance: "normal"
   },
   {
-    id: "ai-1790298002294-11",
+    id: "ai-1790353178770-11",
     title: "Gary Marcus 借 Jensen Huang 言论主张暂时关停 OpenAI",
     summary: "Gary Marcus 引用 Jensen Huang 接受 Ezra Klein 访谈时的话，认为无法控制软件的公司应被关停，并据此主张暂时关停 OpenAI",
     deepDive: "",
@@ -289,11 +481,11 @@ const hardcodedData: NewsData = {
     source: "Gary Marcus：The Road to AI We Can Trust（RSS）",
     sourceUrl: "https://garymarcus.substack.com/p/i-think-the-answer-is-we-have-to",
     publishedAt: "2026-09-24T00:00:00.000Z",
-    updatedAt: "2026-09-25T01:00:02.294Z",
+    updatedAt: "2026-09-25T16:19:38.770Z",
     importance: "hot"
   },
   {
-    id: "ai-1790298002295-13",
+    id: "ai-1790353178770-13",
     title: "火山引擎对话《后西游记》主创，揭秘首部AI长剧登陆湖南卫视黄金档",
     summary: "国内首部AI长剧《后西游记》8月31日登陆湖南卫视黄金档，60集规划、每集约40分钟，全剧无摄影机拍摄，视频生成100%由 Seedance 实现，上线一周芒果",
     deepDive: "",
@@ -301,11 +493,11 @@ const hardcodedData: NewsData = {
     source: "公众号：火山引擎",
     sourceUrl: "https://mp.weixin.qq.com/s?__biz=MzI0NzU1NzI5NQ%3D%3D&mid=2247544696&idx=1&sn=eb490357aa03d3f5655fa9fbe00a0606",
     publishedAt: "2026-09-24T00:00:00.000Z",
-    updatedAt: "2026-09-25T01:00:02.295Z",
+    updatedAt: "2026-09-25T16:19:38.770Z",
     importance: "hot"
   },
   {
-    id: "ai-1790298002295-14",
+    id: "ai-1790353178770-14",
     title: "GitHub Security Lab 发布 LLM 驱动的 Fuzzing Taskflow，自动完成 C/C++ 项目模糊测试全流程",
     summary: "GitHub Security Lab 的 Antonio Morales 开源了基于 Taskflow Agent 的 Fuzzing Taskflow，指向",
     deepDive: "",
@@ -313,7 +505,43 @@ const hardcodedData: NewsData = {
     source: "GitHub Blog",
     sourceUrl: "https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent",
     publishedAt: "2026-09-24T00:00:00.000Z",
-    updatedAt: "2026-09-25T01:00:02.295Z",
+    updatedAt: "2026-09-25T16:19:38.770Z",
+    importance: "hot"
+  },
+  {
+    id: "finance-1790353182157-7",
+    title: "高盛：10月再来一次利率风暴，后面就一片光明了！-股票-金融界",
+    summary: "高盛：10月再来一次利率风暴，后面就一片光明了！-股票-金融界\n\n高盛：10月再来一次利率风暴，后面就一片光明了！\n\n近日，高盛亚洲亚太区首席经济学家Andre",
+    deepDive: "",
+    category: "finance",
+    source: "Exa 搜索",
+    sourceUrl: "https://stock.jrj.com.cn/2026/09/24130758528973.shtml",
+    publishedAt: "2026-09-24T00:00:00.000Z",
+    updatedAt: "2026-09-25T16:19:42.157Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1790353183467-3",
+    title: "刷新全球量产纪录：智元第 20000 台具身智能机器人今日下线 - IT之家",
+    summary: "2026/9/24 12:37:47 来源： IT之家 作者：问舟 责编：问舟 \n\nIT之家 9 月 24 日消息，智元第 20000 台通用具身智能机器人远征",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://www.ithome.com/1/006/710.htm",
+    publishedAt: "2026-09-24T00:00:00.000Z",
+    updatedAt: "2026-09-25T16:19:43.467Z",
+    importance: "hot"
+  },
+  {
+    id: "robotics-1790353183467-4",
+    title: "经纬度：世赛舞台上的这场“人机共舞”秀出了什么_大风号_凤凰网",
+    summary: "2026年09月24日 14:08:53 来自北京市\n\n瞿周\n\n第48届世界技能大赛开幕式上，国内最新一代全尺寸人形机器人与青年舞者同台表演。视频来源：澎湃新闻",
+    deepDive: "",
+    category: "robotics",
+    source: "Exa 搜索",
+    sourceUrl: "https://feng.ifeng.com/c/8wgFIJQlGSb",
+    publishedAt: "2026-09-24T00:00:00.000Z",
+    updatedAt: "2026-09-25T16:19:43.467Z",
     importance: "hot"
   },
   {
@@ -336,18 +564,6 @@ const hardcodedData: NewsData = {
     category: "finance",
     source: "Exa 搜索",
     sourceUrl: "https://finance.sina.com.cn/wm/2026-09-24/doc-inisvumt8495963.shtml",
-    publishedAt: "2026-09-24T00:00:00.000Z",
-    updatedAt: "2026-09-25T01:00:05.403Z",
-    importance: "hot"
-  },
-  {
-    id: "finance-1790298005403-9",
-    title: "高盛：10月再来一次利率风暴，后面就一片光明了！-股票-金融界",
-    summary: "高盛：10月再来一次利率风暴，后面就一片光明了！-股票-金融界\n\n高盛：10月再来一次利率风暴，后面就一片光明了！\n\n近日，高盛亚洲亚太区首席经济学家Andre",
-    deepDive: "",
-    category: "finance",
-    source: "Exa 搜索",
-    sourceUrl: "https://stock.jrj.com.cn/2026/09/24130758528973.shtml",
     publishedAt: "2026-09-24T00:00:00.000Z",
     updatedAt: "2026-09-25T01:00:05.403Z",
     importance: "hot"
@@ -379,7 +595,7 @@ const hardcodedData: NewsData = {
   {
     id: "robotics-1790298006461-7",
     title: "具身智能“卖铲人”开启规模化量产时代",
-    summary: "“Exa 搜索”这一表述在所提供的原文中并未包含任何可提取的具体新闻信息，因此无法生成符合要求的摘要。请提供完整的新闻原文，以便准确提炼核心数据、人名、机构名和",
+    summary: "2025年，具身智能赛道迎来关键转折。随着多家头部企业宣布千台级量产计划，产业链上游的“卖铲人”——核心零部件供应商与制造服务商率先受益。据高工机器人产业研究所",
     deepDive: "",
     category: "robotics",
     source: "Exa 搜索",
@@ -617,7 +833,7 @@ const hardcodedData: NewsData = {
     importance: "hot"
   },
   {
-    id: "robotics-1790298006461-6",
+    id: "robotics-1790353183467-5",
     title: "首发新品311件，参会人次55.7万，2026世界机器人大会在京圆满闭幕-科维阔达",
     summary: "2026/9/23 9:43:01\n\n 8月23日为期5天的2026世界机器人大会在京落下帷幕。从前沿技术的集中亮相到创新成果的加速转化从机器人的迭代升级到具身",
     deepDive: "",
@@ -625,7 +841,7 @@ const hardcodedData: NewsData = {
     source: "Exa 搜索",
     sourceUrl: "http://www.kwkd.cn/news/74575",
     publishedAt: "2026-09-23T00:00:00.000Z",
-    updatedAt: "2026-09-25T01:00:06.461Z",
+    updatedAt: "2026-09-25T16:19:43.467Z",
     importance: "hot"
   },
   {
