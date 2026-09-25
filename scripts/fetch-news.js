@@ -15,7 +15,8 @@ const path = require("path");
 const { summarize } = require("./summarize");
 
 const DATA_PATH = path.join(__dirname, "..", "src", "data", "news.json");
-const EXA_API_KEY = process.env.EXA_API_KEY || "5b73f51e-accc-4879-bf2c-f33ef470f47f";
+// EXA_API_KEY 从环境注入（服务器在 /root/.hermes/.env）；缺失时跳过 Exa 搜索，仅用 AIHOT+抓取源
+const EXA_API_KEY = process.env.EXA_API_KEY || "";
 
 // 从 Twitter/X snowflake ID 提取发布时间
 function getTweetTime(url) {
@@ -187,6 +188,10 @@ function cleanText(text) {
 }
 
 async function searchExa(query, category, sourceLabel, days = 2) {
+  if (!EXA_API_KEY) {
+    console.log("[Exa] EXA_API_KEY not set, skipping Exa search (AIHOT + scrape sources only)");
+    return [];
+  }
   console.log(`[Exa] Searching: ${query}`);
   try {
     const res = await fetch("https://api.exa.ai/search", {
@@ -539,7 +544,21 @@ async function main() {
   console.log("Done!");
 }
 
-main().catch((err) => {
-  console.error("Fatal:", err);
-  process.exit(1);
-});
+// 导出纯函数供测试（node --test）；直接运行本文件时才执行采集主流程
+module.exports = {
+  getTweetTime,
+  extractDateFromUrl,
+  isTraditional,
+  smartTruncate,
+  cleanText,
+  deduplicate,
+  addHotTags,
+  getDaysAgo,
+};
+
+if (require.main === module) {
+  main().catch((err) => {
+    console.error("Fatal:", err);
+    process.exit(1);
+  });
+}
