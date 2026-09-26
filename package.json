@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "prebuild": "node scripts/sync-news.mjs",
+    "predev": "node scripts/sync-news.mjs",
     "build": "next build",
     "dev": "next dev",
     "start": "next start",

@@ -1,31 +1,26 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
-import { useState, useEffect, Suspense } from "react";
+import { useMemo, Suspense } from "react";
 import SearchBar from "@/components/SearchBar";
 import NewsCard from "@/components/NewsCard";
 import { getAllNews } from "@/lib/news";
+import { NewsItem } from "@/types";
 
 function SearchContent() {
   const searchParams = useSearchParams();
   const query = searchParams.get("q") || "";
-  const [results, setResults] = useState<any[]>([]);
 
-  useEffect(() => {
-    if (!query.trim()) {
-      setResults([]);
-      return;
-    }
-    // 客户端搜索：直接过滤本地数据
-    const data = getAllNews();
-    const q = query.toLowerCase();
-    const filtered = data.items.filter(
-      (item) =>
+  // 客户端搜索：直接过滤本地数据（useMemo 派生，无 effect/setState）
+  const results = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    if (!q) return [];
+    return getAllNews().items.filter(
+      (item: NewsItem) =>
         item.title.toLowerCase().includes(q) ||
         item.summary.toLowerCase().includes(q) ||
         item.category.toLowerCase().includes(q)
     );
-    setResults(filtered);
   }, [query]);
 
   return (

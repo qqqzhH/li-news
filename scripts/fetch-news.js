@@ -276,14 +276,6 @@ async function scrapeNewsSource(url, category, label, selector) {
   }
 }
 
-// ========== Aggregate "other" news items - low value items ==========
-function aggregateOthers(allItems) {
-  return allItems.map(item => ({
-    ...item,
-    // Already categorized by source
-  }));
-}
-
 // ========== Helpers ==========
 function getDaysAgo(n) {
   const d = new Date();

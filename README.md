@@ -13,7 +13,8 @@
   │                         → DeepSeek 摘要 → AI 解读 → 3 个月保留窗口
   ▼
 src/data/news.json          ← 唯一数据源（唯一写入者：服务器 cron）
-  │ scripts/sync-news.mjs   双写生成（解决 CF Worker 461KB 限制的历史方案）：
+  │ scripts/sync-news.mjs   构建期生成 6 个数据 TS 文件（**已 gitignore，不出 git**——
+  │                         2026-09-26 单源化：prebuild 自动跑，git 冲突面归零）：
   ├─ src/lib/news.ts        轻量版（摘要截80字/无deepDive）→ 首页 + 搜索（进客户端 bundle）
   └─ src/lib/news-{cat}.ts  全量版 → 各分类页（构建期进 HTML）
   │ scripts/gen-daily-summary.mjs（管线内）→ src/lib/daily-summary.ts → 首页"今日新闻总结"

@@ -51,3 +51,12 @@ next-env.d.ts
 !.dev.vars.example
 
 !.env.example
+
+# Generated data files (scripts/sync-news.mjs) — single source of truth is src/data/news.json
+# 2026-09-26 单源化：生成物出 git，构建前由 prebuild 生成，git 冲突面归零
+/src/lib/news.ts
+/src/lib/news-ai.ts
+/src/lib/news-finance.ts
+/src/lib/news-geopolitics.ts
+/src/lib/news-robotics.ts
+/src/lib/news-other.ts
