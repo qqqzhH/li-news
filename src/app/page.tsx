@@ -204,9 +204,9 @@ export default function HomePage() {
 
         {/* 右上角：跳转按钮组（温故知新 + 墨极日报） */}
         <div className="absolute top-4 right-4 z-40 flex items-center gap-3">
-          {/* 温故知新：浏览全部新闻日期（墨极浓墨风） */}
+          {/* 温故知新：浏览全部新闻日期（墨极浓墨风）—— 实时版在主站攀攀.xyz（GenMojiDaily 每日更新） */}
           <a
-            href="https://li-news.pages.dev/archive.html"
+            href="https://攀攀.xyz/archive.html"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#17140f] text-[#f5f2ec] text-base font-bold tracking-wide shadow-lg hover:bg-[#2a251c] hover:scale-105 hover:-translate-y-0.5 transition-all duration-200"
@@ -220,9 +220,9 @@ export default function HomePage() {
             温故知新
           </a>
 
-          {/* 墨极日报：朱砂印章按钮 */}
+          {/* 墨极日报：朱砂印章按钮 —— 实时版在主站攀攀.xyz */}
           <a
-            href="https://li-news.pages.dev/moji_daily.html"
+            href="https://攀攀.xyz/moji_daily.html"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2.5 px-5 py-2.5 rounded-xl bg-[#b0392e] text-[#f5f2ec] text-base font-bold tracking-wide shadow-lg hover:bg-[#8f2e24] hover:scale-105 hover:-translate-y-0.5 transition-all duration-200"

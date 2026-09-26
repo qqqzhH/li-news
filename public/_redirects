@@ -1,0 +1,7 @@
+# 墨极日报与温故知新的实时版在主站攀攀.xyz（GenMojiDaily 每日 10:27 更新），
+# 本仓库不再持有会过期的冻结副本（2026-09-26 退役；用户 9/26 反馈 archive/moji_daily 显示 8 月旧数据）。
+# 注意：public/墨极·20260821-28.html 是全网唯一的 8 月全录历史档案（主仓没有），保留不重定向。
+/moji_daily https://xn--d9ua.xyz/moji_daily.html 302
+/moji_daily.html https://xn--d9ua.xyz/moji_daily.html 302
+/archive https://xn--d9ua.xyz/archive.html 302
+/archive.html https://xn--d9ua.xyz/archive.html 302
