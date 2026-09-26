@@ -533,6 +533,8 @@ async function main() {
   });
   console.log("Category counts:", counts);
 
+  // 采集产出计数（daily-collection.sh 据此判定静默降级：各源全挂时仍 exit 0，靠此行告警）
+  console.log(`NEW_ITEMS_COUNT: ${newItems.length}`);
   console.log("Done!");
 }
 
