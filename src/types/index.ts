@@ -18,12 +18,13 @@ export interface NewsData {
 
 export type Category = NewsItem["category"];
 
-export const CATEGORIES: { key: Category; label: string }[] = [
+export const CATEGORIES: { key: Category; label: string; hidden?: boolean }[] = [
   { key: "ai", label: "AI 动态" },
   { key: "robotics", label: "机器人" },
   { key: "geopolitics", label: "地缘政治" },
   { key: "finance", label: "金融市场" },
-  { key: "other", label: "其他要闻" },
+  // 采集源不产出 other 类条目，隐藏导航入口（/other 页面与数据文件保留）
+  { key: "other", label: "其他要闻", hidden: true },
 ];
 
 // Daily summary structure for homepage section 2

@@ -166,7 +166,7 @@ export default function Sidebar() {
 
           <div className="my-1.5 border-t border-[var(--color-border)]" />
 
-          {CATEGORIES.map((cat, index) => (
+          {CATEGORIES.filter((cat) => !cat.hidden).map((cat, index) => (
             <Link
               key={cat.key}
               href={`/${cat.key}`}
@@ -198,8 +198,20 @@ export default function Sidebar() {
           </Link>
         </nav>
 
-        <div className="sidebar-footer-label p-2 border-t border-[var(--color-border)] text-xs text-[var(--color-text-muted)] text-center">
+        <div className="sidebar-footer-label p-2 border-t border-[var(--color-border)] text-xs text-center">
+          <a
+            href="/feed.xml"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-1 text-[var(--color-text-muted)] hover:text-[var(--color-ocean-600)] transition-colors"
+            title="RSS / Atom 订阅"
+          >
+            <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 11a9 9 0 0 1 9 9M4 4a16 16 0 0 1 16 16" />
+              <circle cx="5" cy="19" r="1" fill="currentColor" />
+            </svg>
             RSS 订阅
+          </a>
         </div>
       </aside>
     </>

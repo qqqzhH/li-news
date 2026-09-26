@@ -38,5 +38,7 @@ test("feed.xml is structurally complete", () => {
   const entries = (xml.match(/<entry>/g) || []).length;
   const closed = (xml.match(/<\/entry>/g) || []).length;
   assert.equal(entries, closed, "every <entry> must be closed");
-  assert.ok(entries >= 1000, "entry count should stay in the usual range");
+  // feed 上限 100 条（2026-09-26 起，防无限膨胀）；数据充足时应恰为 100
+  assert.ok(entries <= 100, `feed must be capped at 100 entries, got ${entries}`);
+  assert.ok(entries >= 50, "feed unexpectedly small (data layer problem?)");
 });

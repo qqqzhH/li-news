@@ -7,7 +7,9 @@ export async function GET() {
   const data = getAllNews();
   const siteUrl = "https://li-news.pages.dev";
 
+  // RSS 惯例：只输出最近 100 条（items 已按发布时间降序），防止 feed 无限膨胀
   const itemsXml = data.items
+    .slice(0, 100)
     .map(
       (item) => `
     <entry>

@@ -281,7 +281,7 @@ export default function HomePage() {
 
           {/* Category cards */}
           <div ref={catsRef} className="mt-6 sm:mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 sm:gap-3 max-w-3xl mx-auto w-full px-4 sm:px-0">
-            {CATEGORIES.map((cat) => {
+            {CATEGORIES.filter((cat) => !cat.hidden).map((cat) => {
               const count = data.items.filter((i) => i.category === cat.key).length;
               return (
                 <Link key={cat.key} href={`/${cat.key}`}

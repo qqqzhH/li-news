@@ -1,5 +1,5 @@
 import { getGeopoliticsNews } from "@/lib/news-geopolitics";
-import NewsCard from "@/components/NewsCard";
+import PagedNewsList from "@/components/PagedNewsList";
 import SearchBar from "@/components/SearchBar";
 
 export const dynamic = "force-static";
@@ -28,11 +28,7 @@ export default function GeopoliticsPage() {
       </div>
 
       {items.length > 0 ? (
-        <div className="space-y-4">
-          {items.map((item) => (
-            <NewsCard key={item.id} item={item} />
-          ))}
-        </div>
+        <PagedNewsList items={items} />
       ) : (
         <div className="text-center py-16 text-[var(--color-text-muted)]">
           <div className="flex justify-center mb-4 text-[var(--color-ocean-300)]">
