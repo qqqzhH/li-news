@@ -28,7 +28,8 @@ function SearchContent() {
       <div className="pb-4 border-b border-[var(--color-border)]">
         <h1 className="text-2xl font-bold text-[var(--color-text)] mb-3">搜索新闻</h1>
         <div className="max-w-md">
-          <SearchBar initialQuery={query} large />
+          {/* key 绑定 query：URL 变化（后退/前进/点结果）时重挂以同步输入框文字 */}
+          <SearchBar key={query} initialQuery={query} large />
         </div>
       </div>
 
