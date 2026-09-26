@@ -7,6 +7,7 @@
     "predev": "node scripts/sync-news.mjs",
     "build": "next build",
     "dev": "next dev",
+    "test": "node --test tests/feed.test.mjs tests/no-frozen-copies.test.mjs tests/cat-colors.test.mjs tests/fetch-news-utils.test.mjs",
     "start": "next start",
     "lint": "eslint",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",

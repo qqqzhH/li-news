@@ -46,9 +46,9 @@ next build（output: export，11 个静态页）→ git push → Cloudflare 自�
 
 ```bash
 npm install          # Node 22（服务器同版本）；本机 24 也可跑
-npm run dev          # 开发服务器 localhost:3000
-npm run build        # 静态导出到 out/（next build 是事实上的回归测试）
-npm test             # node --test tests/（见下方测试说明）
+npm run dev          # predev 自动跑 sync-news.mjs 生成数据文件
+npm run build        # prebuild 同上；静态导出到 out/（next build 是事实上的回归测试）
+npm test             # node --test 四个测试文件（见下方测试说明）
 npx eslint src scripts tests
 ```
 
@@ -68,17 +68,15 @@ node --test tests/fetch-news-utils.test.mjs  # 采集管线纯函数（去重/�
 ## 目录速览
 
 - `src/app/` 页面（/ 首页、5 个分类页、/search、feed.xml 路由）
-- `src/components/` NewsCard（手写 markdown 渲染）/ Sidebar / SearchBar / 彩蛋×2
-- `src/lib/` 数据文件全部为生成物，**勿手改**（头部有 do not edit 标记）
-- `scripts/` fetch-news.js（采集）、sync-news.mjs（双写）、summarize.js（DeepSeek）、
-  gen-daily-summary.mjs（首页日报）
-- `tests/` node:test 零依赖测试
+- `src/components/` NewsCard（手写 markdown 渲染）/ PagedNewsList（分类页分页）/ Sidebar / SearchBar / 彩蛋×2
+- `src/lib/` 数据文件：daily-summary.ts 与 utils.ts 为源码；news*.ts 为构建期生成物（gitignore，勿手改）
+- `scripts/` fetch-news.js（采集）、sync-news.mjs（双写）、summarize.js（DeepSeek）、gen-daily-summary.mjs（首页日报）
+- `tests/` node:test 零依赖测试（4 文件）
+- `ARCHITECTURE.md` 为什么这样设计（决策记录 D1-D8）；`KNOWN-ISSUES.md` 问题台账；`CHANGELOG.md` 变更史（含服务器侧变更）
 
-## 已知边界（勿当 bug 重复报）
+## 已知边界（勿当 bug 重复报；完整台账见 KNOWN-ISSUES.md）
 
-- feed.xml 1500+ 条无上限；分类页无分页（ai.html 构建产物 ~3.5MB）——架构级
-  改动需专项评估（历史上分片方案就是为了绕 CF Worker 461KB 限制）。
-- other 分类恒为空（采集源不产出 other）；Sidebar"RSS 订阅"是死文本无链接。
-- `EXA_API_KEY` 曾硬编码进 git 历史（已于 2026-09-25 移出源码改 env 注入）；
-  该 key 未轮换，轮换需在 Exa 后台操作并同步更新服务器 env。
+- 分类页 HTML 仍内嵌全量数据（~3.5MB）——feed 上限与分页已做，HTML 体积属架构级（ARCHITECTURE 重构方向 #1）。
+- other 分类不接采集源（入口已隐藏）；scrapeNewsSource 的发布时间/原文链接失真（KNOWN-ISSUES #1）。
+- `EXA_API_KEY` 曾硬编码进 git 历史：新 key 已于 2026-09-26 生效，旧 key（尾 f47f）由用户在 Exa 后台作废（KNOWN-ISSUES #9）。
 - Next.js 16 与常规认知有差异，改代码前先读 `node_modules/next/dist/docs/`（见 AGENTS.md）。
